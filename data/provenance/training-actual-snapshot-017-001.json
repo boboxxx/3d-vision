@@ -1,0 +1,23 @@
+{
+  "checked_unix": 1791215493.2912018,
+  "reports": {
+    "original-public30-formal-seed17-003-stage1": {
+      "state": "running_complete_public_semantic_stage",
+      "job_id": "11426592",
+      "update_count": 39360,
+      "traceback": null,
+      "completed_epochs": 0
+    },
+    "ecsic-KITTI-lambda0.1-seed17-002": {
+      "state": "running_full_KITTI_source_RD_training",
+      "job_id": "11429214",
+      "update_count": 34432,
+      "traceback": null,
+      "completed_epochs": 0
+    }
+  },
+  "sacct": "11425240|COMPLETED|0:0|01:40:23\n11425240.batch|COMPLETED|0:0|01:40:23\n11425240.extern|COMPLETED|0:0|01:40:23\n11425240.0|COMPLETED|0:0|01:40:21\n11425814|RUNNING|0:0|00:32:54\n11425814.extern|RUNNING|0:0|00:32:54\n11425814.0|RUNNING|0:0|00:32:54\n11426592|RUNNING|0:0|02:03:10\n11426592.batch|RUNNING|0:0|02:03:10\n11426592.extern|RUNNING|0:0|02:03:10\n11426592.0|RUNNING|0:0|02:03:10\n11426847|PENDING|0:0|00:00:00\n11429210_[10,50%1]|PENDING|0:0|00:00:00\n11429211_10|PENDING|0:0|00:00:00\n11429211_50|PENDING|0:0|00:00:00\n11429217_4|PENDING|0:0|00:00:00\n11429217_5|PENDING|0:0|00:00:00\n11429221|PENDING|0:0|00:00:00\n11429222|PENDING|0:0|00:00:00\n",
+  "squeue": "                 JOBID                             NAME        STATE         TIME NODELIST(REASON)\n            11425047_5           paper6-ecsic-KITTI-002      PENDING         0:00 (JobArrayTaskLimit)\n    11429210_[10,50%1]        paper6-source-engineer009      PENDING         0:00 (QOSGrpGRES)\n            11425047_4           paper6-ecsic-KITTI-002      RUNNING        57:19 artemis-rtx-03\n              11426592  paper6-original-public30-stage1      RUNNING      2:03:10 artemis-rtx-03\n              11425814            paper6-cost-export013      RUNNING        32:54 artemis-rtx-01\n            11429217_5         paper6-ecsic-final-audit      PENDING         0:00 (Dependency)\n            11429217_4         paper6-ecsic-final-audit      PENDING         0:00 (Dependency)\n           11429211_50           paper6-source-audit009      PENDING         0:00 (Dependency)\n           11429211_10           paper6-source-audit009      PENDING         0:00 (Dependency)\n              11426847  paper6-original-stage1-audit007      PENDING         0:00 (Dependency)\n              11429222        paper6-ecsic-c5-export013      PENDING         0:00 (Dependency)\n              11429221        paper6-ecsic-c4-export013      PENDING         0:00 (Dependency)\n",
+  "main_native_proof_sha256": "d57e6aa997579efc555d0f027b1c70f0f24a23744946a5521d778a48e663dc72",
+  "observation_note": "The completed_epochs field in this snapshot used the wrong report-key fallback; zero is not an epoch-count or completion criterion. Update_count/job_id/accounting are direct observations; no full closure is inferred."
+}

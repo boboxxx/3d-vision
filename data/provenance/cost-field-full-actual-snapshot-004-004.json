@@ -1,0 +1,93 @@
+{
+  "observed_unix": 1791193002.6924896,
+  "queue": "11424940_41 PENDING 0:00 (QOSGrpGRES)\n11424940_23 RUNNING 1:39:59 artemis-rtx-03\n11424939 RUNNING 1:43:21 artemis-rtx-03\n",
+  "runs": {
+    "17": {
+      "state": "running_full_split_task_training",
+      "stage": "actual_native_detection_loss_backward",
+      "seed": 17,
+      "job_id": "11424939",
+      "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "update_count": 13062,
+      "last_update": {
+        "arm": "P",
+        "epoch": 1,
+        "index": 1925,
+        "step": 1925,
+        "frame": "003509",
+        "loss": 1.178875207901001,
+        "complex_uses": 29640
+      },
+      "completed_epochs": [
+        {
+          "arm": "G",
+          "epoch": 1,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch1.pt",
+          "sha256": "24c485644d903b488b48ad25ee8550fc46677fb4b02bbc2ce0f0d09de53b7380"
+        },
+        {
+          "arm": "G",
+          "epoch": 2,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch2.pt",
+          "sha256": "7e247683cdaea734fd210eb07f202cc59824484098bcded77646804e73dac208"
+        },
+        {
+          "arm": "G",
+          "epoch": 3,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch3.pt",
+          "sha256": "130369c740c014e1e61893858191ff8f9c3baed689e3b1709ad9c2df871c4108"
+        }
+      ],
+      "traceback": null,
+      "report_snapshot_sha256": "365e7f879abf5ccde6ec635bc104f4eee80c98d76840aa592e0d365c5a3485d9"
+    },
+    "23": {
+      "state": "running_full_split_task_training",
+      "stage": "actual_native_detection_loss_backward",
+      "seed": 23,
+      "job_id": "11424941",
+      "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "update_count": 12867,
+      "last_update": {
+        "arm": "P",
+        "epoch": 1,
+        "index": 1730,
+        "step": 1730,
+        "frame": "005851",
+        "loss": 1.4346871376037598,
+        "complex_uses": 29640
+      },
+      "completed_epochs": [
+        {
+          "arm": "G",
+          "epoch": 1,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed23-004/checkpoint-G-epoch1.pt",
+          "sha256": "c72929996baf1b9e604f29a7c02e186b62b5f7205c25505741b68d87e7fe572c"
+        },
+        {
+          "arm": "G",
+          "epoch": 2,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed23-004/checkpoint-G-epoch2.pt",
+          "sha256": "dc79c1c30f18acd1464d0371a28a3b88ec3ab34d9b52c9ac79bd003f7bc75d6f"
+        },
+        {
+          "arm": "G",
+          "epoch": 3,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed23-004/checkpoint-G-epoch3.pt",
+          "sha256": "66f752f95a605a5b6397c0f53b294f760738fd85de11f653fb1394b982a8a655"
+        }
+      ],
+      "traceback": null,
+      "report_snapshot_sha256": "960ce98b256a4d39bae3be5cdd463d45ee9f3eaab92ab6dfb5b8c6199a6a3dce"
+    },
+    "41": {
+      "state": "report_absent_queue_pending"
+    }
+  }
+}

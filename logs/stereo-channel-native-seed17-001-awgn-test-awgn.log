@@ -1,0 +1,593 @@
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+2026-10-04 13:20:48,557   INFO  **********************Start logging**********************
+2026-10-04 13:20:48,558   INFO  CUDA_VISIBLE_DEVICES=0
+2026-10-04 13:20:48,558   INFO  eval output dir: /mnt/d/paper6/runs/stereo-channel-native-seed17-001-awgn/checkpoint_epoch_1.pth.eval/eval/epoch_1/geocomm_tune_holdout/stereo-channel-native-seed17-001-awgn-test-awgn
+2026-10-04 13:20:48,559   INFO  total_batch_size: 1
+2026-10-04 13:20:48,559   INFO  cfg_file         /home/sheng/paper6/configs/diagnostic/stereo_feature_awgn_holdout.yaml
+2026-10-04 13:20:48,560   INFO  batch_size       1
+2026-10-04 13:20:48,560   INFO  workers          4
+2026-10-04 13:20:48,561   INFO  exp_name         None
+2026-10-04 13:20:48,561   INFO  eval_tag         stereo-channel-native-seed17-001-awgn-test-awgn
+2026-10-04 13:20:48,562   INFO  max_waiting_mins 30
+2026-10-04 13:20:48,563   INFO  save_to_file     True
+2026-10-04 13:20:48,563   INFO  ckpt             /mnt/d/paper6/runs/stereo-channel-native-seed17-001-awgn/checkpoint_epoch_1.pth
+2026-10-04 13:20:48,564   INFO  ckpt_id          None
+2026-10-04 13:20:48,564   INFO  start_epoch      0
+2026-10-04 13:20:48,564   INFO  launcher         pytorch
+2026-10-04 13:20:48,565   INFO  tcp_port         18888
+2026-10-04 13:20:48,565   INFO  local_rank       0
+2026-10-04 13:20:48,566   INFO  set_cfgs         None
+2026-10-04 13:20:48,566   INFO  trainval         False
+2026-10-04 13:20:48,567   INFO  imitation        2d
+2026-10-04 13:20:48,567   INFO  cfg.ROOT_DIR: /home/sheng/paper6/third_party/LIGA-Stereo
+2026-10-04 13:20:48,568   INFO  cfg.LOCAL_RANK: 0
+2026-10-04 13:20:48,568   INFO  cfg.CLASS_NAMES: ['Car', 'Pedestrian', 'Cyclist']
+2026-10-04 13:20:48,568   INFO  
+cfg.DATA_CONFIG = edict()
+2026-10-04 13:20:48,569   INFO  cfg.DATA_CONFIG.DATASET: StereoKittiDataset
+2026-10-04 13:20:48,569   INFO  cfg.DATA_CONFIG.DATA_PATH: ./data/kitti
+2026-10-04 13:20:48,569   INFO  cfg.DATA_CONFIG.FLIP: True
+2026-10-04 13:20:48,570   INFO  cfg.DATA_CONFIG.FORCE_FLIP: False
+2026-10-04 13:20:48,570   INFO  cfg.DATA_CONFIG.POINT_CLOUD_RANGE: [2, -30.4, -3, 59.6, 30.4, 1]
+2026-10-04 13:20:48,570   INFO  cfg.DATA_CONFIG.VOXEL_SIZE: [0.05, 0.05, 0.1]
+2026-10-04 13:20:48,571   INFO  cfg.DATA_CONFIG.STEREO_VOXEL_SIZE: [0.2, 0.2, 0.2]
+2026-10-04 13:20:48,571   INFO  
+cfg.DATA_CONFIG.DATA_SPLIT = edict()
+2026-10-04 13:20:48,572   INFO  cfg.DATA_CONFIG.DATA_SPLIT.train: geocomm_tune_train
+2026-10-04 13:20:48,572   INFO  cfg.DATA_CONFIG.DATA_SPLIT.test: geocomm_tune_holdout
+2026-10-04 13:20:48,572   INFO  
+cfg.DATA_CONFIG.INFO_PATH = edict()
+2026-10-04 13:20:48,573   INFO  cfg.DATA_CONFIG.INFO_PATH.train: ['kitti_infos_geocomm_tune_train.pkl']
+2026-10-04 13:20:48,573   INFO  cfg.DATA_CONFIG.INFO_PATH.test: ['kitti_infos_geocomm_tune_holdout.pkl']
+2026-10-04 13:20:48,574   INFO  cfg.DATA_CONFIG.USE_VAN: True
+2026-10-04 13:20:48,574   INFO  cfg.DATA_CONFIG.USE_PERSON_SITTING: True
+2026-10-04 13:20:48,574   INFO  cfg.DATA_CONFIG.FOV_POINTS_ONLY: True
+2026-10-04 13:20:48,575   INFO  cfg.DATA_CONFIG.BOXES_GT_IN_CAM2_VIEW: False
+2026-10-04 13:20:48,575   INFO  cfg.DATA_CONFIG.GENERATE_CORNER_HEATMAP: False
+2026-10-04 13:20:48,575   INFO  cfg.DATA_CONFIG.CAT_REFLECT_DIM: False
+2026-10-04 13:20:48,576   INFO  cfg.DATA_CONFIG.TRAIN_DATA_AUGMENTOR: [{'NAME': 'random_crop', 'MIN_REL_X': 0, 'MAX_REL_X': 0, 'MIN_REL_Y': 1.0, 'MAX_REL_Y': 1.0, 'MAX_CROP_H': 320, 'MAX_CROP_W': 1280}, {'NAME': 'filter_truncated', 'AREA_RATIO_THRESH': None, 'AREA_2D_RATIO_THRESH': None, 'GT_TRUNCATED_THRESH': 0.98}]
+2026-10-04 13:20:48,576   INFO  cfg.DATA_CONFIG.TEST_DATA_AUGMENTOR: [{'NAME': 'random_crop', 'MIN_REL_X': 0, 'MAX_REL_X': 0, 'MIN_REL_Y': 1.0, 'MAX_REL_Y': 1.0, 'MAX_CROP_H': 320, 'MAX_CROP_W': 1280}]
+2026-10-04 13:20:48,577   INFO  
+cfg.DATA_CONFIG.POINT_FEATURE_ENCODING = edict()
+2026-10-04 13:20:48,577   INFO  cfg.DATA_CONFIG.POINT_FEATURE_ENCODING.encoding_type: absolute_coordinates_encoding
+2026-10-04 13:20:48,577   INFO  cfg.DATA_CONFIG.POINT_FEATURE_ENCODING.used_feature_list: ['x', 'y', 'z']
+2026-10-04 13:20:48,578   INFO  cfg.DATA_CONFIG.POINT_FEATURE_ENCODING.src_feature_list: ['x', 'y', 'z']
+2026-10-04 13:20:48,578   INFO  cfg.DATA_CONFIG.DATA_PROCESSOR: [{'NAME': 'mask_points_and_boxes_outside_range', 'REMOVE_OUTSIDE_BOXES': True}, {'NAME': 'transform_points_to_voxels', 'VOXEL_SIZE': [0.05, 0.05, 0.1], 'MAX_POINTS_PER_VOXEL': 5, 'MAX_NUMBER_OF_VOXELS': {'train': 40000, 'test': 40000}}]
+2026-10-04 13:20:48,579   INFO  cfg.DATA_CONFIG._BASE_CONFIG_: ./configs/stereo/dataset_configs/kitti_dataset_fused.yaml
+2026-10-04 13:20:48,579   INFO  
+cfg.MODEL = edict()
+2026-10-04 13:20:48,580   INFO  
+cfg.MODEL.BACKBONE_2D = edict()
+2026-10-04 13:20:48,580   INFO  cfg.MODEL.BACKBONE_2D.GN: True
+2026-10-04 13:20:48,580   INFO  cfg.MODEL.BACKBONE_2D.NAME: HgBEVBackbone
+2026-10-04 13:20:48,581   INFO  cfg.MODEL.BACKBONE_2D.num_channels: 64
+2026-10-04 13:20:48,581   INFO  
+cfg.MODEL.BACKBONE_3D = edict()
+2026-10-04 13:20:48,581   INFO  cfg.MODEL.BACKBONE_3D.GN: True
+2026-10-04 13:20:48,582   INFO  cfg.MODEL.BACKBONE_3D.NAME: LigaBackbone
+2026-10-04 13:20:48,582   INFO  
+cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK = edict()
+2026-10-04 13:20:48,582   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.allocation: uniform
+2026-10-04 13:20:48,583   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.appearance_stride: 4
+2026-10-04 13:20:48,583   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.boundary: raw_cost
+2026-10-04 13:20:48,583   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.channel: identity
+2026-10-04 13:20:48,584   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.complex_width: 4
+2026-10-04 13:20:48,584   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.enabled: False
+2026-10-04 13:20:48,584   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.geometry_stride: [8, 4, 4]
+2026-10-04 13:20:48,585   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.pilots: 8
+2026-10-04 13:20:48,585   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.posterior_hidden: 16
+2026-10-04 13:20:48,585   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.posterior_weight: 0.1
+2026-10-04 13:20:48,585   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.sensitivity_weight: 0.1
+2026-10-04 13:20:48,586   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.snr_db: 10.0
+2026-10-04 13:20:48,586   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.task_sensitivity: True
+2026-10-04 13:20:48,586   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.train_snr_max: 20.0
+2026-10-04 13:20:48,587   INFO  cfg.MODEL.BACKBONE_3D.SEMANTIC_LINK.train_snr_min: -5.0
+2026-10-04 13:20:48,587   INFO  
+cfg.MODEL.BACKBONE_3D.STUDENT_ENCODER = edict()
+2026-10-04 13:20:48,588   INFO  cfg.MODEL.BACKBONE_3D.STUDENT_ENCODER.distill_weight: 0.0
+2026-10-04 13:20:48,588   INFO  cfg.MODEL.BACKBONE_3D.STUDENT_ENCODER.enabled: True
+2026-10-04 13:20:48,588   INFO  cfg.MODEL.BACKBONE_3D.STUDENT_ENCODER.allow_uncompressed_diagnostic: False
+2026-10-04 13:20:48,589   INFO  cfg.MODEL.BACKBONE_3D.cat_img_feature: True
+2026-10-04 13:20:48,589   INFO  cfg.MODEL.BACKBONE_3D.cost_volume: [{'downsample': 4, 'type': 'concat'}]
+2026-10-04 13:20:48,589   INFO  cfg.MODEL.BACKBONE_3D.cv_dim: 32
+2026-10-04 13:20:48,590   INFO  cfg.MODEL.BACKBONE_3D.downsample_disp: 4
+2026-10-04 13:20:48,590   INFO  cfg.MODEL.BACKBONE_3D.downsampled_depth_offset: 0.5
+2026-10-04 13:20:48,590   INFO  
+cfg.MODEL.BACKBONE_3D.feature_backbone = edict()
+2026-10-04 13:20:48,591   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.base_channels: 64
+2026-10-04 13:20:48,591   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.block_with_final_relu: False
+2026-10-04 13:20:48,592   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.deep_stem: False
+2026-10-04 13:20:48,592   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.depth: 34
+2026-10-04 13:20:48,592   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.dilations: [1, 1, 2, 4]
+2026-10-04 13:20:48,593   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.frozen_stages: -1
+2026-10-04 13:20:48,593   INFO  
+cfg.MODEL.BACKBONE_3D.feature_backbone.norm_cfg = edict()
+2026-10-04 13:20:48,594   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.norm_cfg.requires_grad: True
+2026-10-04 13:20:48,594   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.norm_cfg.type: BN
+2026-10-04 13:20:48,594   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.norm_eval: False
+2026-10-04 13:20:48,595   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.num_channels_factor: [1, 2, 2, 2]
+2026-10-04 13:20:48,595   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.num_stages: 4
+2026-10-04 13:20:48,595   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.out_indices: [0, 1, 2, 3]
+2026-10-04 13:20:48,596   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.strides: [1, 2, 1, 1]
+2026-10-04 13:20:48,596   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.style: pytorch
+2026-10-04 13:20:48,596   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.type: ResNet
+2026-10-04 13:20:48,597   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone.with_max_pool: False
+2026-10-04 13:20:48,597   INFO  cfg.MODEL.BACKBONE_3D.feature_backbone_pretrained: torchvision://resnet34
+2026-10-04 13:20:48,598   INFO  
+cfg.MODEL.BACKBONE_3D.feature_neck = edict()
+2026-10-04 13:20:48,598   INFO  cfg.MODEL.BACKBONE_3D.feature_neck.GN: True
+2026-10-04 13:20:48,598   INFO  cfg.MODEL.BACKBONE_3D.feature_neck.cat_img_feature: True
+2026-10-04 13:20:48,598   INFO  cfg.MODEL.BACKBONE_3D.feature_neck.in_dims: [3, 64, 128, 128, 128]
+2026-10-04 13:20:48,599   INFO  cfg.MODEL.BACKBONE_3D.feature_neck.sem_dim: [128, 32]
+2026-10-04 13:20:48,599   INFO  cfg.MODEL.BACKBONE_3D.feature_neck.start_level: 2
+2026-10-04 13:20:48,599   INFO  cfg.MODEL.BACKBONE_3D.feature_neck.stereo_dim: [32, 32]
+2026-10-04 13:20:48,599   INFO  cfg.MODEL.BACKBONE_3D.feature_neck.with_upconv: True
+2026-10-04 13:20:48,600   INFO  cfg.MODEL.BACKBONE_3D.img_feature_attentionbydisp: True
+2026-10-04 13:20:48,600   INFO  cfg.MODEL.BACKBONE_3D.maxdisp: 288
+2026-10-04 13:20:48,600   INFO  cfg.MODEL.BACKBONE_3D.num_3dconvs: 1
+2026-10-04 13:20:48,600   INFO  cfg.MODEL.BACKBONE_3D.num_hg: 1
+2026-10-04 13:20:48,600   INFO  cfg.MODEL.BACKBONE_3D.rpn3d_dim: 32
+2026-10-04 13:20:48,601   INFO  
+cfg.MODEL.BACKBONE_3D.sem_neck = edict()
+2026-10-04 13:20:48,601   INFO  cfg.MODEL.BACKBONE_3D.sem_neck.add_extra_convs: on_output
+2026-10-04 13:20:48,601   INFO  cfg.MODEL.BACKBONE_3D.sem_neck.in_channels: [32]
+2026-10-04 13:20:48,602   INFO  cfg.MODEL.BACKBONE_3D.sem_neck.num_outs: 5
+2026-10-04 13:20:48,602   INFO  cfg.MODEL.BACKBONE_3D.sem_neck.out_channels: 64
+2026-10-04 13:20:48,603   INFO  cfg.MODEL.BACKBONE_3D.sem_neck.start_level: 0
+2026-10-04 13:20:48,603   INFO  cfg.MODEL.BACKBONE_3D.sem_neck.type: FPN
+2026-10-04 13:20:48,603   INFO  cfg.MODEL.BACKBONE_3D.use_stereo_out_type: feature
+2026-10-04 13:20:48,604   INFO  cfg.MODEL.BACKBONE_3D.voxel_attentionbydisp: False
+2026-10-04 13:20:48,604   INFO  
+cfg.MODEL.BACKBONE_3D.STEREO_FEATURE_LINK = edict()
+2026-10-04 13:20:48,605   INFO  cfg.MODEL.BACKBONE_3D.STEREO_FEATURE_LINK.enabled: True
+2026-10-04 13:20:48,605   INFO  cfg.MODEL.BACKBONE_3D.STEREO_FEATURE_LINK.channel: awgn
+2026-10-04 13:20:48,605   INFO  cfg.MODEL.BACKBONE_3D.STEREO_FEATURE_LINK.snr_db: 10.0
+2026-10-04 13:20:48,606   INFO  cfg.MODEL.BACKBONE_3D.STEREO_FEATURE_LINK.pilots: 8
+2026-10-04 13:20:48,606   INFO  
+cfg.MODEL.DENSE_HEAD = edict()
+2026-10-04 13:20:48,607   INFO  cfg.MODEL.DENSE_HEAD.ANCHOR_GENERATOR_CONFIG: [{'align_center': False, 'anchor_bottom_heights': [-1.78], 'anchor_rotations': [0, 1.57], 'anchor_sizes': [[3.9, 1.6, 1.56]], 'class_name': 'Car', 'feature_map_stride': 1, 'matched_threshold': 0.6, 'unmatched_threshold': 0.45}, {'align_center': False, 'anchor_bottom_heights': [-0.6], 'anchor_rotations': [0, 1.57], 'anchor_sizes': [[0.8, 0.6, 1.73]], 'class_name': 'Pedestrian', 'feature_map_stride': 1, 'matched_threshold': 0.5, 'unmatched_threshold': 0.35}, {'align_center': False, 'anchor_bottom_heights': [-0.6], 'anchor_rotations': [0, 1.57], 'anchor_sizes': [[1.76, 0.6, 1.73]], 'class_name': 'Cyclist', 'feature_map_stride': 1, 'matched_threshold': 0.5, 'unmatched_threshold': 0.35}]
+2026-10-04 13:20:48,607   INFO  cfg.MODEL.DENSE_HEAD.CLAMP_VALUE: 10.0
+2026-10-04 13:20:48,607   INFO  cfg.MODEL.DENSE_HEAD.CLASS_AGNOSTIC: False
+2026-10-04 13:20:48,608   INFO  cfg.MODEL.DENSE_HEAD.DIR_LIMIT_OFFSET: 0.0
+2026-10-04 13:20:48,608   INFO  cfg.MODEL.DENSE_HEAD.DIR_OFFSET: 0.78539
+2026-10-04 13:20:48,608   INFO  cfg.MODEL.DENSE_HEAD.GN: True
+2026-10-04 13:20:48,609   INFO  
+cfg.MODEL.DENSE_HEAD.LOSS_CONFIG = edict()
+2026-10-04 13:20:48,609   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.IMITATION_LOSS_TYPE: WeightedL2WithSigmaLoss
+2026-10-04 13:20:48,609   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.IOU_LOSS_TYPE: IOU3dLoss
+2026-10-04 13:20:48,610   INFO  
+cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS = edict()
+2026-10-04 13:20:48,610   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.cls_weight: 1.0
+2026-10-04 13:20:48,610   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.code_weights: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+2026-10-04 13:20:48,611   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.dir_weight: 0.2
+2026-10-04 13:20:48,611   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.imitation_weight: 1.0
+2026-10-04 13:20:48,612   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.iou_weight: 1.0
+2026-10-04 13:20:48,612   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.LOSS_WEIGHTS.loc_weight: 0.5
+2026-10-04 13:20:48,612   INFO  cfg.MODEL.DENSE_HEAD.LOSS_CONFIG.REG_LOSS_TYPE: WeightedSmoothL1Loss
+2026-10-04 13:20:48,613   INFO  cfg.MODEL.DENSE_HEAD.NAME: DetHead
+2026-10-04 13:20:48,613   INFO  cfg.MODEL.DENSE_HEAD.NUM_CONVS: 2
+2026-10-04 13:20:48,613   INFO  cfg.MODEL.DENSE_HEAD.NUM_DIR_BINS: 2
+2026-10-04 13:20:48,614   INFO  
+cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG = edict()
+2026-10-04 13:20:48,614   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.BOX_CODER: ResidualCoder
+2026-10-04 13:20:48,614   INFO  
+cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.BOX_CODER_CONFIG = edict()
+2026-10-04 13:20:48,615   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.BOX_CODER_CONFIG.div_by_diagonal: True
+2026-10-04 13:20:48,615   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.BOX_CODER_CONFIG.use_corners: False
+2026-10-04 13:20:48,615   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.BOX_CODER_CONFIG.use_tanh: False
+2026-10-04 13:20:48,616   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.MATCH_HEIGHT: False
+2026-10-04 13:20:48,616   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.NAME: AxisAlignedTargetAssigner
+2026-10-04 13:20:48,616   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.NORM_BY_NUM_EXAMPLES: False
+2026-10-04 13:20:48,617   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.POS_FRACTION: -1.0
+2026-10-04 13:20:48,617   INFO  cfg.MODEL.DENSE_HEAD.TARGET_ASSIGNER_CONFIG.SAMPLE_SIZE: 512
+2026-10-04 13:20:48,618   INFO  cfg.MODEL.DENSE_HEAD.USE_DIRECTION_CLASSIFIER: True
+2026-10-04 13:20:48,618   INFO  cfg.MODEL.DENSE_HEAD.do_feature_imitation: True
+2026-10-04 13:20:48,619   INFO  cfg.MODEL.DENSE_HEAD.hwl_for_angles: True
+2026-10-04 13:20:48,619   INFO  cfg.MODEL.DENSE_HEAD.imitation_cfg: [{'channel': 64, 'ksize': 1, 'layer': 'conv2d', 'lidar_feature_layer': 'spatial_features_2d', 'mode': 'inbox', 'normalize': 'cw_scale', 'stereo_feature_layer': 'spatial_features_2d', 'use_relu': False}, {'channel': 32, 'ksize': 1, 'layer': 'conv3d', 'lidar_feature_layer': 'volume_features', 'mode': 'inbox', 'normalize': 'cw_scale', 'stereo_feature_layer': 'volume_features', 'use_relu': False}]
+2026-10-04 13:20:48,619   INFO  cfg.MODEL.DENSE_HEAD.xyz_for_angles: True
+2026-10-04 13:20:48,620   INFO  
+cfg.MODEL.DENSE_HEAD_2D = edict()
+2026-10-04 13:20:48,620   INFO  cfg.MODEL.DENSE_HEAD_2D.NAME: MMDet2DHead
+2026-10-04 13:20:48,621   INFO  
+cfg.MODEL.DENSE_HEAD_2D.cfg = edict()
+2026-10-04 13:20:48,621   INFO  
+cfg.MODEL.DENSE_HEAD_2D.cfg.anchor_generator = edict()
+2026-10-04 13:20:48,621   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.anchor_generator.octave_base_scale: 16
+2026-10-04 13:20:48,622   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.anchor_generator.ratios: [1.0]
+2026-10-04 13:20:48,622   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.anchor_generator.scales_per_octave: 1
+2026-10-04 13:20:48,622   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.anchor_generator.strides: [4, 8, 16, 32, 64]
+2026-10-04 13:20:48,623   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.anchor_generator.type: AnchorGenerator
+2026-10-04 13:20:48,623   INFO  
+cfg.MODEL.DENSE_HEAD_2D.cfg.bbox_coder = edict()
+2026-10-04 13:20:48,623   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.bbox_coder.target_means: [0.0, 0.0, 0.0, 0.0]
+2026-10-04 13:20:48,624   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.bbox_coder.target_stds: [0.1, 0.1, 0.2, 0.2]
+2026-10-04 13:20:48,624   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.bbox_coder.type: DeltaXYWHBBoxCoder
+2026-10-04 13:20:48,624   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.feat_channels: 64
+2026-10-04 13:20:48,625   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.in_channels: 64
+2026-10-04 13:20:48,625   INFO  
+cfg.MODEL.DENSE_HEAD_2D.cfg.loss_bbox = edict()
+2026-10-04 13:20:48,626   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.loss_bbox.loss_weight: 2.0
+2026-10-04 13:20:48,626   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.loss_bbox.type: GIoULoss
+2026-10-04 13:20:48,626   INFO  
+cfg.MODEL.DENSE_HEAD_2D.cfg.loss_centerness = edict()
+2026-10-04 13:20:48,627   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.loss_centerness.loss_weight: 1.0
+2026-10-04 13:20:48,627   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.loss_centerness.type: CrossEntropyLoss
+2026-10-04 13:20:48,627   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.loss_centerness.use_sigmoid: True
+2026-10-04 13:20:48,628   INFO  
+cfg.MODEL.DENSE_HEAD_2D.cfg.loss_cls = edict()
+2026-10-04 13:20:48,628   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.loss_cls.alpha: 0.25
+2026-10-04 13:20:48,629   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.loss_cls.gamma: 2.0
+2026-10-04 13:20:48,629   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.loss_cls.loss_weight: 1.0
+2026-10-04 13:20:48,629   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.loss_cls.type: FocalLoss
+2026-10-04 13:20:48,630   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.loss_cls.use_sigmoid: True
+2026-10-04 13:20:48,630   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.num_classes: 3
+2026-10-04 13:20:48,630   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.num_extra_reg_channel: 0
+2026-10-04 13:20:48,631   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.reg_class_agnostic: False
+2026-10-04 13:20:48,631   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.seperate_extra_reg_branch: False
+2026-10-04 13:20:48,631   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.stacked_convs: 4
+2026-10-04 13:20:48,632   INFO  
+cfg.MODEL.DENSE_HEAD_2D.cfg.test_cfg = edict()
+2026-10-04 13:20:48,632   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.test_cfg.max_per_img: 100
+2026-10-04 13:20:48,632   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.test_cfg.min_bbox_size: 0
+2026-10-04 13:20:48,632   INFO  
+cfg.MODEL.DENSE_HEAD_2D.cfg.test_cfg.nms = edict()
+2026-10-04 13:20:48,633   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.test_cfg.nms.iou_threshold: 0.6
+2026-10-04 13:20:48,633   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.test_cfg.nms.type: nms
+2026-10-04 13:20:48,633   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.test_cfg.nms_pre: 1000
+2026-10-04 13:20:48,634   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.test_cfg.score_thr: 0.05
+2026-10-04 13:20:48,634   INFO  
+cfg.MODEL.DENSE_HEAD_2D.cfg.train_cfg = edict()
+2026-10-04 13:20:48,635   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.train_cfg.allowed_border: -1
+2026-10-04 13:20:48,635   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.train_cfg.append_3d_centers: True
+2026-10-04 13:20:48,636   INFO  
+cfg.MODEL.DENSE_HEAD_2D.cfg.train_cfg.assigner = edict()
+2026-10-04 13:20:48,636   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.train_cfg.assigner.topk: 9
+2026-10-04 13:20:48,637   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.train_cfg.assigner.type: ATSS3DCenterAssigner
+2026-10-04 13:20:48,637   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.train_cfg.debug: False
+2026-10-04 13:20:48,637   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.train_cfg.pos_weight: -1
+2026-10-04 13:20:48,638   INFO  cfg.MODEL.DENSE_HEAD_2D.cfg.type: ATSSAdvHead
+2026-10-04 13:20:48,638   INFO  cfg.MODEL.DENSE_HEAD_2D.use_3d_center: True
+2026-10-04 13:20:48,639   INFO  
+cfg.MODEL.DEPTH_LOSS_HEAD = edict()
+2026-10-04 13:20:48,639   INFO  
+cfg.MODEL.DEPTH_LOSS_HEAD.LOSS_TYPE = edict()
+2026-10-04 13:20:48,639   INFO  cfg.MODEL.DEPTH_LOSS_HEAD.LOSS_TYPE.ce: 1.0
+2026-10-04 13:20:48,640   INFO  cfg.MODEL.DEPTH_LOSS_HEAD.WEIGHTS: [1.0]
+2026-10-04 13:20:48,640   INFO  
+cfg.MODEL.LIDAR_MODEL = edict()
+2026-10-04 13:20:48,641   INFO  
+cfg.MODEL.LIDAR_MODEL.BACKBONE_2D = edict()
+2026-10-04 13:20:48,641   INFO  cfg.MODEL.LIDAR_MODEL.BACKBONE_2D.GN: False
+2026-10-04 13:20:48,641   INFO  cfg.MODEL.LIDAR_MODEL.BACKBONE_2D.NAME: HgBEVBackbone
+2026-10-04 13:20:48,642   INFO  cfg.MODEL.LIDAR_MODEL.BACKBONE_2D.num_channels: 64
+2026-10-04 13:20:48,642   INFO  
+cfg.MODEL.LIDAR_MODEL.BACKBONE_3D = edict()
+2026-10-04 13:20:48,642   INFO  cfg.MODEL.LIDAR_MODEL.BACKBONE_3D.NAME: VoxelBackBone4xNoFinalBnReLU
+2026-10-04 13:20:48,642   INFO  
+cfg.MODEL.LIDAR_MODEL.MAP_TO_BEV = edict()
+2026-10-04 13:20:48,643   INFO  cfg.MODEL.LIDAR_MODEL.MAP_TO_BEV.NAME: HeightCompression
+2026-10-04 13:20:48,643   INFO  cfg.MODEL.LIDAR_MODEL.MAP_TO_BEV.NUM_BEV_FEATURES: 160
+2026-10-04 13:20:48,643   INFO  cfg.MODEL.LIDAR_MODEL.NAME: SECONDNet
+2026-10-04 13:20:48,643   INFO  cfg.MODEL.LIDAR_MODEL.PRETRAINED_MODEL: ./ckpt/second_s4_hg.iouloss.ep78.backbone-no-final-bnrelu.input-only-xyz.default-lr-policy-with-wd-decay-78ep.pth
+2026-10-04 13:20:48,644   INFO  cfg.MODEL.LIDAR_MODEL.RETURN_BATCH_DICT: True
+2026-10-04 13:20:48,644   INFO  
+cfg.MODEL.LIDAR_MODEL.VFE = edict()
+2026-10-04 13:20:48,644   INFO  cfg.MODEL.LIDAR_MODEL.VFE.NAME: MeanVFE
+2026-10-04 13:20:48,645   INFO  
+cfg.MODEL.MAP_TO_BEV = edict()
+2026-10-04 13:20:48,645   INFO  cfg.MODEL.MAP_TO_BEV.NAME: HeightCompression
+2026-10-04 13:20:48,645   INFO  cfg.MODEL.MAP_TO_BEV.NUM_BEV_FEATURES: 160
+2026-10-04 13:20:48,645   INFO  cfg.MODEL.MAP_TO_BEV.SPARSE_INPUT: False
+2026-10-04 13:20:48,646   INFO  cfg.MODEL.NAME: stereo_LIGA
+2026-10-04 13:20:48,646   INFO  
+cfg.MODEL.POST_PROCESSING = edict()
+2026-10-04 13:20:48,646   INFO  cfg.MODEL.POST_PROCESSING.EVAL_METRIC: kitti
+2026-10-04 13:20:48,646   INFO  
+cfg.MODEL.POST_PROCESSING.NMS_CONFIG = edict()
+2026-10-04 13:20:48,647   INFO  cfg.MODEL.POST_PROCESSING.NMS_CONFIG.MULTI_CLASSES_NMS: True
+2026-10-04 13:20:48,647   INFO  cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_POST_MAXSIZE: 500
+2026-10-04 13:20:48,647   INFO  cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_PRE_MAXSIZE: 4096
+2026-10-04 13:20:48,647   INFO  cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_THRESH: 0.25
+2026-10-04 13:20:48,648   INFO  cfg.MODEL.POST_PROCESSING.NMS_CONFIG.NMS_TYPE: nms_gpu
+2026-10-04 13:20:48,648   INFO  cfg.MODEL.POST_PROCESSING.OUTPUT_RAW_SCORE: False
+2026-10-04 13:20:48,648   INFO  cfg.MODEL.POST_PROCESSING.RECALL_THRESH_LIST: [0.3, 0.5, 0.7]
+2026-10-04 13:20:48,648   INFO  cfg.MODEL.POST_PROCESSING.SCORE_THRESH: 0.1
+2026-10-04 13:20:48,649   INFO  
+cfg.OPTIMIZATION = edict()
+2026-10-04 13:20:48,649   INFO  cfg.OPTIMIZATION.BATCH_SIZE_PER_GPU: 1
+2026-10-04 13:20:48,649   INFO  cfg.OPTIMIZATION.DECAY_STEP_LIST: []
+2026-10-04 13:20:48,650   INFO  cfg.OPTIMIZATION.DIV_FACTOR: 10
+2026-10-04 13:20:48,650   INFO  cfg.OPTIMIZATION.GRAD_NORM_CLIP: 10
+2026-10-04 13:20:48,651   INFO  cfg.OPTIMIZATION.LR: 0.0001
+2026-10-04 13:20:48,651   INFO  cfg.OPTIMIZATION.LR_CLIP: 1e-07
+2026-10-04 13:20:48,651   INFO  cfg.OPTIMIZATION.LR_DECAY: 0.1
+2026-10-04 13:20:48,652   INFO  cfg.OPTIMIZATION.LR_WARMUP: False
+2026-10-04 13:20:48,652   INFO  cfg.OPTIMIZATION.MOMENTUM: 0.9
+2026-10-04 13:20:48,653   INFO  cfg.OPTIMIZATION.NUM_EPOCHS: 1
+2026-10-04 13:20:48,653   INFO  cfg.OPTIMIZATION.OPTIMIZER: adamw
+2026-10-04 13:20:48,653   INFO  cfg.OPTIMIZATION.WARMUP_EPOCH: 1
+2026-10-04 13:20:48,654   INFO  cfg.OPTIMIZATION.WEIGHT_DECAY: 0.0001
+2026-10-04 13:20:48,654   INFO  cfg.TAG: stereo_feature_awgn_holdout
+2026-10-04 13:20:48,655   INFO  cfg.EXP_GROUP_PATH: home_sheng_paper6_configs_diagnostic
+2026-10-04 13:20:48,656   INFO  boxes_gt_in_cam2_view False
+2026-10-04 13:20:48,659   INFO  Loading KITTI dataset
+2026-10-04 13:20:48,674   INFO  Total samples for KITTI dataset: 372
+2026-10-04 13:20:48,688   INFO  ==> Loading parameters from checkpoint ./ckpt/second_s4_hg.iouloss.ep78.backbone-no-final-bnrelu.input-only-xyz.default-lr-policy-with-wd-decay-78ep.pth to CPU
+/home/sheng/paper6/third_party/LIGA-Stereo/liga/models/detectors_lidar/lidar_detector3d_template.py:297: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(filename, map_location=loc_type)
+2026-10-04 13:20:48,704   INFO  ==> Checkpoint trained from version: liga+0.1.0+7aa7b92+py60b444b
+2026-10-04 13:20:48,755   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.0.weight: torch.Size([64, 64, 3, 3])
+2026-10-04 13:20:48,756   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.1.weight: torch.Size([64])
+2026-10-04 13:20:48,756   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.1.bias: torch.Size([64])
+2026-10-04 13:20:48,756   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.1.running_mean: torch.Size([64])
+2026-10-04 13:20:48,757   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.1.running_var: torch.Size([64])
+2026-10-04 13:20:48,757   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.1.num_batches_tracked: torch.Size([])
+2026-10-04 13:20:48,758   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.0.weight: torch.Size([64, 64, 3, 3])
+2026-10-04 13:20:48,758   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.1.weight: torch.Size([64])
+2026-10-04 13:20:48,759   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.1.bias: torch.Size([64])
+2026-10-04 13:20:48,759   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.1.running_mean: torch.Size([64])
+2026-10-04 13:20:48,759   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.1.running_var: torch.Size([64])
+2026-10-04 13:20:48,760   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.1.num_batches_tracked: torch.Size([])
+2026-10-04 13:20:48,760   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.0.weight: torch.Size([64, 64, 3, 3])
+2026-10-04 13:20:48,760   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.1.weight: torch.Size([64])
+2026-10-04 13:20:48,761   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.1.bias: torch.Size([64])
+2026-10-04 13:20:48,761   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.1.running_mean: torch.Size([64])
+2026-10-04 13:20:48,762   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.1.running_var: torch.Size([64])
+2026-10-04 13:20:48,762   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.1.num_batches_tracked: torch.Size([])
+2026-10-04 13:20:48,762   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.0.weight: torch.Size([64, 64, 3, 3])
+2026-10-04 13:20:48,763   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.1.weight: torch.Size([64])
+2026-10-04 13:20:48,763   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.1.bias: torch.Size([64])
+2026-10-04 13:20:48,763   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.1.running_mean: torch.Size([64])
+2026-10-04 13:20:48,764   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.1.running_var: torch.Size([64])
+2026-10-04 13:20:48,764   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.1.num_batches_tracked: torch.Size([])
+2026-10-04 13:20:48,765   INFO  Not Loaded weight dense_head.conv_cls.weight: torch.Size([18, 64, 3, 3])
+2026-10-04 13:20:48,765   INFO  Not Loaded weight dense_head.conv_cls.bias: torch.Size([18])
+2026-10-04 13:20:48,765   INFO  Not Loaded weight dense_head.conv_box.weight: torch.Size([42, 64, 3, 3])
+2026-10-04 13:20:48,766   INFO  Not Loaded weight dense_head.conv_box.bias: torch.Size([42])
+2026-10-04 13:20:48,766   INFO  Not Loaded weight dense_head.conv_dir_cls.weight: torch.Size([12, 64, 1, 1])
+2026-10-04 13:20:48,767   INFO  Not Loaded weight dense_head.conv_dir_cls.bias: torch.Size([12])
+2026-10-04 13:20:48,768   INFO  ==> Done (loaded 110/110)
+stereo volume depth range: 2.0 -> 59.599998474121094, interval 0.19999999470180935
+/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/torch/functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3595.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+2026-10-04 13:20:48,828 - mmdet - INFO - load checkpoint from torchvision path: torchvision://resnet34
+2026-10-04 13:20:48,871 - mmdet - WARNING - The model and loaded state dict do not match exactly
+
+size mismatch for layer3.0.conv1.weight: copying a param with shape torch.Size([256, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.0.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.0.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.1.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.1.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.2.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.2.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.3.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.3.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.4.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.4.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.5.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.5.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.conv1.weight: copying a param with shape torch.Size([512, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.0.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.conv2.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.0.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.conv1.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.1.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.conv2.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.1.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.conv1.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.2.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.conv2.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.2.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+unexpected key in source state_dict: fc.weight, fc.bias, layer3.0.downsample.0.weight, layer3.0.downsample.1.running_mean, layer3.0.downsample.1.running_var, layer3.0.downsample.1.weight, layer3.0.downsample.1.bias, layer4.0.downsample.0.weight, layer4.0.downsample.1.running_mean, layer4.0.downsample.1.running_var, layer4.0.downsample.1.weight, layer4.0.downsample.1.bias
+
+2026-10-04 13:20:49,612   INFO  ==> Loading parameters from checkpoint /mnt/d/paper6/runs/stereo-channel-native-seed17-001-awgn/checkpoint_epoch_1.pth to CPU
+/home/sheng/paper6/third_party/LIGA-Stereo/liga/models/detectors_stereo/stereo_detector3d_template.py:342: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(filename, map_location=loc_type)
+2026-10-04 13:20:49,797   INFO  ==> Checkpoint trained from version: F7-matched-native3D-codec-adaptation
+2026-10-04 13:20:50,820   INFO  ==> Done (loaded 535/535)
+2026-10-04 13:20:50,894   INFO  *************** EPOCH 1 EVALUATION *****************
+eval:   0%|          | 0/372 [00:00<?, ?it/s]/home/sheng/paper6/.venv/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/home/sheng/paper6/third_party/LIGA-Stereo/liga/models/backbones_3d_stereo/liga_backbone.py:293: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  calibs_Proj = torch.as_tensor(
+/home/sheng/paper6/third_party/LIGA-Stereo/liga/ops/iou3d_nms/iou3d_nms_utils.py:70: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  overlaps_bev = torch.cuda.FloatTensor(torch.Size((boxes_a.shape[0], boxes_b.shape[0]))).zero_()  # (N, M)
+eval:   0%|          | 0/372 [00:24<?, ?it/s, recall_0.3=(0, 4) / 7]eval:   0%|          | 1/372 [00:24<2:32:48, 24.71s/it, recall_0.3=(0, 4) / 7]eval:   0%|          | 1/372 [00:24<2:32:48, 24.71s/it, recall_0.3=(0, 5) / 8]eval:   1%|          | 2/372 [00:24<1:03:45, 10.34s/it, recall_0.3=(0, 5) / 8]eval:   1%|          | 2/372 [00:25<1:03:45, 10.34s/it, recall_0.3=(0, 6) / 9]eval:   1%|          | 3/372 [00:25<35:10,  5.72s/it, recall_0.3=(0, 6) / 9]  eval:   1%|          | 3/372 [00:25<35:10,  5.72s/it, recall_0.3=(0, 6) / 10]eval:   1%|          | 4/372 [00:25<21:44,  3.54s/it, recall_0.3=(0, 6) / 10]eval:   1%|          | 4/372 [00:25<21:44,  3.54s/it, recall_0.3=(0, 13) / 20]eval:   1%|▏         | 5/372 [00:25<14:22,  2.35s/it, recall_0.3=(0, 13) / 20]eval:   1%|▏         | 5/372 [00:25<14:22,  2.35s/it, recall_0.3=(0, 14) / 21]eval:   2%|▏         | 6/372 [00:25<09:54,  1.63s/it, recall_0.3=(0, 14) / 21]eval:   2%|▏         | 6/372 [00:26<09:54,  1.63s/it, recall_0.3=(0, 16) / 29]eval:   2%|▏         | 7/372 [00:26<07:07,  1.17s/it, recall_0.3=(0, 16) / 29]eval:   2%|▏         | 7/372 [00:26<07:07,  1.17s/it, recall_0.3=(0, 17) / 33]eval:   2%|▏         | 8/372 [00:26<05:15,  1.15it/s, recall_0.3=(0, 17) / 33]eval:   2%|▏         | 8/372 [00:26<05:15,  1.15it/s, recall_0.3=(0, 25) / 42]eval:   2%|▏         | 9/372 [00:26<04:02,  1.50it/s, recall_0.3=(0, 25) / 42]eval:   2%|▏         | 9/372 [00:26<04:02,  1.50it/s, recall_0.3=(0, 25) / 43]eval:   3%|▎         | 10/372 [00:26<03:10,  1.90it/s, recall_0.3=(0, 25) / 43]eval:   3%|▎         | 10/372 [00:27<03:10,  1.90it/s, recall_0.3=(0, 27) / 45]eval:   3%|▎         | 11/372 [00:27<02:38,  2.28it/s, recall_0.3=(0, 27) / 45]eval:   3%|▎         | 11/372 [00:27<02:38,  2.28it/s, recall_0.3=(0, 28) / 46]eval:   3%|▎         | 12/372 [00:27<02:16,  2.65it/s, recall_0.3=(0, 28) / 46]eval:   3%|▎         | 12/372 [00:27<02:16,  2.65it/s, recall_0.3=(0, 29) / 47]eval:   3%|▎         | 13/372 [00:27<01:56,  3.07it/s, recall_0.3=(0, 29) / 47]eval:   3%|▎         | 13/372 [00:27<01:56,  3.07it/s, recall_0.3=(0, 30) / 53]eval:   4%|▍         | 14/372 [00:27<01:47,  3.33it/s, recall_0.3=(0, 30) / 53]eval:   4%|▍         | 14/372 [00:27<01:47,  3.33it/s, recall_0.3=(0, 30) / 54]eval:   4%|▍         | 15/372 [00:27<01:37,  3.65it/s, recall_0.3=(0, 30) / 54]eval:   4%|▍         | 15/372 [00:28<01:37,  3.65it/s, recall_0.3=(0, 33) / 62]eval:   4%|▍         | 16/372 [00:28<01:31,  3.89it/s, recall_0.3=(0, 33) / 62]eval:   4%|▍         | 16/372 [00:28<01:31,  3.89it/s, recall_0.3=(0, 34) / 63]eval:   5%|▍         | 17/372 [00:28<01:27,  4.04it/s, recall_0.3=(0, 34) / 63]eval:   5%|▍         | 17/372 [00:28<01:27,  4.04it/s, recall_0.3=(0, 35) / 65]eval:   5%|▍         | 18/372 [00:28<01:23,  4.23it/s, recall_0.3=(0, 35) / 65]eval:   5%|▍         | 18/372 [00:28<01:23,  4.23it/s, recall_0.3=(0, 40) / 72]eval:   5%|▌         | 19/372 [00:28<01:20,  4.39it/s, recall_0.3=(0, 40) / 72]eval:   5%|▌         | 19/372 [00:28<01:20,  4.39it/s, recall_0.3=(0, 44) / 77]eval:   5%|▌         | 20/372 [00:28<01:17,  4.54it/s, recall_0.3=(0, 44) / 77]eval:   5%|▌         | 20/372 [00:29<01:17,  4.54it/s, recall_0.3=(0, 45) / 87]eval:   6%|▌         | 21/372 [00:29<01:18,  4.47it/s, recall_0.3=(0, 45) / 87]eval:   6%|▌         | 21/372 [00:29<01:18,  4.47it/s, recall_0.3=(0, 51) / 93]eval:   6%|▌         | 22/372 [00:29<01:18,  4.48it/s, recall_0.3=(0, 51) / 93]eval:   6%|▌         | 22/372 [00:29<01:18,  4.48it/s, recall_0.3=(0, 52) / 94]eval:   6%|▌         | 23/372 [00:29<01:17,  4.51it/s, recall_0.3=(0, 52) / 94]eval:   6%|▌         | 23/372 [00:29<01:17,  4.51it/s, recall_0.3=(0, 53) / 95]eval:   6%|▋         | 24/372 [00:29<01:19,  4.40it/s, recall_0.3=(0, 53) / 95]eval:   6%|▋         | 24/372 [00:30<01:19,  4.40it/s, recall_0.3=(0, 55) / 100]eval:   7%|▋         | 25/372 [00:30<01:18,  4.45it/s, recall_0.3=(0, 55) / 100]eval:   7%|▋         | 25/372 [00:30<01:18,  4.45it/s, recall_0.3=(0, 55) / 106]eval:   7%|▋         | 26/372 [00:30<01:19,  4.35it/s, recall_0.3=(0, 55) / 106]eval:   7%|▋         | 26/372 [00:30<01:19,  4.35it/s, recall_0.3=(0, 56) / 107]eval:   7%|▋         | 27/372 [00:30<01:16,  4.49it/s, recall_0.3=(0, 56) / 107]eval:   7%|▋         | 27/372 [00:30<01:16,  4.49it/s, recall_0.3=(0, 59) / 110]eval:   8%|▊         | 28/372 [00:30<01:19,  4.35it/s, recall_0.3=(0, 59) / 110]eval:   8%|▊         | 28/372 [00:30<01:19,  4.35it/s, recall_0.3=(0, 59) / 111]eval:   8%|▊         | 29/372 [00:30<01:15,  4.54it/s, recall_0.3=(0, 59) / 111]eval:   8%|▊         | 29/372 [00:31<01:15,  4.54it/s, recall_0.3=(0, 60) / 112]eval:   8%|▊         | 30/372 [00:31<01:15,  4.51it/s, recall_0.3=(0, 60) / 112]eval:   8%|▊         | 30/372 [00:31<01:15,  4.51it/s, recall_0.3=(0, 61) / 114]eval:   8%|▊         | 31/372 [00:31<01:17,  4.40it/s, recall_0.3=(0, 61) / 114]eval:   8%|▊         | 31/372 [00:31<01:17,  4.40it/s, recall_0.3=(0, 62) / 116]eval:   9%|▊         | 32/372 [00:31<01:18,  4.31it/s, recall_0.3=(0, 62) / 116]eval:   9%|▊         | 32/372 [00:31<01:18,  4.31it/s, recall_0.3=(0, 63) / 118]eval:   9%|▉         | 33/372 [00:31<01:18,  4.34it/s, recall_0.3=(0, 63) / 118]eval:   9%|▉         | 33/372 [00:32<01:18,  4.34it/s, recall_0.3=(0, 64) / 119]eval:   9%|▉         | 34/372 [00:32<01:18,  4.31it/s, recall_0.3=(0, 64) / 119]eval:   9%|▉         | 34/372 [00:32<01:18,  4.31it/s, recall_0.3=(0, 65) / 120]eval:   9%|▉         | 35/372 [00:32<01:18,  4.27it/s, recall_0.3=(0, 65) / 120]eval:   9%|▉         | 35/372 [00:32<01:18,  4.27it/s, recall_0.3=(0, 70) / 126]eval:  10%|▉         | 36/372 [00:32<01:18,  4.27it/s, recall_0.3=(0, 70) / 126]eval:  10%|▉         | 36/372 [00:32<01:18,  4.27it/s, recall_0.3=(0, 77) / 139]eval:  10%|▉         | 37/372 [00:32<01:18,  4.25it/s, recall_0.3=(0, 77) / 139]eval:  10%|▉         | 37/372 [00:33<01:18,  4.25it/s, recall_0.3=(0, 80) / 148]eval:  10%|█         | 38/372 [00:33<01:18,  4.27it/s, recall_0.3=(0, 80) / 148]eval:  10%|█         | 38/372 [00:33<01:18,  4.27it/s, recall_0.3=(0, 82) / 150]eval:  10%|█         | 39/372 [00:33<01:14,  4.44it/s, recall_0.3=(0, 82) / 150]eval:  10%|█         | 39/372 [00:33<01:14,  4.44it/s, recall_0.3=(0, 83) / 152]eval:  11%|█         | 40/372 [00:33<01:16,  4.33it/s, recall_0.3=(0, 83) / 152]eval:  11%|█         | 40/372 [00:33<01:16,  4.33it/s, recall_0.3=(0, 83) / 155]eval:  11%|█         | 41/372 [00:33<01:14,  4.46it/s, recall_0.3=(0, 83) / 155]eval:  11%|█         | 41/372 [00:34<01:14,  4.46it/s, recall_0.3=(0, 84) / 156]eval:  11%|█▏        | 42/372 [00:34<01:15,  4.35it/s, recall_0.3=(0, 84) / 156]eval:  11%|█▏        | 42/372 [00:34<01:15,  4.35it/s, recall_0.3=(0, 86) / 160]eval:  12%|█▏        | 43/372 [00:34<01:14,  4.43it/s, recall_0.3=(0, 86) / 160]eval:  12%|█▏        | 43/372 [00:34<01:14,  4.43it/s, recall_0.3=(0, 90) / 167]eval:  12%|█▏        | 44/372 [00:34<01:15,  4.36it/s, recall_0.3=(0, 90) / 167]eval:  12%|█▏        | 44/372 [00:34<01:15,  4.36it/s, recall_0.3=(0, 96) / 173]eval:  12%|█▏        | 45/372 [00:34<01:15,  4.36it/s, recall_0.3=(0, 96) / 173]eval:  12%|█▏        | 45/372 [00:34<01:15,  4.36it/s, recall_0.3=(0, 103) / 183]eval:  12%|█▏        | 46/372 [00:34<01:13,  4.41it/s, recall_0.3=(0, 103) / 183]eval:  12%|█▏        | 46/372 [00:35<01:13,  4.41it/s, recall_0.3=(0, 104) / 188]eval:  13%|█▎        | 47/372 [00:35<01:12,  4.47it/s, recall_0.3=(0, 104) / 188]eval:  13%|█▎        | 47/372 [00:35<01:12,  4.47it/s, recall_0.3=(0, 106) / 193]eval:  13%|█▎        | 48/372 [00:35<01:12,  4.45it/s, recall_0.3=(0, 106) / 193]eval:  13%|█▎        | 48/372 [00:35<01:12,  4.45it/s, recall_0.3=(0, 110) / 198]eval:  13%|█▎        | 49/372 [00:35<01:14,  4.33it/s, recall_0.3=(0, 110) / 198]eval:  13%|█▎        | 49/372 [00:35<01:14,  4.33it/s, recall_0.3=(0, 111) / 200]eval:  13%|█▎        | 50/372 [00:35<01:13,  4.37it/s, recall_0.3=(0, 111) / 200]eval:  13%|█▎        | 50/372 [00:36<01:13,  4.37it/s, recall_0.3=(0, 112) / 201]eval:  14%|█▎        | 51/372 [00:36<01:12,  4.43it/s, recall_0.3=(0, 112) / 201]eval:  14%|█▎        | 51/372 [00:36<01:12,  4.43it/s, recall_0.3=(0, 112) / 202]eval:  14%|█▍        | 52/372 [00:36<01:13,  4.37it/s, recall_0.3=(0, 112) / 202]eval:  14%|█▍        | 52/372 [00:36<01:13,  4.37it/s, recall_0.3=(0, 114) / 205]eval:  14%|█▍        | 53/372 [00:36<01:13,  4.36it/s, recall_0.3=(0, 114) / 205]eval:  14%|█▍        | 53/372 [00:36<01:13,  4.36it/s, recall_0.3=(0, 118) / 217]eval:  15%|█▍        | 54/372 [00:36<01:13,  4.33it/s, recall_0.3=(0, 118) / 217]eval:  15%|█▍        | 54/372 [00:36<01:13,  4.33it/s, recall_0.3=(0, 118) / 221]eval:  15%|█▍        | 55/372 [00:36<01:12,  4.37it/s, recall_0.3=(0, 118) / 221]eval:  15%|█▍        | 55/372 [00:37<01:12,  4.37it/s, recall_0.3=(0, 121) / 225]eval:  15%|█▌        | 56/372 [00:37<01:11,  4.42it/s, recall_0.3=(0, 121) / 225]eval:  15%|█▌        | 56/372 [00:37<01:11,  4.42it/s, recall_0.3=(0, 121) / 226]eval:  15%|█▌        | 57/372 [00:37<01:11,  4.38it/s, recall_0.3=(0, 121) / 226]eval:  15%|█▌        | 57/372 [00:37<01:11,  4.38it/s, recall_0.3=(0, 127) / 232]eval:  16%|█▌        | 58/372 [00:37<01:12,  4.34it/s, recall_0.3=(0, 127) / 232]eval:  16%|█▌        | 58/372 [00:37<01:12,  4.34it/s, recall_0.3=(0, 135) / 244]eval:  16%|█▌        | 59/372 [00:37<01:10,  4.44it/s, recall_0.3=(0, 135) / 244]eval:  16%|█▌        | 59/372 [00:38<01:10,  4.44it/s, recall_0.3=(0, 138) / 248]eval:  16%|█▌        | 60/372 [00:38<01:10,  4.43it/s, recall_0.3=(0, 138) / 248]eval:  16%|█▌        | 60/372 [00:38<01:10,  4.43it/s, recall_0.3=(0, 142) / 257]eval:  16%|█▋        | 61/372 [00:38<01:09,  4.45it/s, recall_0.3=(0, 142) / 257]eval:  16%|█▋        | 61/372 [00:38<01:09,  4.45it/s, recall_0.3=(0, 146) / 262]eval:  17%|█▋        | 62/372 [00:38<01:08,  4.50it/s, recall_0.3=(0, 146) / 262]eval:  17%|█▋        | 62/372 [00:38<01:08,  4.50it/s, recall_0.3=(0, 151) / 268]eval:  17%|█▋        | 63/372 [00:38<01:08,  4.50it/s, recall_0.3=(0, 151) / 268]eval:  17%|█▋        | 63/372 [00:38<01:08,  4.50it/s, recall_0.3=(0, 156) / 275]eval:  17%|█▋        | 64/372 [00:38<01:08,  4.47it/s, recall_0.3=(0, 156) / 275]eval:  17%|█▋        | 64/372 [00:39<01:08,  4.47it/s, recall_0.3=(0, 161) / 286]eval:  17%|█▋        | 65/372 [00:39<01:09,  4.44it/s, recall_0.3=(0, 161) / 286]eval:  17%|█▋        | 65/372 [00:39<01:09,  4.44it/s, recall_0.3=(0, 162) / 287]eval:  18%|█▊        | 66/372 [00:39<01:08,  4.49it/s, recall_0.3=(0, 162) / 287]eval:  18%|█▊        | 66/372 [00:39<01:08,  4.49it/s, recall_0.3=(0, 163) / 288]eval:  18%|█▊        | 67/372 [00:39<01:08,  4.45it/s, recall_0.3=(0, 163) / 288]eval:  18%|█▊        | 67/372 [00:39<01:08,  4.45it/s, recall_0.3=(0, 164) / 290]eval:  18%|█▊        | 68/372 [00:39<01:09,  4.37it/s, recall_0.3=(0, 164) / 290]eval:  18%|█▊        | 68/372 [00:40<01:09,  4.37it/s, recall_0.3=(0, 170) / 297]eval:  19%|█▊        | 69/372 [00:40<01:09,  4.34it/s, recall_0.3=(0, 170) / 297]eval:  19%|█▊        | 69/372 [00:40<01:09,  4.34it/s, recall_0.3=(0, 174) / 303]eval:  19%|█▉        | 70/372 [00:40<01:09,  4.32it/s, recall_0.3=(0, 174) / 303]eval:  19%|█▉        | 70/372 [00:40<01:09,  4.32it/s, recall_0.3=(0, 174) / 304]eval:  19%|█▉        | 71/372 [00:40<01:06,  4.53it/s, recall_0.3=(0, 174) / 304]eval:  19%|█▉        | 71/372 [00:40<01:06,  4.53it/s, recall_0.3=(0, 178) / 311]eval:  19%|█▉        | 72/372 [00:40<01:07,  4.44it/s, recall_0.3=(0, 178) / 311]eval:  19%|█▉        | 72/372 [00:41<01:07,  4.44it/s, recall_0.3=(0, 183) / 323]eval:  20%|█▉        | 73/372 [00:41<01:05,  4.54it/s, recall_0.3=(0, 183) / 323]eval:  20%|█▉        | 73/372 [00:41<01:05,  4.54it/s, recall_0.3=(0, 187) / 328]eval:  20%|█▉        | 74/372 [00:41<01:07,  4.45it/s, recall_0.3=(0, 187) / 328]eval:  20%|█▉        | 74/372 [00:41<01:07,  4.45it/s, recall_0.3=(0, 193) / 342]eval:  20%|██        | 75/372 [00:41<01:05,  4.53it/s, recall_0.3=(0, 193) / 342]eval:  20%|██        | 75/372 [00:41<01:05,  4.53it/s, recall_0.3=(0, 196) / 347]eval:  20%|██        | 76/372 [00:41<01:06,  4.43it/s, recall_0.3=(0, 196) / 347]eval:  20%|██        | 76/372 [00:41<01:06,  4.43it/s, recall_0.3=(0, 197) / 348]eval:  21%|██        | 77/372 [00:41<01:04,  4.56it/s, recall_0.3=(0, 197) / 348]eval:  21%|██        | 77/372 [00:42<01:04,  4.56it/s, recall_0.3=(0, 204) / 366]eval:  21%|██        | 78/372 [00:42<01:07,  4.36it/s, recall_0.3=(0, 204) / 366]eval:  21%|██        | 78/372 [00:42<01:07,  4.36it/s, recall_0.3=(0, 210) / 377]eval:  21%|██        | 79/372 [00:42<01:06,  4.38it/s, recall_0.3=(0, 210) / 377]eval:  21%|██        | 79/372 [00:42<01:06,  4.38it/s, recall_0.3=(0, 211) / 378]eval:  22%|██▏       | 80/372 [00:42<01:06,  4.38it/s, recall_0.3=(0, 211) / 378]eval:  22%|██▏       | 80/372 [00:42<01:06,  4.38it/s, recall_0.3=(0, 212) / 380]eval:  22%|██▏       | 81/372 [00:42<01:06,  4.34it/s, recall_0.3=(0, 212) / 380]eval:  22%|██▏       | 81/372 [00:43<01:06,  4.34it/s, recall_0.3=(0, 220) / 391]eval:  22%|██▏       | 82/372 [00:43<01:05,  4.40it/s, recall_0.3=(0, 220) / 391]eval:  22%|██▏       | 82/372 [00:43<01:05,  4.40it/s, recall_0.3=(0, 225) / 401]eval:  22%|██▏       | 83/372 [00:43<01:07,  4.30it/s, recall_0.3=(0, 225) / 401]eval:  22%|██▏       | 83/372 [00:43<01:07,  4.30it/s, recall_0.3=(0, 226) / 402]eval:  23%|██▎       | 84/372 [00:43<01:05,  4.42it/s, recall_0.3=(0, 226) / 402]eval:  23%|██▎       | 84/372 [00:43<01:05,  4.42it/s, recall_0.3=(0, 228) / 406]eval:  23%|██▎       | 85/372 [00:43<01:06,  4.34it/s, recall_0.3=(0, 228) / 406]eval:  23%|██▎       | 85/372 [00:43<01:06,  4.34it/s, recall_0.3=(0, 229) / 408]eval:  23%|██▎       | 86/372 [00:43<01:04,  4.47it/s, recall_0.3=(0, 229) / 408]eval:  23%|██▎       | 86/372 [00:44<01:04,  4.47it/s, recall_0.3=(0, 230) / 414]eval:  23%|██▎       | 87/372 [00:44<01:04,  4.41it/s, recall_0.3=(0, 230) / 414]eval:  23%|██▎       | 87/372 [00:44<01:04,  4.41it/s, recall_0.3=(0, 231) / 415]eval:  24%|██▎       | 88/372 [00:44<01:03,  4.45it/s, recall_0.3=(0, 231) / 415]eval:  24%|██▎       | 88/372 [00:44<01:03,  4.45it/s, recall_0.3=(0, 232) / 416]eval:  24%|██▍       | 89/372 [00:44<01:04,  4.40it/s, recall_0.3=(0, 232) / 416]eval:  24%|██▍       | 89/372 [00:44<01:04,  4.40it/s, recall_0.3=(0, 233) / 420]eval:  24%|██▍       | 90/372 [00:44<01:03,  4.45it/s, recall_0.3=(0, 233) / 420]eval:  24%|██▍       | 90/372 [00:45<01:03,  4.45it/s, recall_0.3=(0, 236) / 429]eval:  24%|██▍       | 91/372 [00:45<01:02,  4.48it/s, recall_0.3=(0, 236) / 429]eval:  24%|██▍       | 91/372 [00:45<01:02,  4.48it/s, recall_0.3=(0, 237) / 431]eval:  25%|██▍       | 92/372 [00:45<01:01,  4.54it/s, recall_0.3=(0, 237) / 431]eval:  25%|██▍       | 92/372 [00:45<01:01,  4.54it/s, recall_0.3=(0, 239) / 433]eval:  25%|██▌       | 93/372 [00:45<01:03,  4.43it/s, recall_0.3=(0, 239) / 433]eval:  25%|██▌       | 93/372 [00:45<01:03,  4.43it/s, recall_0.3=(0, 240) / 434]eval:  25%|██▌       | 94/372 [00:45<01:01,  4.53it/s, recall_0.3=(0, 240) / 434]eval:  25%|██▌       | 94/372 [00:45<01:01,  4.53it/s, recall_0.3=(0, 244) / 439]eval:  26%|██▌       | 95/372 [00:45<01:02,  4.45it/s, recall_0.3=(0, 244) / 439]eval:  26%|██▌       | 95/372 [00:46<01:02,  4.45it/s, recall_0.3=(0, 247) / 448]eval:  26%|██▌       | 96/372 [00:46<01:01,  4.46it/s, recall_0.3=(0, 247) / 448]eval:  26%|██▌       | 96/372 [00:46<01:01,  4.46it/s, recall_0.3=(0, 250) / 454]eval:  26%|██▌       | 97/372 [00:46<01:03,  4.35it/s, recall_0.3=(0, 250) / 454]eval:  26%|██▌       | 97/372 [00:46<01:03,  4.35it/s, recall_0.3=(0, 252) / 457]eval:  26%|██▋       | 98/372 [00:46<01:02,  4.39it/s, recall_0.3=(0, 252) / 457]eval:  26%|██▋       | 98/372 [00:46<01:02,  4.39it/s, recall_0.3=(0, 255) / 463]eval:  27%|██▋       | 99/372 [00:46<01:03,  4.33it/s, recall_0.3=(0, 255) / 463]eval:  27%|██▋       | 99/372 [00:47<01:03,  4.33it/s, recall_0.3=(0, 260) / 470]eval:  27%|██▋       | 100/372 [00:47<01:01,  4.45it/s, recall_0.3=(0, 260) / 470]eval:  27%|██▋       | 100/372 [00:47<01:01,  4.45it/s, recall_0.3=(0, 263) / 475]eval:  27%|██▋       | 101/372 [00:47<01:02,  4.35it/s, recall_0.3=(0, 263) / 475]eval:  27%|██▋       | 101/372 [00:47<01:02,  4.35it/s, recall_0.3=(0, 263) / 477]eval:  27%|██▋       | 102/372 [00:47<01:01,  4.41it/s, recall_0.3=(0, 263) / 477]eval:  27%|██▋       | 102/372 [00:47<01:01,  4.41it/s, recall_0.3=(0, 263) / 478]eval:  28%|██▊       | 103/372 [00:47<01:01,  4.39it/s, recall_0.3=(0, 263) / 478]eval:  28%|██▊       | 103/372 [00:48<01:01,  4.39it/s, recall_0.3=(0, 264) / 479]eval:  28%|██▊       | 104/372 [00:48<01:00,  4.44it/s, recall_0.3=(0, 264) / 479]eval:  28%|██▊       | 104/372 [00:48<01:00,  4.44it/s, recall_0.3=(0, 269) / 491]eval:  28%|██▊       | 105/372 [00:48<01:01,  4.36it/s, recall_0.3=(0, 269) / 491]eval:  28%|██▊       | 105/372 [00:48<01:01,  4.36it/s, recall_0.3=(0, 273) / 496]eval:  28%|██▊       | 106/372 [00:48<01:00,  4.41it/s, recall_0.3=(0, 273) / 496]eval:  28%|██▊       | 106/372 [00:48<01:00,  4.41it/s, recall_0.3=(0, 273) / 497]eval:  29%|██▉       | 107/372 [00:48<00:57,  4.57it/s, recall_0.3=(0, 273) / 497]eval:  29%|██▉       | 107/372 [00:48<00:57,  4.57it/s, recall_0.3=(0, 273) / 498]eval:  29%|██▉       | 108/372 [00:48<00:59,  4.46it/s, recall_0.3=(0, 273) / 498]eval:  29%|██▉       | 108/372 [00:49<00:59,  4.46it/s, recall_0.3=(0, 276) / 503]eval:  29%|██▉       | 109/372 [00:49<00:58,  4.48it/s, recall_0.3=(0, 276) / 503]eval:  29%|██▉       | 109/372 [00:49<00:58,  4.48it/s, recall_0.3=(0, 276) / 504]eval:  30%|██▉       | 110/372 [00:49<00:58,  4.51it/s, recall_0.3=(0, 276) / 504]eval:  30%|██▉       | 110/372 [00:49<00:58,  4.51it/s, recall_0.3=(0, 277) / 510]eval:  30%|██▉       | 111/372 [00:49<00:59,  4.37it/s, recall_0.3=(0, 277) / 510]eval:  30%|██▉       | 111/372 [00:49<00:59,  4.37it/s, recall_0.3=(0, 277) / 511]eval:  30%|███       | 112/372 [00:49<00:58,  4.42it/s, recall_0.3=(0, 277) / 511]eval:  30%|███       | 112/372 [00:50<00:58,  4.42it/s, recall_0.3=(0, 277) / 512]eval:  30%|███       | 113/372 [00:50<00:58,  4.41it/s, recall_0.3=(0, 277) / 512]eval:  30%|███       | 113/372 [00:50<00:58,  4.41it/s, recall_0.3=(0, 280) / 522]eval:  31%|███       | 114/372 [00:50<00:58,  4.45it/s, recall_0.3=(0, 280) / 522]eval:  31%|███       | 114/372 [00:50<00:58,  4.45it/s, recall_0.3=(0, 280) / 523]eval:  31%|███       | 115/372 [00:50<00:58,  4.43it/s, recall_0.3=(0, 280) / 523]eval:  31%|███       | 115/372 [00:50<00:58,  4.43it/s, recall_0.3=(0, 283) / 527]eval:  31%|███       | 116/372 [00:50<00:57,  4.48it/s, recall_0.3=(0, 283) / 527]eval:  31%|███       | 116/372 [00:50<00:57,  4.48it/s, recall_0.3=(0, 284) / 531]eval:  31%|███▏      | 117/372 [00:50<00:58,  4.38it/s, recall_0.3=(0, 284) / 531]eval:  31%|███▏      | 117/372 [00:51<00:58,  4.38it/s, recall_0.3=(0, 286) / 537]eval:  32%|███▏      | 118/372 [00:51<00:59,  4.30it/s, recall_0.3=(0, 286) / 537]eval:  32%|███▏      | 118/372 [00:51<00:59,  4.30it/s, recall_0.3=(0, 287) / 538]eval:  32%|███▏      | 119/372 [00:51<00:58,  4.31it/s, recall_0.3=(0, 287) / 538]eval:  32%|███▏      | 119/372 [00:51<00:58,  4.31it/s, recall_0.3=(0, 287) / 539]eval:  32%|███▏      | 120/372 [00:51<00:56,  4.45it/s, recall_0.3=(0, 287) / 539]eval:  32%|███▏      | 120/372 [00:51<00:56,  4.45it/s, recall_0.3=(0, 291) / 544]eval:  33%|███▎      | 121/372 [00:51<00:57,  4.34it/s, recall_0.3=(0, 291) / 544]eval:  33%|███▎      | 121/372 [00:52<00:57,  4.34it/s, recall_0.3=(0, 293) / 547]eval:  33%|███▎      | 122/372 [00:52<00:57,  4.37it/s, recall_0.3=(0, 293) / 547]eval:  33%|███▎      | 122/372 [00:52<00:57,  4.37it/s, recall_0.3=(0, 293) / 548]eval:  33%|███▎      | 123/372 [00:52<00:57,  4.33it/s, recall_0.3=(0, 293) / 548]eval:  33%|███▎      | 123/372 [00:52<00:57,  4.33it/s, recall_0.3=(0, 303) / 561]eval:  33%|███▎      | 124/372 [00:52<00:55,  4.45it/s, recall_0.3=(0, 303) / 561]eval:  33%|███▎      | 124/372 [00:52<00:55,  4.45it/s, recall_0.3=(0, 304) / 571]eval:  34%|███▎      | 125/372 [00:52<00:56,  4.37it/s, recall_0.3=(0, 304) / 571]eval:  34%|███▎      | 125/372 [00:53<00:56,  4.37it/s, recall_0.3=(0, 306) / 574]eval:  34%|███▍      | 126/372 [00:53<00:56,  4.35it/s, recall_0.3=(0, 306) / 574]eval:  34%|███▍      | 126/372 [00:53<00:56,  4.35it/s, recall_0.3=(0, 309) / 579]eval:  34%|███▍      | 127/372 [00:53<00:54,  4.47it/s, recall_0.3=(0, 309) / 579]eval:  34%|███▍      | 127/372 [00:53<00:54,  4.47it/s, recall_0.3=(0, 312) / 584]eval:  34%|███▍      | 128/372 [00:53<00:55,  4.42it/s, recall_0.3=(0, 312) / 584]eval:  34%|███▍      | 128/372 [00:53<00:55,  4.42it/s, recall_0.3=(0, 313) / 592]eval:  35%|███▍      | 129/372 [00:53<00:53,  4.54it/s, recall_0.3=(0, 313) / 592]eval:  35%|███▍      | 129/372 [00:53<00:53,  4.54it/s, recall_0.3=(0, 317) / 596]eval:  35%|███▍      | 130/372 [00:53<00:53,  4.48it/s, recall_0.3=(0, 317) / 596]eval:  35%|███▍      | 130/372 [00:54<00:53,  4.48it/s, recall_0.3=(0, 317) / 597]eval:  35%|███▌      | 131/372 [00:54<00:53,  4.54it/s, recall_0.3=(0, 317) / 597]eval:  35%|███▌      | 131/372 [00:54<00:53,  4.54it/s, recall_0.3=(0, 320) / 600]eval:  35%|███▌      | 132/372 [00:54<00:52,  4.56it/s, recall_0.3=(0, 320) / 600]eval:  35%|███▌      | 132/372 [00:54<00:52,  4.56it/s, recall_0.3=(0, 326) / 615]eval:  36%|███▌      | 133/372 [00:54<00:53,  4.47it/s, recall_0.3=(0, 326) / 615]eval:  36%|███▌      | 133/372 [00:54<00:53,  4.47it/s, recall_0.3=(0, 332) / 621]eval:  36%|███▌      | 134/372 [00:54<00:51,  4.59it/s, recall_0.3=(0, 332) / 621]eval:  36%|███▌      | 134/372 [00:54<00:51,  4.59it/s, recall_0.3=(0, 332) / 622]eval:  36%|███▋      | 135/372 [00:54<00:51,  4.57it/s, recall_0.3=(0, 332) / 622]eval:  36%|███▋      | 135/372 [00:55<00:51,  4.57it/s, recall_0.3=(0, 332) / 623]eval:  37%|███▋      | 136/372 [00:55<00:52,  4.47it/s, recall_0.3=(0, 332) / 623]eval:  37%|███▋      | 136/372 [00:55<00:52,  4.47it/s, recall_0.3=(0, 336) / 628]eval:  37%|███▋      | 137/372 [00:55<00:53,  4.42it/s, recall_0.3=(0, 336) / 628]eval:  37%|███▋      | 137/372 [00:55<00:53,  4.42it/s, recall_0.3=(0, 337) / 633]eval:  37%|███▋      | 138/372 [00:55<00:52,  4.49it/s, recall_0.3=(0, 337) / 633]eval:  37%|███▋      | 138/372 [00:55<00:52,  4.49it/s, recall_0.3=(0, 340) / 639]eval:  37%|███▋      | 139/372 [00:55<00:50,  4.63it/s, recall_0.3=(0, 340) / 639]eval:  37%|███▋      | 139/372 [00:56<00:50,  4.63it/s, recall_0.3=(0, 342) / 643]eval:  38%|███▊      | 140/372 [00:56<00:50,  4.57it/s, recall_0.3=(0, 342) / 643]eval:  38%|███▊      | 140/372 [00:56<00:50,  4.57it/s, recall_0.3=(0, 346) / 648]eval:  38%|███▊      | 141/372 [00:56<00:51,  4.49it/s, recall_0.3=(0, 346) / 648]eval:  38%|███▊      | 141/372 [00:56<00:51,  4.49it/s, recall_0.3=(0, 347) / 649]eval:  38%|███▊      | 142/372 [00:56<00:51,  4.47it/s, recall_0.3=(0, 347) / 649]eval:  38%|███▊      | 142/372 [00:56<00:51,  4.47it/s, recall_0.3=(0, 348) / 651]eval:  38%|███▊      | 143/372 [00:56<00:51,  4.45it/s, recall_0.3=(0, 348) / 651]eval:  38%|███▊      | 143/372 [00:57<00:51,  4.45it/s, recall_0.3=(0, 348) / 655]eval:  39%|███▊      | 144/372 [00:57<00:50,  4.52it/s, recall_0.3=(0, 348) / 655]eval:  39%|███▊      | 144/372 [00:57<00:50,  4.52it/s, recall_0.3=(0, 349) / 660]eval:  39%|███▉      | 145/372 [00:57<00:51,  4.43it/s, recall_0.3=(0, 349) / 660]eval:  39%|███▉      | 145/372 [00:57<00:51,  4.43it/s, recall_0.3=(0, 350) / 663]eval:  39%|███▉      | 146/372 [00:57<00:51,  4.42it/s, recall_0.3=(0, 350) / 663]eval:  39%|███▉      | 146/372 [00:57<00:51,  4.42it/s, recall_0.3=(0, 352) / 665]eval:  40%|███▉      | 147/372 [00:57<00:50,  4.43it/s, recall_0.3=(0, 352) / 665]eval:  40%|███▉      | 147/372 [00:57<00:50,  4.43it/s, recall_0.3=(0, 353) / 666]eval:  40%|███▉      | 148/372 [00:57<00:50,  4.39it/s, recall_0.3=(0, 353) / 666]eval:  40%|███▉      | 148/372 [00:58<00:50,  4.39it/s, recall_0.3=(0, 354) / 668]eval:  40%|████      | 149/372 [00:58<00:50,  4.39it/s, recall_0.3=(0, 354) / 668]eval:  40%|████      | 149/372 [00:58<00:50,  4.39it/s, recall_0.3=(0, 355) / 669]eval:  40%|████      | 150/372 [00:58<00:50,  4.43it/s, recall_0.3=(0, 355) / 669]eval:  40%|████      | 150/372 [00:58<00:50,  4.43it/s, recall_0.3=(0, 360) / 676]eval:  41%|████      | 151/372 [00:58<00:49,  4.43it/s, recall_0.3=(0, 360) / 676]eval:  41%|████      | 151/372 [00:58<00:49,  4.43it/s, recall_0.3=(0, 364) / 683]eval:  41%|████      | 152/372 [00:58<00:50,  4.36it/s, recall_0.3=(0, 364) / 683]eval:  41%|████      | 152/372 [00:59<00:50,  4.36it/s, recall_0.3=(0, 371) / 694]eval:  41%|████      | 153/372 [00:59<00:49,  4.43it/s, recall_0.3=(0, 371) / 694]eval:  41%|████      | 153/372 [00:59<00:49,  4.43it/s, recall_0.3=(0, 375) / 701]eval:  41%|████▏     | 154/372 [00:59<00:47,  4.58it/s, recall_0.3=(0, 375) / 701]eval:  41%|████▏     | 154/372 [00:59<00:47,  4.58it/s, recall_0.3=(0, 375) / 702]eval:  42%|████▏     | 155/372 [00:59<00:47,  4.56it/s, recall_0.3=(0, 375) / 702]eval:  42%|████▏     | 155/372 [00:59<00:47,  4.56it/s, recall_0.3=(0, 376) / 704]eval:  42%|████▏     | 156/372 [00:59<00:48,  4.43it/s, recall_0.3=(0, 376) / 704]eval:  42%|████▏     | 156/372 [00:59<00:48,  4.43it/s, recall_0.3=(0, 378) / 708]eval:  42%|████▏     | 157/372 [00:59<00:48,  4.45it/s, recall_0.3=(0, 378) / 708]eval:  42%|████▏     | 157/372 [01:00<00:48,  4.45it/s, recall_0.3=(0, 380) / 710]eval:  42%|████▏     | 158/372 [01:00<00:47,  4.47it/s, recall_0.3=(0, 380) / 710]eval:  42%|████▏     | 158/372 [01:00<00:47,  4.47it/s, recall_0.3=(0, 384) / 714]eval:  43%|████▎     | 159/372 [01:00<00:47,  4.52it/s, recall_0.3=(0, 384) / 714]eval:  43%|████▎     | 159/372 [01:00<00:47,  4.52it/s, recall_0.3=(0, 385) / 715]eval:  43%|████▎     | 160/372 [01:00<00:47,  4.49it/s, recall_0.3=(0, 385) / 715]eval:  43%|████▎     | 160/372 [01:00<00:47,  4.49it/s, recall_0.3=(0, 386) / 716]eval:  43%|████▎     | 161/372 [01:00<00:47,  4.45it/s, recall_0.3=(0, 386) / 716]eval:  43%|████▎     | 161/372 [01:01<00:47,  4.45it/s, recall_0.3=(0, 388) / 718]eval:  44%|████▎     | 162/372 [01:01<00:46,  4.54it/s, recall_0.3=(0, 388) / 718]eval:  44%|████▎     | 162/372 [01:01<00:46,  4.54it/s, recall_0.3=(0, 389) / 720]eval:  44%|████▍     | 163/372 [01:01<00:44,  4.67it/s, recall_0.3=(0, 389) / 720]eval:  44%|████▍     | 163/372 [01:01<00:44,  4.67it/s, recall_0.3=(0, 391) / 722]eval:  44%|████▍     | 164/372 [01:01<00:45,  4.61it/s, recall_0.3=(0, 391) / 722]eval:  44%|████▍     | 164/372 [01:01<00:45,  4.61it/s, recall_0.3=(0, 393) / 727]eval:  44%|████▍     | 165/372 [01:01<00:46,  4.48it/s, recall_0.3=(0, 393) / 727]eval:  44%|████▍     | 165/372 [01:01<00:46,  4.48it/s, recall_0.3=(0, 396) / 731]eval:  45%|████▍     | 166/372 [01:01<00:45,  4.53it/s, recall_0.3=(0, 396) / 731]eval:  45%|████▍     | 166/372 [01:02<00:45,  4.53it/s, recall_0.3=(0, 396) / 734]eval:  45%|████▍     | 167/372 [01:02<00:46,  4.37it/s, recall_0.3=(0, 396) / 734]eval:  45%|████▍     | 167/372 [01:02<00:46,  4.37it/s, recall_0.3=(0, 397) / 744]eval:  45%|████▌     | 168/372 [01:02<00:45,  4.44it/s, recall_0.3=(0, 397) / 744]eval:  45%|████▌     | 168/372 [01:02<00:45,  4.44it/s, recall_0.3=(0, 398) / 747]eval:  45%|████▌     | 169/372 [01:02<00:46,  4.39it/s, recall_0.3=(0, 398) / 747]eval:  45%|████▌     | 169/372 [01:02<00:46,  4.39it/s, recall_0.3=(0, 401) / 751]eval:  46%|████▌     | 170/372 [01:02<00:45,  4.40it/s, recall_0.3=(0, 401) / 751]eval:  46%|████▌     | 170/372 [01:03<00:45,  4.40it/s, recall_0.3=(0, 408) / 763]eval:  46%|████▌     | 171/372 [01:03<00:45,  4.42it/s, recall_0.3=(0, 408) / 763]eval:  46%|████▌     | 171/372 [01:03<00:45,  4.42it/s, recall_0.3=(0, 411) / 768]eval:  46%|████▌     | 172/372 [01:03<00:45,  4.36it/s, recall_0.3=(0, 411) / 768]eval:  46%|████▌     | 172/372 [01:03<00:45,  4.36it/s, recall_0.3=(0, 414) / 771]eval:  47%|████▋     | 173/372 [01:03<00:45,  4.34it/s, recall_0.3=(0, 414) / 771]eval:  47%|████▋     | 173/372 [01:03<00:45,  4.34it/s, recall_0.3=(0, 417) / 780]eval:  47%|████▋     | 174/372 [01:03<00:45,  4.38it/s, recall_0.3=(0, 417) / 780]eval:  47%|████▋     | 174/372 [01:03<00:45,  4.38it/s, recall_0.3=(0, 419) / 783]eval:  47%|████▋     | 175/372 [01:03<00:44,  4.38it/s, recall_0.3=(0, 419) / 783]eval:  47%|████▋     | 175/372 [01:04<00:44,  4.38it/s, recall_0.3=(0, 426) / 794]eval:  47%|████▋     | 176/372 [01:04<00:45,  4.35it/s, recall_0.3=(0, 426) / 794]eval:  47%|████▋     | 176/372 [01:04<00:45,  4.35it/s, recall_0.3=(0, 426) / 797]eval:  48%|████▊     | 177/372 [01:04<00:45,  4.28it/s, recall_0.3=(0, 426) / 797]eval:  48%|████▊     | 177/372 [01:04<00:45,  4.28it/s, recall_0.3=(0, 426) / 798]eval:  48%|████▊     | 178/372 [01:04<00:45,  4.27it/s, recall_0.3=(0, 426) / 798]eval:  48%|████▊     | 178/372 [01:04<00:45,  4.27it/s, recall_0.3=(0, 426) / 799]eval:  48%|████▊     | 179/372 [01:04<00:44,  4.34it/s, recall_0.3=(0, 426) / 799]eval:  48%|████▊     | 179/372 [01:05<00:44,  4.34it/s, recall_0.3=(0, 427) / 802]eval:  48%|████▊     | 180/372 [01:05<00:43,  4.38it/s, recall_0.3=(0, 427) / 802]eval:  48%|████▊     | 180/372 [01:05<00:43,  4.38it/s, recall_0.3=(0, 429) / 806]eval:  49%|████▊     | 181/372 [01:05<00:44,  4.30it/s, recall_0.3=(0, 429) / 806]eval:  49%|████▊     | 181/372 [01:05<00:44,  4.30it/s, recall_0.3=(0, 430) / 810]eval:  49%|████▉     | 182/372 [01:05<00:43,  4.39it/s, recall_0.3=(0, 430) / 810]eval:  49%|████▉     | 182/372 [01:05<00:43,  4.39it/s, recall_0.3=(0, 431) / 812]eval:  49%|████▉     | 183/372 [01:05<00:44,  4.29it/s, recall_0.3=(0, 431) / 812]eval:  49%|████▉     | 183/372 [01:06<00:44,  4.29it/s, recall_0.3=(0, 435) / 819]eval:  49%|████▉     | 184/372 [01:06<00:43,  4.35it/s, recall_0.3=(0, 435) / 819]eval:  49%|████▉     | 184/372 [01:06<00:43,  4.35it/s, recall_0.3=(0, 437) / 824]eval:  50%|████▉     | 185/372 [01:06<00:42,  4.42it/s, recall_0.3=(0, 437) / 824]eval:  50%|████▉     | 185/372 [01:06<00:42,  4.42it/s, recall_0.3=(0, 440) / 829]eval:  50%|█████     | 186/372 [01:06<00:42,  4.38it/s, recall_0.3=(0, 440) / 829]eval:  50%|█████     | 186/372 [01:06<00:42,  4.38it/s, recall_0.3=(0, 441) / 831]eval:  50%|█████     | 187/372 [01:06<00:42,  4.36it/s, recall_0.3=(0, 441) / 831]eval:  50%|█████     | 187/372 [01:06<00:42,  4.36it/s, recall_0.3=(0, 442) / 832]eval:  51%|█████     | 188/372 [01:06<00:41,  4.39it/s, recall_0.3=(0, 442) / 832]eval:  51%|█████     | 188/372 [01:07<00:41,  4.39it/s, recall_0.3=(0, 442) / 833]eval:  51%|█████     | 189/372 [01:07<00:41,  4.39it/s, recall_0.3=(0, 442) / 833]eval:  51%|█████     | 189/372 [01:07<00:41,  4.39it/s, recall_0.3=(0, 443) / 834]eval:  51%|█████     | 190/372 [01:07<00:41,  4.41it/s, recall_0.3=(0, 443) / 834]eval:  51%|█████     | 190/372 [01:07<00:41,  4.41it/s, recall_0.3=(0, 443) / 835]eval:  51%|█████▏    | 191/372 [01:07<00:40,  4.42it/s, recall_0.3=(0, 443) / 835]eval:  51%|█████▏    | 191/372 [01:07<00:40,  4.42it/s, recall_0.3=(0, 444) / 836]eval:  52%|█████▏    | 192/372 [01:07<00:39,  4.52it/s, recall_0.3=(0, 444) / 836]eval:  52%|█████▏    | 192/372 [01:08<00:39,  4.52it/s, recall_0.3=(0, 446) / 843]eval:  52%|█████▏    | 193/372 [01:08<00:39,  4.50it/s, recall_0.3=(0, 446) / 843]eval:  52%|█████▏    | 193/372 [01:08<00:39,  4.50it/s, recall_0.3=(0, 449) / 847]eval:  52%|█████▏    | 194/372 [01:08<00:39,  4.49it/s, recall_0.3=(0, 449) / 847]eval:  52%|█████▏    | 194/372 [01:08<00:39,  4.49it/s, recall_0.3=(0, 450) / 848]eval:  52%|█████▏    | 195/372 [01:08<00:38,  4.64it/s, recall_0.3=(0, 450) / 848]eval:  52%|█████▏    | 195/372 [01:08<00:38,  4.64it/s, recall_0.3=(0, 452) / 852]eval:  53%|█████▎    | 196/372 [01:08<00:38,  4.62it/s, recall_0.3=(0, 452) / 852]eval:  53%|█████▎    | 196/372 [01:08<00:38,  4.62it/s, recall_0.3=(0, 453) / 857]eval:  53%|█████▎    | 197/372 [01:08<00:38,  4.55it/s, recall_0.3=(0, 453) / 857]eval:  53%|█████▎    | 197/372 [01:09<00:38,  4.55it/s, recall_0.3=(0, 458) / 863]eval:  53%|█████▎    | 198/372 [01:09<00:38,  4.47it/s, recall_0.3=(0, 458) / 863]eval:  53%|█████▎    | 198/372 [01:09<00:38,  4.47it/s, recall_0.3=(0, 460) / 865]eval:  53%|█████▎    | 199/372 [01:09<00:37,  4.66it/s, recall_0.3=(0, 460) / 865]eval:  53%|█████▎    | 199/372 [01:09<00:37,  4.66it/s, recall_0.3=(0, 463) / 872]eval:  54%|█████▍    | 200/372 [01:09<00:36,  4.71it/s, recall_0.3=(0, 463) / 872]eval:  54%|█████▍    | 200/372 [01:09<00:36,  4.71it/s, recall_0.3=(0, 464) / 874]eval:  54%|█████▍    | 201/372 [01:09<00:37,  4.59it/s, recall_0.3=(0, 464) / 874]eval:  54%|█████▍    | 201/372 [01:10<00:37,  4.59it/s, recall_0.3=(0, 465) / 875]eval:  54%|█████▍    | 202/372 [01:10<00:36,  4.66it/s, recall_0.3=(0, 465) / 875]eval:  54%|█████▍    | 202/372 [01:10<00:36,  4.66it/s, recall_0.3=(0, 471) / 881]eval:  55%|█████▍    | 203/372 [01:10<00:36,  4.61it/s, recall_0.3=(0, 471) / 881]eval:  55%|█████▍    | 203/372 [01:10<00:36,  4.61it/s, recall_0.3=(0, 474) / 886]eval:  55%|█████▍    | 204/372 [01:10<00:36,  4.62it/s, recall_0.3=(0, 474) / 886]eval:  55%|█████▍    | 204/372 [01:10<00:36,  4.62it/s, recall_0.3=(0, 477) / 892]eval:  55%|█████▌    | 205/372 [01:10<00:36,  4.57it/s, recall_0.3=(0, 477) / 892]eval:  55%|█████▌    | 205/372 [01:10<00:36,  4.57it/s, recall_0.3=(0, 479) / 896]eval:  55%|█████▌    | 206/372 [01:10<00:36,  4.53it/s, recall_0.3=(0, 479) / 896]eval:  55%|█████▌    | 206/372 [01:11<00:36,  4.53it/s, recall_0.3=(0, 482) / 901]eval:  56%|█████▌    | 207/372 [01:11<00:36,  4.47it/s, recall_0.3=(0, 482) / 901]eval:  56%|█████▌    | 207/372 [01:11<00:36,  4.47it/s, recall_0.3=(0, 482) / 902]eval:  56%|█████▌    | 208/372 [01:11<00:36,  4.55it/s, recall_0.3=(0, 482) / 902]eval:  56%|█████▌    | 208/372 [01:11<00:36,  4.55it/s, recall_0.3=(0, 489) / 919]eval:  56%|█████▌    | 209/372 [01:11<00:36,  4.51it/s, recall_0.3=(0, 489) / 919]eval:  56%|█████▌    | 209/372 [01:11<00:36,  4.51it/s, recall_0.3=(0, 490) / 920]eval:  56%|█████▋    | 210/372 [01:11<00:35,  4.61it/s, recall_0.3=(0, 490) / 920]eval:  56%|█████▋    | 210/372 [01:11<00:35,  4.61it/s, recall_0.3=(0, 493) / 929]eval:  57%|█████▋    | 211/372 [01:11<00:34,  4.69it/s, recall_0.3=(0, 493) / 929]eval:  57%|█████▋    | 211/372 [01:12<00:34,  4.69it/s, recall_0.3=(0, 493) / 930]eval:  57%|█████▋    | 212/372 [01:12<00:34,  4.68it/s, recall_0.3=(0, 493) / 930]eval:  57%|█████▋    | 212/372 [01:12<00:34,  4.68it/s, recall_0.3=(0, 495) / 932]eval:  57%|█████▋    | 213/372 [01:12<00:33,  4.73it/s, recall_0.3=(0, 495) / 932]eval:  57%|█████▋    | 213/372 [01:12<00:33,  4.73it/s, recall_0.3=(0, 499) / 938]eval:  58%|█████▊    | 214/372 [01:12<00:33,  4.68it/s, recall_0.3=(0, 499) / 938]eval:  58%|█████▊    | 214/372 [01:12<00:33,  4.68it/s, recall_0.3=(0, 501) / 942]eval:  58%|█████▊    | 215/372 [01:12<00:33,  4.63it/s, recall_0.3=(0, 501) / 942]eval:  58%|█████▊    | 215/372 [01:13<00:33,  4.63it/s, recall_0.3=(0, 504) / 949]eval:  58%|█████▊    | 216/372 [01:13<00:33,  4.69it/s, recall_0.3=(0, 504) / 949]eval:  58%|█████▊    | 216/372 [01:13<00:33,  4.69it/s, recall_0.3=(0, 505) / 950]eval:  58%|█████▊    | 217/372 [01:13<00:34,  4.56it/s, recall_0.3=(0, 505) / 950]eval:  58%|█████▊    | 217/372 [01:13<00:34,  4.56it/s, recall_0.3=(0, 515) / 965]eval:  59%|█████▊    | 218/372 [01:13<00:33,  4.54it/s, recall_0.3=(0, 515) / 965]eval:  59%|█████▊    | 218/372 [01:13<00:33,  4.54it/s, recall_0.3=(0, 517) / 970]eval:  59%|█████▉    | 219/372 [01:13<00:33,  4.52it/s, recall_0.3=(0, 517) / 970]eval:  59%|█████▉    | 219/372 [01:13<00:33,  4.52it/s, recall_0.3=(0, 518) / 974]eval:  59%|█████▉    | 220/372 [01:13<00:32,  4.63it/s, recall_0.3=(0, 518) / 974]eval:  59%|█████▉    | 220/372 [01:14<00:32,  4.63it/s, recall_0.3=(0, 522) / 979]eval:  59%|█████▉    | 221/372 [01:14<00:33,  4.53it/s, recall_0.3=(0, 522) / 979]eval:  59%|█████▉    | 221/372 [01:14<00:33,  4.53it/s, recall_0.3=(0, 523) / 980]eval:  60%|█████▉    | 222/372 [01:14<00:33,  4.49it/s, recall_0.3=(0, 523) / 980]eval:  60%|█████▉    | 222/372 [01:14<00:33,  4.49it/s, recall_0.3=(0, 523) / 981]eval:  60%|█████▉    | 223/372 [01:14<00:33,  4.48it/s, recall_0.3=(0, 523) / 981]eval:  60%|█████▉    | 223/372 [01:14<00:33,  4.48it/s, recall_0.3=(0, 524) / 983]eval:  60%|██████    | 224/372 [01:14<00:32,  4.52it/s, recall_0.3=(0, 524) / 983]eval:  60%|██████    | 224/372 [01:15<00:32,  4.52it/s, recall_0.3=(0, 528) / 992]eval:  60%|██████    | 225/372 [01:15<00:32,  4.58it/s, recall_0.3=(0, 528) / 992]eval:  60%|██████    | 225/372 [01:15<00:32,  4.58it/s, recall_0.3=(0, 528) / 993]eval:  61%|██████    | 226/372 [01:15<00:32,  4.54it/s, recall_0.3=(0, 528) / 993]eval:  61%|██████    | 226/372 [01:15<00:32,  4.54it/s, recall_0.3=(0, 534) / 1005]eval:  61%|██████    | 227/372 [01:15<00:31,  4.64it/s, recall_0.3=(0, 534) / 1005]eval:  61%|██████    | 227/372 [01:15<00:31,  4.64it/s, recall_0.3=(0, 535) / 1006]eval:  61%|██████▏   | 228/372 [01:15<00:30,  4.69it/s, recall_0.3=(0, 535) / 1006]eval:  61%|██████▏   | 228/372 [01:15<00:30,  4.69it/s, recall_0.3=(0, 536) / 1007]eval:  62%|██████▏   | 229/372 [01:15<00:30,  4.62it/s, recall_0.3=(0, 536) / 1007]eval:  62%|██████▏   | 229/372 [01:16<00:30,  4.62it/s, recall_0.3=(0, 537) / 1009]eval:  62%|██████▏   | 230/372 [01:16<00:31,  4.55it/s, recall_0.3=(0, 537) / 1009]eval:  62%|██████▏   | 230/372 [01:16<00:31,  4.55it/s, recall_0.3=(0, 541) / 1014]eval:  62%|██████▏   | 231/372 [01:16<00:31,  4.47it/s, recall_0.3=(0, 541) / 1014]eval:  62%|██████▏   | 231/372 [01:16<00:31,  4.47it/s, recall_0.3=(0, 549) / 1025]eval:  62%|██████▏   | 232/372 [01:16<00:30,  4.62it/s, recall_0.3=(0, 549) / 1025]eval:  62%|██████▏   | 232/372 [01:16<00:30,  4.62it/s, recall_0.3=(0, 553) / 1029]eval:  63%|██████▎   | 233/372 [01:16<00:30,  4.54it/s, recall_0.3=(0, 553) / 1029]eval:  63%|██████▎   | 233/372 [01:17<00:30,  4.54it/s, recall_0.3=(0, 558) / 1042]eval:  63%|██████▎   | 234/372 [01:17<00:30,  4.54it/s, recall_0.3=(0, 558) / 1042]eval:  63%|██████▎   | 234/372 [01:17<00:30,  4.54it/s, recall_0.3=(0, 559) / 1043]eval:  63%|██████▎   | 235/372 [01:17<00:29,  4.59it/s, recall_0.3=(0, 559) / 1043]eval:  63%|██████▎   | 235/372 [01:17<00:29,  4.59it/s, recall_0.3=(0, 560) / 1045]eval:  63%|██████▎   | 236/372 [01:17<00:30,  4.47it/s, recall_0.3=(0, 560) / 1045]eval:  63%|██████▎   | 236/372 [01:17<00:30,  4.47it/s, recall_0.3=(0, 561) / 1046]eval:  64%|██████▎   | 237/372 [01:17<00:30,  4.37it/s, recall_0.3=(0, 561) / 1046]eval:  64%|██████▎   | 237/372 [01:17<00:30,  4.37it/s, recall_0.3=(0, 562) / 1047]eval:  64%|██████▍   | 238/372 [01:17<00:30,  4.46it/s, recall_0.3=(0, 562) / 1047]eval:  64%|██████▍   | 238/372 [01:18<00:30,  4.46it/s, recall_0.3=(0, 564) / 1055]eval:  64%|██████▍   | 239/372 [01:18<00:29,  4.45it/s, recall_0.3=(0, 564) / 1055]eval:  64%|██████▍   | 239/372 [01:18<00:29,  4.45it/s, recall_0.3=(0, 566) / 1059]eval:  65%|██████▍   | 240/372 [01:18<00:29,  4.47it/s, recall_0.3=(0, 566) / 1059]eval:  65%|██████▍   | 240/372 [01:18<00:29,  4.47it/s, recall_0.3=(0, 572) / 1066]eval:  65%|██████▍   | 241/372 [01:18<00:30,  4.36it/s, recall_0.3=(0, 572) / 1066]eval:  65%|██████▍   | 241/372 [01:18<00:30,  4.36it/s, recall_0.3=(0, 572) / 1067]eval:  65%|██████▌   | 242/372 [01:18<00:29,  4.37it/s, recall_0.3=(0, 572) / 1067]eval:  65%|██████▌   | 242/372 [01:19<00:29,  4.37it/s, recall_0.3=(0, 573) / 1068]eval:  65%|██████▌   | 243/372 [01:19<00:29,  4.44it/s, recall_0.3=(0, 573) / 1068]eval:  65%|██████▌   | 243/372 [01:19<00:29,  4.44it/s, recall_0.3=(0, 574) / 1074]eval:  66%|██████▌   | 244/372 [01:19<00:29,  4.37it/s, recall_0.3=(0, 574) / 1074]eval:  66%|██████▌   | 244/372 [01:19<00:29,  4.37it/s, recall_0.3=(0, 577) / 1084]eval:  66%|██████▌   | 245/372 [01:19<00:29,  4.38it/s, recall_0.3=(0, 577) / 1084]eval:  66%|██████▌   | 245/372 [01:19<00:29,  4.38it/s, recall_0.3=(0, 578) / 1085]eval:  66%|██████▌   | 246/372 [01:19<00:28,  4.43it/s, recall_0.3=(0, 578) / 1085]eval:  66%|██████▌   | 246/372 [01:19<00:28,  4.43it/s, recall_0.3=(0, 580) / 1087]eval:  66%|██████▋   | 247/372 [01:19<00:27,  4.48it/s, recall_0.3=(0, 580) / 1087]eval:  66%|██████▋   | 247/372 [01:20<00:27,  4.48it/s, recall_0.3=(0, 582) / 1089]eval:  67%|██████▋   | 248/372 [01:20<00:27,  4.52it/s, recall_0.3=(0, 582) / 1089]eval:  67%|██████▋   | 248/372 [01:20<00:27,  4.52it/s, recall_0.3=(0, 587) / 1103]eval:  67%|██████▋   | 249/372 [01:20<00:28,  4.39it/s, recall_0.3=(0, 587) / 1103]eval:  67%|██████▋   | 249/372 [01:20<00:28,  4.39it/s, recall_0.3=(0, 588) / 1108]eval:  67%|██████▋   | 250/372 [01:20<00:26,  4.54it/s, recall_0.3=(0, 588) / 1108]eval:  67%|██████▋   | 250/372 [01:20<00:26,  4.54it/s, recall_0.3=(0, 589) / 1111]eval:  67%|██████▋   | 251/372 [01:20<00:27,  4.38it/s, recall_0.3=(0, 589) / 1111]eval:  67%|██████▋   | 251/372 [01:21<00:27,  4.38it/s, recall_0.3=(0, 597) / 1129]eval:  68%|██████▊   | 252/372 [01:21<00:27,  4.44it/s, recall_0.3=(0, 597) / 1129]eval:  68%|██████▊   | 252/372 [01:21<00:27,  4.44it/s, recall_0.3=(0, 598) / 1130]eval:  68%|██████▊   | 253/372 [01:21<00:26,  4.47it/s, recall_0.3=(0, 598) / 1130]eval:  68%|██████▊   | 253/372 [01:21<00:26,  4.47it/s, recall_0.3=(0, 600) / 1133]eval:  68%|██████▊   | 254/372 [01:21<00:26,  4.52it/s, recall_0.3=(0, 600) / 1133]eval:  68%|██████▊   | 254/372 [01:21<00:26,  4.52it/s, recall_0.3=(0, 604) / 1138]eval:  69%|██████▊   | 255/372 [01:21<00:26,  4.47it/s, recall_0.3=(0, 604) / 1138]eval:  69%|██████▊   | 255/372 [01:21<00:26,  4.47it/s, recall_0.3=(0, 605) / 1140]eval:  69%|██████▉   | 256/372 [01:21<00:25,  4.55it/s, recall_0.3=(0, 605) / 1140]eval:  69%|██████▉   | 256/372 [01:22<00:25,  4.55it/s, recall_0.3=(0, 607) / 1145]eval:  69%|██████▉   | 257/372 [01:22<00:25,  4.51it/s, recall_0.3=(0, 607) / 1145]eval:  69%|██████▉   | 257/372 [01:22<00:25,  4.51it/s, recall_0.3=(0, 608) / 1146]eval:  69%|██████▉   | 258/372 [01:22<00:25,  4.56it/s, recall_0.3=(0, 608) / 1146]eval:  69%|██████▉   | 258/372 [01:22<00:25,  4.56it/s, recall_0.3=(0, 611) / 1151]eval:  70%|██████▉   | 259/372 [01:22<00:24,  4.56it/s, recall_0.3=(0, 611) / 1151]eval:  70%|██████▉   | 259/372 [01:22<00:24,  4.56it/s, recall_0.3=(0, 611) / 1152]eval:  70%|██████▉   | 260/372 [01:22<00:24,  4.60it/s, recall_0.3=(0, 611) / 1152]eval:  70%|██████▉   | 260/372 [01:23<00:24,  4.60it/s, recall_0.3=(0, 612) / 1153]eval:  70%|███████   | 261/372 [01:23<00:24,  4.55it/s, recall_0.3=(0, 612) / 1153]eval:  70%|███████   | 261/372 [01:23<00:24,  4.55it/s, recall_0.3=(0, 616) / 1160]eval:  70%|███████   | 262/372 [01:23<00:24,  4.43it/s, recall_0.3=(0, 616) / 1160]eval:  70%|███████   | 262/372 [01:23<00:24,  4.43it/s, recall_0.3=(0, 617) / 1162]eval:  71%|███████   | 263/372 [01:23<00:24,  4.52it/s, recall_0.3=(0, 617) / 1162]eval:  71%|███████   | 263/372 [01:23<00:24,  4.52it/s, recall_0.3=(0, 617) / 1165]eval:  71%|███████   | 264/372 [01:23<00:23,  4.50it/s, recall_0.3=(0, 617) / 1165]eval:  71%|███████   | 264/372 [01:23<00:23,  4.50it/s, recall_0.3=(0, 621) / 1172]eval:  71%|███████   | 265/372 [01:23<00:23,  4.47it/s, recall_0.3=(0, 621) / 1172]eval:  71%|███████   | 265/372 [01:24<00:23,  4.47it/s, recall_0.3=(0, 622) / 1173]eval:  72%|███████▏  | 266/372 [01:24<00:23,  4.45it/s, recall_0.3=(0, 622) / 1173]eval:  72%|███████▏  | 266/372 [01:24<00:23,  4.45it/s, recall_0.3=(0, 625) / 1179]eval:  72%|███████▏  | 267/372 [01:24<00:23,  4.48it/s, recall_0.3=(0, 625) / 1179]eval:  72%|███████▏  | 267/372 [01:24<00:23,  4.48it/s, recall_0.3=(0, 626) / 1182]eval:  72%|███████▏  | 268/372 [01:24<00:22,  4.54it/s, recall_0.3=(0, 626) / 1182]eval:  72%|███████▏  | 268/372 [01:24<00:22,  4.54it/s, recall_0.3=(0, 627) / 1184]eval:  72%|███████▏  | 269/372 [01:24<00:22,  4.49it/s, recall_0.3=(0, 627) / 1184]eval:  72%|███████▏  | 269/372 [01:25<00:22,  4.49it/s, recall_0.3=(0, 630) / 1188]eval:  73%|███████▎  | 270/372 [01:25<00:22,  4.47it/s, recall_0.3=(0, 630) / 1188]eval:  73%|███████▎  | 270/372 [01:25<00:22,  4.47it/s, recall_0.3=(0, 634) / 1193]eval:  73%|███████▎  | 271/372 [01:25<00:22,  4.54it/s, recall_0.3=(0, 634) / 1193]eval:  73%|███████▎  | 271/372 [01:25<00:22,  4.54it/s, recall_0.3=(0, 637) / 1197]eval:  73%|███████▎  | 272/372 [01:25<00:21,  4.56it/s, recall_0.3=(0, 637) / 1197]eval:  73%|███████▎  | 272/372 [01:25<00:21,  4.56it/s, recall_0.3=(0, 640) / 1202]eval:  73%|███████▎  | 273/372 [01:25<00:21,  4.58it/s, recall_0.3=(0, 640) / 1202]eval:  73%|███████▎  | 273/372 [01:25<00:21,  4.58it/s, recall_0.3=(0, 641) / 1203]eval:  74%|███████▎  | 274/372 [01:25<00:21,  4.63it/s, recall_0.3=(0, 641) / 1203]eval:  74%|███████▎  | 274/372 [01:26<00:21,  4.63it/s, recall_0.3=(0, 642) / 1205]eval:  74%|███████▍  | 275/372 [01:26<00:20,  4.66it/s, recall_0.3=(0, 642) / 1205]eval:  74%|███████▍  | 275/372 [01:26<00:20,  4.66it/s, recall_0.3=(0, 642) / 1207]eval:  74%|███████▍  | 276/372 [01:26<00:20,  4.67it/s, recall_0.3=(0, 642) / 1207]eval:  74%|███████▍  | 276/372 [01:26<00:20,  4.67it/s, recall_0.3=(0, 642) / 1208]eval:  74%|███████▍  | 277/372 [01:26<00:20,  4.56it/s, recall_0.3=(0, 642) / 1208]eval:  74%|███████▍  | 277/372 [01:26<00:20,  4.56it/s, recall_0.3=(0, 648) / 1226]eval:  75%|███████▍  | 278/372 [01:26<00:20,  4.53it/s, recall_0.3=(0, 648) / 1226]eval:  75%|███████▍  | 278/372 [01:27<00:20,  4.53it/s, recall_0.3=(0, 650) / 1232]eval:  75%|███████▌  | 279/372 [01:27<00:20,  4.52it/s, recall_0.3=(0, 650) / 1232]eval:  75%|███████▌  | 279/372 [01:27<00:20,  4.52it/s, recall_0.3=(0, 651) / 1233]eval:  75%|███████▌  | 280/372 [01:27<00:20,  4.40it/s, recall_0.3=(0, 651) / 1233]eval:  75%|███████▌  | 280/372 [01:27<00:20,  4.40it/s, recall_0.3=(0, 654) / 1240]eval:  76%|███████▌  | 281/372 [01:27<00:20,  4.42it/s, recall_0.3=(0, 654) / 1240]eval:  76%|███████▌  | 281/372 [01:27<00:20,  4.42it/s, recall_0.3=(0, 656) / 1242]eval:  76%|███████▌  | 282/372 [01:27<00:20,  4.43it/s, recall_0.3=(0, 656) / 1242]eval:  76%|███████▌  | 282/372 [01:27<00:20,  4.43it/s, recall_0.3=(0, 661) / 1247]eval:  76%|███████▌  | 283/372 [01:27<00:20,  4.34it/s, recall_0.3=(0, 661) / 1247]eval:  76%|███████▌  | 283/372 [01:28<00:20,  4.34it/s, recall_0.3=(0, 662) / 1248]eval:  76%|███████▋  | 284/372 [01:28<00:19,  4.41it/s, recall_0.3=(0, 662) / 1248]eval:  76%|███████▋  | 284/372 [01:28<00:19,  4.41it/s, recall_0.3=(0, 663) / 1249]eval:  77%|███████▋  | 285/372 [01:28<00:19,  4.38it/s, recall_0.3=(0, 663) / 1249]eval:  77%|███████▋  | 285/372 [01:28<00:19,  4.38it/s, recall_0.3=(0, 666) / 1255]eval:  77%|███████▋  | 286/372 [01:28<00:19,  4.42it/s, recall_0.3=(0, 666) / 1255]eval:  77%|███████▋  | 286/372 [01:28<00:19,  4.42it/s, recall_0.3=(0, 669) / 1260]eval:  77%|███████▋  | 287/372 [01:28<00:19,  4.39it/s, recall_0.3=(0, 669) / 1260]eval:  77%|███████▋  | 287/372 [01:29<00:19,  4.39it/s, recall_0.3=(0, 670) / 1261]eval:  77%|███████▋  | 288/372 [01:29<00:19,  4.41it/s, recall_0.3=(0, 670) / 1261]eval:  77%|███████▋  | 288/372 [01:29<00:19,  4.41it/s, recall_0.3=(0, 670) / 1266]eval:  78%|███████▊  | 289/372 [01:29<00:18,  4.40it/s, recall_0.3=(0, 670) / 1266]eval:  78%|███████▊  | 289/372 [01:29<00:18,  4.40it/s, recall_0.3=(0, 671) / 1271]eval:  78%|███████▊  | 290/372 [01:29<00:18,  4.44it/s, recall_0.3=(0, 671) / 1271]eval:  78%|███████▊  | 290/372 [01:29<00:18,  4.44it/s, recall_0.3=(0, 674) / 1277]eval:  78%|███████▊  | 291/372 [01:29<00:18,  4.45it/s, recall_0.3=(0, 674) / 1277]eval:  78%|███████▊  | 291/372 [01:29<00:18,  4.45it/s, recall_0.3=(0, 677) / 1285]eval:  78%|███████▊  | 292/372 [01:29<00:17,  4.53it/s, recall_0.3=(0, 677) / 1285]eval:  78%|███████▊  | 292/372 [01:30<00:17,  4.53it/s, recall_0.3=(0, 678) / 1287]eval:  79%|███████▉  | 293/372 [01:30<00:16,  4.67it/s, recall_0.3=(0, 678) / 1287]eval:  79%|███████▉  | 293/372 [01:30<00:16,  4.67it/s, recall_0.3=(0, 685) / 1301]eval:  79%|███████▉  | 294/372 [01:30<00:16,  4.74it/s, recall_0.3=(0, 685) / 1301]eval:  79%|███████▉  | 294/372 [01:30<00:16,  4.74it/s, recall_0.3=(0, 689) / 1305]eval:  79%|███████▉  | 295/372 [01:30<00:16,  4.75it/s, recall_0.3=(0, 689) / 1305]eval:  79%|███████▉  | 295/372 [01:30<00:16,  4.75it/s, recall_0.3=(0, 690) / 1313]eval:  80%|███████▉  | 296/372 [01:30<00:15,  4.81it/s, recall_0.3=(0, 690) / 1313]eval:  80%|███████▉  | 296/372 [01:31<00:15,  4.81it/s, recall_0.3=(0, 693) / 1317]eval:  80%|███████▉  | 297/372 [01:31<00:15,  4.76it/s, recall_0.3=(0, 693) / 1317]eval:  80%|███████▉  | 297/372 [01:31<00:15,  4.76it/s, recall_0.3=(0, 693) / 1318]eval:  80%|████████  | 298/372 [01:31<00:15,  4.68it/s, recall_0.3=(0, 693) / 1318]eval:  80%|████████  | 298/372 [01:31<00:15,  4.68it/s, recall_0.3=(0, 695) / 1321]eval:  80%|████████  | 299/372 [01:31<00:15,  4.67it/s, recall_0.3=(0, 695) / 1321]eval:  80%|████████  | 299/372 [01:31<00:15,  4.67it/s, recall_0.3=(0, 700) / 1334]eval:  81%|████████  | 300/372 [01:31<00:15,  4.60it/s, recall_0.3=(0, 700) / 1334]eval:  81%|████████  | 300/372 [01:31<00:15,  4.60it/s, recall_0.3=(0, 700) / 1335]eval:  81%|████████  | 301/372 [01:31<00:15,  4.53it/s, recall_0.3=(0, 700) / 1335]eval:  81%|████████  | 301/372 [01:32<00:15,  4.53it/s, recall_0.3=(0, 703) / 1340]eval:  81%|████████  | 302/372 [01:32<00:15,  4.57it/s, recall_0.3=(0, 703) / 1340]eval:  81%|████████  | 302/372 [01:32<00:15,  4.57it/s, recall_0.3=(0, 703) / 1341]eval:  81%|████████▏ | 303/372 [01:32<00:15,  4.58it/s, recall_0.3=(0, 703) / 1341]eval:  81%|████████▏ | 303/372 [01:32<00:15,  4.58it/s, recall_0.3=(0, 705) / 1346]eval:  82%|████████▏ | 304/372 [01:32<00:15,  4.51it/s, recall_0.3=(0, 705) / 1346]eval:  82%|████████▏ | 304/372 [01:32<00:15,  4.51it/s, recall_0.3=(0, 706) / 1349]eval:  82%|████████▏ | 305/372 [01:32<00:14,  4.48it/s, recall_0.3=(0, 706) / 1349]eval:  82%|████████▏ | 305/372 [01:33<00:14,  4.48it/s, recall_0.3=(0, 708) / 1353]eval:  82%|████████▏ | 306/372 [01:33<00:14,  4.55it/s, recall_0.3=(0, 708) / 1353]eval:  82%|████████▏ | 306/372 [01:33<00:14,  4.55it/s, recall_0.3=(0, 709) / 1358]eval:  83%|████████▎ | 307/372 [01:33<00:14,  4.49it/s, recall_0.3=(0, 709) / 1358]eval:  83%|████████▎ | 307/372 [01:33<00:14,  4.49it/s, recall_0.3=(0, 709) / 1359]eval:  83%|████████▎ | 308/372 [01:33<00:14,  4.51it/s, recall_0.3=(0, 709) / 1359]eval:  83%|████████▎ | 308/372 [01:33<00:14,  4.51it/s, recall_0.3=(0, 716) / 1371]eval:  83%|████████▎ | 309/372 [01:33<00:14,  4.36it/s, recall_0.3=(0, 716) / 1371]eval:  83%|████████▎ | 309/372 [01:33<00:14,  4.36it/s, recall_0.3=(0, 717) / 1374]eval:  83%|████████▎ | 310/372 [01:33<00:14,  4.30it/s, recall_0.3=(0, 717) / 1374]eval:  83%|████████▎ | 310/372 [01:34<00:14,  4.30it/s, recall_0.3=(0, 718) / 1375]eval:  84%|████████▎ | 311/372 [01:34<00:14,  4.32it/s, recall_0.3=(0, 718) / 1375]eval:  84%|████████▎ | 311/372 [01:34<00:14,  4.32it/s, recall_0.3=(0, 725) / 1387]eval:  84%|████████▍ | 312/372 [01:34<00:13,  4.38it/s, recall_0.3=(0, 725) / 1387]eval:  84%|████████▍ | 312/372 [01:34<00:13,  4.38it/s, recall_0.3=(0, 725) / 1388]eval:  84%|████████▍ | 313/372 [01:34<00:13,  4.34it/s, recall_0.3=(0, 725) / 1388]eval:  84%|████████▍ | 313/372 [01:34<00:13,  4.34it/s, recall_0.3=(0, 726) / 1390]eval:  84%|████████▍ | 314/372 [01:34<00:12,  4.46it/s, recall_0.3=(0, 726) / 1390]eval:  84%|████████▍ | 314/372 [01:35<00:12,  4.46it/s, recall_0.3=(0, 726) / 1392]eval:  85%|████████▍ | 315/372 [01:35<00:13,  4.33it/s, recall_0.3=(0, 726) / 1392]eval:  85%|████████▍ | 315/372 [01:35<00:13,  4.33it/s, recall_0.3=(0, 729) / 1400]eval:  85%|████████▍ | 316/372 [01:35<00:12,  4.44it/s, recall_0.3=(0, 729) / 1400]eval:  85%|████████▍ | 316/372 [01:35<00:12,  4.44it/s, recall_0.3=(0, 731) / 1404]eval:  85%|████████▌ | 317/372 [01:35<00:12,  4.43it/s, recall_0.3=(0, 731) / 1404]eval:  85%|████████▌ | 317/372 [01:35<00:12,  4.43it/s, recall_0.3=(0, 737) / 1416]eval:  85%|████████▌ | 318/372 [01:35<00:12,  4.48it/s, recall_0.3=(0, 737) / 1416]eval:  85%|████████▌ | 318/372 [01:35<00:12,  4.48it/s, recall_0.3=(0, 742) / 1423]eval:  86%|████████▌ | 319/372 [01:35<00:11,  4.45it/s, recall_0.3=(0, 742) / 1423]eval:  86%|████████▌ | 319/372 [01:36<00:11,  4.45it/s, recall_0.3=(0, 744) / 1426]eval:  86%|████████▌ | 320/372 [01:36<00:11,  4.46it/s, recall_0.3=(0, 744) / 1426]eval:  86%|████████▌ | 320/372 [01:36<00:11,  4.46it/s, recall_0.3=(0, 747) / 1429]eval:  86%|████████▋ | 321/372 [01:36<00:11,  4.51it/s, recall_0.3=(0, 747) / 1429]eval:  86%|████████▋ | 321/372 [01:36<00:11,  4.51it/s, recall_0.3=(0, 750) / 1433]eval:  87%|████████▋ | 322/372 [01:36<00:10,  4.57it/s, recall_0.3=(0, 750) / 1433]eval:  87%|████████▋ | 322/372 [01:36<00:10,  4.57it/s, recall_0.3=(0, 750) / 1434]eval:  87%|████████▋ | 323/372 [01:36<00:10,  4.48it/s, recall_0.3=(0, 750) / 1434]eval:  87%|████████▋ | 323/372 [01:37<00:10,  4.48it/s, recall_0.3=(0, 752) / 1438]eval:  87%|████████▋ | 324/372 [01:37<00:10,  4.52it/s, recall_0.3=(0, 752) / 1438]eval:  87%|████████▋ | 324/372 [01:37<00:10,  4.52it/s, recall_0.3=(0, 758) / 1452]eval:  87%|████████▋ | 325/372 [01:37<00:10,  4.58it/s, recall_0.3=(0, 758) / 1452]eval:  87%|████████▋ | 325/372 [01:37<00:10,  4.58it/s, recall_0.3=(0, 765) / 1464]eval:  88%|████████▊ | 326/372 [01:37<00:09,  4.63it/s, recall_0.3=(0, 765) / 1464]eval:  88%|████████▊ | 326/372 [01:37<00:09,  4.63it/s, recall_0.3=(0, 769) / 1470]eval:  88%|████████▊ | 327/372 [01:37<00:09,  4.53it/s, recall_0.3=(0, 769) / 1470]eval:  88%|████████▊ | 327/372 [01:37<00:09,  4.53it/s, recall_0.3=(0, 771) / 1474]eval:  88%|████████▊ | 328/372 [01:37<00:09,  4.56it/s, recall_0.3=(0, 771) / 1474]eval:  88%|████████▊ | 328/372 [01:38<00:09,  4.56it/s, recall_0.3=(0, 771) / 1475]eval:  88%|████████▊ | 329/372 [01:38<00:09,  4.52it/s, recall_0.3=(0, 771) / 1475]eval:  88%|████████▊ | 329/372 [01:38<00:09,  4.52it/s, recall_0.3=(0, 775) / 1481]eval:  89%|████████▊ | 330/372 [01:38<00:09,  4.40it/s, recall_0.3=(0, 775) / 1481]eval:  89%|████████▊ | 330/372 [01:38<00:09,  4.40it/s, recall_0.3=(0, 778) / 1486]eval:  89%|████████▉ | 331/372 [01:38<00:09,  4.34it/s, recall_0.3=(0, 778) / 1486]eval:  89%|████████▉ | 331/372 [01:38<00:09,  4.34it/s, recall_0.3=(0, 780) / 1489]eval:  89%|████████▉ | 332/372 [01:38<00:09,  4.31it/s, recall_0.3=(0, 780) / 1489]eval:  89%|████████▉ | 332/372 [01:39<00:09,  4.31it/s, recall_0.3=(0, 781) / 1490]eval:  90%|████████▉ | 333/372 [01:39<00:08,  4.34it/s, recall_0.3=(0, 781) / 1490]eval:  90%|████████▉ | 333/372 [01:39<00:08,  4.34it/s, recall_0.3=(0, 782) / 1491]eval:  90%|████████▉ | 334/372 [01:39<00:08,  4.44it/s, recall_0.3=(0, 782) / 1491]eval:  90%|████████▉ | 334/372 [01:39<00:08,  4.44it/s, recall_0.3=(0, 784) / 1497]eval:  90%|█████████ | 335/372 [01:39<00:08,  4.33it/s, recall_0.3=(0, 784) / 1497]eval:  90%|█████████ | 335/372 [01:39<00:08,  4.33it/s, recall_0.3=(0, 789) / 1503]eval:  90%|█████████ | 336/372 [01:39<00:08,  4.28it/s, recall_0.3=(0, 789) / 1503]eval:  90%|█████████ | 336/372 [01:40<00:08,  4.28it/s, recall_0.3=(0, 791) / 1507]eval:  91%|█████████ | 337/372 [01:40<00:08,  4.27it/s, recall_0.3=(0, 791) / 1507]eval:  91%|█████████ | 337/372 [01:40<00:08,  4.27it/s, recall_0.3=(0, 792) / 1509]eval:  91%|█████████ | 338/372 [01:40<00:07,  4.33it/s, recall_0.3=(0, 792) / 1509]eval:  91%|█████████ | 338/372 [01:40<00:07,  4.33it/s, recall_0.3=(0, 796) / 1519]eval:  91%|█████████ | 339/372 [01:40<00:07,  4.30it/s, recall_0.3=(0, 796) / 1519]eval:  91%|█████████ | 339/372 [01:40<00:07,  4.30it/s, recall_0.3=(0, 797) / 1520]eval:  91%|█████████▏| 340/372 [01:40<00:07,  4.37it/s, recall_0.3=(0, 797) / 1520]eval:  91%|█████████▏| 340/372 [01:40<00:07,  4.37it/s, recall_0.3=(0, 799) / 1525]eval:  92%|█████████▏| 341/372 [01:40<00:07,  4.42it/s, recall_0.3=(0, 799) / 1525]eval:  92%|█████████▏| 341/372 [01:41<00:07,  4.42it/s, recall_0.3=(0, 799) / 1526]eval:  92%|█████████▏| 342/372 [01:41<00:06,  4.55it/s, recall_0.3=(0, 799) / 1526]eval:  92%|█████████▏| 342/372 [01:41<00:06,  4.55it/s, recall_0.3=(0, 803) / 1531]eval:  92%|█████████▏| 343/372 [01:41<00:06,  4.55it/s, recall_0.3=(0, 803) / 1531]eval:  92%|█████████▏| 343/372 [01:41<00:06,  4.55it/s, recall_0.3=(0, 804) / 1532]eval:  92%|█████████▏| 344/372 [01:41<00:06,  4.51it/s, recall_0.3=(0, 804) / 1532]eval:  92%|█████████▏| 344/372 [01:41<00:06,  4.51it/s, recall_0.3=(0, 804) / 1533]eval:  93%|█████████▎| 345/372 [01:41<00:06,  4.43it/s, recall_0.3=(0, 804) / 1533]eval:  93%|█████████▎| 345/372 [01:42<00:06,  4.43it/s, recall_0.3=(0, 807) / 1538]eval:  93%|█████████▎| 346/372 [01:42<00:05,  4.48it/s, recall_0.3=(0, 807) / 1538]eval:  93%|█████████▎| 346/372 [01:42<00:05,  4.48it/s, recall_0.3=(0, 808) / 1540]eval:  93%|█████████▎| 347/372 [01:42<00:05,  4.46it/s, recall_0.3=(0, 808) / 1540]eval:  93%|█████████▎| 347/372 [01:42<00:05,  4.46it/s, recall_0.3=(0, 814) / 1551]eval:  94%|█████████▎| 348/372 [01:42<00:05,  4.53it/s, recall_0.3=(0, 814) / 1551]eval:  94%|█████████▎| 348/372 [01:42<00:05,  4.53it/s, recall_0.3=(0, 815) / 1552]eval:  94%|█████████▍| 349/372 [01:42<00:05,  4.44it/s, recall_0.3=(0, 815) / 1552]eval:  94%|█████████▍| 349/372 [01:42<00:05,  4.44it/s, recall_0.3=(0, 817) / 1556]eval:  94%|█████████▍| 350/372 [01:42<00:05,  4.39it/s, recall_0.3=(0, 817) / 1556]eval:  94%|█████████▍| 350/372 [01:43<00:05,  4.39it/s, recall_0.3=(0, 820) / 1560]eval:  94%|█████████▍| 351/372 [01:43<00:04,  4.41it/s, recall_0.3=(0, 820) / 1560]eval:  94%|█████████▍| 351/372 [01:43<00:04,  4.41it/s, recall_0.3=(0, 823) / 1566]eval:  95%|█████████▍| 352/372 [01:43<00:04,  4.46it/s, recall_0.3=(0, 823) / 1566]eval:  95%|█████████▍| 352/372 [01:43<00:04,  4.46it/s, recall_0.3=(0, 824) / 1568]eval:  95%|█████████▍| 353/372 [01:43<00:04,  4.45it/s, recall_0.3=(0, 824) / 1568]eval:  95%|█████████▍| 353/372 [01:43<00:04,  4.45it/s, recall_0.3=(0, 824) / 1569]eval:  95%|█████████▌| 354/372 [01:43<00:03,  4.52it/s, recall_0.3=(0, 824) / 1569]eval:  95%|█████████▌| 354/372 [01:44<00:03,  4.52it/s, recall_0.3=(0, 831) / 1577]eval:  95%|█████████▌| 355/372 [01:44<00:03,  4.49it/s, recall_0.3=(0, 831) / 1577]eval:  95%|█████████▌| 355/372 [01:44<00:03,  4.49it/s, recall_0.3=(0, 832) / 1578]eval:  96%|█████████▌| 356/372 [01:44<00:03,  4.37it/s, recall_0.3=(0, 832) / 1578]eval:  96%|█████████▌| 356/372 [01:44<00:03,  4.37it/s, recall_0.3=(0, 836) / 1586]eval:  96%|█████████▌| 357/372 [01:44<00:03,  4.41it/s, recall_0.3=(0, 836) / 1586]eval:  96%|█████████▌| 357/372 [01:44<00:03,  4.41it/s, recall_0.3=(0, 837) / 1591]eval:  96%|█████████▌| 358/372 [01:44<00:03,  4.29it/s, recall_0.3=(0, 837) / 1591]eval:  96%|█████████▌| 358/372 [01:44<00:03,  4.29it/s, recall_0.3=(0, 841) / 1595]eval:  97%|█████████▋| 359/372 [01:44<00:02,  4.35it/s, recall_0.3=(0, 841) / 1595]eval:  97%|█████████▋| 359/372 [01:45<00:02,  4.35it/s, recall_0.3=(0, 842) / 1596]eval:  97%|█████████▋| 360/372 [01:45<00:02,  4.38it/s, recall_0.3=(0, 842) / 1596]eval:  97%|█████████▋| 360/372 [01:45<00:02,  4.38it/s, recall_0.3=(0, 846) / 1600]eval:  97%|█████████▋| 361/372 [01:45<00:02,  4.45it/s, recall_0.3=(0, 846) / 1600]eval:  97%|█████████▋| 361/372 [01:45<00:02,  4.45it/s, recall_0.3=(0, 850) / 1605]eval:  97%|█████████▋| 362/372 [01:45<00:02,  4.40it/s, recall_0.3=(0, 850) / 1605]eval:  97%|█████████▋| 362/372 [01:45<00:02,  4.40it/s, recall_0.3=(0, 851) / 1606]eval:  98%|█████████▊| 363/372 [01:45<00:02,  4.37it/s, recall_0.3=(0, 851) / 1606]eval:  98%|█████████▊| 363/372 [01:46<00:02,  4.37it/s, recall_0.3=(0, 852) / 1608]eval:  98%|█████████▊| 364/372 [01:46<00:01,  4.40it/s, recall_0.3=(0, 852) / 1608]eval:  98%|█████████▊| 364/372 [01:46<00:01,  4.40it/s, recall_0.3=(0, 854) / 1610]eval:  98%|█████████▊| 365/372 [01:46<00:01,  4.55it/s, recall_0.3=(0, 854) / 1610]eval:  98%|█████████▊| 365/372 [01:46<00:01,  4.55it/s, recall_0.3=(0, 861) / 1622]eval:  98%|█████████▊| 366/372 [01:46<00:01,  4.80it/s, recall_0.3=(0, 861) / 1622]eval:  98%|█████████▊| 366/372 [01:46<00:01,  4.80it/s, recall_0.3=(0, 867) / 1632]eval:  99%|█████████▊| 367/372 [01:46<00:00,  5.04it/s, recall_0.3=(0, 867) / 1632]eval:  99%|█████████▊| 367/372 [01:46<00:00,  5.04it/s, recall_0.3=(0, 868) / 1635]eval:  99%|█████████▉| 368/372 [01:46<00:00,  5.16it/s, recall_0.3=(0, 868) / 1635]eval:  99%|█████████▉| 368/372 [01:47<00:00,  5.16it/s, recall_0.3=(0, 872) / 1641]eval:  99%|█████████▉| 369/372 [01:47<00:00,  5.18it/s, recall_0.3=(0, 872) / 1641]eval:  99%|█████████▉| 369/372 [01:47<00:00,  5.18it/s, recall_0.3=(0, 873) / 1642]eval:  99%|█████████▉| 370/372 [01:47<00:00,  5.48it/s, recall_0.3=(0, 873) / 1642]eval:  99%|█████████▉| 370/372 [01:47<00:00,  5.48it/s, recall_0.3=(0, 873) / 1643]eval: 100%|█████████▉| 371/372 [01:47<00:00,  5.70it/s, recall_0.3=(0, 873) / 1643]eval: 100%|█████████▉| 371/372 [01:47<00:00,  5.70it/s, recall_0.3=(0, 875) / 1649]eval: 100%|██████████| 372/372 [01:47<00:00,  5.84it/s, recall_0.3=(0, 875) / 1649]eval: 100%|██████████| 372/372 [01:48<00:00,  3.43it/s, recall_0.3=(0, 875) / 1649]
+2026-10-04 13:22:39,511   INFO  *************** Performance of EPOCH 1 *****************
+2026-10-04 13:22:39,512   INFO  Generate label finished(sec_per_example: 0.2916 second).
+2026-10-04 13:22:39,512   INFO  recall_roi_0.3: 0.000000
+2026-10-04 13:22:39,513   INFO  recall_rcnn_0.3: 0.530625
+2026-10-04 13:22:39,513   INFO  recall_roi_0.5: 0.000000
+2026-10-04 13:22:39,514   INFO  recall_rcnn_0.5: 0.408126
+2026-10-04 13:22:39,514   INFO  recall_roi_0.7: 0.000000
+2026-10-04 13:22:39,515   INFO  recall_rcnn_0.7: 0.199515
+2026-10-04 13:22:39,515   INFO  Average predicted number of objects(372 samples): 6.608
+2026-10-04 13:22:39,534   INFO  ---- 3d box evaluation ---- 
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 56 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/core/typed_passes.py:336: NumbaPerformanceWarning: [1m
+The keyword argument 'parallel=True' was specified but no transformation for parallel execution was possible.
+
+To find out why, try turning on parallel diagnostics, see https://numba.readthedocs.io/en/stable/user/parallel.html#diagnostics for help.
+[1m
+File "liga/datasets/kitti/kitti_object_eval_python/eval.py", line 121:[0m
+[1m@numba.jit(nopython=True, parallel=True)
+[1mdef d3_box_overlap_kernel(boxes, qboxes, rinc, criterion=-1):
+[0m[1m^[0m[0m
+[0m
+  warnings.warn(errors.NumbaPerformanceWarning(msg,
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/core/typed_passes.py:336: NumbaPerformanceWarning: [1m
+The keyword argument 'parallel=True' was specified but no transformation for parallel execution was possible.
+
+To find out why, try turning on parallel diagnostics, see https://numba.readthedocs.io/en/stable/user/parallel.html#diagnostics for help.
+[1m
+File "liga/datasets/kitti/kitti_object_eval_python/eval.py", line 121:[0m
+[1m@numba.jit(nopython=True, parallel=True)
+[1mdef d3_box_overlap_kernel(boxes, qboxes, rinc, criterion=-1):
+[0m[1m^[0m[0m
+[0m
+  warnings.warn(errors.NumbaPerformanceWarning(msg,
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 56 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+2026-10-04 13:22:49,254   INFO  Car AP@0.70, 0.70, 0.70:
+bbox AP:77.5595, 56.3317, 48.6883
+bev  AP:62.9508, 38.5123, 34.2266
+3d   AP:48.1120, 27.7290, 24.3666
+aos  AP:73.53, 52.45, 45.17
+Car AP_R40@0.70, 0.70, 0.70:
+bbox AP:80.3810, 55.9421, 48.7821
+bev  AP:62.7542, 36.8693, 30.7748
+3d   AP:45.7766, 24.5328, 20.0046
+aos  AP:75.76, 51.35, 44.65
+Car AP@0.70, 0.50, 0.50:
+bbox AP:77.5595, 56.3317, 48.6883
+bev  AP:82.8912, 58.0307, 49.9561
+3d   AP:78.4005, 55.2216, 47.5933
+aos  AP:73.53, 52.45, 45.17
+Car AP_R40@0.70, 0.50, 0.50:
+bbox AP:80.3810, 55.9421, 48.7821
+bev  AP:83.7222, 59.0222, 50.2404
+3d   AP:81.0323, 54.1371, 45.7063
+aos  AP:75.76, 51.35, 44.65
+Pedestrian AP@0.50, 0.50, 0.50:
+bbox AP:43.2308, 42.7749, 39.3035
+bev  AP:32.7404, 30.4292, 28.9981
+3d   AP:27.4218, 25.8147, 24.7208
+aos  AP:27.16, 29.32, 26.86
+Pedestrian AP_R40@0.50, 0.50, 0.50:
+bbox AP:42.2234, 39.9086, 36.8524
+bev  AP:29.2271, 27.2777, 25.0868
+3d   AP:23.7452, 22.6335, 20.6263
+aos  AP:22.18, 23.85, 21.73
+Pedestrian AP@0.50, 0.25, 0.25:
+bbox AP:43.2308, 42.7749, 39.3035
+bev  AP:48.7375, 45.3723, 41.0720
+3d   AP:48.2310, 44.7901, 40.4552
+aos  AP:27.16, 29.32, 26.86
+Pedestrian AP_R40@0.50, 0.25, 0.25:
+bbox AP:42.2234, 39.9086, 36.8524
+bev  AP:47.7077, 43.1964, 39.2958
+3d   AP:47.0438, 42.5660, 38.5180
+aos  AP:22.18, 23.85, 21.73
+Cyclist AP@0.50, 0.50, 0.50:
+bbox AP:15.4452, 16.1727, 16.5379
+bev  AP:5.5772, 4.9806, 4.9400
+3d   AP:3.8961, 3.7061, 3.8659
+aos  AP:14.41, 15.01, 15.41
+Cyclist AP_R40@0.50, 0.50, 0.50:
+bbox AP:13.6477, 14.6130, 15.4349
+bev  AP:4.0505, 3.7992, 3.5983
+3d   AP:2.6131, 2.6022, 2.6897
+aos  AP:12.62, 13.42, 14.18
+Cyclist AP@0.50, 0.25, 0.25:
+bbox AP:15.4452, 16.1727, 16.5379
+bev  AP:10.8567, 11.5596, 12.1901
+3d   AP:10.5588, 11.1487, 11.6212
+aos  AP:14.41, 15.01, 15.41
+Cyclist AP_R40@0.50, 0.25, 0.25:
+bbox AP:13.6477, 14.6130, 15.4349
+bev  AP:9.9313, 10.1655, 10.8232
+3d   AP:9.1232, 9.3466, 9.0550
+aos  AP:12.62, 13.42, 14.18
+
+2026-10-04 13:22:49,255   INFO  ---- 2d box evaluation ---- 
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 14 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+2026-10-04 13:22:52,289   INFO  Car AP_R40@0.70, 0.70, 0.70:
+bbox AP:0.0000, 0.0551, 0.0551
+Car AP_R40@0.70, 0.50, 0.50:
+bbox AP:0.0000, 0.0551, 0.0551
+Pedestrian AP_R40@0.50, 0.50, 0.50:
+bbox AP:0.0000, 0.0000, 0.0000
+Pedestrian AP_R40@0.50, 0.25, 0.25:
+bbox AP:0.0000, 0.0000, 0.0000
+Cyclist AP_R40@0.50, 0.50, 0.50:
+bbox AP:0.0000, 0.0000, 0.0000
+Cyclist AP_R40@0.50, 0.25, 0.25:
+bbox AP:0.0000, 0.0000, 0.0000
+
+2026-10-04 13:22:52,290   INFO  Result is save to /mnt/d/paper6/runs/stereo-channel-native-seed17-001-awgn/checkpoint_epoch_1.pth.eval/eval/epoch_1/geocomm_tune_holdout/stereo-channel-native-seed17-001-awgn-test-awgn
+2026-10-04 13:22:52,290   INFO  ****************Evaluation done.*****************
+[rank0]:[W1004 13:22:52.769010324 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())

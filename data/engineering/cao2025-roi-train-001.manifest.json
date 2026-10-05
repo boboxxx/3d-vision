@@ -1,0 +1,23 @@
+{
+  "state": "finished",
+  "evidence_type": "sensor_only_YOLO_ROI_fold_extraction",
+  "split": "geocomm_tune_train",
+  "frames": 3340,
+  "fold_sha256": "35f22b0022b5968c09c9a8a7e1b9ad6c8ab23c52283673495a36ddba59406f4c",
+  "checkpoint_sha256": "4f180cf23ba0717ada0badd6c685026d73d48f184d00fc159c2641284b2ac0a3",
+  "upstream_revision": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+  "source_sha256": "66be17ab6d0dae8f454ee30889558f8f243a72db2d9295ccbc9c34e4e8f45e63",
+  "metadata_sha256": "e710368240e7eac30f76f8602788478df0a95e65152015f3950b03cb95fae896",
+  "records_sha256": "f7413abe7a587ac2c09ba5a3e5a4851f20db8bdfb8b7a3a5e1c90ac0ee87fad2",
+  "device": "cpu",
+  "torch_version": "2.5.0+cu118",
+  "pretrained_model_parameters": 1867405,
+  "inputs": [
+    "left_RGB",
+    "right_RGB"
+  ],
+  "labels_LiDAR_calibration_read": false,
+  "protocol": "official letterbox/FP32/NMS/scale_boxes; COCO car,bus,truck IDs2,5,7; conf0.25, IoU0.45; max_det300; rounded pixel coordinates",
+  "elapsed_seconds": 419.9491889476776,
+  "limitations": "documented ROI variant; not Cao exact thresholds/weights; no channel/control cost or detector AP established"
+}

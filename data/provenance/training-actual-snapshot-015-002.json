@@ -1,0 +1,22 @@
+{
+  "checked_unix": 1791211911.2765038,
+  "reports": {
+    "original-public30-formal-seed17-003-stage1": {
+      "state": "running_complete_public_semantic_stage",
+      "update_count": 20288,
+      "job_id": "11426592",
+      "traceback": null,
+      "completed_epochs": 5
+    },
+    "ecsic-KITTI-lambda0.03-seed17-002": {
+      "state": "running_full_KITTI_source_RD_training",
+      "update_count": 35776,
+      "job_id": "11426641",
+      "traceback": null,
+      "completed_epochs": 9
+    }
+  },
+  "squeue": "                 JOBID                        NAME        STATE       TIME               NODELIST(REASON)\n      11425047_[4-5%1]      paper6-ecsic-KITTI-002      PENDING       0:00            (JobArrayTaskLimit)\n    11429210_[10,50%1]   paper6-source-engineer009      PENDING       0:00                   (QOSGrpGRES)\n            11425047_3      paper6-ecsic-KITTI-002      RUNNING      59:54                 artemis-rtx-03\n              11426592 paper6-original-public30-st      RUNNING    1:03:28                 artemis-rtx-03\n              11425814       paper6-cost-export013      PENDING       0:00                   (Dependency)\n              11425240      paper6-cost-full-audit      RUNNING    1:13:36                 artemis-a40-03\n           11429211_50      paper6-source-audit009      PENDING       0:00                   (Dependency)\n           11429211_10      paper6-source-audit009      PENDING       0:00                   (Dependency)\n              11426848       paper6-ecsic-c3-audit      PENDING       0:00                   (Dependency)\n              11426847 paper6-original-stage1-audi      PENDING       0:00                   (Dependency)\n              11428494      paper6-ecsic-export012      PENDING       0:00                   (Dependency)\n",
+  "main_native_progress": "44544, \"seed\": 17}\n{\"checked\": 31232, \"count\": 44544, \"seed\": 17}\n{\"checked\": 31296, \"count\": 44544, \"seed\": 17}\n{\"checked\": 31360, \"count\": 44544, \"seed\": 17}\n",
+  "sacct": "11425240|RUNNING|0:0|01:13:36\n11425240.batch|RUNNING|0:0|01:13:36\n11425240.extern|RUNNING|0:0|01:13:36\n11425240.0|RUNNING|0:0|01:13:34\n11426848|PENDING|0:0|00:00:00\n11428494|PENDING|0:0|00:00:00\n11429210|PENDING|0:0|00:00:00\n11429212|PENDING|0:0|00:00:00\n11429211|PENDING|0:0|00:00:00\n"
+}

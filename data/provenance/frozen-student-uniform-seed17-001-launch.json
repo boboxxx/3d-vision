@@ -1,0 +1,21 @@
+{
+  "run_id": "frozen-student-uniform-seed17-001",
+  "implementation_commit_before_launch": "b594811",
+  "pipeline_pid_at_launch": 21775,
+  "evidence_type": "formal_F3_launch_provenance",
+  "recorded_at": "2026-10-03T22:10:50.106496+00:00",
+  "project_sources_sha256": "f25f56205ef2f50447fc6fe0cc3e7d845fb917430b3dbbe4510e7825e6fcd1ac",
+  "initialization_sha256": "7e1ceacb4abff0bdb32ef89507b9786e1d80ae9c166ccaaeb4ffb4fcbd639bd2",
+  "matched_initialization_tensors": 519,
+  "frozen_student_parameter_tensors": 35,
+  "trainable_link_parameter_tensors": 28,
+  "new_link_state_tensors": 30,
+  "unused_generic_scorer_parameter_tensors": 2,
+  "fixed_new_updates": 3340,
+  "file_hashes": {
+    "scripts/run_frozen_student_codec_cycle.sh": "8367205ee31ef7818e81c242a9f0c13d1f6c97fe2bca05a329de60db466d1e7e",
+    "scripts/sheng_env.sh": "6b0759aaeb8eee45ec6d99395be1cab9282850f88c0469b5e964104e63630b6b",
+    "experiments/geometry-link/frozen-student-codec-warmup.md": "c0c5cdff78de3160d06f2b06db80be9a36138b60d050d521503f2f980e11f652"
+  },
+  "limitations": "launch identity, not completed updates or AP; final original/student state and symbol/energy records require audits"
+}

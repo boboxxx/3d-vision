@@ -1,0 +1,1686 @@
+{
+  "state": "passed_full64_independent_native_audit",
+  "checked_unix": 1791130155.3434296,
+  "verifier_sha256": "1788c0e69ba51fd09420d9b8e56d3dad469b07f2bd15bd4dae53f8f134c9d469",
+  "helper_sha256": "bcf667541cb6cc58d79a33a2be96837b426ae9082d2a773b355d1b02762b5a00",
+  "evidence_type": "training_only_native_loss_diagnostic_not_mainval_AP_allocation",
+  "manifest_sha256": "3087d8c4c0c1965918ca3d8affd3ed6213f4fe83108c0ebed434b3ef68861248",
+  "launch_sha256": "053c1214d10e1b07980bf92a8ca7e5d0dfec89eec31178e05e857c28ae121bfb",
+  "native_log_sha256": "a395b999d05d6bf1ce2a896eef636ba164d480df30fc3cba750efa639ef9f617",
+  "actual_terminal_PID": 74257,
+  "records_sha256": "ce63dbddd1c6c86c097f8a145aefe460407affcd108ee3aa799b645cf421b7de",
+  "native_rows": 8320,
+  "attempted_complex_uses": 519168000,
+  "actual_total_transmit_energy": 519168019.8046875,
+  "summaries": {
+    "000000": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.19621659815311432,
+      "full_AWGN10_loss": 0.18681608140468597,
+      "readonly_states": 535,
+      "frame_report_sha256": "f3e38106f49b0d6e0ef6f026577ff11ed4c5305414a67e0815a8f1b8550eae11",
+      "fixture_sha256": "c5c3724079a522a2db41e9a4900c49c80dff4fff4794ec749fdd86299ea00125",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000000.png": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+        "/mnt/d/paper6/data/kitti/training/image_3/000000.png": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3",
+        "/mnt/d/paper6/data/kitti/training/label_2/000000.txt": "6627ff300809ccdb8f0402c1003b7c691a64e3027ceaf0ce7cabfeef9809d0c3",
+        "/mnt/d/paper6/data/kitti/training/calib/000000.txt": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f"
+      }
+    },
+    "000003": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.2338983416557312,
+      "full_AWGN10_loss": 0.2937784194946289,
+      "readonly_states": 535,
+      "frame_report_sha256": "315253fc509eeb546e514bad2b8255f6fc7e1500d3ec76ad8552b13a5b0c1eee",
+      "fixture_sha256": "eea54236c334c0ac0ee511614bc200dc42ddcb82c4ba4528687dbfa4ad8ce274",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000003.png": "d22f4692c924e0ba7ff2ac00827547d4bd018d991fb9f1959025b183a949af19",
+        "/mnt/d/paper6/data/kitti/training/image_3/000003.png": "ca44da39dcc83befde20753ac2bdb527314a2a78067757f2298ae6df947a1f9d",
+        "/mnt/d/paper6/data/kitti/training/label_2/000003.txt": "56f275a7b3464992db4bb524ee84cc09fb4ca621b6e63e281f6defa0a79b2651",
+        "/mnt/d/paper6/data/kitti/training/calib/000003.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000007": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.6698452234268188,
+      "full_AWGN10_loss": 1.859555721282959,
+      "readonly_states": 535,
+      "frame_report_sha256": "8d6d09fd071323fcdbb70845e14c7d736798aa64c35fbadd77fbe1991c7e1278",
+      "fixture_sha256": "96435b761e303f59ce8f99941bf290f14041950af0e77614ee75eab867962b94",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000007.png": "2675d702a65b2cda45e8dc19df8478ed26b24186d236246c97ebc5bac3d5df0d",
+        "/mnt/d/paper6/data/kitti/training/image_3/000007.png": "6693060bf5001cdb6936104ab1b2bf846b41d5a0c8cd71751618515dc5b64f88",
+        "/mnt/d/paper6/data/kitti/training/label_2/000007.txt": "fedd52f3441728af4d1255d236aef649bcb3dbfd3859cc145fcd1fd22299d1d9",
+        "/mnt/d/paper6/data/kitti/training/calib/000007.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000009": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.9093765020370483,
+      "full_AWGN10_loss": 0.747529149055481,
+      "readonly_states": 535,
+      "frame_report_sha256": "7727e6796969af5eb39fa550c2ec4136bc2a9226215603de0985fda65cebaf9b",
+      "fixture_sha256": "0b09f61548dfe0b4a2c9daadefa88ff3cb8f0e56f2a8f85cf8a7af003724e3e1",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000009.png": "ef18e8f93de15fec1f30055046d273823b8cbfc71a538f72dabce0e5776bbe2e",
+        "/mnt/d/paper6/data/kitti/training/image_3/000009.png": "8c628599faa3fb154ab2295b5e44affcc6e9ab70ce774fb7d2063c0341aecf82",
+        "/mnt/d/paper6/data/kitti/training/label_2/000009.txt": "b42d42e30394ca789b607b757fc0e28ec676035d75c00425ee4ed2c53430a8b6",
+        "/mnt/d/paper6/data/kitti/training/calib/000009.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000010": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.029247522354126,
+      "full_AWGN10_loss": 1.1651067733764648,
+      "readonly_states": 535,
+      "frame_report_sha256": "35bc313458ccae521c0b12fcc6cd3b2804672ce029e14bfc1ffec880ae8390bc",
+      "fixture_sha256": "61d6334120e6f73fa106368689ee406196e90eeaab9bdde3cb236e541bde3cd9",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000010.png": "123b58ce5608eae25b96fb159956b98a092f99f8e4da566c29cbf279e75d420b",
+        "/mnt/d/paper6/data/kitti/training/image_3/000010.png": "00e54a1ebd567b454171639a25925f5ecbda4a37b21500da0dde069238ce7b3d",
+        "/mnt/d/paper6/data/kitti/training/label_2/000010.txt": "347e445a2d4ac82a78d947dc61ea9a8664abb28757f165384e9f65bca193f722",
+        "/mnt/d/paper6/data/kitti/training/calib/000010.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000011": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.2953717708587646,
+      "full_AWGN10_loss": 1.2769420146942139,
+      "readonly_states": 535,
+      "frame_report_sha256": "5f0dc73cd6ad90325afba44e63fb4e4575d69c665be23841d03663a60382b690",
+      "fixture_sha256": "42f36eee38a2aff9962760f365b59da97c31b414d1981be58e195eef6ef6e33c",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000011.png": "3a2cb160a89c005dcd2ade961a1f5121ca669ce899a813c843c2d52ddf07b2db",
+        "/mnt/d/paper6/data/kitti/training/image_3/000011.png": "02f1b4ac24340aa8c2a5946a81ac905408112606fcbc284a3ba1a4614761772d",
+        "/mnt/d/paper6/data/kitti/training/label_2/000011.txt": "a5a32a687fa6ffb9610c2007863f042b15e53dacc86765a4ca2d484ac9abfaed",
+        "/mnt/d/paper6/data/kitti/training/calib/000011.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000012": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 2.2622148990631104,
+      "full_AWGN10_loss": 1.6829781532287598,
+      "readonly_states": 535,
+      "frame_report_sha256": "0a15ea390a3c4e7347c1f1decb5211eefa33902d3a089d234555143cfee8159f",
+      "fixture_sha256": "ec328b1c335b0e108b53172a0c603fed58f67d73160dd10448526d190eeaefe3",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000012.png": "519f490c0fa58f327dcecf0e0f22decdfa064d9c1611b51e7d4fa6979161a942",
+        "/mnt/d/paper6/data/kitti/training/image_3/000012.png": "ac1d334fc584e4f57fcc75460515e7da60dffb1039dc29d21cd5148be4d217f5",
+        "/mnt/d/paper6/data/kitti/training/label_2/000012.txt": "fb762a053a99946bb093c15b76552065fe8c5af379a6c64d8710aaab25de04db",
+        "/mnt/d/paper6/data/kitti/training/calib/000012.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000013": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.2332291603088379,
+      "full_AWGN10_loss": 0.2215154767036438,
+      "readonly_states": 535,
+      "frame_report_sha256": "d3e3426059f20a92dec6eb2b26e47fc3a559698c1502093e2e47a0c6417f4e0b",
+      "fixture_sha256": "99370448468050075b3e9276cce690a79e2dfc1091ff6c592864e8c7bcdea76d",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000013.png": "4fd9536eb75e527a6806cd0231fa7ef026e286deb0c27c594d13bf5dcc2c8bd2",
+        "/mnt/d/paper6/data/kitti/training/image_3/000013.png": "4d7cd0fa5f59909b44aa80eb43dc1a0e5e2e26b0e4b370125d1c67f1ac8c3adf",
+        "/mnt/d/paper6/data/kitti/training/label_2/000013.txt": "9c63473c22f3be83b1e3060ffcfe651802342aef64a50030ed2fcaa91c77f29a",
+        "/mnt/d/paper6/data/kitti/training/calib/000013.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000014": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.8243210315704346,
+      "full_AWGN10_loss": 1.0505461692810059,
+      "readonly_states": 535,
+      "frame_report_sha256": "2dd29da991808ce6654442c1aedcefcd3c1a3ea85ac4b9bf02be6ec917ab5b6c",
+      "fixture_sha256": "eaecfe453af4939fcc431fb129abe43c914ec1c69acfcb409515d90ccd6ea5fc",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000014.png": "0a486a77f7a58150552ed1dbc32fa5aeda64a9002061fefc7b73873e4ebba8a9",
+        "/mnt/d/paper6/data/kitti/training/image_3/000014.png": "2c160126518bebd90c16129e547ebf9dd42414efecb08cc9be81874ba843e02f",
+        "/mnt/d/paper6/data/kitti/training/label_2/000014.txt": "f676577b11e06e15735e229b9b794db4a9496766c05ae85d21f978eea1a9d726",
+        "/mnt/d/paper6/data/kitti/training/calib/000014.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000016": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.6196978092193604,
+      "full_AWGN10_loss": 1.8074194192886353,
+      "readonly_states": 535,
+      "frame_report_sha256": "7a6410f13ff11bfb35cdaec49be7dfef3756a7da57e0204e1919f983d3401b2d",
+      "fixture_sha256": "efb8ad44cd7420890ac0d2968b1e11956c746cabfaa7b1b7eacff2393235856f",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000016.png": "a55b69f446a307007c2bb7adc7aa579146d0c5bb3a202177b20090fc770fad3a",
+        "/mnt/d/paper6/data/kitti/training/image_3/000016.png": "b1d8134021412c9e6f705c4768c8ba18c42d4627a00ae4eb18caf91f3eee57b1",
+        "/mnt/d/paper6/data/kitti/training/label_2/000016.txt": "223280f4af065519671e0c527d088a409e661222b6c5b74fa222181ad3883aef",
+        "/mnt/d/paper6/data/kitti/training/calib/000016.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000017": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.321565866470337,
+      "full_AWGN10_loss": 1.5997450351715088,
+      "readonly_states": 535,
+      "frame_report_sha256": "8d47add1bf74aa117b0fc9719f29c39397e1558243febdb8986051b4f1ea60be",
+      "fixture_sha256": "6f0211dcadddf22f15e507e50f0400b3c680d1dfdf68342bcb0ad71ecc86fd56",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000017.png": "b6f2d5c8d0ce48f52bb483236603e647aaa5b77e614cc9ac15bfbd081a77f1a6",
+        "/mnt/d/paper6/data/kitti/training/image_3/000017.png": "55b1f0d0a8374e3193debdfbf080a6898e2c6ee3b655e1758547d0b0bb5c7637",
+        "/mnt/d/paper6/data/kitti/training/label_2/000017.txt": "48c4e5f3c86374404d32b0186e8f3633b0eed61b3196d08aa0744e0348ef66d9",
+        "/mnt/d/paper6/data/kitti/training/calib/000017.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000018": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 2.825190544128418,
+      "full_AWGN10_loss": 3.3611907958984375,
+      "readonly_states": 535,
+      "frame_report_sha256": "3adcd6ee048b83a49c3968c908f09e669215c60bdb0f528bd3d6c30532131e23",
+      "fixture_sha256": "5725b850f561c4c38d41c95d288d80628afeb878c93475be2f5fd471e3363c77",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000018.png": "628f14adc3cc7d201ed0959765a17b757e6365615b02ce9271035dca54eaba75",
+        "/mnt/d/paper6/data/kitti/training/image_3/000018.png": "21df20b0fc513e59a74096a0a4048c51f7534ed46c95742c8484b2b5fbe0a2ef",
+        "/mnt/d/paper6/data/kitti/training/label_2/000018.txt": "41b9d38d216b6eb0235a09f54141730dc3d25b6239f83d2a3c30b6ee59d45540",
+        "/mnt/d/paper6/data/kitti/training/calib/000018.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000022": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.6617645025253296,
+      "full_AWGN10_loss": 2.720402717590332,
+      "readonly_states": 535,
+      "frame_report_sha256": "72eadc9a0d97fb2f7f55bace535d75139d18cbae8be1e8276f88807123041242",
+      "fixture_sha256": "08c91c8216be298b6b53d1713e3022ce9cef635d010c00f28464174c456ce2ee",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000022.png": "b0aeb834e68edc1783f4dd1b620a0f6b7ae6b43ab33ec0b6358cdbd2fbe4c33b",
+        "/mnt/d/paper6/data/kitti/training/image_3/000022.png": "990ec319089323f76af779a51c97232676ee1e4f3371827b447e457204803286",
+        "/mnt/d/paper6/data/kitti/training/label_2/000022.txt": "f9f58b07f02621d49fb5e4bb1abfb88964f429202d79055d1adbd486a4f9f90e",
+        "/mnt/d/paper6/data/kitti/training/calib/000022.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000026": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.03547203913331032,
+      "full_AWGN10_loss": 0.021360814571380615,
+      "readonly_states": 535,
+      "frame_report_sha256": "595bcee63d904d5108036c2b4709854db6e8f2a70899c5140a70ccbcbab95ff8",
+      "fixture_sha256": "7fca82f0a5672aa09cf1f0cf530a1a13cae66bbcdb99a7b5b0b2ea04268b45f9",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000026.png": "5b0a82271dfc78c60d9274ae6a8df70ae974b452956ed9d292c0badb44c5012a",
+        "/mnt/d/paper6/data/kitti/training/image_3/000026.png": "3cd564371adccae795a4c19a46aed721ce58f2cdaad7356661849d22eafa4b3b",
+        "/mnt/d/paper6/data/kitti/training/label_2/000026.txt": "014e07631eb47d90b90f900511fd526a77d47cf6575d73925997fb6fe17b4738",
+        "/mnt/d/paper6/data/kitti/training/calib/000026.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000029": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.8956141471862793,
+      "full_AWGN10_loss": 1.0751407146453857,
+      "readonly_states": 535,
+      "frame_report_sha256": "dae6375d7436f062346d3908b625ff5b72eb5c828b01ab8d08bca2e596cf294e",
+      "fixture_sha256": "25f8031316e1db802e6457ddbf1ae963a5ce6578ddbad77cf1d176c69d1b4d50",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000029.png": "d10adfd029dd11ffe2ab0ff0c1d0ca6a62b1e1607f02550366cc0df74a7e8e84",
+        "/mnt/d/paper6/data/kitti/training/image_3/000029.png": "8e57c5ea888f891570850b902221d2b7679274b575a378045645e762ca7dc8bb",
+        "/mnt/d/paper6/data/kitti/training/label_2/000029.txt": "66e6b166ff2acb1bef51d39cc6e7cf442226bcdbea425e4e42034e98138e08f7",
+        "/mnt/d/paper6/data/kitti/training/calib/000029.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000030": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.712079405784607,
+      "full_AWGN10_loss": 2.1336135864257812,
+      "readonly_states": 535,
+      "frame_report_sha256": "a93429d50d196053256d4779ca2ed845d9eee45938a6733e8ee5557c35d8f6d1",
+      "fixture_sha256": "bcd6049b8cea36468f6c70cf30f134d7f03f28cb0318c1ecd470c13e054e1d1a",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000030.png": "05f8755ee23a33c233e4410b9c6eee3c8918e659ae4debbea653d11612de43d5",
+        "/mnt/d/paper6/data/kitti/training/image_3/000030.png": "2263ca9e5b1d763b2eb7ff4370a5ffb2218ece482e8727e71126dcaa5ce3319c",
+        "/mnt/d/paper6/data/kitti/training/label_2/000030.txt": "2acae86e0ed54ac0d451ef0e481c752e7b15c8b0b6fdbe5366e03440cda182b0",
+        "/mnt/d/paper6/data/kitti/training/calib/000030.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000032": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.6467206478118896,
+      "full_AWGN10_loss": 1.9100321531295776,
+      "readonly_states": 535,
+      "frame_report_sha256": "a07c6db5295eab975a4ea1583d6c8b675cf3edafdaf55c52436f791ee7bf054d",
+      "fixture_sha256": "ad34eebb7f5fb2b08f28c9c1c17fc9b10b646dfecab2f21ef0e633c48907780d",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000032.png": "d18835c332dc87eac96b6735d2d0506ef6a99cbb1aeb79a190afe68fb20f3e38",
+        "/mnt/d/paper6/data/kitti/training/image_3/000032.png": "c9e323301b64b07722f685f8f77fac9e6a5f9d144dbf88a500174dab2fc8199a",
+        "/mnt/d/paper6/data/kitti/training/label_2/000032.txt": "5d1421f2b9a3e292eb376888fa181473357166740fc6a4fea28f69f74474cb7d",
+        "/mnt/d/paper6/data/kitti/training/calib/000032.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000034": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.3461017608642578,
+      "full_AWGN10_loss": 1.622344732284546,
+      "readonly_states": 535,
+      "frame_report_sha256": "a24cffc5daf9aa2d3f673006bfdf30e6b73ef93442e77b9d2f5fe1e46b5a2279",
+      "fixture_sha256": "d7941b99d301fc6ec890dd15654ab269543ce644df305987ffcf6865edf06655",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000034.png": "3841398b77133119eccba20925a0f1becb32245b73881e93bd7a2a1e85238fc5",
+        "/mnt/d/paper6/data/kitti/training/image_3/000034.png": "781c9a274c86a5fddc1cc3457163a19cc2eec39347b1d1e2ba761a3813698070",
+        "/mnt/d/paper6/data/kitti/training/label_2/000034.txt": "271aed36569400c335109b7f3c0e8f7c08e25abc8cefe3c07b620f2995ab7180",
+        "/mnt/d/paper6/data/kitti/training/calib/000034.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000038": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.4159276485443115,
+      "full_AWGN10_loss": 1.636784553527832,
+      "readonly_states": 535,
+      "frame_report_sha256": "8227f92edd5af8bb241d0819809cf91c5b000e4e0000a2db85b26d96f3bded2a",
+      "fixture_sha256": "042c2b140c7f615211b363e108e219e3ab2f9c8b5ee14c419f3ff745466306ce",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000038.png": "4cfdd9a338e9024578aa9a36a3ad86bc76b664e17ae6556fad147d0dbbf1e695",
+        "/mnt/d/paper6/data/kitti/training/image_3/000038.png": "b9af634dd75f48fa04a10ead29f278cdee2af11d32d4a36c969694a9dd723b64",
+        "/mnt/d/paper6/data/kitti/training/label_2/000038.txt": "b37f1644b953db740426fd692f1032d96d6307f90ebe53493e487c924a134a2c",
+        "/mnt/d/paper6/data/kitti/training/calib/000038.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000041": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 2.7659780979156494,
+      "full_AWGN10_loss": 2.8586792945861816,
+      "readonly_states": 535,
+      "frame_report_sha256": "b25e0792c90f695c7f00e3da4735d327f6d766577d33dccba50526867ab50d25",
+      "fixture_sha256": "21743772a88cdfc734617ce9e64a0725724e331ede21483123ee1e078941c430",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000041.png": "b861205f7c2274a663bc54fc1d0950b6e996a88261ba9ffba54a8f70a84ed4f2",
+        "/mnt/d/paper6/data/kitti/training/image_3/000041.png": "8456492921666ae79b824b0ecfbfd2483a65623edba8a6c6570b288390d8a231",
+        "/mnt/d/paper6/data/kitti/training/label_2/000041.txt": "8a583dcc5e3a1604b2b349e5e0e9b8ef462189f7e54e63e515642555923ce6d8",
+        "/mnt/d/paper6/data/kitti/training/calib/000041.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000043": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.7512916326522827,
+      "full_AWGN10_loss": 1.639768362045288,
+      "readonly_states": 535,
+      "frame_report_sha256": "851e623dfc342c5971e0c3b25f5bfbda85f6c7cac75644e8b435a928e9d64340",
+      "fixture_sha256": "766d9a850447e55c85e32cffcaff72d6a4da04947140cffbc01d618b863ddd3d",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000043.png": "9f1c29c2a5413db1c0f5845741cf7032c1955ee055c0b3b09cfdd1843b9ae97c",
+        "/mnt/d/paper6/data/kitti/training/image_3/000043.png": "326bfd461237be26635f09b9aa48eae0e5e4e163969bd4a318ca479a6be4e23d",
+        "/mnt/d/paper6/data/kitti/training/label_2/000043.txt": "53ce4edf054e9b691c44f832ef66d9b9b07251b7069abd81e1924239511ed060",
+        "/mnt/d/paper6/data/kitti/training/calib/000043.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000044": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.3569113612174988,
+      "full_AWGN10_loss": 0.33235031366348267,
+      "readonly_states": 535,
+      "frame_report_sha256": "6e3eccaf16691cb0e7cc38a5e060020ad9c605f8b3a74d77dd3ec29f4d2afed8",
+      "fixture_sha256": "9cdb2f686df3ce8b13c13b47880f60fa44b90ce5a3a739725d24010fab73c158",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000044.png": "6811ecc1d19e594221e0f9ed85ec6b93cd8f83e50fca4bbb9bf8b9362f70091d",
+        "/mnt/d/paper6/data/kitti/training/image_3/000044.png": "f5d67494d3069951d0d480d53909410a48460721789d7f90218f0324c5424bdb",
+        "/mnt/d/paper6/data/kitti/training/label_2/000044.txt": "9928dc3904f97858c4d98254676293f07f11b50b7103931282f81648fd926e34",
+        "/mnt/d/paper6/data/kitti/training/calib/000044.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000045": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.9027112722396851,
+      "full_AWGN10_loss": 1.0858347415924072,
+      "readonly_states": 535,
+      "frame_report_sha256": "3df35e2c095e669a0c5ef6a43b8e2bfaf8694d48c84d1db96c7d93e5e5802554",
+      "fixture_sha256": "48d57225134f7f7420cb20071c27f6ebb5c5e9423a7de5d31754e0fcf166f871",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000045.png": "4f7946448e1a128b4bc53ed811a5a4f19036f3d165516293726802d6c3da77c0",
+        "/mnt/d/paper6/data/kitti/training/image_3/000045.png": "602031168fc01b9eff7c78adeda23d1c425e841fcf3f2f98f142ac2d9e4b030f",
+        "/mnt/d/paper6/data/kitti/training/label_2/000045.txt": "107ed47a80fe4607dc92818a6e0cc0d2826026c28c79bbe69bbe7c0921b00376",
+        "/mnt/d/paper6/data/kitti/training/calib/000045.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000046": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.9697912335395813,
+      "full_AWGN10_loss": 1.411550760269165,
+      "readonly_states": 535,
+      "frame_report_sha256": "f6f5cbef389b8ea36a4ee3ee85b005ed3ac10fbf216d5b4b9eed3a037ec45217",
+      "fixture_sha256": "e2d7605eb2f491b38c72af5ed6eb64a6f27d888b3b7bec3f21f34806e39a42b9",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000046.png": "8852f56a99559458679b989231dd696cf86975beec8cafd82b3ecc18641a5efe",
+        "/mnt/d/paper6/data/kitti/training/image_3/000046.png": "5c1b1a02eb14bfb53c557b3b2ddfe354869f9ca5230d9c799d065ca72b1f7371",
+        "/mnt/d/paper6/data/kitti/training/label_2/000046.txt": "f6697c8c7dc347f591e1eb9dae1ea867de9ae3efd47d193a8dbac7ae37faf809",
+        "/mnt/d/paper6/data/kitti/training/calib/000046.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000049": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.6988557577133179,
+      "full_AWGN10_loss": 1.8439679145812988,
+      "readonly_states": 535,
+      "frame_report_sha256": "36ad10492c560b732faceb9643ef691d5e5b0e544d8525cd709089f3811708c1",
+      "fixture_sha256": "ca4b3be1a22bb1db411e410c122b3d8dfd4caa549afded89d05b13260eeb68c1",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000049.png": "b1a77764b89eb720a974b9c1079f68c37bcabfa7f32646709df715e5fb79a2fc",
+        "/mnt/d/paper6/data/kitti/training/image_3/000049.png": "e438d66ffa1acfc6e26ce8c998b5175e9cfdf5a68a6b95dc4d54ba1a9a9ed8d2",
+        "/mnt/d/paper6/data/kitti/training/label_2/000049.txt": "9b3e5df668cf83887cfb52952144fe7543874c15ae515ff167ce5e0414e3c0e4",
+        "/mnt/d/paper6/data/kitti/training/calib/000049.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000051": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.663238286972046,
+      "full_AWGN10_loss": 1.8538479804992676,
+      "readonly_states": 535,
+      "frame_report_sha256": "3667729042ea413a282e7e8a292d5b11dfdeddde42cf6e14666ace5499801254",
+      "fixture_sha256": "0fc44e02b1ca72fc8b31c94da029b00d12e6ba18fb826821c4083613c80eca07",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000051.png": "1e83240824583063f5f2dc7a1379fe7feb2e7bc389a8f35586985c499b8846c3",
+        "/mnt/d/paper6/data/kitti/training/image_3/000051.png": "8c600ab79e551454b7b3a13dcde15164d20d2e946d5ae4de6b0d8edbf9a087c9",
+        "/mnt/d/paper6/data/kitti/training/label_2/000051.txt": "14012e4ff8d22d6e48d5eefe386c3e5db5b08bb7142ddaeeb99975406c9aec6a",
+        "/mnt/d/paper6/data/kitti/training/calib/000051.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000055": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.807264804840088,
+      "full_AWGN10_loss": 2.473402500152588,
+      "readonly_states": 535,
+      "frame_report_sha256": "a8a548a64a4de5dbcfc47b6b429b7babce7c7069f8e93b512b8d1dded2747290",
+      "fixture_sha256": "39ace705a1f570a3f2351dbbf8c2d035799c5d1d91010afaa980377d466a1301",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000055.png": "b453153ed0da3a93db4d02900e440b7ad7d3411552ad76f254311d648ba6e1c9",
+        "/mnt/d/paper6/data/kitti/training/image_3/000055.png": "b269c399f557b9b393818ffd1b10809407bf621b66938f931f49a9644562e11c",
+        "/mnt/d/paper6/data/kitti/training/label_2/000055.txt": "09ac102e049ca8b0593a89db0aa0226028e35480666cf896879b7de6b9ee4437",
+        "/mnt/d/paper6/data/kitti/training/calib/000055.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000056": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.547208309173584,
+      "full_AWGN10_loss": 1.397961974143982,
+      "readonly_states": 535,
+      "frame_report_sha256": "7babcb951c666175637a46856838ac57d5a81938e61f1acb7f07763595e33a05",
+      "fixture_sha256": "5dbd6d514231db56737dc124a76626f8b7de906f7620912e46ba374777405b49",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000056.png": "7e0b819321638f55ad308fd48411cb0a3e24a93cdffdca4f393e55ba8ba2f36e",
+        "/mnt/d/paper6/data/kitti/training/image_3/000056.png": "9bc651f7a87a66fc698991f4a569aa44462d15779383e8c4f06c30a42a7704d4",
+        "/mnt/d/paper6/data/kitti/training/label_2/000056.txt": "4adb3b911901254f87d8cc0d884d8129ec53b9fd28cd6af2a2a02d73963c7d25",
+        "/mnt/d/paper6/data/kitti/training/calib/000056.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000057": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.7488648891448975,
+      "full_AWGN10_loss": 1.5087389945983887,
+      "readonly_states": 535,
+      "frame_report_sha256": "f67b2949c7afa564743642abc5f5996e3d2d560e341178550540b66cea0ad669",
+      "fixture_sha256": "bf76961f424ae484ea09262c571f568e392ca4eb4ed0795572355cbc4cfb3597",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000057.png": "9f86ec3eeaf8c7d4198fd015e75d4b28acf9a58e2bf4fc01db91be27a36df84a",
+        "/mnt/d/paper6/data/kitti/training/image_3/000057.png": "09df255181513480deefbcce2dfd9ac365c041deee5b10c295007418762f8dbd",
+        "/mnt/d/paper6/data/kitti/training/label_2/000057.txt": "d97dd35b6a7fda6408e73771a8db70a813895a17a2fa7158e93388eee2c567d1",
+        "/mnt/d/paper6/data/kitti/training/calib/000057.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000060": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.749723494052887,
+      "full_AWGN10_loss": 0.9700777530670166,
+      "readonly_states": 535,
+      "frame_report_sha256": "469430217c6bd1585259d409f4e46ccf42ca4e931b1cc9d9cf6acd55917ec19c",
+      "fixture_sha256": "ab8ef4b41af16a9e5d88a73680d0afd6c50271f63a33070714a13d084a0a33bc",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000060.png": "92b74583e5114fb9c702a144ec0f4bd2316c92bbc15d4e3c279d66b439da16a1",
+        "/mnt/d/paper6/data/kitti/training/image_3/000060.png": "f9751ea46ab5fc39125b78c4644000d7b301d3b9fe0a8abe9b2f75d2cf83bef6",
+        "/mnt/d/paper6/data/kitti/training/label_2/000060.txt": "6659c377afd4d5585060cc46e6da9d72ae1ddee9e74f1fedab715acc50854d39",
+        "/mnt/d/paper6/data/kitti/training/calib/000060.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000064": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.7728118896484375,
+      "full_AWGN10_loss": 0.6859017610549927,
+      "readonly_states": 535,
+      "frame_report_sha256": "0ec257da91250e730b6a4fad8c0676d2b8c72ed9f68fec0d860040ee5458a79c",
+      "fixture_sha256": "5eb8bcf9ff20796bed203aa767777eec28db46cdd06e3a2e6c752b134c9366c7",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000064.png": "5398559f04560a794e44781a3cb31fb604838121121e545a9abedc0bbd322cf4",
+        "/mnt/d/paper6/data/kitti/training/image_3/000064.png": "f99275dccc315af4c5900302ee8f1259cf4650f5dc9f1d785d8880bb357ddb16",
+        "/mnt/d/paper6/data/kitti/training/label_2/000064.txt": "da328ca9302e36ba9ea2e17da029569375af335425ba3a02d9a26af0081cccf9",
+        "/mnt/d/paper6/data/kitti/training/calib/000064.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000067": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.4113576412200928,
+      "full_AWGN10_loss": 1.795790433883667,
+      "readonly_states": 535,
+      "frame_report_sha256": "b5481af9d642d5090777235c1a52a1e20ded74832e25e7d3457347e56234fe98",
+      "fixture_sha256": "75fc3382f9eb295e80326fbc2f372b3973302b7ce83e0a3cf904dd56457c5a89",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000067.png": "4dfa1c94f8226bc1d2b21bc8e1c4bdc2f92bae46206f15d66e1f24ed87c4645a",
+        "/mnt/d/paper6/data/kitti/training/image_3/000067.png": "6f2deb46df166fbc47a9ff6aa9470c80672b250636e571fc98a92b857aef2fc3",
+        "/mnt/d/paper6/data/kitti/training/label_2/000067.txt": "73e6fb3e7c9b015e563b7d9790637049d2922e034a689c2bf77c615e370bc07e",
+        "/mnt/d/paper6/data/kitti/training/calib/000067.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000068": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.3603440523147583,
+      "full_AWGN10_loss": 1.5146327018737793,
+      "readonly_states": 535,
+      "frame_report_sha256": "24c57ad803b588c81005e603b38ae82b1d700c2dc1c6a9aa93fd418f244d9826",
+      "fixture_sha256": "de0b769bc4880a288b9af881c5cfc7f3dabf9367725261db66b678e2f16a4c48",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000068.png": "515bf417f9769ea219327984b1e2ce0ae5f8a340fa917972053198f97f2bb8f1",
+        "/mnt/d/paper6/data/kitti/training/image_3/000068.png": "78ee2f4cf63c60213cf9d797716ae49af4bc78a3bd832c4b0c756822c8186c51",
+        "/mnt/d/paper6/data/kitti/training/label_2/000068.txt": "346e5afdfa11e39b331c46dd73cdb78538b5762f17a941c5746304113b2bb5c8",
+        "/mnt/d/paper6/data/kitti/training/calib/000068.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000069": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.5629624128341675,
+      "full_AWGN10_loss": 0.8246051669120789,
+      "readonly_states": 535,
+      "frame_report_sha256": "f53f4ab790d6b0b81a7f285ed8537ba4421e93accfbc6a4db852d2b323c04a12",
+      "fixture_sha256": "af22bc2be31388d75dc5f8a0e6fc876e144d17a7eafd918026f10bb6f0f5e369",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000069.png": "d46e731f56423f852149b6451ce5f1e9e25aee84ddb3ac731afca1aa4dfdcda6",
+        "/mnt/d/paper6/data/kitti/training/image_3/000069.png": "1a3c9b00fc9d2676a231be1b6c7edc00d636a2e29be0fb929c2aa179298e0054",
+        "/mnt/d/paper6/data/kitti/training/label_2/000069.txt": "0f996e3ec6056a86a25c8d18167441f98ee8f623a9cd6fdf1fbf22211c4459cf",
+        "/mnt/d/paper6/data/kitti/training/calib/000069.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000070": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.44449159502983093,
+      "full_AWGN10_loss": 0.4023189842700958,
+      "readonly_states": 535,
+      "frame_report_sha256": "f801fa2ad143c2255d3aae99acc5258b14304d2b735c8cd41c2bbb82a0f24290",
+      "fixture_sha256": "8bc72d9c7d983a716af77b5e399e52d81c473ea1d0a4147c0a41e1927440429a",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000070.png": "3df6ff05f7c24d44822c89538175b5130c07d1eae19bcd6560f1ba067c7897d3",
+        "/mnt/d/paper6/data/kitti/training/image_3/000070.png": "0a2f09ed0c4860794b5ddb42cd1026747e39c6090c2a52d274c9b330a0f62736",
+        "/mnt/d/paper6/data/kitti/training/label_2/000070.txt": "423a0ab4bba748122c4fd16d56a66d6d4e9d8ab64f5b93014077b0c5e566f221",
+        "/mnt/d/paper6/data/kitti/training/calib/000070.txt": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f"
+      }
+    },
+    "000072": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.1002094745635986,
+      "full_AWGN10_loss": 1.444887399673462,
+      "readonly_states": 535,
+      "frame_report_sha256": "7a232a1ec815d77486fe44bba8c01336e63174832c83baf118e03f79d16bbac5",
+      "fixture_sha256": "26f8ad9a373f4f039affeaaf93f2ff976bfb526e07593aca62c05932707073bd",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000072.png": "1269662e5f09a7daf9623adf5808aada9d2e6813fe5ed3f7622713aa6dec80c3",
+        "/mnt/d/paper6/data/kitti/training/image_3/000072.png": "4f0e53540b2c1eb3885772f9d589fc38c555084fb7a2c93ed061e3e477661173",
+        "/mnt/d/paper6/data/kitti/training/label_2/000072.txt": "e4add91dfeb036c59c4d00415ad62b162cfdc1c11a43974c4483cf71a5b12ca4",
+        "/mnt/d/paper6/data/kitti/training/calib/000072.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000073": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.6440149545669556,
+      "full_AWGN10_loss": 1.5918407440185547,
+      "readonly_states": 535,
+      "frame_report_sha256": "ce2ed6657c39f144e2f04119fcea4adf4f4c00b6c233b69ac97faa9e12b1c4a3",
+      "fixture_sha256": "86ca8f149f83b24d91f666acfc1f014a59a26c2eda08843bc490e9356d81cf85",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000073.png": "746f02c0b42cb64d2328af5ea253a10ac23a8ef86dee56def4ab4674f5633ac0",
+        "/mnt/d/paper6/data/kitti/training/image_3/000073.png": "b9631d2a33e8467e8234302bd7d845f07c113dd361dedc0d9b9e0dde78166ad7",
+        "/mnt/d/paper6/data/kitti/training/label_2/000073.txt": "4e9cca0a3bcc7701a9015d90606f14f1622cb04aa135ad5190914eb651775739",
+        "/mnt/d/paper6/data/kitti/training/calib/000073.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000074": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.5101515054702759,
+      "full_AWGN10_loss": 1.584308385848999,
+      "readonly_states": 535,
+      "frame_report_sha256": "7ad4f806f90336c54d0f55d356c14a6251aaa396d0d20902853ec507c1e73a7e",
+      "fixture_sha256": "94e896879a722bd063d8446d8eb1b8d17862c6c9fb87ccda2ea2a4cd2c9c5d64",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000074.png": "75d560e16613c3822ff0bcebfef36ad11cbbfc674b869f03c6cc646eec0d4bd5",
+        "/mnt/d/paper6/data/kitti/training/image_3/000074.png": "120c1ff57825de3a538bfd8805a7a10df9ac833dbfcdbf970f95843994eb1161",
+        "/mnt/d/paper6/data/kitti/training/label_2/000074.txt": "5ce819c7889e0ec8aec7c4c204b20d71ee478cc35f0e456901a48dbf81bb3e70",
+        "/mnt/d/paper6/data/kitti/training/calib/000074.txt": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f"
+      }
+    },
+    "000075": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.0226547718048096,
+      "full_AWGN10_loss": 1.2115930318832397,
+      "readonly_states": 535,
+      "frame_report_sha256": "12667a7639bcad98810d4087a1efaaca172f6ecb8ae5fd1c13577e83ca96ada7",
+      "fixture_sha256": "ef7bd83a859e878475abb4d4d3258b5855822a21916f379a9611a15e930b22ae",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000075.png": "8d42705feb2978c57dbf6b53f32a31a0cdb0ca55ef48407a238bd53997908945",
+        "/mnt/d/paper6/data/kitti/training/image_3/000075.png": "0efc1a5097085333cf674bcd0151c87a142488efebbde4748c8c68bd97bf9760",
+        "/mnt/d/paper6/data/kitti/training/label_2/000075.txt": "7cc7293d420abc902f8ee1859e8b05b1d3179bd52025cb028699e45ef3fae6e0",
+        "/mnt/d/paper6/data/kitti/training/calib/000075.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000079": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.0388779640197754,
+      "full_AWGN10_loss": 1.4399018287658691,
+      "readonly_states": 535,
+      "frame_report_sha256": "ee03ca6bb565a7accec0c08c28f5232b9e086e9c8febf52d25b9b6d169c5d8fc",
+      "fixture_sha256": "8050a70556196b584c750342dd49d94653689eb66d692da2a7d6c75b4af6cf63",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000079.png": "410c3e5698cdaec8041aacb7e5b105fedfede8df7117831a0b5b02d2c92ccb44",
+        "/mnt/d/paper6/data/kitti/training/image_3/000079.png": "c4136f3e744cba715c04c467950c55bd97444d0e95131282b6dd9410f5831309",
+        "/mnt/d/paper6/data/kitti/training/label_2/000079.txt": "6525b2bec945f38da6c953fd0c4c7cb0a03e7b8ee85cde4683a1d6627d81fe93",
+        "/mnt/d/paper6/data/kitti/training/calib/000079.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000080": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.516150712966919,
+      "full_AWGN10_loss": 1.1960632801055908,
+      "readonly_states": 535,
+      "frame_report_sha256": "6a00a55017e638d9f0aaf445c9d79413fc331d8025e667785ce4a3fc384fe93b",
+      "fixture_sha256": "4c8643e9c9f30212393b62294d38d21910230e2f600853228958004fae2fd4ca",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000080.png": "2023dde364f1469e1b6a5bdd15dc12867b6a09da8d6e6a137eff2b324d55241e",
+        "/mnt/d/paper6/data/kitti/training/image_3/000080.png": "dbe238439d2153b7ea49024ec6976311324d0c2c86672496a8fcc229aad1b8f6",
+        "/mnt/d/paper6/data/kitti/training/label_2/000080.txt": "7d88181ff65bfc7809ce5d9ddc7c00ea353f651ef8c13d743fb10179b136c882",
+        "/mnt/d/paper6/data/kitti/training/calib/000080.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000083": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.1720657348632812,
+      "full_AWGN10_loss": 1.3000068664550781,
+      "readonly_states": 535,
+      "frame_report_sha256": "cb7a8cba6a471a436e90682951b04a1e5a5df2a8fc445d531dd3edd2d4f4cb49",
+      "fixture_sha256": "c6ae3d8ec3a25be10d195e145ea1d848a2eb91e057d279a18abe2ae7a341d7b6",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000083.png": "fe95d2acab62790fc4ed2a2797e8182ebc1e94072a8c954d3c700fb484e7d2be",
+        "/mnt/d/paper6/data/kitti/training/image_3/000083.png": "4c74d742344f41cd7c6ce291829250a583cafb6088f386bd5df332e1b47d61c6",
+        "/mnt/d/paper6/data/kitti/training/label_2/000083.txt": "3a073210d28f9e568306d480f864864e17af5b58da7fe5f77af6eafb7574c80f",
+        "/mnt/d/paper6/data/kitti/training/calib/000083.txt": "d567fe1ef88e37cbaa49772533db1c72ecc4094f243c952a436e77950ba74cab"
+      }
+    },
+    "000084": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.8221275806427002,
+      "full_AWGN10_loss": 0.8981842994689941,
+      "readonly_states": 535,
+      "frame_report_sha256": "77c27cfed3ffb819f8a64bc3031602572cfb14861ca8e2cc112dfcb362099644",
+      "fixture_sha256": "9a8298ba67f521cc4ea41843647d4ebaf70dc53a43cfebbad362ee3ae6ea42dc",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000084.png": "42111e5dc0009d10bdbef5494f6f879309fcc8188ea44fa4e0eb53ba647ebd4d",
+        "/mnt/d/paper6/data/kitti/training/image_3/000084.png": "e0e480520d417eea2c580ae29f8ec1b36318f2b11fdd4c7ba5c8309122151714",
+        "/mnt/d/paper6/data/kitti/training/label_2/000084.txt": "f0b75149560b1f6cc2d0d256c702d016e6aefad8e7bb08f73562af8693ef7c3c",
+        "/mnt/d/paper6/data/kitti/training/calib/000084.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000085": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 2.0232608318328857,
+      "full_AWGN10_loss": 2.0320255756378174,
+      "readonly_states": 535,
+      "frame_report_sha256": "8f944c28bd4a520db01780d0e29029796a9983b3ef5f1f88056cbf161defb86c",
+      "fixture_sha256": "a637a3c996bf5938ec7b885785997294a8a78a5a464e0059eb4a74155cfc6c64",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000085.png": "68da934abfabd6b2014afc9043fba651aae81988bf2b91a58fb0f6a809c72381",
+        "/mnt/d/paper6/data/kitti/training/image_3/000085.png": "eb7d72d45ee7f9cf080c21a98ca4f171950c9c5bb213c5ce7fae5a5e92f74a2c",
+        "/mnt/d/paper6/data/kitti/training/label_2/000085.txt": "f13f5d5db8f19f9105b2bb18242fa26acb751a456bd8d202890c52979fd7c4bc",
+        "/mnt/d/paper6/data/kitti/training/calib/000085.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000086": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 2.027238130569458,
+      "full_AWGN10_loss": 2.2235264778137207,
+      "readonly_states": 535,
+      "frame_report_sha256": "7b66959b60f87fc3dc1ec6ce328f56641c9582d90f802fc3df6c77a05e0cf9cf",
+      "fixture_sha256": "02a331a8086ab8e42c77b1be208c8b2b36449fc608388c6402bb10604410cbc3",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000086.png": "14f3e51cf55d8df337ed64e928a66b0851d25b0b3408386eb429beb55cfcc776",
+        "/mnt/d/paper6/data/kitti/training/image_3/000086.png": "6591eebc3161a4feec1a2fd59769e7247fb75760488dc7fdd06b54ffa6a71c83",
+        "/mnt/d/paper6/data/kitti/training/label_2/000086.txt": "1f466a1c494837597faabc8db19fa18b3dd3693402a8379640f586ce8c78ee28",
+        "/mnt/d/paper6/data/kitti/training/calib/000086.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000087": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.662955105304718,
+      "full_AWGN10_loss": 0.9393970370292664,
+      "readonly_states": 535,
+      "frame_report_sha256": "fe912fe4314fc62dfec233595ddafa4998348d4368c27ecb3a82cad8e69e32ed",
+      "fixture_sha256": "d4e718412777d8ab7875de69c31e3e252cb4eaace2c96b7dd6c8139a9c3331e5",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000087.png": "e292985d306280ec441f8d55e4a363b375589bb3b2c52e6a62859c2ef006d3c7",
+        "/mnt/d/paper6/data/kitti/training/image_3/000087.png": "8a76a4aee8b667120e9ee92b9efc9fb26b4830c52f00c1516ce9f8251b36580b",
+        "/mnt/d/paper6/data/kitti/training/label_2/000087.txt": "ad5aefc842dc931dc3052d79525583b666e806ef3df1d66608ab39676a75ca71",
+        "/mnt/d/paper6/data/kitti/training/calib/000087.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000088": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.45465749502182007,
+      "full_AWGN10_loss": 0.4708544909954071,
+      "readonly_states": 535,
+      "frame_report_sha256": "fe878edf451320a7e278d10134adffb3f17e5cd6952b131a760c300bf1e2d13c",
+      "fixture_sha256": "eb233c5bd3d393e7bd473a5bb4ab9c36003a62f7656bb76a5e227528618c60b1",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000088.png": "b25eaf3f4f3df83b863727d23ed35ccb508321b00435f68fd442638c28bbb567",
+        "/mnt/d/paper6/data/kitti/training/image_3/000088.png": "7387a7cc5d93075b74869496792b949005ce747e8d61d273956c3d9249debeeb",
+        "/mnt/d/paper6/data/kitti/training/label_2/000088.txt": "b23605a5e3f79f0904884d8df327654398ae19d9a833baaa36b13c52f47326a4",
+        "/mnt/d/paper6/data/kitti/training/calib/000088.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000091": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.701472282409668,
+      "full_AWGN10_loss": 1.3983346223831177,
+      "readonly_states": 535,
+      "frame_report_sha256": "49117be62332e33c2f073a7331745ce907bee4280ebd051d587036aa3e877fd2",
+      "fixture_sha256": "f8eb354218d0586c266ba76e3e5fd6cc4e183d53e9123ad26044b9d2ca2bb436",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000091.png": "7ec892223ee36c3d3332fe18c76df90e5849aa1624e728340011d6e089271e0c",
+        "/mnt/d/paper6/data/kitti/training/image_3/000091.png": "3bb948716b2fd6896ca706fc12ee4b7aad7f72d76505af1e4272004e6e90a653",
+        "/mnt/d/paper6/data/kitti/training/label_2/000091.txt": "2615f97cfd13ac3d6273865f854a525723ce0d5c56a8b8552be0e691303ee3b1",
+        "/mnt/d/paper6/data/kitti/training/calib/000091.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000092": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.3312435150146484,
+      "full_AWGN10_loss": 1.2010347843170166,
+      "readonly_states": 535,
+      "frame_report_sha256": "2e9932fcaa70037cff2ee04d5a56daf8bdfa57a770419b9be5382bd36e277266",
+      "fixture_sha256": "f2a8b30f98df9dfca69e32b345c66f92b945437bf6270199cec806787e6a5736",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000092.png": "a15cdb04ebe6b4b218fa2a31680a1a174d9b2e6e8da3594abfd70148e8dda08e",
+        "/mnt/d/paper6/data/kitti/training/image_3/000092.png": "ab65861dc53f3fdbbe8d8c1165725b9b59c9f88a687f4e91764c1a5e33d291b8",
+        "/mnt/d/paper6/data/kitti/training/label_2/000092.txt": "730b878f66701980e20cf10868343c97f2e6018daac02d9aa36bed2879f7d8c1",
+        "/mnt/d/paper6/data/kitti/training/calib/000092.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000095": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.2906519174575806,
+      "full_AWGN10_loss": 1.3842318058013916,
+      "readonly_states": 535,
+      "frame_report_sha256": "30d19e88559a37b75537e975c4fd23b47dca3556eb52e5dfdda8c358101fed6d",
+      "fixture_sha256": "faa1328b78f918a0fd84960faedc24db831a9398c5a664054ac93556ca607553",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000095.png": "e1dba5aae4434d200af83e7ef52df662b0807217eb57e28caf7d133d2adbc4af",
+        "/mnt/d/paper6/data/kitti/training/image_3/000095.png": "651e6b0770c9b426b8db10715f7f0611c9fc7db24b36a35235011b13f295fd5f",
+        "/mnt/d/paper6/data/kitti/training/label_2/000095.txt": "a9fbd05fe76d84394a1e22b27372a919bc4f49ec920a2b1f8efd1b0c68918a01",
+        "/mnt/d/paper6/data/kitti/training/calib/000095.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000096": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.7030071020126343,
+      "full_AWGN10_loss": 1.7911128997802734,
+      "readonly_states": 535,
+      "frame_report_sha256": "f353ccbe8fc4201a516b7e062a1e90652813bdbabda973398009427e1e39b1a7",
+      "fixture_sha256": "b123a5e0c673bb0fba1297142ee220e2a47138ebeae8d81cbd6064cd8c5e20a0",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000096.png": "5a359f71b6ef66229020cc25274a7ca0f10098f625c903cf2a23522773a04c4d",
+        "/mnt/d/paper6/data/kitti/training/image_3/000096.png": "f6f56be61367e39c6f1408d1011d82af8a736eff2d60bd9533b42c478ef6da3e",
+        "/mnt/d/paper6/data/kitti/training/label_2/000096.txt": "df6952f1332a99f3c717f8acbd26aef5c0bd46406dac9cd649f68103e2accdd3",
+        "/mnt/d/paper6/data/kitti/training/calib/000096.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000097": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.4966373443603516,
+      "full_AWGN10_loss": 1.6752722263336182,
+      "readonly_states": 535,
+      "frame_report_sha256": "ff0ce01f18546eaa982996282e165ae3a84cdac2e4bbcb6f3a613b7f85d9fbd3",
+      "fixture_sha256": "a1eb4a271e16a7cee220af498261015ae4aed1f26096d530fc4774b0d80a2d10",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000097.png": "e789128b84f4ffbd89e418c864f47f8be0e3cb2382451563cb6e19254cd6fcc7",
+        "/mnt/d/paper6/data/kitti/training/image_3/000097.png": "c01944cb69ce25e50e32dc57f90cd0682f4588c01fe9cdb162560018e294f811",
+        "/mnt/d/paper6/data/kitti/training/label_2/000097.txt": "9b344a6b4ac5e0d5045bf8f439ca211add80efe6f2400043957cab6cc2d611b9",
+        "/mnt/d/paper6/data/kitti/training/calib/000097.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000099": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.0773615837097168,
+      "full_AWGN10_loss": 0.852886438369751,
+      "readonly_states": 535,
+      "frame_report_sha256": "689dce918751b81ea4b906ab3f70cce62b7d1a64347ddc5062948a7ec079a96a",
+      "fixture_sha256": "7f4a5eed0b125b2d6b548e0c7ed5261ec9c886096847c88b58d976a1306ec3d1",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000099.png": "aef6f81589db89e88ed7c7cb57b21a8280e7de80e3cce54e858e8cce245a5a3a",
+        "/mnt/d/paper6/data/kitti/training/image_3/000099.png": "a543004697fe916973607b64b83a3b518ed8cf66b167126ce5557efb9f9a6cb5",
+        "/mnt/d/paper6/data/kitti/training/label_2/000099.txt": "cafc859790ec1f23d2f22a4cac4a69955f0b7c5e97e770f0102b7d98036cd589",
+        "/mnt/d/paper6/data/kitti/training/calib/000099.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000100": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 2.0215964317321777,
+      "full_AWGN10_loss": 2.110841751098633,
+      "readonly_states": 535,
+      "frame_report_sha256": "f8324e6fade178c5f89af358fe0bfad7c91e771cad773084664a391bedf20ec2",
+      "fixture_sha256": "811521fa626b8d6c271ae6edc15be5de6b26fecf23e00756d2045e188725ea2e",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000100.png": "18824985f5ebf14ecc938d82423b94a4ad4db3445536fbc24be9b81aba9d7390",
+        "/mnt/d/paper6/data/kitti/training/image_3/000100.png": "b0acf163b862f2e6b3b70b84552863967c0d1b4ef229c10fcaaa078220304122",
+        "/mnt/d/paper6/data/kitti/training/label_2/000100.txt": "d0d91908c56c6b724be35effe0d903e9adf70877afb5b3959d6ae25309dcbf32",
+        "/mnt/d/paper6/data/kitti/training/calib/000100.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000101": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.5726277828216553,
+      "full_AWGN10_loss": 1.289048671722412,
+      "readonly_states": 535,
+      "frame_report_sha256": "46391ede1879cb80e8c14f803d4faa77fb2a645feb2caae2da27144f138fc436",
+      "fixture_sha256": "d6569c5f17522eaa6ae5e7a63397b0546e07fb841f836707ae76bb9102e846b4",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000101.png": "d8728b2b5490e8151418f61aab8c9cb79eee812de06b969be3c89bd561e131a0",
+        "/mnt/d/paper6/data/kitti/training/image_3/000101.png": "d28517a55d7e9a1a7e3cd3736ce5ccd2d25a93464fa0daae783fc1bb807a30c3",
+        "/mnt/d/paper6/data/kitti/training/label_2/000101.txt": "65fb5b5ea76aaafef7e7e786f1e4d80fd90296f590f012c8c125043fc6494ea2",
+        "/mnt/d/paper6/data/kitti/training/calib/000101.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000103": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.2030615210533142,
+      "full_AWGN10_loss": 0.17710617184638977,
+      "readonly_states": 535,
+      "frame_report_sha256": "d605b8e97587eb6034326e4e964c601dfe4113293e76c46f5d8fc000fe9db60b",
+      "fixture_sha256": "b8de388a9d64aa597e4ceb3d6c3a0102ab1acf34eda5ef1bcd79e27cdd6e5069",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000103.png": "d98f7176d2b7655485578ddf2f7ee7cbbbe1a278edeebb9343adcc2b8bec4445",
+        "/mnt/d/paper6/data/kitti/training/image_3/000103.png": "2bb718da8909fdefef8f5f38cfca13389bce78e501ad882104fde7e51da46f99",
+        "/mnt/d/paper6/data/kitti/training/label_2/000103.txt": "82e4948b02161296abbe2b91835423269157347bdd7b26d63776ff63044b6545",
+        "/mnt/d/paper6/data/kitti/training/calib/000103.txt": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f"
+      }
+    },
+    "000105": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.32167378067970276,
+      "full_AWGN10_loss": 0.2536274194717407,
+      "readonly_states": 535,
+      "frame_report_sha256": "4bbee0797235639bf69f64ee252fe15133b5d692cac302e6da29c6369b52e119",
+      "fixture_sha256": "d035a0d3a8d0e3a3e41e086e4a3f0820cc9276f5be8bb639194f3dc8cae5cd5d",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000105.png": "c73712e173c3909441071081e017463a3ea4df472be48d795cf482db7875cc00",
+        "/mnt/d/paper6/data/kitti/training/image_3/000105.png": "9db18e06ac12e2c2d0a8503b6ba0ff8942bcc87c72405eccb6c8a57042973268",
+        "/mnt/d/paper6/data/kitti/training/label_2/000105.txt": "75590e61580590787847f2b75dc2219185dbd88e9f971742c62d8e1d63f76db8",
+        "/mnt/d/paper6/data/kitti/training/calib/000105.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000109": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.14575263857841492,
+      "full_AWGN10_loss": 0.22202426195144653,
+      "readonly_states": 535,
+      "frame_report_sha256": "81aeee299c73b078e651b2f47c8a2478b2b3f8cc940195cb457e615ef2864cf1",
+      "fixture_sha256": "7ad6442d48820c930f142d168dbac3f033e97581f117a2f8440f0082cc00fb8a",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000109.png": "abde7a77049b61d7c399f8bca18f2934bd8cde5feef7bba1cf983addad3ec06a",
+        "/mnt/d/paper6/data/kitti/training/image_3/000109.png": "dc167d50dee10b365aca553a4a8b44d0ca68f55a249c06f316cb90bb9d3f901d",
+        "/mnt/d/paper6/data/kitti/training/label_2/000109.txt": "c8e5eec3e731f64f66b7add522d91f519a5833f20f4e533dfec493394b70222c",
+        "/mnt/d/paper6/data/kitti/training/calib/000109.txt": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f"
+      }
+    },
+    "000110": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.5202279090881348,
+      "full_AWGN10_loss": 1.6517053842544556,
+      "readonly_states": 535,
+      "frame_report_sha256": "176acbf3c209be2ccad6ee40eef128163d7fa2d77b5005c2d7d7133fde674603",
+      "fixture_sha256": "2233f1907745d9867076734de2735c64642baa2b5460018663c1e3048abe8b38",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000110.png": "c61a569f0968e3785cd211a6b26f712c5221e44f1c8b3563490ad8a4e5c77a98",
+        "/mnt/d/paper6/data/kitti/training/image_3/000110.png": "0892a699cd0c9f546313729fc6e28daf47f8e376f9cc5db00c9bd2f6d7e04714",
+        "/mnt/d/paper6/data/kitti/training/label_2/000110.txt": "0fe405b2fc8d5f532df9a4df4169109aee8f6cf0ba9cc77219d05e5eb18ac65b",
+        "/mnt/d/paper6/data/kitti/training/calib/000110.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000111": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.7905125617980957,
+      "full_AWGN10_loss": 1.9119629859924316,
+      "readonly_states": 535,
+      "frame_report_sha256": "2368846d9ceed36c619696025dd537c38dd0dc1378a728915635bed09e90a2b4",
+      "fixture_sha256": "baab70ab84fa37f53409fe1bf3e179317481ade91459275d1269b5c4fb9aca61",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000111.png": "ddb1b42b777e8b289f02bc561595e216c1aab0319bf43f843b53482ac0859843",
+        "/mnt/d/paper6/data/kitti/training/image_3/000111.png": "fa359452c93c90d366424875d4180c41fa9760947f8282b1881b07c0a2bd3d42",
+        "/mnt/d/paper6/data/kitti/training/label_2/000111.txt": "8e0652cc241a3be335cef7661619da52d0c6c9bed18bef3ef53c67caca1e86a7",
+        "/mnt/d/paper6/data/kitti/training/calib/000111.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000112": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.638197660446167,
+      "full_AWGN10_loss": 1.7265496253967285,
+      "readonly_states": 535,
+      "frame_report_sha256": "9468646481c668ab993cb46fa935005ae400625dc8f2778fab72f3e9a5b95b70",
+      "fixture_sha256": "d7d48fd6589333aff8593b4a4889101a55ae560d0b7e9fad35baad757414cbe6",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000112.png": "e06526174e83662094e37081ccdc38909714f500a1d25a1d6a60025de0c57fe1",
+        "/mnt/d/paper6/data/kitti/training/image_3/000112.png": "b47861b3d4c9a049046e598379e11ddc0917859e83d17e306968c716317e3a13",
+        "/mnt/d/paper6/data/kitti/training/label_2/000112.txt": "a0731f0fec6762e328f4063d576d75eb6cca0ca49666eb7b6e33b7dc97ec84e5",
+        "/mnt/d/paper6/data/kitti/training/calib/000112.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000114": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 2.2424259185791016,
+      "full_AWGN10_loss": 2.3390607833862305,
+      "readonly_states": 535,
+      "frame_report_sha256": "b8586edecf363c3b1aa883821b96265973e813a6c0a2b903eb34e60f5e3a7109",
+      "fixture_sha256": "84817c0293301f81b05815ad78ab4b3a36234dff9109eb3d17960b1502fb7b6c",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000114.png": "b5b13226d0143fe105c83af33599e303b2e80baf7404bb391f5fb1d4a3eabbc0",
+        "/mnt/d/paper6/data/kitti/training/image_3/000114.png": "44d27e58dbb57a4c500ac3a670377d68cd66bb4efbc939b280d264fc882e1b60",
+        "/mnt/d/paper6/data/kitti/training/label_2/000114.txt": "ed88555fc5ef9b1718e45e8f95c243b715c6597a54c2e0a3aa924bf8d5682e74",
+        "/mnt/d/paper6/data/kitti/training/calib/000114.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000115": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 2.1730690002441406,
+      "full_AWGN10_loss": 2.5323498249053955,
+      "readonly_states": 535,
+      "frame_report_sha256": "db31d9fb2b7d1988e653cf6601bb949f172ba932ed0167736b5f1ad9ad1919a0",
+      "fixture_sha256": "24f468b50a0483e90eae64abfe653c59773c77a6875e81e702690f33a12be99d",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000115.png": "69f9408886633aa87326ce197c21885842ff8b9a044e67279ca49c6800c9ef4f",
+        "/mnt/d/paper6/data/kitti/training/image_3/000115.png": "c4fe04fdb9d11b5d1d9b2bf3b85607620af45ee3565e5fe90f2dd03c2d0ec399",
+        "/mnt/d/paper6/data/kitti/training/label_2/000115.txt": "08328b4315c654c1a09a81b264dfbff36e922d8b8c7f555edfa94bb15e5a3947",
+        "/mnt/d/paper6/data/kitti/training/calib/000115.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    },
+    "000119": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 1.4174835681915283,
+      "full_AWGN10_loss": 1.5935273170471191,
+      "readonly_states": 535,
+      "frame_report_sha256": "578e161b6f5eb3df8830b26d02c98f5938a46befa0c4ca6caf606d7b8103952f",
+      "fixture_sha256": "6db9c4e058f6662d7c4500f35a0687c47c0e2b81507aef6d897af20c374c2dc8",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000119.png": "0a4feda0169826883902b3d8183562e9cb4178773fd60f4923b8d5784a9268e0",
+        "/mnt/d/paper6/data/kitti/training/image_3/000119.png": "460e88411955f6214b3d16868939b5852bfb2b1e5085bffa8ded55796782e95d",
+        "/mnt/d/paper6/data/kitti/training/label_2/000119.txt": "0e1a014b131b7eb8ab7147b7febf085d997e69f6b95304289616b5890b6a70c5",
+        "/mnt/d/paper6/data/kitti/training/calib/000119.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    }
+  },
+  "artifacts_sha256": {
+    "data/runs/geometry-risk-pilot-001.json": "3087d8c4c0c1965918ca3d8affd3ed6213f4fe83108c0ebed434b3ef68861248",
+    "data/runs/geometry-risk-pilot-001-launch.json": "053c1214d10e1b07980bf92a8ca7e5d0dfec89eec31178e05e857c28ae121bfb",
+    "data/engineering/geometry-risk-pilot-sheng-CPU-001.json": "b32cb2889866c3fa1947019df5c033aae170f2cf8aaab828601b1e67dea620f2",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000000.json": "f3e38106f49b0d6e0ef6f026577ff11ed4c5305414a67e0815a8f1b8550eae11",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000003.json": "315253fc509eeb546e514bad2b8255f6fc7e1500d3ec76ad8552b13a5b0c1eee",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000007.json": "8d6d09fd071323fcdbb70845e14c7d736798aa64c35fbadd77fbe1991c7e1278",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000009.json": "7727e6796969af5eb39fa550c2ec4136bc2a9226215603de0985fda65cebaf9b",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000010.json": "35bc313458ccae521c0b12fcc6cd3b2804672ce029e14bfc1ffec880ae8390bc",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000011.json": "5f0dc73cd6ad90325afba44e63fb4e4575d69c665be23841d03663a60382b690",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000012.json": "0a15ea390a3c4e7347c1f1decb5211eefa33902d3a089d234555143cfee8159f",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000013.json": "d3e3426059f20a92dec6eb2b26e47fc3a559698c1502093e2e47a0c6417f4e0b",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000014.json": "2dd29da991808ce6654442c1aedcefcd3c1a3ea85ac4b9bf02be6ec917ab5b6c",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000016.json": "7a6410f13ff11bfb35cdaec49be7dfef3756a7da57e0204e1919f983d3401b2d",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000017.json": "8d47add1bf74aa117b0fc9719f29c39397e1558243febdb8986051b4f1ea60be",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000018.json": "3adcd6ee048b83a49c3968c908f09e669215c60bdb0f528bd3d6c30532131e23",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000022.json": "72eadc9a0d97fb2f7f55bace535d75139d18cbae8be1e8276f88807123041242",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000026.json": "595bcee63d904d5108036c2b4709854db6e8f2a70899c5140a70ccbcbab95ff8",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000029.json": "dae6375d7436f062346d3908b625ff5b72eb5c828b01ab8d08bca2e596cf294e",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000030.json": "a93429d50d196053256d4779ca2ed845d9eee45938a6733e8ee5557c35d8f6d1",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000032.json": "a07c6db5295eab975a4ea1583d6c8b675cf3edafdaf55c52436f791ee7bf054d",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000034.json": "a24cffc5daf9aa2d3f673006bfdf30e6b73ef93442e77b9d2f5fe1e46b5a2279",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000038.json": "8227f92edd5af8bb241d0819809cf91c5b000e4e0000a2db85b26d96f3bded2a",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000041.json": "b25e0792c90f695c7f00e3da4735d327f6d766577d33dccba50526867ab50d25",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000043.json": "851e623dfc342c5971e0c3b25f5bfbda85f6c7cac75644e8b435a928e9d64340",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000044.json": "6e3eccaf16691cb0e7cc38a5e060020ad9c605f8b3a74d77dd3ec29f4d2afed8",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000045.json": "3df35e2c095e669a0c5ef6a43b8e2bfaf8694d48c84d1db96c7d93e5e5802554",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000046.json": "f6f5cbef389b8ea36a4ee3ee85b005ed3ac10fbf216d5b4b9eed3a037ec45217",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000049.json": "36ad10492c560b732faceb9643ef691d5e5b0e544d8525cd709089f3811708c1",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000051.json": "3667729042ea413a282e7e8a292d5b11dfdeddde42cf6e14666ace5499801254",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000055.json": "a8a548a64a4de5dbcfc47b6b429b7babce7c7069f8e93b512b8d1dded2747290",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000056.json": "7babcb951c666175637a46856838ac57d5a81938e61f1acb7f07763595e33a05",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000057.json": "f67b2949c7afa564743642abc5f5996e3d2d560e341178550540b66cea0ad669",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000060.json": "469430217c6bd1585259d409f4e46ccf42ca4e931b1cc9d9cf6acd55917ec19c",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000064.json": "0ec257da91250e730b6a4fad8c0676d2b8c72ed9f68fec0d860040ee5458a79c",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000067.json": "b5481af9d642d5090777235c1a52a1e20ded74832e25e7d3457347e56234fe98",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000068.json": "24c57ad803b588c81005e603b38ae82b1d700c2dc1c6a9aa93fd418f244d9826",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000069.json": "f53f4ab790d6b0b81a7f285ed8537ba4421e93accfbc6a4db852d2b323c04a12",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000070.json": "f801fa2ad143c2255d3aae99acc5258b14304d2b735c8cd41c2bbb82a0f24290",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000072.json": "7a232a1ec815d77486fe44bba8c01336e63174832c83baf118e03f79d16bbac5",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000073.json": "ce2ed6657c39f144e2f04119fcea4adf4f4c00b6c233b69ac97faa9e12b1c4a3",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000074.json": "7ad4f806f90336c54d0f55d356c14a6251aaa396d0d20902853ec507c1e73a7e",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000075.json": "12667a7639bcad98810d4087a1efaaca172f6ecb8ae5fd1c13577e83ca96ada7",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000079.json": "ee03ca6bb565a7accec0c08c28f5232b9e086e9c8febf52d25b9b6d169c5d8fc",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000080.json": "6a00a55017e638d9f0aaf445c9d79413fc331d8025e667785ce4a3fc384fe93b",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000083.json": "cb7a8cba6a471a436e90682951b04a1e5a5df2a8fc445d531dd3edd2d4f4cb49",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000084.json": "77c27cfed3ffb819f8a64bc3031602572cfb14861ca8e2cc112dfcb362099644",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000085.json": "8f944c28bd4a520db01780d0e29029796a9983b3ef5f1f88056cbf161defb86c",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000086.json": "7b66959b60f87fc3dc1ec6ce328f56641c9582d90f802fc3df6c77a05e0cf9cf",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000087.json": "fe912fe4314fc62dfec233595ddafa4998348d4368c27ecb3a82cad8e69e32ed",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000088.json": "fe878edf451320a7e278d10134adffb3f17e5cd6952b131a760c300bf1e2d13c",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000091.json": "49117be62332e33c2f073a7331745ce907bee4280ebd051d587036aa3e877fd2",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000092.json": "2e9932fcaa70037cff2ee04d5a56daf8bdfa57a770419b9be5382bd36e277266",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000095.json": "30d19e88559a37b75537e975c4fd23b47dca3556eb52e5dfdda8c358101fed6d",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000096.json": "f353ccbe8fc4201a516b7e062a1e90652813bdbabda973398009427e1e39b1a7",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000097.json": "ff0ce01f18546eaa982996282e165ae3a84cdac2e4bbcb6f3a613b7f85d9fbd3",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000099.json": "689dce918751b81ea4b906ab3f70cce62b7d1a64347ddc5062948a7ec079a96a",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000100.json": "f8324e6fade178c5f89af358fe0bfad7c91e771cad773084664a391bedf20ec2",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000101.json": "46391ede1879cb80e8c14f803d4faa77fb2a645feb2caae2da27144f138fc436",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000103.json": "d605b8e97587eb6034326e4e964c601dfe4113293e76c46f5d8fc000fe9db60b",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000105.json": "4bbee0797235639bf69f64ee252fe15133b5d692cac302e6da29c6369b52e119",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000109.json": "81aeee299c73b078e651b2f47c8a2478b2b3f8cc940195cb457e615ef2864cf1",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000110.json": "176acbf3c209be2ccad6ee40eef128163d7fa2d77b5005c2d7d7133fde674603",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000111.json": "2368846d9ceed36c619696025dd537c38dd0dc1378a728915635bed09e90a2b4",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000112.json": "9468646481c668ab993cb46fa935005ae400625dc8f2778fab72f3e9a5b95b70",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000114.json": "b8586edecf363c3b1aa883821b96265973e813a6c0a2b903eb34e60f5e3a7109",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000115.json": "db31d9fb2b7d1988e653cf6601bb949f172ba932ed0167736b5f1ad9ad1919a0",
+    "/mnt/d/paper6/runs/geometry-risk-pilot-001/000119.json": "578e161b6f5eb3df8830b26d02c98f5938a46befa0c4ca6caf606d7b8103952f"
+  }
+}

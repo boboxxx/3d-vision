@@ -1,0 +1,20 @@
+{
+  "state": "passed_both_complete_independent_quality_CPU_reports",
+  "checked_unix": 1791157113.3084219,
+  "reports": {
+    "data/engineering/source-quality-local-CPU-001.json": "bca27ad4e15b734dac6c0799f6d3a212b5a80f29d400057985ee9d7a544ae55a",
+    "data/engineering/source-quality-sheng-CPU-001.json": "f01612f53bd0a0806b98521ca2b662969f2cd086413fc971084e1294ed707968"
+  },
+  "sources": {
+    "experiments/original-paper-scenarios/source-quality-code/check_cpu.py": "40ac5bb45def6468c727e78b37ddea39e37a50d6c54b334a0f411ad26e6c46a5",
+    "experiments/original-paper-scenarios/source-quality-code/metrics.py": "dcd4a60aa8c75ab263264d2208b422671407f5ba4bbdcfc6a08264d06dbe8705",
+    "experiments/original-paper-scenarios/main-ROI-quality-protocol-001.md": "970e5ea8b494ad356eee4ac2bdf9014fcb2fa150185bd5d702644400963a7768"
+  },
+  "families_each": 6,
+  "independent_SSIM_values_each_host": 1404,
+  "maximum_SSIM_errors_each": [
+    2.1094237467877974e-15,
+    3.2529534621517087e-14
+  ],
+  "limitation": "Complete source/fixture metadata verification; independent literal window checks executed on each host. No KITTI quality or AP."
+}

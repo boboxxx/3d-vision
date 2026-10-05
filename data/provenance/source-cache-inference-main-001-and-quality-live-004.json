@@ -1,0 +1,47 @@
+{
+  "observed_unix": 1791162434.7169595,
+  "observed_UTC": "2026-10-05T01:07:14.716959+00:00",
+  "actual_ps": "    PID    PPID STAT     ELAPSED     TIME COMMAND\n 269262       1 Ssl     01:58:55 00:00:01 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/source-cache-inference-cycle-001.py --mode run --scope main\n 270132       1 Ssl        54:29 00:00:01 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/source-quality-main-cycle-001.py --mode run\n",
+  "source-cache-inference-main-001": {
+    "state": "running",
+    "pid": 269262,
+    "commands": 4,
+    "completed_endpoints": 2,
+    "error": null,
+    "records": {
+      "source-cache-inference-main-001-jpeg-cr10-liga.json": {
+        "state": "finished",
+        "actual_recorded_frames": 3769,
+        "views_done": null,
+        "error": null
+      },
+      "source-cache-inference-main-001-jpeg-cr10-stereo_rcnn.json": {
+        "state": "finished",
+        "actual_recorded_frames": 3769,
+        "views_done": null,
+        "error": null
+      },
+      "source-cache-inference-main-001-jpeg-cr30-stereo_rcnn.json": {
+        "state": "running",
+        "actual_recorded_frames": 2907,
+        "views_done": null,
+        "error": null
+      }
+    }
+  },
+  "source-quality-main-001": {
+    "state": "running",
+    "pid": 270132,
+    "commands": 0,
+    "completed_endpoints": 0,
+    "error": null,
+    "records": {
+      "source-quality-main-001.json": {
+        "state": "running",
+        "actual_recorded_frames": 0,
+        "views_done": 16676,
+        "error": null
+      }
+    }
+  }
+}

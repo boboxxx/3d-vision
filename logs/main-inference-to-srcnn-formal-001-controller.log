@@ -1,0 +1,13 @@
+{"phase": "native_actual_terminal_closure"}
+{"phase": "transfer_native_closure"}
+Traceback (most recent call last):
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/advance-main-inference-to-srcnn-formal-001.py", line 169, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/advance-main-inference-to-srcnn-formal-001.py", line 135, in main
+    closure = read(closure_path); roots, native = transfer_plan(closure, 'main')
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/advance-main-inference-to-srcnn-formal-001.py", line 43, in transfer_plan
+    assert len(closure['artifacts_sha256']) == (75 if scope == 'engineering' else 45279)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

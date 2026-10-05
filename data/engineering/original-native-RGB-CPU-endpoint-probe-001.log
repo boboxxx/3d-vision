@@ -1,0 +1,5 @@
+/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/torch/functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3595.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+{"channel": "identity", "erasure": null, "total_uses": 242957}
+{"channel": "awgn", "erasure": null, "total_uses": 242957}
+{"state": "passed", "updates": 0, "model_states_identical": 768, "frame_id": "000036", "native_sensor_shape": [1, 3, 375, 1242]}

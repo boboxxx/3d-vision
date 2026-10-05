@@ -1,0 +1,40 @@
+{
+  "scope": "local SSH transport observations only; remote job state remains unverified",
+  "old_sessions": [
+    {
+      "session_id": 15314,
+      "role": "prototype_rsync",
+      "exit_code": 255,
+      "error": "tailscale: failed to fetch next SSH action; unexpected end of file"
+    },
+    {
+      "session_id": 14405,
+      "role": "native_probe_SSH",
+      "exit_code": 255,
+      "error": "tailscale: failed to fetch next SSH action; connection closed"
+    },
+    {
+      "session_id": 95849,
+      "role": "SSH_ControlMaster_no_remote_command",
+      "exit_code": 255,
+      "error": "Connection to 100.94.183.27 port 22 timed out"
+    },
+    {
+      "session_id": 70295,
+      "role": "read_only_remote_status_check",
+      "exit_code": 255,
+      "error": "Connection to 100.94.183.27 port 22 timed out"
+    }
+  ],
+  "new_session_id": 1080,
+  "new_role": "read-only original PID/stage manifests and StereoRCNN engineering result/F7 file existence",
+  "new_state": "authentication_resolved_new_multiplexed_SSH_connection_verified",
+  "control_path": "/private/tmp/paper6-sheng-01a10237.sock",
+  "control_socket_last_check": "not_created_yet",
+  "auth_links_recorded": false,
+  "required_next": "Use established ControlPath; native queue50852 waits physical GPU margin. Original cycle26642 live stage5 epoch36 at117100 last confirmed; no restart.",
+  "observed_at_UTC": "2026-10-04 08:58:06",
+  "user_reported_prior_check_complete": true,
+  "remote_state_currently_verified": true,
+  "prior_session1080_last_poll": "unknown process id on continuation; no exit code claimed"
+}

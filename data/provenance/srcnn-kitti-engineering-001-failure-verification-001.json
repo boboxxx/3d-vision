@@ -1,0 +1,13 @@
+{
+  "state": "verified_retained_failed_run_completed6_updates_but_no_terminal_audit",
+  "checked_unix": 1791153163.234921,
+  "updates_actual": 6,
+  "formal_or_AP_started": false,
+  "failed_stage": "own_checkpoint_hash_read_blocked_by_training_input_guard",
+  "artifacts_sha256": {
+    "data/runs/srcnn-kitti-engineering-seed17-001-cr10.json": "b553593bb9443c7c55005a137ac2d918c9c28a16c0e868821953d3938103dbbf",
+    "data/engineering/srcnn-kitti-engineering-seed17-001-failure-transfer/mnt/d/paper6/runs/srcnn-kitti-engineering-seed17-001-cr10/train.jsonl": "573e1b916f0b57ffee2d040e964f46a5829c18465739f64d1828bb57843a31f6",
+    "data/engineering/srcnn-kitti-engineering-seed17-001-failure-transfer/mnt/d/paper6/runs/srcnn-kitti-engineering-seed17-001-cr10/final.pth": "61dc2d0ed8eb9814ed657ec75aa8ba944ed508040bbe3f3a2e95f8c7b5b1d79f"
+  },
+  "note": "Full001failed manifest unchanged; these weights are discarded, not reused for002"
+}

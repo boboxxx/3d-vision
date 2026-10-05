@@ -1,0 +1,26 @@
+{
+  "state": "passed",
+  "tests": 7,
+  "failures": [],
+  "errors": [],
+  "source_sha256": {
+    "experiments/geometry-link/F9/evaluation/diagnose.py": "4bb741645314b7fb57d8680815e47e5c4cdfcde5115798994f3a5ac6429772d0",
+    "experiments/geometry-link/F9/evaluation/common.py": "73cdf07aece235209293d8b064bc1b73fe0bc458bc72488ce1f1d651d81eb9de",
+    "experiments/geometry-link/F9/evaluation/check_cpu.py": "e3291c2e1667ccf5dca12bf966020952e15b4f220967a78e6496eb85f08d9eca"
+  },
+  "evaluation_source_identity": {
+    "sha256": "94bc05a646e9ec959252244f136ef18ace9d5964da9a91dfa1798c75e15dad09",
+    "file_hashes": {
+      "experiments/geometry-link/F9/evaluation/diagnose.py": "4bb741645314b7fb57d8680815e47e5c4cdfcde5115798994f3a5ac6429772d0",
+      "experiments/geometry-link/F9/evaluation/common.py": "73cdf07aece235209293d8b064bc1b73fe0bc458bc72488ce1f1d651d81eb9de",
+      "experiments/geometry-link/F9/evaluation/check_cpu.py": "e3291c2e1667ccf5dca12bf966020952e15b4f220967a78e6496eb85f08d9eca",
+      "experiments/geometry-link/F9/evaluation/configs/awgn6-holdout.yaml": "96df3083d6ce8fa5d3e77cd98ee80e9fce48073e077510351613b9a86003d129",
+      "experiments/geometry-link/F9/evaluation/configs/identity10-holdout.yaml": "8d8053cc19d69eceb89280182b30ccb2d60d9d1a7ff6971c2343fe3bee2c247f",
+      "experiments/geometry-link/F9/evaluation/configs/awgn18-holdout.yaml": "67341f0d15bd95f6f7844f0ad17c453f1cb0371dc864308b738946a7f4c1d3da",
+      "experiments/geometry-link/F9/evaluation/configs/awgn10-holdout.yaml": "0e4e64cfedcbbf605ff4a057d745307f2e64076b3089d395de5b8f5563b00941"
+    },
+    "generated_version_py_excluded": true
+  },
+  "torch": "2.12.0",
+  "scope": "Synthetic CPU539-state fixture and actual sender/receiver observer; no native KITTI, GPU inference or AP"
+}

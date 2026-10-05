@@ -1,0 +1,167 @@
+{
+  "state": "actual_main_training_and_original_engineering_terminal_snapshot",
+  "checked_unix": 1791207607.1292946,
+  "reports": {
+    "data/runs/cost-field-full-seed17-004/report.json": {
+      "sha256": "5a0f3cb6babc626e7065771828c16a74f4c6a7fbb7bab715e052a387605d48e0",
+      "fields": {
+        "state": "finished_all44544_full_split_task_updates_pending_actual_terminal_and_complete_proof",
+        "scope": null,
+        "stage": "actual_native_detection_loss_backward",
+        "seed": 17,
+        "update_count": 44544,
+        "updates": null,
+        "job_id": "11424939",
+        "input_sha256": "8f2b3be5ca639f2bbb5f2c20c1ce73db858f7bc443cb6477000ccd375fde7fc4",
+        "traceback": null,
+        "records_sha256": null,
+        "updates_jsonl_sha256": "4899619ff3f569736d773b85864b99f94953a50167cc3318cab673f8438c7e7f",
+        "initial_sha256": null,
+        "peak_allocated_bytes": 5139423232,
+        "peak_reserved_bytes": 7189037056,
+        "completed_epochs": [
+          {
+            "arm": "G",
+            "epoch": 1,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch1.pt",
+            "sha256": "24c485644d903b488b48ad25ee8550fc46677fb4b02bbc2ce0f0d09de53b7380"
+          },
+          {
+            "arm": "G",
+            "epoch": 2,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch2.pt",
+            "sha256": "7e247683cdaea734fd210eb07f202cc59824484098bcded77646804e73dac208"
+          },
+          {
+            "arm": "G",
+            "epoch": 3,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch3.pt",
+            "sha256": "130369c740c014e1e61893858191ff8f9c3baed689e3b1709ad9c2df871c4108"
+          },
+          {
+            "arm": "P",
+            "epoch": 1,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-P-epoch1.pt",
+            "sha256": "06dc7023bd11c930717239053cca728ff23c52b45ecc8b20321e8b4658cab3a8"
+          },
+          {
+            "arm": "P",
+            "epoch": 2,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-P-epoch2.pt",
+            "sha256": "b661a14958b885bbe002caee5fffb3595cad87e0aa86c2b4b9c41d9e3339e80e"
+          },
+          {
+            "arm": "P",
+            "epoch": 3,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-P-epoch3.pt",
+            "sha256": "f52ba24e80525c67f415f05f5dd24339ebef4b1f58b7f14610ea0b6c3e243d1c"
+          },
+          {
+            "arm": "S",
+            "epoch": 1,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-S-epoch1.pt",
+            "sha256": "39a2e254f6c876521cdc98d89b705f9bb9828d4521c51ed36b615c5836f8ac19"
+          },
+          {
+            "arm": "S",
+            "epoch": 2,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-S-epoch2.pt",
+            "sha256": "dc1d61f9bf30a398eab7c55b805bb3546b235a0a8288ed9025a4d9c6f6c409fd"
+          },
+          {
+            "arm": "S",
+            "epoch": 3,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-S-epoch3.pt",
+            "sha256": "e383f3fcff326f73af44fd3faf3dd4fcf0d6fa971b78da5a38d393ab8dd88d70"
+          },
+          {
+            "arm": "B",
+            "epoch": 1,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-B-epoch1.pt",
+            "sha256": "8d32e5e68938aa98a8f9399c56fc336ad016c9ec7438a76d2f99f5351ebf02f1"
+          },
+          {
+            "arm": "B",
+            "epoch": 2,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-B-epoch2.pt",
+            "sha256": "9e7f25ef5159da83861fa614a92211d555501dc7b6e2aedd5bf0f747a7ad8df3"
+          },
+          {
+            "arm": "B",
+            "epoch": 3,
+            "updates": 3712,
+            "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-B-epoch3.pt",
+            "sha256": "068f07693bf46bfc2ee136ae948328542ca58d1dd674df74b4af4b9bbd66a8bf"
+          }
+        ]
+      }
+    },
+    "data/runs/original-public30-engineering-seed17-003-stage1/report.json": {
+      "sha256": "b512cff44ab42064736f2bfdfc3e9c6c869ee93ae4c78d9b59e5d7fbfae5e8de",
+      "fields": {
+        "state": "finished_complete_public_semantic_stage_pending_actual_terminal_and_audit",
+        "scope": "engineering",
+        "stage": 1,
+        "seed": 17,
+        "update_count": 3,
+        "updates": null,
+        "job_id": "11425104",
+        "input_sha256": "76761fe49305dcbe9829973b8b11e70a2c928e7ac1c3962b7e40b09f72317338",
+        "traceback": null,
+        "records_sha256": "9363efe9a29e3b52284146b8238f2ec6595315feebab0f1f6306821995c89382",
+        "updates_jsonl_sha256": null,
+        "initial_sha256": "5e2afaec221a70d244a975a67caf0ed6f22aa6b092bd497babef90f66aae7fc1",
+        "peak_allocated_bytes": 6012475904,
+        "peak_reserved_bytes": 9479127040,
+        "completed_epochs": [
+          {
+            "epoch": 1,
+            "updates": 3,
+            "path": "data/runs/original-public30-engineering-seed17-003-stage1/checkpoint-epoch1.pt",
+            "sha256": "66e4f337a98d3cb045aa0a1ef72c4cbb0ec311a07d252526e840bc550a2c0057",
+            "samples": 3
+          }
+        ]
+      }
+    },
+    "data/provenance/original-public30-engineering-native-audit-004.json": {
+      "sha256": "0c7a16d3bceabc76856f339f18b19acbb7e75118dd850772a6a915629bef0f7e",
+      "fields": {
+        "state": "passed_complete_original_public_semantic_stage",
+        "scope": "engineering",
+        "stage": 1,
+        "seed": null,
+        "update_count": null,
+        "updates": 3,
+        "job_id": null,
+        "input_sha256": "76761fe49305dcbe9829973b8b11e70a2c928e7ac1c3962b7e40b09f72317338",
+        "traceback": null,
+        "records_sha256": "9363efe9a29e3b52284146b8238f2ec6595315feebab0f1f6306821995c89382",
+        "updates_jsonl_sha256": null,
+        "initial_sha256": null,
+        "peak_allocated_bytes": null,
+        "peak_reserved_bytes": null,
+        "completed_epochs": [
+          {
+            "epoch": 1,
+            "updates": 3,
+            "samples": 3,
+            "checkpoint_sha256": "66e4f337a98d3cb045aa0a1ef72c4cbb0ec311a07d252526e840bc550a2c0057"
+          }
+        ]
+      }
+    }
+  },
+  "sacct": "11424939|COMPLETED|0:0|05:44:47\n11424939.batch|COMPLETED|0:0|05:44:47\n11424939.extern|COMPLETED|0:0|05:44:47\n11424939.0|COMPLETED|0:0|05:44:47\n11425104|COMPLETED|0:0|00:00:11\n11425104.batch|COMPLETED|0:0|00:00:11\n11425104.extern|COMPLETED|0:0|00:00:11\n11425104.0|COMPLETED|0:0|00:00:10\n11425880|COMPLETED|0:0|00:00:07\n11425880.batch|COMPLETED|0:0|00:00:07\n11425880.extern|COMPLETED|0:0|00:00:07\n11425880.0|COMPLETED|0:0|00:00:07\n"
+}

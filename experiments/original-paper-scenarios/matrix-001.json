@@ -1,0 +1,1715 @@
+{
+  "scope": "prelocked_reference_grid_not_results",
+  "unique_conditions": 154,
+  "table_appearances": 167,
+  "execution_addendum_required": true,
+  "conditions": [
+    {
+      "id": "clean|cr1|identity|snrNone|none",
+      "source": "clean",
+      "compression": 1,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "none",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "jpeg|cr10|identity|snrNone|source_only",
+      "source": "jpeg",
+      "compression": 10,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr10|identity|snrNone|source_only",
+      "source": "jpeg2000",
+      "compression": 10,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "srcnn|cr10|identity|snrNone|source_only",
+      "source": "srcnn",
+      "compression": 10,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "ecsic|cr10|identity|snrNone|source_only",
+      "source": "ecsic",
+      "compression": 10,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "original_rgb|cr10|identity|snrNone|source_only",
+      "source": "original_rgb",
+      "compression": 10,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|identity|snrNone|source_only",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|identity|snrNone|source_only",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "srcnn|cr30|identity|snrNone|source_only",
+      "source": "srcnn",
+      "compression": 30,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|identity|snrNone|source_only",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|identity|snrNone|source_only",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "jpeg|cr50|identity|snrNone|source_only",
+      "source": "jpeg",
+      "compression": 50,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr50|identity|snrNone|source_only",
+      "source": "jpeg2000",
+      "compression": 50,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "srcnn|cr50|identity|snrNone|source_only",
+      "source": "srcnn",
+      "compression": 50,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "ecsic|cr50|identity|snrNone|source_only",
+      "source": "ecsic",
+      "compression": 50,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "original_rgb|cr50|identity|snrNone|source_only",
+      "source": "original_rgb",
+      "compression": 50,
+      "channel": "identity",
+      "snr_db": null,
+      "transport": "source_only",
+      "tables": [
+        "source"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr6|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 6,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr6|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 6,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr6|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 6,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr7|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 7,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr7|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 7,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr7|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 7,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr8|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 8,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr8|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 8,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr8|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 8,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr9|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 9,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr9|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 9,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr9|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 9,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr10|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 10,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr10|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 10,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr10|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 10,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr11|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 11,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr11|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 11,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr11|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 11,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr12|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 12,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr12|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 12,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr12|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 12,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr13|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 13,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr13|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 13,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr13|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 13,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr14|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 14,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr14|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 14,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr14|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 14,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr15|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 15,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr15|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 15,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr15|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 15,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr16|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 16,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr16|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 16,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr16|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 16,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr17|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 17,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr17|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 17,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr17|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 17,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr18|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 18,
+      "transport": "learned",
+      "tables": [
+        "channel",
+        "joint"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr18|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 18,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|awgn|snr18|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 18,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr6|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 6,
+      "transport": "learned",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr6|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 6,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr6|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 6,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr8|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 8,
+      "transport": "learned",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr8|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 8,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr8|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 8,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr10|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 10,
+      "transport": "learned",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr10|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 10,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr10|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 10,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr12|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 12,
+      "transport": "learned",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr12|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 12,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr12|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 12,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr14|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 14,
+      "transport": "learned",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr14|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 14,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr14|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 14,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr16|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 16,
+      "transport": "learned",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr16|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 16,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr16|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 16,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr18|learned",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 18,
+      "transport": "learned",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr18|ldpc_2_3_qam64",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 18,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "original_rgb|cr30|rayleigh|snr18|ldpc_1_2_qam256",
+      "source": "original_rgb",
+      "compression": 30,
+      "channel": "rayleigh",
+      "snr_db": 18,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "channel"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr6|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 6,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr6|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 6,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr6|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 6,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr6|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 6,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr6|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 6,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr6|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 6,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr7|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 7,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr7|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 7,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr7|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 7,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr7|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 7,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr7|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 7,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr7|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 7,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr8|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 8,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr8|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 8,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr8|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 8,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr8|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 8,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr8|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 8,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr8|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 8,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr9|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 9,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr9|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 9,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr9|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 9,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr9|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 9,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr9|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 9,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr9|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 9,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr10|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 10,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr10|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 10,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr10|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 10,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr10|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 10,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr10|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 10,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr10|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 10,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr11|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 11,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr11|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 11,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr11|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 11,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr11|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 11,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr11|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 11,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr11|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 11,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr12|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 12,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr12|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 12,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr12|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 12,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr12|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 12,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr12|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 12,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr12|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 12,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr13|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 13,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr13|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 13,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr13|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 13,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr13|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 13,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr13|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 13,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr13|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 13,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr14|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 14,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr14|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 14,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr14|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 14,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr14|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 14,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr14|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 14,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr14|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 14,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr15|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 15,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr15|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 15,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr15|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 15,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr15|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 15,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr15|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 15,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr15|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 15,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr16|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 16,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr16|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 16,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr16|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 16,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr16|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 16,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr16|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 16,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr16|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 16,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr17|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 17,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr17|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 17,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr17|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 17,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr17|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 17,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr17|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 17,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr17|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 17,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr18|ldpc_2_3_qam64",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 18,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg|cr30|awgn|snr18|ldpc_1_2_qam256",
+      "source": "jpeg",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 18,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr18|ldpc_2_3_qam64",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 18,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "jpeg2000|cr30|awgn|snr18|ldpc_1_2_qam256",
+      "source": "jpeg2000",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 18,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr18|ldpc_2_3_qam64",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 18,
+      "transport": "ldpc_2_3_qam64",
+      "tables": [
+        "joint"
+      ]
+    },
+    {
+      "id": "ecsic|cr30|awgn|snr18|ldpc_1_2_qam256",
+      "source": "ecsic",
+      "compression": 30,
+      "channel": "awgn",
+      "snr_db": 18,
+      "transport": "ldpc_1_2_qam256",
+      "tables": [
+        "joint"
+      ]
+    }
+  ]
+}

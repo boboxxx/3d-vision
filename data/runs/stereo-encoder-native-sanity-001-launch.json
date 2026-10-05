@@ -1,0 +1,39 @@
+{
+  "pid": 167167,
+  "started_unix": 1791133576.4869444,
+  "prefix": "stereo-encoder-native-sanity-001",
+  "command": [
+    "/home/sheng/paper6/.venv/bin/python",
+    "/home/sheng/paper6/experiments/geometry-link/F8/code/cycle.py",
+    "--prefix",
+    "stereo-encoder-native-sanity-001",
+    "--engineering"
+  ],
+  "engineering": true,
+  "eligibility": {
+    "state": "passed_predecessor_closures",
+    "artifacts_sha256": {
+      "data/provenance/stereo-channel-native-seed17-001-closure.json": "45e818675042e4d6d5e25567a972aaf85b92562d5488abbc395424193e35fe12",
+      "data/provenance/stereo-channel-native-seed17-001-local-verification-001.json": "b94bc915faee7ba11c204c9acda035ccff8ab36cec925dc1f0411b5ecf3e38cd",
+      "data/runs/geometry-risk-antithetic-001.json": "a01a56a4770d787b3952f4305082f8fabe8c70b4b917c148fe7dbaf15ba96d88",
+      "data/provenance/geometry-risk-antithetic-001-native-audit.json": "e5bfbfacb154c50f1bbb79224ada5b3f1b1ed001e0fe296b14e1bd5db7fd1654",
+      "data/provenance/geometry-risk-antithetic-001-statistics-audit.json": "5a186c477dd33c3c9894d718a965ce2f59bb4319a2b0cf479fd37fe2510ce634",
+      "data/provenance/geometry-risk-antithetic-001-statistics-local-audit-001.json": "5d05f3815b92f922ecce866b8d05529d2d69f77f8b0aa9a0996430d1c64ff95c",
+      "data/provenance/geometry-risk-antithetic-001-transferred-verification-001.json": "c70371b3d1d00079bf4cad16b118d1eba9688cabe59548534db74fcbe1f45cc5"
+    },
+    "actual_terminal_PID": 161285
+  },
+  "CPU_gate_sha256": "9596aba8fb574069887cc82d20d363352f46a303330d47a34c7f98bec03caf8e",
+  "source_sha256": {
+    "experiments/geometry-link/F8/code/conditions.py": "d88b8dc08f7b62c0d91c79189672b948c774edd21e900d9b484cbf4d0e176554",
+    "experiments/geometry-link/F8/code/train.py": "e9c04271c0debdfc4b901b6404325846da91b719b58f3589da79946bfa3e8085",
+    "experiments/geometry-link/F8/code/audit.py": "c433eab4e53ef50535a9c7759eb64812742a959c71f447e01ce7e2e568385ac5",
+    "experiments/geometry-link/F8/code/close.py": "85cd8dadd5623e23b61f032e7acd0405180e46ffdf8a811fd695c37fd4c3b675",
+    "experiments/geometry-link/F8/code/native_observer.py": "e38a8c7fad60e5aef258e6aaf14fef936a13b7feba3c4ee1431bd6017cc823d5",
+    "experiments/geometry-link/F8/code/check_cpu.py": "49dac965c75306e404dd29a2fad7ce54b85b5f08629b69a2914e061eaea89081",
+    "experiments/geometry-link/F8/code/eligibility.py": "5a8720f443c2e71587a056cde37c7b3c579eea9f1b2daab5f4d9a94314bb9612",
+    "experiments/geometry-link/F8/code/pair_audit.py": "fed702520e8c6eba7f39d689ead42689583632c2b093492101e253908e437dc5",
+    "experiments/geometry-link/F8/code/cycle.py": "37a2d5f4913eea92114d3e5297870afd4e1ab02204f90f3fd41cbff30329f7e3"
+  },
+  "launcher_sha256": "75c7c9ae4e6372a9198e459be22e28a034d3be5a566a1e67d2311f5d1ab91ef5"
+}

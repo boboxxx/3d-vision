@@ -1,0 +1,50 @@
+{
+  "state": "passed",
+  "scope": "local sealed-record verification supplements remote full-state Adam audits",
+  "stages": [
+    {
+      "stage": 3,
+      "epochs": 6,
+      "samples": 20040,
+      "manifest_sha256": "2dc874135201f5178c28ae6779878f5f5ac87c4904449b54946dee423f28b29b",
+      "audit_sha256": "ade779cc985a4698b9f02357c396dd7fb0b2098a0389281a3e10a9e343c62ead",
+      "training_snapshot_sha256": "ff5feb10e8219d958062a0799cca524a4da0b7277d35eed4078b2753385d2292",
+      "holdout_snapshot_sha256": "12bd991c058352e5ca6b51680c7fe2fed67a744925d194bf94ae48ea455731c8",
+      "checkpoint_sha256": "7facd1c5ae91f953e8cea86288127ea6c47fb12869b8597b749422fdca3649e4"
+    },
+    {
+      "stage": 4,
+      "epochs": 10,
+      "samples": 33400,
+      "manifest_sha256": "fffecf75f8c53dff5bfa3c1ec9b7165fe188970aea5cc9992dd0bea4a307de73",
+      "audit_sha256": "8df09716deebf5ea23f941a374bf5ec664464489dca910d7b3c87e931ec4b260",
+      "training_snapshot_sha256": "18cfe84fee7c4b4e7862666ea53c499fb29a4d244c90725b40eab7dad45080dd",
+      "holdout_snapshot_sha256": "da74dd6f50abe30f59116bc63ee1a94965f69d9a412132d2fa20bb076fe75e09",
+      "checkpoint_sha256": "38fbbaaefd9ac94328385295ca269e220c2826d95835333620d0d879e55d78bd"
+    }
+  ],
+  "original21_sources": {
+    "audit_rois.py": "973ff1e14e6deb479861280ce5445cce63a92ac7d353f84df846dabd27a7bbe1",
+    "audit_training.py": "9d5b2fe9d29c43aff5ec56507c33533d130f196fc4e24e2775226327040c74db",
+    "audit_wire_budget.py": "77be3b34ce15049f55b34d0ccef817291239d20cc16b0cfe22d83173660d44dd",
+    "data.py": "eb737fe2a4ba93b9da72d977428a2a144c5acf0d85732e61ca52878933fdc324",
+    "extract_rois.py": "66be17ab6d0dae8f454ee30889558f8f243a72db2d9295ccbc9c34e4e8f45e63",
+    "model.py": "da3ec01b947047e2640a5551b48ecc5719ffa398eae05e3dfa680940de8f0416",
+    "probe.py": "2f9fd294d5fe37b21aaefaf7b6424a7b1824bad21491b80f916d605f23cca334",
+    "probe_native.py": "903a50a98791045d859e6ee3718e260cb6e9607ca770e149e581b68926e7e25d",
+    "probe_stages.py": "7b0ae827e2497a06e870e9a423af2ec33c51457f66852c5867380525139389e1",
+    "probe_wireless.py": "e08fd827ffbe6084f098bc5c85d58edebfd0ec2ba087789b20d71eb3f817ed0a",
+    "radio.py": "76ea572a5334de5bcb4a2fd89dc776661fd423e1ca5090fe769220245e9052f6",
+    "stages.py": "2f06e23be55c126c242b13d11b3da7dd15dc2790a383cd127e4255916472161f",
+    "test_training_audit.py": "d410b7f87fc38d0bdae8a0a7eaef1371f1150376ee9c17fda7144e1c52f48843",
+    "train_stages.py": "850a3c37ca4e38c57cdfc88169cb46239f2290c038f9207754c11aed45da299c",
+    "upstream/LICENSE.txt": "5447872f21ddc29dc0dc060d5c885513c01c904e9da9931bba69898a6fb4d415",
+    "upstream/arch_util.py": "be2cec6482fba5455cc1f03ff40da84a89e27feadf886018a4fa7b97b8a1bb55",
+    "upstream/checkpoint.json": "854f0e54f91a3171099fe6c121e22dc8933a287e1ecb2eae121310421b67e686",
+    "upstream/sources.json": "d47d8e00d2fafcd7cbc9c399459199586639babd99da3b92e79890288680c4c2",
+    "upstream/spynet_arch.py": "389d04d6491532a8a0746727706b89e2244243e8ed42392ded5857b8d7d88383",
+    "upstream/yolov5.json": "e710368240e7eac30f76f8602788478df0a95e65152015f3950b03cb95fae896",
+    "wireless.py": "11424b4e566065d7dbbc8c990351cf7fea451e4b67603c811a460a8ae10ffd7d"
+  },
+  "limitations": "Remote independent audit loaded every complete checkpoint and actual optimizer; this local check verifies retained records/chain, no fresh GPU inference or AP."
+}

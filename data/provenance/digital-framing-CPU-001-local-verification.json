@@ -1,0 +1,226 @@
+{
+  "state": "passed_all10_actual_receiver_header_packet_audits",
+  "scope": "CPU_engineering_ideal_sync_public_configuration_no_AP",
+  "manifest_sha256": "dccbb1d81335292721f11cb68ecac83d2974d764f146c80da4e8a8c1cbaa6b38",
+  "terminal_sha256": "e7fa11fe6c46cf01541386ed6cf22f71882d9ae2104d558d59fff6371af0365b",
+  "artifact_count": 18,
+  "local_receiver_checks": [
+    {
+      "path": "data/engineering/digital-framing-local-CPU-002.json",
+      "sha256": "f24d738fd0d45f3e2ca227d56df0e4e86fe43a6decdf50551ab54833e0d3ddc6",
+      "independent_checks": 68
+    },
+    {
+      "path": "data/engineering/artemis-digital-framing-local-CPU-001.json",
+      "sha256": "85dab3a9f5159a966e3933fc04f7a1e20ef4db95e242ddf09b15d62a17cf4ce7",
+      "independent_checks": 68
+    }
+  ],
+  "verified": [
+    {
+      "name": "ldpc_2_3_qam64-native-identity-10",
+      "erasure_reason": null,
+      "source_bit_errors": 0,
+      "attempted_uses": 181116,
+      "attempted_energy": 180816.5714285714,
+      "APP_max_roundoff": 0.0
+    },
+    {
+      "name": "ldpc_2_3_qam64-synthetic-awgn-6",
+      "erasure_reason": "header_magic",
+      "source_bit_errors": 1063,
+      "attempted_uses": 1296,
+      "attempted_energy": 968.3809523809525,
+      "APP_max_roundoff": 1.7763568394002505e-15
+    },
+    {
+      "name": "ldpc_2_3_qam64-synthetic-awgn-18",
+      "erasure_reason": null,
+      "source_bit_errors": 0,
+      "attempted_uses": 1296,
+      "attempted_energy": 968.3809523809525,
+      "APP_max_roundoff": 3.552713678800501e-15
+    },
+    {
+      "name": "ldpc_2_3_qam64-synthetic-rayleigh-6",
+      "erasure_reason": "header_magic",
+      "source_bit_errors": 1225,
+      "attempted_uses": 1296,
+      "attempted_energy": 968.3809523809525,
+      "APP_max_roundoff": 1.7763568394002505e-15
+    },
+    {
+      "name": "ldpc_2_3_qam64-synthetic-rayleigh-18",
+      "erasure_reason": null,
+      "source_bit_errors": 0,
+      "attempted_uses": 1296,
+      "attempted_energy": 968.3809523809525,
+      "APP_max_roundoff": 3.552713678800501e-15
+    },
+    {
+      "name": "ldpc_1_2_qam256-native-identity-10",
+      "erasure_reason": null,
+      "source_bit_errors": 0,
+      "attempted_uses": 181278,
+      "attempted_energy": 181008.77647058817,
+      "APP_max_roundoff": 0.0
+    },
+    {
+      "name": "ldpc_1_2_qam256-synthetic-awgn-6",
+      "erasure_reason": "header_magic",
+      "source_bit_errors": 1083,
+      "attempted_uses": 1215,
+      "attempted_energy": 936.0823529411764,
+      "APP_max_roundoff": 1.7763568394002505e-15
+    },
+    {
+      "name": "ldpc_1_2_qam256-synthetic-awgn-18",
+      "erasure_reason": null,
+      "source_bit_errors": 0,
+      "attempted_uses": 1215,
+      "attempted_energy": 936.0823529411764,
+      "APP_max_roundoff": 7.105427357601002e-15
+    },
+    {
+      "name": "ldpc_1_2_qam256-synthetic-rayleigh-6",
+      "erasure_reason": "header_magic",
+      "source_bit_errors": 1181,
+      "attempted_uses": 1215,
+      "attempted_energy": 936.0823529411764,
+      "APP_max_roundoff": 8.881784197001252e-16
+    },
+    {
+      "name": "ldpc_1_2_qam256-synthetic-rayleigh-18",
+      "erasure_reason": null,
+      "source_bit_errors": 0,
+      "attempted_uses": 1215,
+      "attempted_energy": 936.0823529411764,
+      "APP_max_roundoff": 3.552713678800501e-15
+    }
+  ],
+  "pixel_supplement_sha256": "766a2f676892ab464183588d71804a77c4bbe9c6ad1bbe2f6917e40460a33dfe",
+  "pixel_terminal_sha256": "72f002475e4958485e86aa2712cefe0726e9ed4ddbf5e8b6bcfdc7a8940c1feb",
+  "cross_platform_pixel_differences": [
+    {
+      "packet": "ldpc_2_3_qam64-native-identity-10",
+      "scope": "exploratory_cross_platform_decode_no_acceptance_bound",
+      "views": [
+        {
+          "exact_pixel_equality": false,
+          "changed_values": 48,
+          "total_values": 1358640,
+          "maximum_absolute_difference": 1,
+          "mean_absolute_difference": 3.532944709415297e-05
+        },
+        {
+          "exact_pixel_equality": false,
+          "changed_values": 42,
+          "total_values": 1358640,
+          "maximum_absolute_difference": 1,
+          "mean_absolute_difference": 3.0913266207383855e-05
+        }
+      ]
+    },
+    {
+      "packet": "ldpc_2_3_qam64-synthetic-awgn-18",
+      "scope": "exploratory_cross_platform_decode_no_acceptance_bound",
+      "views": [
+        {
+          "exact_pixel_equality": true,
+          "changed_values": 0,
+          "total_values": 288,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0.0
+        },
+        {
+          "exact_pixel_equality": true,
+          "changed_values": 0,
+          "total_values": 288,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "packet": "ldpc_2_3_qam64-synthetic-rayleigh-18",
+      "scope": "exploratory_cross_platform_decode_no_acceptance_bound",
+      "views": [
+        {
+          "exact_pixel_equality": true,
+          "changed_values": 0,
+          "total_values": 288,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0.0
+        },
+        {
+          "exact_pixel_equality": true,
+          "changed_values": 0,
+          "total_values": 288,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "packet": "ldpc_1_2_qam256-native-identity-10",
+      "scope": "exploratory_cross_platform_decode_no_acceptance_bound",
+      "views": [
+        {
+          "exact_pixel_equality": false,
+          "changed_values": 48,
+          "total_values": 1358640,
+          "maximum_absolute_difference": 1,
+          "mean_absolute_difference": 3.532944709415297e-05
+        },
+        {
+          "exact_pixel_equality": false,
+          "changed_values": 42,
+          "total_values": 1358640,
+          "maximum_absolute_difference": 1,
+          "mean_absolute_difference": 3.0913266207383855e-05
+        }
+      ]
+    },
+    {
+      "packet": "ldpc_1_2_qam256-synthetic-awgn-18",
+      "scope": "exploratory_cross_platform_decode_no_acceptance_bound",
+      "views": [
+        {
+          "exact_pixel_equality": true,
+          "changed_values": 0,
+          "total_values": 288,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0.0
+        },
+        {
+          "exact_pixel_equality": true,
+          "changed_values": 0,
+          "total_values": 288,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "packet": "ldpc_1_2_qam256-synthetic-rayleigh-18",
+      "scope": "exploratory_cross_platform_decode_no_acceptance_bound",
+      "views": [
+        {
+          "exact_pixel_equality": true,
+          "changed_values": 0,
+          "total_values": 288,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0.0
+        },
+        {
+          "exact_pixel_equality": true,
+          "changed_values": 0,
+          "total_values": 288,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0.0
+        }
+      ]
+    }
+  ],
+  "cross_platform_native_pixel_equality": false
+}

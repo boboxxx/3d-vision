@@ -1,0 +1,11 @@
+{
+  "state": "sbatch_rejected_no_job_no_formal_output",
+  "attempted_dependency": "afterok:11425880",
+  "sbatch_exit_code": 1,
+  "stderr": "sbatch: error: Batch job submission failed: Job dependency problem",
+  "verified_controller_query": "slurm_load_jobs error: Invalid job id specified",
+  "actual_sacct_GPU_and_native_raw_and_dot0": "11425104/11425104.0 and11425880/11425880.0 all COMPLETED0:0",
+  "correction": "Submit unchanged prelocked006 wrapper without obsolete live-controller dependency; wrapper rechecks actual sacct and complete native/local proof before unchanged fresh003 training",
+  "training_or_thresholds_changed": false,
+  "checked_unix": 1791208099.989454
+}

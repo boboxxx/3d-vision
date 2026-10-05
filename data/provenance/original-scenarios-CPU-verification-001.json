@@ -1,0 +1,79 @@
+{
+  "state": "passed",
+  "scope": "local_and_sheng_CPU_engineering_ONLY",
+  "server_evidence_sha256": "64cadae456fcc2e0d94bc3c972d5e3a93275ae02acb0af20ca03969afc6ccb46",
+  "protocol_sha256": "b633721f4c2e2ef202edeec06d8bad8c0a10ab63fd6a82008c0648be5bdadb1f",
+  "source_files": {
+    "check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+    "contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+    "image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+    "test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+  },
+  "artifacts": {
+    "jpeg-50.p6sb": {
+      "sha256": "36a68cf7757881bde838ed782836de58447a19bb09f8b0959f94109526aeefb2",
+      "bytes": 118469,
+      "native_shape": [
+        370,
+        1224,
+        3
+      ],
+      "cross_build_decoded_pixels_identical": true
+    },
+    "jpeg2000-10.p6sb": {
+      "sha256": "3d68d1ae0fc6bd4687ec1f180975940fecc87723f2b53e1b304655a81b96eac5",
+      "bytes": 271656,
+      "native_shape": [
+        370,
+        1224,
+        3
+      ],
+      "cross_build_decoded_pixels_identical": false
+    },
+    "jpeg2000-30.p6sb": {
+      "sha256": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+      "bytes": 90545,
+      "native_shape": [
+        370,
+        1224,
+        3
+      ],
+      "cross_build_decoded_pixels_identical": false
+    },
+    "jpeg2000-50.p6sb": {
+      "sha256": "24d9528c143e9289bb76729622a5fd873a483962e47946c5c132977f1e481446",
+      "bytes": 54363,
+      "native_shape": [
+        370,
+        1224,
+        3
+      ],
+      "cross_build_decoded_pixels_identical": false
+    },
+    "identity-10dB.npz": {
+      "sha256": "7e03ccf84d13f04074646ad7f8b953aef874e032ee585b017f83f0551e66edfe",
+      "RNG_draws_SHA_exact": true,
+      "cross_build_replay_max_absolute_error": 0.0,
+      "cross_build_replay_absolute_tolerance": 3.926662931005126e-14,
+      "uses": 4096
+    },
+    "awgn-10dB.npz": {
+      "sha256": "e90f56406fa76ecdefd0cef15e39ba7afa97a67d38e6084bb481f54af4fcb3bc",
+      "RNG_draws_SHA_exact": true,
+      "cross_build_replay_max_absolute_error": 0.0,
+      "cross_build_replay_absolute_tolerance": 5.163638824372294e-14,
+      "uses": 4096
+    },
+    "rayleigh-10dB.npz": {
+      "sha256": "ab8e4460f12d88830a83a7e1ba2122e91c020563c9b3f0ea8490de3f71355632",
+      "RNG_draws_SHA_exact": true,
+      "cross_build_replay_max_absolute_error": 7.105427357601002e-15,
+      "cross_build_replay_absolute_tolerance": 2.7763104847830554e-13,
+      "uses": 4096
+    }
+  },
+  "native_frame": "000000",
+  "GT_or_main_validation_read": false,
+  "LDPC_simulation_completed": false,
+  "AP_completed": false
+}

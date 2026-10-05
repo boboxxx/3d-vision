@@ -1,0 +1,22 @@
+test_parallel_prefix_integrity (test_download_ranges.RangeTests) ... ok
+test_gt_lidar_excluded_and_recall_only_after_prediction (test_inference.InferenceTests) ... ok
+test_boundary_patch_idempotent (test_integration.IntegrationTests) ... ok
+test_generated_config_preserves_full_detector (test_integration.IntegrationTests) ... ok
+test_split_overlap_rejected_before_data_read (test_integration.IntegrationTests) ... ok
+test_camera_dimensions_and_text_precision (test_liga_artifact.ArtifactTests) ... ok
+test_no_clean_residual_bypass (test_link.LinkTests) ... ok
+test_task_gradient_and_no_eval_groundtruth (test_link.LinkTests) ... ok
+test_awgn_variance_and_accounting (test_link.PhysicsTests) ... ok
+test_depth_moments_multimodal (test_link.PhysicsTests) ... ok
+test_fading_uses_pilots_and_has_no_oracle_argument (test_link.PhysicsTests) ... ok
+test_kkt_and_budget (test_link.PhysicsTests) ... ok
+test_raw_left_evidence_must_change_depth_distribution (test_posterior_coupling.PosteriorTests) ... ok
+test_payload_energy_pilots_and_no_clean_bypass (test_rgb_link.RGBTests) ... ok
+test_inference_uses_no_gradient_teacher_or_groundtruth (test_sensitivity.SensitivityTests) ... ok
+test_native_detection_gradient_excludes_imitation_and_second_order (test_sensitivity.SensitivityTests) ... ok
+test_frozen_teacher_state_and_training_gradient (test_student.StudentTests) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 36.373s
+
+OK

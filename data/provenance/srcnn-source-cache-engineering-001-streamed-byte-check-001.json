@@ -1,0 +1,45 @@
+{
+  "state": "passed_all6_actual_streamed_SRCNN_wire_bytes_without_retained_stream_blobs",
+  "checked_unix": 1791167502.1757839,
+  "wire_files": 6,
+  "wire_bytes": 840882,
+  "rows": [
+    {
+      "native_path": "/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr10/wire/000000.p6sr",
+      "bytes": 271706,
+      "sha256": "fe603d3afe4e2c29103920f1d93424485432f200a4e7dc792623df8d57247848"
+    },
+    {
+      "native_path": "/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr10/wire/000003.p6sr",
+      "bytes": 277568,
+      "sha256": "08e5f1ce7c0ba78bf1a0a8b786790d05e5f450069ce84e1a0fc24d1fc6da7788"
+    },
+    {
+      "native_path": "/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr30/wire/000000.p6sr",
+      "bytes": 89678,
+      "sha256": "eec320d2d6e358663b90568aec19d55cc36a9f8f08bd660d793b732971e19a9e"
+    },
+    {
+      "native_path": "/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr30/wire/000003.p6sr",
+      "bytes": 92240,
+      "sha256": "223a50c6a3ddaf79179f878cf3b184aab151465b35e4bc5afda8b34674b9eab2"
+    },
+    {
+      "native_path": "/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr50/wire/000000.p6sr",
+      "bytes": 54008,
+      "sha256": "3a9db786b373d01a9b4286d6808161785ff1b9fa504abed2b1b48947caac0d6e"
+    },
+    {
+      "native_path": "/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr50/wire/000003.p6sr",
+      "bytes": 55682,
+      "sha256": "24b33ef8117ef941b511546d8a29daba280a377a7ce51525acc9f47fc2ca453b"
+    }
+  ],
+  "source_wire_proof_sha256": "985272f871f7efcdb3a8b1d5684cab099b7d07684857796feff3bb2780f73daa",
+  "native_wire_audit_sha256": "747836533244daef37251f2e7d90f5b18cbf82d442f8dc94bf968659266e5a1e",
+  "helper_sha256": "27b60ae294fc0b913cd82c277b1930476125191e3ab4599b5087d418f0963e3c",
+  "storage_prelock_sha256": "68246d5d2a6d46c0964899818cd5798068a3443efd50dd0470288882e842628c",
+  "retained_stream_blob_files": 0,
+  "maximum_allowed_member_bytes": 67108864,
+  "limitation": "Actual complete source wires only; no streamed NPZ, GPU reconstruction, full main acceptance or detection"
+}

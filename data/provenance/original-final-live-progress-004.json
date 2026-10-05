@@ -1,0 +1,169 @@
+{
+  "snapshot_utc": "2026-10-04T13:45:35Z",
+  "host": "sheng",
+  "nonterminal_partial_snapshot": true,
+  "processes": "    PID     ELAPSED COMMAND\n  56638    01:55:57 bash -c source scripts/sheng_env.sh && python experiments/original-detector-integration/final-code/cycle.py --prefix original-final-native-seed17-001 && python experiments/original-detector-integration/final-code/close.py --prefix original-final-native-seed17-001\n  56656    01:55:56 python experiments/original-detector-integration/final-code/cycle.py --prefix original-final-native-seed17-001\n  68491       44:29 python experiments/geometry-risk/code/queue_native.py\n",
+  "artifacts": {
+    "data/runs/original-final-native-seed17-001-cache-awgn-audit.json": {
+      "state": "passed",
+      "frames": 372,
+      "keys": [
+        "state",
+        "scope",
+        "channel",
+        "frames",
+        "erasures",
+        "mean_complex_uses",
+        "attempted_complex_uses",
+        "attempted_energy",
+        "manifest_sha256",
+        "checkpoint_sha256",
+        "files",
+        "checked_at_unix"
+      ],
+      "sha256": "820ff7f5eeaf8c5ce8686b0504604080d74d9ffa70209ab060ef0d38c039561c"
+    },
+    "data/runs/original-final-native-seed17-001-cache-awgn.json": {
+      "state": "finished",
+      "frames": 372,
+      "keys": [
+        "state",
+        "channel",
+        "snr_db",
+        "seed",
+        "device",
+        "output_dir",
+        "ordered_ids",
+        "frames_complete",
+        "frames",
+        "source_identities",
+        "final_chain",
+        "final_checkpoint_sha256",
+        "protocol_sha256",
+        "codec_initial_state_hashes",
+        "started_at_unix",
+        "generator_initial_state_sha256",
+        "codec_states_readonly",
+        "codec_final_state_hashes",
+        "generator_final_state_sha256",
+        "ended_at_unix",
+        "limitations"
+      ],
+      "sha256": "11a164b89bace5feb6dccfbff658d0e13f1001c9cbf34bc177f1394d1c28782d"
+    },
+    "data/runs/original-final-native-seed17-001-cache-identity-audit.json": {
+      "state": "passed",
+      "frames": 372,
+      "keys": [
+        "state",
+        "scope",
+        "channel",
+        "frames",
+        "erasures",
+        "mean_complex_uses",
+        "attempted_complex_uses",
+        "attempted_energy",
+        "manifest_sha256",
+        "checkpoint_sha256",
+        "files",
+        "checked_at_unix"
+      ],
+      "sha256": "286f33b7c6bb972261a19bf9e687ffc2a668f4254a6834fbf8184295d05f3560"
+    },
+    "data/runs/original-final-native-seed17-001-cache-identity.json": {
+      "state": "finished",
+      "frames": 372,
+      "keys": [
+        "state",
+        "channel",
+        "snr_db",
+        "seed",
+        "device",
+        "output_dir",
+        "ordered_ids",
+        "frames_complete",
+        "frames",
+        "source_identities",
+        "final_chain",
+        "final_checkpoint_sha256",
+        "protocol_sha256",
+        "codec_initial_state_hashes",
+        "started_at_unix",
+        "generator_initial_state_sha256",
+        "codec_states_readonly",
+        "codec_final_state_hashes",
+        "generator_final_state_sha256",
+        "ended_at_unix",
+        "limitations"
+      ],
+      "sha256": "dc9516d73fcb281a685aa432962d5f853bdf9b053a3cf285fc94030d5a9c874c"
+    },
+    "data/runs/original-final-native-seed17-001-cycle.json": {
+      "state": "running",
+      "pid": 56656,
+      "keys": [
+        "state",
+        "pid",
+        "started_at_unix",
+        "source_identities",
+        "final_chain",
+        "completed_commands",
+        "endpoints",
+        "prefix",
+        "current_command"
+      ],
+      "sha256": "252471d8f777e135f17b26eab1a50bbd75f00a16c8e170d374020f1024537e6c"
+    },
+    "data/runs/original-final-native-seed17-001-launch.json": {
+      "state": "dispatched",
+      "pid": 56638,
+      "command": "python experiments/original-detector-integration/final-code/cycle.py --prefix original-final-native-seed17-001 && python experiments/original-detector-integration/final-code/close.py --prefix original-final-native-seed17-001",
+      "keys": [
+        "state",
+        "pid",
+        "prefix",
+        "command",
+        "evidence_commit",
+        "started_at_unix",
+        "scope"
+      ],
+      "sha256": "a7d79c262d4aebea19acf8dbaf036bca3ec73ba0d4fa571d4b5c36ff0cb0f33b"
+    },
+    "data/runs/original-final-native-seed17-001-stereo-rcnn-clean-relay.json": {
+      "state": "running",
+      "frames": 156,
+      "keys": [
+        "state",
+        "run_id",
+        "detector",
+        "channel",
+        "seed",
+        "ordered_ids",
+        "frames_complete",
+        "frames",
+        "source_identities",
+        "final_chain",
+        "protocol_sha256",
+        "output_dir",
+        "cache_manifest_path",
+        "cache_manifest_sha256",
+        "cache_audit_sha256",
+        "NVIDIA_free_before_bytes",
+        "started_at_unix",
+        "detector_checkpoint_sha256",
+        "detector_initial_state_hashes"
+      ],
+      "sha256": "711a42bba4fe282fcef7dfe7ebe6dd11c1295172b7bbc02276b20caad4078da1"
+    }
+  },
+  "geometry_queue": {
+    "state": "waiting_previous_actual_processes",
+    "pid": 68491,
+    "previous_actual_live_PIDs": [
+      56638,
+      56656
+    ],
+    "checked_unix": 1791121528.4739428,
+    "CPU_gate_sha256": "41f521193903968f81527e9d37985a1d76f2da6fd2afa57b7cb99b20e200fd0a"
+  }
+}

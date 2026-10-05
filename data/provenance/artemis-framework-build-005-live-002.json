@@ -1,0 +1,14 @@
+{
+  "observed_unix": 1791173280.3734066,
+  "job_id": "11424747",
+  "state": "failed",
+  "stage": "real_registry_import",
+  "actual_squeue": "",
+  "actual_squeue_returncode": 0,
+  "ended_unix": 1791173061.8134434,
+  "log_lines": 3861,
+  "errors": [],
+  "build_manifest_sha256": "cdc6c8cc7af9c6487f06413576bfe8cfab910961af2cffe368c1dbae9a58e62a",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-005.py\", line 93, in main\n    run([sys.executable, str(HERE / 'import-probe-005.py')], 'real-import-probe', env=env, cwd=ROOT)\n  File \"/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-005.py\", line 33, in run\n    assert result.returncode == 0, f'{name}: exit {result.returncode}; see retained complete log'\n           ^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: real-import-probe: exit 1; see retained complete log\n",
+  "header_probe_sha256": "cc8732ac18c59257e2f13af0803558ec1a224ab8a4cef349487e349eef3b0f50"
+}

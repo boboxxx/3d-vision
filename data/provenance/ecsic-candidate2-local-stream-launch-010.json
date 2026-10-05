@@ -1,0 +1,11 @@
+{
+  "state": "local_pipe_exit0_pending_actual_export_terminal_and_two_host_closure",
+  "started_unix": 1791206458.3980958,
+  "inputs_sha256": "3558718623e1a6d4140970cf75d2515bcfc284a2246c00ccd06a2c830be20b2b",
+  "remote_command": "ssh artemis-ood 'cd /mnt/nfs2/engdes/wc296/paper6 && export PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 CUDA_VISIBLE_DEVICES=\"\" && srun --account=engdes --partition=short --ntasks=1 --cpus-per-task=2 --mem=8G --time=00:20:00 --dependency=afterok:11425708 --job-name=paper6-ecsic-export010 envs/torch-cu128-001/bin/python experiments/original-paper-scenarios/ecsic-candidate2-stream-code-010/export.py'",
+  "local_command": "/Users/chen/miniconda3/bin/python /Users/chen/Documents/ChatGPT/paper6/data/provenance/audit-ecsic-KITTI-formal-003.py --mode stream --candidate 2 --output /Users/chen/Documents/ChatGPT/paper6/data/provenance/ecsic-KITTI-lambda0.01-seed17-002-local-audit-003.json",
+  "finished_unix": 1791208793.449867,
+  "local_reader_exit_code": 0,
+  "ssh_export_exit_code": 0,
+  "pipefail_exit_code": 0
+}

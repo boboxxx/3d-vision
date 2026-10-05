@@ -1,0 +1,20 @@
+/etc/profile.d/lmod.sh: line 10: PBS_NODEFILE: unbound variable
+/opt/ohpc/admin/lmod/lmod/init/bash: line 26: FPATH: unbound variable
+Traceback (most recent call last):
+  File "/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-001.py", line 110, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-001.py", line 62, in main
+    report['sources_before'] = sources(lock)
+                               ^^^^^^^^^^^^^
+  File "/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-001.py", line 36, in sources
+    got = {p: sha(ROOT / p) for p in lock['frozen_inputs']}
+              ^^^^^^^^^^^^^
+  File "/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-001.py", line 22, in sha
+    with Path(path).open('rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/its/home/wc296/miniconda3/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/nfs2/engdes/wc296/paper6/third_party/LIGA-Stereo/liga/__init__.py'
+srun: error: artemis-a40-16: task 0: Exited with exit code 1

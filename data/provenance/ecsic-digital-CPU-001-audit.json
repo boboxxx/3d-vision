@@ -1,0 +1,1013 @@
+{
+  "state": "passed_all20_independent_actual_PHY_and_P6EC_frame_audits",
+  "started_unix": 1791137931.0839055,
+  "verifier_sha256": "43b4094774ff3dbbbf3ebbdcf9d4e44677c25dc7f524278c4521897156204831",
+  "scope": "full20_actual_PHY_framing_audit_no_neural_decoder_or_AP",
+  "verified": [
+    {
+      "name": "00-synthetic32x64-ldpc_2_3_qam64-identity-10",
+      "full_source_blocks": 6,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 11664,
+      "all_BP_information_bits_replayed": 7776,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": false,
+      "erasure_reason": null,
+      "uses": 1944,
+      "energy": 1726.666666666667,
+      "receiver_source_length_oracle": false,
+      "independent_inner": {
+        "original_hw": [
+          32,
+          64
+        ],
+        "padded_hw": [
+          32,
+          64
+        ],
+        "inner_overhead_bytes": 166,
+        "streams": [
+          {
+            "id": 0,
+            "symbols": 96,
+            "rans_bytes": 15,
+            "escape_bytes": 0,
+            "rans_sha256": "892f9a814dcd2c90bb40f3e1e9851381093322c915e957db7b774a315b053055",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 1,
+            "symbols": 96,
+            "rans_bytes": 20,
+            "escape_bytes": 0,
+            "rans_sha256": "188705efdaaaea85f6a74c3758b067850cb1439cc8669fe162fcf8db4a16722a",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 2,
+            "symbols": 1536,
+            "rans_bytes": 318,
+            "escape_bytes": 0,
+            "rans_sha256": "cbe966599cfa50a2dbf198814d3864bb11a3571efb16e471550014091de39968",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 3,
+            "symbols": 1536,
+            "rans_bytes": 294,
+            "escape_bytes": 0,
+            "rans_sha256": "f9daa3d77147e3671200cce2954086d7aa05a6f85fc7cb984051a8a75d07f626",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-synthetic32x64-ldpc_2_3_qam64-awgn-6",
+      "full_source_blocks": 6,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 11664,
+      "all_BP_information_bits_replayed": 7776,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 1559,
+      "erased": true,
+      "erasure_reason": "header_magic",
+      "uses": 1944,
+      "energy": 1726.666666666667,
+      "receiver_source_length_oracle": false,
+      "independent_inner": null
+    },
+    {
+      "name": "02-synthetic32x64-ldpc_2_3_qam64-awgn-18",
+      "full_source_blocks": 6,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 11664,
+      "all_BP_information_bits_replayed": 7776,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": false,
+      "erasure_reason": null,
+      "uses": 1944,
+      "energy": 1726.666666666667,
+      "receiver_source_length_oracle": false,
+      "independent_inner": {
+        "original_hw": [
+          32,
+          64
+        ],
+        "padded_hw": [
+          32,
+          64
+        ],
+        "inner_overhead_bytes": 166,
+        "streams": [
+          {
+            "id": 0,
+            "symbols": 96,
+            "rans_bytes": 15,
+            "escape_bytes": 0,
+            "rans_sha256": "892f9a814dcd2c90bb40f3e1e9851381093322c915e957db7b774a315b053055",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 1,
+            "symbols": 96,
+            "rans_bytes": 20,
+            "escape_bytes": 0,
+            "rans_sha256": "188705efdaaaea85f6a74c3758b067850cb1439cc8669fe162fcf8db4a16722a",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 2,
+            "symbols": 1536,
+            "rans_bytes": 318,
+            "escape_bytes": 0,
+            "rans_sha256": "cbe966599cfa50a2dbf198814d3864bb11a3571efb16e471550014091de39968",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 3,
+            "symbols": 1536,
+            "rans_bytes": 294,
+            "escape_bytes": 0,
+            "rans_sha256": "f9daa3d77147e3671200cce2954086d7aa05a6f85fc7cb984051a8a75d07f626",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "name": "03-synthetic32x64-ldpc_2_3_qam64-rayleigh-6",
+      "full_source_blocks": 6,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 11664,
+      "all_BP_information_bits_replayed": 7776,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 1825,
+      "erased": true,
+      "erasure_reason": "header_magic",
+      "uses": 1944,
+      "energy": 1726.666666666667,
+      "receiver_source_length_oracle": false,
+      "independent_inner": null
+    },
+    {
+      "name": "04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18",
+      "full_source_blocks": 6,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 11664,
+      "all_BP_information_bits_replayed": 7776,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": false,
+      "erasure_reason": null,
+      "uses": 1944,
+      "energy": 1726.666666666667,
+      "receiver_source_length_oracle": false,
+      "independent_inner": {
+        "original_hw": [
+          32,
+          64
+        ],
+        "padded_hw": [
+          32,
+          64
+        ],
+        "inner_overhead_bytes": 166,
+        "streams": [
+          {
+            "id": 0,
+            "symbols": 96,
+            "rans_bytes": 15,
+            "escape_bytes": 0,
+            "rans_sha256": "892f9a814dcd2c90bb40f3e1e9851381093322c915e957db7b774a315b053055",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 1,
+            "symbols": 96,
+            "rans_bytes": 20,
+            "escape_bytes": 0,
+            "rans_sha256": "188705efdaaaea85f6a74c3758b067850cb1439cc8669fe162fcf8db4a16722a",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 2,
+            "symbols": 1536,
+            "rans_bytes": 318,
+            "escape_bytes": 0,
+            "rans_sha256": "cbe966599cfa50a2dbf198814d3864bb11a3571efb16e471550014091de39968",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 3,
+            "symbols": 1536,
+            "rans_bytes": 294,
+            "escape_bytes": 0,
+            "rans_sha256": "f9daa3d77147e3671200cce2954086d7aa05a6f85fc7cb984051a8a75d07f626",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "name": "05-synthetic32x64-ldpc_1_2_qam256-identity-10",
+      "full_source_blocks": 7,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 13608,
+      "all_BP_information_bits_replayed": 6804,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": false,
+      "erasure_reason": null,
+      "uses": 1701,
+      "energy": 1610.7882352941174,
+      "receiver_source_length_oracle": false,
+      "independent_inner": {
+        "original_hw": [
+          32,
+          64
+        ],
+        "padded_hw": [
+          32,
+          64
+        ],
+        "inner_overhead_bytes": 166,
+        "streams": [
+          {
+            "id": 0,
+            "symbols": 96,
+            "rans_bytes": 15,
+            "escape_bytes": 0,
+            "rans_sha256": "892f9a814dcd2c90bb40f3e1e9851381093322c915e957db7b774a315b053055",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 1,
+            "symbols": 96,
+            "rans_bytes": 20,
+            "escape_bytes": 0,
+            "rans_sha256": "188705efdaaaea85f6a74c3758b067850cb1439cc8669fe162fcf8db4a16722a",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 2,
+            "symbols": 1536,
+            "rans_bytes": 318,
+            "escape_bytes": 0,
+            "rans_sha256": "cbe966599cfa50a2dbf198814d3864bb11a3571efb16e471550014091de39968",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 3,
+            "symbols": 1536,
+            "rans_bytes": 294,
+            "escape_bytes": 0,
+            "rans_sha256": "f9daa3d77147e3671200cce2954086d7aa05a6f85fc7cb984051a8a75d07f626",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "name": "06-synthetic32x64-ldpc_1_2_qam256-awgn-6",
+      "full_source_blocks": 7,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 13608,
+      "all_BP_information_bits_replayed": 6804,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 1589,
+      "erased": true,
+      "erasure_reason": "header_magic",
+      "uses": 1701,
+      "energy": 1610.7882352941174,
+      "receiver_source_length_oracle": false,
+      "independent_inner": null
+    },
+    {
+      "name": "07-synthetic32x64-ldpc_1_2_qam256-awgn-18",
+      "full_source_blocks": 7,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 13608,
+      "all_BP_information_bits_replayed": 6804,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": false,
+      "erasure_reason": null,
+      "uses": 1701,
+      "energy": 1610.7882352941174,
+      "receiver_source_length_oracle": false,
+      "independent_inner": {
+        "original_hw": [
+          32,
+          64
+        ],
+        "padded_hw": [
+          32,
+          64
+        ],
+        "inner_overhead_bytes": 166,
+        "streams": [
+          {
+            "id": 0,
+            "symbols": 96,
+            "rans_bytes": 15,
+            "escape_bytes": 0,
+            "rans_sha256": "892f9a814dcd2c90bb40f3e1e9851381093322c915e957db7b774a315b053055",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 1,
+            "symbols": 96,
+            "rans_bytes": 20,
+            "escape_bytes": 0,
+            "rans_sha256": "188705efdaaaea85f6a74c3758b067850cb1439cc8669fe162fcf8db4a16722a",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 2,
+            "symbols": 1536,
+            "rans_bytes": 318,
+            "escape_bytes": 0,
+            "rans_sha256": "cbe966599cfa50a2dbf198814d3864bb11a3571efb16e471550014091de39968",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 3,
+            "symbols": 1536,
+            "rans_bytes": 294,
+            "escape_bytes": 0,
+            "rans_sha256": "f9daa3d77147e3671200cce2954086d7aa05a6f85fc7cb984051a8a75d07f626",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "name": "08-synthetic32x64-ldpc_1_2_qam256-rayleigh-6",
+      "full_source_blocks": 7,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 13608,
+      "all_BP_information_bits_replayed": 6804,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 1834,
+      "erased": true,
+      "erasure_reason": "header_magic",
+      "uses": 1701,
+      "energy": 1610.7882352941174,
+      "receiver_source_length_oracle": false,
+      "independent_inner": null
+    },
+    {
+      "name": "09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18",
+      "full_source_blocks": 7,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 13608,
+      "all_BP_information_bits_replayed": 6804,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": false,
+      "erasure_reason": null,
+      "uses": 1701,
+      "energy": 1610.7882352941174,
+      "receiver_source_length_oracle": false,
+      "independent_inner": {
+        "original_hw": [
+          32,
+          64
+        ],
+        "padded_hw": [
+          32,
+          64
+        ],
+        "inner_overhead_bytes": 166,
+        "streams": [
+          {
+            "id": 0,
+            "symbols": 96,
+            "rans_bytes": 15,
+            "escape_bytes": 0,
+            "rans_sha256": "892f9a814dcd2c90bb40f3e1e9851381093322c915e957db7b774a315b053055",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 1,
+            "symbols": 96,
+            "rans_bytes": 20,
+            "escape_bytes": 0,
+            "rans_sha256": "188705efdaaaea85f6a74c3758b067850cb1439cc8669fe162fcf8db4a16722a",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 2,
+            "symbols": 1536,
+            "rans_bytes": 318,
+            "escape_bytes": 0,
+            "rans_sha256": "cbe966599cfa50a2dbf198814d3864bb11a3571efb16e471550014091de39968",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 3,
+            "symbols": 1536,
+            "rans_bytes": 294,
+            "escape_bytes": 0,
+            "rans_sha256": "f9daa3d77147e3671200cce2954086d7aa05a6f85fc7cb984051a8a75d07f626",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "name": "10-training000000-ldpc_2_3_qam64-identity-10",
+      "full_source_blocks": 277,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 538488,
+      "all_BP_information_bits_replayed": 358992,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": false,
+      "erasure_reason": null,
+      "uses": 89748,
+      "energy": 89517.33333333334,
+      "receiver_source_length_oracle": false,
+      "independent_inner": {
+        "original_hw": [
+          370,
+          1224
+        ],
+        "padded_hw": [
+          384,
+          1248
+        ],
+        "inner_overhead_bytes": 166,
+        "streams": [
+          {
+            "id": 0,
+            "symbols": 22464,
+            "rans_bytes": 2173,
+            "escape_bytes": 0,
+            "rans_sha256": "79e2f5f39fe1ad100973d28a647d25cf4720c73b3ad26d8a077ef702b0c9cf2f",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 1,
+            "symbols": 22464,
+            "rans_bytes": 2584,
+            "escape_bytes": 0,
+            "rans_sha256": "5a1fe90120b690caa3c9f251be77b33dc72ddfa2d5e631f8a2f038a1d7faa809",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 2,
+            "symbols": 359424,
+            "rans_bytes": 19968,
+            "escape_bytes": 0,
+            "rans_sha256": "a293f35fb61f266b73a815b4f4f3a73d2ab512aeb8633bb3e1557e457aa54916",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 3,
+            "symbols": 359424,
+            "rans_bytes": 19933,
+            "escape_bytes": 0,
+            "rans_sha256": "382669a05598f820db8664c2cb067455aaed3bbe25c0479880f8dc23b5a0fdf4",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "name": "11-training000000-ldpc_2_3_qam64-awgn-6",
+      "full_source_blocks": 277,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 538488,
+      "all_BP_information_bits_replayed": 358992,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 80290,
+      "erased": true,
+      "erasure_reason": "header_magic",
+      "uses": 89748,
+      "energy": 89517.33333333334,
+      "receiver_source_length_oracle": false,
+      "independent_inner": null
+    },
+    {
+      "name": "12-training000000-ldpc_2_3_qam64-awgn-18",
+      "full_source_blocks": 277,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 538488,
+      "all_BP_information_bits_replayed": 358992,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": false,
+      "erasure_reason": null,
+      "uses": 89748,
+      "energy": 89517.33333333334,
+      "receiver_source_length_oracle": false,
+      "independent_inner": {
+        "original_hw": [
+          370,
+          1224
+        ],
+        "padded_hw": [
+          384,
+          1248
+        ],
+        "inner_overhead_bytes": 166,
+        "streams": [
+          {
+            "id": 0,
+            "symbols": 22464,
+            "rans_bytes": 2173,
+            "escape_bytes": 0,
+            "rans_sha256": "79e2f5f39fe1ad100973d28a647d25cf4720c73b3ad26d8a077ef702b0c9cf2f",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 1,
+            "symbols": 22464,
+            "rans_bytes": 2584,
+            "escape_bytes": 0,
+            "rans_sha256": "5a1fe90120b690caa3c9f251be77b33dc72ddfa2d5e631f8a2f038a1d7faa809",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 2,
+            "symbols": 359424,
+            "rans_bytes": 19968,
+            "escape_bytes": 0,
+            "rans_sha256": "a293f35fb61f266b73a815b4f4f3a73d2ab512aeb8633bb3e1557e457aa54916",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 3,
+            "symbols": 359424,
+            "rans_bytes": 19933,
+            "escape_bytes": 0,
+            "rans_sha256": "382669a05598f820db8664c2cb067455aaed3bbe25c0479880f8dc23b5a0fdf4",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "name": "13-training000000-ldpc_2_3_qam64-rayleigh-6",
+      "full_source_blocks": 277,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 538488,
+      "all_BP_information_bits_replayed": 358992,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 95165,
+      "erased": true,
+      "erasure_reason": "header_magic",
+      "uses": 89748,
+      "energy": 89517.33333333334,
+      "receiver_source_length_oracle": false,
+      "independent_inner": null
+    },
+    {
+      "name": "14-training000000-ldpc_2_3_qam64-rayleigh-18",
+      "full_source_blocks": 277,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 538488,
+      "all_BP_information_bits_replayed": 358992,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": false,
+      "erasure_reason": null,
+      "uses": 89748,
+      "energy": 89517.33333333334,
+      "receiver_source_length_oracle": false,
+      "independent_inner": {
+        "original_hw": [
+          370,
+          1224
+        ],
+        "padded_hw": [
+          384,
+          1248
+        ],
+        "inner_overhead_bytes": 166,
+        "streams": [
+          {
+            "id": 0,
+            "symbols": 22464,
+            "rans_bytes": 2173,
+            "escape_bytes": 0,
+            "rans_sha256": "79e2f5f39fe1ad100973d28a647d25cf4720c73b3ad26d8a077ef702b0c9cf2f",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 1,
+            "symbols": 22464,
+            "rans_bytes": 2584,
+            "escape_bytes": 0,
+            "rans_sha256": "5a1fe90120b690caa3c9f251be77b33dc72ddfa2d5e631f8a2f038a1d7faa809",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 2,
+            "symbols": 359424,
+            "rans_bytes": 19968,
+            "escape_bytes": 0,
+            "rans_sha256": "a293f35fb61f266b73a815b4f4f3a73d2ab512aeb8633bb3e1557e457aa54916",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 3,
+            "symbols": 359424,
+            "rans_bytes": 19933,
+            "escape_bytes": 0,
+            "rans_sha256": "382669a05598f820db8664c2cb067455aaed3bbe25c0479880f8dc23b5a0fdf4",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "name": "15-training000000-ldpc_1_2_qam256-identity-10",
+      "full_source_blocks": 370,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 719280,
+      "all_BP_information_bits_replayed": 359640,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": false,
+      "erasure_reason": null,
+      "uses": 89910,
+      "energy": 89813.19999999998,
+      "receiver_source_length_oracle": false,
+      "independent_inner": {
+        "original_hw": [
+          370,
+          1224
+        ],
+        "padded_hw": [
+          384,
+          1248
+        ],
+        "inner_overhead_bytes": 166,
+        "streams": [
+          {
+            "id": 0,
+            "symbols": 22464,
+            "rans_bytes": 2173,
+            "escape_bytes": 0,
+            "rans_sha256": "79e2f5f39fe1ad100973d28a647d25cf4720c73b3ad26d8a077ef702b0c9cf2f",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 1,
+            "symbols": 22464,
+            "rans_bytes": 2584,
+            "escape_bytes": 0,
+            "rans_sha256": "5a1fe90120b690caa3c9f251be77b33dc72ddfa2d5e631f8a2f038a1d7faa809",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 2,
+            "symbols": 359424,
+            "rans_bytes": 19968,
+            "escape_bytes": 0,
+            "rans_sha256": "a293f35fb61f266b73a815b4f4f3a73d2ab512aeb8633bb3e1557e457aa54916",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 3,
+            "symbols": 359424,
+            "rans_bytes": 19933,
+            "escape_bytes": 0,
+            "rans_sha256": "382669a05598f820db8664c2cb067455aaed3bbe25c0479880f8dc23b5a0fdf4",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "name": "16-training000000-ldpc_1_2_qam256-awgn-6",
+      "full_source_blocks": 370,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 719280,
+      "all_BP_information_bits_replayed": 359640,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 80714,
+      "erased": true,
+      "erasure_reason": "header_magic",
+      "uses": 89910,
+      "energy": 89813.19999999998,
+      "receiver_source_length_oracle": false,
+      "independent_inner": null
+    },
+    {
+      "name": "17-training000000-ldpc_1_2_qam256-awgn-18",
+      "full_source_blocks": 370,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 719280,
+      "all_BP_information_bits_replayed": 359640,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": false,
+      "erasure_reason": null,
+      "uses": 89910,
+      "energy": 89813.19999999998,
+      "receiver_source_length_oracle": false,
+      "independent_inner": {
+        "original_hw": [
+          370,
+          1224
+        ],
+        "padded_hw": [
+          384,
+          1248
+        ],
+        "inner_overhead_bytes": 166,
+        "streams": [
+          {
+            "id": 0,
+            "symbols": 22464,
+            "rans_bytes": 2173,
+            "escape_bytes": 0,
+            "rans_sha256": "79e2f5f39fe1ad100973d28a647d25cf4720c73b3ad26d8a077ef702b0c9cf2f",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 1,
+            "symbols": 22464,
+            "rans_bytes": 2584,
+            "escape_bytes": 0,
+            "rans_sha256": "5a1fe90120b690caa3c9f251be77b33dc72ddfa2d5e631f8a2f038a1d7faa809",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 2,
+            "symbols": 359424,
+            "rans_bytes": 19968,
+            "escape_bytes": 0,
+            "rans_sha256": "a293f35fb61f266b73a815b4f4f3a73d2ab512aeb8633bb3e1557e457aa54916",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "id": 3,
+            "symbols": 359424,
+            "rans_bytes": 19933,
+            "escape_bytes": 0,
+            "rans_sha256": "382669a05598f820db8664c2cb067455aaed3bbe25c0479880f8dc23b5a0fdf4",
+            "escapes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      }
+    },
+    {
+      "name": "18-training000000-ldpc_1_2_qam256-rayleigh-6",
+      "full_source_blocks": 370,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 719280,
+      "all_BP_information_bits_replayed": 359640,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 95273,
+      "erased": true,
+      "erasure_reason": "header_magic",
+      "uses": 89910,
+      "energy": 89813.19999999998,
+      "receiver_source_length_oracle": false,
+      "independent_inner": null
+    },
+    {
+      "name": "19-training000000-ldpc_1_2_qam256-rayleigh-18",
+      "full_source_blocks": 370,
+      "all_mother_syndromes_zero": true,
+      "all_coded_bits_replayed": 719280,
+      "all_BP_information_bits_replayed": 359640,
+      "APP_max_roundoff": 0.0,
+      "channel_max_roundoff": 0.0,
+      "source_bit_errors": 0,
+      "erased": true,
+      "erasure_reason": "nonzero_decoded_padding",
+      "uses": 89910,
+      "energy": 89813.19999999998,
+      "receiver_source_length_oracle": false,
+      "independent_inner": null
+    }
+  ],
+  "terminal_evidence": {
+    "job_id": "11424223",
+    "terminal_sha256": "c186a53680f529a6e384d73ae01f38af818d9299c7edf4402b5acd20df70f191",
+    "checked_unix": 1791136724.9045148,
+    "rows": [
+      {
+        "job_id": "11424223",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+        "start_UTC": "2026-10-04T17:56:55",
+        "end_UTC": "2026-10-04T17:58:01"
+      },
+      {
+        "job_id": "11424223.batch",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "AllocTRES": "cpu=4,mem=16G,node=1",
+        "start_UTC": "2026-10-04T17:56:55",
+        "end_UTC": "2026-10-04T17:58:01"
+      },
+      {
+        "job_id": "11424223.extern",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+        "start_UTC": "2026-10-04T17:56:55",
+        "end_UTC": "2026-10-04T17:58:02"
+      }
+    ],
+    "raw_sacct_sha256": "461912ee85f50d7447c35f716077b289543a52ec08330d531c29daa7ed964681",
+    "raw_squeue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runtime": {
+    "versions": {
+      "torch": "2.9.1+cpu",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "sionna": "2.1.0"
+    },
+    "environment": "/mnt/nfs2/engdes/wc296/paper6/envs/digital-cpu-001",
+    "runtime_sha256": "921c0cbb2b28d7671e62dfaf28b4ab504cd7956ebe9bdf53a2bb94762d61ecd1",
+    "installed_source_sha256": {
+      "__init__.py": "c15702bf57182e7fa82b207b24919e1826a998219b732f985ae583124bc41f65",
+      "_validation.py": "32e0c68178752850dd9d4dd96b195ffd225f301270a2c8174cf322a60f79c390",
+      "phy/__init__.py": "c9ad768ef78349364f3499dedbe3ce829d5655ba2cbd174daa2493e698241be0",
+      "phy/block.py": "225a57855df33ade6cc8bb4c2856a8be15aad250ed83378ab72ffed4e1d1206a",
+      "phy/channel/__init__.py": "93796fd4df302cdbe4e8566212e26511d4be394638e95e21c5f19102ac6d556e",
+      "phy/channel/apply_ofdm_channel.py": "aac2aab61c77f451b45298f1d4b6c4ee6f7a0ac09433ddafbddf1c143874ad4c",
+      "phy/channel/apply_time_channel.py": "fe78d16559f4aae57142ecf89fd2da5a25d0e034ecad5f9552fcb0922693fb58",
+      "phy/channel/awgn.py": "2029fd5482b2286cf4d4bce3809c3cf207f44acb8a211f2010db3ef0cf5a1543",
+      "phy/channel/channel_model.py": "c67f7ac286864578fc035b2f141791db28e0bac5888cd98c63385164fb70ffc0",
+      "phy/channel/cir_dataset.py": "6a1d629347c8f981b1013b1d55f4ab981773a3e9526f6e803a9a8b5c91154c0a",
+      "phy/channel/constants.py": "4fa7d42d8ee88dc00db6112e2d086c5e42726f0558d1fe1c25c50850d0cfd7eb",
+      "phy/channel/discrete_channel.py": "d4f051a29a12df6f8de5ef345c2caad1939613e833bd1c0e0217fb1f0b7dc0e4",
+      "phy/channel/flat_fading_channel.py": "35d8e1f0f0cc7f881efd82bef598a07b00c884887d573b0e7a8100e402487f98",
+      "phy/channel/generate_ofdm_channel.py": "a1795fb55e5e884ed06bdc96e1bb22c1a0e1817fa85168c2df44ebd8c36154aa",
+      "phy/channel/generate_time_channel.py": "dbf9da0fd65a705068809d5c5711cf7b15bbe84c24d0fdfda4c61b1f3f49936f",
+      "phy/channel/ofdm_channel.py": "bceb21f9a821680731b24bd3d078102134337d91dd9b9a77b223048d53135a01",
+      "phy/channel/optical/__init__.py": "8677e882c75d7b83330b8bebbeb5774e760392fc74f421ce3e24e115ac8dc9b7",
+      "phy/channel/optical/edfa.py": "5267cd55af069858fb65d9bb5d6d4114bcbe57a706e69f7be6e8ebc8b56a76c9",
+      "phy/channel/optical/fiber.py": "5035ddd0df6e4145bb1fe14149c8ff3337670ce04e62b3ddfe14ebfa023cdf86",
+      "phy/channel/rayleigh_block_fading.py": "1655907ec47b21ed2d293152e26b11851c61818f2f5f9605177be6e48d38fa3c",
+      "phy/channel/spatial_correlation.py": "5f0d81bd021c9d637e7cfc841fa9ff5d75c02a014b8134896abb321925ab0373",
+      "phy/channel/time_channel.py": "6f734bda38f0dced170037c6de23092cff10adc30a8023437075e978ae0ad484",
+      "phy/channel/tr38901/__init__.py": "c7bb3040e4d3c7340fb9a03c4a9ee84a625e38cc15c410810bfca2c9c3ed1b02",
+      "phy/channel/tr38901/antenna.py": "09e20b89f4c4d990bed1a3ce3d6314f9fe7e45c090737a6f5790166d4a63f926",
+      "phy/channel/tr38901/blockage.py": "460b02fae656950de5080650a9d4e98e8ed5131adfdc58cf6c7f47eda0f97d42",
+      "phy/channel/tr38901/cdl.py": "91e90eb7498a3725f628f2f4d4dca6c8d7438ac549bd5d68a3f45563f282361d",
+      "phy/channel/tr38901/channel_coefficients.py": "47059c7bf0998d2a230909e70743832ee928a738a97b9b5a25a185bb4947b5fc",
+      "phy/channel/tr38901/inf.py": "6d85c6e86b11a8ebc2b0b11d2eb2509642998613972813bef208827efb31fca0",
+      "phy/channel/tr38901/inf_scenario.py": "f0a732c28b77c19150092dac258128f5ea90b6925a85b15d13b808752920dd89",
+      "phy/channel/tr38901/inh.py": "3d498bed8bbc2555c94d552ec39a765e321dee2d7e47b9ca5d06bcd0c4bca139",
+      "phy/channel/tr38901/inh_scenario.py": "45896f35fb2284a4f2704dec859954c3a81d02ba74010cf621b5411f78505380",
+      "phy/channel/tr38901/lsp.py": "3f842a5170e814264857f6de38a462482e90712339c09fbe0f28ee9578835771",
+      "phy/channel/tr38901/metrics.py": "1f98377cb2cb673cf1ff98e2018ab1636d2213011cc4273dd8ae620ebbcfd5b4",
+      "phy/channel/tr38901/models/__init__.py": "2b8f377871c3f7204998399b4be4a8f44805f6b436586dd0988ac9a9324de4dc",
+      "phy/channel/tr38901/rays.py": "7dcfcb5ac624781a5b26940058206ddac75de769cbc9038b3187800437b3a7a7",
+      "phy/channel/tr38901/rma.py": "693633a8ed9cd3b0419b1c367cdc9a9354e08890f245fecb4f336c9959d438fb",
+      "phy/channel/tr38901/rma_scenario.py": "db57d7dce32a91e918756b69b895a232c6e97330a406b99d5cff381292a7711f",
+      "phy/channel/tr38901/spatial_consistency.py": "d670861bf24e61d5baf76f579d9608b6bf28a2e3e9eac9bc57cadf9ce6ff4eeb",
+      "phy/channel/tr38901/system_level_channel.py": "0317fd47dc668c8736d274515324d33856d009e71e0cb39f0bb49e398cdb1a65",
+      "phy/channel/tr38901/system_level_scenario.py": "62d7591773fd1d46cd725ee79c21e766846f2a86b311eb602531b9800ca9d770",
+      "phy/channel/tr38901/tdl.py": "6d26b4a798b76c42c982ead6d750fa5ccfd01558893a65a90467db62edb840d8",
+      "phy/channel/tr38901/uma.py": "8b4fe89e0b1469bf539480fe4fd42f24924e9d067b4f83713bcc47b4a6cabb41",
+      "phy/channel/tr38901/uma_scenario.py": "6e74eddad0742b3efd8ab026fe966ab0e90613740b3992b9ae740f1c8e6179d4",
+      "phy/channel/tr38901/umi.py": "93a429c61d9d17555744114b794acea7a60a6bee1c9f76dca32e9c6855724af5",
+      "phy/channel/tr38901/umi_scenario.py": "319441050512a07e0e0cc7563904379ff9d8070f346c118c1714e6cc8d63dedc",
+      "phy/channel/tr38901/utils.py": "d1dae429d96561e6886a1a2fd960767c8761460fef48fb62abe9604425cb4287",
+      "phy/channel/utils.py": "de2ba1e23c16ab3d803c3dc9266bfa30bbbdaea00a46796393411e6ba681d138",
+      "phy/config.py": "fca20d1c1166b259fb3c79cce4caceae1252115d1bc2f7be73c2490eec00f63b",
+      "phy/constants.py": "a0d76ec7463209e380c32c056c407c2059c6b1b025be7ceec6e3ac1db78dca49",
+      "phy/fec/__init__.py": "7c8c2d22451f85765405827c597c9129e2102b0bc9167df648087a6591d7bb97",
+      "phy/fec/coding.py": "e10f67d076efcce629f5899f264134ffeb4d755c2b5963d438e032d5be10659e",
+      "phy/fec/conv/__init__.py": "9448c607a758b94962fbad898b882687e9bff33ca26b6da00674c88dbbf498c3",
+      "phy/fec/conv/decoding.py": "74a04eedf59b4278affdd304727f7da82f87d750ce805f82a9066a740389217f",
+      "phy/fec/conv/encoding.py": "6b6a3db422ae0352a405aea8d45f3cb46d1dc22e012db80c0d3ab35bdea1f93c",
+      "phy/fec/conv/utils.py": "888ff4ff02fef831de713ccb80928d12be46791e13e2937bcfc2486dc656ab90",
+      "phy/fec/crc.py": "a8a555fda5a704b77db0bc74acad7d1dc04715fd0eeadbec8d22a7b447fbd946",
+      "phy/fec/interleaving.py": "4419fc4be90a8546e4e685d4e122959b9b02f20bc537802d496c15676885467e",
+      "phy/fec/ldpc/__init__.py": "5f452d6d47f986eeebcd15988036e4511fe51cca6109e429da333eee73ced9ad",
+      "phy/fec/ldpc/codes/5G_bg1.csv": "4ae766634def05dc45e4903c775a5ad7e1feb067747a644504b6d8c90d33b1ed",
+      "phy/fec/ldpc/codes/5G_bg2.csv": "4f4db6f7607446984c0b1dc6243bff4286f6fbad3a477f29d84a5e0edab523fb",
+      "phy/fec/ldpc/codes/__init__.py": "2940b935cf6959c333c6fd3cc70b5b4e2da750793add812671daee3db906086b",
+      "phy/fec/ldpc/decoding.py": "44d84b92b749e2970f94d92cd348a11648e2286b4d851faa0af8b21d08f0da23",
+      "phy/fec/ldpc/encoding.py": "34d8db6660b2e84708a8fb534f63c194f6f2b964e3693fcffc9dcaf21532ccfd",
+      "phy/fec/ldpc/utils.py": "32017334c4016cb31ed0a47f06627063dd66e226ed0bf53060a46fd9ed86af44",
+      "phy/fec/linear/__init__.py": "19d427879cdadefab67ea7d456076333955275b393e79d95d1e7bc2d6d5d45e3",
+      "phy/fec/linear/decoding.py": "544dfc6d3d8aec49610a72e3a209039fde7999ea5275564bf0f73da11801738c",
+      "phy/fec/linear/encoding.py": "62babb8de0937547dc30b59ea2219149d1392a1a5f2ab63f4643f4446e508864",
+      "phy/fec/plotting.py": "38a81aa17c24fec9c5e8e88c7d177ec1cdb590bd34c286cbfb587a6589da096f",
+      "phy/fec/polar/__init__.py": "2baf461ff3c30c084f0519bf507c4a0203c77d848206ac71c644c49c51c01aa0",
+      "phy/fec/polar/codes/__init__.py": "fb93f1e90ed04f8a4d22170d8d0a9a9209ab9d051092be5bb976adee8d9957bb",
+      "phy/fec/polar/codes/polar_5G.csv": "166d61776d24180a949f27910d9a77342fff47ea3ad81b63246bd89a92e4a38d",
+      "phy/fec/polar/decoding.py": "c05871d82e307ef6d3f1b97b4bb8a66e35eb0cd6b44b6a5c481a5b18f32cc0ff",
+      "phy/fec/polar/encoding.py": "3376146a288b30bcea031246b048c645d3d0929b0cac9f9d2407fc97bc6eccc1",
+      "phy/fec/polar/utils.py": "66743742259d8b3b28449da1127743991bf4c97fa21a784148ed460e64128ec7",
+      "phy/fec/scrambling.py": "6742141f4292e47c074f1ad28d7f91cd50151281c85cb81de3fc5d8de3cca2d4",
+      "phy/fec/turbo/__init__.py": "732bc4b96701f8dcd5d91b9c4b47cce2c9ff4948291cd37b6ca1522009344eb9",
+      "phy/fec/turbo/coeffs/__init__.py": "aa182ef773503b133f5ba02aeef8764b77d1ad4982c296c373384fd9506b4eb9",
+      "phy/fec/turbo/coeffs/turbo_coeffs.csv": "3883f0d3e9dbe60b465beefae7b28d71e3497d297f42bdc562a6f587006ef220",
+      "phy/fec/turbo/decoding.py": "569f771b1d2903ca48bf2497b96593f68eeaa6eb4064f996836f287e494bb674",
+      "phy/fec/turbo/encoding.py": "85882ecc6d48cb87afd65f568bb83326c8005a3714bc00b58b857c15384fb2f5",
+      "phy/fec/turbo/utils.py": "f6c2386494f4f4af6cae1859c63abbde5646e3208950a5206238435d2237094e",
+      "phy/fec/utils.py": "769b4b4c5fb0acfecb29802090b04d146ed2cffa543d6dd78d4aa36209c6712b",
+      "phy/mapping.py": "1f8fe7ec92a888c350d82dfd362ab8ccc786148efd81ff414a808bb8ecc9ec33",
+      "phy/mimo/__init__.py": "136df9fdca9b1dd279cda6f447388473af9117227e3acd3e82fe30679ed84034",
+      "phy/mimo/detection.py": "26b92a6006c49475238a122de07dac0c68ceb93d24a1bd079c53ac94ca3d86ff",
+      "phy/mimo/equalization.py": "59ef3deeaebc885a99bf1f8a4ece845b69781ab3507e8f5afba625ca660d63b8",
+      "phy/mimo/precoding.py": "4877d2e9056c74fad3df7933eeee4aa68af330ae26f8e88d3aa2bf3048c85cfc",
+      "phy/mimo/stream_management.py": "0f67f077c4e6bcbb0c6f8b7f326ea469284c460fbb74e70e27cf7dc3dd19e5ab",
+      "phy/mimo/utils.py": "178b57a0b7714e6241d46b675fc6c30f73e3ef348ae9a922889f09e8940cb301",
+      "phy/nr/__init__.py": "41f0aeb9fd438828cb45dd82f57699443f36d6de985d20408424e85a2673ec3a",
+      "phy/nr/carrier_config.py": "d42b955f992fed2a60641dbca1e011aa27cc67a5d0b24060ea587b59c0a51b70",
+      "phy/nr/config.py": "a9be48deb79d986027e65f7a22ec9ed0e1e2d230f0d2703a6b5cd0c08dd5fc54",
+      "phy/nr/layer_mapping.py": "00e9d7421156f78ef800fc56b5129f89d71e75785ae1d14cd38428a83902fe73",
+      "phy/nr/pusch_channel_estimation.py": "7a4f028293ef650953b9fe6012edb2cc7cfe7f6525d72d4f59d551537e86b9d8",
+      "phy/nr/pusch_config.py": "3692676693d32157e17ba187cffe1ec1391f0aff63879af42ce3fb59b090ecb0",
+      "phy/nr/pusch_dmrs_config.py": "d41914c18fe1699027f88272016ad611e48421e42c723769f3a1410c29e002ba",
+      "phy/nr/pusch_pilot_pattern.py": "b3f342318787dfa52e78d009838e33a8fcbc726fda108f28c4a09363f03f0c62",
+      "phy/nr/pusch_precoder.py": "e141ffda44dad7402dd0a545c8d9872b6d4dff452901468fbb915639b5fc9f11",
+      "phy/nr/pusch_receiver.py": "07dfd9f61f1ba27d49f6edc1f35d6ed2a2b951d4fe07866d2484c9e6bb4e3c8e",
+      "phy/nr/pusch_transmitter.py": "5ca5e58fed36734b153255d4ded129136b0428fc1246be43c154d4c81bb6377d",
+      "phy/nr/tb_config.py": "c29e64dc4828d43d34eb3b68ddd7d015455af76473c64e1f13513602fe8cfe16",
+      "phy/nr/tb_decoder.py": "b356fad2861cc23b67d83f53d7e79df1990113b655feea10723328325917804a",
+      "phy/nr/tb_encoder.py": "13d9e7e9eb776add1ed6c8c720b7a36991fbc9a9f5345c4bff28aab4c011a1fe",
+      "phy/nr/utils.py": "bb87c7475510e23c5081b02387b638916a9c8db84b626c635356e4cf7f78fe54",
+      "phy/object.py": "ebcaf73155a92e177ed1d92a01831d02ae81aae74d43f537df0600c3adf5aa65",
+      "phy/ofdm/__init__.py": "bbc8988d1a27392a84ea7a91e74ae7c43a0d568a9865bf6c41efaa3ec36a8473",
+      "phy/ofdm/channel_estimation.py": "74d0a6033d25c175b34ca8d08d957050b119152f447cc69c887ff767584f2ee1",
+      "phy/ofdm/demodulator.py": "ef21c2bffc2760c82da9c37a536ab83da70190c0227a676bd8926799af7863ae",
+      "phy/ofdm/detection.py": "a997ca027aa45567712a904fb58492acdc75dac9e8a8f4ddaab968ebb4ee40b2",
+      "phy/ofdm/equalization.py": "9f8341f48c99a2d6741edbedad6a587dd946a47f8b470840e65f51011da7994c",
+      "phy/ofdm/modulator.py": "249065245847935f1e86e5d421220b7ff52076715cb4b8944c7a7d9caf85e284",
+      "phy/ofdm/pilot_pattern.py": "a21b33d4fe5ca197702a7fca4dc6adcb5d0cda9f44b77d7313daa9b30c7494ea",
+      "phy/ofdm/precoding.py": "c6f2c77309b201357d01f5b28e1ed6610216d19173d626d47690f50c026cf1be",
+      "phy/ofdm/resource_grid.py": "fb123b7860422d3271e95cffbad6c9d89ac58778dd35fa9c2d72831f7c7fa71e",
+      "phy/signal/__init__.py": "823bc8b4943d13584a9226e9ee1ae7c1da40e7bd217fc9f1bda0423e8a507689",
+      "phy/signal/downsampling.py": "e6eb64b5e1de722d85cee71b8237972bc6395dd77abfdd248fd09f917f0597f7",
+      "phy/signal/filter.py": "8ad95388f2c8de87a3929b2543c3c30a2e8e9a115e3cf5b274bfac61641fdabd",
+      "phy/signal/upsampling.py": "86b6ef9696196ddbeaaac8d849d68aae35fef17b752458cc1ecfb166e660557f",
+      "phy/signal/utils.py": "83c8ae883eb4ec06060c49aa2b98c3f41508a08cba14268789d6c163fdab9d1f",
+      "phy/signal/window.py": "29a8dcae0dafb6e7546ed8ede175c11b93506cbad5c8348b603d1857203273e9",
+      "phy/utils/__init__.py": "ad02db308292854d9a38c6e5ae47b011a2a05624e711bee8e6647c5a5ed33335",
+      "phy/utils/linalg.py": "f87481efcff07097cc2990534eeab2c872c2b8019ed7c961c47e67c0d4ff3334",
+      "phy/utils/metrics.py": "4eddf5c45a846021731202c66c12121882316bb8b1aa5088a162b48604737943",
+      "phy/utils/misc.py": "e690d31025e9a88406fd1d50332f904ba74938c7d41d3d4813b2fc4f76d118fd",
+      "phy/utils/numerics.py": "5d25f6d61bfcfb1d816db85018f3a1c460171d7d0788a71ad694e335f1814469",
+      "phy/utils/plotting.py": "6f5cd170dbffa830625982c0050487211dde493fcf416590822316b11b4bd831",
+      "phy/utils/random.py": "7e76fd6aa3f70efc0d34ffeded49562ccde7e8f4811ff688bb586572a95180a8",
+      "phy/utils/tensors.py": "9deba5e9e7bd83de410e7187db0b958e0e9da497b2479dfbbe5bd73aad6c5ae3",
+      "sys/__init__.py": "9ce5e16636df8c98da835dedbd6b227a44d425358288358d235846cc75ca5d58",
+      "sys/effective_sinr.py": "fa058c3032fe4a5d0b82f82f50b6f5ac4e4953de8faf6eba85e5bc41f976fb3a",
+      "sys/link_adaptation.py": "8e004930f50046b35d5be535861db86360012ae088034b6ed68e964b11618307",
+      "sys/metrics.py": "f1b36b43fff5a9f051309bcc6c672829f2fff84bba5df67643030e03697b66a5",
+      "sys/phy_abstraction.py": "851893fc1a83cd093015fab06de8d6691afe03a70db75514a9342c0e0fc7cb39",
+      "sys/power_control.py": "d38045e6fdb85080e7d1cf17b5adc8b9708cc8a8874a158079e956695c311dd1",
+      "sys/scheduling.py": "10920bba7270e2c9d5317d2d614c68be21942af0b8401bb23eb4980d016c0c39",
+      "sys/topology.py": "5813bd3346d851499814ad21918dbf9e77dabd3c65d1fed21e7976c5911bae7b",
+      "sys/utils.py": "bb849fde679378bd9b8c7c8560d48d3335f11441e591f8591465509e2f4f6119"
+    },
+    "pip_freeze": "contourpy==1.4.0\ncycler==0.12.1\nfilelock==3.32.3\nfonttools==4.66.1\nfsspec==2026.7.0\nh5py==3.15.1\nimportlib_resources==6.5.2\nJinja2==3.1.6\nkiwisolver==1.5.1\nMarkupSafe==3.0.3\nmatplotlib==3.10.8\nmpmath==1.3.0\nnetworkx==3.6.1\nnumpy==2.2.6\npackaging==26.3\npillow==12.3.0\npyparsing==3.3.3\npython-dateutil==2.9.0.post0\nscipy==1.15.3\nsetuptools==80.9.0\nsionna @ file:///mnt/nfs2/engdes/wc296/paper6/dependencies/sionna-source-001\nsix==1.17.0\nsympy==1.14.0\ntorch==2.9.1+cpu\ntyping_extensions==4.16.0\nwheel==0.45.1\n"
+  },
+  "local_fixture_audit": {
+    "fixtures": 148,
+    "valid": 4,
+    "erased": 144,
+    "manifest_sha256": "74208b46078c6cadb70571b6e4775c0d9696c5612a24eb746c3ed2044816e201"
+  },
+  "manifest_sha256": "f265c56a7fdcc3e98fde0ff580758479aa50036d4b474fa949ec7cbc605227d3",
+  "terminal_sha256": "c186a53680f529a6e384d73ae01f38af818d9299c7edf4402b5acd20df70f191",
+  "artifact_count": 46,
+  "packets": 20,
+  "received_packets": 11,
+  "erased_packets": 9,
+  "replay_global_numpy_torch_rng_unchanged": true,
+  "original_global_RNG_evidence": "sealed runtime per-packet equality assertions; original state bytes were not serialized",
+  "actual_terminal": true,
+  "neural_reconstruction_audited": false,
+  "KITTI_AP_measured": false,
+  "finished_unix": 1791137971.2449393
+}

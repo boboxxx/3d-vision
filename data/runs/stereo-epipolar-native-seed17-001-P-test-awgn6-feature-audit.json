@@ -1,0 +1,95 @@
+{
+  "state": "passed",
+  "scope": "feature reductions/coverage/geometry audit; raw tensors not retained or independently rerun",
+  "frames": 372,
+  "summaries": {
+    "left_stereo": {
+      "elements": 4753981440,
+      "pooled_over_frames_mse": 1.0411215218642258,
+      "pooled_over_frames_nmse": 1.0022047320356628,
+      "pooled_over_frames_cosine": 0.40262375341427625,
+      "median_frame_nmse": 0.9899249085172743,
+      "median_frame_cosine": 0.4086222154395188,
+      "reference_shapes": [
+        [
+          1,
+          32,
+          320,
+          1248
+        ]
+      ]
+    },
+    "right_stereo": {
+      "elements": 4753981440,
+      "pooled_over_frames_mse": 1.0330423053671776,
+      "pooled_over_frames_nmse": 1.006234332380138,
+      "pooled_over_frames_cosine": 0.4043833869898477,
+      "median_frame_nmse": 0.9947604504148508,
+      "median_frame_cosine": 0.41003530421119433,
+      "reference_shapes": [
+        [
+          1,
+          32,
+          320,
+          1248
+        ]
+      ]
+    },
+    "appearance": {
+      "elements": 297123840,
+      "pooled_over_frames_mse": 2.374830826839514,
+      "pooled_over_frames_nmse": 2.599318352935169,
+      "pooled_over_frames_cosine": 0.2595311778587642,
+      "median_frame_nmse": 2.619214482589408,
+      "median_frame_cosine": 0.2604664604476458,
+      "reference_shapes": [
+        [
+          1,
+          32,
+          80,
+          312
+        ]
+      ]
+    }
+  },
+  "feature_records_sha256": "fc41e76a96c3b852b259233a5afd003d40d9f09678fec56f6e20283aa516f692",
+  "run_manifest_sha256": "b69b40ed531e13776592e16d931519b0b8ca7a9fb9397a462c86ae13e36f50f5",
+  "AP_audit_sha256": "3bd79e42c96f1a415d5296c49db2f380032b368fdebc305a3fddd441a80ca8b5",
+  "checkpoint_sha256": "6609edc8011dca14be2a34e5bafe26bc5a5fcb41a3d5fe42a923aaeb23f7a77e",
+  "boundary_report_sha256": "362c58ad4fa04fcf8918ed2abf52675f2024ec4e7c734567193aac3c0785bf27",
+  "readonly_states": 539,
+  "arm": "P",
+  "snr_db": 6.0,
+  "actual372_RNG_advances_replayed": true,
+  "evaluation_sources": {
+    "sha256": "afd8d6722ea4ad911f2c0d4fbfe31f34545f86fd445701bf04c8778f85d68d67",
+    "file_hashes": {
+      "experiments/geometry-link/F9/evaluation/AP_audit.py": "5f5dcd2e959e2d528a4d23ae61f197a94185e464b08d49343325ca81eea8c4e0",
+      "experiments/geometry-link/F9/evaluation/formal_cycle.py": "c17aa52f5853d60d29ac4cf088c55491358b3182789de479e2c27d4e0dae3e15",
+      "experiments/geometry-link/F9/evaluation/diagnose.py": "4bb741645314b7fb57d8680815e47e5c4cdfcde5115798994f3a5ac6429772d0",
+      "experiments/geometry-link/F9/evaluation/integration.py": "1a227f940345f5f4afddf66a74e2ce56bf11bb68bced1ef296f2d170e6700758",
+      "experiments/geometry-link/F9/evaluation/receiver_reference.py": "781a04f479129e56bde54f46d8b0319fca423a8f8618c7d285434b877076f6cd",
+      "experiments/geometry-link/F9/evaluation/integration_cycle.py": "933dc0c42209d63fb8fd50de6438cfbb191f56a640217d10b141dc522c6e5ff9",
+      "experiments/geometry-link/F9/evaluation/integration_audit.py": "5d994510d09f68c4ba514d0537b76a0b1500e34cb415281429a168c1724743aa",
+      "experiments/geometry-link/F9/evaluation/record_contract.py": "e558e89c42339838ee0f39c95b69b31b806f4dcb9547b698e0bb22af6c334648",
+      "experiments/geometry-link/F9/evaluation/check_cpu.py": "ed98c655edcb6945ace9ba7393643ae11f94953fff5782d1bc60ee1b58e198c2",
+      "experiments/geometry-link/F9/evaluation/common.py": "84fc3d2d6c8b85c2d93abc8a8c111f87f76542cd10e67eaab0b845afa7b832c1",
+      "experiments/geometry-link/F9/evaluation/feature_audit.py": "e0d859f1c019dd42800985129280fd2b341ac5f17e1e4084cb313f1c08421a70",
+      "experiments/geometry-link/F9/evaluation/configs/awgn18-holdout.yaml": "67341f0d15bd95f6f7844f0ad17c453f1cb0371dc864308b738946a7f4c1d3da",
+      "experiments/geometry-link/F9/evaluation/configs/identity10-holdout.yaml": "8d8053cc19d69eceb89280182b30ccb2d60d9d1a7ff6971c2343fe3bee2c247f",
+      "experiments/geometry-link/F9/evaluation/configs/awgn6-holdout.yaml": "96df3083d6ce8fa5d3e77cd98ee80e9fce48073e077510351613b9a86003d129",
+      "experiments/geometry-link/F9/evaluation/configs/awgn10-holdout.yaml": "0e4e64cfedcbbf605ff4a057d745307f2e64076b3089d395de5b8f5563b00941"
+    },
+    "generated_version_py_excluded": true
+  },
+  "executed_calls": {
+    "frames": 372,
+    "student": 744,
+    "codec": 372,
+    "channel": 372,
+    "build_cost": 372,
+    "forbidden": 0
+  },
+  "source_sha256": "e0d859f1c019dd42800985129280fd2b341ac5f17e1e4084cb313f1c08421a70",
+  "limitations": "passive same-input observation with saved reductions, not fresh raw-feature recomputation; original detector pretraining included heldout IDs; not a wireless gain or unique failure-cause proof"
+}

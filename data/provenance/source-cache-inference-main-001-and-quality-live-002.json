@@ -1,0 +1,34 @@
+{
+  "checked_unix": 1791159282.210463,
+  "runs": {
+    "source-quality-main-001": {
+      "state": "running",
+      "pid": 270132,
+      "actual_ps": "    PID STAT     ELAPSED     TIME   RSS\n 270132 Ssl        01:56 00:00:01 90448\n",
+      "ps_returncode": 0,
+      "commands": 0,
+      "error": null,
+      "measure_state": null,
+      "views_done": null,
+      "complete_conditions": []
+    },
+    "source-cache-inference-main-001": {
+      "state": "running",
+      "pid": 269262,
+      "actual_ps": "    PID STAT     ELAPSED     TIME   RSS\n 269262 Ssl     01:06:22 00:00:01 350068\n",
+      "ps_returncode": 0,
+      "commands": 2,
+      "error": null
+    },
+    "source-cache-inference-main-001-jpeg-cr10-liga": {
+      "state": "running",
+      "frames": 2157,
+      "error": null
+    },
+    "source-cache-inference-main-001-jpeg-cr10-stereo_rcnn": {
+      "state": "finished",
+      "frames": 3769,
+      "error": null
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "state": "finished_all_received_pairs",
+  "pid": 265467,
+  "started_unix": 1791147128.2117846,
+  "scope": "engineering",
+  "condition": "jpeg2000-cr30",
+  "environment": {
+    "Python": "3.10.15",
+    "NumPy": "1.26.3",
+    "Pillow": "10.2.0",
+    "libjpeg": "6.2",
+    "libjpeg_turbo": "3.0.1",
+    "OpenJPEG": "2.5.0"
+  },
+  "sources": {
+    "historical": {
+      "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+      "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+      "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+      "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+    },
+    "current": {
+      "experiments/original-paper-scenarios/source-cache-code/audit.py": "6406a041435bdb9cda489be5d4b109f93720740682dc26424b71a30a8d421c1f",
+      "experiments/original-paper-scenarios/source-cache-code/check_cpu.py": "03628bab20dbdd35a8c047c4c0a947dbfc07d4129c6c90ce60772f952e82ef78",
+      "experiments/original-paper-scenarios/source-cache-code/common.py": "e73c1c5022afedf75875e7249bf963664ad07d73a13a8fd3cb9fe4bfff486fd3",
+      "experiments/original-paper-scenarios/source-cache-code/encode.py": "c2516c6a174d497d0fcb84de510af269bb65d735c5b9fd783ebd2a2000cbce5c",
+      "experiments/original-paper-scenarios/source-cache-code/receive.py": "4dad57323e9a7ce797f507858070a0233b826198ca7d6cd8357997960375d662"
+    }
+  },
+  "protocol_sha256": "84ec93430f9fdea3d1aacaaf6453cda81a8bfa5e247ed1cc39e535807e7d098e",
+  "frame_ids": [
+    "000000",
+    "000003"
+  ],
+  "records": [
+    {
+      "frame_id": "000000",
+      "wire_path": "/mnt/d/paper6/runs/original-source-cache-engineering-001/source/jpeg2000-cr30/000000.p6sb",
+      "wire_sha256": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+      "cache_path": "/mnt/d/paper6/runs/original-source-cache-engineering-001/received/jpeg2000-cr30/000000.npz",
+      "cache_sha256": "963eafaff2d681051b573653628c763a1239e2b06b29b47f6e56ece8f1f4742e",
+      "public_hw": [
+        370,
+        1224
+      ],
+      "arrays": {
+        "left": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "458a6a2350ae8d3e7dc485653e703b1f5fcecc3b133a612dd77697e5c6367dff"
+        },
+        "right": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "d1bcebcc7c1eecefcee52ba41bcc53e35505b8e8b4ce299ef632407e9fff6128"
+        }
+      }
+    },
+    {
+      "frame_id": "000003",
+      "wire_path": "/mnt/d/paper6/runs/original-source-cache-engineering-001/source/jpeg2000-cr30/000003.p6sb",
+      "wire_sha256": "6602766d233a129b1954019bbed149dc50a4c453b6f72bf8a993a35699bacc80",
+      "cache_path": "/mnt/d/paper6/runs/original-source-cache-engineering-001/received/jpeg2000-cr30/000003.npz",
+      "cache_sha256": "8b6e5b761c4a733cd8957147ee3b63652fe00dd7d7498284becfe67d83e6884d",
+      "public_hw": [
+        375,
+        1242
+      ],
+      "arrays": {
+        "left": {
+          "dtype": "|u1",
+          "shape": [
+            375,
+            1242,
+            3
+          ],
+          "sha256": "c07993b6819734487ad33070f01cf9e826784a66616ffbe5252d127431e244ae"
+        },
+        "right": {
+          "dtype": "|u1",
+          "shape": [
+            375,
+            1242,
+            3
+          ],
+          "sha256": "a3f82e24bc0113aa6886c664299a9f87c39a00c7eab0cb1ffcba0c599194bf56"
+        }
+      }
+    }
+  ],
+  "input_barrier": true,
+  "PNG_or_source_manifest_inputs": false,
+  "dimensions_from_received_stream_headers": true,
+  "HWC_uint8_no_resize": true,
+  "no_model_AP_or_radio": true,
+  "ended_unix": 1791147128.4674258
+}

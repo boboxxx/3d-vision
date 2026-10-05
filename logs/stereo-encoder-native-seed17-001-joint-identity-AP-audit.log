@@ -1,0 +1,35 @@
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 63 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/core/typed_passes.py:336: NumbaPerformanceWarning: [1m
+The keyword argument 'parallel=True' was specified but no transformation for parallel execution was possible.
+
+To find out why, try turning on parallel diagnostics, see https://numba.readthedocs.io/en/stable/user/parallel.html#diagnostics for help.
+[1m
+File "third_party/LIGA-Stereo/liga/datasets/kitti/kitti_object_eval_python/eval.py", line 121:[0m
+[1m@numba.jit(nopython=True, parallel=True)
+[1mdef d3_box_overlap_kernel(boxes, qboxes, rinc, criterion=-1):
+[0m[1m^[0m[0m
+[0m
+  warnings.warn(errors.NumbaPerformanceWarning(msg,
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/core/typed_passes.py:336: NumbaPerformanceWarning: [1m
+The keyword argument 'parallel=True' was specified but no transformation for parallel execution was possible.
+
+To find out why, try turning on parallel diagnostics, see https://numba.readthedocs.io/en/stable/user/parallel.html#diagnostics for help.
+[1m
+File "third_party/LIGA-Stereo/liga/datasets/kitti/kitti_object_eval_python/eval.py", line 121:[0m
+[1m@numba.jit(nopython=True, parallel=True)
+[1mdef d3_box_overlap_kernel(boxes, qboxes, rinc, criterion=-1):
+[0m[1m^[0m[0m
+[0m
+  warnings.warn(errors.NumbaPerformanceWarning(msg,
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 63 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+{"state": "passed", "evidence_type": "identity_codec_holdout_diagnostic_AP_audit", "frames": 372, "predictions": 2811, "empty_frames": 2, "run_manifest_sha256": "c6c0bf7962d64ab0db7b2ba05bc4a89e8dd5bf752a72cfa3893d2a34daa9c498", "source_manifest_sha256": "b3c155dc05bd139e9c98a2be5d3cd8cb268b7c795cec472ab184eb0cc24cb482", "preparation_sha256": "911473b1a3dda3238e20dc3951929ce0dfff87dc5c84f4a131c35d906ff95701", "metrics_sha256": "16a001cbc6a73ae0483dbc1e06ec105be7b9c74129fe0824889c7048531ba434", "result_pickle_sha256": "b58aada243253d3ee4f221ef9b696caf8e2b8ed55c22c73b30e540cf1438d0c6", "all_file_hashes_sha256": "c30987f00ce9496b4a4b486cb9f193e9d79fba35127fd94f4b5f0d83d5605185", "recomputed_metrics": {"Car_aos/easy_R40": 81.34611067734697, "Car_aos/moderate_R40": 58.890089102245625, "Car_aos/hard_R40": 51.65570435881279, "Car_3d/easy_R40": 48.912255434397046, "Car_3d/moderate_R40": 28.013624861142127, "Car_3d/hard_R40": 23.062692975116057, "Car_bev/easy_R40": 67.49431598337884, "Car_bev/moderate_R40": 42.38973381893774, "Car_bev/hard_R40": 34.61674997468468, "Car_image/easy_R40": 84.51434902414498, "Car_image/moderate_R40": 62.00200201374935, "Car_image/hard_R40": 54.59377434217893, "Pedestrian_aos/easy_R40": 30.685115420512304, "Pedestrian_aos/moderate_R40": 30.178404588568075, "Pedestrian_aos/hard_R40": 27.83291612872659, "Pedestrian_3d/easy_R40": 36.17625675265836, "Pedestrian_3d/moderate_R40": 32.42136224812041, "Pedestrian_3d/hard_R40": 29.47961671446827, "Pedestrian_bev/easy_R40": 41.79014480123669, "Pedestrian_bev/moderate_R40": 38.086637189878495, "Pedestrian_bev/hard_R40": 34.33018813599015, "Pedestrian_image/easy_R40": 54.44917556383216, "Pedestrian_image/moderate_R40": 50.82242643266225, "Pedestrian_image/hard_R40": 46.870901300470074, "Cyclist_aos/easy_R40": 14.74497520575076, "Cyclist_aos/moderate_R40": 18.77059606694867, "Cyclist_aos/hard_R40": 20.23920363773685, "Cyclist_3d/easy_R40": 3.4888311808658488, "Cyclist_3d/moderate_R40": 5.12871021712338, "Cyclist_3d/hard_R40": 6.414845464248578, "Cyclist_bev/easy_R40": 5.54331384437109, "Cyclist_bev/moderate_R40": 9.561478594050362, "Cyclist_bev/hard_R40": 10.573594567213014, "Cyclist_image/easy_R40": 15.792063497040882, "Cyclist_image/moderate_R40": 20.977373909819637, "Cyclist_image/hard_R40": 22.438559698667465}, "tuning_fold_sha256": "35f22b0022b5968c09c9a8a7e1b9ad6c8ab23c52283673495a36ddba59406f4c", "communication": {"sha256": "3f605c029cec0cdf178a6752560a270b0083911e23003cb0bce255a56d4d178d", "frames": 372, "channel": ["identity"], "allocation": ["uniform"], "complex_uses": [62400], "CBR": [0.026041666666666668]}, "limitations": "fresh prediction/label/calibration hashes and raw-GT versus infos checks; image/LiDAR identity comes from verified archives; not original communication codec reproduction; codec with zero channel noise, not physical wireless performance; original detector pretraining included this codec holdout; not main-validation scientific result"}

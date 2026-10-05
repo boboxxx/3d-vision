@@ -1,0 +1,15 @@
+{
+  "state": "actual_formal_stage1_running_not_complete",
+  "actual_job": "11426592",
+  "native_audit_job": "11426847",
+  "scope": "formal",
+  "stage": 1,
+  "seed": 17,
+  "expected_updates": 44544,
+  "inputs_sha256": "5b3c4492ac572c823182afc27573f6a2b20badbf2b07d6a6d1c0cc921ea23dc4",
+  "engineering_gate_sha256": "3183070fa35cb1153763fbf2ed4188cd1c81d70bd72240208a883e1788e54d2f",
+  "actual_live_snapshot": "data/provenance/training-actual-snapshot-015-001.json",
+  "stale_dependency_failure": "data/provenance/original-public-stage1-submission-failure-006-001.json",
+  "retry": "Same locked wrapper after controller expired completed dependency; actual sacct/proof checks retained in wrapper",
+  "checked_unix": 1791210916.425647
+}

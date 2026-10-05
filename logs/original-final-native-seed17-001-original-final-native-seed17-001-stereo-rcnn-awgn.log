@@ -1,0 +1,41 @@
+/home/sheng/paper6/third_party/Stereo-RCNN/lib/model/dense_align/box_3d.py:39: UserWarning: Using torch.cross without specifying the dim arg is deprecated.
+Please either pass the dim explicitly or simply use torch.linalg.cross.
+The default value of dim will change to agree with that of linalg.cross in a future release. (Triggered internally at ../aten/src/ATen/native/Cross.cpp:62.)
+  normal = torch.cross(arrow1, arrow2)
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 20}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 40}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 60}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 80}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 100}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 120}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 140}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 160}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 180}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 200}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 220}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 240}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 260}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 280}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 300}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 320}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 340}
+{"detector": "stereo_rcnn", "channel": "awgn", "frames": 360}
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 21 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/core/typed_passes.py:336: NumbaPerformanceWarning: [1m
+The keyword argument 'parallel=True' was specified but no transformation for parallel execution was possible.
+
+To find out why, try turning on parallel diagnostics, see https://numba.readthedocs.io/en/stable/user/parallel.html#diagnostics for help.
+[1m
+File "third_party/LIGA-Stereo/liga/datasets/kitti/kitti_object_eval_python/eval.py", line 121:[0m
+[1m@numba.jit(nopython=True, parallel=True)
+[1mdef d3_box_overlap_kernel(boxes, qboxes, rinc, criterion=-1):
+[0m[1m^[0m[0m
+[0m
+  warnings.warn(errors.NumbaPerformanceWarning(msg,
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 21 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))

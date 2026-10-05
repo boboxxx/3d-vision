@@ -1,0 +1,686 @@
+{
+  "state": "passed",
+  "scope": "CPU_engineering_not_AP_or_LDPC_simulation",
+  "started_at_unix": 1791109467.502336,
+  "command": [
+    "experiments/original-paper-scenarios/code/check_cpu.py",
+    "--output",
+    "data/engineering/original-scenarios-sheng-CPU-001.json",
+    "--log",
+    "data/engineering/original-scenarios-sheng-CPU-001.log",
+    "--data-root",
+    "/mnt/d/paper6/data/kitti",
+    "--artifact-dir",
+    "/mnt/d/paper6/runs/original-scenarios-CPU-smoke-001"
+  ],
+  "protocol_sha256": "b633721f4c2e2ef202edeec06d8bad8c0a10ab63fd6a82008c0648be5bdadb1f",
+  "source_files": {
+    "check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+    "contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+    "image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+    "test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+  },
+  "environment": {
+    "Python": "3.10.15",
+    "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "NumPy": "1.26.3",
+    "Pillow": "10.2.0",
+    "libjpeg": "6.2",
+    "OpenJPEG": "2.5.0"
+  },
+  "scenario_count_unique": 154,
+  "scenario_table_counts": {
+    "source": 16,
+    "channel": 60,
+    "joint": 91
+  },
+  "tests_passed": 7,
+  "smoke": {
+    "frame_id": "000000",
+    "fold_sha256": "35f22b0022b5968c09c9a8a7e1b9ad6c8ab23c52283673495a36ddba59406f4c",
+    "native_sources": {
+      "/mnt/d/paper6/data/kitti/training/image_2/000000.png": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+      "/mnt/d/paper6/data/kitti/training/image_3/000000.png": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3"
+    },
+    "codecs": [
+      {
+        "codec": "jpeg",
+        "parameter": 50,
+        "options": {
+          "quality": 50,
+          "subsampling": 2,
+          "optimize": false,
+          "progressive": false
+        },
+        "left_input": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "f93e919071a40a48d3993a3e6b191c6997cc6becf793dd93591765679aae3c10"
+        },
+        "right_input": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "817dbf89c59200588560acd0a87ac222f92c0ddcc1914542e1b82d0ffdea5c48"
+        },
+        "left_received": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "ed8c4cecf1c60c63c7c5e3ea0aa2d5fdca3c9e3585e8c2f5212d967064d65bb0"
+        },
+        "right_received": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "7412896f699f29ab4496002f0e91dfc05d8574d709564899888bc7fe5fc302ec"
+        },
+        "raw_RGB8_bits": 21738240,
+        "codestream_bytes": [
+          61140,
+          57309
+        ],
+        "framing_bytes": 20,
+        "source_bytes": 118469,
+        "source_bits": 947752,
+        "actual_raw_to_serialized_ratio": 22.936633212063917,
+        "wire_sha256": "36a68cf7757881bde838ed782836de58447a19bb09f8b0959f94109526aeefb2",
+        "wire_path": "/mnt/d/paper6/runs/original-scenarios-CPU-smoke-001/jpeg-50.p6sb",
+        "resources": [
+          {
+            "scope": "block_accounting_only_not_LDPC_simulation",
+            "source_bits": 947752,
+            "n": 96,
+            "k": 64,
+            "QAM": 64,
+            "blocks": 14809,
+            "source_padding_bits": 24,
+            "coded_bits": 1421664,
+            "QAM_padding_bits": 0,
+            "payload_uses": 236944,
+            "reliable_uses": 0,
+            "pilot_uses": 0,
+            "total_uses": 236944,
+            "total_energy": 236944.0,
+            "nominal_source_bits_per_payload_use": 4.0
+          },
+          {
+            "scope": "block_accounting_only_not_LDPC_simulation",
+            "source_bits": 947752,
+            "n": 96,
+            "k": 48,
+            "QAM": 256,
+            "blocks": 19745,
+            "source_padding_bits": 8,
+            "coded_bits": 1895520,
+            "QAM_padding_bits": 0,
+            "payload_uses": 236940,
+            "reliable_uses": 0,
+            "pilot_uses": 0,
+            "total_uses": 236940,
+            "total_energy": 236940.0,
+            "nominal_source_bits_per_payload_use": 4.0
+          }
+        ],
+        "LDPC_identity": "synthetic_lengths_for_accounting_ONLY_not_reference_standard"
+      },
+      {
+        "codec": "jpeg2000",
+        "parameter": 10,
+        "options": {
+          "quality_mode": "rates",
+          "quality_layers": [
+            10
+          ],
+          "irreversible": true,
+          "mct": 1,
+          "no_jp2": false
+        },
+        "left_input": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "f93e919071a40a48d3993a3e6b191c6997cc6becf793dd93591765679aae3c10"
+        },
+        "right_input": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "817dbf89c59200588560acd0a87ac222f92c0ddcc1914542e1b82d0ffdea5c48"
+        },
+        "left_received": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "bf8a161ede3801aa1edb32deef092ed230dd50baea49d2d18e792c9e115f5a23"
+        },
+        "right_received": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "a1ea3ae97ca75c716623fe99395302e2fcedd0661c0e33e31a4ceb783b528454"
+        },
+        "raw_RGB8_bits": 21738240,
+        "codestream_bytes": [
+          135823,
+          135813
+        ],
+        "framing_bytes": 20,
+        "source_bytes": 271656,
+        "source_bits": 2173248,
+        "actual_raw_to_serialized_ratio": 10.002650410813676,
+        "wire_sha256": "3d68d1ae0fc6bd4687ec1f180975940fecc87723f2b53e1b304655a81b96eac5",
+        "wire_path": "/mnt/d/paper6/runs/original-scenarios-CPU-smoke-001/jpeg2000-10.p6sb",
+        "resources": [
+          {
+            "scope": "block_accounting_only_not_LDPC_simulation",
+            "source_bits": 2173248,
+            "n": 96,
+            "k": 64,
+            "QAM": 64,
+            "blocks": 33957,
+            "source_padding_bits": 0,
+            "coded_bits": 3259872,
+            "QAM_padding_bits": 0,
+            "payload_uses": 543312,
+            "reliable_uses": 0,
+            "pilot_uses": 0,
+            "total_uses": 543312,
+            "total_energy": 543312.0,
+            "nominal_source_bits_per_payload_use": 4.0
+          },
+          {
+            "scope": "block_accounting_only_not_LDPC_simulation",
+            "source_bits": 2173248,
+            "n": 96,
+            "k": 48,
+            "QAM": 256,
+            "blocks": 45276,
+            "source_padding_bits": 0,
+            "coded_bits": 4346496,
+            "QAM_padding_bits": 0,
+            "payload_uses": 543312,
+            "reliable_uses": 0,
+            "pilot_uses": 0,
+            "total_uses": 543312,
+            "total_energy": 543312.0,
+            "nominal_source_bits_per_payload_use": 4.0
+          }
+        ],
+        "LDPC_identity": "synthetic_lengths_for_accounting_ONLY_not_reference_standard"
+      },
+      {
+        "codec": "jpeg2000",
+        "parameter": 30,
+        "options": {
+          "quality_mode": "rates",
+          "quality_layers": [
+            30
+          ],
+          "irreversible": true,
+          "mct": 1,
+          "no_jp2": false
+        },
+        "left_input": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "f93e919071a40a48d3993a3e6b191c6997cc6becf793dd93591765679aae3c10"
+        },
+        "right_input": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "817dbf89c59200588560acd0a87ac222f92c0ddcc1914542e1b82d0ffdea5c48"
+        },
+        "left_received": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "458a6a2350ae8d3e7dc485653e703b1f5fcecc3b133a612dd77697e5c6367dff"
+        },
+        "right_received": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "d1bcebcc7c1eecefcee52ba41bcc53e35505b8e8b4ce299ef632407e9fff6128"
+        },
+        "raw_RGB8_bits": 21738240,
+        "codestream_bytes": [
+          45274,
+          45251
+        ],
+        "framing_bytes": 20,
+        "source_bytes": 90545,
+        "source_bits": 724360,
+        "actual_raw_to_serialized_ratio": 30.010271135899277,
+        "wire_sha256": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+        "wire_path": "/mnt/d/paper6/runs/original-scenarios-CPU-smoke-001/jpeg2000-30.p6sb",
+        "resources": [
+          {
+            "scope": "block_accounting_only_not_LDPC_simulation",
+            "source_bits": 724360,
+            "n": 96,
+            "k": 64,
+            "QAM": 64,
+            "blocks": 11319,
+            "source_padding_bits": 56,
+            "coded_bits": 1086624,
+            "QAM_padding_bits": 0,
+            "payload_uses": 181104,
+            "reliable_uses": 0,
+            "pilot_uses": 0,
+            "total_uses": 181104,
+            "total_energy": 181104.0,
+            "nominal_source_bits_per_payload_use": 4.0
+          },
+          {
+            "scope": "block_accounting_only_not_LDPC_simulation",
+            "source_bits": 724360,
+            "n": 96,
+            "k": 48,
+            "QAM": 256,
+            "blocks": 15091,
+            "source_padding_bits": 8,
+            "coded_bits": 1448736,
+            "QAM_padding_bits": 0,
+            "payload_uses": 181092,
+            "reliable_uses": 0,
+            "pilot_uses": 0,
+            "total_uses": 181092,
+            "total_energy": 181092.0,
+            "nominal_source_bits_per_payload_use": 4.0
+          }
+        ],
+        "LDPC_identity": "synthetic_lengths_for_accounting_ONLY_not_reference_standard"
+      },
+      {
+        "codec": "jpeg2000",
+        "parameter": 50,
+        "options": {
+          "quality_mode": "rates",
+          "quality_layers": [
+            50
+          ],
+          "irreversible": true,
+          "mct": 1,
+          "no_jp2": false
+        },
+        "left_input": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "f93e919071a40a48d3993a3e6b191c6997cc6becf793dd93591765679aae3c10"
+        },
+        "right_input": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "817dbf89c59200588560acd0a87ac222f92c0ddcc1914542e1b82d0ffdea5c48"
+        },
+        "left_received": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "10eb6f04fd05726b5ee56c7ca61a180cfeb4f09c5d25b51fd3d21f7e1a7c6e8a"
+        },
+        "right_received": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "062738db63d400ac38549863768dcadc86cd6f35a308df8ba29f56356d4f0e35"
+        },
+        "raw_RGB8_bits": 21738240,
+        "codestream_bytes": [
+          27155,
+          27188
+        ],
+        "framing_bytes": 20,
+        "source_bytes": 54363,
+        "source_bits": 434904,
+        "actual_raw_to_serialized_ratio": 49.983996468186085,
+        "wire_sha256": "24d9528c143e9289bb76729622a5fd873a483962e47946c5c132977f1e481446",
+        "wire_path": "/mnt/d/paper6/runs/original-scenarios-CPU-smoke-001/jpeg2000-50.p6sb",
+        "resources": [
+          {
+            "scope": "block_accounting_only_not_LDPC_simulation",
+            "source_bits": 434904,
+            "n": 96,
+            "k": 64,
+            "QAM": 64,
+            "blocks": 6796,
+            "source_padding_bits": 40,
+            "coded_bits": 652416,
+            "QAM_padding_bits": 0,
+            "payload_uses": 108736,
+            "reliable_uses": 0,
+            "pilot_uses": 0,
+            "total_uses": 108736,
+            "total_energy": 108736.0,
+            "nominal_source_bits_per_payload_use": 4.0
+          },
+          {
+            "scope": "block_accounting_only_not_LDPC_simulation",
+            "source_bits": 434904,
+            "n": 96,
+            "k": 48,
+            "QAM": 256,
+            "blocks": 9061,
+            "source_padding_bits": 24,
+            "coded_bits": 869856,
+            "QAM_padding_bits": 0,
+            "payload_uses": 108732,
+            "reliable_uses": 0,
+            "pilot_uses": 0,
+            "total_uses": 108732,
+            "total_energy": 108732.0,
+            "nominal_source_bits_per_payload_use": 4.0
+          }
+        ],
+        "LDPC_identity": "synthetic_lengths_for_accounting_ONLY_not_reference_standard"
+      }
+    ],
+    "channels": [
+      {
+        "channel": "identity",
+        "snr_db": 10.0,
+        "uses": 4096,
+        "energy": 4095.999999999999,
+        "Es": 0.9999999999999998,
+        "pilot_uses": 0,
+        "CSI": "not_needed",
+        "equalizer": "identity",
+        "coherence_symbols": null,
+        "noise": {
+          "dtype": "<c16",
+          "shape": [
+            4096
+          ],
+          "sha256": "b368bac9d3cf1d152e132f476c572fac6b6adc450cac700336827053c7175b12"
+        },
+        "fading": {
+          "dtype": "<c16",
+          "shape": [
+            4096
+          ],
+          "sha256": "8f89585bfd792500960e272192a8a32493a8321fdb2afe25927e9f9f7345c94f"
+        },
+        "transmitted": {
+          "dtype": "<f8",
+          "shape": [
+            4096,
+            2
+          ],
+          "sha256": "c0d8db5328385ccfa3ac9ecdad94ad22f19ff59db252c58a86969fbf4127a92e"
+        },
+        "received": {
+          "dtype": "<f8",
+          "shape": [
+            4096,
+            2
+          ],
+          "sha256": "c0d8db5328385ccfa3ac9ecdad94ad22f19ff59db252c58a86969fbf4127a92e"
+        },
+        "rng_before": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 191425278619858320667688084520535371943,
+              "inc": 78856291631749604729656725519709880197
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 222390027002826169764641546052247014810,
+              "inc": 61103650459218955061752147258824541677
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "rng_after": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 191425278619858320667688084520535371943,
+              "inc": 78856291631749604729656725519709880197
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 222390027002826169764641546052247014810,
+              "inc": 61103650459218955061752147258824541677
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "arrays_path": "/mnt/d/paper6/runs/original-scenarios-CPU-smoke-001/identity-10dB.npz",
+        "arrays_file_sha256": "7e03ccf84d13f04074646ad7f8b953aef874e032ee585b017f83f0551e66edfe"
+      },
+      {
+        "channel": "awgn",
+        "snr_db": 10.0,
+        "uses": 4096,
+        "energy": 4095.999999999999,
+        "Es": 0.9999999999999998,
+        "pilot_uses": 0,
+        "CSI": "not_needed",
+        "equalizer": "identity",
+        "coherence_symbols": null,
+        "noise": {
+          "dtype": "<c16",
+          "shape": [
+            4096
+          ],
+          "sha256": "92d3d8dd25080f2a0d372f82c764a99e3857cbe08e1a9de74e70c011c899cb5b"
+        },
+        "fading": {
+          "dtype": "<c16",
+          "shape": [
+            4096
+          ],
+          "sha256": "8f89585bfd792500960e272192a8a32493a8321fdb2afe25927e9f9f7345c94f"
+        },
+        "transmitted": {
+          "dtype": "<f8",
+          "shape": [
+            4096,
+            2
+          ],
+          "sha256": "c0d8db5328385ccfa3ac9ecdad94ad22f19ff59db252c58a86969fbf4127a92e"
+        },
+        "received": {
+          "dtype": "<f8",
+          "shape": [
+            4096,
+            2
+          ],
+          "sha256": "2658824285ff7bab3b026dfdcb80a2b0b7919f5c9404f218521c55cbb41d93a1"
+        },
+        "rng_before": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 191425278619858320667688084520535371943,
+              "inc": 78856291631749604729656725519709880197
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 222390027002826169764641546052247014810,
+              "inc": 61103650459218955061752147258824541677
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "rng_after": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 16506537183168233488875848756909205479,
+              "inc": 78856291631749604729656725519709880197
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 222390027002826169764641546052247014810,
+              "inc": 61103650459218955061752147258824541677
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "arrays_path": "/mnt/d/paper6/runs/original-scenarios-CPU-smoke-001/awgn-10dB.npz",
+        "arrays_file_sha256": "e90f56406fa76ecdefd0cef15e39ba7afa97a67d38e6084bb481f54af4fcb3bc"
+      },
+      {
+        "channel": "rayleigh",
+        "snr_db": 10.0,
+        "uses": 4096,
+        "energy": 4095.999999999999,
+        "Es": 0.9999999999999998,
+        "pilot_uses": 0,
+        "CSI": "perfect",
+        "equalizer": "ZF",
+        "coherence_symbols": 1,
+        "noise": {
+          "dtype": "<c16",
+          "shape": [
+            4096
+          ],
+          "sha256": "92d3d8dd25080f2a0d372f82c764a99e3857cbe08e1a9de74e70c011c899cb5b"
+        },
+        "fading": {
+          "dtype": "<c16",
+          "shape": [
+            4096
+          ],
+          "sha256": "696f8ab26009539efb6f6a2a678aebf0a28e00f8ab17c06ab9e73a8963dd208b"
+        },
+        "transmitted": {
+          "dtype": "<f8",
+          "shape": [
+            4096,
+            2
+          ],
+          "sha256": "c0d8db5328385ccfa3ac9ecdad94ad22f19ff59db252c58a86969fbf4127a92e"
+        },
+        "received": {
+          "dtype": "<f8",
+          "shape": [
+            4096,
+            2
+          ],
+          "sha256": "7efe0fb54f51bc2dc07fb5c870a56d8a0cb43f4700a21cd4649064d3b929337d"
+        },
+        "rng_before": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 191425278619858320667688084520535371943,
+              "inc": 78856291631749604729656725519709880197
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 222390027002826169764641546052247014810,
+              "inc": 61103650459218955061752147258824541677
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "rng_after": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 16506537183168233488875848756909205479,
+              "inc": 78856291631749604729656725519709880197
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 3000606624631659816103166174502868712,
+              "inc": 61103650459218955061752147258824541677
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "arrays_path": "/mnt/d/paper6/runs/original-scenarios-CPU-smoke-001/rayleigh-10dB.npz",
+        "arrays_file_sha256": "ab8e4460f12d88830a83a7e1ba2122e91c020563c9b3f0ea8490de3f71355632"
+      }
+    ]
+  },
+  "finished_at_unix": 1791109469.4088595,
+  "log_sha256": "d6dd6c4b59f33cf4b0c642d94cbf61f840946e8731c4935bad7badf5d6934314"
+}

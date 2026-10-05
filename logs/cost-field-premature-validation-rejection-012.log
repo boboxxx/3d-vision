@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/chen/Documents/ChatGPT/paper6/experiments/cost-field/validation-dispatch-code-012/run_endpoint.py", line 96, in <module>
+    main()
+  File "/Users/chen/Documents/ChatGPT/paper6/experiments/cost-field/validation-dispatch-code-012/run_endpoint.py", line 81, in main
+    endpoint, training = admission(args.index)
+                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chen/Documents/ChatGPT/paper6/experiments/cost-field/validation-dispatch-code-012/run_endpoint.py", line 44, in admission
+    gate = json.loads(gatepath.read_text())
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chen/miniconda3/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chen/miniconda3/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/chen/Documents/ChatGPT/paper6/data/provenance/cost-field-full-native-local-closure-012.json'

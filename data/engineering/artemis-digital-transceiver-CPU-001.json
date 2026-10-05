@@ -1,0 +1,1871 @@
+{
+  "state": "passed_actual_LDPC_QAM_CPU_checks",
+  "scope": "actual_digital_CPU_engineering_ONLY_no_AP",
+  "job_id": "11423929",
+  "started_at_unix": 1791113338.389514,
+  "protocol_sha256": "dd7e3cd0e26dd4077ed945f9e1819cf8dbf0c0fa37f0e6785c7440e2542b2168",
+  "runtime_sha256": "921c0cbb2b28d7671e62dfaf28b4ab504cd7956ebe9bdf53a2bb94762d61ecd1",
+  "sources_before": {
+    "digital/check_cpu.py": "49154a760dad70f30b1196936477b63aa31c1f04ccdf753d034c5481cd98e133",
+    "digital/transceiver.py": "75b55723e9b50459dc89cdaefaedbddb17a220cb50bc5c267d89686adf6238e3",
+    "scenario/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+    "scenario/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+    "scenario/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+    "scenario/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8",
+    "sionna/__init__.py": "c15702bf57182e7fa82b207b24919e1826a998219b732f985ae583124bc41f65",
+    "sionna/_validation.py": "32e0c68178752850dd9d4dd96b195ffd225f301270a2c8174cf322a60f79c390",
+    "sionna/phy/__init__.py": "c9ad768ef78349364f3499dedbe3ce829d5655ba2cbd174daa2493e698241be0",
+    "sionna/phy/block.py": "225a57855df33ade6cc8bb4c2856a8be15aad250ed83378ab72ffed4e1d1206a",
+    "sionna/phy/channel/__init__.py": "93796fd4df302cdbe4e8566212e26511d4be394638e95e21c5f19102ac6d556e",
+    "sionna/phy/channel/apply_ofdm_channel.py": "aac2aab61c77f451b45298f1d4b6c4ee6f7a0ac09433ddafbddf1c143874ad4c",
+    "sionna/phy/channel/apply_time_channel.py": "fe78d16559f4aae57142ecf89fd2da5a25d0e034ecad5f9552fcb0922693fb58",
+    "sionna/phy/channel/awgn.py": "2029fd5482b2286cf4d4bce3809c3cf207f44acb8a211f2010db3ef0cf5a1543",
+    "sionna/phy/channel/channel_model.py": "c67f7ac286864578fc035b2f141791db28e0bac5888cd98c63385164fb70ffc0",
+    "sionna/phy/channel/cir_dataset.py": "6a1d629347c8f981b1013b1d55f4ab981773a3e9526f6e803a9a8b5c91154c0a",
+    "sionna/phy/channel/constants.py": "4fa7d42d8ee88dc00db6112e2d086c5e42726f0558d1fe1c25c50850d0cfd7eb",
+    "sionna/phy/channel/discrete_channel.py": "d4f051a29a12df6f8de5ef345c2caad1939613e833bd1c0e0217fb1f0b7dc0e4",
+    "sionna/phy/channel/flat_fading_channel.py": "35d8e1f0f0cc7f881efd82bef598a07b00c884887d573b0e7a8100e402487f98",
+    "sionna/phy/channel/generate_ofdm_channel.py": "a1795fb55e5e884ed06bdc96e1bb22c1a0e1817fa85168c2df44ebd8c36154aa",
+    "sionna/phy/channel/generate_time_channel.py": "dbf9da0fd65a705068809d5c5711cf7b15bbe84c24d0fdfda4c61b1f3f49936f",
+    "sionna/phy/channel/ofdm_channel.py": "bceb21f9a821680731b24bd3d078102134337d91dd9b9a77b223048d53135a01",
+    "sionna/phy/channel/optical/__init__.py": "8677e882c75d7b83330b8bebbeb5774e760392fc74f421ce3e24e115ac8dc9b7",
+    "sionna/phy/channel/optical/edfa.py": "5267cd55af069858fb65d9bb5d6d4114bcbe57a706e69f7be6e8ebc8b56a76c9",
+    "sionna/phy/channel/optical/fiber.py": "5035ddd0df6e4145bb1fe14149c8ff3337670ce04e62b3ddfe14ebfa023cdf86",
+    "sionna/phy/channel/rayleigh_block_fading.py": "1655907ec47b21ed2d293152e26b11851c61818f2f5f9605177be6e48d38fa3c",
+    "sionna/phy/channel/spatial_correlation.py": "5f0d81bd021c9d637e7cfc841fa9ff5d75c02a014b8134896abb321925ab0373",
+    "sionna/phy/channel/time_channel.py": "6f734bda38f0dced170037c6de23092cff10adc30a8023437075e978ae0ad484",
+    "sionna/phy/channel/tr38901/__init__.py": "c7bb3040e4d3c7340fb9a03c4a9ee84a625e38cc15c410810bfca2c9c3ed1b02",
+    "sionna/phy/channel/tr38901/antenna.py": "09e20b89f4c4d990bed1a3ce3d6314f9fe7e45c090737a6f5790166d4a63f926",
+    "sionna/phy/channel/tr38901/blockage.py": "460b02fae656950de5080650a9d4e98e8ed5131adfdc58cf6c7f47eda0f97d42",
+    "sionna/phy/channel/tr38901/cdl.py": "91e90eb7498a3725f628f2f4d4dca6c8d7438ac549bd5d68a3f45563f282361d",
+    "sionna/phy/channel/tr38901/channel_coefficients.py": "47059c7bf0998d2a230909e70743832ee928a738a97b9b5a25a185bb4947b5fc",
+    "sionna/phy/channel/tr38901/inf.py": "6d85c6e86b11a8ebc2b0b11d2eb2509642998613972813bef208827efb31fca0",
+    "sionna/phy/channel/tr38901/inf_scenario.py": "f0a732c28b77c19150092dac258128f5ea90b6925a85b15d13b808752920dd89",
+    "sionna/phy/channel/tr38901/inh.py": "3d498bed8bbc2555c94d552ec39a765e321dee2d7e47b9ca5d06bcd0c4bca139",
+    "sionna/phy/channel/tr38901/inh_scenario.py": "45896f35fb2284a4f2704dec859954c3a81d02ba74010cf621b5411f78505380",
+    "sionna/phy/channel/tr38901/lsp.py": "3f842a5170e814264857f6de38a462482e90712339c09fbe0f28ee9578835771",
+    "sionna/phy/channel/tr38901/metrics.py": "1f98377cb2cb673cf1ff98e2018ab1636d2213011cc4273dd8ae620ebbcfd5b4",
+    "sionna/phy/channel/tr38901/models/__init__.py": "2b8f377871c3f7204998399b4be4a8f44805f6b436586dd0988ac9a9324de4dc",
+    "sionna/phy/channel/tr38901/rays.py": "7dcfcb5ac624781a5b26940058206ddac75de769cbc9038b3187800437b3a7a7",
+    "sionna/phy/channel/tr38901/rma.py": "693633a8ed9cd3b0419b1c367cdc9a9354e08890f245fecb4f336c9959d438fb",
+    "sionna/phy/channel/tr38901/rma_scenario.py": "db57d7dce32a91e918756b69b895a232c6e97330a406b99d5cff381292a7711f",
+    "sionna/phy/channel/tr38901/spatial_consistency.py": "d670861bf24e61d5baf76f579d9608b6bf28a2e3e9eac9bc57cadf9ce6ff4eeb",
+    "sionna/phy/channel/tr38901/system_level_channel.py": "0317fd47dc668c8736d274515324d33856d009e71e0cb39f0bb49e398cdb1a65",
+    "sionna/phy/channel/tr38901/system_level_scenario.py": "62d7591773fd1d46cd725ee79c21e766846f2a86b311eb602531b9800ca9d770",
+    "sionna/phy/channel/tr38901/tdl.py": "6d26b4a798b76c42c982ead6d750fa5ccfd01558893a65a90467db62edb840d8",
+    "sionna/phy/channel/tr38901/uma.py": "8b4fe89e0b1469bf539480fe4fd42f24924e9d067b4f83713bcc47b4a6cabb41",
+    "sionna/phy/channel/tr38901/uma_scenario.py": "6e74eddad0742b3efd8ab026fe966ab0e90613740b3992b9ae740f1c8e6179d4",
+    "sionna/phy/channel/tr38901/umi.py": "93a429c61d9d17555744114b794acea7a60a6bee1c9f76dca32e9c6855724af5",
+    "sionna/phy/channel/tr38901/umi_scenario.py": "319441050512a07e0e0cc7563904379ff9d8070f346c118c1714e6cc8d63dedc",
+    "sionna/phy/channel/tr38901/utils.py": "d1dae429d96561e6886a1a2fd960767c8761460fef48fb62abe9604425cb4287",
+    "sionna/phy/channel/utils.py": "de2ba1e23c16ab3d803c3dc9266bfa30bbbdaea00a46796393411e6ba681d138",
+    "sionna/phy/config.py": "fca20d1c1166b259fb3c79cce4caceae1252115d1bc2f7be73c2490eec00f63b",
+    "sionna/phy/constants.py": "a0d76ec7463209e380c32c056c407c2059c6b1b025be7ceec6e3ac1db78dca49",
+    "sionna/phy/fec/__init__.py": "7c8c2d22451f85765405827c597c9129e2102b0bc9167df648087a6591d7bb97",
+    "sionna/phy/fec/coding.py": "e10f67d076efcce629f5899f264134ffeb4d755c2b5963d438e032d5be10659e",
+    "sionna/phy/fec/conv/__init__.py": "9448c607a758b94962fbad898b882687e9bff33ca26b6da00674c88dbbf498c3",
+    "sionna/phy/fec/conv/decoding.py": "74a04eedf59b4278affdd304727f7da82f87d750ce805f82a9066a740389217f",
+    "sionna/phy/fec/conv/encoding.py": "6b6a3db422ae0352a405aea8d45f3cb46d1dc22e012db80c0d3ab35bdea1f93c",
+    "sionna/phy/fec/conv/utils.py": "888ff4ff02fef831de713ccb80928d12be46791e13e2937bcfc2486dc656ab90",
+    "sionna/phy/fec/crc.py": "a8a555fda5a704b77db0bc74acad7d1dc04715fd0eeadbec8d22a7b447fbd946",
+    "sionna/phy/fec/interleaving.py": "4419fc4be90a8546e4e685d4e122959b9b02f20bc537802d496c15676885467e",
+    "sionna/phy/fec/ldpc/__init__.py": "5f452d6d47f986eeebcd15988036e4511fe51cca6109e429da333eee73ced9ad",
+    "sionna/phy/fec/ldpc/codes/5G_bg1.csv": "4ae766634def05dc45e4903c775a5ad7e1feb067747a644504b6d8c90d33b1ed",
+    "sionna/phy/fec/ldpc/codes/5G_bg2.csv": "4f4db6f7607446984c0b1dc6243bff4286f6fbad3a477f29d84a5e0edab523fb",
+    "sionna/phy/fec/ldpc/codes/__init__.py": "2940b935cf6959c333c6fd3cc70b5b4e2da750793add812671daee3db906086b",
+    "sionna/phy/fec/ldpc/decoding.py": "44d84b92b749e2970f94d92cd348a11648e2286b4d851faa0af8b21d08f0da23",
+    "sionna/phy/fec/ldpc/encoding.py": "34d8db6660b2e84708a8fb534f63c194f6f2b964e3693fcffc9dcaf21532ccfd",
+    "sionna/phy/fec/ldpc/utils.py": "32017334c4016cb31ed0a47f06627063dd66e226ed0bf53060a46fd9ed86af44",
+    "sionna/phy/fec/linear/__init__.py": "19d427879cdadefab67ea7d456076333955275b393e79d95d1e7bc2d6d5d45e3",
+    "sionna/phy/fec/linear/decoding.py": "544dfc6d3d8aec49610a72e3a209039fde7999ea5275564bf0f73da11801738c",
+    "sionna/phy/fec/linear/encoding.py": "62babb8de0937547dc30b59ea2219149d1392a1a5f2ab63f4643f4446e508864",
+    "sionna/phy/fec/plotting.py": "38a81aa17c24fec9c5e8e88c7d177ec1cdb590bd34c286cbfb587a6589da096f",
+    "sionna/phy/fec/polar/__init__.py": "2baf461ff3c30c084f0519bf507c4a0203c77d848206ac71c644c49c51c01aa0",
+    "sionna/phy/fec/polar/codes/__init__.py": "fb93f1e90ed04f8a4d22170d8d0a9a9209ab9d051092be5bb976adee8d9957bb",
+    "sionna/phy/fec/polar/codes/polar_5G.csv": "166d61776d24180a949f27910d9a77342fff47ea3ad81b63246bd89a92e4a38d",
+    "sionna/phy/fec/polar/decoding.py": "c05871d82e307ef6d3f1b97b4bb8a66e35eb0cd6b44b6a5c481a5b18f32cc0ff",
+    "sionna/phy/fec/polar/encoding.py": "3376146a288b30bcea031246b048c645d3d0929b0cac9f9d2407fc97bc6eccc1",
+    "sionna/phy/fec/polar/utils.py": "66743742259d8b3b28449da1127743991bf4c97fa21a784148ed460e64128ec7",
+    "sionna/phy/fec/scrambling.py": "6742141f4292e47c074f1ad28d7f91cd50151281c85cb81de3fc5d8de3cca2d4",
+    "sionna/phy/fec/turbo/__init__.py": "732bc4b96701f8dcd5d91b9c4b47cce2c9ff4948291cd37b6ca1522009344eb9",
+    "sionna/phy/fec/turbo/coeffs/__init__.py": "aa182ef773503b133f5ba02aeef8764b77d1ad4982c296c373384fd9506b4eb9",
+    "sionna/phy/fec/turbo/coeffs/turbo_coeffs.csv": "3883f0d3e9dbe60b465beefae7b28d71e3497d297f42bdc562a6f587006ef220",
+    "sionna/phy/fec/turbo/decoding.py": "569f771b1d2903ca48bf2497b96593f68eeaa6eb4064f996836f287e494bb674",
+    "sionna/phy/fec/turbo/encoding.py": "85882ecc6d48cb87afd65f568bb83326c8005a3714bc00b58b857c15384fb2f5",
+    "sionna/phy/fec/turbo/utils.py": "f6c2386494f4f4af6cae1859c63abbde5646e3208950a5206238435d2237094e",
+    "sionna/phy/fec/utils.py": "769b4b4c5fb0acfecb29802090b04d146ed2cffa543d6dd78d4aa36209c6712b",
+    "sionna/phy/mapping.py": "1f8fe7ec92a888c350d82dfd362ab8ccc786148efd81ff414a808bb8ecc9ec33",
+    "sionna/phy/mimo/__init__.py": "136df9fdca9b1dd279cda6f447388473af9117227e3acd3e82fe30679ed84034",
+    "sionna/phy/mimo/detection.py": "26b92a6006c49475238a122de07dac0c68ceb93d24a1bd079c53ac94ca3d86ff",
+    "sionna/phy/mimo/equalization.py": "59ef3deeaebc885a99bf1f8a4ece845b69781ab3507e8f5afba625ca660d63b8",
+    "sionna/phy/mimo/precoding.py": "4877d2e9056c74fad3df7933eeee4aa68af330ae26f8e88d3aa2bf3048c85cfc",
+    "sionna/phy/mimo/stream_management.py": "0f67f077c4e6bcbb0c6f8b7f326ea469284c460fbb74e70e27cf7dc3dd19e5ab",
+    "sionna/phy/mimo/utils.py": "178b57a0b7714e6241d46b675fc6c30f73e3ef348ae9a922889f09e8940cb301",
+    "sionna/phy/nr/__init__.py": "41f0aeb9fd438828cb45dd82f57699443f36d6de985d20408424e85a2673ec3a",
+    "sionna/phy/nr/carrier_config.py": "d42b955f992fed2a60641dbca1e011aa27cc67a5d0b24060ea587b59c0a51b70",
+    "sionna/phy/nr/config.py": "a9be48deb79d986027e65f7a22ec9ed0e1e2d230f0d2703a6b5cd0c08dd5fc54",
+    "sionna/phy/nr/layer_mapping.py": "00e9d7421156f78ef800fc56b5129f89d71e75785ae1d14cd38428a83902fe73",
+    "sionna/phy/nr/pusch_channel_estimation.py": "7a4f028293ef650953b9fe6012edb2cc7cfe7f6525d72d4f59d551537e86b9d8",
+    "sionna/phy/nr/pusch_config.py": "3692676693d32157e17ba187cffe1ec1391f0aff63879af42ce3fb59b090ecb0",
+    "sionna/phy/nr/pusch_dmrs_config.py": "d41914c18fe1699027f88272016ad611e48421e42c723769f3a1410c29e002ba",
+    "sionna/phy/nr/pusch_pilot_pattern.py": "b3f342318787dfa52e78d009838e33a8fcbc726fda108f28c4a09363f03f0c62",
+    "sionna/phy/nr/pusch_precoder.py": "e141ffda44dad7402dd0a545c8d9872b6d4dff452901468fbb915639b5fc9f11",
+    "sionna/phy/nr/pusch_receiver.py": "07dfd9f61f1ba27d49f6edc1f35d6ed2a2b951d4fe07866d2484c9e6bb4e3c8e",
+    "sionna/phy/nr/pusch_transmitter.py": "5ca5e58fed36734b153255d4ded129136b0428fc1246be43c154d4c81bb6377d",
+    "sionna/phy/nr/tb_config.py": "c29e64dc4828d43d34eb3b68ddd7d015455af76473c64e1f13513602fe8cfe16",
+    "sionna/phy/nr/tb_decoder.py": "b356fad2861cc23b67d83f53d7e79df1990113b655feea10723328325917804a",
+    "sionna/phy/nr/tb_encoder.py": "13d9e7e9eb776add1ed6c8c720b7a36991fbc9a9f5345c4bff28aab4c011a1fe",
+    "sionna/phy/nr/utils.py": "bb87c7475510e23c5081b02387b638916a9c8db84b626c635356e4cf7f78fe54",
+    "sionna/phy/object.py": "ebcaf73155a92e177ed1d92a01831d02ae81aae74d43f537df0600c3adf5aa65",
+    "sionna/phy/ofdm/__init__.py": "bbc8988d1a27392a84ea7a91e74ae7c43a0d568a9865bf6c41efaa3ec36a8473",
+    "sionna/phy/ofdm/channel_estimation.py": "74d0a6033d25c175b34ca8d08d957050b119152f447cc69c887ff767584f2ee1",
+    "sionna/phy/ofdm/demodulator.py": "ef21c2bffc2760c82da9c37a536ab83da70190c0227a676bd8926799af7863ae",
+    "sionna/phy/ofdm/detection.py": "a997ca027aa45567712a904fb58492acdc75dac9e8a8f4ddaab968ebb4ee40b2",
+    "sionna/phy/ofdm/equalization.py": "9f8341f48c99a2d6741edbedad6a587dd946a47f8b470840e65f51011da7994c",
+    "sionna/phy/ofdm/modulator.py": "249065245847935f1e86e5d421220b7ff52076715cb4b8944c7a7d9caf85e284",
+    "sionna/phy/ofdm/pilot_pattern.py": "a21b33d4fe5ca197702a7fca4dc6adcb5d0cda9f44b77d7313daa9b30c7494ea",
+    "sionna/phy/ofdm/precoding.py": "c6f2c77309b201357d01f5b28e1ed6610216d19173d626d47690f50c026cf1be",
+    "sionna/phy/ofdm/resource_grid.py": "fb123b7860422d3271e95cffbad6c9d89ac58778dd35fa9c2d72831f7c7fa71e",
+    "sionna/phy/signal/__init__.py": "823bc8b4943d13584a9226e9ee1ae7c1da40e7bd217fc9f1bda0423e8a507689",
+    "sionna/phy/signal/downsampling.py": "e6eb64b5e1de722d85cee71b8237972bc6395dd77abfdd248fd09f917f0597f7",
+    "sionna/phy/signal/filter.py": "8ad95388f2c8de87a3929b2543c3c30a2e8e9a115e3cf5b274bfac61641fdabd",
+    "sionna/phy/signal/upsampling.py": "86b6ef9696196ddbeaaac8d849d68aae35fef17b752458cc1ecfb166e660557f",
+    "sionna/phy/signal/utils.py": "83c8ae883eb4ec06060c49aa2b98c3f41508a08cba14268789d6c163fdab9d1f",
+    "sionna/phy/signal/window.py": "29a8dcae0dafb6e7546ed8ede175c11b93506cbad5c8348b603d1857203273e9",
+    "sionna/phy/utils/__init__.py": "ad02db308292854d9a38c6e5ae47b011a2a05624e711bee8e6647c5a5ed33335",
+    "sionna/phy/utils/linalg.py": "f87481efcff07097cc2990534eeab2c872c2b8019ed7c961c47e67c0d4ff3334",
+    "sionna/phy/utils/metrics.py": "4eddf5c45a846021731202c66c12121882316bb8b1aa5088a162b48604737943",
+    "sionna/phy/utils/misc.py": "e690d31025e9a88406fd1d50332f904ba74938c7d41d3d4813b2fc4f76d118fd",
+    "sionna/phy/utils/numerics.py": "5d25f6d61bfcfb1d816db85018f3a1c460171d7d0788a71ad694e335f1814469",
+    "sionna/phy/utils/plotting.py": "6f5cd170dbffa830625982c0050487211dde493fcf416590822316b11b4bd831",
+    "sionna/phy/utils/random.py": "7e76fd6aa3f70efc0d34ffeded49562ccde7e8f4811ff688bb586572a95180a8",
+    "sionna/phy/utils/tensors.py": "9deba5e9e7bd83de410e7187db0b958e0e9da497b2479dfbbe5bd73aad6c5ae3",
+    "sionna/sys/__init__.py": "9ce5e16636df8c98da835dedbd6b227a44d425358288358d235846cc75ca5d58",
+    "sionna/sys/effective_sinr.py": "fa058c3032fe4a5d0b82f82f50b6f5ac4e4953de8faf6eba85e5bc41f976fb3a",
+    "sionna/sys/link_adaptation.py": "8e004930f50046b35d5be535861db86360012ae088034b6ed68e964b11618307",
+    "sionna/sys/metrics.py": "f1b36b43fff5a9f051309bcc6c672829f2fff84bba5df67643030e03697b66a5",
+    "sionna/sys/phy_abstraction.py": "851893fc1a83cd093015fab06de8d6691afe03a70db75514a9342c0e0fc7cb39",
+    "sionna/sys/power_control.py": "d38045e6fdb85080e7d1cf17b5adc8b9708cc8a8874a158079e956695c311dd1",
+    "sionna/sys/scheduling.py": "10920bba7270e2c9d5317d2d614c68be21942af0b8401bb23eb4980d016c0c39",
+    "sionna/sys/topology.py": "5813bd3346d851499814ad21918dbf9e77dabd3c65d1fed21e7976c5911bae7b",
+    "sionna/sys/utils.py": "bb849fde679378bd9b8c7c8560d48d3335f11441e591f8591465509e2f4f6119"
+  },
+  "torch": "2.9.1+cpu",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "sionna": "2.1.0",
+  "checks": [
+    "ldpc_2_3_qam64:all_constellation_Gray_energy_APP_direct_likelihood",
+    "ldpc_2_3_qam64:zero_syndrome_systematic_filler_RV0_interleaver",
+    "ldpc_2_3_qam64-identity:actual_chain_padding_counts_draw_replay",
+    "ldpc_2_3_qam64-awgn:actual_chain_padding_counts_draw_replay",
+    "ldpc_2_3_qam64-rayleigh:actual_chain_padding_counts_draw_replay",
+    "ldpc_2_3_qam64-native-identity:complete_bytes_CRC_native370x1224",
+    "ldpc_1_2_qam256:all_constellation_Gray_energy_APP_direct_likelihood",
+    "ldpc_1_2_qam256:zero_syndrome_systematic_filler_RV0_interleaver",
+    "ldpc_1_2_qam256-identity:actual_chain_padding_counts_draw_replay",
+    "ldpc_1_2_qam256-awgn:actual_chain_padding_counts_draw_replay",
+    "ldpc_1_2_qam256-rayleigh:actual_chain_padding_counts_draw_replay",
+    "ldpc_1_2_qam256-native-identity:complete_bytes_CRC_native370x1224"
+  ],
+  "packets": [
+    {
+      "scope": "actual_digital_packet_no_detector_AP",
+      "identity": {
+        "configuration": "ldpc_2_3_qam64",
+        "k": 1296,
+        "n": 1944,
+        "bits_per_symbol": 6,
+        "code_family": "NR_38.212_declared_ambiguity_variant",
+        "basegraph": "bg2",
+        "lifting_factor": 144,
+        "k_ldpc": 1440,
+        "n_ldpc": 7488,
+        "k_filler": 144,
+        "punctured_first_bits": 288,
+        "RV": 0,
+        "output_interleaver": {
+          "shape": [
+            1944
+          ],
+          "dtype": "<i4",
+          "sha256": "541572242e54a2c5b61d4402499dd78c4bf01a73f9f0804d46c9d99b27ee7cac"
+        },
+        "pcm_shape": [
+          6048,
+          7488
+        ],
+        "pcm_indptr": {
+          "shape": [
+            6049
+          ],
+          "dtype": "<i8",
+          "sha256": "4c1d43610d0006f138ded58a04aad542e793e2577582dfeaa4885bec21743ef5"
+        },
+        "pcm_indices": {
+          "shape": [
+            28368
+          ],
+          "dtype": "<i8",
+          "sha256": "5db908a23d7e880501a32d90871114ed3fdf959b152782c7a569fe44b3f215f8"
+        },
+        "pcm_values": {
+          "shape": [
+            28368
+          ],
+          "dtype": "<f8",
+          "sha256": "5a55e273437fc7cd90a0fc7976e6db525cd8d9376ebfa792bd034271e165179d"
+        },
+        "points": {
+          "shape": [
+            64
+          ],
+          "dtype": "<c16",
+          "sha256": "822e8f08dd2dbb57f17c2c60c746efc4299d18bb6ed03fb03a1655fc1096f995"
+        },
+        "labels": {
+          "shape": [
+            64,
+            6
+          ],
+          "dtype": "|u1",
+          "sha256": "d6872a1c84ee288c42517c3753bd6245470877380005b350e8cdaecd00759d70"
+        },
+        "decoder_iterations": 20,
+        "decoder_llr_clip": 20.0,
+        "decoder_rule": "boxplus-phi",
+        "decoder_schedule": "flooding",
+        "precision": "double",
+        "device": "cpu"
+      },
+      "source_bytes": 262,
+      "source_bits": 2096,
+      "blocks": 2,
+      "source_padding_bits": 496,
+      "coded_bits": 3888,
+      "QAM_padding_bits": 0,
+      "exact_payload_recovered": true,
+      "source_bit_errors": 0,
+      "source_block_errors": 0,
+      "source_padding_valid": true,
+      "source_sha256": "2e3c456381a195dbfd23c872612bc55f2804dcd668d08c10a817718e243cc101",
+      "received_sha256": "2e3c456381a195dbfd23c872612bc55f2804dcd668d08c10a817718e243cc101",
+      "coded": {
+        "shape": [
+          2,
+          1944
+        ],
+        "dtype": "|u1",
+        "sha256": "3694646b95898e41d48d59f673d2eb6501e26c2288d1b7d343bfde5607ad2636"
+      },
+      "decoded": {
+        "shape": [
+          2,
+          1296
+        ],
+        "dtype": "|u1",
+        "sha256": "5a3f52aee108de131a7336de6b57b47a72eaa5785157d38dd2d85f5d2c0e18a6"
+      },
+      "channel": {
+        "channel": "identity",
+        "SNR_dB": 10.0,
+        "nominal_population_Es": 1.0,
+        "N0": 1e-06,
+        "identity_demapper_variance_only": true,
+        "actual_energy": 505.52380952380963,
+        "actual_mean_Es": 0.7801293356848914,
+        "uses": 648,
+        "pilot_uses": 0,
+        "equalizer": "exact_ZF",
+        "CSI": "not_needed",
+        "coherence_symbols": null,
+        "transmitted": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "97adf5c8a49b36332ce9fd88912b18af4594538687cbf44187740cbdf5e218a7"
+        },
+        "noise": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "3b8b40b17f089bb594741d74ef45006e9f7bdbf1e4c59306cbaceeb5a29285c3"
+        },
+        "fading": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "c1283d07ee2ba2742f2cd4b31da7aaf9706e47a8f8c99f0ff1fe55d9d0a90387"
+        },
+        "received": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "97adf5c8a49b36332ce9fd88912b18af4594538687cbf44187740cbdf5e218a7"
+        },
+        "effective_noise_variance": {
+          "shape": [
+            648
+          ],
+          "dtype": "<f8",
+          "sha256": "0f49ab609607ae62f25b0085ff2b42cf21d67bd215bfad107dfbba1ac345e588"
+        },
+        "rng_before": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "rng_after": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        }
+      },
+      "reliable_uses": 0,
+      "reliable_energy": 0.0,
+      "source_length_signaling": "engineering_public_metadata_main_framing_unresolved",
+      "packet": "synthetic262bytes"
+    },
+    {
+      "scope": "actual_digital_packet_no_detector_AP",
+      "identity": {
+        "configuration": "ldpc_2_3_qam64",
+        "k": 1296,
+        "n": 1944,
+        "bits_per_symbol": 6,
+        "code_family": "NR_38.212_declared_ambiguity_variant",
+        "basegraph": "bg2",
+        "lifting_factor": 144,
+        "k_ldpc": 1440,
+        "n_ldpc": 7488,
+        "k_filler": 144,
+        "punctured_first_bits": 288,
+        "RV": 0,
+        "output_interleaver": {
+          "shape": [
+            1944
+          ],
+          "dtype": "<i4",
+          "sha256": "541572242e54a2c5b61d4402499dd78c4bf01a73f9f0804d46c9d99b27ee7cac"
+        },
+        "pcm_shape": [
+          6048,
+          7488
+        ],
+        "pcm_indptr": {
+          "shape": [
+            6049
+          ],
+          "dtype": "<i8",
+          "sha256": "4c1d43610d0006f138ded58a04aad542e793e2577582dfeaa4885bec21743ef5"
+        },
+        "pcm_indices": {
+          "shape": [
+            28368
+          ],
+          "dtype": "<i8",
+          "sha256": "5db908a23d7e880501a32d90871114ed3fdf959b152782c7a569fe44b3f215f8"
+        },
+        "pcm_values": {
+          "shape": [
+            28368
+          ],
+          "dtype": "<f8",
+          "sha256": "5a55e273437fc7cd90a0fc7976e6db525cd8d9376ebfa792bd034271e165179d"
+        },
+        "points": {
+          "shape": [
+            64
+          ],
+          "dtype": "<c16",
+          "sha256": "822e8f08dd2dbb57f17c2c60c746efc4299d18bb6ed03fb03a1655fc1096f995"
+        },
+        "labels": {
+          "shape": [
+            64,
+            6
+          ],
+          "dtype": "|u1",
+          "sha256": "d6872a1c84ee288c42517c3753bd6245470877380005b350e8cdaecd00759d70"
+        },
+        "decoder_iterations": 20,
+        "decoder_llr_clip": 20.0,
+        "decoder_rule": "boxplus-phi",
+        "decoder_schedule": "flooding",
+        "precision": "double",
+        "device": "cpu"
+      },
+      "source_bytes": 262,
+      "source_bits": 2096,
+      "blocks": 2,
+      "source_padding_bits": 496,
+      "coded_bits": 3888,
+      "QAM_padding_bits": 0,
+      "exact_payload_recovered": false,
+      "source_bit_errors": 375,
+      "source_block_errors": 2,
+      "source_padding_valid": false,
+      "source_sha256": "2e3c456381a195dbfd23c872612bc55f2804dcd668d08c10a817718e243cc101",
+      "received_sha256": "18eff3556501982999395ded03a742f558650f2c385bcffdaa4244a69e7da590",
+      "coded": {
+        "shape": [
+          2,
+          1944
+        ],
+        "dtype": "|u1",
+        "sha256": "3694646b95898e41d48d59f673d2eb6501e26c2288d1b7d343bfde5607ad2636"
+      },
+      "decoded": {
+        "shape": [
+          2,
+          1296
+        ],
+        "dtype": "|u1",
+        "sha256": "533323fa96e790b39c41c5e92bc1acf353e048c4d1b3ce9059a540442690ebd2"
+      },
+      "channel": {
+        "channel": "awgn",
+        "SNR_dB": 10.0,
+        "nominal_population_Es": 1.0,
+        "N0": 0.1,
+        "identity_demapper_variance_only": false,
+        "actual_energy": 505.52380952380963,
+        "actual_mean_Es": 0.7801293356848914,
+        "uses": 648,
+        "pilot_uses": 0,
+        "equalizer": "exact_ZF",
+        "CSI": "not_needed",
+        "coherence_symbols": null,
+        "transmitted": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "97adf5c8a49b36332ce9fd88912b18af4594538687cbf44187740cbdf5e218a7"
+        },
+        "noise": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "38a7af6a4af7bbd2228aa836ebfde0131776141d67f4911f58bbab716f2cb94e"
+        },
+        "fading": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "c1283d07ee2ba2742f2cd4b31da7aaf9706e47a8f8c99f0ff1fe55d9d0a90387"
+        },
+        "received": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "97024269f2058e0066d6cbf646b6a30f9f8f7a8e759e4d999a777bd80a17d180"
+        },
+        "effective_noise_variance": {
+          "shape": [
+            648
+          ],
+          "dtype": "<f8",
+          "sha256": "1bed9f6c14e88b17d6e6a26a68ede6631493260b69e0db1f43f009765f7a75a2"
+        },
+        "rng_before": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "rng_after": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 197568755137557149289545202178971195854,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        }
+      },
+      "reliable_uses": 0,
+      "reliable_energy": 0.0,
+      "source_length_signaling": "engineering_public_metadata_main_framing_unresolved",
+      "packet": "synthetic262bytes"
+    },
+    {
+      "scope": "actual_digital_packet_no_detector_AP",
+      "identity": {
+        "configuration": "ldpc_2_3_qam64",
+        "k": 1296,
+        "n": 1944,
+        "bits_per_symbol": 6,
+        "code_family": "NR_38.212_declared_ambiguity_variant",
+        "basegraph": "bg2",
+        "lifting_factor": 144,
+        "k_ldpc": 1440,
+        "n_ldpc": 7488,
+        "k_filler": 144,
+        "punctured_first_bits": 288,
+        "RV": 0,
+        "output_interleaver": {
+          "shape": [
+            1944
+          ],
+          "dtype": "<i4",
+          "sha256": "541572242e54a2c5b61d4402499dd78c4bf01a73f9f0804d46c9d99b27ee7cac"
+        },
+        "pcm_shape": [
+          6048,
+          7488
+        ],
+        "pcm_indptr": {
+          "shape": [
+            6049
+          ],
+          "dtype": "<i8",
+          "sha256": "4c1d43610d0006f138ded58a04aad542e793e2577582dfeaa4885bec21743ef5"
+        },
+        "pcm_indices": {
+          "shape": [
+            28368
+          ],
+          "dtype": "<i8",
+          "sha256": "5db908a23d7e880501a32d90871114ed3fdf959b152782c7a569fe44b3f215f8"
+        },
+        "pcm_values": {
+          "shape": [
+            28368
+          ],
+          "dtype": "<f8",
+          "sha256": "5a55e273437fc7cd90a0fc7976e6db525cd8d9376ebfa792bd034271e165179d"
+        },
+        "points": {
+          "shape": [
+            64
+          ],
+          "dtype": "<c16",
+          "sha256": "822e8f08dd2dbb57f17c2c60c746efc4299d18bb6ed03fb03a1655fc1096f995"
+        },
+        "labels": {
+          "shape": [
+            64,
+            6
+          ],
+          "dtype": "|u1",
+          "sha256": "d6872a1c84ee288c42517c3753bd6245470877380005b350e8cdaecd00759d70"
+        },
+        "decoder_iterations": 20,
+        "decoder_llr_clip": 20.0,
+        "decoder_rule": "boxplus-phi",
+        "decoder_schedule": "flooding",
+        "precision": "double",
+        "device": "cpu"
+      },
+      "source_bytes": 262,
+      "source_bits": 2096,
+      "blocks": 2,
+      "source_padding_bits": 496,
+      "coded_bits": 3888,
+      "QAM_padding_bits": 0,
+      "exact_payload_recovered": false,
+      "source_bit_errors": 504,
+      "source_block_errors": 2,
+      "source_padding_valid": false,
+      "source_sha256": "2e3c456381a195dbfd23c872612bc55f2804dcd668d08c10a817718e243cc101",
+      "received_sha256": "87c05f1bb1c7f49bf6fd50ad8aaab9b99dcacf7c966961f46fbf5dfddafeffdb",
+      "coded": {
+        "shape": [
+          2,
+          1944
+        ],
+        "dtype": "|u1",
+        "sha256": "3694646b95898e41d48d59f673d2eb6501e26c2288d1b7d343bfde5607ad2636"
+      },
+      "decoded": {
+        "shape": [
+          2,
+          1296
+        ],
+        "dtype": "|u1",
+        "sha256": "466199d947358dcd656464885662626881f8a48523b6b2c69e3f1dc78a05bab8"
+      },
+      "channel": {
+        "channel": "rayleigh",
+        "SNR_dB": 10.0,
+        "nominal_population_Es": 1.0,
+        "N0": 0.1,
+        "identity_demapper_variance_only": false,
+        "actual_energy": 505.52380952380963,
+        "actual_mean_Es": 0.7801293356848914,
+        "uses": 648,
+        "pilot_uses": 0,
+        "equalizer": "exact_ZF",
+        "CSI": "perfect",
+        "coherence_symbols": 1,
+        "transmitted": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "97adf5c8a49b36332ce9fd88912b18af4594538687cbf44187740cbdf5e218a7"
+        },
+        "noise": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "38a7af6a4af7bbd2228aa836ebfde0131776141d67f4911f58bbab716f2cb94e"
+        },
+        "fading": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "59054d43cfae4908fbdc7c1b2d7c8343792a6a50c3ab27130287936aaf373b4d"
+        },
+        "received": {
+          "shape": [
+            648
+          ],
+          "dtype": "<c16",
+          "sha256": "c89faa9db838ad5ce202ef31e86efb0ab0031b23a96c34b743c255fb86be3ae1"
+        },
+        "effective_noise_variance": {
+          "shape": [
+            648
+          ],
+          "dtype": "<f8",
+          "sha256": "2595e60e571eaa5f6820bc2162c69796547c78f5b65819af2ed6312a64d079f5"
+        },
+        "rng_before": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "rng_after": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 197568755137557149289545202178971195854,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 338928386121952995822456595267017464214,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        }
+      },
+      "reliable_uses": 0,
+      "reliable_energy": 0.0,
+      "source_length_signaling": "engineering_public_metadata_main_framing_unresolved",
+      "packet": "synthetic262bytes"
+    },
+    {
+      "scope": "actual_digital_packet_no_detector_AP",
+      "identity": {
+        "configuration": "ldpc_2_3_qam64",
+        "k": 1296,
+        "n": 1944,
+        "bits_per_symbol": 6,
+        "code_family": "NR_38.212_declared_ambiguity_variant",
+        "basegraph": "bg2",
+        "lifting_factor": 144,
+        "k_ldpc": 1440,
+        "n_ldpc": 7488,
+        "k_filler": 144,
+        "punctured_first_bits": 288,
+        "RV": 0,
+        "output_interleaver": {
+          "shape": [
+            1944
+          ],
+          "dtype": "<i4",
+          "sha256": "541572242e54a2c5b61d4402499dd78c4bf01a73f9f0804d46c9d99b27ee7cac"
+        },
+        "pcm_shape": [
+          6048,
+          7488
+        ],
+        "pcm_indptr": {
+          "shape": [
+            6049
+          ],
+          "dtype": "<i8",
+          "sha256": "4c1d43610d0006f138ded58a04aad542e793e2577582dfeaa4885bec21743ef5"
+        },
+        "pcm_indices": {
+          "shape": [
+            28368
+          ],
+          "dtype": "<i8",
+          "sha256": "5db908a23d7e880501a32d90871114ed3fdf959b152782c7a569fe44b3f215f8"
+        },
+        "pcm_values": {
+          "shape": [
+            28368
+          ],
+          "dtype": "<f8",
+          "sha256": "5a55e273437fc7cd90a0fc7976e6db525cd8d9376ebfa792bd034271e165179d"
+        },
+        "points": {
+          "shape": [
+            64
+          ],
+          "dtype": "<c16",
+          "sha256": "822e8f08dd2dbb57f17c2c60c746efc4299d18bb6ed03fb03a1655fc1096f995"
+        },
+        "labels": {
+          "shape": [
+            64,
+            6
+          ],
+          "dtype": "|u1",
+          "sha256": "d6872a1c84ee288c42517c3753bd6245470877380005b350e8cdaecd00759d70"
+        },
+        "decoder_iterations": 20,
+        "decoder_llr_clip": 20.0,
+        "decoder_rule": "boxplus-phi",
+        "decoder_schedule": "flooding",
+        "precision": "double",
+        "device": "cpu"
+      },
+      "source_bytes": 90545,
+      "source_bits": 724360,
+      "blocks": 559,
+      "source_padding_bits": 104,
+      "coded_bits": 1086696,
+      "QAM_padding_bits": 0,
+      "exact_payload_recovered": true,
+      "source_bit_errors": 0,
+      "source_block_errors": 0,
+      "source_padding_valid": true,
+      "source_sha256": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+      "received_sha256": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+      "coded": {
+        "shape": [
+          559,
+          1944
+        ],
+        "dtype": "|u1",
+        "sha256": "369ab534148d5cb8a68fb582d5af99d7a86ab7e130544ca56c4f65810dcd224b"
+      },
+      "decoded": {
+        "shape": [
+          559,
+          1296
+        ],
+        "dtype": "|u1",
+        "sha256": "93ad53a569e591a0fb0279c93a0cffc1cfa22934db41df3d974e6b31db04c775"
+      },
+      "channel": {
+        "channel": "identity",
+        "SNR_dB": 10.0,
+        "nominal_population_Es": 1.0,
+        "N0": 1e-06,
+        "identity_demapper_variance_only": true,
+        "actual_energy": 180816.5714285714,
+        "actual_mean_Es": 0.9983467580366803,
+        "uses": 181116,
+        "pilot_uses": 0,
+        "equalizer": "exact_ZF",
+        "CSI": "not_needed",
+        "coherence_symbols": null,
+        "transmitted": {
+          "shape": [
+            181116
+          ],
+          "dtype": "<c16",
+          "sha256": "7990fda143de5a64c54233915db123000dd46c423264c96ccdc0c224195f4a59"
+        },
+        "noise": {
+          "shape": [
+            181116
+          ],
+          "dtype": "<c16",
+          "sha256": "7c4f36afad87628cf1c9fd97e9541cdebbb9b01e6b519499bb5e78154e634325"
+        },
+        "fading": {
+          "shape": [
+            181116
+          ],
+          "dtype": "<c16",
+          "sha256": "63ebf4bdd6f03c62f5f4ae59e8d68a88bb4a9d8980d994451676de14704f14c6"
+        },
+        "received": {
+          "shape": [
+            181116
+          ],
+          "dtype": "<c16",
+          "sha256": "7990fda143de5a64c54233915db123000dd46c423264c96ccdc0c224195f4a59"
+        },
+        "effective_noise_variance": {
+          "shape": [
+            181116
+          ],
+          "dtype": "<f8",
+          "sha256": "ae96757877d15974ef321d4c9e9303e0aa45439c559164a0208a5b07e79cef62"
+        },
+        "rng_before": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "rng_after": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        }
+      },
+      "reliable_uses": 0,
+      "reliable_energy": 0.0,
+      "source_length_signaling": "engineering_public_metadata_main_framing_unresolved",
+      "packet": "native000000_JP2rates30"
+    },
+    {
+      "scope": "actual_digital_packet_no_detector_AP",
+      "identity": {
+        "configuration": "ldpc_1_2_qam256",
+        "k": 972,
+        "n": 1944,
+        "bits_per_symbol": 8,
+        "code_family": "NR_38.212_declared_ambiguity_variant",
+        "basegraph": "bg2",
+        "lifting_factor": 104,
+        "k_ldpc": 1040,
+        "n_ldpc": 5408,
+        "k_filler": 68,
+        "punctured_first_bits": 208,
+        "RV": 0,
+        "output_interleaver": {
+          "shape": [
+            1944
+          ],
+          "dtype": "<i4",
+          "sha256": "e0adf6951219b7c55aa6688e921346cc06133dd9506fdfe20af5564cac1b3d8a"
+        },
+        "pcm_shape": [
+          4368,
+          5408
+        ],
+        "pcm_indptr": {
+          "shape": [
+            4369
+          ],
+          "dtype": "<i8",
+          "sha256": "9cb010a1befeec146efd48147b80d102ec32eebcb8f4c458065ea31d4111a24a"
+        },
+        "pcm_indices": {
+          "shape": [
+            20488
+          ],
+          "dtype": "<i8",
+          "sha256": "4c1b43a8147a874c4d73dbcee779b29b6cbf4ba90220a707d91c89b46df76a32"
+        },
+        "pcm_values": {
+          "shape": [
+            20488
+          ],
+          "dtype": "<f8",
+          "sha256": "2250b7577eac780ea69cd18c6a59eac0f36ceac28172c36a03ffedb5be258c3d"
+        },
+        "points": {
+          "shape": [
+            256
+          ],
+          "dtype": "<c16",
+          "sha256": "2d0193bc9a3dc05e3ffd1eb71cebc623f7a6ab258833dfc219016093094cb2b8"
+        },
+        "labels": {
+          "shape": [
+            256,
+            8
+          ],
+          "dtype": "|u1",
+          "sha256": "ef265b1fda0274f80f718961f792aa5f56018509184997ea4bca5d0e73f4ec59"
+        },
+        "decoder_iterations": 20,
+        "decoder_llr_clip": 20.0,
+        "decoder_rule": "boxplus-phi",
+        "decoder_schedule": "flooding",
+        "precision": "double",
+        "device": "cpu"
+      },
+      "source_bytes": 262,
+      "source_bits": 2096,
+      "blocks": 3,
+      "source_padding_bits": 820,
+      "coded_bits": 5832,
+      "QAM_padding_bits": 0,
+      "exact_payload_recovered": true,
+      "source_bit_errors": 0,
+      "source_block_errors": 0,
+      "source_padding_valid": true,
+      "source_sha256": "2e3c456381a195dbfd23c872612bc55f2804dcd668d08c10a817718e243cc101",
+      "received_sha256": "2e3c456381a195dbfd23c872612bc55f2804dcd668d08c10a817718e243cc101",
+      "coded": {
+        "shape": [
+          3,
+          1944
+        ],
+        "dtype": "|u1",
+        "sha256": "3fa29727271bf7afcf25aeabc6e45f0a65a36b402fbcc7f988cfdb0352b0fcf1"
+      },
+      "decoded": {
+        "shape": [
+          3,
+          972
+        ],
+        "dtype": "|u1",
+        "sha256": "24b7bf2f9e0055fb32c1717cd16c67090fb7a969c03c96ca9498b366097c4154"
+      },
+      "channel": {
+        "channel": "identity",
+        "SNR_dB": 10.0,
+        "nominal_population_Es": 1.0,
+        "N0": 1e-06,
+        "identity_demapper_variance_only": true,
+        "actual_energy": 668.1529411764704,
+        "actual_mean_Es": 0.9165335269910432,
+        "uses": 729,
+        "pilot_uses": 0,
+        "equalizer": "exact_ZF",
+        "CSI": "not_needed",
+        "coherence_symbols": null,
+        "transmitted": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "3ac4fcbb542bbf7db2a9079db490f0d92bdd1e04c7c8acd105e96b96996303a6"
+        },
+        "noise": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "f05fd1c57c3b8fb2c3a8f9e12ef1cefc53a55d67103019d729abcaace357e0c3"
+        },
+        "fading": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "f0168049f65fdadcb314155bda1450fb5921654e05479cf0cf5aa3fba17653dd"
+        },
+        "received": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "3ac4fcbb542bbf7db2a9079db490f0d92bdd1e04c7c8acd105e96b96996303a6"
+        },
+        "effective_noise_variance": {
+          "shape": [
+            729
+          ],
+          "dtype": "<f8",
+          "sha256": "089da5d52b91a939096b0a75b23a356af9039b6bf62dfc1e0cb6f8d0b0b9b4d7"
+        },
+        "rng_before": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "rng_after": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        }
+      },
+      "reliable_uses": 0,
+      "reliable_energy": 0.0,
+      "source_length_signaling": "engineering_public_metadata_main_framing_unresolved",
+      "packet": "synthetic262bytes"
+    },
+    {
+      "scope": "actual_digital_packet_no_detector_AP",
+      "identity": {
+        "configuration": "ldpc_1_2_qam256",
+        "k": 972,
+        "n": 1944,
+        "bits_per_symbol": 8,
+        "code_family": "NR_38.212_declared_ambiguity_variant",
+        "basegraph": "bg2",
+        "lifting_factor": 104,
+        "k_ldpc": 1040,
+        "n_ldpc": 5408,
+        "k_filler": 68,
+        "punctured_first_bits": 208,
+        "RV": 0,
+        "output_interleaver": {
+          "shape": [
+            1944
+          ],
+          "dtype": "<i4",
+          "sha256": "e0adf6951219b7c55aa6688e921346cc06133dd9506fdfe20af5564cac1b3d8a"
+        },
+        "pcm_shape": [
+          4368,
+          5408
+        ],
+        "pcm_indptr": {
+          "shape": [
+            4369
+          ],
+          "dtype": "<i8",
+          "sha256": "9cb010a1befeec146efd48147b80d102ec32eebcb8f4c458065ea31d4111a24a"
+        },
+        "pcm_indices": {
+          "shape": [
+            20488
+          ],
+          "dtype": "<i8",
+          "sha256": "4c1b43a8147a874c4d73dbcee779b29b6cbf4ba90220a707d91c89b46df76a32"
+        },
+        "pcm_values": {
+          "shape": [
+            20488
+          ],
+          "dtype": "<f8",
+          "sha256": "2250b7577eac780ea69cd18c6a59eac0f36ceac28172c36a03ffedb5be258c3d"
+        },
+        "points": {
+          "shape": [
+            256
+          ],
+          "dtype": "<c16",
+          "sha256": "2d0193bc9a3dc05e3ffd1eb71cebc623f7a6ab258833dfc219016093094cb2b8"
+        },
+        "labels": {
+          "shape": [
+            256,
+            8
+          ],
+          "dtype": "|u1",
+          "sha256": "ef265b1fda0274f80f718961f792aa5f56018509184997ea4bca5d0e73f4ec59"
+        },
+        "decoder_iterations": 20,
+        "decoder_llr_clip": 20.0,
+        "decoder_rule": "boxplus-phi",
+        "decoder_schedule": "flooding",
+        "precision": "double",
+        "device": "cpu"
+      },
+      "source_bytes": 262,
+      "source_bits": 2096,
+      "blocks": 3,
+      "source_padding_bits": 820,
+      "coded_bits": 5832,
+      "QAM_padding_bits": 0,
+      "exact_payload_recovered": false,
+      "source_bit_errors": 367,
+      "source_block_errors": 3,
+      "source_padding_valid": false,
+      "source_sha256": "2e3c456381a195dbfd23c872612bc55f2804dcd668d08c10a817718e243cc101",
+      "received_sha256": "cd998dee58c074788e9add223291270510929b2209c2a5b0bb23479aca030893",
+      "coded": {
+        "shape": [
+          3,
+          1944
+        ],
+        "dtype": "|u1",
+        "sha256": "3fa29727271bf7afcf25aeabc6e45f0a65a36b402fbcc7f988cfdb0352b0fcf1"
+      },
+      "decoded": {
+        "shape": [
+          3,
+          972
+        ],
+        "dtype": "|u1",
+        "sha256": "be9d78ad61cd02e08764272d905bfa2daef493b39e04a7e2e1f3fa260a0970da"
+      },
+      "channel": {
+        "channel": "awgn",
+        "SNR_dB": 10.0,
+        "nominal_population_Es": 1.0,
+        "N0": 0.1,
+        "identity_demapper_variance_only": false,
+        "actual_energy": 668.1529411764704,
+        "actual_mean_Es": 0.9165335269910432,
+        "uses": 729,
+        "pilot_uses": 0,
+        "equalizer": "exact_ZF",
+        "CSI": "not_needed",
+        "coherence_symbols": null,
+        "transmitted": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "3ac4fcbb542bbf7db2a9079db490f0d92bdd1e04c7c8acd105e96b96996303a6"
+        },
+        "noise": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "69f40dd97becf08b4ac9992a28f9b7b52ffb8e5a05c3e8627e3c8d962cd67f10"
+        },
+        "fading": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "f0168049f65fdadcb314155bda1450fb5921654e05479cf0cf5aa3fba17653dd"
+        },
+        "received": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "22c942645d1f133606338e409f885c367817883ffeb90b31fdf328f041c7c4b2"
+        },
+        "effective_noise_variance": {
+          "shape": [
+            729
+          ],
+          "dtype": "<f8",
+          "sha256": "950823ce048e0b2d308555512f49f5055113033555d325573416f2081579869b"
+        },
+        "rng_before": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "rng_after": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 267076423794196254506702746104226093082,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        }
+      },
+      "reliable_uses": 0,
+      "reliable_energy": 0.0,
+      "source_length_signaling": "engineering_public_metadata_main_framing_unresolved",
+      "packet": "synthetic262bytes"
+    },
+    {
+      "scope": "actual_digital_packet_no_detector_AP",
+      "identity": {
+        "configuration": "ldpc_1_2_qam256",
+        "k": 972,
+        "n": 1944,
+        "bits_per_symbol": 8,
+        "code_family": "NR_38.212_declared_ambiguity_variant",
+        "basegraph": "bg2",
+        "lifting_factor": 104,
+        "k_ldpc": 1040,
+        "n_ldpc": 5408,
+        "k_filler": 68,
+        "punctured_first_bits": 208,
+        "RV": 0,
+        "output_interleaver": {
+          "shape": [
+            1944
+          ],
+          "dtype": "<i4",
+          "sha256": "e0adf6951219b7c55aa6688e921346cc06133dd9506fdfe20af5564cac1b3d8a"
+        },
+        "pcm_shape": [
+          4368,
+          5408
+        ],
+        "pcm_indptr": {
+          "shape": [
+            4369
+          ],
+          "dtype": "<i8",
+          "sha256": "9cb010a1befeec146efd48147b80d102ec32eebcb8f4c458065ea31d4111a24a"
+        },
+        "pcm_indices": {
+          "shape": [
+            20488
+          ],
+          "dtype": "<i8",
+          "sha256": "4c1b43a8147a874c4d73dbcee779b29b6cbf4ba90220a707d91c89b46df76a32"
+        },
+        "pcm_values": {
+          "shape": [
+            20488
+          ],
+          "dtype": "<f8",
+          "sha256": "2250b7577eac780ea69cd18c6a59eac0f36ceac28172c36a03ffedb5be258c3d"
+        },
+        "points": {
+          "shape": [
+            256
+          ],
+          "dtype": "<c16",
+          "sha256": "2d0193bc9a3dc05e3ffd1eb71cebc623f7a6ab258833dfc219016093094cb2b8"
+        },
+        "labels": {
+          "shape": [
+            256,
+            8
+          ],
+          "dtype": "|u1",
+          "sha256": "ef265b1fda0274f80f718961f792aa5f56018509184997ea4bca5d0e73f4ec59"
+        },
+        "decoder_iterations": 20,
+        "decoder_llr_clip": 20.0,
+        "decoder_rule": "boxplus-phi",
+        "decoder_schedule": "flooding",
+        "precision": "double",
+        "device": "cpu"
+      },
+      "source_bytes": 262,
+      "source_bits": 2096,
+      "blocks": 3,
+      "source_padding_bits": 820,
+      "coded_bits": 5832,
+      "QAM_padding_bits": 0,
+      "exact_payload_recovered": false,
+      "source_bit_errors": 466,
+      "source_block_errors": 3,
+      "source_padding_valid": false,
+      "source_sha256": "2e3c456381a195dbfd23c872612bc55f2804dcd668d08c10a817718e243cc101",
+      "received_sha256": "04c2c49cc55a439b3c47386ffb12d203c01ddff6b0fb6b76061cb7bb461d7db9",
+      "coded": {
+        "shape": [
+          3,
+          1944
+        ],
+        "dtype": "|u1",
+        "sha256": "3fa29727271bf7afcf25aeabc6e45f0a65a36b402fbcc7f988cfdb0352b0fcf1"
+      },
+      "decoded": {
+        "shape": [
+          3,
+          972
+        ],
+        "dtype": "|u1",
+        "sha256": "12e8c19f651051555246b016d67af8d1d9b242c45a559e09e21dff8704c67106"
+      },
+      "channel": {
+        "channel": "rayleigh",
+        "SNR_dB": 10.0,
+        "nominal_population_Es": 1.0,
+        "N0": 0.1,
+        "identity_demapper_variance_only": false,
+        "actual_energy": 668.1529411764704,
+        "actual_mean_Es": 0.9165335269910432,
+        "uses": 729,
+        "pilot_uses": 0,
+        "equalizer": "exact_ZF",
+        "CSI": "perfect",
+        "coherence_symbols": 1,
+        "transmitted": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "3ac4fcbb542bbf7db2a9079db490f0d92bdd1e04c7c8acd105e96b96996303a6"
+        },
+        "noise": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "69f40dd97becf08b4ac9992a28f9b7b52ffb8e5a05c3e8627e3c8d962cd67f10"
+        },
+        "fading": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "1de92cafb123e74ddba1ba1fcae0519efc02d986893a7e023399a7516c9bcc5e"
+        },
+        "received": {
+          "shape": [
+            729
+          ],
+          "dtype": "<c16",
+          "sha256": "c0bf977e6080ebcde80399da638904fe8083d148409401ed50754582b57cc80c"
+        },
+        "effective_noise_variance": {
+          "shape": [
+            729
+          ],
+          "dtype": "<f8",
+          "sha256": "4439414c86e38d0bb3e31700aa788bb2e4b094c846af584afeac6bea806e0dc5"
+        },
+        "rng_before": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "rng_after": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 267076423794196254506702746104226093082,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 266426506817647735123627090143042982018,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        }
+      },
+      "reliable_uses": 0,
+      "reliable_energy": 0.0,
+      "source_length_signaling": "engineering_public_metadata_main_framing_unresolved",
+      "packet": "synthetic262bytes"
+    },
+    {
+      "scope": "actual_digital_packet_no_detector_AP",
+      "identity": {
+        "configuration": "ldpc_1_2_qam256",
+        "k": 972,
+        "n": 1944,
+        "bits_per_symbol": 8,
+        "code_family": "NR_38.212_declared_ambiguity_variant",
+        "basegraph": "bg2",
+        "lifting_factor": 104,
+        "k_ldpc": 1040,
+        "n_ldpc": 5408,
+        "k_filler": 68,
+        "punctured_first_bits": 208,
+        "RV": 0,
+        "output_interleaver": {
+          "shape": [
+            1944
+          ],
+          "dtype": "<i4",
+          "sha256": "e0adf6951219b7c55aa6688e921346cc06133dd9506fdfe20af5564cac1b3d8a"
+        },
+        "pcm_shape": [
+          4368,
+          5408
+        ],
+        "pcm_indptr": {
+          "shape": [
+            4369
+          ],
+          "dtype": "<i8",
+          "sha256": "9cb010a1befeec146efd48147b80d102ec32eebcb8f4c458065ea31d4111a24a"
+        },
+        "pcm_indices": {
+          "shape": [
+            20488
+          ],
+          "dtype": "<i8",
+          "sha256": "4c1b43a8147a874c4d73dbcee779b29b6cbf4ba90220a707d91c89b46df76a32"
+        },
+        "pcm_values": {
+          "shape": [
+            20488
+          ],
+          "dtype": "<f8",
+          "sha256": "2250b7577eac780ea69cd18c6a59eac0f36ceac28172c36a03ffedb5be258c3d"
+        },
+        "points": {
+          "shape": [
+            256
+          ],
+          "dtype": "<c16",
+          "sha256": "2d0193bc9a3dc05e3ffd1eb71cebc623f7a6ab258833dfc219016093094cb2b8"
+        },
+        "labels": {
+          "shape": [
+            256,
+            8
+          ],
+          "dtype": "|u1",
+          "sha256": "ef265b1fda0274f80f718961f792aa5f56018509184997ea4bca5d0e73f4ec59"
+        },
+        "decoder_iterations": 20,
+        "decoder_llr_clip": 20.0,
+        "decoder_rule": "boxplus-phi",
+        "decoder_schedule": "flooding",
+        "precision": "double",
+        "device": "cpu"
+      },
+      "source_bytes": 90545,
+      "source_bits": 724360,
+      "blocks": 746,
+      "source_padding_bits": 752,
+      "coded_bits": 1450224,
+      "QAM_padding_bits": 0,
+      "exact_payload_recovered": true,
+      "source_bit_errors": 0,
+      "source_block_errors": 0,
+      "source_padding_valid": true,
+      "source_sha256": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+      "received_sha256": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+      "coded": {
+        "shape": [
+          746,
+          1944
+        ],
+        "dtype": "|u1",
+        "sha256": "45ad18071bfd71795730670bb5d7ed6fddf9024f48f01e7ef8d10ef6c13c37eb"
+      },
+      "decoded": {
+        "shape": [
+          746,
+          972
+        ],
+        "dtype": "|u1",
+        "sha256": "78165c90add1057eceb8910218cc4c8bcf4df04ac675974b9f7856bae0bf7b3a"
+      },
+      "channel": {
+        "channel": "identity",
+        "SNR_dB": 10.0,
+        "nominal_population_Es": 1.0,
+        "N0": 1e-06,
+        "identity_demapper_variance_only": true,
+        "actual_energy": 181008.77647058817,
+        "actual_mean_Es": 0.9985148582320423,
+        "uses": 181278,
+        "pilot_uses": 0,
+        "equalizer": "exact_ZF",
+        "CSI": "not_needed",
+        "coherence_symbols": null,
+        "transmitted": {
+          "shape": [
+            181278
+          ],
+          "dtype": "<c16",
+          "sha256": "3c2d83c028deb081e0a7bd1e22a13ccb992a0c3fb0d2e5373505efebeee79d3a"
+        },
+        "noise": {
+          "shape": [
+            181278
+          ],
+          "dtype": "<c16",
+          "sha256": "bb31486801f393294b6e4f9083bdc1bf97991f1f08ea051ef43be6114bc3a546"
+        },
+        "fading": {
+          "shape": [
+            181278
+          ],
+          "dtype": "<c16",
+          "sha256": "e48ef271ba12235026e16d534e44707529501de7d25e69159ac3fd07d6b3932e"
+        },
+        "received": {
+          "shape": [
+            181278
+          ],
+          "dtype": "<c16",
+          "sha256": "3c2d83c028deb081e0a7bd1e22a13ccb992a0c3fb0d2e5373505efebeee79d3a"
+        },
+        "effective_noise_variance": {
+          "shape": [
+            181278
+          ],
+          "dtype": "<f8",
+          "sha256": "871a067ce48cb59ed3fd49819571fa07d77ed1c0cee5b8a8c3f568506c409d7c"
+        },
+        "rng_before": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        },
+        "rng_after": {
+          "noise": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 215682327980033948770105395069259147586,
+              "inc": 214794033584265181084568090628514946837
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          },
+          "fading": {
+            "bit_generator": "PCG64",
+            "state": {
+              "state": 284397243486058734399468551747388013874,
+              "inc": 27884608685865901374883754733939957215
+            },
+            "has_uint32": 0,
+            "uinteger": 0
+          }
+        }
+      },
+      "reliable_uses": 0,
+      "reliable_energy": 0.0,
+      "source_length_signaling": "engineering_public_metadata_main_framing_unresolved",
+      "packet": "native000000_JP2rates30"
+    }
+  ],
+  "sources_after": {
+    "digital/check_cpu.py": "49154a760dad70f30b1196936477b63aa31c1f04ccdf753d034c5481cd98e133",
+    "digital/transceiver.py": "75b55723e9b50459dc89cdaefaedbddb17a220cb50bc5c267d89686adf6238e3",
+    "scenario/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+    "scenario/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+    "scenario/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+    "scenario/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8",
+    "sionna/__init__.py": "c15702bf57182e7fa82b207b24919e1826a998219b732f985ae583124bc41f65",
+    "sionna/_validation.py": "32e0c68178752850dd9d4dd96b195ffd225f301270a2c8174cf322a60f79c390",
+    "sionna/phy/__init__.py": "c9ad768ef78349364f3499dedbe3ce829d5655ba2cbd174daa2493e698241be0",
+    "sionna/phy/block.py": "225a57855df33ade6cc8bb4c2856a8be15aad250ed83378ab72ffed4e1d1206a",
+    "sionna/phy/channel/__init__.py": "93796fd4df302cdbe4e8566212e26511d4be394638e95e21c5f19102ac6d556e",
+    "sionna/phy/channel/apply_ofdm_channel.py": "aac2aab61c77f451b45298f1d4b6c4ee6f7a0ac09433ddafbddf1c143874ad4c",
+    "sionna/phy/channel/apply_time_channel.py": "fe78d16559f4aae57142ecf89fd2da5a25d0e034ecad5f9552fcb0922693fb58",
+    "sionna/phy/channel/awgn.py": "2029fd5482b2286cf4d4bce3809c3cf207f44acb8a211f2010db3ef0cf5a1543",
+    "sionna/phy/channel/channel_model.py": "c67f7ac286864578fc035b2f141791db28e0bac5888cd98c63385164fb70ffc0",
+    "sionna/phy/channel/cir_dataset.py": "6a1d629347c8f981b1013b1d55f4ab981773a3e9526f6e803a9a8b5c91154c0a",
+    "sionna/phy/channel/constants.py": "4fa7d42d8ee88dc00db6112e2d086c5e42726f0558d1fe1c25c50850d0cfd7eb",
+    "sionna/phy/channel/discrete_channel.py": "d4f051a29a12df6f8de5ef345c2caad1939613e833bd1c0e0217fb1f0b7dc0e4",
+    "sionna/phy/channel/flat_fading_channel.py": "35d8e1f0f0cc7f881efd82bef598a07b00c884887d573b0e7a8100e402487f98",
+    "sionna/phy/channel/generate_ofdm_channel.py": "a1795fb55e5e884ed06bdc96e1bb22c1a0e1817fa85168c2df44ebd8c36154aa",
+    "sionna/phy/channel/generate_time_channel.py": "dbf9da0fd65a705068809d5c5711cf7b15bbe84c24d0fdfda4c61b1f3f49936f",
+    "sionna/phy/channel/ofdm_channel.py": "bceb21f9a821680731b24bd3d078102134337d91dd9b9a77b223048d53135a01",
+    "sionna/phy/channel/optical/__init__.py": "8677e882c75d7b83330b8bebbeb5774e760392fc74f421ce3e24e115ac8dc9b7",
+    "sionna/phy/channel/optical/edfa.py": "5267cd55af069858fb65d9bb5d6d4114bcbe57a706e69f7be6e8ebc8b56a76c9",
+    "sionna/phy/channel/optical/fiber.py": "5035ddd0df6e4145bb1fe14149c8ff3337670ce04e62b3ddfe14ebfa023cdf86",
+    "sionna/phy/channel/rayleigh_block_fading.py": "1655907ec47b21ed2d293152e26b11851c61818f2f5f9605177be6e48d38fa3c",
+    "sionna/phy/channel/spatial_correlation.py": "5f0d81bd021c9d637e7cfc841fa9ff5d75c02a014b8134896abb321925ab0373",
+    "sionna/phy/channel/time_channel.py": "6f734bda38f0dced170037c6de23092cff10adc30a8023437075e978ae0ad484",
+    "sionna/phy/channel/tr38901/__init__.py": "c7bb3040e4d3c7340fb9a03c4a9ee84a625e38cc15c410810bfca2c9c3ed1b02",
+    "sionna/phy/channel/tr38901/antenna.py": "09e20b89f4c4d990bed1a3ce3d6314f9fe7e45c090737a6f5790166d4a63f926",
+    "sionna/phy/channel/tr38901/blockage.py": "460b02fae656950de5080650a9d4e98e8ed5131adfdc58cf6c7f47eda0f97d42",
+    "sionna/phy/channel/tr38901/cdl.py": "91e90eb7498a3725f628f2f4d4dca6c8d7438ac549bd5d68a3f45563f282361d",
+    "sionna/phy/channel/tr38901/channel_coefficients.py": "47059c7bf0998d2a230909e70743832ee928a738a97b9b5a25a185bb4947b5fc",
+    "sionna/phy/channel/tr38901/inf.py": "6d85c6e86b11a8ebc2b0b11d2eb2509642998613972813bef208827efb31fca0",
+    "sionna/phy/channel/tr38901/inf_scenario.py": "f0a732c28b77c19150092dac258128f5ea90b6925a85b15d13b808752920dd89",
+    "sionna/phy/channel/tr38901/inh.py": "3d498bed8bbc2555c94d552ec39a765e321dee2d7e47b9ca5d06bcd0c4bca139",
+    "sionna/phy/channel/tr38901/inh_scenario.py": "45896f35fb2284a4f2704dec859954c3a81d02ba74010cf621b5411f78505380",
+    "sionna/phy/channel/tr38901/lsp.py": "3f842a5170e814264857f6de38a462482e90712339c09fbe0f28ee9578835771",
+    "sionna/phy/channel/tr38901/metrics.py": "1f98377cb2cb673cf1ff98e2018ab1636d2213011cc4273dd8ae620ebbcfd5b4",
+    "sionna/phy/channel/tr38901/models/__init__.py": "2b8f377871c3f7204998399b4be4a8f44805f6b436586dd0988ac9a9324de4dc",
+    "sionna/phy/channel/tr38901/rays.py": "7dcfcb5ac624781a5b26940058206ddac75de769cbc9038b3187800437b3a7a7",
+    "sionna/phy/channel/tr38901/rma.py": "693633a8ed9cd3b0419b1c367cdc9a9354e08890f245fecb4f336c9959d438fb",
+    "sionna/phy/channel/tr38901/rma_scenario.py": "db57d7dce32a91e918756b69b895a232c6e97330a406b99d5cff381292a7711f",
+    "sionna/phy/channel/tr38901/spatial_consistency.py": "d670861bf24e61d5baf76f579d9608b6bf28a2e3e9eac9bc57cadf9ce6ff4eeb",
+    "sionna/phy/channel/tr38901/system_level_channel.py": "0317fd47dc668c8736d274515324d33856d009e71e0cb39f0bb49e398cdb1a65",
+    "sionna/phy/channel/tr38901/system_level_scenario.py": "62d7591773fd1d46cd725ee79c21e766846f2a86b311eb602531b9800ca9d770",
+    "sionna/phy/channel/tr38901/tdl.py": "6d26b4a798b76c42c982ead6d750fa5ccfd01558893a65a90467db62edb840d8",
+    "sionna/phy/channel/tr38901/uma.py": "8b4fe89e0b1469bf539480fe4fd42f24924e9d067b4f83713bcc47b4a6cabb41",
+    "sionna/phy/channel/tr38901/uma_scenario.py": "6e74eddad0742b3efd8ab026fe966ab0e90613740b3992b9ae740f1c8e6179d4",
+    "sionna/phy/channel/tr38901/umi.py": "93a429c61d9d17555744114b794acea7a60a6bee1c9f76dca32e9c6855724af5",
+    "sionna/phy/channel/tr38901/umi_scenario.py": "319441050512a07e0e0cc7563904379ff9d8070f346c118c1714e6cc8d63dedc",
+    "sionna/phy/channel/tr38901/utils.py": "d1dae429d96561e6886a1a2fd960767c8761460fef48fb62abe9604425cb4287",
+    "sionna/phy/channel/utils.py": "de2ba1e23c16ab3d803c3dc9266bfa30bbbdaea00a46796393411e6ba681d138",
+    "sionna/phy/config.py": "fca20d1c1166b259fb3c79cce4caceae1252115d1bc2f7be73c2490eec00f63b",
+    "sionna/phy/constants.py": "a0d76ec7463209e380c32c056c407c2059c6b1b025be7ceec6e3ac1db78dca49",
+    "sionna/phy/fec/__init__.py": "7c8c2d22451f85765405827c597c9129e2102b0bc9167df648087a6591d7bb97",
+    "sionna/phy/fec/coding.py": "e10f67d076efcce629f5899f264134ffeb4d755c2b5963d438e032d5be10659e",
+    "sionna/phy/fec/conv/__init__.py": "9448c607a758b94962fbad898b882687e9bff33ca26b6da00674c88dbbf498c3",
+    "sionna/phy/fec/conv/decoding.py": "74a04eedf59b4278affdd304727f7da82f87d750ce805f82a9066a740389217f",
+    "sionna/phy/fec/conv/encoding.py": "6b6a3db422ae0352a405aea8d45f3cb46d1dc22e012db80c0d3ab35bdea1f93c",
+    "sionna/phy/fec/conv/utils.py": "888ff4ff02fef831de713ccb80928d12be46791e13e2937bcfc2486dc656ab90",
+    "sionna/phy/fec/crc.py": "a8a555fda5a704b77db0bc74acad7d1dc04715fd0eeadbec8d22a7b447fbd946",
+    "sionna/phy/fec/interleaving.py": "4419fc4be90a8546e4e685d4e122959b9b02f20bc537802d496c15676885467e",
+    "sionna/phy/fec/ldpc/__init__.py": "5f452d6d47f986eeebcd15988036e4511fe51cca6109e429da333eee73ced9ad",
+    "sionna/phy/fec/ldpc/codes/5G_bg1.csv": "4ae766634def05dc45e4903c775a5ad7e1feb067747a644504b6d8c90d33b1ed",
+    "sionna/phy/fec/ldpc/codes/5G_bg2.csv": "4f4db6f7607446984c0b1dc6243bff4286f6fbad3a477f29d84a5e0edab523fb",
+    "sionna/phy/fec/ldpc/codes/__init__.py": "2940b935cf6959c333c6fd3cc70b5b4e2da750793add812671daee3db906086b",
+    "sionna/phy/fec/ldpc/decoding.py": "44d84b92b749e2970f94d92cd348a11648e2286b4d851faa0af8b21d08f0da23",
+    "sionna/phy/fec/ldpc/encoding.py": "34d8db6660b2e84708a8fb534f63c194f6f2b964e3693fcffc9dcaf21532ccfd",
+    "sionna/phy/fec/ldpc/utils.py": "32017334c4016cb31ed0a47f06627063dd66e226ed0bf53060a46fd9ed86af44",
+    "sionna/phy/fec/linear/__init__.py": "19d427879cdadefab67ea7d456076333955275b393e79d95d1e7bc2d6d5d45e3",
+    "sionna/phy/fec/linear/decoding.py": "544dfc6d3d8aec49610a72e3a209039fde7999ea5275564bf0f73da11801738c",
+    "sionna/phy/fec/linear/encoding.py": "62babb8de0937547dc30b59ea2219149d1392a1a5f2ab63f4643f4446e508864",
+    "sionna/phy/fec/plotting.py": "38a81aa17c24fec9c5e8e88c7d177ec1cdb590bd34c286cbfb587a6589da096f",
+    "sionna/phy/fec/polar/__init__.py": "2baf461ff3c30c084f0519bf507c4a0203c77d848206ac71c644c49c51c01aa0",
+    "sionna/phy/fec/polar/codes/__init__.py": "fb93f1e90ed04f8a4d22170d8d0a9a9209ab9d051092be5bb976adee8d9957bb",
+    "sionna/phy/fec/polar/codes/polar_5G.csv": "166d61776d24180a949f27910d9a77342fff47ea3ad81b63246bd89a92e4a38d",
+    "sionna/phy/fec/polar/decoding.py": "c05871d82e307ef6d3f1b97b4bb8a66e35eb0cd6b44b6a5c481a5b18f32cc0ff",
+    "sionna/phy/fec/polar/encoding.py": "3376146a288b30bcea031246b048c645d3d0929b0cac9f9d2407fc97bc6eccc1",
+    "sionna/phy/fec/polar/utils.py": "66743742259d8b3b28449da1127743991bf4c97fa21a784148ed460e64128ec7",
+    "sionna/phy/fec/scrambling.py": "6742141f4292e47c074f1ad28d7f91cd50151281c85cb81de3fc5d8de3cca2d4",
+    "sionna/phy/fec/turbo/__init__.py": "732bc4b96701f8dcd5d91b9c4b47cce2c9ff4948291cd37b6ca1522009344eb9",
+    "sionna/phy/fec/turbo/coeffs/__init__.py": "aa182ef773503b133f5ba02aeef8764b77d1ad4982c296c373384fd9506b4eb9",
+    "sionna/phy/fec/turbo/coeffs/turbo_coeffs.csv": "3883f0d3e9dbe60b465beefae7b28d71e3497d297f42bdc562a6f587006ef220",
+    "sionna/phy/fec/turbo/decoding.py": "569f771b1d2903ca48bf2497b96593f68eeaa6eb4064f996836f287e494bb674",
+    "sionna/phy/fec/turbo/encoding.py": "85882ecc6d48cb87afd65f568bb83326c8005a3714bc00b58b857c15384fb2f5",
+    "sionna/phy/fec/turbo/utils.py": "f6c2386494f4f4af6cae1859c63abbde5646e3208950a5206238435d2237094e",
+    "sionna/phy/fec/utils.py": "769b4b4c5fb0acfecb29802090b04d146ed2cffa543d6dd78d4aa36209c6712b",
+    "sionna/phy/mapping.py": "1f8fe7ec92a888c350d82dfd362ab8ccc786148efd81ff414a808bb8ecc9ec33",
+    "sionna/phy/mimo/__init__.py": "136df9fdca9b1dd279cda6f447388473af9117227e3acd3e82fe30679ed84034",
+    "sionna/phy/mimo/detection.py": "26b92a6006c49475238a122de07dac0c68ceb93d24a1bd079c53ac94ca3d86ff",
+    "sionna/phy/mimo/equalization.py": "59ef3deeaebc885a99bf1f8a4ece845b69781ab3507e8f5afba625ca660d63b8",
+    "sionna/phy/mimo/precoding.py": "4877d2e9056c74fad3df7933eeee4aa68af330ae26f8e88d3aa2bf3048c85cfc",
+    "sionna/phy/mimo/stream_management.py": "0f67f077c4e6bcbb0c6f8b7f326ea469284c460fbb74e70e27cf7dc3dd19e5ab",
+    "sionna/phy/mimo/utils.py": "178b57a0b7714e6241d46b675fc6c30f73e3ef348ae9a922889f09e8940cb301",
+    "sionna/phy/nr/__init__.py": "41f0aeb9fd438828cb45dd82f57699443f36d6de985d20408424e85a2673ec3a",
+    "sionna/phy/nr/carrier_config.py": "d42b955f992fed2a60641dbca1e011aa27cc67a5d0b24060ea587b59c0a51b70",
+    "sionna/phy/nr/config.py": "a9be48deb79d986027e65f7a22ec9ed0e1e2d230f0d2703a6b5cd0c08dd5fc54",
+    "sionna/phy/nr/layer_mapping.py": "00e9d7421156f78ef800fc56b5129f89d71e75785ae1d14cd38428a83902fe73",
+    "sionna/phy/nr/pusch_channel_estimation.py": "7a4f028293ef650953b9fe6012edb2cc7cfe7f6525d72d4f59d551537e86b9d8",
+    "sionna/phy/nr/pusch_config.py": "3692676693d32157e17ba187cffe1ec1391f0aff63879af42ce3fb59b090ecb0",
+    "sionna/phy/nr/pusch_dmrs_config.py": "d41914c18fe1699027f88272016ad611e48421e42c723769f3a1410c29e002ba",
+    "sionna/phy/nr/pusch_pilot_pattern.py": "b3f342318787dfa52e78d009838e33a8fcbc726fda108f28c4a09363f03f0c62",
+    "sionna/phy/nr/pusch_precoder.py": "e141ffda44dad7402dd0a545c8d9872b6d4dff452901468fbb915639b5fc9f11",
+    "sionna/phy/nr/pusch_receiver.py": "07dfd9f61f1ba27d49f6edc1f35d6ed2a2b951d4fe07866d2484c9e6bb4e3c8e",
+    "sionna/phy/nr/pusch_transmitter.py": "5ca5e58fed36734b153255d4ded129136b0428fc1246be43c154d4c81bb6377d",
+    "sionna/phy/nr/tb_config.py": "c29e64dc4828d43d34eb3b68ddd7d015455af76473c64e1f13513602fe8cfe16",
+    "sionna/phy/nr/tb_decoder.py": "b356fad2861cc23b67d83f53d7e79df1990113b655feea10723328325917804a",
+    "sionna/phy/nr/tb_encoder.py": "13d9e7e9eb776add1ed6c8c720b7a36991fbc9a9f5345c4bff28aab4c011a1fe",
+    "sionna/phy/nr/utils.py": "bb87c7475510e23c5081b02387b638916a9c8db84b626c635356e4cf7f78fe54",
+    "sionna/phy/object.py": "ebcaf73155a92e177ed1d92a01831d02ae81aae74d43f537df0600c3adf5aa65",
+    "sionna/phy/ofdm/__init__.py": "bbc8988d1a27392a84ea7a91e74ae7c43a0d568a9865bf6c41efaa3ec36a8473",
+    "sionna/phy/ofdm/channel_estimation.py": "74d0a6033d25c175b34ca8d08d957050b119152f447cc69c887ff767584f2ee1",
+    "sionna/phy/ofdm/demodulator.py": "ef21c2bffc2760c82da9c37a536ab83da70190c0227a676bd8926799af7863ae",
+    "sionna/phy/ofdm/detection.py": "a997ca027aa45567712a904fb58492acdc75dac9e8a8f4ddaab968ebb4ee40b2",
+    "sionna/phy/ofdm/equalization.py": "9f8341f48c99a2d6741edbedad6a587dd946a47f8b470840e65f51011da7994c",
+    "sionna/phy/ofdm/modulator.py": "249065245847935f1e86e5d421220b7ff52076715cb4b8944c7a7d9caf85e284",
+    "sionna/phy/ofdm/pilot_pattern.py": "a21b33d4fe5ca197702a7fca4dc6adcb5d0cda9f44b77d7313daa9b30c7494ea",
+    "sionna/phy/ofdm/precoding.py": "c6f2c77309b201357d01f5b28e1ed6610216d19173d626d47690f50c026cf1be",
+    "sionna/phy/ofdm/resource_grid.py": "fb123b7860422d3271e95cffbad6c9d89ac58778dd35fa9c2d72831f7c7fa71e",
+    "sionna/phy/signal/__init__.py": "823bc8b4943d13584a9226e9ee1ae7c1da40e7bd217fc9f1bda0423e8a507689",
+    "sionna/phy/signal/downsampling.py": "e6eb64b5e1de722d85cee71b8237972bc6395dd77abfdd248fd09f917f0597f7",
+    "sionna/phy/signal/filter.py": "8ad95388f2c8de87a3929b2543c3c30a2e8e9a115e3cf5b274bfac61641fdabd",
+    "sionna/phy/signal/upsampling.py": "86b6ef9696196ddbeaaac8d849d68aae35fef17b752458cc1ecfb166e660557f",
+    "sionna/phy/signal/utils.py": "83c8ae883eb4ec06060c49aa2b98c3f41508a08cba14268789d6c163fdab9d1f",
+    "sionna/phy/signal/window.py": "29a8dcae0dafb6e7546ed8ede175c11b93506cbad5c8348b603d1857203273e9",
+    "sionna/phy/utils/__init__.py": "ad02db308292854d9a38c6e5ae47b011a2a05624e711bee8e6647c5a5ed33335",
+    "sionna/phy/utils/linalg.py": "f87481efcff07097cc2990534eeab2c872c2b8019ed7c961c47e67c0d4ff3334",
+    "sionna/phy/utils/metrics.py": "4eddf5c45a846021731202c66c12121882316bb8b1aa5088a162b48604737943",
+    "sionna/phy/utils/misc.py": "e690d31025e9a88406fd1d50332f904ba74938c7d41d3d4813b2fc4f76d118fd",
+    "sionna/phy/utils/numerics.py": "5d25f6d61bfcfb1d816db85018f3a1c460171d7d0788a71ad694e335f1814469",
+    "sionna/phy/utils/plotting.py": "6f5cd170dbffa830625982c0050487211dde493fcf416590822316b11b4bd831",
+    "sionna/phy/utils/random.py": "7e76fd6aa3f70efc0d34ffeded49562ccde7e8f4811ff688bb586572a95180a8",
+    "sionna/phy/utils/tensors.py": "9deba5e9e7bd83de410e7187db0b958e0e9da497b2479dfbbe5bd73aad6c5ae3",
+    "sionna/sys/__init__.py": "9ce5e16636df8c98da835dedbd6b227a44d425358288358d235846cc75ca5d58",
+    "sionna/sys/effective_sinr.py": "fa058c3032fe4a5d0b82f82f50b6f5ac4e4953de8faf6eba85e5bc41f976fb3a",
+    "sionna/sys/link_adaptation.py": "8e004930f50046b35d5be535861db86360012ae088034b6ed68e964b11618307",
+    "sionna/sys/metrics.py": "f1b36b43fff5a9f051309bcc6c672829f2fff84bba5df67643030e03697b66a5",
+    "sionna/sys/phy_abstraction.py": "851893fc1a83cd093015fab06de8d6691afe03a70db75514a9342c0e0fc7cb39",
+    "sionna/sys/power_control.py": "d38045e6fdb85080e7d1cf17b5adc8b9708cc8a8874a158079e956695c311dd1",
+    "sionna/sys/scheduling.py": "10920bba7270e2c9d5317d2d614c68be21942af0b8401bb23eb4980d016c0c39",
+    "sionna/sys/topology.py": "5813bd3346d851499814ad21918dbf9e77dabd3c65d1fed21e7976c5911bae7b",
+    "sionna/sys/utils.py": "bb849fde679378bd9b8c7c8560d48d3335f11441e591f8591465509e2f4f6119"
+  },
+  "artifact_sha256": {
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_1_2_qam256-awgn.bin": "cd998dee58c074788e9add223291270510929b2209c2a5b0bb23479aca030893",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_1_2_qam256-awgn.npz": "9523cbc32711ddea45bb3a7871a139968faea7138926a93dedfdcec075b3e53d",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_1_2_qam256-identity.bin": "2e3c456381a195dbfd23c872612bc55f2804dcd668d08c10a817718e243cc101",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_1_2_qam256-identity.npz": "27571955807212e8dfb57eeacfda12a924e707b39a82a1fca913a4dab36fb0ff",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_1_2_qam256-native-identity.npz": "121fe271d3a8d638f0eb26a1cfd3e93b30221a786c970915be2750f07a45db3b",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_1_2_qam256-native-identity.p6sb": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_1_2_qam256-rayleigh.bin": "04c2c49cc55a439b3c47386ffb12d203c01ddff6b0fb6b76061cb7bb461d7db9",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_1_2_qam256-rayleigh.npz": "1ec6feb6635a7785ae5742f3c928923b3c3b3dd1153d08962a80099251f00473",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_2_3_qam64-awgn.bin": "18eff3556501982999395ded03a742f558650f2c385bcffdaa4244a69e7da590",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_2_3_qam64-awgn.npz": "d32180416f57d3336f4866db8e2291140d0651029af8a30dc18a5caeaf0194ee",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_2_3_qam64-identity.bin": "2e3c456381a195dbfd23c872612bc55f2804dcd668d08c10a817718e243cc101",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_2_3_qam64-identity.npz": "649e2e3c2477bd4eb1856a8f4e7d07ee617e3d26dc7c25edd427b4ff8b1fb1e3",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_2_3_qam64-native-identity.npz": "10081eb19ad34cde5becf7e6f3fc65c904d4b6ddfe307ae155a31f89d7857055",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_2_3_qam64-native-identity.p6sb": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_2_3_qam64-rayleigh.bin": "87c05f1bb1c7f49bf6fd50ad8aaab9b99dcacf7c966961f46fbf5dfddafeffdb",
+    "data/engineering/artemis-digital-transceiver-CPU-001/ldpc_2_3_qam64-rayleigh.npz": "b8c4a15298e7f2356381b577b079aa4a20bb4982e578ad20a212612276322d9c"
+  },
+  "native_stream_sha256": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+  "native_shape": [
+    370,
+    1224,
+    3
+  ],
+  "finished_at_unix": 1791113389.1471567
+}

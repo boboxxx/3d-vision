@@ -1,0 +1,198 @@
+{
+  "state": "passed_simulated_tar_real6_wires_synthetic6_full_geometry_float_caches",
+  "checked_unix": 1791169542.236279,
+  "actual_engineering_wires": 6,
+  "synthetic_float_pairs": 6,
+  "synthetic_RGB_values": 16535340,
+  "fixture_blob_bytes": 66985266,
+  "tests": [
+    {
+      "rate": 10,
+      "case": "complete_real_wire_synthetic_unclipped_NPZ",
+      "result": "passed"
+    },
+    {
+      "rate": 10,
+      "case": "duplicate",
+      "result": "rejected"
+    },
+    {
+      "rate": 10,
+      "case": "missing",
+      "result": "rejected"
+    },
+    {
+      "rate": 10,
+      "case": "foreign",
+      "result": "rejected"
+    },
+    {
+      "rate": 10,
+      "case": "nonregular",
+      "result": "rejected"
+    },
+    {
+      "rate": 10,
+      "case": "oversized",
+      "result": "rejected"
+    },
+    {
+      "rate": 10,
+      "case": "nonzero_remote_exit",
+      "result": "rejected"
+    },
+    {
+      "rate": 10,
+      "case": "SHA_mismatch",
+      "result": "rejected"
+    },
+    {
+      "rate": 10,
+      "case": "CRC_under_updated_SHA",
+      "result": "rejected"
+    },
+    {
+      "rate": 10,
+      "case": "clipped_values_under_updated_SHA",
+      "result": "rejected"
+    },
+    {
+      "rate": 10,
+      "case": "float64_dtype_under_updated_SHA",
+      "result": "rejected"
+    },
+    {
+      "rate": 10,
+      "case": "range_metadata",
+      "result": "rejected"
+    },
+    {
+      "rate": 30,
+      "case": "complete_real_wire_synthetic_unclipped_NPZ",
+      "result": "passed"
+    },
+    {
+      "rate": 30,
+      "case": "duplicate",
+      "result": "rejected"
+    },
+    {
+      "rate": 30,
+      "case": "missing",
+      "result": "rejected"
+    },
+    {
+      "rate": 30,
+      "case": "foreign",
+      "result": "rejected"
+    },
+    {
+      "rate": 30,
+      "case": "nonregular",
+      "result": "rejected"
+    },
+    {
+      "rate": 30,
+      "case": "oversized",
+      "result": "rejected"
+    },
+    {
+      "rate": 30,
+      "case": "nonzero_remote_exit",
+      "result": "rejected"
+    },
+    {
+      "rate": 30,
+      "case": "SHA_mismatch",
+      "result": "rejected"
+    },
+    {
+      "rate": 30,
+      "case": "CRC_under_updated_SHA",
+      "result": "rejected"
+    },
+    {
+      "rate": 30,
+      "case": "clipped_values_under_updated_SHA",
+      "result": "rejected"
+    },
+    {
+      "rate": 30,
+      "case": "float64_dtype_under_updated_SHA",
+      "result": "rejected"
+    },
+    {
+      "rate": 30,
+      "case": "range_metadata",
+      "result": "rejected"
+    },
+    {
+      "rate": 50,
+      "case": "complete_real_wire_synthetic_unclipped_NPZ",
+      "result": "passed"
+    },
+    {
+      "rate": 50,
+      "case": "duplicate",
+      "result": "rejected"
+    },
+    {
+      "rate": 50,
+      "case": "missing",
+      "result": "rejected"
+    },
+    {
+      "rate": 50,
+      "case": "foreign",
+      "result": "rejected"
+    },
+    {
+      "rate": 50,
+      "case": "nonregular",
+      "result": "rejected"
+    },
+    {
+      "rate": 50,
+      "case": "oversized",
+      "result": "rejected"
+    },
+    {
+      "rate": 50,
+      "case": "nonzero_remote_exit",
+      "result": "rejected"
+    },
+    {
+      "rate": 50,
+      "case": "SHA_mismatch",
+      "result": "rejected"
+    },
+    {
+      "rate": 50,
+      "case": "CRC_under_updated_SHA",
+      "result": "rejected"
+    },
+    {
+      "rate": 50,
+      "case": "clipped_values_under_updated_SHA",
+      "result": "rejected"
+    },
+    {
+      "rate": 50,
+      "case": "float64_dtype_under_updated_SHA",
+      "result": "rejected"
+    },
+    {
+      "rate": 50,
+      "case": "range_metadata",
+      "result": "rejected"
+    }
+  ],
+  "rejected_cases": 33,
+  "verifier_sha256": "9f16a3348310301404ff0566c376e1840a0e6c7f9f8c4fc0d938831b24a255b2",
+  "transport_sha256": "27b60ae294fc0b913cd82c277b1930476125191e3ab4599b5087d418f0963e3c",
+  "check_sha256": "846c1ca9b074758ccf7fc266f02d773119914c8a7466a31fa4a2db6a531266f4",
+  "wire_local_proof_sha256": "985272f871f7efcdb3a8b1d5684cab099b7d07684857796feff3bb2780f73daa",
+  "protocol_sha256": "d77dd4e387e1c6a90ce5401d261538c0ec4c1a584438c9f6dc1119ceda9f01af",
+  "retained_blob_files": 0,
+  "limitation": "Explicit in-memory subprocess simulation: real six engineering wires, synthetic unclipped NPZ; no actual remote NPZ, main closure, GPU reconstruction, formal weights, quality or detection"
+}

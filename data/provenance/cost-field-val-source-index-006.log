@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/build-cost-field-val-source-index-006.py", line 37, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/build-cost-field-val-source-index-006.py", line 13, in main
+    encode=json.loads(encodepath.read_text());assert encode['state']=='finished'
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

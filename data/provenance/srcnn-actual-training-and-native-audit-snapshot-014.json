@@ -1,0 +1,66 @@
+{
+  "checked_unix": 1791210324.009544,
+  "cycle_state": "running",
+  "current_rate": 30,
+  "current_command": 2,
+  "completed_commands": [
+    {
+      "pid": 282379,
+      "returncode": 0,
+      "started_unix": 1791186145.9123666,
+      "ended_unix": 1791198248.7605252,
+      "log": "/home/sheng/paper6/logs/srcnn-kitti-formal-seed17-002-command-0.log",
+      "log_sha256": "52236e0aa93e70bf937855ffb49a1818ee310b42f812f8b983d11fd7d08653a4"
+    },
+    {
+      "pid": 282840,
+      "returncode": 0,
+      "started_unix": 1791198248.7671766,
+      "ended_unix": 1791207585.2207365,
+      "log": "/home/sheng/paper6/logs/srcnn-kitti-formal-seed17-002-command-1.log",
+      "log_sha256": "b9356a86c5a485d64792a59305e03887b81eb4a5ae332f3a5086192a0162c391"
+    }
+  ],
+  "rates": {
+    "10": {
+      "manifest": "/home/sheng/paper6/data/runs/srcnn-kitti-formal-seed17-002-cr10.json",
+      "manifest_sha256": "9a8784c9138a6590415dea0de8198d4ae233f4afa09539e194cc4de4652dadd1",
+      "audit": "/home/sheng/paper6/data/provenance/srcnn-kitti-formal-seed17-002-cr10-audit.json",
+      "audit_sha256": "32413edf2659ccf4e2723ebdce962c4a5f8262ac5a0106a0760cbb1d540c662d"
+    }
+  },
+  "data/provenance/srcnn-kitti-formal-seed17-002-cr10-audit.json": {
+    "sha256": "32413edf2659ccf4e2723ebdce962c4a5f8262ac5a0106a0760cbb1d540c662d",
+    "fields": {
+      "state": "passed_all_updates_native_independent_patches_and_final_Adam",
+      "scope": "formal",
+      "rate": 10,
+      "updates": 37120,
+      "optimizer_steps": null,
+      "required_updates": null,
+      "patches": 1187840,
+      "unique_source_views": 7424,
+      "source_view_visits": 148480,
+      "checkpoint_sha256": "ed70c5c22bc2bbfb51032aa5878ed877d26b7e35805607d745af9ac016aec9ae",
+      "manifest_sha256": "9a8784c9138a6590415dea0de8198d4ae233f4afa09539e194cc4de4652dadd1",
+      "raw_sha256": "072f5b5b61d50cf1b47f9afdcb1c9b2975bc615685e7b4c0600358b001b6e936"
+    }
+  },
+  "data/runs/srcnn-kitti-formal-seed17-002-cr30.json": {
+    "sha256": "97f4f3e051694ca7bf882499c99c533b21e37f95dafaffafc13251f7cf781aa3",
+    "fields": {
+      "state": "running",
+      "scope": "formal",
+      "rate": 30,
+      "updates": null,
+      "optimizer_steps": 8500,
+      "required_updates": 37120,
+      "patches": null,
+      "unique_source_views": null,
+      "source_view_visits": null,
+      "checkpoint_sha256": null,
+      "manifest_sha256": null,
+      "raw_sha256": null
+    }
+  }
+}

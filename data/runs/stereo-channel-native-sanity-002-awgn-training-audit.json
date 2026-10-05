@@ -1,0 +1,38 @@
+{
+  "state": "passed",
+  "arm": "awgn",
+  "evidence_type": "engineering_only",
+  "steps": 6,
+  "inactive_states_identical": 519,
+  "trained_parameter_tensors": 16,
+  "all_optimizer_update_counts": 6,
+  "summary": {
+    "steps": 6,
+    "unique_returned_frames": 6,
+    "empty_GT_frames": 1,
+    "nonzero_gradient_frames": {
+      "left_stereo": 6,
+      "right_stereo": 6,
+      "appearance": 6,
+      "symbols": 6,
+      "native_cost": 6
+    },
+    "first100_loss_median": 1.8419002890586853,
+    "last100_loss_median": 1.8419002890586853,
+    "max_preclip_gradient": 12.966989517211914
+  },
+  "noise_rng_replay": {
+    "state": "passed",
+    "actual_calls": 6,
+    "device": "cuda:0",
+    "seed": 1708,
+    "initial_sha256": "48f451feb3c0e5bf8c82db4d2156c55b2ea2c314a9eae8ea7703a65c0068e0c0",
+    "final_sha256": "8f4950325c19a5bacdf23591a2ee7ca1b5bef7836fc3cf1917d5be992e50cc73"
+  },
+  "checkpoint_sha256": "ece66f2648a708e744ec743ce5b2d0a2c9d445c6223b991725e55934c493956f",
+  "full_initialization_sha256": "5733d337ef9e8219387a80dc2a763677dc0d4af5008588363bd0e6bec9023487",
+  "manifest_sha256": "3c14c3d36305638df5aca0263e5e29ba0b2c66080300da26f3fcb022ed718adb",
+  "source_manifest_sha256": "b73b885fe26d608c475a0065d0b09b19aa6320eb75b78d27814ea07a0f41564f",
+  "raw_snapshot_sha256": "adbed2c09b4bbb520cdd9c74eccdee9d915131fdbac0cbfed393f7da6ddf2a4f",
+  "limitations": "Independent full saved-state/actualAdam/scalar/schedule/noise-draw replay audit; no fresh native loss forward or AP proof"
+}

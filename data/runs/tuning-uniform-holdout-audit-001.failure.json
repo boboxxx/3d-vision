@@ -1,0 +1,10 @@
+{
+  "state": "rejected",
+  "evidence_type": "holdout_channel_record_coverage_audit",
+  "run_manifest_sha256": "aa514b76ed8015e48ca4202a5d9c58373a6baae8ee53152e9e1a2f4947b35efe",
+  "log_sha256": "ada312a84f4b9a847653519bba76c9d2bf4aa81846d982fcb3ea172b5f0de57c",
+  "expected_frames": 372,
+  "recorded_channel_frames": 0,
+  "reason": "DDP rebuilds outer dictionary; logging must use returned sensor metadata",
+  "response": "retain raw native AP and failed log; reevaluate unchanged checkpoint with corrected accounting and new seed17 noise stream; AP audit not yet passed"
+}

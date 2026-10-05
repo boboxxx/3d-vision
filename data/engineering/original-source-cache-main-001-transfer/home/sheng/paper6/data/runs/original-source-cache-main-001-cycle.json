@@ -1,0 +1,170 @@
+{
+  "state": "finished_eight_commands_pending_terminal_closure",
+  "pid": 265830,
+  "scope": "main",
+  "prefix": "original-source-cache-main-001",
+  "sources": {
+    "historical": {
+      "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+      "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+      "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+      "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+    },
+    "current": {
+      "experiments/original-paper-scenarios/source-cache-code/audit.py": "6406a041435bdb9cda489be5d4b109f93720740682dc26424b71a30a8d421c1f",
+      "experiments/original-paper-scenarios/source-cache-code/check_cpu.py": "03628bab20dbdd35a8c047c4c0a947dbfc07d4129c6c90ce60772f952e82ef78",
+      "experiments/original-paper-scenarios/source-cache-code/common.py": "e73c1c5022afedf75875e7249bf963664ad07d73a13a8fd3cb9fe4bfff486fd3",
+      "experiments/original-paper-scenarios/source-cache-code/encode.py": "c2516c6a174d497d0fcb84de510af269bb65d735c5b9fd783ebd2a2000cbce5c",
+      "experiments/original-paper-scenarios/source-cache-code/receive.py": "4dad57323e9a7ce797f507858070a0233b826198ca7d6cd8357997960375d662"
+    }
+  },
+  "controller_sha256": "343c6e7345cb3ad93ae5e887c1c5f3e0379cc3c92dd2738c6f3d33e94aa91bd6",
+  "started_unix": 1791147263.225857,
+  "completed_commands": [
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/encode.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-main-001",
+        "--scope",
+        "main"
+      ],
+      "pid": 265833,
+      "started_unix": 1791147263.226887,
+      "ended_unix": 1791149642.0356302,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-main-001-command-0.log",
+      "log_sha256": "0996381b0b674c937af9388fa5728dbff090082355f8db89c478666bfc249e21"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-main-001",
+        "--scope",
+        "main",
+        "--condition",
+        "jpeg-cr10"
+      ],
+      "pid": 267938,
+      "started_unix": 1791149642.0455468,
+      "ended_unix": 1791149751.5530763,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-main-001-command-1.log",
+      "log_sha256": "aa051fd40d1fc97b853684116fe28efb557c618547b49da3de36429e007e224d"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-main-001",
+        "--scope",
+        "main",
+        "--condition",
+        "jpeg-cr30"
+      ],
+      "pid": 267952,
+      "started_unix": 1791149751.5628805,
+      "ended_unix": 1791149851.086008,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-main-001-command-2.log",
+      "log_sha256": "8969f5cf2b0ad252f521a0622dc27fbd53f134cb0e9cb6323c8112164edd7fd5"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-main-001",
+        "--scope",
+        "main",
+        "--condition",
+        "jpeg-cr50"
+      ],
+      "pid": 268024,
+      "started_unix": 1791149851.096409,
+      "ended_unix": 1791149942.2190237,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-main-001-command-3.log",
+      "log_sha256": "985ea0f2b991ae1c6a74a867c824643d6e229f96d3645269613feaef89d2a780"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-main-001",
+        "--scope",
+        "main",
+        "--condition",
+        "jpeg2000-cr10"
+      ],
+      "pid": 268050,
+      "started_unix": 1791149942.2291067,
+      "ended_unix": 1791150411.2387848,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-main-001-command-4.log",
+      "log_sha256": "f787c1b1c900cf2ff7b765c32cf40ade85f7ce33ef307e0f8804878f57814f77"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-main-001",
+        "--scope",
+        "main",
+        "--condition",
+        "jpeg2000-cr30"
+      ],
+      "pid": 268093,
+      "started_unix": 1791150411.24779,
+      "ended_unix": 1791150739.2386422,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-main-001-command-5.log",
+      "log_sha256": "25d6f34f28cdf5eb8f1ecafdc179e3db1b95ab8c678aff53b51b4b416fe75b18"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-main-001",
+        "--scope",
+        "main",
+        "--condition",
+        "jpeg2000-cr50"
+      ],
+      "pid": 268125,
+      "started_unix": 1791150739.248202,
+      "ended_unix": 1791151015.568893,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-main-001-command-6.log",
+      "log_sha256": "4e225e84f83057c6594c29722a8eaac0fec5c31e9a847a46ba24eea069ad046a"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/audit.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-main-001",
+        "--scope",
+        "main",
+        "--output",
+        "/home/sheng/paper6/data/provenance/original-source-cache-main-001-audit.json"
+      ],
+      "pid": 268143,
+      "started_unix": 1791151015.5697515,
+      "ended_unix": 1791153431.0324419,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-main-001-command-7.log",
+      "log_sha256": "856427cecef887dff353170d01bda4606a3fdf6685f7d7b4cb83af26a09ec576"
+    }
+  ],
+  "current_command": 7,
+  "ended_unix": 1791153431.054624,
+  "audit_sha256": "4e1a0a76c69d8905f26b29b41f29dca49ebfedfc183666859e0264ccea02cc5a"
+}

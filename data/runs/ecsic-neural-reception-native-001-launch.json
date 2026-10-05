@@ -1,0 +1,15 @@
+{
+  "state": "launched_once_CPU_actual_received_neural_crop",
+  "pid": 261130,
+  "launched_unix": 1791143944.4457464,
+  "prefix": "ecsic-neural-reception-native-001",
+  "command": [
+    "bash",
+    "-c",
+    "source scripts/sheng_env.sh; export CUDA_VISIBLE_DEVICES=\"\" OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 WANDB_MODE=disabled PYTHONDONTWRITEBYTECODE=1; exec python data/provenance/run-ecsic-neural-cycle-001.py"
+  ],
+  "controller_log": "/home/sheng/paper6/logs/ecsic-neural-reception-native-001-controller.log",
+  "received": 11,
+  "erased": 9,
+  "launcher_sha256": "a9b70644551184d0e348793f9838e95f406eb290c70ffa3089595c59ae984612"
+}

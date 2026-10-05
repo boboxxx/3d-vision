@@ -1,0 +1,149 @@
+{
+  "state": "closed_all_audits_passed",
+  "run_id": "stereo-feature-native-seed17-001",
+  "checked_at_unix": 1791076325.1689703,
+  "training_updates": 3340,
+  "complete_model_states": 535,
+  "frozen_states_identical": 519,
+  "actual_Adam_parameters": 16,
+  "actual_Adam_steps": 3340,
+  "checkpoint_sha256": "9a4b291070df160e6c03e75ed31eeee1dda7f6bfbaa0528a43a9cdf526977553",
+  "all4_source_trees_unchanged": {
+    "project": "0ae88e17912eeca37d5ae160fb3534a8a88a7d493ab2268dd2f196d780ca776d",
+    "liga": "0ffb2cda5f2fa7596fd18342562f08414d2a61e28892d317aaae946b50967a01",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f"
+  },
+  "original21sources_unchanged": true,
+  "artifacts_sha256": {
+    "data/runs/stereo-feature-native-seed17-001.json": "eb77f7cf7e57d0f07660eef783256a67250d85bba56e27ae206428cb8018c196",
+    "data/runs/stereo-feature-native-seed17-001-training-audit.json": "8e8c086220d8e6b2662dc8517d6e63161e4891e2ce29ebe43e86e2e5725caa16",
+    "data/runs/stereo-feature-native-seed17-001-identity.json": "a3b41a46c6982c8dc7e65734c884f15634bc9281092e41a3f3795efe504b7383",
+    "data/runs/stereo-feature-native-seed17-001-identity-AP-audit.json": "771f9be172264aab41131c3fe136f01f8ce7753ceeabb1ea4aa318bcba8401ea",
+    "data/runs/stereo-feature-native-seed17-001-identity-feature-audit.json": "70756ca4aab9f9666a311e2af636d562c4dbaeb0d68f112ca16ed02aa52d33ba",
+    "data/runs/stereo-feature-native-seed17-001-identity-boundary-report.json": "b8e227078301d6acb679a67663b43e0ae279e905e9e634df88840583060734c5",
+    "data/runs/stereo-feature-native-seed17-001-identity-features.jsonl": "3bf1c68f7d2c6a6799c4abbba95ec9df8849c248fcee4825ca86318d7573fd01",
+    "data/runs/stereo-feature-native-seed17-001-awgn.json": "670ce6ac9f67c14d7ab41312c7b594495fcf4fc7d4c4e4e52a7ccbc3d7ef95ba",
+    "data/runs/stereo-feature-native-seed17-001-awgn-AP-audit.json": "12a5c43e5514347b1fcf9e053458c57ed9c68ece84d92aa1780308b670147069",
+    "data/runs/stereo-feature-native-seed17-001-awgn-feature-audit.json": "c2aa59eaacd85b7c7e0f4548c7eccf69321289d0ba11b27555bcf21dcfd0a246",
+    "data/runs/stereo-feature-native-seed17-001-awgn-boundary-report.json": "d20ab8aaad6cf581d294751afb67e141e6a7808a94d926a5aff7a806d3694cc1",
+    "data/runs/stereo-feature-native-seed17-001-awgn-features.jsonl": "2396efd295b06ff35f41fa3e612ba6dc85971668aa9585ce78af9891043d0a6e"
+  },
+  "evaluations": {
+    "identity": {
+      "Car3D_AP_R40_percent": {
+        "Car_3d/easy_R40": 1.8477074202441428,
+        "Car_3d/moderate_R40": 1.1551948752736578,
+        "Car_3d/hard_R40": 0.7903439153439153
+      },
+      "feature_summaries": {
+        "left_stereo": {
+          "elements": 4753981440,
+          "pooled_over_frames_mse": 0.4989650830513896,
+          "pooled_over_frames_nmse": 0.5927285538689364,
+          "pooled_over_frames_cosine": 0.6382619524493508,
+          "median_frame_nmse": 0.5912498478822953,
+          "median_frame_cosine": 0.6397780335368632,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              320,
+              1248
+            ]
+          ]
+        },
+        "right_stereo": {
+          "elements": 4753981440,
+          "pooled_over_frames_mse": 0.48922911842571115,
+          "pooled_over_frames_nmse": 0.5881644120799732,
+          "pooled_over_frames_cosine": 0.6418318808227649,
+          "median_frame_nmse": 0.5865194745416091,
+          "median_frame_cosine": 0.6430839185701651,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              320,
+              1248
+            ]
+          ]
+        },
+        "appearance": {
+          "elements": 297123840,
+          "pooled_over_frames_mse": 0.11957537495571595,
+          "pooled_over_frames_nmse": 0.13478267834965538,
+          "pooled_over_frames_cosine": 0.9302490312411108,
+          "median_frame_nmse": 0.13470015141885341,
+          "median_frame_cosine": 0.9303213494894019,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              80,
+              312
+            ]
+          ]
+        }
+      }
+    },
+    "awgn": {
+      "Car3D_AP_R40_percent": {
+        "Car_3d/easy_R40": 0.5367540029112081,
+        "Car_3d/moderate_R40": 0.13333333333333336,
+        "Car_3d/hard_R40": 0.11166253101736973
+      },
+      "feature_summaries": {
+        "left_stereo": {
+          "elements": 4753981440,
+          "pooled_over_frames_mse": 0.5195388673248132,
+          "pooled_over_frames_nmse": 0.6171852779082468,
+          "pooled_over_frames_cosine": 0.619309478905631,
+          "median_frame_nmse": 0.6162919508883753,
+          "median_frame_cosine": 0.6203436891177916,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              320,
+              1248
+            ]
+          ]
+        },
+        "right_stereo": {
+          "elements": 4753981440,
+          "pooled_over_frames_mse": 0.5097208166950811,
+          "pooled_over_frames_nmse": 0.6128138577928286,
+          "pooled_over_frames_cosine": 0.6228195678947138,
+          "median_frame_nmse": 0.6120058432344738,
+          "median_frame_cosine": 0.623861616886848,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              320,
+              1248
+            ]
+          ]
+        },
+        "appearance": {
+          "elements": 297123840,
+          "pooled_over_frames_mse": 0.12637999710406053,
+          "pooled_over_frames_nmse": 0.14245111043913508,
+          "pooled_over_frames_cosine": 0.9260509194930124,
+          "median_frame_nmse": 0.14233184550734096,
+          "median_frame_cosine": 0.9262347958284687,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              80,
+              312
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "limitations": "fixed training-only holdout with author pretraining exposure; independent saved prediction/GT/AP and passive feature reduction audits; no novel superiority, main-validation, calibrated-risk or multiseed result"
+}

@@ -1,0 +1,112 @@
+cost_volume passed
+voxelizer passed
+sparse_convolution passed
+/home/sheng/paper6/third_party/LIGA-Stereo/liga/ops/iou3d_nms/iou3d_nms_utils.py:70: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  overlaps_bev = torch.cuda.FloatTensor(torch.Size((boxes_a.shape[0], boxes_b.shape[0]))).zero_()  # (N, M)
+boxes passed
+Traceback (most recent call last):
+  File "/home/sheng/paper6/scripts/verify_liga_runtime.py", line 177, in <module>
+    main()
+  File "/home/sheng/paper6/scripts/verify_liga_runtime.py", line 163, in main
+    info["checks"][name] = check()
+  File "/home/sheng/paper6/scripts/verify_liga_runtime.py", line 134, in evaluator_fixture
+    from liga.datasets.kitti.kitti_object_eval_python.eval import get_official_eval_result
+  File "/home/sheng/paper6/third_party/LIGA-Stereo/liga/datasets/kitti/kitti_object_eval_python/eval.py", line 5, in <module>
+    from .rotate_iou import rotate_iou_gpu_eval
+  File "/home/sheng/paper6/third_party/LIGA-Stereo/liga/datasets/kitti/kitti_object_eval_python/rotate_iou.py", line 264, in <module>
+    def rotate_iou_kernel_eval(N, K, dev_boxes, dev_query_boxes, dev_iou, criterion=-1):
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/decorators.py", line 135, in _jit
+    disp.compile(argtypes)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/dispatcher.py", line 933, in compile
+    kernel = _Kernel(self.py_func, argtypes, **self.targetoptions)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_lock.py", line 35, in _acquire_compile_lock
+    return func(*args, **kwargs)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/dispatcher.py", line 84, in __init__
+    cres = compile_cuda(self.py_func, types.void, self.argtypes,
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_lock.py", line 35, in _acquire_compile_lock
+    return func(*args, **kwargs)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/compiler.py", line 196, in compile_cuda
+    cres = compiler.compile_extra(typingctx=typingctx,
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler.py", line 739, in compile_extra
+    return pipeline.compile_extra(func)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler.py", line 439, in compile_extra
+    return self._compile_bytecode()
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler.py", line 505, in _compile_bytecode
+    return self._compile_core()
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler.py", line 481, in _compile_core
+    raise e
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler.py", line 473, in _compile_core
+    pm.run(self.state)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 363, in run
+    raise e
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 356, in run
+    self._runPass(idx, pass_inst, state)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_lock.py", line 35, in _acquire_compile_lock
+    return func(*args, **kwargs)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 311, in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 272, in check
+    mangled = func(compiler_state)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typed_passes.py", line 114, in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typed_passes.py", line 95, in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typeinfer.py", line 1075, in propagate
+    errors = self.constraints.propagate(self)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typeinfer.py", line 160, in propagate
+    constraint(typeinfer)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typeinfer.py", line 572, in __call__
+    self.resolve(typeinfer, typevars, fnty)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typeinfer.py", line 595, in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typeinfer.py", line 1569, in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typing/context.py", line 279, in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typing/context.py", line 335, in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/types/functions.py", line 314, in get_call_type
+    raise e
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/types/functions.py", line 311, in get_call_type
+    sig = temp.apply(nolitargs, nolitkws)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typing/templates.py", line 358, in apply
+    sig = generic(args, kws)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typing/templates.py", line 621, in generic
+    disp, new_args = self._get_impl(args, kws)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typing/templates.py", line 720, in _get_impl
+    impl, args = self._build_impl(cache_key, args, kws)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/typing/templates.py", line 824, in _build_impl
+    disp_type.get_call_type(self.context, args, kws)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/types/functions.py", line 541, in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/dispatcher.py", line 850, in get_call_template
+    self.compile_device(tuple(args))
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/dispatcher.py", line 884, in compile_device
+    cres = compile_cuda(self.py_func, return_type, args,
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_lock.py", line 35, in _acquire_compile_lock
+    return func(*args, **kwargs)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/compiler.py", line 196, in compile_cuda
+    cres = compiler.compile_extra(typingctx=typingctx,
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler.py", line 739, in compile_extra
+    return pipeline.compile_extra(func)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler.py", line 439, in compile_extra
+    return self._compile_bytecode()
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler.py", line 505, in _compile_bytecode
+    return self._compile_core()
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler.py", line 481, in _compile_core
+    raise e
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler.py", line 473, in _compile_core
+    pm.run(self.state)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 363, in run
+    raise e
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 356, in run
+    self._runPass(idx, pass_inst, state)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_lock.py", line 35, in _acquire_compile_lock
+    return func(*args, **kwargs)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 311, in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 272, in check
+    mangled = func(compiler_state)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/core/untyped_passes.py", line 105, in run_pass
+    raise TypeError("Signature mismatch: %d argument types given, "
+TypeError: Signature mismatch: 2 argument types given, but function takes 1 arguments

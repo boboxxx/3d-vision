@@ -1,0 +1,23 @@
+{
+  "run_id": "student-task-seed17-001",
+  "implementation_commit_before_launch": "dc08976",
+  "pipeline_pid_at_launch": 18999,
+  "trainer_pid_at_launch": 19018,
+  "launch_ssh_wrapper_pid": 18998,
+  "evidence_type": "F2_launch_and_verified_initial_learning",
+  "recorded_at": "2026-10-03T21:31:18.330444+00:00",
+  "project_sources_sha256": "bc8e932b82af7162f7ff9688ed91b9eeb214e6df5cb8c5d6f336e7ac4ee7c46f",
+  "initialization_sha256": "cefa61a9b2f18376109b156044442d14706f4f631e1e88810bca016a0f283334",
+  "matched_initialization_tensors": 519,
+  "new_random_initialization_tensors": [],
+  "trainable_parameter_tensors": 35,
+  "fixed_new_updates": 3340,
+  "complete_early_scalar_steps": 492,
+  "source_hash_note": "shell and protocol identities recorded separately",
+  "file_hashes": {
+    "scripts/run_student_task_cycle.sh": "a578fc546e2fd70124f5e4c490e62ae2bc164986f7ef7d2e75d36e8459ad8dd6",
+    "scripts/sheng_env.sh": "6b0759aaeb8eee45ec6d99395be1cab9282850f88c0469b5e964104e63630b6b",
+    "experiments/geometry-link/student-task-adaptation.md": "a100cd24375d9fda2e127e83607b2d4d6a3e30ba8976ba51b19fb54513cd4604"
+  },
+  "limitations": "early scalar snapshot is not a finished epoch/checkpoint audit or AP result"
+}

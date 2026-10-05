@@ -1,0 +1,43 @@
+{
+  "state": "merged_unchanged_complete_public_train3712_ROI_records_pending_independent_audit",
+  "frames": 3712,
+  "views": 7424,
+  "records_sha256": "8f4a5ba2b0a35d6da58c580743c88bc7399149c811ed4d8d8da0344d7b668765",
+  "inputs": {
+    "cao2025-roi-train-001.jsonl": {
+      "bytes": 4405235,
+      "sha256": "f7413abe7a587ac2c09ba5a3e5a4851f20db8bdfb8b7a3a5e1c90ac0ee87fad2"
+    },
+    "cao2025-roi-train-001.manifest.json": {
+      "bytes": 1144,
+      "sha256": "2edeab36a8381feb9b7810e92529ab9d7607c8bd471c88428fa5f04888a4c4e0"
+    },
+    "cao2025-roi-train-audit-001.json": {
+      "bytes": 713,
+      "sha256": "549f77c79973a8d3a095374b2b1fe4b5d572647bab57d2b6baf31737caa30b8a"
+    },
+    "cao2025-roi-holdout-001.jsonl": {
+      "bytes": 469800,
+      "sha256": "883a35bbe3e7a3dbaccc75e71406512360a1d844f65400239a53cfb5ed7dadde"
+    },
+    "cao2025-roi-holdout-001.manifest.json": {
+      "bytes": 1145,
+      "sha256": "7d0bd16e77a6830ae190d270b29a9ce4416246917513ab9ea8fd58382997eefd"
+    },
+    "cao2025-roi-holdout-audit-001.json": {
+      "bytes": 714,
+      "sha256": "185e4413ba5eda2cd5da2df1642ae58a7005871b40bc14a00c8fe9ca6c10828e"
+    }
+  },
+  "dataset_manifest_sha256": "ecf1f0e41de5757bd438b2a73252dc999eed80fa9828270beff342ccf6ea1310",
+  "fold_sha256": "35f22b0022b5968c09c9a8a7e1b9ad6c8ab23c52283673495a36ddba59406f4c",
+  "YOLO_metadata_sha256": "e710368240e7eac30f76f8602788478df0a95e65152015f3950b03cb95fae896",
+  "builder_sha256": "a3ccf24480eaee4b7b56748cdfe77297ea68b6c0b3fcf6914a504bae51dbaeef",
+  "protocol_sha256": "ab70f94df7d80ead480b6b3d4436035565f29028906db44f7c5c7a5800f44c1d",
+  "source_subsets": {
+    "train": 3340,
+    "holdout": 372
+  },
+  "public_validation_frames_used": 0,
+  "GT_calibration_LiDAR_read": false
+}

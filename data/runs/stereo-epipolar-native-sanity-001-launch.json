@@ -1,0 +1,14 @@
+{
+  "state": "launched_once_engineering_only",
+  "pid": 255389,
+  "launched_unix": 1791138901.4534547,
+  "command": [
+    "bash",
+    "-c",
+    "source scripts/sheng_env.sh; export PYTHONDONTWRITEBYTECODE=1; exec python experiments/geometry-link/F9/code/engineering_cycle.py --prefix stereo-epipolar-native-sanity-001"
+  ],
+  "prefix": "stereo-epipolar-native-sanity-001",
+  "controller_log": "/home/sheng/paper6/logs/stereo-epipolar-native-sanity-001-controller.log",
+  "formal_AP_authorized_by_this_launcher": false,
+  "launcher_sha256": "897cd30a782c820e961c54167ec8143bcfb33f58353f148c1368b79f590a8236"
+}

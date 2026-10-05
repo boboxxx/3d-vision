@@ -1,0 +1,32 @@
+{
+  "state": "closed_candidate1_complete37120_training_native_local_all10_checkpoints_actual_terminal",
+  "candidate": 1,
+  "lambda_RD": 0.003,
+  "seed": 17,
+  "training_raw_job": "11425119",
+  "native_audit_job": "11425239",
+  "export_job": "11425247",
+  "actual_job_and_srun_steps_closed": true,
+  "local_stream_pipefail_exit_code": 0,
+  "checked_updates": 37120,
+  "checked_epoch_checkpoints": 10,
+  "checkpoint_saved_values": 955923300,
+  "proof_files": {
+    "native": {
+      "path": "data/provenance/ecsic-KITTI-lambda0.003-seed17-002-native-audit-003.json",
+      "sha256": "59dd4e590bd79db72e0f956673e16a21b971864b94914e6188ecdb40f82f74c2"
+    },
+    "local": {
+      "path": "data/provenance/ecsic-KITTI-lambda0.003-seed17-002-local-audit-003.json",
+      "sha256": "c887bf2a189d074a2a12678f20524584c621a228158cf0bfa809eaffca8dd4ff"
+    }
+  },
+  "updates_jsonl_sha256": "cf189eeb67a51e57690f0baeb5dc3c0b757125e4bcb378a0b085fb47cf065f15",
+  "ordered_CUDA_rng_identity_ledger_sha256": "e22a9958793c840d59209475d121282fba9368c5fa9fe5d1bfe2b80fdcea7e31",
+  "snapshot_sha256": "c2284f1294464c0f91e040c02d8a32d31be58c48f42f5c5f8871a01b716fd203",
+  "all_six_candidates_complete": false,
+  "actual_bytes_calibrated": false,
+  "AP_measured": false,
+  "full_raw_gradient_or_Adam_transition_replay": false,
+  "checked_unix": 1791205110.481211
+}

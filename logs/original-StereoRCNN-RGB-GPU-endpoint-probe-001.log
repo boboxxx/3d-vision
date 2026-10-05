@@ -1,0 +1,9 @@
+/home/sheng/paper6/third_party/Stereo-RCNN/lib/model/dense_align/box_3d.py:39: UserWarning: Using torch.cross without specifying the dim arg is deprecated.
+Please either pass the dim explicitly or simply use torch.linalg.cross.
+The default value of dim will change to agree with that of linalg.cross in a future release. (Triggered internally at ../aten/src/ATen/native/Cross.cpp:62.)
+  normal = torch.cross(arrow1, arrow2)
+{"condition": "clean_relay", "prediction_count": 5, "native_3D_counts": {"detections_2d": 5, "initial_solutions": 5, "dense_solutions": 5}, "calls": {"detector": 1, "image_backbone": 2, "dense_alignment": 1}}
+/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/torch/functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3595.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+{"condition": "identity", "prediction_count": 0, "native_3D_counts": {"detections_2d": 0, "initial_solutions": 0, "dense_solutions": 0}, "calls": {"detector": 1, "image_backbone": 2, "dense_alignment": 0}}
+{"condition": "awgn", "prediction_count": 0, "native_3D_counts": {"detections_2d": 0, "initial_solutions": 0, "dense_solutions": 0}, "calls": {"detector": 1, "image_backbone": 2, "dense_alignment": 0}}

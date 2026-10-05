@@ -1,0 +1,20 @@
+{
+  "state": "closed_failed_before_first_frame",
+  "closed_at_unix": 1791072492.086238,
+  "frames": 0,
+  "optimizer_updates": 0,
+  "cause": "all requires_grad flags disabled; native DDP rejects model with no gradient-enabled parameters",
+  "source_sha256": {
+    "project": "a58d63fa73eac55ae51a0dfcd83c313837e9d06586d48e71b6f1e471803fde28",
+    "liga": "e2495ab11c90143c14a6666c875c382131e4db0feb48711754bd2100ac8a9d29",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f"
+  },
+  "artifacts": {
+    "data/runs/pooling-diagnosis-seed17-001-control-pooling-report.json": "a56d672181b9f7f67d343324243527fcb11951a52f988093823cd3688e67bb4f",
+    "data/runs/pooling-diagnosis-seed17-001-control.json": "bfeec8895b2a7144ae6d271d269dbb3c7604f783cf88ceb757586dbb5bd06852",
+    "data/runs/pooling-diagnosis-seed17-001-control-pooling.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/engineering/pooling-diagnosis-seed17-001-failure.log": "2cd70de0f96267eca27a8be6dea4a97b6b7b38c3a593c86d167bf60be7107351"
+  },
+  "next": "repair DDP flag compatibility under explicit no_grad inference; same fixed protocol/checkpoint/conditions, unique newrunID"
+}

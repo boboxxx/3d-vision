@@ -1,0 +1,30 @@
+{
+  "state": "passed_all6080_transferred_byte_records_and_rate_choices",
+  "checked_unix": 1791145654.7429938,
+  "manifest_sha256": "ad41d390c7084a7279920cce7d881f327071630b3bf8852c65dbc88033379d62",
+  "audit_sha256": "e014bc8b45d172189eaaa43b7aeca7abb1cbdd1a34401fe59aa5ecca28dc5ecd",
+  "records_sha256": "9136119caa58c036cb9d35a96627ba29641a8263e23d0794818a08d7d48b7631",
+  "verifier_sha256": "06022e60b9e0d819e7e4ba7bf3224159488949b528c8ef3599eb80beeaecf20c",
+  "rows": 6080,
+  "selected_qualities": {
+    "10": {
+      "quality": 90,
+      "measured_ratio": 9.947833563866546,
+      "absolute_log_residual": 0.005230297805376264
+    },
+    "30": {
+      "quality": 39,
+      "measured_ratio": 30.062470202105118,
+      "absolute_log_residual": 0.0020801750051667846
+    },
+    "50": {
+      "quality": 17,
+      "measured_ratio": 49.7384857152573,
+      "absolute_log_residual": 0.005244011519988702
+    }
+  },
+  "source_PNGs_replayed_locally": false,
+  "candidate_wires_reencoded": false,
+  "KITTI_AP_measured": false,
+  "scope": "Full transferred records and independent pooled ratio/selection; native PNG/source checks executed on sheng"
+}

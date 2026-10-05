@@ -1,0 +1,25 @@
+{
+  "state": "passed",
+  "evidence_type": "exploratory_stereo_feature_warmup",
+  "steps": 3340,
+  "inactive_states_identical": 519,
+  "trained_parameter_tensors": 16,
+  "all_optimizer_update_counts": 3340,
+  "summary": {
+    "steps": 3340,
+    "unique_returned_frames": 3340,
+    "max_preclip_gradient": 1.7273406982421875,
+    "first100_loss_median": 1.2475757002830505,
+    "last100_loss_median": 0.6131930649280548,
+    "first100_stereo_mean_median": 0.756150558590889,
+    "last100_stereo_mean_median": 0.4945492446422577,
+    "first100_appearance_median": 0.46631699800491333,
+    "last100_appearance_median": 0.12009508535265923
+  },
+  "full_initialization_sha256": "ca3ff03210cee827fb2960d10af97ee6e7cdaab70ebe3bef7546ff200f69b6ad",
+  "checkpoint_sha256": "9a4b291070df160e6c03e75ed31eeee1dda7f6bfbaa0528a43a9cdf526977553",
+  "manifest_sha256": "eb77f7cf7e57d0f07660eef783256a67250d85bba56e27ae206428cb8018c196",
+  "source_manifest_sha256": "2efb2da861db7466e0ee2cd408970432bcbdc64244ecfd8700060031b47624e3",
+  "raw_snapshot_sha256": "051bda331ab632fc3e24d04fb6db8e2971c587fa627b87bb4f1c032659c4fe21",
+  "limitations": "exact state and saved scalar/counter audit; no fresh feature reconstruction or detection AP proof"
+}

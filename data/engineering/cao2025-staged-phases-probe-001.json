@@ -1,0 +1,161 @@
+{
+  "state": "passed",
+  "scope": "synthetic full-model phase/update engineering only; no formal weights or AP",
+  "stage_epochs": {
+    "1": 12,
+    "2": 10,
+    "3": 6,
+    "4": 10,
+    "5": 45
+  },
+  "total_formal_epochs": 83,
+  "torch_version": "2.4.1",
+  "device": "cpu",
+  "phases": [
+    {
+      "stage": 1,
+      "epoch": 1,
+      "loss_type": "global_charbonnier",
+      "rates": {
+        "global_encoder": 0.0002,
+        "global_decoder": 0.0002,
+        "fusions": 0.0001
+      },
+      "active_parameter_tensors": 562,
+      "frozen_state_tensors": 206,
+      "frozen_states_identical": true,
+      "active_gradients_finite": true,
+      "synthetic_untrained_loss": 0.25583595037460327,
+      "gradient_norm_before_clip": 0.14583159983158112
+    },
+    {
+      "stage": 1,
+      "epoch": 3,
+      "loss_type": "global_charbonnier",
+      "rates": {
+        "global_encoder": 0.0002,
+        "global_decoder": 0.0002,
+        "fusions": 0.0001,
+        "flow": 2.5e-05
+      },
+      "active_parameter_tensors": 622,
+      "frozen_state_tensors": 146,
+      "frozen_states_identical": true,
+      "active_gradients_finite": true,
+      "synthetic_untrained_loss": 0.25399208068847656,
+      "gradient_norm_before_clip": 0.05609280243515968
+    },
+    {
+      "stage": 2,
+      "epoch": 1,
+      "loss_type": "masked_charbonnier",
+      "rates": {
+        "key_encoders": 0.0001,
+        "key_decoders": 0.0002
+      },
+      "active_parameter_tensors": 16,
+      "frozen_state_tensors": 752,
+      "frozen_states_identical": true,
+      "active_gradients_finite": true,
+      "synthetic_untrained_loss": 0.09597928822040558,
+      "gradient_norm_before_clip": 0.2654058337211609
+    },
+    {
+      "stage": 3,
+      "epoch": 1,
+      "loss_type": "hybrid_charbonnier",
+      "rates": {
+        "fusions": 0.0001
+      },
+      "active_parameter_tensors": 12,
+      "frozen_state_tensors": 756,
+      "frozen_states_identical": true,
+      "active_gradients_finite": true,
+      "synthetic_untrained_loss": 0.21992871165275574,
+      "gradient_norm_before_clip": 0.09656593948602676
+    },
+    {
+      "stage": 4,
+      "epoch": 1,
+      "loss_type": "hybrid_charbonnier",
+      "rates": {
+        "global_encoder": 0.0001,
+        "global_decoder": 0.0001,
+        "key_encoders": 2e-05,
+        "key_decoders": 2e-05,
+        "fusions": 2e-05,
+        "flow": 1.25e-05
+      },
+      "active_parameter_tensors": 638,
+      "frozen_state_tensors": 130,
+      "frozen_states_identical": true,
+      "active_gradients_finite": true,
+      "synthetic_untrained_loss": 0.2188391238451004,
+      "gradient_norm_before_clip": 0.047299157828092575
+    },
+    {
+      "stage": 4,
+      "epoch": 6,
+      "loss_type": "global_charbonnier",
+      "rates": {
+        "global_encoder": 0.0001,
+        "global_decoder": 0.0001,
+        "key_encoders": 2e-05,
+        "key_decoders": 2e-05,
+        "fusions": 2e-05,
+        "flow": 1.25e-05
+      },
+      "active_parameter_tensors": 638,
+      "frozen_state_tensors": 130,
+      "frozen_states_identical": true,
+      "active_gradients_finite": true,
+      "synthetic_untrained_loss": 0.25353366136550903,
+      "gradient_norm_before_clip": 0.03691601753234863
+    },
+    {
+      "stage": 5,
+      "epoch": 1,
+      "loss_type": "semantic_mse",
+      "rates": {
+        "global_channel": 0.0001,
+        "key_channel": 0.0001
+      },
+      "active_parameter_tensors": 80,
+      "frozen_state_tensors": 640,
+      "frozen_states_identical": true,
+      "active_gradients_finite": true,
+      "synthetic_untrained_loss": 0.45849961042404175,
+      "gradient_norm_before_clip": 4.980685234069824
+    },
+    {
+      "stage": 5,
+      "epoch": 26,
+      "loss_type": "global_charbonnier",
+      "rates": {
+        "global_encoder": 0.0001,
+        "global_decoder": 0.0001,
+        "key_encoders": 2e-05,
+        "key_decoders": 2e-05,
+        "fusions": 2e-05,
+        "flow": 1.25e-05,
+        "global_channel": 0.0001,
+        "key_channel": 0.0001
+      },
+      "active_parameter_tensors": 718,
+      "frozen_state_tensors": 2,
+      "frozen_states_identical": true,
+      "active_gradients_finite": true,
+      "synthetic_untrained_loss": 0.5808924436569214,
+      "gradient_norm_before_clip": 4.359373092651367
+    }
+  ],
+  "source_hashes": {
+    "model.py": "da3ec01b947047e2640a5551b48ecc5719ffa398eae05e3dfa680940de8f0416",
+    "radio.py": "76ea572a5334de5bcb4a2fd89dc776661fd423e1ca5090fe769220245e9052f6",
+    "wireless.py": "11424b4e566065d7dbbc8c990351cf7fea451e4b67603c811a460a8ae10ffd7d",
+    "stages.py": "2f06e23be55c126c242b13d11b3da7dd15dc2790a383cd127e4255916472161f",
+    "probe_stages.py": "7b0ae827e2497a06e870e9a423af2ec33c51457f66852c5867380525139389e1"
+  },
+  "checkpoint_sha256": "3d2a1287666aa71752ebaedc06999212886ef476f77d691a1b0006107088e714",
+  "elapsed_seconds": 23.419694185256958
+}

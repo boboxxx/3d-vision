@@ -1,0 +1,40 @@
+{
+  "state": "exploratory_parameter_observation_from_fixed_verified_epoch3_checkpoints",
+  "checked_unix": 1791204641.348042,
+  "records": [
+    {
+      "arm": "G",
+      "seed": 17,
+      "fixed_epoch": 3,
+      "checkpoint_path": "data/engineering/cost-field-full-checkpoints-004/seed17/checkpoint-G-epoch3.pt",
+      "checkpoint_sha256": "130369c740c014e1e61893858191ff8f9c3baed689e3b1709ad9c2df871c4108",
+      "log_bandwidth": 2.251356363296509,
+      "bandwidth_m": 9.500613384356402,
+      "optimizer_step": 11136
+    },
+    {
+      "arm": "P",
+      "seed": 17,
+      "fixed_epoch": 3,
+      "checkpoint_path": "data/engineering/cost-field-full-checkpoints-004/seed17/checkpoint-P-epoch3.pt",
+      "checkpoint_sha256": "f52ba24e80525c67f415f05f5dd24339ebef4b1f58b7f14610ea0b6c3e243d1c",
+      "log_bandwidth": 2.0114428997039795,
+      "bandwidth_m": 7.474093938610836,
+      "optimizer_step": 11136
+    },
+    {
+      "arm": "S",
+      "seed": 17,
+      "fixed_epoch": 3,
+      "checkpoint_path": "data/engineering/cost-field-full-checkpoints-004/seed17/checkpoint-S-epoch3.pt",
+      "checkpoint_sha256": "e383f3fcff326f73af44fd3faf3dd4fcf0d6fa971b78da5a38d393ab8dd88d70",
+      "log_bandwidth": 3.545783758163452,
+      "bandwidth_m": 34.66684512038587,
+      "optimizer_step": 11136
+    }
+  ],
+  "S_definition": "native probability spatial roll half pooled height and width",
+  "validation_or_AP_used_for_selection": false,
+  "causal_geometry_advantage_or_calibrated_uncertainty_claim": false,
+  "read_only_observation": true
+}

@@ -1,0 +1,1843 @@
+project: stereo-geometry-semantic-communication
+target_venue: IEEE ICC 2027
+status: JPEG_JP2_source_AP_closed_seed17_geometry_and_SRCNN_running_ECSIC_formal_single_seed_operating_points_running
+continuity: user_requested_continuation_after_identity_check
+updated: '2026-10-05'
+objective: Original-paper-aligned reproduction, new geometry/risk method, verified sheng and Artemis experiments,
+  manuscript and submission package
+venue:
+  official_technical_paper_deadline: '2026-10-02'
+  extension: unverified_official_ComSoc_still_2026_10_02
+  official_deadline_rechecked: '2026-10-05'
+  conference_website_fetch: 502_Bad_Gateway_from_official_link_extension_unverified
+  source: https://www.comsoc.org/conferences-events/ieee-international-conference-communications-2027
+  official_deadline_rechecked_UTC: '2026-10-05T09:06:19.099477+00:00'
+compute:
+  host: sheng
+  environment: WSL2 Ubuntu 20.04.6
+  gpu: NVIDIA_RTX_4090_24564_MiB
+  cpu: Intel_i9_13900K_32_threads
+  ram: 31_GiB
+  code_root: /home/sheng/paper6
+  storage_root: /mnt/d/paper6
+  environment_path: /home/sheng/paper6/.venv
+  runtime: Python_3.10.15_PyTorch_2.5.0_cu118_MMCV_full_1.7.2_spconv_2.3.8
+  data: five_archives_verified_train3712_val3769_upstream_infos_verified
+  checkpoint: author_LIGA_checkpoint_484_of_484_weights_verified
+  checkpoint_sha256: 3f36af30b686f23d0868482675177b29cc50c2b378577dd12f9092ddb0235b2e
+  reachability: connected_verified_2026-10-05T01:07_UTC
+  remote_job_state_currently_verified: true
+  native_queue_pid: 54337
+  native_queue_state: finished_all_native_engineering_closed_actual_terminal
+  local_ControlPath: /private/tmp/paper6-sheng-01a10237.sock
+  ControlMaster_connected: true
+  native_queue_actual_terminal: true
+implementation:
+  upstream: LIGA-Stereo_aee3731a24a0ab1667e633e520cc89be2f135272
+  link: current_uniform_stereo_feature_transport_before_receiver_cost_535states
+  channel: AWGN_and_noisy_pilot_estimated_block_Rayleigh
+  engineering_tests: 23_full_suite_plus_1_new_DDP_record_test_passed
+  full_detector_GPU_execution: full_320x1280_synthetic_stereo_only_forward_passed
+  full_link_GPU_execution: full_320x1280_synthetic_forward_and_full_task_gradient_passed
+  runtime_operators: independent_CUDA_forward_backward_checks_passed
+  KITTI_evaluator_runtime: passed_fixture_with_NumBa_0.59.1_NVIDIA_bindings_11.8.7
+  server_deployment: completed_with_exact_source_hashes
+  original_downstream: complete_Stereo_RCNN_author_demo_3D_inference_verified
+  original_downstream_weights: branch1_670_of_670_author_state_tensors_matched
+  original_postprocess: exact_author_demo_and_KITTI_writer_agreement_7_3D_solutions
+  full_stereo_baseline: finished_3769_frames_independent_all_file_audit_passed
+  stereo_compatibility_run: finished_3769_frames_not_main_baseline
+  full_stereo_run: /mnt/d/paper6/runs/stereo-branch1-clean-seed17
+  stereo_branch1_checkpoint_sha256: b7a07a897224f75bc30b2d4c06f39927e92933a8bcaad6e679aff605b2346c14
+  matched_RGB_codec: full_forward_and_task_gradient_verified_untrained
+  raw_cost_boundary: full_forward_and_task_gradient_verified_exploratory
+  dense_transmitter_GFLOPs_lower_bound:
+    processed_geometry: 922.27
+    raw_geometry: 622.61
+    RGB: 15.37
+    raw_geometry_historical_linear: 619.01
+    student_geometry: 12.48
+    student_geometry_task: 12.512
+  lightweight_sender: optional_student_12.48_GFLOPs_lower_bound_untrained_no_deployment_claim
+  task_sensitivity_predictor: implemented_native_3D_gradient_distillation_GPU_verified_untrained
+  original_codec: full_native83_epochs_277220_actual_updates_all_stages_audited_final08a7c848
+  raw_cost_posterior: nonlinear_64_16_1_head_left_right_coupling_test_passed
+  student_GPU_execution: full_forward_55_finite_task_gradient_tensors_zero_inference_teachers
+  student_task_GPU_execution: full_forward_63_finite_new_gradient_tensors_zero_inference_teachers
+  LIGA_clean_run: /home/sheng/paper6/data/runs/liga-clean-seed17-003.json
+  LIGA_clean_validation: finished_3769_frames_independent_prediction_GT_AP_audit_passed
+  codec_tuning_protocol: experiments/geometry-link/tuning.md
+  codec_tuning_fold: original_train_only_3340_train_372_holdout
+  codec_tuning_run: /home/sheng/paper6/data/runs/tuning-student-uniform-seed17-002.json
+  codec_tuning_state: finished_3340_updates_checkpoint_and_scalar_audits_passed_native_AP_near_zero
+  codec_tuning_checkpoint_sha256: 640d326d95d51c0673de00a81ef78c5921903bcf8cf7b40e614fb3c02e9870e0
+  codec_tuning_holdout_channel_audit: first_auto_eval_rejected_zero_records_corrected_reevaluation_passed
+  corrected_codec_reevaluation: passed_372_predictions_channel_energy_and_independent_AP_audit
+  corrected_codec_holdout_Car_moderate_AP_R40_percent: 0.00999000999000999
+  corrected_codec_complex_uses_per_frame: 62400
+  corrected_codec_CBR: 0.026041666666666668
+  diagnostics_protocol: experiments/geometry-link/diagnostics.md
+  student_uncompressed_holdout_AP_R40_moderate: 0.0
+  clean_holdout_AP_R40_moderate: 99.86290209828039
+  diagnostic_AP_audits: both_passed_372_frames_no_main_validation_claim
+  next_exploratory_protocol: experiments/geometry-link/student-warmup.md
+  allocation_comparison: deferred_until_useful_encoder_codec_representation
+  student_feature_pretraining_protocol: experiments/geometry-link/student-warmup.md
+  student_feature_pretraining_run: /home/sheng/paper6/data/runs/student-feature-seed17-001.json
+  student_feature_pretraining_state: finished_five_epochs_16700_updates_full_training_and_native_AP_audits_passed
+  student_feature_pretraining_checkpoint_sha256: cefa61a9b2f18376109b156044442d14706f4f631e1e88810bca016a0f283334
+  student_feature_uncompressed_holdout_Car_moderate_AP_R40_percent: 11.002872098873862
+  student_feature_pretraining_original_state_tensors_unchanged: 484
+  student_feature_pretraining_epoch5_NMSE_stereo_left_right_appearance:
+  - 0.32468155178652014
+  - 0.32699194109888485
+  - 0.6652913790556693
+  original_semantic_variant_parameters: 12349974
+  original_semantic_variant_engineering: passed_local_and_sheng_CPU_forward_backward_638_finite_parameter_gradients
+  student_feature_pretraining_commit_before_launch: df055bb
+  student_feature_pretraining_source_sha256: e9bac702c1f130510f925968c18df7216fcd458aa6c7d8b2b4f73ff2815c2a63
+  student_feature_sanity: passed_3_actual_updates_484_original_states_identical_independent_audit
+  student_feature_sanity_trainable_parameter_tensors: 35
+  student_task_protocol: experiments/geometry-link/student-task-adaptation.md
+  student_task_run: /home/sheng/paper6/data/runs/student-task-seed17-001.json
+  student_task_state: finished3340_updates_native_frozen_state_CRC_and_strict_AP_audits_passed
+  student_task_checkpoint_sha256: 7e1ceacb4abff0bdb32ef89507b9786e1d80ae9c166ccaaeb4ffb4fcbd639bd2
+  student_task_strict_uncompressed_holdout_Car_moderate_AP_R40_percent: 42.31946018877924
+  student_task_original_state_unchanged: 481_of484_only_global_step_and2_native_imitation_buffers_allowed
+  student_task_audit_repair: native_LR_double_log_indices0_to3340_wrapper_preserves_frozen_training_sources
+  student_task_repeatability: three_AP_evaluations_preserved_repeat_audit_passed_max_difference0_015269pp_no_bitwise_identity
+  student_task_second_fresh_Car_moderate_AP_R40_percent: 42.317060019764554
+  student_task_AP_difference_record: data/runs/student-task-evaluation-difference-001.json
+  frozen_student_codec_warmup_protocol: experiments/geometry-link/frozen-student-codec-warmup.md
+  frozen_student_codec_warmup_state: completed3340_updates_frozen519_state_CRC_scalar_and_strict_AP_energy_audits_passed_negative
+  frozen_student_codec_warmup_run: /home/sheng/paper6/data/runs/frozen-student-uniform-seed17-001.json
+  frozen_student_codec_warmup_source_sha256: f25f56205ef2f50447fc6fe0cc3e7d845fb917430b3dbbe4510e7825e6fcd1ac
+  frozen_student_codec_warmup_commit_before_launch: b594811
+  frozen_student_codec_warmup_initial_CRC_complete_steps: 252
+  frozen_student_codec_warmup_final_CRC_complete_steps: 3340
+  frozen_student_codec_warmup_checkpoint_sha256: cb50b4d4073fb2e5be31533d949a2141a46389436a5080429753de8b038aef7c
+  frozen_student_codec_warmup_Car_moderate_AP_R40_percent: 0.0634880237191526
+  codec_identity_diagnostic: completed372_frames_AP_source_audit_passed_same_weights_zero_noise
+  codec_identity_Car_moderate_AP_R40_percent: 0.03980540772618452
+  codec_feature_diagnostic: completed372_passive_records_AP_feature_and_source_audits_passed
+  codec_identity_feature_cost_NMSE_cosine:
+  - 1.233874541894219
+  - 0.1080731511644117
+  codec_identity_feature_appearance_NMSE_cosine:
+  - 1.065629233598796
+  - 0.03492852595261567
+  codec_pool_interpolate_reference_cost_NMSE_cosine:
+  - 0.5924536959503756
+  - 0.6391054424365133
+  codec_pool_interpolate_reference_appearance_NMSE_cosine:
+  - 0.12754862622964938
+  - 0.9344262351224472
+  codec_feature_warmup_protocol: experiments/geometry-link/codec-feature-warmup.md
+  codec_feature_warmup_state: completed3340_updates_all_training_AP_feature_source_audits_passed_negative
+  codec_feature_warmup_implementation_commit: f94205b
+  codec_feature_warmup_source_sha256: 8d2c56c4c39f8ea8a587e4f0dfd1d4fdab41e636888a035e1b730dc53cca8208
+  codec_feature_warmup_trainable_parameter_tensors: 16
+  codec_feature_warmup_inactive_state_tensors: 533
+  original_staged_controller: all8_phase_boundary_CPU_updates_finite_active_gradients_frozen_states_unchanged
+  original_native_GPU_probe: 370x1224_stage1_and_stage5_joint_passed_562_and718_finite_gradients
+  original_native_GPU_peak_allocated_bytes_stage1_stage5:
+  - 5761686528
+  - 7065871872
+  original_wireless_variant_parameters: 12970798
+  original_wireless_variant_engineering: local_and_sheng_CPU_718_finite_parameter_gradients_control_CRC_energy_pilots_passed
+  original_wireless_holdout_layout_mean_complex_uses: 200065.44892473117
+  original_wireless_holdout_layout_control_fraction: 0.03247840387501149
+  frozen_student_codec_warmup_trainable_link_parameter_tensors: 28
+  frozen_student_codec_warmup_frozen_student_parameter_tensors: 35
+  student_task_implementation_commit_before_launch: dc08976
+  student_task_source_sha256: bc8e932b82af7162f7ff9688ed91b9eeb214e6df5cb8c5d6f336e7ac4ee7c46f
+  student_task_initialization: F1_epoch5_weights_only_all519_states_matched_no_new_random_parameters
+  student_task_early_CRC_complete_scalar_steps: 492
+  original_ROI_variant: official_YOLOv5n_v7_0_sensor_only_Car_Bus_Truck_conf0_25_IoU0_45
+  original_ROI_holdout: finished372_pairs_independent_full_fold_mask_audit_passed
+  original_ROI_training: finished3340_pairs_independent_full_fold_mask_audit_passed
+  risk_theory_scope: scalar_proxy_only_not_expected_AP_or_native_loss_theorem
+  additional_primary_overlap_audit: CodeFilling_CVPR2024_and_Video_TokenCom_arxiv2603_02470_method_read
+next:
+- finish_F8_two3340_update_arms_four372_endpoints_full_independent_closure_then_choose_supported_policy_experiment
+- close_Artemis_operator_GPU_probe_when_QOSGrpGRES_allocation_available
+- preserve_closed_original_RGB_baseline_and_use_identical_received_pixels_for_future_comparisons
+- port_Artemis_remaining_native_detector_dependencies_then_original_main_execution_addendum
+- integrate_verified_received_header_framing_resolve_ECSIC_6bit_calibration_and_match_detector_rate_energy_exposure
+- run_original_aligned_main_validation_seed17_first_then_manuscript_submission_package
+hypotheses:
+  H1: geometry-dependent power improves 3D AP at identical complex channel uses and energy
+  H2: direct task latent communication improves the AP versus channel-use frontier over RGB reconstruction
+  H3: geometry allocation remains useful under pilot-estimated block fading
+  H4: Local geometry may predict communication-induced variability separately from signed mean damage;
+    four-draw clipping can mimic useful mean-risk prediction
+publication_results: []
+required_gates:
+- sheng runtime and data validated
+- original full method reproduced or comparison explicitly unresolved
+- full detector clean-link baseline verified
+- fixed split and checkpoint identities
+- matched channel uses and energy, all side information counted
+- all currently required ablations completed; repeated seeds deferred by user
+- novelty audit against closest primary sources completed
+- manuscript claims backed by raw results
+- official ICC 2027 submission window and rules verified
+clean_detector_references:
+  stereo_branch1:
+    run: /mnt/d/paper6/runs/stereo-branch1-clean-seed17
+    frames: 3769
+    Car_3D_AP_R40_IoU_0_7_percent:
+    - 53.121511069211714
+    - 34.07497060953876
+    - 27.853506948982787
+    order:
+    - Easy
+    - Moderate
+    - Hard
+    interpretation: clean_detector_reference_not_original_communication_reproduction
+  LIGA:
+    run: /home/sheng/paper6/data/runs/liga-clean-seed17-003.json
+    frames: 3769
+    Car_3D_AP_R40_IoU_0_7_percent:
+    - 86.85533373629268
+    - 67.72381231472235
+    - 62.02867578588012
+    order:
+    - Easy
+    - Moderate
+    - Hard
+    interpretation: full_clean_detector_reference_not_communication_method_gain
+F4_closed:
+  checkpoint_sha256: 984771355f145441f785a8bca5ddde2762fec4925d504298b7fb9abe8c3f57f0
+  identity_and_AWGN10_Car_3d_AP_R40_percent:
+  - 0.0
+  - 0.0
+  next: original_staged_training_and_separate_task_geometry_diagnosis
+original_full_native_training:
+  protocol: reproduction/cao2025/formal-protocol.md
+  implementation_commit: bfee9d8
+  state: all83_epochs_complete_277220_updates_all5_independent_audits_and_actualterminal_passed
+  formal_epochs: 83
+  engineering_weights_used_for_formal: false
+  run_id: cao2025-full-native-seed17-001
+  pid: 26642
+  planned_training_samples: 277220
+  source_directory_frozen: reproduction/cao2025
+  next_geometry_diagnostic: experiments/geometry-link/pooling-diagnosis.md
+  last_observed_stage1_actual_updates: 40080
+  stage1_complete: true
+  stage2_complete: true
+  stage2_actual_updates: 33400
+  last_observed_stage3_actual_updates: 6200
+  current_stage: 5
+  stage12_local_verification: data/provenance/cao2025-full-native-seed17-001-stage12-local-verification.json
+  stage3_complete: true
+  stage4_complete: true
+  stage3_actual_updates: 20040
+  stage4_actual_updates: 33400
+  last_observed_stage5_actual_updates: 150300
+  last_observed_stage5_scope: final_complete_audit
+  stage5_complete: true
+  stage5_actual_updates: 150300
+  actual_cycle_terminal: true
+  final_checkpoint_sha256: 08a7c848dd4f11b8d55badb87793e2ad4d3c5c009395b4134a593bee49daf674
+  stage5_local_verification: data/provenance/cao2025-full-native-seed17-001-stage5-local-verification.json
+pooling_diagnosis:
+  state: completed1860frames_all5_AP_state_metadata_and_source_audits_passed
+  pid: 27918
+  run_id: pooling-diagnosis-seed17-002
+  conditions:
+  - control
+  - cost_only
+  - appearance_only
+  - both
+  - depth_preserved
+  planned_frames: 1860
+  training_updates: 0
+  frozen_root_source_sha256: 723f983470bebc738c654dce7aa48bd923b4165ee92e3b2744d0689ab3d3d1a8
+  interpretation: no_communication_or_oracle_AP_claim
+original_interim_prefix_audit:
+  state: passed_completed_stage1_epochs1_and2_only
+  samples: 6680
+  inactive_states_identical: 206
+  actual_Adam_states: 562
+  full12_epoch_stage_complete: false
+pooling_completed_Moderate_AP_R40_percent:
+  control: 42.31409807404212
+  cost_only: 0.016722408026755852
+  appearance_only: 40.39588128173474
+  both: 0.0
+  depth_preserved: 0.07899628252788103
+stereo_feature_boundary_F5:
+  protocol: experiments/geometry-link/stereo-feature-native-warmup.md
+  protocol_commit: 1494f2c
+  state: F5b_complete3340_and_two372_AP_feature_state_and_all4_source_audits_passed_low_AP
+  complex_uses: 62400
+  new_trainable_codec_tensors: 16
+  expected_complete_states: 535
+  frozen_predecessor_states: 519
+  formal_training_updates: 3340
+  initialization: fixedF2_all519_states_plus_seed17_fresh_codec
+  initial_F5_failure: stereo-feature-sanity-001_zero_updates_interface_assumption_failure_preserved
+  stereo_native_shape:
+  - 1
+  - 32
+  - 320
+  - 1248
+  appearance_native_shape:
+  - 1
+  - 32
+  - 80
+  - 312
+  stereo_pool:
+  - 16
+  - 1
+  stereo_real_code_width: 2
+  sanity_run: stereo-feature-native-sanity-001
+  sanity_steps: 3
+  training_peak_reserved_GiB: 0.486328125
+  DDP_peak_reserved_GiB: 3.845703125
+  run_id: stereo-feature-native-seed17-001
+  pid: 30987
+  implementation_commit: 34a40ab
+  engineering_result_commit: '9926412'
+  source_directory_frozen: F5b_root_freeze_released_only_after_terminal_full_source_closure_original_directory_stays_frozen
+  checkpoint_sha256: 9a4b291070df160e6c03e75ed31eeee1dda7f6bfbaa0528a43a9cdf526977553
+  identity_Car_Moderate_AP_R40_percent: 1.1551948752736578
+  AWGN10_Car_Moderate_AP_R40_percent: 0.13333333333333336
+  useful_wireless_performance_established: false
+original_flow_unfreeze_prefix_audit:
+  state: passed_completed_stage1epoch3_prefix_only
+  sealed_samples: 10020
+  complete_states: 768
+  inactive_states_identical: 146
+  nonflow562_Adam_steps: 10020
+  flow60_Adam_steps: 3340
+  full12_epoch_stage_complete: true
+  superseded_by_full_stage_audit: data/runs/cao2025-full-native-seed17-001-stage1-audit.json
+stereo_native_task_F6:
+  protocol: experiments/geometry-link/stereo-native-task-adaptation-empty-GT-repair.md
+  state: F6b_completed3340_both372_AP_feature_state_Adam_andall4source_audits_passed
+  initialization_sha256: 9a4b291070df160e6c03e75ed31eeee1dda7f6bfbaa0528a43a9cdf526977553
+  fixed_updates: 3340
+  engineering_updates: 3
+  channel: identity
+  complete_states: 535
+  trainable_codec_states: 16
+  frozen_states: 519
+  loss: native3D_classification_box_direction_no_teacher_depth_2D
+  required_native_memory_gate: true
+  implementation_commit: 950067f
+  sanity_run: stereo-native-task-sanity-001
+  task_peak_reserved_GiB: 6.82421875
+  DDP_peak_reserved_GiB: 3.845703125
+  failed_run: stereo-native-task-seed17-001
+  failure: overrestrictive_GT_shape_wrapper
+  failure_closure: data/provenance/stereo-native-task-seed17-001-failure-closure.json
+  repair_protocol: experiments/geometry-link/stereo-native-task-adaptation-empty-GT-repair.md
+  repair_engineering_updates: 6
+  repair_sanity_run: stereo-native-task-sanity-002
+  repair_implementation_commit: 950067f
+  repair_sanity_checkpoint_sha256: af4b36992f66ce256d373264fea8ab05024cacfa6c217f2fa2c39cfe6c5a7b1c
+  run_id: stereo-native-task-seed17-002
+  pid: 35280
+  engineering_result_commit: ca386a7
+  source_directory_frozen: F6b_rootfreeze_released_after_terminalfullclosure_original21_stillfrozen
+  formal_source_sha256: 42b4b52a174f9c2a8c365ea45b3477e87d4c8165d3254d6b04b97bd2dad74b21
+  last_observed_formal_scalar_rows: 3340
+  source_freeze_released: true
+  checkpoint_sha256: 77bc73021a139099e3d0f9c12e0fba8b17eb62f9b9c243eb8f0ad099bd6e8867
+  identity_Car_Moderate_AP_R40_percent: 25.399305182212718
+  AWGN10_Car_Moderate_AP_R40_percent: 18.515846464442347
+  empty_GT_training_frames: 62
+  complete_closure: data/provenance/stereo-native-task-seed17-002-closure.json
+original_detection_integration:
+  protocol: experiments/original-detector-integration/protocol.md
+  protocol_commit: dfdd3ad
+  state: final_trained768_both_native_receivers_GPU_passed_internal_formal_RGB_cache_running
+  source_directory: experiments/original-detector-integration
+  final_original768_checkpoint_available: true
+  LIGA_endpoint_implemented: true
+  native_CPU_probe: data/engineering/original-native-RGB-CPU-endpoint-probe-001.json
+  native_RGB_shape:
+  - 1
+  - 3
+  - 375
+  - 1242
+  native_CPU_probe_updates: 0
+  LIGA_preprocessing_implemented: true
+  LIGA_native_preprocessing_verified: data/engineering/original-LIGA-RGB-CPU-preprocess-probe-001.json
+  LIGA_native_GPU_probe: data/engineering/original-LIGA-RGB-GPU-endpoint-probe-001.json
+  LIGA_detector_states_readonly: 484
+  LIGA_codec_states_readonly: 768
+  StereoRCNN_GPU_protocol: experiments/original-detector-integration/StereoRCNN-native-GPU-engineering.md
+  StereoRCNN_GPU_protocol_commit: 6d53d52
+  StereoRCNN_GPU_implementation_commit: c3876b6
+  StereoRCNN_GPU_state: passed_clean_fresh768_identity_AWGN10_670_detector_and768_codec_states_readonly_no_AP
+stereo_channel_F7:
+  state: closed_both3340_paired_inputs_four372_AP_and535_readonly_all46_artifacts_actualterminal_local_verified
+  protocol: experiments/geometry-link/F7-matched-channel-adaptation.md
+  protocol_commit: fb89ffc
+  parent_sha256: 77bc73021a139099e3d0f9c12e0fba8b17eb62f9b9c243eb8f0ad099bd6e8867
+  arms:
+  - identity
+  - awgn
+  updates_per_arm: 3340
+  engineering_updates_per_arm: 6
+  complex_uses: 62400
+  SNR_uniform_dB:
+  - 0
+  - 20
+  SNR_schedule_seed: 1707
+  isolated_noise_seed: 1708
+  matched_augmented_data_fingerprints_required: true
+  endpoint_evaluations: 4
+  implementation_commit: 04408f9
+  local_evidence: data/engineering/native-recovery-local-CPU-002.json
+  local_regression_tests: 19
+  local_experiment_source_sha256: 66113f599ed26d3e0ca35d64540e82c0f6d5857682565a7a5781c5db91967379
+  root_source_unchanged_sha256: 42b4b52a174f9c2a8c365ea45b3477e87d4c8165d3254d6b04b97bd2dad74b21
+  code_directory: experiments/geometry-link/F7/code
+  native_engineering_completed: true
+  formal_training_started: true
+  engineering_prefix: stereo-channel-native-sanity-002
+  server_evidence: data/engineering/native-recovery-sheng-CPU-001.json
+  repair_implementation_commit: cd876c1
+  repair_protocol: experiments/geometry-link/F7/CUDA-device-repair-001.md
+  first_failure: unindexed_cuda_generator_device_not_equal_tensor_cuda0_before_first_optimizer
+  first_failure_closure: data/provenance/F7-first-native-engineering-failure-001-closure.json
+  engineering_closure: data/provenance/stereo-channel-native-sanity-002-closure.json
+  formal_prefix: stereo-channel-native-seed17-001
+  formal_wrapper_pid: 56637
+  formal_cycle_pid: 56655
+  launch_evidence_commit: 7d73866
+  formal_identity_updates: 3340
+  formal_identity_training_audit_passed: true
+  last_observed_formal_AWGN_updates: 3340
+  formal_AWGN_training_audit_passed: true
+  formal_actual_terminal: true
+  formal_closure: data/provenance/stereo-channel-native-seed17-001-closure.json
+  formal_local_verification: data/provenance/stereo-channel-native-seed17-001-local-verification-001.json
+  source_freeze_scope: F7_experiment_closed_project_roots_still_frozen_for_original_RGB
+  identity_trained_identity_test_Moderate_AP_R40_percent: 25.607495963649363
+  identity_trained_AWGN10_test_Moderate_AP_R40_percent: 17.402863631619304
+  AWGN_trained_identity_test_Moderate_AP_R40_percent: 26.191523275266583
+  AWGN_trained_AWGN10_test_Moderate_AP_R40_percent: 24.53278277452134
+  primary_AWGN10_Moderate_gain_pp: 7.129919142902036
+  interpretation: single_seed_internal_matched_adaptation_not_geometry_or_mainval_result
+original_stage34_verification:
+  state: passed_full_stages3and4_server_independent_audits_and_local_sealed_record_check
+  samples: 53440
+  stage3_epochs: 6
+  stage3_active_states: 12
+  stage3_inactive_states: 756
+  stage4_epochs: 10
+  stage4_active_states: 638
+  stage4_inactive_states: 130
+  local_evidence: data/provenance/cao2025-full-native-seed17-001-stage34-local-verification.json
+  stage5_last_verified_samples: 150300
+  stage5_last_verified_epoch: 45
+  stage5_final_audit_complete: true
+original_final_RGB_evaluation:
+  protocol: experiments/original-detector-integration/final-code/evaluation-protocol.md
+  protocol_commit: 7e6f3e4
+  implementation_commit: 0f6d65c
+  state: closed_all_six_server_audits_actual_terminal_and_complete_local_prediction_GT_verification
+  source_sha256: 89c6a1e4801e5b1ff1f743fdbfa8d67b0bfc6c972efe963272f0d09b770469c6
+  native_receiver_queue_pid: 54337
+  native_receiver_queue_state: finished_all_native_engineering_closed_actual_terminal
+  formal_condition_count: 6
+  formal_original768_weight_available: true
+  formal_cache_or_AP_started: true
+  native_receiver_checks_completed: true
+  README: experiments/original-detector-integration/README-final-evaluation.md
+  failed_previous_queue: final-receiver-queue-001_terminal_before_new_receiver_probes
+  formal_AP_started: true
+  formal_wrapper_pid: 56638
+  formal_cycle_pid: 56656
+  prefix: original-final-native-seed17-001
+  launch_evidence_commit: 7d73866
+  last_observed_identity_cache_frames: 372
+  last_observed_AWGN10_cache_frames: 372
+  both_cache_audits_passed: true
+  last_observed_native_clean_relay_frames: 372
+  last_observed_completed_endpoint_audits: 6
+  formal_actual_terminal: true
+  full_local_prediction_GT_files_verified: 2982
+  complete_evidence_commit: 7bc6c27
+  closure_evidence: data/provenance/original-final-native-seed17-001-closure.json
+  local_verification: data/provenance/original-final-native-seed17-001-local-verification-001.json
+  mean_complex_uses: 200065.44892473117
+  Moderate_AP_R40_percent:
+    stereo_rcnn:
+      clean_relay: 40.49105380063896
+      identity: 40.53297439929175
+      awgn10: 41.760362568650486
+    liga:
+      clean_relay: 99.86290209828039
+      identity: 79.36053793549623
+      awgn10: 75.9221159317749
+  latest_live_evidence: data/provenance/original-final-live-progress-005.json
+compute_artemis:
+  host: artemis-ood
+  user: wc296
+  account: engdes
+  gpu: NVIDIA RTX PRO 6000 Blackwell Server Edition
+  gpu_memory_MiB: 97887
+  gpu_partition: enginf
+  gpu_GRES: gpu:RTX:1
+  code_storage_root: /mnt/nfs2/engdes/wc296/paper6
+  environment_path: /mnt/nfs2/engdes/wc296/paper6/envs/torch-cu128-001
+  runtime: Python3.12_torch2.7.1+cu128_numpy1.26.4_Pillow10.2.0
+  hardware_and_matrix_conv3d_native_passed: true
+  original_native_two_discarded_updates_passed: true
+  completed_exit0_jobs:
+  - 11423895
+  - 11423897
+  - 11423898
+  - 11423908
+  - 11423973
+  - 11423980
+  data_state: all5_archives_full_CRC_SHA_7481_component_IDsets_fixed3712_3769_splits_verified_actual_CPUjob_terminal
+  data_job: 11423915
+  detector_native_operators_verified: true
+  full_native_detector_GPU_verified: false
+  operator_verification_scope: cost_volume_forward_and_feature_gradients_BEV_IoU_NMS_point_membership_fixtures_only
+  detector_operator_CPU_build_job: 11423973
+  detector_operator_CPU_build_actual_terminal_exit0: true
+  detector_operator_GPU_probe_job: 11423980
+  detector_operator_GPU_probe_state: completed_actual_terminal_exit0_native_and_local_all_fixture_checks_passed
+  detector_operator_GPU_probe_node: artemis-rtx-03
+  detector_operator_GPU_allocation_released: true
+  detector_operator_GPU_terminal: data/engineering/artemis-detector-operators-GPU-terminal-001.json
+  detector_operator_GPU_local_proof: data/provenance/artemis-detector-operators-GPU-local-verification-001.json
+  detector_operator_GPU_analysis: experiments/artemis-detector-operators/analysis-001.md
+  detector_operator_toolkit: isolated_official_CUDA12.8.1_nvcc12.8.93_sm120
+  detector_operator_CPU_build_evidence: data/engineering/artemis-detector-operators-build-terminal-001.json
+  detector_operator_protocol_commit: e5d7094
+  formal_training_or_AP_started: false
+  digital_runtime: independent_CPU_torch2.9.1+cpu_numpy2.2.6_Sionna2.1.0_PHY_only_RT_omitted
+  digital_CPU_jobs_completed_exit0:
+  - 11423924
+  - 11423929
+  data_evidence: data/engineering/artemis-data-deployment-001.json
+  data_terminal_evidence: data/engineering/artemis-data-terminal-001.json
+original_main_scenarios:
+  protocol: experiments/original-paper-scenarios/protocol.md
+  protocol_commit: 6fd1ca4
+  unique_conditions: 154
+  table_appearances: 167
+  CPU_checks_local_and_sheng: 7
+  native_training_frame_smoke: '000000'
+  actual_JPEG_JP2_bitstreams_passed: true
+  LDPC_implemented: true
+  ECSIC_entropy_stream_available: true
+  main_AP_started: false
+  main_clean_validation_previously_inspected: true
+  LDPC_identity_native_streams_verified: true
+  LDPC_configuration: declared_NR38.212_n1944_k1296_QAM64_and_k972_QAM256_BP20_variant
+  LDPC_CPU_checks: 12
+  LDPC_actual_packet_records: 8
+  LDPC_local_independent_audit: data/provenance/digital-transceiver-CPU-001-local-verification.json
+  digital_main_framing_and_ECSIC_unresolved: true
+  digital_received_header_framing_verified: true
+  digital_framing_CPU_jobs_completed_exit0:
+  - 11424046
+  - 11424047
+  digital_framing_protocol_commit: 36bdef4
+  digital_framing_actual_packets: 10
+  digital_framing_local_and_Artemis_checks: 68
+  digital_framing_independent_evidence: data/provenance/digital-framing-CPU-001-local-verification.json
+  digital_framing_assumptions: ideal_radio_frame_boundaries_and_public_code_configuration
+  digital_cross_platform_native_pixel_equality: false
+  digital_fixed_receiver_or_shared_received_pixel_cache_required: true
+geometry_risk_pilot:
+  protocol: experiments/geometry-risk/protocol-001.md
+  protocol_commits:
+  - e24f248
+  - 86ca55d
+  state: native_two_frame_260_pass_engineering_closed_independent_full_audit_and_transferred_raw_rows_passed
+  scope: training_only_stereo_ambiguity_vs_preventable_native_loss_damage_no_AP
+  GPU_execution_started: true
+  GPU_engineering_actual_terminal: true
+  historical_synthetic_implementation_commit: 1ecc77d
+  historical_synthetic_evidence: data/engineering/geometry-risk-local-CPU-001.json
+  native_protocol: experiments/geometry-risk/native-engineering-001.md
+  native_protocol_commit: ae0889d
+  public_support_clarification_commit: 7ed7548
+  native_implementation_commit: dc66f20
+  local_evidence: data/engineering/geometry-risk-native-local-CPU-002.json
+  sheng_CPU_evidence: data/engineering/geometry-risk-native-sheng-CPU-001.json
+  sealed_sheng_CPU_gate_sha256: 41f521193903968f81527e9d37985a1d76f2da6fd2afa57b7cb99b20e200fd0a
+  CPU_checks: 8
+  queued_controller_PID: 68491
+  queue_state: native_engineering_terminal_independent_audit_pending_closed_by_independent_audit
+  launch_evidence: data/runs/geometry-risk-native-engineering-001-launch.json
+  engineering_ids:
+  - '000000'
+  - '000003'
+  planned_native_passes: 260
+  planned_attempted_complex_uses: 16224000
+  sole_F6b_parent_sha256: 77bc73021a139099e3d0f9c12e0fba8b17eb62f9b9c243eb8f0ad099bd6e8867
+  independent_auditor: data/provenance/verify-geometry-risk-native-engineering-001.py
+  independent_native_audit_executed: true
+  native_audit_evidence: data/provenance/geometry-risk-native-engineering-001-audit.json
+  transferred_verification: data/provenance/geometry-risk-native-engineering-001-transferred-verification-001.json
+  native_actual_rows: 260
+  optimizer_updates: 0
+  readonly_states: 535
+  complete_evidence_commit: 7bc6c27
+  full64_execution_addendum: experiments/geometry-risk/pilot-execution-001.md
+  full64_execution_addendum_commit: 8ea728b
+  full64_pilot_executed: true
+  full64_implementation_commit: 621113f
+  full64_stats_CPU_checks: 5
+  full64_PID: 74257
+  full64_actual_terminal: true
+  full64_actual_frames: 64
+  full64_actual_native_passes: 8320
+  full64_actual_attempted_complex_uses: 519168000
+  full64_state: closed_native_and_five_ridge_audits_passed_independent_local_recomputation
+  full64_launch_evidence: data/runs/geometry-risk-pilot-001-launch.json
+  full64_manifest: data/runs/geometry-risk-pilot-001.json
+  full64_first_norm_audit_failure_retained: data/provenance/geometry-risk-pilot-001-audit-attempt-001.json
+  full64_second_GT_class_audit_failure_retained: data/provenance/geometry-risk-pilot-001-audit-attempt-002.json
+  full64_independent_native_audit: data/provenance/geometry-risk-pilot-001-native-audit.json
+  full64_independent_ridge_audit: data/provenance/geometry-risk-pilot-001-ridge-audit.json
+  full64_independent_local_ridge_audit: data/provenance/geometry-risk-pilot-001-ridge-local-audit-001.json
+  full64_transferred_raw_audit: data/provenance/geometry-risk-pilot-001-transferred-verification-001.json
+  full64_all_common_groups: 2048
+  full64_geometry_positive_Spearman:
+    mean: 0.0445543340688022
+    defined_frames: 32
+    undefined_frames: 0
+    bootstrap_defined_resamples: 1000
+    percentile_95_interval:
+    - -0.022727347494421974
+    - 0.11324075083331071
+  full64_gradient_variance_Spearman:
+    mean: 0.8834081744868034
+    defined_frames: 32
+    undefined_frames: 0
+    bootstrap_defined_resamples: 1000
+    percentile_95_interval:
+    - 0.8615620990652492
+    - 0.9016461235337242
+  full64_conclusion: coarse_geometry_not_supported_as_mean_damage_priority_gradient_strongly_orders_variability_no_AP_or_allocation_claim
+geometry_risk_antithetic:
+  state: closed_full8_native_and_server_local_frozen_statistics_audits_passed
+  protocol: experiments/geometry-risk/antithetic-protocol-001.md
+  protocol_sha256: 2b464b554e4201ba4ada5eca48813ab9379caf1606f888af459a43bc8872faa3
+  ids:
+  - '000120'
+  - '000121'
+  - '000123'
+  - '000125'
+  - '000127'
+  - 000129
+  - '000130'
+  - '000131'
+  split_sha256: 32b696342d12bdcce29cd1f927d327a1c0c85a590cc16af0f0fd4db2f39f440d
+  pairs_per_group: 16
+  groups: 32
+  planned_native_passes: 8208
+  planned_attempted_complex_uses: 512179200
+  seed: 2804
+  inference_policy_trained: false
+  implementation_commit: bfe7999
+  CPU_evidence_commit: 7df425c
+  CPU_checks: 6
+  CPU_gate_sha256: 70aba7a2d14f4661cec0251e5d0214ab0f42918baac1fe5f2f49ebecbf7b1f12
+  actual_PID: 161285
+  completed_frames_at_snapshot: 8
+  completed_passes_at_snapshot: 8208
+  launch_evidence: data/runs/geometry-risk-antithetic-001-launch.json
+  native_auditor: data/provenance/verify-geometry-risk-antithetic-001.py
+  statistics_auditor: data/provenance/verify-geometry-risk-antithetic-statistics-001.py
+  actual_terminal: true
+  actual_attempted_complex_uses: 512179200
+  independent_noise_draws: 4104
+  actual_ended_unix: 1791132544.1040587
+  source_freeze_closed: true
+  readonly_states: 535
+  optimizer_updates: 0
+  common_support_groups: 256
+  native_audit: data/provenance/geometry-risk-antithetic-001-native-audit.json
+  local_transferred_audit: data/provenance/geometry-risk-antithetic-001-transferred-verification-001.json
+  server_statistics_audit: data/provenance/geometry-risk-antithetic-001-statistics-audit.json
+  local_statistics_audit: data/provenance/geometry-risk-antithetic-001-statistics-local-audit-001.json
+  analysis: experiments/geometry-risk/antithetic-analysis-001.md
+  geometry_signed_mean_Spearman:
+    mean: -0.0598423753665689
+    defined_frames: 8
+    undefined_frames: 0
+    bootstrap_defined_resamples: 1000
+    percentile_95_interval:
+    - -0.17852478922287388
+    - 0.05280081561583576
+  geometry_variance_Spearman:
+    mean: 0.4512005131964809
+    defined_frames: 8
+    undefined_frames: 0
+    bootstrap_defined_resamples: 1000
+    percentile_95_interval:
+    - 0.3745750091642228
+    - 0.5341825513196481
+  gradient_variance_Spearman:
+    mean: 0.9601356304985336
+    defined_frames: 8
+    undefined_frames: 0
+    bootstrap_defined_resamples: 1000
+    percentile_95_interval:
+    - 0.9480377107771261
+    - 0.9724156891495601
+  conclusion: current_geometry_orders_variability_but_no_positive_mean_damage_evidence_no_AP_or_allocation_claim
+  historical_last_live_observation_UTC: '2026-10-04T16:38:26Z'
+stereo_encoder_F8:
+  state: closed_full_paired_training_four_endpoints_local_verification
+  protocol: experiments/geometry-link/F8-matched-encoder-adaptation.md
+  protocol_commit: ad64d76
+  protocol_sha256: c99250196dfb1c4823b1a6472f24c497e6f84d482efd875944db4bf31c1a668b
+  sole_F7_AWGN_parent_sha256: ea93fb1ec7d7328e0ae603ec40385882da255414e876efa2c1abda4fa4de36a3
+  arms:
+  - codec_only
+  - joint_student_codec
+  trainable_tensors:
+  - 16
+  - 51
+  fixed_updates_per_arm: 3340
+  engineering_updates_per_arm: 6
+  planned_internal_endpoints: 4
+  SNR_seed: 1717
+  noise_seed: 1718
+  novelty_claim: false
+  implementation_commit: 9ec24db
+  root_repair_commit: 7fabcd8
+  prelaunch_failure: data/provenance/F8-prelaunch-path-failure-001.json
+  CPU_checks: 7
+  CPU_local: data/engineering/F8-local-CPU-003.json
+  CPU_sheng: data/engineering/F8-sheng-CPU-003.json
+  native_engineering_prefix: stereo-encoder-native-sanity-001
+  native_engineering_PID: 167167
+  native_engineering_actual_terminal: true
+  native_engineering_closure: data/provenance/stereo-encoder-native-sanity-001-closure.json
+  native_engineering_local_verification: data/provenance/stereo-encoder-native-sanity-001-local-verification-001.json
+  native_engineering_evidence_commit: 1ffa084
+  formal_prefix: stereo-encoder-native-seed17-001
+  formal_PID: 167748
+  formal_codec_manifest_steps: 3340
+  formal_codec_actual_raw_rows: 3340
+  formal_joint_started: true
+  formal_endpoints_completed: 4
+  source_freeze_active: false
+  live_evidence: data/provenance/F8-formal-live-progress-002.json
+  formal_local_auditor: data/provenance/verify-F8-formal-local-001.py
+  formal_local_auditor_executed: true
+  formal_joint_optimizer_steps: 3340
+  formal_training_pair_audit_passed: true
+  formal_actual_terminal: true
+  formal_closure: data/provenance/stereo-encoder-native-seed17-001-closure.json
+  formal_local_verification: data/provenance/stereo-encoder-native-seed17-001-local-verification-001.json
+  primary_AWGN10_Moderate_joint_minus_codec_pp: 3.2863695330332376
+  formal_metrics:
+    stereo-encoder-native-seed17-001-codec-test-identity:
+      Car_3d/easy_R40: 47.07845712524815
+      Car_3d/moderate_R40: 25.664854076190046
+      Car_3d/hard_R40: 21.252795725280198
+    stereo-encoder-native-seed17-001-codec-test-awgn:
+      Car_3d/easy_R40: 41.92429535620373
+      Car_3d/moderate_R40: 22.37853643730824
+      Car_3d/hard_R40: 18.633586438570816
+    stereo-encoder-native-seed17-001-joint-test-identity:
+      Car_3d/easy_R40: 48.912255434397046
+      Car_3d/moderate_R40: 28.013624861142127
+      Car_3d/hard_R40: 23.062692975116057
+    stereo-encoder-native-seed17-001-joint-test-awgn:
+      Car_3d/easy_R40: 48.16432563335844
+      Car_3d/moderate_R40: 25.66490597034148
+      Car_3d/hard_R40: 21.70880992920751
+  analysis: experiments/geometry-link/F8/analysis.md
+  historical_last_live_observation_UTC: '2026-10-04T17:45:03.772103+00:00'
+  terminal_observed_UTC: '2026-10-04T17:49:42.365713+00:00'
+ecsic_entropy:
+  state: fixed_two_inputs_actual_entropy_bytes_independently_closed
+  official_source_revision: 696f4ae4f250bb1fc750ae9ec23e9c98c2c7e6db
+  weight_sha256: e66b55e2f888f5d113ea6c6414640c7486280d6e18838ba77c650720a5636052
+  checkpoint_state_tensors: 225
+  stage_A: ecsic-recovery-stageA-001
+  stage_B: ecsic-entropy-stageB-002
+  failed_stage_B_preserved: ecsic-entropy-stageB-001
+  container_bytes:
+    synthetic32x64: 813
+    training000000: 44824
+  all18_arrays_exact_each_case: true
+  source_only_CPU_runtimes_matched: true
+  native_Cxx_rANS_all_eight_streams_match: true
+  CPU_malformed_cases_each_runtime: 204
+  main_AP_or_physical_channel_run: true
+  analysis: experiments/original-paper-scenarios/ecsic-entropy-analysis-001.md
+  local_metadata_and_payload_verification: data/provenance/ecsic-transferred-verification-001.json
+  next: KITTI_training_only_operating_points_and_complete_main_reception_AP
+  physical_channel_engineering_run: true
+  main_AP_run: false
+ecsic_digital:
+  state: closed_full20_native_PHY_and_independent_replay_audit_transferred_metadata_verified
+  protocol_commit: 728df8d
+  implementation_commit: d73015c
+  native_CPU_job: 11424223
+  independent_audit_CPU_job: 11424237
+  actual_terminal_all_steps_exit0: true
+  packets: 20
+  received: 11
+  erased: 9
+  auditor: data/provenance/verify-ecsic-digital-CPU-001.py
+  audit: data/provenance/ecsic-digital-CPU-001-audit.json
+  transferred_verification: data/provenance/ecsic-digital-transferred-verification-001.json
+  analysis: experiments/original-paper-scenarios/ecsic-digital-analysis-001.md
+  neural_reconstruction_executed: true
+  KITTI_AP_measured: false
+stereo_epipolar_F9:
+  state: closed_actual_terminal_all16_AP_audits_and_local6156_artifact_verification
+  protocol: experiments/geometry-link/F9-epipolar-conditioned-JSCC.md
+  protocol_commit: d8b3532
+  protocol_sha256: c4bb907e4b7663bb639675c3dd218b16f1f52084d7597b6da0a3719c42a6b89a
+  implementation_commits:
+  - 7ca9715
+  - bde2089
+  - '4641563'
+  arms:
+  - U
+  - G
+  - P
+  - S
+  sole_F8_joint_parent_sha256: 6e54ebc5fa696db26b3902cdd129ff42544635db4cfb56dfdb7f4b94841c5193
+  head_tensors: 4
+  head_parameters: 561
+  full_model_states: 539
+  trainable_tensors:
+  - 51
+  - 55
+  - 55
+  - 55
+  complex_uses_per_frame: 62400
+  engineering_updates_per_arm: 6
+  formal_updates_per_arm: 3340
+  planned_internal_endpoints: 16
+  core_CPU_local: data/engineering/F9-coupling-local-CPU-001.json
+  core_CPU_tests: 11
+  training_CPU_local: data/engineering/F9-training-local-CPU-002.json
+  training_CPU_tests: 4
+  native_engineering_started: true
+  formal_training_or_AP_started: true
+  source_freeze_active: false
+  core_CPU_sheng: data/engineering/F9-coupling-sheng-CPU-001.json
+  training_CPU_sheng: data/engineering/F9-training-sheng-CPU-001.json
+  native_engineering_actual_terminal: true
+  native_engineering_PID: 255389
+  native_engineering_prefix: stereo-epipolar-native-sanity-001
+  native_engineering_closure: data/provenance/stereo-epipolar-native-sanity-001-closure.json
+  native_engineering_local_verification: data/provenance/stereo-epipolar-native-sanity-001-local-verification-001.json
+  native_engineering_actual_rows: 24
+  analysis: experiments/geometry-link/F9/engineering-analysis-001.md
+  next: retain_negative_primary_finish_main_baselines_review_geometric_mechanism_with_matched_controls
+  native_engineering_evidence_commit: 230924b
+  evaluation_integration_protocol: experiments/geometry-link/F9/evaluation-integration-protocol-001.md
+  evaluation_integration_protocol_commit: a283d09
+  evaluation_integration_protocol_sha256: 1c2a730d20d9280b578a6ab58c999ae553ea1b614e19ed2d680c587fa3243ce5
+  evaluation_integration_implemented: true
+  evaluation_integration_native_closed: true
+  evaluation_integration_frames: 48
+  evaluation_integration_reference_equalities: 8
+  evaluation_integration_PID: 258021
+  evaluation_integration_closure: data/provenance/stereo-epipolar-evaluation-integration-001-closure.json
+  evaluation_integration_local_verification: data/provenance/stereo-epipolar-evaluation-integration-001-local-verification-001.json
+  evaluation_CPU_tests: 10
+  evaluation_CPU_local: data/engineering/F9-evaluation-local-CPU-005.json
+  evaluation_CPU_sheng: data/engineering/F9-evaluation-sheng-CPU-001.json
+  formal_AP_started: true
+  formal_PID: 260096
+  formal_prefix: stereo-epipolar-native-seed17-001
+  formal_interface_protocol: experiments/geometry-link/F9/formal-cycle-interface-001.md
+  formal_interface_protocol_commit: 52a4070
+  formal_cycle_implementation_commit: 7aabddc
+  formal_launch_commit: 47491f2
+  formal_source_manifest: data/provenance/server-source-manifest-stereo-epipolar-native-seed17-001.json
+  formal_evaluation_manifest: data/provenance/server-evaluation-source-manifest-stereo-epipolar-native-seed17-001.json
+  formal_live_progress: data/provenance/F9-formal-live-progress-008.json
+  formal_current_arm: all_finished
+  formal_U_complete_rows_observed: 3340
+  formal_live_checked_unix: 1791147268.4273932
+  formal_completed_endpoints: 16
+  formal_evaluation_CPU_tests: 12
+  formal_CPU_local: data/engineering/F9-evaluation-local-CPU-007.json
+  formal_CPU_sheng: data/engineering/F9-evaluation-sheng-CPU-002.json
+  formal_training_progress_observed:
+    U:
+      state: finished
+      manifest_sha256: 9a69f8a611fb0c2d27354ec8f8427a92c4db84d51d7f89270cdb96acbef49701
+      reported_optimizer_steps: 3340
+      complete_raw_rows: 3340
+      last_actual_completed_step: 3340
+      incomplete_trailing_record: false
+    G:
+      state: finished
+      manifest_sha256: e1b4d13196030f6b09e395c518df89415df2457435b6e9ca15dc6021f41d3d6f
+      reported_optimizer_steps: 3340
+      complete_raw_rows: 3340
+      last_actual_completed_step: 3340
+      incomplete_trailing_record: false
+    P:
+      state: finished
+      manifest_sha256: 6d9f0758fe5bef5e09413b09643bb5ea9a295d4121589d841962a0b587c4791b
+      reported_optimizer_steps: 3340
+      complete_raw_rows: 3340
+      last_actual_completed_step: 3340
+      incomplete_trailing_record: false
+    S:
+      state: finished
+      manifest_sha256: 3f219b69dee402d6f6eab1adc9d1f51c99e8cc92acf3208ec54dc70bbc9092e6
+      reported_optimizer_steps: 3340
+      complete_raw_rows: 3340
+      last_actual_completed_step: 3340
+      incomplete_trailing_record: false
+  formal_local_verifier: data/provenance/verify-F9-formal-local-002.py
+  formal_local_verifier_executed: true
+  formal_training_all_four_complete: true
+  formal_training_updates_actual: 13360
+  formal_training_audits_complete: true
+  formal_terminal_closure: data/provenance/close-F9-formal-002.py
+  terminal_path_clarification: experiments/geometry-link/F9/terminal-path-clarification-002.md
+  formal_actual_terminal: true
+  formal_completed_commands: 56
+  formal_closure: data/provenance/stereo-epipolar-native-seed17-001-closure.json
+  formal_local_verification: data/provenance/stereo-epipolar-native-seed17-001-local-verification-001.json
+  formal_artifacts_verified: 6156
+  formal_inference_rows: 5952
+  formal_prediction_files: 5952
+  formal_geometry_primary_supported: false
+  formal_prelocked_differences_pp:
+    P_minus_G: -0.10689791839929086
+    P_minus_S: -0.3642167945851291
+    P_minus_U: 0.8810600928230556
+  formal_evidence_commit: b277c1c
+  formal_analysis: experiments/geometry-link/F9/formal-analysis-001.md
+ecsic_neural_reception:
+  state: closed_actual_terminal_native_raw_array_and_local_metadata_verification
+  protocol_commit: e3ac2d1
+  implementation_commit: 0be89ec
+  launch_commit: 13fac9d
+  actual_PID: 261130
+  actual_terminal: true
+  packets: 20
+  received: 11
+  erased: 9
+  full_arrays_exact: 198
+  cropped_views_exact: 22
+  readonly_model_states: 225
+  native_artifacts_freshly_hashed: 67
+  local_artifacts_verified: 75
+  local_raw_arrays_replayed: false
+  KITTI_AP_measured: false
+  closure: data/provenance/ecsic-neural-reception-native-001-closure.json
+  local_verification: data/provenance/ecsic-neural-reception-native-001-local-verification-001.json
+  analysis: experiments/original-paper-scenarios/ecsic-neural-reception-analysis-001.md
+  next: KITTI_training_only_operating_points_and_complete_shared_reception_cache_detector_AP
+jpeg_rate_calibration:
+  state: closed6080_native_encodes_and_full_transferred_record_audit
+  protocol_commit: fc7ae0d
+  implementation_commit: 936ecb7
+  actual_PID: 262111
+  actual_terminal: true
+  fixed_training_pairs: 64
+  native_source_files: 128
+  real_pair_encodes: 6080
+  selected_qualities:
+    '10':
+      quality: 90
+      measured_ratio: 9.947833563866546
+      absolute_log_residual: 0.005230297805376264
+    '30':
+      quality: 39
+      measured_ratio: 30.062470202105118
+      absolute_log_residual: 0.0020801750051667846
+    '50':
+      quality: 17
+      measured_ratio: 49.7384857152573
+      absolute_log_residual: 0.005244011519988702
+  mainval_observed: false
+  KITTI_AP_measured: false
+  candidate_wires_reencoded_by_auditor: false
+  local_verification: data/provenance/original-jpeg-rate-calibration-001-local-verification-001.json
+  analysis: experiments/original-paper-scenarios/jpeg-rate-calibration-analysis-001.md
+  next: six_complete_JPEG_JPEG2000_3769_shared_caches_launched_main_AP_pending
+source_reception_caches:
+  state: closed_all22614_native_pairs_and_complete_local_metadata
+  protocol_commit: 752df9b
+  implementation_commit: d4efa49
+  engineering_evidence_commit: 4602a55
+  engineering_PID: 265448
+  engineering_actual_terminal: true
+  engineering_pairs: 12
+  engineering_views: 24
+  native_exact_pixel_values: 33070680
+  engineering_local_verification: data/provenance/original-source-cache-engineering-001-local-verification.json
+  main_PID: 265830
+  main_launched_UTC: '2026-10-04T20:54:23Z'
+  main_pairs_required: 22614
+  main_views_required: 45228
+  main_conditions: 6
+  main_frames_per_condition: 3769
+  main_complete: true
+  main_last_observed_condition: closed_all_six_conditions_native_and_local
+  main_last_observed_encodes: 22614
+  main_raw_root: /mnt/d/paper6/runs/original-source-cache-main-001
+  main_local_verifier: data/provenance/verify-source-cache-main-local-001.py
+  main_local_verifier_executed: true
+  KITTI_AP_measured: false
+  analysis: experiments/original-paper-scenarios/source-cache-engineering-analysis-001.md
+  next: continue_once_launched12_main_author_detector_endpoints_and_complete_native_local_AP_closure
+  main_encoding_complete: true
+  main_completed_receivers: 6
+  main_completed_commands: 8
+  main_last_observed_unix: 1791155295.09525
+  main_live_evidence: data/provenance/original-source-cache-main-001-live-004.json
+  main_native_audit_complete: true
+  main_native_exact_pixel_values: 63028337256
+  main_actual_cache_cycle_terminal: true
+  main_native_terminal_closure_running: false
+  main_ratios_observed:
+    jpeg-cr10: 11.018830534822168
+    jpeg-cr30: 33.20497649046192
+    jpeg-cr50: 54.66592980287924
+    jpeg2000-cr10: 10.004234217889662
+    jpeg2000-cr30: 30.017998689609065
+    jpeg2000-cr50: 50.036671708095554
+  main_local_verification: data/provenance/original-source-cache-main-001-local-verification.json
+  main_closure: data/provenance/original-source-cache-main-001-closure.json
+  main_analysis: experiments/original-paper-scenarios/source-cache-main-analysis-001.md
+source_cache_inference:
+  state: main12_native_detector_endpoints_running_after_full_cache_gate
+  protocol_commit: 206e10a
+  implementation_commit: de363d0
+  cycle_commit: bebfb1a
+  evidence_commit: b277c1c
+  CPU_tests_each: 5
+  engineering_PID: 266960
+  engineering_actual_terminal: true
+  engineering_commands: 24
+  engineering_endpoints: 12
+  engineering_frames: 24
+  engineering_native_predictions: 25
+  shared_pairs: 12
+  local_artifacts_verified: 75
+  engineering_local_verification: data/provenance/source-cache-inference-engineering-001-local-verification.json
+  analysis: experiments/original-paper-scenarios/source-cache-inference-engineering-analysis-001.md
+  main_started: true
+  main_required_endpoints: 12
+  main_required_predictions: 45228
+  right_2D_measured: false
+  source_quality_measured: true
+  next: full_SRCNN111360_updates_acceptance_then_received_GPU_comparisons_original_matrix
+  main_local_verifier: data/provenance/verify-source-cache-inference-main-local-002.py
+  main_local_verifier_executed: true
+  main_PID: 269262
+  main_launched_UTC: '2026-10-04T23:08:19Z'
+  main_completed: true
+  main_last_actual_snapshot: data/provenance/main-source-quality-actual-snapshot-013.json
+  main_last_completed_commands: 24
+  main_last_first_endpoint_frames: 3769
+  main_completed_endpoints: 12
+  main_second_endpoint: jpeg-cr10-liga
+  main_last_second_endpoint_frames: 3769
+  main_dependency_driver: data/provenance/advance-main-inference-to-srcnn-formal-002.py
+  main_dependency_driver_prepared: true
+  main_dependency_local_PID: 37309
+  main_dependency_state: finished_complete_main_proof_and_SRCNN_formal_dispatched
+  main_third_endpoint: jpeg-cr30-stereo_rcnn
+  main_third_endpoint_last_frames: 3769
+  main_fourth_endpoint: jpeg-cr30-liga
+  main_fourth_endpoint_last_frames: 3769
+  main_fourth_endpoint_audit_complete: true
+  main_fifth_endpoint: jpeg-cr50-stereo_rcnn
+  main_fifth_endpoint_last_frames: 3618
+  SRCNN_formal_local_verifier: data/provenance/verify-srcnn-kitti-complete-local-003.py
+  SRCNN_formal_local_verifier_engineering_updates_checked: 18
+  SRCNN_formal_updates_required: 111360
+  main_complete_local_proof: data/provenance/source-cache-inference-main-001-local-verification.json
+  main_artifacts_verified: 45303
+  SRCNN_formal_native_PID: 282374
+srcnn_author_core:
+  state: closed_all8_author_models24_synthetic_comparisons_each_host
+  protocol_commit: ae1eeb1
+  implementation_commit: 5832e04
+  evidence_commit: 7d1d6ef
+  models: 8
+  readonly_arrays_each: 6
+  comparisons_each_host: 24
+  output_values_each_host: 7680
+  local_max_abs_error: 2.220446049250313e-15
+  sheng_max_abs_error: 1.7763568394002505e-15
+  local_native_identity_verification: data/provenance/srcnn-author-core-transferred-verification-001.json
+  analysis: experiments/original-paper-scenarios/srcnn-author-core-analysis-001.md
+  KITTI_or_compression_or_AP_measured: false
+  next: declare_native_stereo_color_resize_quantization_training_and10_30_50_operating_points
+srcnn_compression_interface:
+  state: closed_four_synthetic_families_each_host_and_complete_transferred_record_check
+  protocol_commit: bb8c32f
+  implementation_commit: c5db795
+  rates: 3
+  views_each_host: 6
+  readonly_states: 6
+  selected_model: author_demo_default_9_5_5_ImageNet_x3_engineering_only
+  local_verification: data/provenance/srcnn-compression-interface-transferred-verification-001.json
+  analysis: experiments/original-paper-scenarios/srcnn-compression-interface-analysis-001.md
+  KITTI_training_or_AP: false
+  cross_host_source_wire_hashes_equal: true
+  cross_host_output_hashes_equal: false
+  next: prelock_training_only_KITTI_adaptation_and_native_full_float_received_cache_detector_policy
+  training_protocol: experiments/original-paper-scenarios/srcnn-KITTI-adaptation-protocol-001.md
+  training_protocol_commit: 2a610aa
+  training_protocol_updates_per_rate: 37120
+  formal_training_started: false
+srcnn_KITTI_adaptation:
+  state: engineering002_all18_updates_native_and_local21_artifacts_closed_formal_not_started
+  protocol_commit: 2a610aa
+  implementation_commit: d74ac31
+  repair_protocol: experiments/original-paper-scenarios/srcnn-KITTI-checkpoint-repair-002.md
+  current_code: experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002
+  CPU_tests_each: 5
+  CPU_reference_max_abs_error: 1.430511474609375e-06
+  failed_engineering001_retained: true
+  failed_updates_actual: 6
+  engineering_PID: 268663
+  engineering_actual_terminal: true
+  engineering_updates_total: 18
+  engineering_patches_total: 576
+  engineering_artifacts_verified: 21
+  engineering_peak_reserved_bytes_each: 243269632
+  local_verification: data/provenance/srcnn-kitti-engineering-seed17-002-local-verification.json
+  analysis: experiments/original-paper-scenarios/srcnn-KITTI-engineering-analysis-002.md
+  formal_updates_per_rate: 37120
+  formal_started: false
+  next: finish_main_JPEG_JP2_AP_cycle_then_launch_fixed_full_SRCNN_formal002
+source_cache_dependency_chain:
+  state: finished_dependency_chain_main_AP_dispatched
+  PID: 20175
+  exec_session: 52351
+  code: data/provenance/advance-source-cache-main-001.py
+  actual_native_snapshot_UTC: '2026-10-04T22:41:57Z'
+  existing_native_PID: 265830
+  existing_native_ps_returncode: 1
+  automatic_current_run_steps:
+  - native_terminal_close
+  - transfer_all19_records
+  - verify_all22614_records_locally
+  - upload_local_proof
+  - launch12_main_AP_endpoints_once
+  native_terminal_closed: true
+  local_all22614_verification_passed: true
+  main_native_PID: 269262
+  ended_unix: 1791155299.959888
+srcnn_native_cache:
+  state: CPU_contract_and_all6_actual_engineering_wires_closed_GPU_deferred
+  protocol_commit: da0459c
+  implementation_commit: 32097cd
+  wire_audit_helper_commit: 7f378a3
+  families_each_host: 5
+  synthetic_views_each_host: 6
+  maximum_RGB_error_each_host: 0.0
+  cross_host_float_output_hashes_equal: false
+  actual_engineering_wire_pairs: 6
+  unique_actual_source_views: 4
+  native_RGB_values_checked_across_rates: 16535340
+  local_wire_artifacts_verified: 8
+  wire_bytes:
+    10: 549274
+    30: 181918
+    50: 109690
+  wire_ratios:
+    10: 10.034663938216628
+    30: 30.29815631218461
+    50: 50.24870088431033
+  CPU_local_proof: data/provenance/srcnn-native-cache-CPU-transferred-verification-001.json
+  wire_local_proof: data/provenance/srcnn-source-cache-engineering-001-wire-local-verification.json
+  actual_GPU_deferral_evidence: data/provenance/srcnn-native-cache-GPU-defer-check-001.json
+  native_GPU_reception_executed: false
+  terminal_orchestration_prelock_commit: 161469a
+  terminal_orchestration_implementation_commit: 16eab1f
+  terminal_controller: data/provenance/srcnn-native-cache-cycle-001.py
+  complete_local_verifier: data/provenance/verify-srcnn-native-cache-local-001.py
+  acceptance_CPU_evidence: data/engineering/srcnn-native-cache-acceptance-local-CPU-001.json
+  actual_orchestration_deferral: data/provenance/srcnn-native-cache-orchestration-deferred-001.json
+  controller_GPU_launch_executed: false
+  complete_received_cache_verifier_executed: false
+  main_streamed_storage_prelock_commit: b6c266d
+  main_local_storage_observation: data/provenance/srcnn-main-local-storage-observation-001.json
+  full_main_float_cache_expected_bytes: 126056674512
+  native_blob_stream_helper: data/provenance/stream-srcnn-native-artifacts-001.py
+  native_blob_stream_helper_commit: 2e6da41
+  actual_all6_source_wire_stream_check: data/provenance/srcnn-source-cache-engineering-001-streamed-byte-check-001.json
+  streamed_NPZ_or_full_main_verifier002_executed: false
+  full_main_streamed_verifier002_prepared: true
+  full_main_streamed_verifier002: data/provenance/verify-srcnn-native-cache-local-002.py
+  streamed_parser_CPU_evidence: data/engineering/srcnn-streamed-cache-CPU-002.json
+  streamed_parser_synthetic_RGB_values: 16535340
+  streamed_parser_corrupt_cases_rejected: 33
+  actual_remote_NPZ_streamed: false
+  full_main_encoding_executed: false
+  analysis: experiments/original-paper-scenarios/srcnn-native-cache-engineering-analysis-001.md
+  next: reuse_exact_engineering_wires_for_native_GPU_reception_audit_after_formal_training_terminal_before_float_detector_adapter
+srcnn_float_reception:
+  state: closed_six_CPU_families_each_host_and_complete12_view_record_verification
+  protocol_commit: a612bd7
+  implementation_commit: 1aef4c8
+  families_each: 6
+  views_each: 6
+  pixels_each: 27648
+  readonly_states_each: 6
+  local_model_max_abs_error: 1.3709068298339844e-06
+  sheng_model_max_abs_error: 1.1324882507324219e-06
+  local_RGB_max_abs_error: 1.6093254089355469e-06
+  sheng_RGB_max_abs_error: 1.3113021850585938e-06
+  cross_host_wire_hashes_equal: true
+  cross_host_output_hashes_equal: false
+  local_verification: data/provenance/srcnn-float-reception-transferred-verification-001.json
+  analysis: experiments/original-paper-scenarios/srcnn-float-reception-analysis-001.md
+  native_KITTI_received_cache_or_AP: false
+  next: native_full_KITTI_float_cache_engineering_after_existing_main_AP_GPU_release_and_formal_training_closure
+public_validation_ROI:
+  state: closed_all7538_views_native_and_local
+  protocol_commit: c73eada
+  implementation_commit: 9b156bb
+  CPU_families_each: 4
+  engineering_PID: 269478
+  engineering_actual_terminal: true
+  engineering_views: 4
+  engineering_native_RGB_values: 5511780
+  readonly_model_states: 121
+  engineering_boxes: 4
+  engineering_empty_views: 1
+  engineering_artifacts_verified: 8
+  local_engineering_verification: data/provenance/public-val-ROI-engineering-001-local-verification.json
+  analysis: experiments/original-paper-scenarios/main-ROI-engineering-analysis-001.md
+  main_PID: 269672
+  main_frames_required: 3769
+  main_views_required: 7538
+  main_GPU_used: false
+  main_complete: true
+  next: use_unchanged_closed_masks_for_all_complete_source_quality_conditions
+  main_actual_terminal: true
+  main_frames: 3769
+  main_views: 7538
+  main_native_RGB_values: 10504722876
+  main_boxes: 35111
+  main_empty_views: 670
+  main_union_pixels: 338319516
+  main_full_pixels: 3501574292
+  main_pooled_union_fraction: 0.0966192597349581
+  main_local_verification: data/provenance/public-val-ROI-main-001-local-verification.json
+source_quality:
+  state: CPU_and_native24_view_engineering_closed_full45228_view_CPU_cycle_launched
+  protocol: experiments/original-paper-scenarios/main-ROI-quality-protocol-001.md
+  protocol_commit: c73eada
+  PSNR: 10log10_1_over_pooled_RGB_MSE_with_per_view_secondary_and_explicit_perfect_empty
+  SSIM: 11x11_Gaussian_sigma1_5_reflect_population_RGB_channel_maps_and_ROI_centers
+  next: complete_main_native_quality_audit_terminal_close_transfer_all45228_records_and_recompute_aggregates_locally
+  implementation_commit: f0669ba
+  native_pipeline_commit: 7dd0e24
+  CPU_families_each: 6
+  CPU_independent_SSIM_values_each: 1404
+  local_CPU_max_SSIM_error: 2.1094237467877974e-15
+  sheng_CPU_max_SSIM_error: 3.2529534621517087e-14
+  engineering_views: 24
+  engineering_actual_terminal: true
+  engineering_artifacts: 3
+  engineering_local_verification: data/provenance/source-quality-engineering-001-local-verification.json
+  CPU_local_verification: data/provenance/source-quality-CPU-transferred-verification-001.json
+  analysis: experiments/original-paper-scenarios/source-quality-engineering-analysis-001.md
+  main_PID: 270132
+  main_required_views: 45228
+  main_complete: true
+  main_GPU_used: false
+  main_last_actual_snapshot: data/provenance/main-source-quality-actual-snapshot-011.json
+  main_last_measure_manifest_seen: true
+  main_last_measured_views: 45228
+  main_measurement_finished: true
+  main_native_quality_audit_running: false
+depth_particle_feasibility:
+  state: Q1_synthetic_and_Q2_native_sender_law_full_proofs_closed_no_main_promotion
+  Q0_protocol_commit: 23ebde8
+  Q0_implementation_commit: 1fe0566
+  Q0_complete_local_proof: data/provenance/depth-particles-Q0-complete-local-verification-001.json
+  Q1_protocol_commit: b1d26ef
+  Q1_implementation_commit: 190c4f4
+  Q1_cells_verified_both_hosts: 23296
+  Q1_complete_local_proof: data/provenance/depth-particles-Q1-complete-local-verification-001.json
+  Q1_analysis: experiments/depth-particles/analysis-002.md
+  Q2_protocol_commit: 2fd3831
+  Q2_repair_protocol_commit: 3c600aa
+  Q2_implementation_commit: 7c3e8e4
+  Q2_native_full_grid_cells: 99840
+  Q2_valid_source_cells: 98199
+  Q2_candidate_fit_records: 4713552
+  Q2_all_method_condition_cells: 599040
+  Q2_attempted_complex_uses: 1198080
+  Q2_complex_symbols_per_cell: 2
+  Q2_energy_per_cell: 2
+  Q2_native_proof: data/provenance/depth-particles-native-Q2-native-verification-002.json
+  Q2_local_proof: data/provenance/depth-particles-native-Q2-local-verification-002.json
+  Q2_repair_comparison: data/provenance/depth-particles-native-Q2-repair-comparison-002.json
+  Q2_source: uncalibrated_cosine_epipolar_F6b535_train_cache_not_author_depth_head
+  Q2_analysis: experiments/depth-particles/analysis-003.md
+  Q2_identity_mean_W1_m:
+  - 4.00037192984418
+  - 3.2318755439311593
+  - 3.23187554393116
+  Q2_AWGN10_mean_W1_m:
+  - 12.057837758203672
+  - 12.998187155612854
+  - 13.803805674988858
+  Q2_candidate_cost_bug_retained: true
+  Q2_all_selected_and_physical_arrays_unchanged_by_repair: true
+  teacher_or_true_depth_or_detection_verified: false
+  promoted_to_main_detector_training: false
+  next: native_cost_feature_task_information_and_matched_generic_decoder_controls_after_full_GPU_framework_gate
+latest_human_progress: to_human/progress-2026-10-05.md
+artemis_framework_integration:
+  state: native_forward_RGB_backward_FP32_replay_and_received_only_codec_task_optimizer_closed
+  last_build_job: 11424747
+  last_build_terminal: FAILED_1_0_missing_author_generated_version_after_successful_mmcv_compile
+  last_import_job: 11424824
+  last_import_terminal: COMPLETED_0_0
+  active_overlay: dependencies/artemis-framework-overlay-005
+  current_input_lock: experiments/artemis-detector-framework/import-inputs-006.json
+  frozen_inputs_verified: 426
+  original_runtime_unchanged: true
+  official_archives_verified: 48
+  official_archive_bytes: 184354145
+  missing_frozen_Python_sources_staged_without_overwrite: 330
+  author_generated_version: 0.1.0+0000000
+  archive_evidence: data/engineering/artemis-framework-archives-004.json
+  import_evidence: data/engineering/artemis-framework-import-006.json
+  import_terminal: data/engineering/artemis-framework-import-006-terminal.json
+  import_local_proof: data/provenance/artemis-framework-import-006-local-verification.json
+  author_checkpoint_evidence: data/engineering/artemis-liga-author-checkpoint-001.json
+  author_checkpoint_bytes: 93383301
+  author_checkpoint_sha256: 3f36af30b686f23d0868482675177b29cc50c2b378577dd12f9092ddb0235b2e
+  author_checkpoint_deserialized: true
+  analysis: experiments/artemis-detector-framework/analysis-001.md
+  full_framework_import_passed: true
+  full_detector_GPU_forward_passed: true
+  sparse_GPU_teacher_training_verified: false
+  next: full_new_codec_training_and_3769_validation_matched_generic_and_original_wireless_matrix
+artemis_native_task_gate:
+  forward_job: 11424837
+  forward_actual_terminal: COMPLETED_0_0
+  full_author_states: 484
+  forward_complete_saved_values: 246928220
+  forward_complete_local_identity_audit: data/provenance/artemis-full-detector-GPU-local-audit-003.json
+  original_FP64_depth_criterion_passed: false
+  FP64_depth_max_errors:
+  - 4.3329383698775814e-05
+  - 8.133609242477746e-05
+  depth_FP32_replay_job: 11424868
+  depth_FP32_replay_state: closed_actual_COMPLETED_0_0_native_and_local_all798720_bit_equal
+  gradient_job: 11424856
+  gradient_actual_terminal: COMPLETED_0_0
+  gradient_native_closure: data/engineering/artemis-detector-gradient-GPU-001/terminal.json
+  gradient_local_proof: data/provenance/artemis-detector-gradient-local-verification-002.json
+  all_saved_gradient_target_values_verified: 20091058
+  all_image_gradient_values_verified: 4792320
+  both_image_gradients_finite_nonzero: true
+  parameter_updates: 0
+  optimizer_used: false
+  numerical_gradient_oracle_verified: false
+  no_grad_prediction_numerical_equivalence_verified: false
+  sparse_GPU_teacher_verified: false
+  new_geometry_method_trained: false
+  source_quality_main_local_proof: data/provenance/source-quality-main-001-local-verification.json
+  source_quality_main_views: 45228
+  source_quality_main_actual_terminal: true
+  depth_FP32_replay_local_proof: data/provenance/artemis-depth-FP32-replay-local-verification-001.json
+cost_field_task_communication:
+  state: full_KITTI_seed17_training_active_other_seeds_cancelled_by_user
+  protocol_003: experiments/cost-field/protocol-003.md
+  protocol_004: experiments/cost-field/protocol-004-full-training.md
+  GPU001_job: 11424889
+  GPU001_local_proof: data/provenance/cost-field-GPU-local-verification-002.json
+  GPU002_job: 11424908
+  GPU002_terminal: FAILED_1_0_historical_prediction_tolerance_no_corrected_codec_case_executed
+  GPU003_job: 11424927
+  GPU003_terminal: COMPLETED_0_0
+  actual_engineering_task_updates: 32
+  complete_saved_values: 172007982
+  complete_raw_and_clipped_gradient_values: 107216
+  full_optimizer_proof: data/provenance/cost-field-optimizer-local-verification-003.json
+  G_P_S_parameters: 1650
+  B_generic_parameters: 1751
+  complex_uses_per_pooled_site: 19
+  energy_per_pooled_site: 19
+  voxel_query_axis_m:
+  - 2
+  - 59.6
+  source_cost_sweep_axis_m:
+  - 2.4
+  - 59.2
+  receive_projection: known_source_sphere_no_raw_channel_clipping
+  analysis: experiments/cost-field/analysis-001.md
+  formal_training_driver: data/provenance/launch-cost-field-full-after-dataset-004.py
+  formal_training_driver_PID: 37826
+  existing_whole_dataset_audit_PID: 1980128
+  full_training_seeds:
+  - 17
+  historical_dispatched_seeds: [17, 23, 41]
+  current_scope_addendum: experiments/cost-field/single-seed-scope-007.md
+  full_training_frames: 3712
+  validation_frames: 3769
+  epochs: 3
+  planned_updates_total: 44544
+  historical_three_seed_planned_updates_total: 133632
+  full_training_launched: true
+  novel_AP_benefit_verified: false
+  next: finish_running_whole_local007_then_actual_closure014_and_primary_full3769_validation
+  full_training_seed17_job: 11424939
+  full_training_seed23_41_array_job: 11424940
+  full_training_last_observed_seed17_updates: 44544
+  formal_training_driver_state: finished_full_dataset_and_three_seed_training_dispatched_pending_full_closure
+  dataset_manifest: data/provenance/cost-field-full-dataset-manifest-004.json
+  full_raw_dataset_files: 29924
+  full_raw_dataset_bytes: 12175258741
+  full_training_last_actual_snapshot: data/provenance/training-actual-terminal-snapshot-014-001.json
+  full_training_last_observed_seed23_updates: 17482
+  seed23_actual_terminal: CANCELLED_by_user_scope_change_records_retained
+  seed23_actual_SLURM_JOB_ID: 11424941
+  seed23_queue_array_id: '11424940_23'
+  seed41_last_queue_state: CANCELLED_by_user_scope_change
+  bounded_full_auditor: data/provenance/audit-cost-field-full-007.py
+  previous_bounded_full_auditor: data/provenance/audit-cost-field-full-006.py
+  full_audit_protocol: experiments/cost-field/full-proof-protocol-007.md
+  explicit_prefix_updates_checked_native_and_local: 256
+  explicit_prefix_saved_values_checked: 1421582597
+  explicit_prefix_gradients_checked: 844800
+  explicit_prefix_complex_uses_checked: 7587840
+  explicit_prefix_record_ledgers_identical: true
+  explicit_prefix_local_proof: data/provenance/cost-field-full-local-prefix-006-001.json
+  explicit_prefix_native_proof: data/provenance/cost-field-full-native-prefix-006-001.json
+  original005_local_failure_retained: true
+  cross_runtime_uniform_repair: explicit_6_plus12_random_all11136_exact_no_tolerance_relaxation
+  real_consistent_tamper_rejections: 3
+  real_tamper_proof: data/provenance/cost-field-audit-rejection-006.json
+  completed_epoch_checkpoints_retained_locally: 12
+  full_training_closed: false
+  final_validation_protocol: experiments/cost-field/final-validation-protocol-005.md
+  final_validation_inference: experiments/cost-field/validation_code_008/infer_GPU.py
+  final_validation_official_AP: experiments/cost-field/validation_code_008/evaluate_sheng.py
+  final_validation_execution: not_launched_complete_training_proofs_required
+  source_shape_lineage_all3769: data/provenance/cost-field-val-source-index-007.json
+  full_validation_wire_auditor: data/provenance/audit-cost-field-validation-008.py
+  full_validation_wire_auditor_execution: prepared_not_formally_executed
+  real_writer_seven_box_native_local_text_identical: true
+  writer_native_proof: data/provenance/cost-field-writer-native-probe-006.json
+  packet_position_diagnostic_nodes: 1198080
+  packet_position_diagnostic: data/provenance/cost-field-position-channel-006.json
+  packet_position_interpretation: explicit_packet_coordinates_not_object_depth_or_AP
+  paired_G_P_fixed_cases_native_and_local: 256
+  paired_physical_values_checked: 151756800
+  paired_record_ledger_identical: true
+  paired_execution_terminal: data/provenance/cost-field-paired-execution-terminal-007.json
+  sheng_official_AP_manifest_deployed_and_exact_hash: true
+  full_original_radio_grid_addendum: experiments/cost-field/final-validation-original-grid-008.md
+  full_validation_plan: experiments/cost-field/validation-plan-008.json
+  full_validation_unique_endpoints: 84
+  full_validation_frame_endpoints: 316596
+  complete_AWGN_integer_SNRs: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+  complete_Rayleigh_SNRs: [6, 8, 10, 12, 14, 16, 18]
+  P_all_three_epoch_checkpoint_retention: data/provenance/cost-field-P-checkpoint-retention-008-001.json
+ecsic_KITTI_adaptation:
+  state: formal_single_seed_source_operating_points_running_after_complete_native_local_GPU_gate
+  protocol: experiments/original-paper-scenarios/ecsic-KITTI-adaptation-protocol-002.md
+  code: experiments/original-paper-scenarios/ecsic-KITTI-adaptation-code-002
+  seed: 17
+  candidates_lambda: [0.001, 0.003, 0.01, 0.03, 0.1, 0.3]
+  candidate_concurrency: 1
+  epochs_per_candidate: 10
+  full_training_pairs: 3712
+  updates_per_candidate: 37120
+  updates_all_candidates: 222720
+  array_job: 11425047
+  candidate0_raw_job: 11425048
+  candidate0_last_verified_updates: 37120
+  parameter_tensors: 216
+  state_entries: 225
+  shared_state_aliases: 9
+  actual_GPU_gate_job: 11425032
+  actual_GPU_gate_native_audit: 11425041
+  actual_GPU_gate_export: 11425042
+  GPU_gate_actual_terminal: data/provenance/ecsic-KITTI-GPU-terminal-001.json
+  GPU_gate_all_saved_values_checked_native_and_local: 144085094
+  GPU_gate_all_gradient_values_checked: 126562968
+  formal_auditor: data/provenance/audit-ecsic-KITTI-formal-003.py
+  formal_auditor_state: candidates0_1_2_3_4_native_local_complete185600_50epochs_candidate5_training_live
+  formal_auditor002_count_error_retained: true
+  full_raw_gradient_replay_claim: false
+  estimated_bpp_is_actual_bytes: false
+  KITTI_AP_measured: false
+  actual_rate_calibration: pending_all_final_epoch10_weights_and_complete_real_rANS_causal_reception
+  next: complete_all222720_updates_actual_terminal_and_full_records_then_fixed_training64_real_byte_calibration
+
+original_full_public_semantic_training:
+  state: complete_stage1_native_local_closed_stage2_running_actual11429413
+  source_variant: original_global36_key4_nominal30_frozen_semantic_architecture
+  protocol: experiments/original-paper-scenarios/original-public-train-protocol-003.md
+  code: experiments/original-paper-scenarios/original-public-train-code-003
+  input_SHA: 76761fe49305dcbe9829973b8b11e70a2c928e7ac1c3962b7e40b09f72317338
+  public_training_pairs: 3712
+  validation_pairs_used_for_training: 0
+  seed: 17
+  semantic_stage_epochs: [12, 10, 6, 10]
+  planned_semantic_updates: 141056
+  channel_stage_additional_updates_required: 167040
+  formal_semantic_training_started: true
+  engineering_GPU_job: 11425104
+  engineering_GPU_state: COMPLETED_exit0_native_local_all3_closed
+  engineering_GPU_discarded_updates_planned: 3
+  CPU_frozen_input_admission: data/provenance/original-public-train-CPU-admission-003.json
+  whole_training_ROI_native: data/engineering/original-full-train-ROI-002/native-audit.json
+  whole_training_ROI_local: data/provenance/original-full-train-ROI-local-audit-002.json
+  whole_training_RGB_views_checked_natively: 7424
+  whole_training_RGB_bytes_checked: 6219939731
+  whole_training_boxes_preserved: 31709
+  whole_training_mask_values_checked: 3445709672
+  whole_training_record_SHA: 8f4a5ba2b0a35d6da58c580743c88bc7399149c811ed4d8d8da0344d7b668765
+  complete83_epochs_claimed: false
+  nominal10_50_architecture_and_training_required: true
+  original_author_communication_code_or_AP_reproduction_claimed: false
+
+ecsic_KITTI_candidate0_closure:
+  state: complete_training_and_native_local_whole_records_all10_checkpoints_closed
+  proof: data/provenance/ecsic-KITTI-candidate0-full-closure-006.json
+  training_actual_raw_job: 11425048
+  native_audit_actual_job: 11425124
+  local_stream_export_actual_job: 11425126
+  all_job_and_srun_steps_completed_exit0: true
+  checked_records: 37120
+  checked_epoch_checkpoints: 10
+  checked_checkpoint_saved_values: 955923300
+  native_local_record_RNG_and_checkpoint_ledgers_agree: true
+  first_native_audit_failed_job: 11425117
+  failure_reason: committed_alias_repair_protocol_not_deployed_finalization_failed
+  failure_preserved: true
+  correction: deploy_exact_missing_protocol_only_no_auditor_or_training_changes
+  candidate1_raw_job: 11425119
+  candidate1_last_verified_updates: 37120
+  all_six_candidates_complete: false
+  actual_rate_calibration_or_AP: false
+  full_raw_gradient_Adam_transition_replay_claim: false
+
+ecsic_KITTI_final_model_bytes:
+  format: P6EKv1_final_model_SHA_config_CDF_bound_166byte_overhead
+  format_protocol: experiments/original-paper-scenarios/ecsic-KITTI-byte-protocol-004.md
+  format_native_local_gate: data/provenance/ecsic-KITTI-byte-format-closure-004.json
+  actual_legacy_container_fixtures_per_host: 2
+  malformed_or_wrong_model_cases_rejected_per_host: 65
+  registry_and_neural_graph_protocol: experiments/original-paper-scenarios/ecsic-KITTI-registry-protocol-005.md
+  prepared_code: experiments/original-paper-scenarios/ecsic-KITTI-byte-code-004
+  registry_requires_all6_final_native_local_audits: true
+  actual_incomplete_registry_rejection: data/provenance/ecsic-KITTI-premature-registry-rejection-005.json
+  all6_final_registry_emitted: false
+  adapted_model_neural_execution_closed: false
+  calibration_execution: pending_all6_candidates_and_numerical_neural_gate
+
+
+cost_field_exact_phase_mechanism:
+  state: closed_all130_fixed_conditions_local_and_sheng_CPU_actual_exit0
+  protocol: experiments/cost-field/position-phase-theory-protocol-009.md
+  derivation: experiments/cost-field/position-phase-derivation-009.md
+  serialization_repair: experiments/cost-field/position-phase-serialization-repair-010.md
+  failure009_retained: data/provenance/position-phase-theory-local-failure-009.json
+  proof: data/provenance/position-phase-theory-two-host-closure-010.json
+  analysis: experiments/cost-field/position-phase-analysis-010.md
+  phase_PDFs_normalized_symmetric_and_radial_verified: 26
+  fixed_theta_SNR_conditions_checked_per_host: 130
+  physical_channel_draws_per_host: 27262976
+  coordinate_observations_per_host: 136314880
+  maximum_MC_mse_standard_errors: 2.649595126385013
+  midpoint_unit_position_SNR10_AWGN_RMSE_m: 4.219078198382886
+  midpoint_unit_position_SNR10_Rayleigh_RMSE_m: 8.060414732573506
+  original_codec_training_thresholds_changed: false
+  learned_source_theta_distribution_assumed: false
+  object_depth_or_detector_error_bound_or_AP_claim: false
+  S_all3_epoch_weights_retained_proof: data/provenance/cost-field-S-checkpoint-retention-011-001.json
+  full44544_training_and_validation_still_required: true
+
+
+ecsic_KITTI_candidate1_closure:
+  state: complete37120_training_native_local_all10_checkpoints_normal_terminal
+  proof: data/provenance/ecsic-KITTI-candidate1-full-closure-008.json
+  training_actual_raw_job: 11425119
+  native_audit_actual_job: 11425239
+  local_export_actual_job: 11425247
+  all_jobs_and_srun_steps_completed_exit0: true
+  local_stream_pipefail_exit_code: 0
+  checkpoint_saved_values_checked: 955923300
+  all_six_candidates_complete: false
+  candidate2_actual_raw_job: 11425607
+  candidate2_last_verified_updates: 37120
+  actual_calibration_or_AP: false
+
+cost_field_full_training_audit_execution:
+  state: actual_CPU_job_running_whole007_not_yet_passed
+  protocol: experiments/cost-field/full-training-audit-execution-011.md
+  audit_actual_job: 11425240
+  dependency: afterok_11424939
+  required_complete_records: 44544
+  required_paired_steps: 11136
+  required_cross_arm_comparisons: 33408
+  actual_GPU_request: none
+  local_whole_replay_pending: true
+
+cost_field_final_grid_execution:
+  state: all84_routing_prelocked_deployed_native_local_premature_gate_rejection_closed
+  protocol: experiments/cost-field/validation-execution-protocol-012.md
+  code: experiments/cost-field/validation-dispatch-code-012
+  all3769_pairs_per_endpoint: true
+  primary_phase_indices: [0, 1, 2, 3]
+  remaining_phase_indices: [4, 83]
+  premature_admission_rejection: data/provenance/cost-field-premature-validation-rejection-012.json
+  actual_final_validation_GPU_submitted: false
+  actual_AP: false
+
+cost_field_current_method_description:
+  artifact: docs/cost-field-method-004-current.md
+  sigma_fixed_epoch3_observation: data/provenance/cost-field-fixed-epoch3-bandwidth-observation-012.json
+  G_P_S_sigma_m: [9.500613384356402, 7.474093938610836, 34.66684512038587]
+  parameter_observation_is_AP_or_causal_evidence: false
+
+
+ecsic_KITTI_candidate2_native_audit_execution:
+  state: actual_native_and_local_all37120_all10_closed
+  protocol: experiments/original-paper-scenarios/ecsic-candidate2-audit-execution-009.md
+  audit_actual_job: 11425708
+  dependency: afterok_11425607
+  local_complete_replay_pending: false
+
+
+cost_field_full_local_stream_execution:
+  state: actual_foreground_pipeline_processing_after_complete_native_audit
+  protocol: experiments/cost-field/full-local-stream-execution-013.md
+  export_actual_job: 11425814
+  dependency: afterok_11425240
+  local_exec_session: 43608
+  expected_records: 44544
+  launch_fact: data/provenance/cost-field-full-stream-submission-013.json
+  whole_native_and_local_closure_passed: false
+  native_whole_proof_passed: true
+  native_whole_proof: data/provenance/cost-field-full-seed17-004-native-audit-007.json
+  native_actual_raw_and_dot0_normal_exit0: 11425240
+  local_last_observed_checked_updates: 32768
+  local_actual_terminal_exit0: false
+  B_epochs1_2_small_retained_weights: data/provenance/cost-field-B-checkpoint-retention-013-001.json
+
+ecsic_candidate2_full_local_stream_execution:
+  state: actual_export_and_local_pipe_completed_exit0_whole_native_local_closed
+  protocol: experiments/original-paper-scenarios/ecsic-candidate2-stream-execution-010.md
+  export_actual_job: 11425840
+  dependency: afterok_11425708
+  local_exec_session: 9438
+  expected_records: 37120
+  expected_epoch_checkpoints: 10
+  launch_fact: data/provenance/ecsic-candidate2-stream-submission-010.json
+  local_whole_proof_passed: true
+
+original_public_engineering_native_audit_execution:
+  state: actual_engineering_and_formal_stage1_native_local_closed_stage2_running
+  protocol: experiments/original-paper-scenarios/original-public-engineering-audit-execution-004.md
+  audit_actual_job: 11425880
+  dependency: afterok_11425104
+  required_discarded_engineering_records: 3
+  launch_fact: data/provenance/original-public-engineering-audit-submission-004.json
+  formal_stage1_admitted: true
+
+
+results_milestone014:
+  snapshot: data/provenance/training-actual-snapshot-018-001.json
+  scientific_detection_advantage_established: false
+  main_all44544_GPU_updates_finished_actual_normal_terminal: true
+  all12_checkpoints_retention: data/provenance/cost-field-all12-checkpoint-retention-014.json
+  main_native_last_observed_checked_updates: 44544
+  main_native_and_local_full007_closure_complete: false
+  main_runtime_closure014: experiments/cost-field/full-training-closure-execution-014.md
+  main_runtime_closure014_executed: false
+  ECSIC_closed_candidates: [0, 1, 2, 3, 4]
+  ECSIC_candidate2_closure: data/provenance/ecsic-KITTI-candidate2-full-closure-010.json
+  ECSIC_candidate3_training_actual_job: 11426641
+  ECSIC_candidate3_last_observed_updates: 37120
+  ECSIC_candidate3_native_audit_job: 11426848
+  ECSIC_candidate3_export_job: 11428494
+  ECSIC_candidate3_local_exec_session: 47174
+  ECSIC_candidate3_stream_submission: data/provenance/ecsic-candidate3-stream-submission-012.json
+  original_engineering_closure: data/provenance/original-public30-engineering-native-local-closure-006.json
+  original_formal_stage1_actual_job: 11426592
+  original_formal_stage1_last_observed_updates: 44544
+  original_formal_stage1_native_audit_job: 11426847
+  original_formal_stage1_submission: data/provenance/original-public-stage1-submission-006.json
+  actual_source_rate_architectures_two_host_CPU: data/provenance/original-source-rate-two-host-CPU-closure-005.json
+  source_rate_CPU_scope: synthetic_native_size_inputs_source_encoder_gradients_no_dataset_training_or_radio
+  source_rate_cross_host_pixel_bit_identity: false
+  source_rate_cross_host_difference_cause_established: false
+  nominal10_50_formal_training_still_required: true
+  manuscript_submission_complete: false
+
+SRCNN_full_formal_progress014:
+  controller_actual_PID: 282374
+  current_nominal_rate: 30
+  current_train_actual_PID: 283410
+  latest_train_log_observed_updates: 31700
+  immutable_snapshot: data/provenance/srcnn-actual-training-snapshot-018.json
+  cr10_train_and_native_audit_actual_exit0: true
+  cr10_native_audit: data/provenance/srcnn-kitti-formal-seed17-002-cr10-audit.json
+  cr10_updates: 37120
+  cr10_independent_source_patches: 1187840
+  cr10_unique_source_views: 7424
+  cr10_source_view_visits: 148480
+  cr10_local_full_source_replay_or_detection_AP_closed: false
+  all3_rates_training_complete: false
+
+source_rate_training008:
+  state: prepared_train_audit_after_actual_two_host_source_loss_CPU_gate
+  protocol: experiments/original-paper-scenarios/original-source-rate-training-008.md
+  code: experiments/original-paper-scenarios/original-source-rate-code-008
+  CPU_scope: synthetic263x265_six_phases_no_optimizer_updates
+  CPU_closure: data/provenance/original-source-rate-loss-two-host-CPU-closure-008.json
+  nominal30_loss_outputs_and_complete_gradients_bit_identical_within_each_host: true
+  actual_native_CPU_job: 11429177
+  actual_native_raw_and_dot0_completed_exit0: true
+  true10_50_masks_padded_to_actual_source_factors: true
+  formal10_50_GPU_started: false
+  stage5_wire_contract_ready: false
+
+source_rate_GPU_engineering009:
+  state: both_GPU_reports_finished3_pending_actual_terminal_and_native_local_complete_acceptance
+  protocol: experiments/original-paper-scenarios/original-source-rate-engineering-009.md
+  actual_training_array: 11429210
+  actual_native_audit_array: 11429211
+  task_indices: [10, 50]
+  concurrency: 1
+  native_dependency: aftercorr_11429210
+  submission_fact: data/provenance/original-source-rate-engineering-and-audit-submission-009.json
+  GPU_updates_per_rate: 3
+  formal_GPU_updates_started: false
+  local_complete_audit_required_before_fresh_formal: true
+  actual_raw_rate10_GPU_job: 11429396
+  actual_raw_rate50_GPU_job: 11429210
+
+ECSIC_candidate3_actual_closure012:
+  state: complete37120_training_all10_native_local_actual_normal_terminals
+  proof: data/provenance/ecsic-KITTI-candidate3-full-closure-012.json
+  actual_train: 11426641
+  actual_native_audit: 11426848
+  actual_export: 11428494
+  actual_local_exec_exit0: 47174
+  all_six_complete: false
+  actual_byte_calibration_or_AP_complete: false
+
+ECSIC_final_candidates_execution013:
+  state: candidate4_whole_native_local_and_actual_terminals_closed_candidate5_training_live
+  protocol: experiments/original-paper-scenarios/ecsic-final-candidates-execution-013.md
+  actual_native_array: 11429217
+  task_indices: [4, 5]
+  dependency: aftercorr_11425047
+  actual_export4: 11429221
+  actual_export5: 11429222
+  local_live_exec4: 55964
+  local_live_exec5: 69803
+  submission: data/provenance/ecsic-final-candidates-submission-013.json
+  all37120_all10_required_per_candidate: true
+  native_or_local_complete_proof_passed: false
+  candidate4_actual_raw_train_job: 11429214
+  candidate4_last_observed_updates: 37120
+  candidate4_observed_complete_epochs: 10
+  candidate4_actual_native_audit_job: 11429218
+  candidate4_native_actual_raw_and_dot0_normal_exit0: true
+  candidate4_whole_local_exit0_observed: true
+  candidate4_whole_closure: data/provenance/ecsic-KITTI-candidate4-full-closure-014.json
+  candidate5_training_observed_started: true
+  candidate5_actual_raw_train_job: 11425047
+  candidate5_last_observed_updates: 15872
+
+ordered_received_only_receiver017:
+  state: complete_local_sheng016_and_saved_paired_error_audits017_actual_exit0
+  receiver_protocol: experiments/cost-field/ordered-receiver-protocol-015.md
+  retention_protocol: experiments/cost-field/ordered-receiver-retention-016.md
+  paired_audit_protocol: experiments/cost-field/ordered-receiver-paired-audit-017.md
+  closure: data/provenance/ordered-receiver-two-host-closure-017.json
+  risk_conditions_per_host: 20
+  physical_prior_triples_per_host: 1310720
+  saved_paired_values_checked_per_host: 14417920
+  charged_complex_symbols_per_codec_site: 19
+  added_trainable_parameters: 0
+  uses_actual_receiver_CSI_in_Rayleigh: true
+  dataset_detector_or_actual_object_depths_used: false
+  actual_KITTI_node_prior_or_uncertainty_calibrated: false
+  new_detector_AP_advantage_established: false
+  additional_receiver_compute_and_latency_measured: false
+  prior_scope: uniform_inclusive_ordered_triples_on33_point_grid
+  matched_marginal_independent_control_executed: false
+  mechanism_attribution_limitation: uniform_independent_slot_prior_differs_from_ordered_joint_prior_marginals
+  analysis: experiments/cost-field/ordered-receiver-analysis-017.md
+  human_progress: to_human/progress-017-2026-10-05.md
+
+original_public30_stage1_local_execution008:
+  state: whole44544_all12_native_local_and_actual_normal_terminals_closed009
+  protocol: experiments/original-paper-scenarios/original-public-stage1-local-execution-008.md
+  frozen_verifier: experiments/original-paper-scenarios/original-public-train-code-003/audit.py
+  actual_export_job: 11429371
+  local_exec_session: 16291
+  dependency: afterok_11426847
+  submission: data/provenance/original-public30-stage1-local-submission-008.json
+  all_records_required: 44544
+  all_epoch_states_required: 12
+  native_input_locks_match: 46
+  actual_local_or_export_normal_exit0_observed: true
+  complete_closure: data/provenance/original-public30-stage1-native-local-closure-009.json
+  stage2_admitted: true
+
+original_public30_stage2_execution009:
+  state: actual_formal_stage2_running_after_complete_stage1_gate
+  protocol: experiments/original-paper-scenarios/original-public-stage2-execution-009.md
+  actual_training_job: 11429413
+  submission: data/provenance/original-public30-stage2-submission-009.json
+  last_observed_updates: 960
+  full_required_updates: 37120
+  full_required_epochs: 10
+  actual_native_audit_job: 11429416
+  native_audit_protocol: experiments/original-paper-scenarios/original-public-stage2-audit-execution-010.md
+  native_dependency: afterok_11429413
+  stage2_complete: false
+  stage3_admitted: false
+
+manuscript_working_draft001:
+  state: early_standalone_IEEEtran_draft_native_compilation_passed
+  source: paper/icc2027.tex
+  evidence_map: paper/evidence-map-001.md
+  build_and_numeric_check: paper/evidence/draft-build-and-numeric-check-001.json
+  user_authorized_early_draft_before_full_experiment_completion: true
+  verified_source_only_table_rows: 6
+  verified_synthetic_coordinate_table_values: 10
+  pending_main_AP_cells: 4
+  cited_reference_metadata_verified: true
+  recent_related_work_coverage_complete: false
+  ICC2027_specific_submission_rules_verified: false
+  visual_layout_inspected: true
+  all_rendered_pages_checked: 5
+  native_editor_saved_PDF: paper/icc2027.pdf
+  layout_verification: paper/evidence/draft-rendered-review-002.json
+  submission_ready: false
+  project_complete: false
+
+current_user_GPU_policy018:
+  preferred: RTX_PRO_6000
+  fallback_when_preferred_unavailable_and_task_lightweight: A40
+  current_experiments_actually_using_A40: false
+  A40_runtime_amendment_required_before_using_pinned_PRO6000_drivers: true
+  training_seeds: [17]

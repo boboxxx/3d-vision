@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "scope": "untrained CPU wireless engineering; no RGB quality or detection AP",
+  "torch_version": "2.5.0+cu118",
+  "seed": 17,
+  "shape": [
+    197,
+    203
+  ],
+  "parameters": 12970798,
+  "parameter_tensors": 718,
+  "groups": {
+    "semantic.global_encoder": {
+      "parameters": 680494,
+      "gradient_squared_norm": 0.2363128501430229
+    },
+    "semantic.global_decoder": {
+      "parameters": 11437874,
+      "gradient_squared_norm": 1.0523073669411374
+    },
+    "semantic.key_encoders": {
+      "parameters": 2214,
+      "gradient_squared_norm": 1.5973273426024819
+    },
+    "semantic.key_decoders": {
+      "parameters": 1674,
+      "gradient_squared_norm": 0.003760181883522593
+    },
+    "semantic.fusions": {
+      "parameters": 227718,
+      "gradient_squared_norm": 5.88810342708544
+    },
+    "global_channel": {
+      "parameters": 310412,
+      "gradient_squared_norm": 190.52578249962733
+    },
+    "key_channel": {
+      "parameters": 310412,
+      "gradient_squared_norm": 221.03346000400393
+    }
+  },
+  "awgn_real_noise_variance": 0.050032418221235275,
+  "control_crc_corruption_rejected": true,
+  "single_repeat_error_corrected": true,
+  "no_clean_control_receiver_api": true,
+  "missing_symbol_rejected": true,
+  "pilot_only_fading_fixture_passed": true,
+  "odd_real_padding_counted": true,
+  "all_parameter_gradients_finite": true,
+  "synthetic_untrained_loss": 1.9853780269622803,
+  "roi_accounting": {
+    "data_uses": 43043,
+    "control_uses": 2520,
+    "pilot_uses": 0,
+    "total_uses": 45563,
+    "total_energy": 45563.00465900715,
+    "data_real_values": 86085,
+    "padding_real_values": 1,
+    "key_cells": [
+      3600,
+      3721
+    ],
+    "cbr_complex_per_rgb_real_value": 0.1898885582589416
+  },
+  "empty_roi_accounting": {
+    "data_uses": 10098,
+    "control_uses": 1176,
+    "pilot_uses": 8,
+    "total_uses": 11282,
+    "total_energy": 11282.000883704219,
+    "data_real_values": 20196,
+    "padding_real_values": 0,
+    "key_cells": [
+      0,
+      0
+    ],
+    "cbr_complex_per_rgb_real_value": 0.047018912588665786
+  },
+  "source_hashes": {
+    "model.py": "da3ec01b947047e2640a5551b48ecc5719ffa398eae05e3dfa680940de8f0416",
+    "radio.py": "76ea572a5334de5bcb4a2fd89dc776661fd423e1ca5090fe769220245e9052f6",
+    "wireless.py": "11424b4e566065d7dbbc8c990351cf7fea451e4b67603c811a460a8ae10ffd7d",
+    "probe_wireless.py": "e08fd827ffbe6084f098bc5c85d58edebfd0ec2ba087789b20d71eb3f817ed0a"
+  },
+  "spynet_checkpoint_sha256": "3d2a1287666aa71752ebaedc06999212886ef476f77d691a1b0006107088e714",
+  "elapsed_seconds": 2.007580280303955
+}

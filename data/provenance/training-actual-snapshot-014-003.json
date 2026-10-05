@@ -1,0 +1,38 @@
+{
+  "state": "actual_seed17_completed_main_and_live_remaining_work",
+  "checked_unix": 1791209465.69694,
+  "reports": {
+    "data/runs/original-public30-formal-seed17-003-stage1/report.json": {
+      "sha256": "b280f2fbacba90a584f2687852b1d74142b8e40739692ed236e90a4bb0eae272",
+      "fields": {
+        "state": "running_complete_public_semantic_stage",
+        "scope": "formal",
+        "stage": 1,
+        "seed": 17,
+        "candidate": null,
+        "update_count": 7360,
+        "job_id": "11426592",
+        "traceback": null,
+        "engineering_gate_sha256": "3183070fa35cb1153763fbf2ed4188cd1c81d70bd72240208a883e1788e54d2f"
+      },
+      "completed_epochs": 1
+    },
+    "data/runs/ecsic-KITTI-lambda0.03-seed17-002/report.json": {
+      "sha256": "aecd46acdff0613f2e66277825eb1898b35fcb5568c275fbde70db0f3cbbbaf9",
+      "fields": {
+        "state": "running_full_KITTI_source_RD_training",
+        "scope": null,
+        "stage": null,
+        "seed": 17,
+        "candidate": 3,
+        "update_count": 11392,
+        "job_id": "11426641",
+        "traceback": null,
+        "engineering_gate_sha256": null
+      },
+      "completed_epochs": 3
+    }
+  },
+  "main_native_audit_progress": "{\"checked\": 12032, \"count\": 44544, \"seed\": 17}\n{\"checked\": 12096, \"count\": 44544, \"seed\": 17}\n{\"checked\": 12160, \"count\": 44544, \"seed\": 17}\n",
+  "squeue": "                   JOBID          STATE         TIME                         NODELIST(REASON)\n        11425047_[4-5%1]        PENDING         0:00                      (JobArrayTaskLimit)\n              11425047_3        RUNNING        19:08                           artemis-rtx-03\n                11426592        RUNNING        22:42                           artemis-rtx-03\n                11425814        PENDING         0:00                             (Dependency)\n                11425240        RUNNING        32:50                           artemis-a40-03\n                11426848        PENDING         0:00                             (Dependency)\n                11426847        PENDING         0:00                             (Dependency)\n                11428494        PENDING         0:00                             (Dependency)\n"
+}

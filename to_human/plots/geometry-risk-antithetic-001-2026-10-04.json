@@ -1,0 +1,18 @@
+{
+  "result_sha256": "88e8286d6cce31b8f186e0afee0369faee203c6aee305e961042b0055a0f2a3b",
+  "local_audit_sha256": "5d05f3815b92f922ecce866b8d05529d2d69f77f8b0aa9a0996430d1c64ff95c",
+  "plotter_sha256": "5f01f4b942c5eae8a99f4b69fefa0065e0030344354b87d3f356be08a13f8bf4",
+  "model_order": [
+    "energy",
+    "geometry",
+    "energy_geometry",
+    "gradient",
+    "shuffled_geometry"
+  ],
+  "metric_order": [
+    "signed_symmetric_Spearman",
+    "positive_symmetric_Spearman",
+    "antisymmetric_variance_Spearman"
+  ],
+  "bootstrap": "1000 prelocked eight-scene resamples"
+}

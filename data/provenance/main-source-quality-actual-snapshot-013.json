@@ -1,0 +1,192 @@
+{
+  "observed_unix": 1791184369.8322632,
+  "processes": {
+    "269262": {
+      "returncode": 1,
+      "stdout": "    PID STAT     ELAPSED COMMAND\n"
+    },
+    "270132": {
+      "returncode": 1,
+      "stdout": "    PID STAT     ELAPSED COMMAND\n"
+    }
+  },
+  "main_endpoints": [
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr10-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr10-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr30-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr30-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr50-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr50-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg2000-cr10-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg2000-cr10-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg2000-cr30-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg2000-cr30-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg2000-cr50-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg2000-cr50-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    }
+  ],
+  "source-cache-inference-main-001": {
+    "state": "finished12_native_endpoints12_audits_pending_terminal_closure",
+    "commands": 24,
+    "returncodes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "error": null
+  },
+  "source-quality-main-001": {
+    "state": "finished_all_three_commands_native_quality_closed",
+    "commands": 3,
+    "returncodes": [
+      0,
+      0,
+      0
+    ],
+    "error": null
+  },
+  "dependency_driver": {
+    "actual_ps": "  PID STAT  ELAPSED ARGS\n22899 Ss   06:06:23 /Users/chen/miniconda3/bin/python /Users/chen/Documents/ChatGPT/paper6/data/provenance/advance-main-inference-to-srcnn-formal-001.py --mode run\n",
+    "returncode": 0,
+    "state": {
+      "state": "running",
+      "pid": 22899,
+      "started_unix": 1791162387.926711,
+      "existing_main_native_PID": 269262,
+      "driver_sha256": "e1275a6dbb80992ffed0a8ef676747a0935add355505a1687709861d98f25f48",
+      "engineering_complete_proof_sha256": "69d4e357ba493c737debbbbf85f47d65c64b8fd2ba521e5cf955a3db7b897d56",
+      "phase": "native_actual_terminal_closure",
+      "completed_stages": [],
+      "last_actual_native_snapshot": {
+        "checked_unix": 1791183581.4191356,
+        "state": "finished12_native_endpoints12_audits_pending_terminal_closure",
+        "pid": 269262,
+        "ps_returncode": 1,
+        "actual_ps": "    PID STAT COMMAND\n",
+        "commands": 24,
+        "returncodes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "endpoints": 12,
+        "error": null
+      },
+      "last_poll_unix": 1791183581.4489012,
+      "phase_started_unix": 1791183581.451672
+    }
+  },
+  "verifier_source": "import json,subprocess,shlex,time\nfrom pathlib import Path\nroot=Path('/Users/chen/Documents/ChatGPT/paper6')\ncode='''import json,subprocess,time\nfrom pathlib import Path\nroot=Path(\"/home/sheng/paper6\")\nr={\"observed_unix\":time.time(),\"processes\":{},\"main_endpoints\":[]}\nfor pid in (269262,270132):\n p=subprocess.run([\"ps\",\"-p\",str(pid),\"-o\",\"pid,stat,etime,args\"],capture_output=True,text=True)\n r[\"processes\"][str(pid)]={\"returncode\":p.returncode,\"stdout\":p.stdout}\nfor p in sorted((root/\"data/runs\").glob(\"source-cache-inference-main-001-*.json\")):\n if p.stem.endswith(\"cycle\"):continue\n j=json.loads(p.read_text());a=root/\"data/provenance\"/(p.stem+\"-audit.json\")\n r[\"main_endpoints\"].append({\"manifest\":str(p.relative_to(root)),\"state\":j.get(\"state\"),\"frames\":len(j.get(\"frames\",[])),\"audit_state\":json.loads(a.read_text()).get(\"state\") if a.exists() else None})\nfor stem in (\"source-cache-inference-main-001\",\"source-quality-main-001\"):\n j=json.loads((root/\"data/runs\"/(stem+\"-cycle.json\")).read_text())\n r[stem]={\"state\":j[\"state\"],\"commands\":len(j[\"completed_commands\"]),\"returncodes\":[v[\"returncode\"] for v in j[\"completed_commands\"]],\"error\":j.get(\"error\")}\nprint(json.dumps(r))\n'''\ncmd=['ssh','-o','BatchMode=yes','-o','ConnectTimeout=15','-o','ControlPath=/private/tmp/paper6-sheng-01a10237.sock','sheng@100.94.183.27','python3 -c '+shlex.quote(code)]\np=subprocess.run(cmd,capture_output=True,text=True,check=True)\nr=json.loads(p.stdout);driver=json.loads((root/'data/runs/main-inference-to-srcnn-formal-001.json').read_text())\np=subprocess.run(['ps','-p','22899','-o','pid,stat,etime,args'],capture_output=True,text=True)\nr['dependency_driver']=dict(actual_ps=p.stdout,returncode=p.returncode,state=driver)\nr['verifier_source']=Path(__file__).read_text()\nout=root/'data/provenance/main-source-quality-actual-snapshot-012.json';assert not out.exists();out.write_text(json.dumps(r,indent=2)+'\\n')\nprint(json.dumps(dict(main=r['source-cache-inference-main-001'],endpoints=len(r['main_endpoints']),native_PID_present=r['processes']['269262']['returncode']==0,driver_phase=driver['phase'],driver_present=p.returncode==0)))\n",
+  "launch_record": {
+    "manifest": "data/runs/source-cache-inference-main-001-launch.json",
+    "state": "launched_once",
+    "frames": 0,
+    "audit_state": null
+  },
+  "derived_from_snapshot": "data/provenance/main-source-quality-actual-snapshot-012.json",
+  "source_snapshot_sha256": "0836a18bec4061687fef6c4a2ec4e0fa26bae22880d3d9dcb13f3c0242dfc569",
+  "derived_unix": 1791184677.953721,
+  "complete_endpoints": 12,
+  "total_native_inference_frames": 45228
+}

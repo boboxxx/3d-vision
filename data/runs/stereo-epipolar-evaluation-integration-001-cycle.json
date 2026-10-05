@@ -1,0 +1,120 @@
+{
+  "state": "finished_all48_native_frames_eight_references_and_audit_pending_terminal_closure",
+  "pid": 258021,
+  "prefix": "stereo-epipolar-evaluation-integration-001",
+  "engineering_only": true,
+  "no_AP": true,
+  "started_unix": 1791141278.7537282,
+  "source_manifest_sha256": "3ab97e7863a7a4c14e446f72719bc7e1f49de9cb585e5cd205d4db83f84c167c",
+  "protocols_sha256": {
+    "experiments/geometry-link/F9/evaluation-integration-protocol-001.md": "1c2a730d20d9280b578a6ab58c999ae553ea1b614e19ed2d680c587fa3243ce5",
+    "experiments/geometry-link/F9/receiver-path-clarification-001.md": "c6e6c34fb3aae84c7e01b889bcc432b4b0334c2ec6d753dba0f45513f8e4d24a"
+  },
+  "CPU_gates_sha256": {
+    "data/engineering/F9-evaluation-sheng-CPU-001.json": "06a57a37e8b0d6dc3a95f9aca2a934dc537d07c2ed9b96f87c4730cb81bd5a3f",
+    "data/engineering/F9-evaluation-local-CPU-005.json": "0bb82c66113021a25545a843ad6e8dc2b14c554c143a8e8902396521a932121b"
+  },
+  "ids": [
+    "000036",
+    "000054",
+    "000071",
+    "000082",
+    "000113",
+    "000141"
+  ],
+  "conditions": {
+    "U-identity10": {
+      "report_path": "data/runs/stereo-epipolar-evaluation-integration-001-U-identity10.json",
+      "report_sha256": "7e12427ff9bc44810ef457a5efe78fa03020a28ee582c8bdae1c77d199fdf9f8"
+    },
+    "U-awgn10": {
+      "report_path": "data/runs/stereo-epipolar-evaluation-integration-001-U-awgn10.json",
+      "report_sha256": "a512341e1b5200339ac9c55270f1d8df5b6f4bbf655ac51f95ede7d795ad7c6c"
+    },
+    "G-identity10": {
+      "report_path": "data/runs/stereo-epipolar-evaluation-integration-001-G-identity10.json",
+      "report_sha256": "c35dd709c5cbbd3ad610051e4871bc32b889d681297ef4d18ea02c254e5a9690"
+    },
+    "G-awgn10": {
+      "report_path": "data/runs/stereo-epipolar-evaluation-integration-001-G-awgn10.json",
+      "report_sha256": "610122906348e35f54a25550ae204da029a99d9662cfcdb20fea2db3131a40a0"
+    },
+    "P-identity10": {
+      "report_path": "data/runs/stereo-epipolar-evaluation-integration-001-P-identity10.json",
+      "report_sha256": "e0a399415987dd4dfbbc7e054af4e66cb29fb6f998a015d2fef411554e878d2e"
+    },
+    "P-awgn10": {
+      "report_path": "data/runs/stereo-epipolar-evaluation-integration-001-P-awgn10.json",
+      "report_sha256": "b525b094943a86fbf2972a971a988a91becbabc367150a7643604934caef72e0"
+    },
+    "S-identity10": {
+      "report_path": "data/runs/stereo-epipolar-evaluation-integration-001-S-identity10.json",
+      "report_sha256": "7b4c2b3421ad0d84bb4fa12ac5118774ad43e2c0cd6b36af276e16392f5d0031"
+    },
+    "S-awgn10": {
+      "report_path": "data/runs/stereo-epipolar-evaluation-integration-001-S-awgn10.json",
+      "report_sha256": "5cec7534912f36659fb75a918361b223ffaac456dc3e9b81060a8c0a3f0a7d2d"
+    }
+  },
+  "completed_commands": [
+    {
+      "label": "U-identity10",
+      "returncode": 0,
+      "log_path": "logs/stereo-epipolar-evaluation-integration-001-U-identity10.log",
+      "log_sha256": "477b4ae42c0f311e2c010e0d0ed0ac6e1e073186bbbeca71b9ccce4913661cf7"
+    },
+    {
+      "label": "U-awgn10",
+      "returncode": 0,
+      "log_path": "logs/stereo-epipolar-evaluation-integration-001-U-awgn10.log",
+      "log_sha256": "47a276dbf8d956c3e01cdcac76d4f08a95f1f0a952a4451c87c4c64f3e5be9bd"
+    },
+    {
+      "label": "G-identity10",
+      "returncode": 0,
+      "log_path": "logs/stereo-epipolar-evaluation-integration-001-G-identity10.log",
+      "log_sha256": "707ed1ffcf5f35097a11faf8cabc9f89fc394c3c3b6ddb5fad118e39efe1cac5"
+    },
+    {
+      "label": "G-awgn10",
+      "returncode": 0,
+      "log_path": "logs/stereo-epipolar-evaluation-integration-001-G-awgn10.log",
+      "log_sha256": "cf22a077814a932116156c871f807b42cf2b2685356f7eedafcc3912f36970f0"
+    },
+    {
+      "label": "P-identity10",
+      "returncode": 0,
+      "log_path": "logs/stereo-epipolar-evaluation-integration-001-P-identity10.log",
+      "log_sha256": "1615c68f7a630eb882afcfe9ba5b68de3a9d040c2081de98416b97db642ea42e"
+    },
+    {
+      "label": "P-awgn10",
+      "returncode": 0,
+      "log_path": "logs/stereo-epipolar-evaluation-integration-001-P-awgn10.log",
+      "log_sha256": "f181f70a6bd9d7ddfb9a23c9221031e335d9139ff6ee947117daea15f0dd2c7c"
+    },
+    {
+      "label": "S-identity10",
+      "returncode": 0,
+      "log_path": "logs/stereo-epipolar-evaluation-integration-001-S-identity10.log",
+      "log_sha256": "7624fe1d0aa274e86783eb9ff21029982bc025131e2b3c475e5548a5c99bff18"
+    },
+    {
+      "label": "S-awgn10",
+      "returncode": 0,
+      "log_path": "logs/stereo-epipolar-evaluation-integration-001-S-awgn10.log",
+      "log_sha256": "c1996f7d389b1fcfe58fcf8c60b2129ca9b0f6ef3b77eb703a0112f4e439cdc7"
+    },
+    {
+      "label": "independent-audit",
+      "returncode": 0,
+      "log_path": "logs/stereo-epipolar-evaluation-integration-001-independent-audit.log",
+      "log_sha256": "53444e48282a2f7a55f2e615a2ddd4a253b6a38f42a9b8d69022b9c42e12e140"
+    }
+  ],
+  "current_condition": null,
+  "frames": 48,
+  "references": 8,
+  "audit_sha256": "7c0e5aa9133d89bdf0d106855c2a0110dbe7ffa7f3976fcaf89e3d269cd128ee",
+  "ended_unix": 1791141451.8904657
+}

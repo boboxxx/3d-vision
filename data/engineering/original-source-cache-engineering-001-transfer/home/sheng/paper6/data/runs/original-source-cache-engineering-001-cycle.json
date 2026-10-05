@@ -1,0 +1,170 @@
+{
+  "state": "finished_eight_commands_pending_terminal_closure",
+  "pid": 265448,
+  "scope": "engineering",
+  "prefix": "original-source-cache-engineering-001",
+  "sources": {
+    "historical": {
+      "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+      "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+      "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+      "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+    },
+    "current": {
+      "experiments/original-paper-scenarios/source-cache-code/audit.py": "6406a041435bdb9cda489be5d4b109f93720740682dc26424b71a30a8d421c1f",
+      "experiments/original-paper-scenarios/source-cache-code/check_cpu.py": "03628bab20dbdd35a8c047c4c0a947dbfc07d4129c6c90ce60772f952e82ef78",
+      "experiments/original-paper-scenarios/source-cache-code/common.py": "e73c1c5022afedf75875e7249bf963664ad07d73a13a8fd3cb9fe4bfff486fd3",
+      "experiments/original-paper-scenarios/source-cache-code/encode.py": "c2516c6a174d497d0fcb84de510af269bb65d735c5b9fd783ebd2a2000cbce5c",
+      "experiments/original-paper-scenarios/source-cache-code/receive.py": "4dad57323e9a7ce797f507858070a0233b826198ca7d6cd8357997960375d662"
+    }
+  },
+  "controller_sha256": "343c6e7345cb3ad93ae5e887c1c5f3e0379cc3c92dd2738c6f3d33e94aa91bd6",
+  "started_unix": 1791147123.5451999,
+  "completed_commands": [
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/encode.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-engineering-001",
+        "--scope",
+        "engineering"
+      ],
+      "pid": 265450,
+      "started_unix": 1791147123.5465996,
+      "ended_unix": 1791147126.9696164,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-engineering-001-command-0.log",
+      "log_sha256": "4d135f63a72af5146ec41ac600c3df7bc27be8747f5e883066f1b40b39d0355e"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-engineering-001",
+        "--scope",
+        "engineering",
+        "--condition",
+        "jpeg-cr10"
+      ],
+      "pid": 265459,
+      "started_unix": 1791147126.9709392,
+      "ended_unix": 1791147127.1868095,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-engineering-001-command-1.log",
+      "log_sha256": "8a9b5064f3bf53c8ff3a166653715b32d0b2542707b8abdb4622429a94232146"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-engineering-001",
+        "--scope",
+        "engineering",
+        "--condition",
+        "jpeg-cr30"
+      ],
+      "pid": 265461,
+      "started_unix": 1791147127.1962295,
+      "ended_unix": 1791147127.3987303,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-engineering-001-command-2.log",
+      "log_sha256": "eb93d23bedf1a7fc9d86db3e006d0eabfec6e42df6e24feec0d83f5d99a22ef9"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-engineering-001",
+        "--scope",
+        "engineering",
+        "--condition",
+        "jpeg-cr50"
+      ],
+      "pid": 265463,
+      "started_unix": 1791147127.400101,
+      "ended_unix": 1791147127.6105187,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-engineering-001-command-3.log",
+      "log_sha256": "d54258aa1c3a481e485f69a2a9a06029b50bf877b09a9fb46175b6876acadf80"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-engineering-001",
+        "--scope",
+        "engineering",
+        "--condition",
+        "jpeg2000-cr10"
+      ],
+      "pid": 265465,
+      "started_unix": 1791147127.611859,
+      "ended_unix": 1791147128.1076043,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-engineering-001-command-4.log",
+      "log_sha256": "af3da3d27f129f5d3a6bb4e45ab56cb3b04210530a9ec8a5998a99c0921088da"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-engineering-001",
+        "--scope",
+        "engineering",
+        "--condition",
+        "jpeg2000-cr30"
+      ],
+      "pid": 265467,
+      "started_unix": 1791147128.117716,
+      "ended_unix": 1791147128.4897265,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-engineering-001-command-5.log",
+      "log_sha256": "e0789076ffca9e62b562c12184be27dc18f12e7af8961b13abe72a61d6e1c905"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/receive.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-engineering-001",
+        "--scope",
+        "engineering",
+        "--condition",
+        "jpeg2000-cr50"
+      ],
+      "pid": 265469,
+      "started_unix": 1791147128.4911292,
+      "ended_unix": 1791147128.8405702,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-engineering-001-command-6.log",
+      "log_sha256": "848ab7ebb27e01beec745478c9b8879f6d2768f17c365bcd0d9b50695401fcb0"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/source-cache-code/audit.py",
+        "--directory",
+        "/mnt/d/paper6/runs/original-source-cache-engineering-001",
+        "--scope",
+        "engineering",
+        "--output",
+        "/home/sheng/paper6/data/provenance/original-source-cache-engineering-001-audit.json"
+      ],
+      "pid": 265471,
+      "started_unix": 1791147128.8418295,
+      "ended_unix": 1791147130.9403603,
+      "returncode": 0,
+      "log": "/home/sheng/paper6/logs/original-source-cache-engineering-001-command-7.log",
+      "log_sha256": "617f492671707e6a2266a4fb3fa033943319354769ec7c92c8cec5a28451004b"
+    }
+  ],
+  "current_command": 7,
+  "ended_unix": 1791147130.942563,
+  "audit_sha256": "9626fa5d3d5668ff55a1e557c997e8f7db94fc0d835fa3b3447c2683a67c06eb"
+}

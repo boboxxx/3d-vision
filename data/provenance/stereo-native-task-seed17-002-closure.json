@@ -1,0 +1,180 @@
+{
+  "state": "closed_all_audits_passed",
+  "run_id": "stereo-native-task-seed17-002",
+  "checked_at_unix": 1791080750.154161,
+  "training_updates": 3340,
+  "complete_model_states": 535,
+  "frozen_states_identical": 519,
+  "actual_Adam_parameters": 16,
+  "actual_Adam_steps": 3340,
+  "checkpoint_sha256": "77bc73021a139099e3d0f9c12e0fba8b17eb62f9b9c243eb8f0ad099bd6e8867",
+  "full_initialization_sha256": "924e0de8fe105dc122c64a9f31e502643757be97d3b1b0bb45dc4f9adf34e196",
+  "all4_source_trees_unchanged": {
+    "project": "42b4b52a174f9c2a8c365ea45b3477e87d4c8165d3254d6b04b97bd2dad74b21",
+    "liga": "0ffb2cda5f2fa7596fd18342562f08414d2a61e28892d317aaae946b50967a01",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f"
+  },
+  "original21sources_unchanged": true,
+  "artifacts_sha256": {
+    "data/runs/stereo-native-task-seed17-002.json": "55563c9b2981fb217b499c352ff717fb37ed0ec9daab79cb001dbc941eedf749",
+    "data/runs/stereo-native-task-seed17-002-training-audit.json": "451a3f90fba6934e140a0e33d5f7c27f3091bcd6487f34eb8791f3ac3f71e7f7",
+    "data/runs/stereo-native-task-seed17-002-training-audit.records/training.jsonl": "0085a766e33c40525a41d099280747ccecc54e343be0877c4003361c9b3a0bc2",
+    "data/runs/stereo-native-task-seed17-002-identity.json": "f1abea515c5b83010f870a88db21e9ab30d7b3fe68418417dc6ad197c8516baf",
+    "data/runs/stereo-native-task-seed17-002-identity-AP-audit.json": "731f73450002ce98c21d58a9f946ff992dac56d1555924a4a05a449bfbbd018c",
+    "data/runs/stereo-native-task-seed17-002-identity-feature-audit.json": "44fa76aea348e75a0521769bcc616285338a2660b1e42aee31223a943984376a",
+    "data/runs/stereo-native-task-seed17-002-identity-boundary-report.json": "7413837d833ec521183a28db69130d74b2a2baf129ca72e71ab166514f27b1da",
+    "data/runs/stereo-native-task-seed17-002-identity-features.jsonl": "0da8af29ebff20d026956263c5db7bec6ab0b0f2618f6ad333e6d13234bf4d21",
+    "data/runs/stereo-native-task-seed17-002-awgn.json": "16957aa971c2f5b251a3016f1b5886b38b8270b186df57be8be6c5f401fa8225",
+    "data/runs/stereo-native-task-seed17-002-awgn-AP-audit.json": "360ac67e82895285a1c8a4338b93fb64ca940f33af4993cb8eef7cad0cbecf23",
+    "data/runs/stereo-native-task-seed17-002-awgn-feature-audit.json": "9dddfe6168df135b513e372e5f51465781dd9a052640147137d2650d8afbc4e5",
+    "data/runs/stereo-native-task-seed17-002-awgn-boundary-report.json": "40ad832c82a63bf34fa091a02b09d01f0ada6ba4df885869c6e86aa8e985eb6c",
+    "data/runs/stereo-native-task-seed17-002-awgn-features.jsonl": "70905ef4a8e6c8e8f74a4d61e7d67c31fea73ebb81ccb8ff402cdeb52695a644",
+    "data/provenance/server-source-closure-stereo-native-task-seed17-002.json": "ae1a6107ff0a5d638ee15ae755ffe3b3994e5ede60637ce0452ebaf7d93fac64"
+  },
+  "evaluations": {
+    "identity": {
+      "Car3D_AP_R40_percent": {
+        "Car_3d/easy_R40": 44.66243572017887,
+        "Car_3d/moderate_R40": 25.399305182212718,
+        "Car_3d/hard_R40": 20.516513384141135
+      },
+      "feature_summaries": {
+        "left_stereo": {
+          "elements": 4753981440,
+          "pooled_over_frames_mse": 0.5923032386459824,
+          "pooled_over_frames_nmse": 0.7036255840337897,
+          "pooled_over_frames_cosine": 0.5500609602834783,
+          "median_frame_nmse": 0.7020931634258734,
+          "median_frame_cosine": 0.5524181533983106,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              320,
+              1248
+            ]
+          ]
+        },
+        "right_stereo": {
+          "elements": 4753981440,
+          "pooled_over_frames_mse": 0.5827505530976297,
+          "pooled_over_frames_nmse": 0.7006141457791266,
+          "pooled_over_frames_cosine": 0.552868955461306,
+          "median_frame_nmse": 0.6984560550627785,
+          "median_frame_cosine": 0.555035825447924,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              320,
+              1248
+            ]
+          ]
+        },
+        "appearance": {
+          "elements": 297123840,
+          "pooled_over_frames_mse": 1.8034146877095538,
+          "pooled_over_frames_nmse": 2.0327459307895324,
+          "pooled_over_frames_cosine": 0.384998722623719,
+          "median_frame_nmse": 2.0538697251750984,
+          "median_frame_cosine": 0.3814125018182394,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              80,
+              312
+            ]
+          ]
+        }
+      }
+    },
+    "awgn": {
+      "Car3D_AP_R40_percent": {
+        "Car_3d/easy_R40": 36.724958070164185,
+        "Car_3d/moderate_R40": 18.515846464442347,
+        "Car_3d/hard_R40": 15.644821849603169
+      },
+      "feature_summaries": {
+        "left_stereo": {
+          "elements": 4753981440,
+          "pooled_over_frames_mse": 0.6174592773897741,
+          "pooled_over_frames_nmse": 0.7335096557358805,
+          "pooled_over_frames_cosine": 0.5303684690853289,
+          "median_frame_nmse": 0.7325804033852115,
+          "median_frame_cosine": 0.5324379063970162,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              320,
+              1248
+            ]
+          ]
+        },
+        "right_stereo": {
+          "elements": 4753981440,
+          "pooled_over_frames_mse": 0.607903232096605,
+          "pooled_over_frames_nmse": 0.7308540530898131,
+          "pooled_over_frames_cosine": 0.533045350278638,
+          "median_frame_nmse": 0.7297924245971927,
+          "median_frame_cosine": 0.5351532407024489,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              320,
+              1248
+            ]
+          ]
+        },
+        "appearance": {
+          "elements": 297123840,
+          "pooled_over_frames_mse": 1.819358226443752,
+          "pooled_over_frames_nmse": 2.0507169297534418,
+          "pooled_over_frames_cosine": 0.3828576498006728,
+          "median_frame_nmse": 2.0711830739797996,
+          "median_frame_cosine": 0.3788757914830021,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              80,
+              312
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "training_summary": {
+    "nonzero_gradient_frames": {
+      "left_stereo": 3340,
+      "right_stereo": 3340,
+      "appearance": 3340,
+      "symbols": 3340,
+      "native_cost": 3340
+    },
+    "empty_GT_frames": 62,
+    "steps": 3340,
+    "unique_returned_frames": 3340,
+    "max_preclip_gradient": 130.52349853515625,
+    "first100_loss_median": 1.704758644104004,
+    "last100_loss_median": 1.3677864074707031,
+    "component_first100_medians": {
+      "classification_loss": 0.8593058288097382,
+      "location_loss": 0.17744719982147217,
+      "direction_loss": 0.11350115016102791,
+      "iou_loss_raw": 0.43657416105270386
+    },
+    "component_last100_medians": {
+      "classification_loss": 0.7067062854766846,
+      "location_loss": 0.1220487505197525,
+      "direction_loss": 0.05115971527993679,
+      "iou_loss_raw": 0.37334567308425903
+    }
+  },
+  "preserved_failure_closure_sha256": "d629d5599d3c932c0f4deb1f83987b394609baf9e5db121cb9f61078f84d1e66",
+  "limitations": "Closed fixed F6b clean-native3D exploratory cycle only; internal author-pretraining overlap, no matched-method superiority, mainval, fulloriginal baseline or project-completion claim"
+}

@@ -1,0 +1,9 @@
+{
+  "state": "development_CPU_checks_finished_but_CLI_summary_key_failed",
+  "error": "KeyError: 'overshoot_views'",
+  "retained_report": "data/provenance/srcnn-native-cache-local-CPU-development-before-print-fix-003.json",
+  "correction": "Print separately named model_overshoot_views and guaranteed_overshoot_cache_views; successful CLI proofs use CPU-002",
+  "measurement_or_training_or_receiver_changed": false,
+  "native_KITTI_GPU_AP_execution": false,
+  "eligible_CPU_gate": false
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/verify-cost-field-GPU-local-001.py", line 107, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/verify-cost-field-GPU-local-001.py", line 79, in main
+    energy=float(np.square(tx.astype(np.float64)).sum());assert energy==row['energy'] and abs(energy-29640)<29640e-6
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

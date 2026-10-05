@@ -1,0 +1,43 @@
+{"command": "experiments/geometry-link/F7/code/test_conditions.py", "returncode": 0}
+test_AWGN_is_dedicated_exact_replay_with_native_hooks_grad_and_unchanged_states (__main__.Tests.test_AWGN_is_dedicated_exact_replay_with_native_hooks_grad_and_unchanged_states) ... ok
+test_CUDA_alias_is_resolved_to_current_index_without_accepting_other_devices (__main__.Tests.test_CUDA_alias_is_resolved_to_current_index_without_accepting_other_devices) ... ok
+test_SNR_schedule_does_not_consume_global_RNG_and_rejects_different_seed (__main__.Tests.test_SNR_schedule_does_not_consume_global_RNG_and_rejects_different_seed) ... ok
+test_augmented_fingerprint_captures_pixels_target_camera_transform_and_flipped_empty_GT (__main__.Tests.test_augmented_fingerprint_captures_pixels_target_camera_transform_and_flipped_empty_GT) ... ok
+test_identity_does_not_draw_noise_and_bad_order_generator_layout_rejected (__main__.Tests.test_identity_does_not_draw_noise_and_bad_order_generator_layout_rejected) ... ok
+test_independent_pair_audit_rejects_mismatched_images_targets_SNR_and_noise_rng (__main__.Tests.test_independent_pair_audit_rejects_mismatched_images_targets_SNR_and_noise_rng) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.131s
+
+OK
+{"command": "experiments/geometry-link/F7/code/test_native_scope.py", "returncode": 0}
+test_actual_16_Adam_moments_steps_and_corruption_rejected (__main__.Tests.test_actual_16_Adam_moments_steps_and_corruption_rejected) ... ok
+test_explicit_noisy_scope_keeps_GT_barrier_teacher_rejection_and_all_codec_gradients (__main__.Tests.test_explicit_noisy_scope_keeps_GT_barrier_teacher_rejection_and_all_codec_gradients) ... ok
+test_independent_native_record_audit_rejects_wrong_loss_barrier_symbols_SNR_and_GT (__main__.Tests.test_independent_native_record_audit_rejects_wrong_loss_barrier_symbols_SNR_and_GT) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.045s
+
+OK
+{"command": "tests/test_stereo_task_adaptation.py", "returncode": 0}
+test_GT_contents_cannot_change_sender_or_received_features (__main__.Tests.test_GT_contents_cannot_change_sender_or_received_features) ... ok
+test_actual_16_optimizer_step_and_native_receiver_backward (__main__.Tests.test_actual_16_optimizer_step_and_native_receiver_backward) ... ok
+test_independent_loss_weight_target_barrier_and_cost_gradient_audit (__main__.Tests.test_independent_loss_weight_target_barrier_and_cost_gradient_audit) ... ok
+test_native_empty_GT_keeps_background_objective_and_receiver_gradient (__main__.Tests.test_native_empty_GT_keeps_background_objective_and_receiver_gradient) ... ok
+test_non_sensor_target_train_mode_teacher_and_broken_cost_graph_rejected (__main__.Tests.test_non_sensor_target_train_mode_teacher_and_broken_cost_graph_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.608s
+
+OK
+{"command": "experiments/original-detector-integration/final-code/test_contracts.py", "returncode": 0}
+test_erasure_cannot_substitute_clean_or_previous_received_array (__main__.Contracts.test_erasure_cannot_substitute_clean_or_previous_received_array) ... ok
+test_final_checkpoint_gate_rejects_live_original_before_loading_partial_states (__main__.Contracts.test_final_checkpoint_gate_rejects_live_original_before_loading_partial_states) ... ok
+test_native_prediction_schema_keeps_other_LIGA_classes_and_rejects_erasure_AP_drop (__main__.Contracts.test_native_prediction_schema_keeps_other_LIGA_classes_and_rejects_erasure_AP_drop) ... ok
+test_received_cache_retains_out_of_range_floats_and_rejects_corruption (__main__.Contracts.test_received_cache_retains_out_of_range_floats_and_rejects_corruption) ... ok
+test_union_resource_accounting_charges_empty_views_and_control_without_double_count (__main__.Contracts.test_union_resource_accounting_charges_empty_views_and_control_without_double_count) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.013s
+
+OK

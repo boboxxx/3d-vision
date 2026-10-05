@@ -1,0 +1,13 @@
+{
+  "state": "passed_real_incomplete_candidates_registry_admission_rejection_no_weight_output",
+  "checked_unix": 1791200727.3962154,
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/mnt/nfs2/engdes/wc296/paper6/experiments/original-paper-scenarios/ecsic-KITTI-byte-code-004/registry.py\", line 49, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/mnt/nfs2/engdes/wc296/paper6/experiments/original-paper-scenarios/ecsic-KITTI-byte-code-004/registry.py\", line 39, in main\n    admitted=require_all();out.mkdir(parents=True);entries=[]\n             ^^^^^^^^^^^^^\n  File \"/mnt/nfs2/engdes/wc296/paper6/experiments/original-paper-scenarios/ecsic-KITTI-byte-code-004/registry.py\", line 21, in require_all\n    assert r['state']=='finished_all37120_source_RD_updates_pending_actual_terminal_full_audit_and_real_byte_calibration' and r['candidate']==i and r['lambda_RD']==value and r['seed']==17 and r['update_count']==37120 and len(r['completed_epochs'])==10\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "registrar_sha256": "3e83d813ebe17b931b3ef5450c313bb2b7ca8d56e84c66651c423bffb2f3d037",
+  "candidate0_report_sha256": "17cab7e6e53ee3ae360db8cceea452b5373a31e018d0e16874eaa903d0fce99b",
+  "candidate0_actual_state": "running_full_KITTI_source_RD_training",
+  "candidate0_actual_updates": 36480,
+  "output_directory_created": false,
+  "adapted_neural_reception_or_calibration_executed": false
+}

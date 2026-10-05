@@ -1,0 +1,35 @@
+{
+  "state": "passed_real_clean_first_step_and_three_consistent_tamper_rejections",
+  "clean_frame": "002053",
+  "results": [
+    {
+      "case": "parameter_plus_consistent_descriptor",
+      "rejected": true,
+      "assertion": "('log_bandwidth', 0.009999918016912357, 0.0001054660119106265)"
+    },
+    {
+      "case": "optimizer_moment",
+      "rejected": true,
+      "assertion": "('exp_avg', 0.10000000149011612, 4.6374202611332294e-07)"
+    },
+    {
+      "case": "consistent_RX_baseband",
+      "rejected": true,
+      "assertion": "('AWGN', 0.1000000536441803, 2.127950756403152e-05)"
+    }
+  ],
+  "clean_max_errors": {
+    "Adam_parameter": 7.244634447900467e-08,
+    "Adam_moment": 8.940696710757479e-09,
+    "baseband": 1.1920928955078125e-07,
+    "ZF": 0.0
+  },
+  "checker_sha256": "678a0811597e79f95b0603a2b5f5dacc78fcc724f8e7beefcf23988838596f56",
+  "auditor_sha256": "8c4955a80d64dc803fa3e6c52e3d11912d018b378c10da36ef3af3db6fcef317",
+  "fixture_sha256": {
+    "002053-step0.npz": "cc5ae9b1bf930c9c26dde5b8726b861ed84786d4170fa61fb6775f026dd7591c",
+    "002053-step0-state.pt": "be785df36d409c8443e1e3e6b86ff94ba0d8902aa9218c42c793ee1d2811bbf2",
+    "codec-initial.pt": "11bac28ad3c2c7308eb2e002d294d7032c16e40be729ac63ef82951f24318a61"
+  },
+  "limitation": "Engineering rejection tests only; no independent gradient oracle or validation AP."
+}

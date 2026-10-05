@@ -1,0 +1,15 @@
+{
+  "state": "launched_once_formal_four_arm_final_only",
+  "pid": 260096,
+  "prefix": "stereo-epipolar-native-seed17-001",
+  "launched_unix": 1791142254.8416493,
+  "command": [
+    "bash",
+    "-c",
+    "source scripts/sheng_env.sh; export PYTHONDONTWRITEBYTECODE=1 WANDB_MODE=disabled; exec python experiments/geometry-link/F9/evaluation/formal_cycle.py --prefix stereo-epipolar-native-seed17-001"
+  ],
+  "controller_log": "/home/sheng/paper6/logs/stereo-epipolar-native-seed17-001-controller.log",
+  "updates_per_arm_locked": 3340,
+  "final_endpoints_locked": 16,
+  "launcher_sha256": "58ae59b0de38470c178cb9807b2e1d64d12da7119008c681e49e6cab881b84ae"
+}

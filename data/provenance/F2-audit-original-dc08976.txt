@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+"""F2 independent full-state/optimizer and CRC-checked scalar audit."""
+import argparse
+import json
+from pathlib import Path
+import shutil
+import sys
+import torch
+import yaml
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT/'src'))
+from geocomm.evidence import sha256
+from audit_codec_checkpoint import frozen_state
+from summarize_training import record_payloads, scalar_summary
+
+PREFIX = 'backbone_3d.student_semantic_link_encoder.'
+INITIALIZATION = 'cefa61a9b2f18376109b156044442d14706f4f631e1e88810bca016a0f283334'
+
+
+def check(condition, message):
+    if not condition:
+        raise ValueError(message)
+
+
+def main():
+    p = argparse.ArgumentParser()
+    for name in ('manifest', 'initialization', 'checkpoint', 'events', 'config',
+                 'protocol', 'fold', 'source-manifest', 'output'):
+        p.add_argument('--'+name, type=Path, required=True)
+    args = p.parse_args()
+    if args.output.exists():
+        p.error('preserve previous audit; unique output required')
+    run = json.loads(args.manifest.read_text())
+    check(run['state']=='finished' and run['mode']=='train' and run['codec_only'], 'training not finished')
+    check(sha256(args.initialization)==run['initialization_sha256']==INITIALIZATION, 'F1 epoch5 identity differs')
+    check(run['seed']==17 and run['new_random_initialization_tensors']==[], 'F2 initialization differs')
+    check(sha256(args.config)==run['config_sha256'] and sha256(args.protocol)==run['protocol_sha256'], 'config/protocol differ')
+    sources = json.loads(args.source_manifest.read_text())
+    for name, key in (('project','project_sources'),('liga','detector_sources'),('mmdet','mmdet_sources')):
+        check(sources[name]['actual_sources']==run[key], 'source identity differs: '+name)
+    config = yaml.safe_load(args.config.read_text())
+    opt = config['OPTIMIZATION']
+    check(opt['NUM_EPOCHS']==1 and opt['BATCH_SIZE_PER_GPU']==1 and opt['LR']==.0001
+          and opt['WEIGHT_DECAY']==.0001 and opt['GRAD_NORM_CLIP']==10
+          and opt['OPTIMIZER']=='adamw' and opt['DECAY_STEP_LIST']==[] and not opt['LR_WARMUP'], 'budget differs')
+    backbone = config['MODEL']['BACKBONE_3D']
+    check(not backbone['SEMANTIC_LINK']['enabled'] and backbone['STUDENT_ENCODER']['enabled']
+          and backbone['STUDENT_ENCODER']['distill_weight']==.1, 'F2 loss/link scope differs')
+    fold = json.loads(args.fold.read_text())
+    data = run['dataset']
+    expected = fold['folds']['geocomm_tune_train']
+    check(data['split']=='geocomm_tune_train' and data['count']==3340
+          and data['split_sha256']==expected['split_sha256'], 'training split differs')
+    data_root = Path(data['root'])
+    check((data_root/'ImageSets/geocomm_tune_train.txt').read_text().split()==expected['ids'], 'training IDs differ')
+    check(sha256(data_root/'kitti_infos_geocomm_tune_train.pkl')==expected['infos_sha256']
+          ==data['infos']['kitti_infos_geocomm_tune_train.pkl'], 'native training infos differ')
+    check(not fold['main_validation_used_for_tuning'], 'main validation tuning forbidden')
+    initial = torch.load(args.initialization, map_location='cpu', weights_only=False)['model_state']
+    checkpoint = torch.load(args.checkpoint, map_location='cpu', weights_only=False)
+    state = checkpoint['model_state']
+    check(len(initial)==run['matched_initialization_tensors']==519 and set(initial)==set(state), 'full state coverage differs')
+    check(checkpoint['epoch']==1 and checkpoint['it']==3340, 'task update budget differs')
+    original = {name:value for name,value in initial.items() if not name.startswith(PREFIX)}
+    check(len(original)==484, 'original state count differs')
+    frozen = frozen_state(original, state, 3340)
+    names = run['trainable_parameter_names']
+    check(len(names)==35 and len(set(names))==35 and set(names)=={name for name in initial if name.startswith(PREFIX)}, 'student trainable scope differs')
+    optimizer = checkpoint['optimizer_state']
+    groups = optimizer['param_groups']
+    check(len(groups)==1 and groups[0]['lr']==.0001 and groups[0]['weight_decay']==.0001, 'optimizer config differs')
+    ids = groups[0]['params']
+    check(len(ids)==35 and len(set(ids))==35 and set(ids)==set(optimizer['state']), 'optimizer coverage differs')
+    for name, key in zip(names, ids):
+        value, moment = state[name], optimizer['state'][key]
+        check(torch.isfinite(value).all() and int(moment['step'])==3340, 'student updates differ: '+name)
+        for field in ('exp_avg','exp_avg_sq'):
+            check(moment[field].shape==value.shape and torch.isfinite(moment[field]).all(), 'invalid optimizer moment')
+        check((moment['exp_avg_sq']>=0).all() and (moment['exp_avg_sq']>0).any(), 'no learning signal: '+name)
+    from tensorboardX.proto.event_pb2 import Event
+    from tensorboardX.record_writer import masked_crc32c
+    snapshots = args.output.with_suffix('.events')
+    snapshots.mkdir(parents=True, exist_ok=False)
+    paths = sorted(args.events.glob('events.out.tfevents.*'))
+    check(bool(paths), 'native scalar events missing')
+    rows = {}
+    for path in paths:
+        saved = snapshots/path.name
+        shutil.copyfile(path,saved)
+        for payload in record_payloads(saved,masked_crc32c):
+            event = Event.FromString(payload)
+            for value in event.summary.value:
+                if value.HasField('simple_value'):
+                    rows.setdefault(value.tag,[]).append((event.step,value.simple_value))
+    summaries, values = {}, {}
+    for name, records in rows.items():
+        summaries[name],values[name] = scalar_summary(records)
+    required = ('train/loss','train/gradient_norm_before_clip','train/loss_communication_student')
+    for name in required:
+        check(name in values and set(values[name])==set(range(1,3341)), 'scalar coverage differs: '+name)
+        check(all(value>=0 for value in values[name].values()), 'negative loss/gradient')
+    check('meta_data/learning_rate' in values and set(values['meta_data/learning_rate'])==set(range(3340)), 'LR coverage differs')
+    check(all(abs(value-.0001)<1e-10 for value in values['meta_data/learning_rate'].values()), 'LR differs')
+    check('train/communication_complex_uses' not in values, 'unexpected communication training')
+    result = dict(state='passed',evidence_type='F2_native_uncompressed_student_task_training_audit',
+        steps=3340,epoch=1,original_state_tensors=484,**frozen,trainable_student_tensors=35,
+        initialization_sha256=INITIALIZATION,checkpoint_sha256=sha256(args.checkpoint),
+        manifest_sha256=sha256(args.manifest),source_manifest_sha256=sha256(args.source_manifest),
+        fold_sha256=sha256(args.fold),scalars=summaries,
+        event_files={path.name:dict(bytes=path.stat().st_size,sha256=sha256(path)) for path in snapshots.iterdir()},
+        limitations='native auxiliary task losses retained; saved states/scalars only; no AP/channel gain')
+    args.output.write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
+    print(json.dumps({key:value for key,value in result.items() if key!='scalars'}))
+
+
+if __name__=='__main__':
+    main()

@@ -1,0 +1,41 @@
+{
+  "state": "hardware_verified_runtime_needs_setup",
+  "scope": "GPU_bootstrap_only_no_training_AP",
+  "started_at_unix": 1791109938.6871545,
+  "hostname": "artemis-rtx-03.local",
+  "slurm": {
+    "SLURM_JOB_ID": "11423895",
+    "SLURM_JOB_PARTITION": "enginf",
+    "SLURM_JOB_ACCOUNT": "engdes",
+    "SLURM_STEP_ID": "0",
+    "SLURM_JOB_GPUS": "0",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "SLURM_CPUS_PER_TASK": "8"
+  },
+  "sources": {
+    "bootstrap.sbatch": "36f8558186bdad818f98378f20bfa00a6c0c7c3bf3a63c67b309cc6d56596ec4",
+    "probe.py": "ee45226eaad44cfc4ab893d393278f708a8d2827328d663130939b35912c11af",
+    "protocol.md": "8219c9ce1619d013a81d6b72883939046bdb15c60ce6ea35d02939178bff7f44"
+  },
+  "Python": "3.12.8",
+  "GPU_products": [
+    {
+      "index": "0",
+      "uuid": "GPU-badb730f-cae3-8429-717d-89d0f06e10f0",
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "memory_MiB": 97887,
+      "driver": "610.57.04"
+    }
+  ],
+  "allocated_GPU": {
+    "index": "0",
+    "uuid": "GPU-badb730f-cae3-8429-717d-89d0f06e10f0",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "memory_MiB": 97887,
+    "driver": "610.57.04"
+  },
+  "hardware_verified": true,
+  "GPU_tensor_probe_passed": false,
+  "runtime_limitation": "ModuleNotFoundError: No module named 'torch'",
+  "finished_at_unix": 1791109938.7105987
+}

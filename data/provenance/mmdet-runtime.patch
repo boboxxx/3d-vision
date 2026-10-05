@@ -1,0 +1,188 @@
+diff --git a/mmdet/__init__.py b/mmdet/__init__.py
+index 39faed8..fc9373e 100644
+--- a/mmdet/__init__.py
++++ b/mmdet/__init__.py
+@@ -16,7 +16,7 @@ def digit_version(version_str):
+ 
+ 
+ mmcv_minimum_version = '1.1.5'
+-mmcv_maximum_version = '1.3'
++mmcv_maximum_version = '1.7.2'
+ mmcv_version = digit_version(mmcv.__version__)
+ 
+ 
+diff --git a/mmdet/core/bbox/samplers/iou_balanced_neg_sampler.py b/mmdet/core/bbox/samplers/iou_balanced_neg_sampler.py
+index f275e43..84ceb71 100644
+--- a/mmdet/core/bbox/samplers/iou_balanced_neg_sampler.py
++++ b/mmdet/core/bbox/samplers/iou_balanced_neg_sampler.py
+@@ -72,7 +72,7 @@ class IoUBalancedNegSampler(RandomSampler):
+                 tmp_sampled_set = self.random_choice(tmp_inds,
+                                                      per_num_expected)
+             else:
+-                tmp_sampled_set = np.array(tmp_inds, dtype=np.int)
++                tmp_sampled_set = np.array(tmp_inds, dtype=int)
+             sampled_inds.append(tmp_sampled_set)
+ 
+         sampled_inds = np.concatenate(sampled_inds)
+@@ -137,13 +137,13 @@ class IoUBalancedNegSampler(RandomSampler):
+                         iou_sampling_neg_inds, num_expected_iou_sampling)
+             else:
+                 iou_sampled_inds = np.array(
+-                    iou_sampling_neg_inds, dtype=np.int)
++                    iou_sampling_neg_inds, dtype=int)
+             num_expected_floor = num_expected - len(iou_sampled_inds)
+             if len(floor_neg_inds) > num_expected_floor:
+                 sampled_floor_inds = self.random_choice(
+                     floor_neg_inds, num_expected_floor)
+             else:
+-                sampled_floor_inds = np.array(floor_neg_inds, dtype=np.int)
++                sampled_floor_inds = np.array(floor_neg_inds, dtype=int)
+             sampled_inds = np.concatenate(
+                 (sampled_floor_inds, iou_sampled_inds))
+             if len(sampled_inds) < num_expected:
+diff --git a/mmdet/core/evaluation/mean_ap.py b/mmdet/core/evaluation/mean_ap.py
+index f44314b..d84abc1 100644
+--- a/mmdet/core/evaluation/mean_ap.py
++++ b/mmdet/core/evaluation/mean_ap.py
+@@ -80,8 +80,8 @@ def tpfp_imagenet(det_bboxes,
+     """
+     # an indicator of ignored gts
+     gt_ignore_inds = np.concatenate(
+-        (np.zeros(gt_bboxes.shape[0], dtype=np.bool),
+-         np.ones(gt_bboxes_ignore.shape[0], dtype=np.bool)))
++        (np.zeros(gt_bboxes.shape[0], dtype=bool),
++         np.ones(gt_bboxes_ignore.shape[0], dtype=bool)))
+     # stack gt_bboxes and gt_bboxes_ignore for convenience
+     gt_bboxes = np.vstack((gt_bboxes, gt_bboxes_ignore))
+ 
+@@ -173,8 +173,8 @@ def tpfp_default(det_bboxes,
+     """
+     # an indicator of ignored gts
+     gt_ignore_inds = np.concatenate(
+-        (np.zeros(gt_bboxes.shape[0], dtype=np.bool),
+-         np.ones(gt_bboxes_ignore.shape[0], dtype=np.bool)))
++        (np.zeros(gt_bboxes.shape[0], dtype=bool),
++         np.ones(gt_bboxes_ignore.shape[0], dtype=bool)))
+     # stack gt_bboxes and gt_bboxes_ignore for convenience
+     gt_bboxes = np.vstack((gt_bboxes, gt_bboxes_ignore))
+ 
+diff --git a/mmdet/core/mask/structures.py b/mmdet/core/mask/structures.py
+index 6f5da55..f159fec 100644
+--- a/mmdet/core/mask/structures.py
++++ b/mmdet/core/mask/structures.py
+@@ -823,5 +823,5 @@ def polygon_to_bitmap(polygons, height, width):
+     """
+     rles = maskUtils.frPyObjects(polygons, height, width)
+     rle = maskUtils.merge(rles)
+-    bitmap_mask = maskUtils.decode(rle).astype(np.bool)
++    bitmap_mask = maskUtils.decode(rle).astype(bool)
+     return bitmap_mask
+diff --git a/mmdet/core/post_processing/bbox_nms.py b/mmdet/core/post_processing/bbox_nms.py
+index 46a6d46..2213426 100644
+--- a/mmdet/core/post_processing/bbox_nms.py
++++ b/mmdet/core/post_processing/bbox_nms.py
+@@ -41,7 +41,7 @@ def multiclass_nms(multi_bboxes,
+     if score_factors is not None:
+         scores = scores * score_factors[:, None]
+ 
+-    labels = torch.arange(num_classes, dtype=torch.long)
++    labels = torch.arange(num_classes, dtype=torch.long, device=scores.device)
+     labels = labels.view(1, -1).expand_as(scores)
+ 
+     bboxes = bboxes.reshape(-1, num_bbox_channels)
+diff --git a/mmdet/datasets/custom.py b/mmdet/datasets/custom.py
+index 5c6a469..3e72941 100644
+--- a/mmdet/datasets/custom.py
++++ b/mmdet/datasets/custom.py
+@@ -135,7 +135,7 @@ class CustomDataset(Dataset):
+             list[int]: All categories in the image of specified index.
+         """
+ 
+-        return self.data_infos[idx]['ann']['labels'].astype(np.int).tolist()
++        return self.data_infos[idx]['ann']['labels'].astype(int).tolist()
+ 
+     def pre_pipeline(self, results):
+         """Prepare results dict for pipeline."""
+diff --git a/mmdet/datasets/kitti_object_eval_python/kitti_common.py b/mmdet/datasets/kitti_object_eval_python/kitti_common.py
+index e7e254e..f8c20c6 100644
+--- a/mmdet/datasets/kitti_object_eval_python/kitti_common.py
++++ b/mmdet/datasets/kitti_object_eval_python/kitti_common.py
+@@ -261,9 +261,9 @@ def add_difficulty_to_annos(info):
+     occlusion = annos['occluded']
+     truncation = annos['truncated']
+     diff = []
+-    easy_mask = np.ones((len(dims), ), dtype=np.bool)
+-    moderate_mask = np.ones((len(dims), ), dtype=np.bool)
+-    hard_mask = np.ones((len(dims), ), dtype=np.bool)
++    easy_mask = np.ones((len(dims), ), dtype=bool)
++    moderate_mask = np.ones((len(dims), ), dtype=bool)
++    hard_mask = np.ones((len(dims), ), dtype=bool)
+     i = 0
+     for h, o, t in zip(height, occlusion, truncation):
+         if o > max_occlusion[0] or h <= min_height[0] or t > max_trunc[0]:
+diff --git a/mmdet/models/detectors/stereo_dsgn_single_stage.old.py b/mmdet/models/detectors/stereo_dsgn_single_stage.old.py
+index b7f95d2..404d24d 100644
+--- a/mmdet/models/detectors/stereo_dsgn_single_stage.old.py
++++ b/mmdet/models/detectors/stereo_dsgn_single_stage.old.py
+@@ -486,7 +486,7 @@ class StereoDsgnSingleStageDetector(StereoBaseDetector):
+                             img,
+                             neg_proposals[idx],
+                             np.zeros([neg_proposals[idx].shape[0]],
+-                                     dtype=np.int),
++                                     dtype=int),
+                             class_names=[''],
+                             bbox_color='cyan',
+                             text_color='cyan',
+@@ -495,7 +495,7 @@ class StereoDsgnSingleStageDetector(StereoBaseDetector):
+                             img,
+                             bboxes_ignore[idx],
+                             np.zeros([bboxes_ignore[idx].shape[0]],
+-                                     dtype=np.int),
++                                     dtype=int),
+                             class_names=[''],
+                             bbox_color='blue',
+                             text_color='blue',
+@@ -891,7 +891,7 @@ class StereoDsgnSingleStageDetector(StereoBaseDetector):
+         #         continue
+         #     overlaps = bbox_overlaps_2d(proj_bboxes3d, proposals).max(1)[0]
+         #     valid_inds = (overlaps > 0.5).detach(
+-        #     ).cpu().numpy().astype(np.bool)
++        #     ).cpu().numpy().astype(bool)
+         #     print("filter {} / {}".format(valid_inds.sum(), len(valid_inds)))
+         #     reprojected_bboxes_2d[idx] = reprojected_bboxes_2d[idx][valid_inds]
+         #     bbox3d_results[idx] = bbox3d_results[idx][valid_inds]
+@@ -1345,7 +1345,7 @@ def imshow_bev_points(img,
+     #         cv2.line(
+     #             img, tuple(corner[i1]), tuple(corner[i2]), bbox_color, thickness=thickness * 2 if i1 == 2 else thickness, lineType=cv2.LINE_AA)
+     for idx, point in enumerate(points):
+-        cv2.circle(img, tuple(np.round(point).astype(np.int)), 0, point_color,
++        cv2.circle(img, tuple(np.round(point).astype(int)), 0, point_color,
+                    thickness)
+ 
+     if show:
+diff --git a/mmdet/models/roi_heads/bbox_heads/bbox_head.py b/mmdet/models/roi_heads/bbox_heads/bbox_head.py
+index e0931e1..80b1b83 100644
+--- a/mmdet/models/roi_heads/bbox_heads/bbox_head.py
++++ b/mmdet/models/roi_heads/bbox_heads/bbox_head.py
+@@ -262,7 +262,7 @@ class BBoxHead(nn.Module):
+             >>> labels = torch.randint(0, 2, (n_roi,)).long()
+             >>> bbox_preds = random_boxes(n_roi, scale=scale, rng=rng)
+             >>> # For each image, pretend random positive boxes are gts
+-            >>> is_label_pos = (labels.numpy() > 0).astype(np.int)
++            >>> is_label_pos = (labels.numpy() > 0).astype(int)
+             >>> lbl_per_img = kwarray.group_items(is_label_pos,
+             ...                                   img_ids.numpy())
+             >>> pos_per_img = [sum(lbl_per_img.get(gid, []))
+diff --git a/mmdet/utils/det3d/kitti_utils.py b/mmdet/utils/det3d/kitti_utils.py
+index f79a524..793a787 100644
+--- a/mmdet/utils/det3d/kitti_utils.py
++++ b/mmdet/utils/det3d/kitti_utils.py
+@@ -17,7 +17,7 @@ def in_hull(p, hull):
+         flag = hull.find_simplex(p) >= 0
+     except scipy.spatial.qhull.QhullError:
+         print('Warning: not a hull %s' % str(hull))
+-        flag = np.zeros(p.shape[0], dtype=np.bool)
++        flag = np.zeros(p.shape[0], dtype=bool)
+ 
+     return flag
+ 

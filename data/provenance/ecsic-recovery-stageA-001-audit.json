@@ -1,0 +1,45 @@
+{
+  "state": "passed",
+  "actual_native_terminal": true,
+  "native_pid": 168537,
+  "manifest_sha256": "f90328a3506c81dc394824ddfc4d732ef971b1ebd6785c53b21672bc467e7ff5",
+  "verifier_sha256": "8676092274b878665e7e065c490f941f4704bf719d8daa49458f4728210b4928",
+  "original_state_tensors": 225,
+  "cases": {
+    "synthetic32x64": {
+      "exact_arrays": 18,
+      "files": {
+        "decoded.npz": "496316f76e7744ab515b48757ccf2a3b2cfe018c6ee7d20eb7254cc66465155d",
+        "public.json": "c8808c0f13781f74a39e07925edc82d61a2ca3a2f20de2570045087da963f06f",
+        "receiver.json": "334eb3be1960f47f42e9e3ed2db3b9c79e669641781df54e2f841a0af0088bf7",
+        "receiver.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "reference.npz": "93feb664adfeaa49b6b5876b4db6267e9c7563697941d2f646efbbcdb70f96c1",
+        "sender.json": "2294074848f854622c1487057b73726ca5eb6c685d5948d7368551d555a8551c",
+        "symbols.npz": "596212c55979482fd82c8f137c412d57571dfc39270c2dd582c2ff643f10c194"
+      },
+      "padded_hw": [
+        32,
+        64
+      ]
+    },
+    "training000000": {
+      "exact_arrays": 18,
+      "files": {
+        "decoded.npz": "11d9b069fe098ca33607bdfc3e2fcf154f9fca25cf5fc917eb6870c48a1aece2",
+        "public.json": "e3b5c9fe2acf96d05adaf92284d84d464cbd512cec0fdc7031440f767d5f3752",
+        "receiver.json": "667d698577e722e6ed4df103a07f3ce502053aca1f748404346140d198022afe",
+        "receiver.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "reference.npz": "6237852c9af5f53fd14f08767b544bff7a917534116d071aa2294115f1384e7d",
+        "sender.json": "70afa4e72d0f9bf836c8f77243e29dc3851c3693a9b31636f189d8b87a3d6d56",
+        "symbols.npz": "38a0460d2d7b296c848b1de269d1ecffa1f780a200ea9c5ebacb188597347cf5"
+      },
+      "padded_hw": [
+        384,
+        1248
+      ]
+    }
+  },
+  "audited_unix": 1791135192.5654218,
+  "no_new_model_forward": true,
+  "actual_entropy_coding": false
+}

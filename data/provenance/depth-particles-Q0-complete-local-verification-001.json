@@ -1,0 +1,27 @@
+{
+  "state": "passed_all10752_Q0_transferred_cell_records_and168_case_statistics",
+  "checked_unix": 1791166265.7104902,
+  "artifacts_sha256": {
+    "data/engineering/depth-particles-Q0-local-CPU-001/report.json": "1e8740d4b0549f0d1602829365076ca39f22f2e729f8c858c69d06437d9ad83c",
+    "data/engineering/depth-particles-Q0-local-CPU-001/complete_arrays.npz": "a7040dc5e75b9bc2e01e8fb2c6ad4f43fbc7211c84c787f4442e43cf267ad9ec",
+    "data/engineering/depth-particles-Q0-sheng-CPU-001/report.json": "394d010b03839c6f477f284ed875ab2b1585dfe03821d18a98b52d3dcc7754e8",
+    "data/engineering/depth-particles-Q0-sheng-CPU-001/complete_arrays.npz": "4b021383b10b514a3cd4c5489432cdc8d582a2a7bc15ca17b9776bdd78ccce83"
+  },
+  "hosts": {
+    "local": {
+      "conditions": 7,
+      "condition_source_records": 84,
+      "raw_cell_records": 5376,
+      "maximum_independent_scalar_W1_error": 4.121147867408581e-13
+    },
+    "sheng": {
+      "conditions": 7,
+      "condition_source_records": 84,
+      "raw_cell_records": 5376,
+      "maximum_independent_scalar_W1_error": 4.121147867408581e-13
+    }
+  },
+  "cross_host_max_abs_difference": 2.842170943040401e-14,
+  "verifier_sha256": "b53ef5e7405cbc07b84583989712d09eb9c6fc1e342e68874015aed226c71789",
+  "limitation": "All synthetic physical arrays and received-only scalar-PAV/exact-W1 replay; no KITTI teacher, task sufficiency, GPU, learned comparator or detection advantage"
+}

@@ -1,0 +1,36 @@
+{
+  "state": "passed",
+  "scope": "CPU_engineering_not_AP_or_LDPC_simulation",
+  "started_at_unix": 1791109411.1856918,
+  "command": [
+    "experiments/original-paper-scenarios/code/check_cpu.py",
+    "--output",
+    "data/engineering/original-scenarios-local-CPU-001.json",
+    "--log",
+    "data/engineering/original-scenarios-local-CPU-001.log"
+  ],
+  "protocol_sha256": "b633721f4c2e2ef202edeec06d8bad8c0a10ab63fd6a82008c0648be5bdadb1f",
+  "source_files": {
+    "check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+    "contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+    "image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+    "test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+  },
+  "environment": {
+    "Python": "3.12.8",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "NumPy": "2.4.4",
+    "Pillow": "12.2.0",
+    "libjpeg": "6.2",
+    "OpenJPEG": "2.5.4"
+  },
+  "scenario_count_unique": 154,
+  "scenario_table_counts": {
+    "source": 16,
+    "channel": 60,
+    "joint": 91
+  },
+  "tests_passed": 7,
+  "finished_at_unix": 1791109411.783009,
+  "log_sha256": "ddcbf1c500d27c2cb899c152cf7df59386c4d0a3cf7b475dbd3afc95eefa1b83"
+}

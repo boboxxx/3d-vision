@@ -1,0 +1,13 @@
+/etc/profile.d/lmod.sh: line 10: PBS_NODEFILE: unbound variable
+/opt/ohpc/admin/lmod/lmod/init/bash: line 26: FPATH: unbound variable
+Traceback (most recent call last):
+  File "/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-004.py", line 105, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-004.py", line 76, in main
+    run([sys.executable, 'setup.py', 'bdist_wheel', '--dist-dir', str(WORK / 'built-wheels')],
+  File "/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-004.py", line 33, in run
+    assert result.returncode == 0, f'{name}: exit {result.returncode}; see retained complete log'
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: mmcv-build: exit 1; see retained complete log
+srun: error: artemis-a40-15: task 0: Exited with exit code 1

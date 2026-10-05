@@ -1,0 +1,12 @@
+{
+  "state": "launched_once_training_only_CPU_calibration",
+  "pid": 262111,
+  "launched_unix": 1791145319.6479099,
+  "command": [
+    "bash",
+    "-c",
+    "source scripts/sheng_env.sh; export CUDA_VISIBLE_DEVICES=\"\" OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 WANDB_MODE=disabled PYTHONDONTWRITEBYTECODE=1; exec nice -n 10 python experiments/original-paper-scenarios/jpeg-rate-calibration-code/calibrate.py"
+  ],
+  "launcher_sha256": "c26f13276b4b7797fd13cda43bb87802150cac9a1fe44bc534efde90b6b12523",
+  "log_path": "/home/sheng/paper6/logs/original-jpeg-rate-calibration-001.log"
+}

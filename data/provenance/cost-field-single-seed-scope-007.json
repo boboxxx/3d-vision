@@ -1,0 +1,107 @@
+{
+  "observed_unix": 1791195276.3448956,
+  "queue": "11424939 RUNNING 2:21:15 artemis-rtx-03\n",
+  "accounting": "11424939|11424939|RUNNING|0:0\n11424939.batch|11424939.batch|RUNNING|0:0\n11424939.extern|11424939.extern|RUNNING|0:0\n11424939.0|11424939.0|RUNNING|0:0\n11424941|11424940_23|CANCELLED by 1007844|0:0\n11424941.batch|11424940_23.batch|CANCELLED|0:15\n11424941.extern|11424940_23.extern|COMPLETED|0:0\n11424941.0|11424940_23.0|CANCELLED|0:15\n11424940|11424940_41|CANCELLED by 1007844|0:0\n",
+  "runs": {
+    "17": {
+      "report_sha256": "b674e921eb6407143543e97eb9e740f004c29be2d1d1366c87f562f6ffed2a36",
+      "state": "running_full_split_task_training",
+      "stage": "actual_native_detection_loss_backward",
+      "job_id": "11424939",
+      "update_count": 18078,
+      "last_update": {
+        "arm": "P",
+        "epoch": 2,
+        "index": 3229,
+        "step": 6941,
+        "frame": "003123",
+        "loss": 0.5509285926818848,
+        "complex_uses": 29640
+      },
+      "completed_epochs": [
+        {
+          "arm": "G",
+          "epoch": 1,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch1.pt",
+          "sha256": "24c485644d903b488b48ad25ee8550fc46677fb4b02bbc2ce0f0d09de53b7380"
+        },
+        {
+          "arm": "G",
+          "epoch": 2,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch2.pt",
+          "sha256": "7e247683cdaea734fd210eb07f202cc59824484098bcded77646804e73dac208"
+        },
+        {
+          "arm": "G",
+          "epoch": 3,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch3.pt",
+          "sha256": "130369c740c014e1e61893858191ff8f9c3baed689e3b1709ad9c2df871c4108"
+        },
+        {
+          "arm": "P",
+          "epoch": 1,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-P-epoch1.pt",
+          "sha256": "06dc7023bd11c930717239053cca728ff23c52b45ecc8b20321e8b4658cab3a8"
+        }
+      ],
+      "traceback": null,
+      "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+    },
+    "23": {
+      "report_sha256": "5dc87318b01a5854056f977d387da73cd73ddbe56f7a39c98552f51988cd1bb3",
+      "state": "running_full_split_task_training",
+      "stage": "actual_native_detection_loss_backward",
+      "job_id": "11424941",
+      "update_count": 17482,
+      "last_update": {
+        "arm": "P",
+        "epoch": 2,
+        "index": 2633,
+        "step": 6345,
+        "frame": "005409",
+        "loss": 1.2768622636795044,
+        "complex_uses": 29640
+      },
+      "completed_epochs": [
+        {
+          "arm": "G",
+          "epoch": 1,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed23-004/checkpoint-G-epoch1.pt",
+          "sha256": "c72929996baf1b9e604f29a7c02e186b62b5f7205c25505741b68d87e7fe572c"
+        },
+        {
+          "arm": "G",
+          "epoch": 2,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed23-004/checkpoint-G-epoch2.pt",
+          "sha256": "dc79c1c30f18acd1464d0371a28a3b88ec3ab34d9b52c9ac79bd003f7bc75d6f"
+        },
+        {
+          "arm": "G",
+          "epoch": 3,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed23-004/checkpoint-G-epoch3.pt",
+          "sha256": "66f752f95a605a5b6397c0f53b294f760738fd85de11f653fb1394b982a8a655"
+        },
+        {
+          "arm": "P",
+          "epoch": 1,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed23-004/checkpoint-P-epoch1.pt",
+          "sha256": "b9a2f00fc22cde16f339fd979ba3ffd33684f9e0737aca76fc9ed29799195e59"
+        }
+      ],
+      "traceback": null,
+      "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+    },
+    "41": {
+      "state": "report_absent"
+    }
+  },
+  "user_scope": "single seed17 first; seeds23/41 stopped on user instruction; records retained; cancelled jobs are not scientific failures or complete training"
+}

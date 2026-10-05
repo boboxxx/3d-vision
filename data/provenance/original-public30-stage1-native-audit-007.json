@@ -1,0 +1,126 @@
+{
+  "state": "passed_complete_original_public_semantic_stage",
+  "scope": "formal",
+  "stage": 1,
+  "mode": "native",
+  "updates": 44544,
+  "epochs": [
+    {
+      "epoch": 1,
+      "samples": 3712,
+      "updates": 3712,
+      "frozen_states_identical": 206,
+      "changed_allowed_states": 562,
+      "optimizer_states": 562,
+      "checkpoint_sha256": "318797c7f62c21654ddf4c813a6442e151604bcfb86bdf4994844915adbebd25"
+    },
+    {
+      "epoch": 2,
+      "samples": 3712,
+      "updates": 7424,
+      "frozen_states_identical": 206,
+      "changed_allowed_states": 562,
+      "optimizer_states": 562,
+      "checkpoint_sha256": "cd412d4cca70b6ccbeca411886ee330b5b0088869cc64290a22b5ace2b837e90"
+    },
+    {
+      "epoch": 3,
+      "samples": 3712,
+      "updates": 11136,
+      "frozen_states_identical": 146,
+      "changed_allowed_states": 622,
+      "optimizer_states": 622,
+      "checkpoint_sha256": "7238365de8c65daea36870882e484a37249cb88e1a8a71719d523e58f9d881fb"
+    },
+    {
+      "epoch": 4,
+      "samples": 3712,
+      "updates": 14848,
+      "frozen_states_identical": 146,
+      "changed_allowed_states": 622,
+      "optimizer_states": 622,
+      "checkpoint_sha256": "92c95dd7e219960fea6861d8300917791debafac29fef4c4605b0f29ad515c73"
+    },
+    {
+      "epoch": 5,
+      "samples": 3712,
+      "updates": 18560,
+      "frozen_states_identical": 146,
+      "changed_allowed_states": 622,
+      "optimizer_states": 622,
+      "checkpoint_sha256": "e3c5be0bae9bd72d944dec8d628fb2c8b3e43a686612fea5ee158ce9f7cdf979"
+    },
+    {
+      "epoch": 6,
+      "samples": 3712,
+      "updates": 22272,
+      "frozen_states_identical": 146,
+      "changed_allowed_states": 622,
+      "optimizer_states": 622,
+      "checkpoint_sha256": "83c1696c91660de0a9a0c6dd0f18476c384ca81bc8be3bdbaf6c884e646cee46"
+    },
+    {
+      "epoch": 7,
+      "samples": 3712,
+      "updates": 25984,
+      "frozen_states_identical": 146,
+      "changed_allowed_states": 622,
+      "optimizer_states": 622,
+      "checkpoint_sha256": "07c517ac66b2beeb37786a0917889249b10b7271cc17ddda1a9cc1fe1a541ede"
+    },
+    {
+      "epoch": 8,
+      "samples": 3712,
+      "updates": 29696,
+      "frozen_states_identical": 146,
+      "changed_allowed_states": 622,
+      "optimizer_states": 622,
+      "checkpoint_sha256": "98321c423eacadd0a9fb9e452d8d38d1c1ca2a2ff01817536dce4ea2b8ba47e4"
+    },
+    {
+      "epoch": 9,
+      "samples": 3712,
+      "updates": 33408,
+      "frozen_states_identical": 146,
+      "changed_allowed_states": 622,
+      "optimizer_states": 622,
+      "checkpoint_sha256": "5ba3eb1a2cbc9396d3ad765a3ccd05247a3014846b36feaaae29617ea3589bd4"
+    },
+    {
+      "epoch": 10,
+      "samples": 3712,
+      "updates": 37120,
+      "frozen_states_identical": 146,
+      "changed_allowed_states": 622,
+      "optimizer_states": 622,
+      "checkpoint_sha256": "e37887b4579a3bf3dc32b0e1d50c77005675728671ffb82d01ac12d4dbb5a1e3"
+    },
+    {
+      "epoch": 11,
+      "samples": 3712,
+      "updates": 40832,
+      "frozen_states_identical": 146,
+      "changed_allowed_states": 622,
+      "optimizer_states": 622,
+      "checkpoint_sha256": "ea1c7bbb8ae41e06e0b0dcacf2123a62f8c2b5a1ccb2bb74d731f580207f2386"
+    },
+    {
+      "epoch": 12,
+      "samples": 3712,
+      "updates": 44544,
+      "frozen_states_identical": 146,
+      "changed_allowed_states": 622,
+      "optimizer_states": 622,
+      "checkpoint_sha256": "b7ea4764c9ecdc4e152902dde67a855e68e7d9eb94cf820f3b435c5e0cb65cff"
+    }
+  ],
+  "report_sha256": "f7689c2f408a0432694da42fb566553a5bdea84d7c38744d065fb06d7e7a0ca4",
+  "records_sha256": "4b2a19a7673f8398342d18a636609545e6edb83490575a3c618e552e73bfdae0",
+  "input_sha256": "76761fe49305dcbe9829973b8b11e70a2c928e7ac1c3962b7e40b09f72317338",
+  "verifier_sha256": "3d83115e3f98e03d91aa7548ff0bc7107b1e38b7929016b7688fe0ee440e1195",
+  "actual_terminal_closed": true,
+  "terminal_sha256": "f9b3aaaff4732e0c550ac1eaadd71d7120349a16252e23af7902d39106a9b908",
+  "torch_version": "2.7.1+cu128",
+  "numpy_version": "1.26.4",
+  "limitation": "Complete source/order and saved-state/Adam-counter/moment/frozen-state proof; per-update raw forward/backward and Adam numerical transitions not independently recomputed."
+}

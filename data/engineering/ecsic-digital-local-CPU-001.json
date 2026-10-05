@@ -1,0 +1,2739 @@
+{
+  "state": "passed_independent_P6EC_framing_checks",
+  "scope": "P6EC_outer_framing_CPU_no_PHY_no_AP",
+  "started_unix": 1791136297.27072,
+  "protocol_sha256": "da3c6a000af96628d954bbcdd2af8cce8343c3b7d66d731ceb9d5731af54208a",
+  "numpy": "2.4.4",
+  "checks": [
+    {
+      "name": "synthetic32x64-1296-valid",
+      "public_k": 1296,
+      "expected_reason": null,
+      "reception": {
+        "state": "received",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": null,
+        "neural_decoder_called": false,
+        "observed_blocks": 6,
+        "public_k": 1296,
+        "decoded_header_hex": "50365342020300000000032d000000007ecb66e7",
+        "header_bytes": 20,
+        "header_derived_wire_bytes": 833,
+        "header_derived_payload_bytes": 813,
+        "source_padding_bits": 1112,
+        "codec": "ecsic_P6EC",
+        "outer_version": 2,
+        "payload_lengths": [
+          813,
+          0
+        ],
+        "original_hw": [
+          32,
+          64
+        ],
+        "padded_hw": [
+          32,
+          64
+        ],
+        "inner_overhead_bytes": 166,
+        "received_wire_sha256": "56809fd87f175f073249095b113ecdfbf1533f5f41faa5af33f5e9dbe91d089d",
+        "received_payload_sha256": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f"
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-magic",
+      "public_k": 1296,
+      "expected_reason": "header_magic",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_magic",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-version",
+      "public_k": 1296,
+      "expected_reason": "header_version",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_version",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-codec",
+      "public_k": 1296,
+      "expected_reason": "header_codec",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_codec",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-reserved",
+      "public_k": 1296,
+      "expected_reason": "header_reserved",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_reserved",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-zero_length",
+      "public_k": 1296,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-short_length",
+      "public_k": 1296,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-oversize",
+      "public_k": 1296,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-capacity",
+      "public_k": 1296,
+      "expected_reason": "header_capacity_overflow",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_capacity_overflow",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-second_length",
+      "public_k": 1296,
+      "expected_reason": "header_second_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_second_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-outer_crc",
+      "public_k": 1296,
+      "expected_reason": "outer_payload_CRC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "outer_payload_CRC_failure",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-missing_block",
+      "public_k": 1296,
+      "expected_reason": "header_capacity_overflow",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_capacity_overflow",
+        "neural_decoder_called": false
+      },
+      "blocks": 5
+    },
+    {
+      "name": "synthetic32x64-1296-extra_block",
+      "public_k": 1296,
+      "expected_reason": "observed_block_count_mismatch",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "observed_block_count_mismatch",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-1296-empty",
+      "public_k": 1296,
+      "expected_reason": "decoded_block_shape",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "decoded_block_shape",
+        "neural_decoder_called": false
+      },
+      "blocks": 0
+    },
+    {
+      "name": "synthetic32x64-1296-wrong_width",
+      "public_k": 1296,
+      "expected_reason": "decoded_block_shape",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "decoded_block_shape",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-wrong_k",
+      "public_k": 111,
+      "expected_reason": "unsupported_public_k",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "unsupported_public_k",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-nonbinary",
+      "public_k": 1296,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-nan",
+      "public_k": 1296,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inf",
+      "public_k": 1296,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-first_pad_bit",
+      "public_k": 1296,
+      "expected_reason": "nonzero_decoded_padding",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonzero_decoded_padding",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-last_pad_bit",
+      "public_k": 1296,
+      "expected_reason": "nonzero_decoded_padding",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonzero_decoded_padding",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-payload_bit",
+      "public_k": 1296,
+      "expected_reason": "outer_payload_CRC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "outer_payload_CRC_failure",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_crc",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container CRC",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_magic",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_version",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_count",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_model",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_config",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_cdf",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_zero_height",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:dimension bounds",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_padding",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:padding rule",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_order",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream id/count",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_symbols",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream id/count",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_rans_length",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_escape_length",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_append",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:unused container bytes",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-1296-inner_truncate",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-972-valid",
+      "public_k": 972,
+      "expected_reason": null,
+      "reception": {
+        "state": "received",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": null,
+        "neural_decoder_called": false,
+        "observed_blocks": 7,
+        "public_k": 972,
+        "decoded_header_hex": "50365342020300000000032d000000007ecb66e7",
+        "header_bytes": 20,
+        "header_derived_wire_bytes": 833,
+        "header_derived_payload_bytes": 813,
+        "source_padding_bits": 140,
+        "codec": "ecsic_P6EC",
+        "outer_version": 2,
+        "payload_lengths": [
+          813,
+          0
+        ],
+        "original_hw": [
+          32,
+          64
+        ],
+        "padded_hw": [
+          32,
+          64
+        ],
+        "inner_overhead_bytes": 166,
+        "received_wire_sha256": "56809fd87f175f073249095b113ecdfbf1533f5f41faa5af33f5e9dbe91d089d",
+        "received_payload_sha256": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f"
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-magic",
+      "public_k": 972,
+      "expected_reason": "header_magic",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_magic",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-version",
+      "public_k": 972,
+      "expected_reason": "header_version",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_version",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-codec",
+      "public_k": 972,
+      "expected_reason": "header_codec",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_codec",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-reserved",
+      "public_k": 972,
+      "expected_reason": "header_reserved",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_reserved",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-zero_length",
+      "public_k": 972,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-short_length",
+      "public_k": 972,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-oversize",
+      "public_k": 972,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-capacity",
+      "public_k": 972,
+      "expected_reason": "header_capacity_overflow",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_capacity_overflow",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-second_length",
+      "public_k": 972,
+      "expected_reason": "header_second_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_second_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-outer_crc",
+      "public_k": 972,
+      "expected_reason": "outer_payload_CRC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "outer_payload_CRC_failure",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-missing_block",
+      "public_k": 972,
+      "expected_reason": "header_capacity_overflow",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_capacity_overflow",
+        "neural_decoder_called": false
+      },
+      "blocks": 6
+    },
+    {
+      "name": "synthetic32x64-972-extra_block",
+      "public_k": 972,
+      "expected_reason": "observed_block_count_mismatch",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "observed_block_count_mismatch",
+        "neural_decoder_called": false
+      },
+      "blocks": 8
+    },
+    {
+      "name": "synthetic32x64-972-empty",
+      "public_k": 972,
+      "expected_reason": "decoded_block_shape",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "decoded_block_shape",
+        "neural_decoder_called": false
+      },
+      "blocks": 0
+    },
+    {
+      "name": "synthetic32x64-972-wrong_width",
+      "public_k": 972,
+      "expected_reason": "decoded_block_shape",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "decoded_block_shape",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-wrong_k",
+      "public_k": 111,
+      "expected_reason": "unsupported_public_k",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "unsupported_public_k",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-nonbinary",
+      "public_k": 972,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-nan",
+      "public_k": 972,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inf",
+      "public_k": 972,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-first_pad_bit",
+      "public_k": 972,
+      "expected_reason": "nonzero_decoded_padding",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonzero_decoded_padding",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-last_pad_bit",
+      "public_k": 972,
+      "expected_reason": "nonzero_decoded_padding",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonzero_decoded_padding",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-payload_bit",
+      "public_k": 972,
+      "expected_reason": "outer_payload_CRC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "outer_payload_CRC_failure",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_crc",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container CRC",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_magic",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_version",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_count",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_model",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_config",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_cdf",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_zero_height",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:dimension bounds",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_padding",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:padding rule",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_order",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream id/count",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_symbols",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream id/count",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_rans_length",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_escape_length",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_append",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:unused container bytes",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "synthetic32x64-972-inner_truncate",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 7
+    },
+    {
+      "name": "training000000-1296-valid",
+      "public_k": 1296,
+      "expected_reason": null,
+      "reception": {
+        "state": "received",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": null,
+        "neural_decoder_called": false,
+        "observed_blocks": 277,
+        "public_k": 1296,
+        "decoded_header_hex": "50365342020300000000af18000000009f824c33",
+        "header_bytes": 20,
+        "header_derived_wire_bytes": 44844,
+        "header_derived_payload_bytes": 44824,
+        "source_padding_bits": 240,
+        "codec": "ecsic_P6EC",
+        "outer_version": 2,
+        "payload_lengths": [
+          44824,
+          0
+        ],
+        "original_hw": [
+          370,
+          1224
+        ],
+        "padded_hw": [
+          384,
+          1248
+        ],
+        "inner_overhead_bytes": 166,
+        "received_wire_sha256": "e1fa359f6342fc01741d6a5fd04783add4ac5a6c7368f9892d7e9ca7e2d0f6d1",
+        "received_payload_sha256": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a"
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-magic",
+      "public_k": 1296,
+      "expected_reason": "header_magic",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_magic",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-version",
+      "public_k": 1296,
+      "expected_reason": "header_version",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_version",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-codec",
+      "public_k": 1296,
+      "expected_reason": "header_codec",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_codec",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-reserved",
+      "public_k": 1296,
+      "expected_reason": "header_reserved",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_reserved",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-zero_length",
+      "public_k": 1296,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-short_length",
+      "public_k": 1296,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-oversize",
+      "public_k": 1296,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-capacity",
+      "public_k": 1296,
+      "expected_reason": "header_capacity_overflow",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_capacity_overflow",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-second_length",
+      "public_k": 1296,
+      "expected_reason": "header_second_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_second_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-outer_crc",
+      "public_k": 1296,
+      "expected_reason": "outer_payload_CRC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "outer_payload_CRC_failure",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-missing_block",
+      "public_k": 1296,
+      "expected_reason": "header_capacity_overflow",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_capacity_overflow",
+        "neural_decoder_called": false
+      },
+      "blocks": 276
+    },
+    {
+      "name": "training000000-1296-extra_block",
+      "public_k": 1296,
+      "expected_reason": "observed_block_count_mismatch",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "observed_block_count_mismatch",
+        "neural_decoder_called": false
+      },
+      "blocks": 278
+    },
+    {
+      "name": "training000000-1296-empty",
+      "public_k": 1296,
+      "expected_reason": "decoded_block_shape",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "decoded_block_shape",
+        "neural_decoder_called": false
+      },
+      "blocks": 0
+    },
+    {
+      "name": "training000000-1296-wrong_width",
+      "public_k": 1296,
+      "expected_reason": "decoded_block_shape",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "decoded_block_shape",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-wrong_k",
+      "public_k": 111,
+      "expected_reason": "unsupported_public_k",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "unsupported_public_k",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-nonbinary",
+      "public_k": 1296,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-nan",
+      "public_k": 1296,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inf",
+      "public_k": 1296,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-first_pad_bit",
+      "public_k": 1296,
+      "expected_reason": "nonzero_decoded_padding",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonzero_decoded_padding",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-last_pad_bit",
+      "public_k": 1296,
+      "expected_reason": "nonzero_decoded_padding",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonzero_decoded_padding",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-payload_bit",
+      "public_k": 1296,
+      "expected_reason": "outer_payload_CRC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "outer_payload_CRC_failure",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_crc",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container CRC",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_magic",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_version",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_count",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_model",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_config",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_cdf",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_zero_height",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:dimension bounds",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_padding",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:dimension bounds",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_order",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream id/count",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_symbols",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream id/count",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_rans_length",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_escape_length",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_append",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:unused container bytes",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-1296-inner_truncate",
+      "public_k": 1296,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 277
+    },
+    {
+      "name": "training000000-972-valid",
+      "public_k": 972,
+      "expected_reason": null,
+      "reception": {
+        "state": "received",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": null,
+        "neural_decoder_called": false,
+        "observed_blocks": 370,
+        "public_k": 972,
+        "decoded_header_hex": "50365342020300000000af18000000009f824c33",
+        "header_bytes": 20,
+        "header_derived_wire_bytes": 44844,
+        "header_derived_payload_bytes": 44824,
+        "source_padding_bits": 888,
+        "codec": "ecsic_P6EC",
+        "outer_version": 2,
+        "payload_lengths": [
+          44824,
+          0
+        ],
+        "original_hw": [
+          370,
+          1224
+        ],
+        "padded_hw": [
+          384,
+          1248
+        ],
+        "inner_overhead_bytes": 166,
+        "received_wire_sha256": "e1fa359f6342fc01741d6a5fd04783add4ac5a6c7368f9892d7e9ca7e2d0f6d1",
+        "received_payload_sha256": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a"
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-magic",
+      "public_k": 972,
+      "expected_reason": "header_magic",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_magic",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-version",
+      "public_k": 972,
+      "expected_reason": "header_version",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_version",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-codec",
+      "public_k": 972,
+      "expected_reason": "header_codec",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_codec",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-reserved",
+      "public_k": 972,
+      "expected_reason": "header_reserved",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_reserved",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-zero_length",
+      "public_k": 972,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-short_length",
+      "public_k": 972,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-oversize",
+      "public_k": 972,
+      "expected_reason": "header_payload_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_payload_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-capacity",
+      "public_k": 972,
+      "expected_reason": "header_capacity_overflow",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_capacity_overflow",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-second_length",
+      "public_k": 972,
+      "expected_reason": "header_second_length",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_second_length",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-outer_crc",
+      "public_k": 972,
+      "expected_reason": "outer_payload_CRC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "outer_payload_CRC_failure",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-missing_block",
+      "public_k": 972,
+      "expected_reason": "header_capacity_overflow",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "header_capacity_overflow",
+        "neural_decoder_called": false
+      },
+      "blocks": 369
+    },
+    {
+      "name": "training000000-972-extra_block",
+      "public_k": 972,
+      "expected_reason": "observed_block_count_mismatch",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "observed_block_count_mismatch",
+        "neural_decoder_called": false
+      },
+      "blocks": 371
+    },
+    {
+      "name": "training000000-972-empty",
+      "public_k": 972,
+      "expected_reason": "decoded_block_shape",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "decoded_block_shape",
+        "neural_decoder_called": false
+      },
+      "blocks": 0
+    },
+    {
+      "name": "training000000-972-wrong_width",
+      "public_k": 972,
+      "expected_reason": "decoded_block_shape",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "decoded_block_shape",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-wrong_k",
+      "public_k": 111,
+      "expected_reason": "unsupported_public_k",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "unsupported_public_k",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-nonbinary",
+      "public_k": 972,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-nan",
+      "public_k": 972,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inf",
+      "public_k": 972,
+      "expected_reason": "nonbinary_decoded_bits",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonbinary_decoded_bits",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-first_pad_bit",
+      "public_k": 972,
+      "expected_reason": "nonzero_decoded_padding",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonzero_decoded_padding",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-last_pad_bit",
+      "public_k": 972,
+      "expected_reason": "nonzero_decoded_padding",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "nonzero_decoded_padding",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-payload_bit",
+      "public_k": 972,
+      "expected_reason": "outer_payload_CRC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "outer_payload_CRC_failure",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_crc",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container CRC",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_magic",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_version",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_count",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container format",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_model",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_config",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_cdf",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:container model/config/CDF identity",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_zero_height",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:dimension bounds",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_padding",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:dimension bounds",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_order",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream id/count",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_symbols",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream id/count",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_rans_length",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_escape_length",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_append",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:unused container bytes",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    },
+    {
+      "name": "training000000-972-inner_truncate",
+      "public_k": 972,
+      "expected_reason": "inner_P6EC_failure",
+      "reception": {
+        "state": "erased",
+        "receiver_inputs": [
+          "decoded_information_blocks",
+          "public_code_k"
+        ],
+        "source_length_side_channel": false,
+        "erasure_reason": "inner_P6EC_failure:stream lengths",
+        "neural_decoder_called": false
+      },
+      "blocks": 370
+    }
+  ],
+  "source_sha256": {
+    "experiments/original-paper-scenarios/digital-code/check_cpu.py": "49154a760dad70f30b1196936477b63aa31c1f04ccdf753d034c5481cd98e133",
+    "experiments/original-paper-scenarios/digital-code/transceiver.py": "75b55723e9b50459dc89cdaefaedbddb17a220cb50bc5c267d89686adf6238e3",
+    "experiments/original-paper-scenarios/framing-code/check_artemis.py": "7697e7823027878575c5cb0fd592bc13fd2ff6da95db457a76f75feb2d58ff69",
+    "experiments/original-paper-scenarios/framing-code/check_local.py": "b0a3af3e7392ecd4005b2bf90b9fcdb6ff5b3c932505d20a0fcef018219ecfb5",
+    "experiments/original-paper-scenarios/framing-code/receiver.py": "3502d5ceb88b34b67bbad773f32486ca5e45541cd4838c8ce7ffaa8facc26e51",
+    "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+    "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+    "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+    "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/cdf-u32le.bin": "507d22e35fb0bb605f05a3312600a8aff3ff10f1ec1c4964358cb390e35d56e5",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/cdf.sha256": "7b9b459d9f1a337e2b9734c3586fdf4720231d5f15f103549ff84d9549723d59",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/check_cpu.py": "5ab07f74993ad1e342deada8cc562e10483a89ce95696b7bae1940b0bbc526f3",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/codec.py": "a22fb7717cd1e2a13e4539a74a541958e93a7f6b215ae960b9c2736ad53ec157",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/native.py": "33dbb471f341f73e8179ac100544c238141020ffdfe80909051add819da812b5",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/reference.cpp": "dcf5ab4588dc01ee01ac192d39dcc4677be75086ae9e9c24483e6fe1816485d0",
+    "experiments/original-paper-scenarios/ecsic-recovery-code/recover.py": "140c3e821b9e6d2a4bcb06df8fa1a3d67a34ae0c31dca72cea5bf1496908929e",
+    "experiments/original-paper-scenarios/ecsic-digital-code/README.md": "2cde20618f18e76f37cba77c58b8f59d2f3f5ed71c0220f875418abe2d093880",
+    "experiments/original-paper-scenarios/ecsic-digital-code/check_local.py": "e3545cd751e5dc9d3cb2f08af5ddc67ea3f1cb8dd6838642b09476e03d01d144",
+    "experiments/original-paper-scenarios/ecsic-digital-code/common.py": "1e071c0be80d4c0d41038ff575418a5e57412152324ea89410c8818652e53949",
+    "experiments/original-paper-scenarios/ecsic-digital-code/engineering-001.sbatch": "1ea5e9cb01ce4ec9777f26996e3648341229472a925c6381f15a3ae58acbe6f4",
+    "experiments/original-paper-scenarios/ecsic-digital-code/historical-source-sha256.json": "e1192951b49d0fc7e1b1ad6381bf7f10ad0ceff0c4b91c2fa348d6d69b994929",
+    "experiments/original-paper-scenarios/ecsic-digital-code/receiver.py": "e3855737cce12807596e88c041dd8c6f003682d81cb412e5f21424c040293fe0",
+    "experiments/original-paper-scenarios/ecsic-digital-code/run_artemis.py": "f7a312d2d0059de1b532807c14db8f94989d7e3b81844d909197884fec9d7103",
+    "experiments/original-paper-scenarios/ecsic-digital-protocol-001.md": "da3c6a000af96628d954bbcdd2af8cce8343c3b7d66d731ceb9d5731af54208a"
+  },
+  "packet_plan": [
+    {
+      "index": 0,
+      "source": "synthetic32x64",
+      "configuration": "ldpc_2_3_qam64",
+      "channel": "identity",
+      "snr_db": 10,
+      "noise_seed": 1911,
+      "fading_seed": 1912,
+      "name": "00-synthetic32x64-ldpc_2_3_qam64-identity-10"
+    },
+    {
+      "index": 1,
+      "source": "synthetic32x64",
+      "configuration": "ldpc_2_3_qam64",
+      "channel": "awgn",
+      "snr_db": 6,
+      "noise_seed": 1913,
+      "fading_seed": 1914,
+      "name": "01-synthetic32x64-ldpc_2_3_qam64-awgn-6"
+    },
+    {
+      "index": 2,
+      "source": "synthetic32x64",
+      "configuration": "ldpc_2_3_qam64",
+      "channel": "awgn",
+      "snr_db": 18,
+      "noise_seed": 1915,
+      "fading_seed": 1916,
+      "name": "02-synthetic32x64-ldpc_2_3_qam64-awgn-18"
+    },
+    {
+      "index": 3,
+      "source": "synthetic32x64",
+      "configuration": "ldpc_2_3_qam64",
+      "channel": "rayleigh",
+      "snr_db": 6,
+      "noise_seed": 1917,
+      "fading_seed": 1918,
+      "name": "03-synthetic32x64-ldpc_2_3_qam64-rayleigh-6"
+    },
+    {
+      "index": 4,
+      "source": "synthetic32x64",
+      "configuration": "ldpc_2_3_qam64",
+      "channel": "rayleigh",
+      "snr_db": 18,
+      "noise_seed": 1919,
+      "fading_seed": 1920,
+      "name": "04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18"
+    },
+    {
+      "index": 5,
+      "source": "synthetic32x64",
+      "configuration": "ldpc_1_2_qam256",
+      "channel": "identity",
+      "snr_db": 10,
+      "noise_seed": 1921,
+      "fading_seed": 1922,
+      "name": "05-synthetic32x64-ldpc_1_2_qam256-identity-10"
+    },
+    {
+      "index": 6,
+      "source": "synthetic32x64",
+      "configuration": "ldpc_1_2_qam256",
+      "channel": "awgn",
+      "snr_db": 6,
+      "noise_seed": 1923,
+      "fading_seed": 1924,
+      "name": "06-synthetic32x64-ldpc_1_2_qam256-awgn-6"
+    },
+    {
+      "index": 7,
+      "source": "synthetic32x64",
+      "configuration": "ldpc_1_2_qam256",
+      "channel": "awgn",
+      "snr_db": 18,
+      "noise_seed": 1925,
+      "fading_seed": 1926,
+      "name": "07-synthetic32x64-ldpc_1_2_qam256-awgn-18"
+    },
+    {
+      "index": 8,
+      "source": "synthetic32x64",
+      "configuration": "ldpc_1_2_qam256",
+      "channel": "rayleigh",
+      "snr_db": 6,
+      "noise_seed": 1927,
+      "fading_seed": 1928,
+      "name": "08-synthetic32x64-ldpc_1_2_qam256-rayleigh-6"
+    },
+    {
+      "index": 9,
+      "source": "synthetic32x64",
+      "configuration": "ldpc_1_2_qam256",
+      "channel": "rayleigh",
+      "snr_db": 18,
+      "noise_seed": 1929,
+      "fading_seed": 1930,
+      "name": "09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18"
+    },
+    {
+      "index": 10,
+      "source": "training000000",
+      "configuration": "ldpc_2_3_qam64",
+      "channel": "identity",
+      "snr_db": 10,
+      "noise_seed": 1931,
+      "fading_seed": 1932,
+      "name": "10-training000000-ldpc_2_3_qam64-identity-10"
+    },
+    {
+      "index": 11,
+      "source": "training000000",
+      "configuration": "ldpc_2_3_qam64",
+      "channel": "awgn",
+      "snr_db": 6,
+      "noise_seed": 1933,
+      "fading_seed": 1934,
+      "name": "11-training000000-ldpc_2_3_qam64-awgn-6"
+    },
+    {
+      "index": 12,
+      "source": "training000000",
+      "configuration": "ldpc_2_3_qam64",
+      "channel": "awgn",
+      "snr_db": 18,
+      "noise_seed": 1935,
+      "fading_seed": 1936,
+      "name": "12-training000000-ldpc_2_3_qam64-awgn-18"
+    },
+    {
+      "index": 13,
+      "source": "training000000",
+      "configuration": "ldpc_2_3_qam64",
+      "channel": "rayleigh",
+      "snr_db": 6,
+      "noise_seed": 1937,
+      "fading_seed": 1938,
+      "name": "13-training000000-ldpc_2_3_qam64-rayleigh-6"
+    },
+    {
+      "index": 14,
+      "source": "training000000",
+      "configuration": "ldpc_2_3_qam64",
+      "channel": "rayleigh",
+      "snr_db": 18,
+      "noise_seed": 1939,
+      "fading_seed": 1940,
+      "name": "14-training000000-ldpc_2_3_qam64-rayleigh-18"
+    },
+    {
+      "index": 15,
+      "source": "training000000",
+      "configuration": "ldpc_1_2_qam256",
+      "channel": "identity",
+      "snr_db": 10,
+      "noise_seed": 1941,
+      "fading_seed": 1942,
+      "name": "15-training000000-ldpc_1_2_qam256-identity-10"
+    },
+    {
+      "index": 16,
+      "source": "training000000",
+      "configuration": "ldpc_1_2_qam256",
+      "channel": "awgn",
+      "snr_db": 6,
+      "noise_seed": 1943,
+      "fading_seed": 1944,
+      "name": "16-training000000-ldpc_1_2_qam256-awgn-6"
+    },
+    {
+      "index": 17,
+      "source": "training000000",
+      "configuration": "ldpc_1_2_qam256",
+      "channel": "awgn",
+      "snr_db": 18,
+      "noise_seed": 1945,
+      "fading_seed": 1946,
+      "name": "17-training000000-ldpc_1_2_qam256-awgn-18"
+    },
+    {
+      "index": 18,
+      "source": "training000000",
+      "configuration": "ldpc_1_2_qam256",
+      "channel": "rayleigh",
+      "snr_db": 6,
+      "noise_seed": 1947,
+      "fading_seed": 1948,
+      "name": "18-training000000-ldpc_1_2_qam256-rayleigh-6"
+    },
+    {
+      "index": 19,
+      "source": "training000000",
+      "configuration": "ldpc_1_2_qam256",
+      "channel": "rayleigh",
+      "snr_db": 18,
+      "noise_seed": 1949,
+      "fading_seed": 1950,
+      "name": "19-training000000-ldpc_1_2_qam256-rayleigh-18"
+    }
+  ],
+  "fatal_dependency_failure_propagated": true,
+  "checks_count": 148,
+  "successful_fixtures": 4,
+  "global_numpy_rng_unchanged": true,
+  "source_after_sha256": {
+    "experiments/original-paper-scenarios/digital-code/check_cpu.py": "49154a760dad70f30b1196936477b63aa31c1f04ccdf753d034c5481cd98e133",
+    "experiments/original-paper-scenarios/digital-code/transceiver.py": "75b55723e9b50459dc89cdaefaedbddb17a220cb50bc5c267d89686adf6238e3",
+    "experiments/original-paper-scenarios/framing-code/check_artemis.py": "7697e7823027878575c5cb0fd592bc13fd2ff6da95db457a76f75feb2d58ff69",
+    "experiments/original-paper-scenarios/framing-code/check_local.py": "b0a3af3e7392ecd4005b2bf90b9fcdb6ff5b3c932505d20a0fcef018219ecfb5",
+    "experiments/original-paper-scenarios/framing-code/receiver.py": "3502d5ceb88b34b67bbad773f32486ca5e45541cd4838c8ce7ffaa8facc26e51",
+    "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+    "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+    "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+    "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/cdf-u32le.bin": "507d22e35fb0bb605f05a3312600a8aff3ff10f1ec1c4964358cb390e35d56e5",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/cdf.sha256": "7b9b459d9f1a337e2b9734c3586fdf4720231d5f15f103549ff84d9549723d59",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/check_cpu.py": "5ab07f74993ad1e342deada8cc562e10483a89ce95696b7bae1940b0bbc526f3",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/codec.py": "a22fb7717cd1e2a13e4539a74a541958e93a7f6b215ae960b9c2736ad53ec157",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/native.py": "33dbb471f341f73e8179ac100544c238141020ffdfe80909051add819da812b5",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/reference.cpp": "dcf5ab4588dc01ee01ac192d39dcc4677be75086ae9e9c24483e6fe1816485d0",
+    "experiments/original-paper-scenarios/ecsic-recovery-code/recover.py": "140c3e821b9e6d2a4bcb06df8fa1a3d67a34ae0c31dca72cea5bf1496908929e",
+    "experiments/original-paper-scenarios/ecsic-digital-code/README.md": "2cde20618f18e76f37cba77c58b8f59d2f3f5ed71c0220f875418abe2d093880",
+    "experiments/original-paper-scenarios/ecsic-digital-code/check_local.py": "e3545cd751e5dc9d3cb2f08af5ddc67ea3f1cb8dd6838642b09476e03d01d144",
+    "experiments/original-paper-scenarios/ecsic-digital-code/common.py": "1e071c0be80d4c0d41038ff575418a5e57412152324ea89410c8818652e53949",
+    "experiments/original-paper-scenarios/ecsic-digital-code/engineering-001.sbatch": "1ea5e9cb01ce4ec9777f26996e3648341229472a925c6381f15a3ae58acbe6f4",
+    "experiments/original-paper-scenarios/ecsic-digital-code/historical-source-sha256.json": "e1192951b49d0fc7e1b1ad6381bf7f10ad0ceff0c4b91c2fa348d6d69b994929",
+    "experiments/original-paper-scenarios/ecsic-digital-code/receiver.py": "e3855737cce12807596e88c041dd8c6f003682d81cb412e5f21424c040293fe0",
+    "experiments/original-paper-scenarios/ecsic-digital-code/run_artemis.py": "f7a312d2d0059de1b532807c14db8f94989d7e3b81844d909197884fec9d7103",
+    "experiments/original-paper-scenarios/ecsic-digital-protocol-001.md": "da3c6a000af96628d954bbcdd2af8cce8343c3b7d66d731ceb9d5731af54208a"
+  },
+  "artifact_sha256": {
+    "data/engineering/ecsic-digital-local-CPU-001.artifacts/training000000.p6sb": "e1fa359f6342fc01741d6a5fd04783add4ac5a6c7368f9892d7e9ca7e2d0f6d1",
+    "data/engineering/ecsic-digital-local-CPU-001.artifacts/synthetic32x64.p6sb": "56809fd87f175f073249095b113ecdfbf1533f5f41faa5af33f5e9dbe91d089d",
+    "data/engineering/ecsic-digital-local-CPU-001.artifacts/decoded-fixtures.npz": "cd337e35d0cabe843ac31185ce195b74bddb24d1801158184aeb7e4e9f066026"
+  },
+  "physical_channel_executed": false,
+  "neural_decoder_executed": false,
+  "finished_unix": 1791136302.951705
+}

@@ -1,0 +1,60 @@
+{
+  "state": "closed_actual_two_host_all3_six_source_phases_CPU008",
+  "actual_native_CPU_job": "11429177",
+  "native_raw_and_dot0_completed_exit0": true,
+  "native_elapsed_seconds": 54,
+  "native_MaxRSS_KiB": 1293356,
+  "local_actual_exit_code": 0,
+  "local_completed_exec_session": 27933,
+  "native_completed_exec_session": 47435,
+  "inputs_sha256": "63d6057e910a3a4e32a60b53a44fa5020727a11fa8c21a66c1ea09d0ebf13560",
+  "proof_files": {
+    "local": {
+      "path": "data/engineering/original-source-rate-loss-CPU-008.json",
+      "sha256": "577bc963b7bdd7876a48ca141ab71d4010855e7853ec7250f56b22f68657d9d7"
+    },
+    "native": {
+      "path": "data/provenance/original-source-rate-loss-native-CPU-008.json",
+      "sha256": "68fa80f8806f80b1e34b3abd4950b6fb2170c2f762f82e9532081819c50f17ff"
+    }
+  },
+  "raw_input_sha256": [
+    "8ecf6e709ca005685b614da820c2e9872b504ebc4216aeb4dbafa363f5a64bc7",
+    "2a9c12031164a1c00614dccb3f4a9975b4270394bffcaf0ed8d46c509d3a94c5"
+  ],
+  "checks": [
+    {
+      "rate": 30,
+      "padded_hw": [
+        264,
+        270
+      ],
+      "within_host_frozen30_exact": true,
+      "gradient_values_checked_per_host": 48183426,
+      "cross_host_output_and_gradient_hashes_equal": false
+    },
+    {
+      "rate": 10,
+      "padded_hw": [
+        264,
+        270
+      ],
+      "within_host_frozen30_exact": false,
+      "gradient_values_checked_per_host": 48177486,
+      "cross_host_output_and_gradient_hashes_equal": false
+    },
+    {
+      "rate": 50,
+      "padded_hw": [
+        264,
+        272
+      ],
+      "within_host_frozen30_exact": false,
+      "gradient_values_checked_per_host": 50299346,
+      "cross_host_output_and_gradient_hashes_equal": false
+    }
+  ],
+  "scope": "synthetic263x265_source_losses_and_complete_gradients_no_optimizer_updates",
+  "genuine_KITTI_training_or_wireless_or_AP_claimed": false,
+  "checked_unix": 1791211544.9960341
+}

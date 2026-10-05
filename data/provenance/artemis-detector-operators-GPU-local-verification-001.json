@@ -1,0 +1,29 @@
+{
+  "state": "passed_complete_transferred_RTX_PRO6000_native_operator_fixtures_and_terminal",
+  "checked_unix": 1791166807.2940311,
+  "job_id": "11423980",
+  "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "capability": [
+    12,
+    0
+  ],
+  "actual_terminal": true,
+  "artifacts_verified": 7,
+  "terminal_sha256": "9e4f0a1e438f6e03ab2ed0a90fe295b6f6b1ab831dc42444561dcf50956be78a",
+  "cost_output_gradient_values": 1104,
+  "independent_numpy_cost_max_errors": {
+    "1": {
+      "forward": 0.0,
+      "left_gradient": 7.450580596923828e-09,
+      "right_gradient": 5.960464477539063e-08
+    },
+    "2": {
+      "forward": 0.0,
+      "left_gradient": 0.0,
+      "right_gradient": 0.0
+    }
+  },
+  "BEV_overlap_IoU_NMS_ROI_membership_passed": true,
+  "verifier_sha256": "6e218828b881796e934f3496cbc2d785f55d243dcf7de6d12fa3f59230f1963f",
+  "limitation": "All probe arrays/control files and scalar CPU replay; native binary/runtime checks on Artemis, no local GPU rerun, full detector/MMCV/spconv, rotated or surface-boundary checks, training or AP"
+}

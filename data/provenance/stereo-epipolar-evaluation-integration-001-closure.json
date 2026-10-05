@@ -1,0 +1,470 @@
+{
+  "state": "closed_all48_native_frames_actual_terminal",
+  "prefix": "stereo-epipolar-evaluation-integration-001",
+  "checked_unix": 1791141481.7557561,
+  "actual_terminal": true,
+  "actual_ps": "    PID STAT     ELAPSED COMMAND\n",
+  "ps_returncode": 1,
+  "cycle_pid": 258021,
+  "engineering_only": true,
+  "no_AP": true,
+  "frames": 48,
+  "references": 8,
+  "conditions": {
+    "U-identity10": {
+      "frames": 6,
+      "reference_exact": true,
+      "all539_readonly": true,
+      "parent535_exact": true,
+      "checkpoint_sha256": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "peak_reserved_GiB": 3.83203125
+    },
+    "U-awgn10": {
+      "frames": 6,
+      "reference_exact": true,
+      "all539_readonly": true,
+      "parent535_exact": true,
+      "checkpoint_sha256": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "peak_reserved_GiB": 3.83203125
+    },
+    "G-identity10": {
+      "frames": 6,
+      "reference_exact": true,
+      "all539_readonly": true,
+      "parent535_exact": true,
+      "checkpoint_sha256": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "peak_reserved_GiB": 3.83203125
+    },
+    "G-awgn10": {
+      "frames": 6,
+      "reference_exact": true,
+      "all539_readonly": true,
+      "parent535_exact": true,
+      "checkpoint_sha256": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "peak_reserved_GiB": 3.83203125
+    },
+    "P-identity10": {
+      "frames": 6,
+      "reference_exact": true,
+      "all539_readonly": true,
+      "parent535_exact": true,
+      "checkpoint_sha256": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "peak_reserved_GiB": 3.837890625
+    },
+    "P-awgn10": {
+      "frames": 6,
+      "reference_exact": true,
+      "all539_readonly": true,
+      "parent535_exact": true,
+      "checkpoint_sha256": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "peak_reserved_GiB": 3.837890625
+    },
+    "S-identity10": {
+      "frames": 6,
+      "reference_exact": true,
+      "all539_readonly": true,
+      "parent535_exact": true,
+      "checkpoint_sha256": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "peak_reserved_GiB": 3.837890625
+    },
+    "S-awgn10": {
+      "frames": 6,
+      "reference_exact": true,
+      "all539_readonly": true,
+      "parent535_exact": true,
+      "checkpoint_sha256": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "peak_reserved_GiB": 3.837890625
+    }
+  },
+  "independent_audit_sha256": "7c0e5aa9133d89bdf0d106855c2a0110dbe7ffa7f3976fcaf89e3d269cd128ee",
+  "source_manifest_sha256": "3ab97e7863a7a4c14e446f72719bc7e1f49de9cb585e5cd205d4db83f84c167c",
+  "artifacts_sha256": {
+    "data/engineering/F9-evaluation-local-CPU-005.json": "0bb82c66113021a25545a843ad6e8dc2b14c554c143a8e8902396521a932121b",
+    "data/engineering/F9-evaluation-sheng-CPU-001.json": "06a57a37e8b0d6dc3a95f9aca2a934dc537d07c2ed9b96f87c4730cb81bd5a3f",
+    "data/provenance/server-source-manifest-stereo-epipolar-evaluation-integration-001.json": "3ab97e7863a7a4c14e446f72719bc7e1f49de9cb585e5cd205d4db83f84c167c",
+    "data/runs/stereo-epipolar-evaluation-integration-001-G-awgn10.json": "610122906348e35f54a25550ae204da029a99d9662cfcdb20fea2db3131a40a0",
+    "data/runs/stereo-epipolar-evaluation-integration-001-G-identity10.json": "c35dd709c5cbbd3ad610051e4871bc32b889d681297ef4d18ea02c254e5a9690",
+    "data/runs/stereo-epipolar-evaluation-integration-001-P-awgn10.json": "b525b094943a86fbf2972a971a988a91becbabc367150a7643604934caef72e0",
+    "data/runs/stereo-epipolar-evaluation-integration-001-P-identity10.json": "e0a399415987dd4dfbbc7e054af4e66cb29fb6f998a015d2fef411554e878d2e",
+    "data/runs/stereo-epipolar-evaluation-integration-001-S-awgn10.json": "5cec7534912f36659fb75a918361b223ffaac456dc3e9b81060a8c0a3f0a7d2d",
+    "data/runs/stereo-epipolar-evaluation-integration-001-S-identity10.json": "7b4c2b3421ad0d84bb4fa12ac5118774ad43e2c0cd6b36af276e16392f5d0031",
+    "data/runs/stereo-epipolar-evaluation-integration-001-U-awgn10.json": "a512341e1b5200339ac9c55270f1d8df5b6f4bbf655ac51f95ede7d795ad7c6c",
+    "data/runs/stereo-epipolar-evaluation-integration-001-U-identity10.json": "7e12427ff9bc44810ef457a5efe78fa03020a28ee582c8bdae1c77d199fdf9f8",
+    "data/runs/stereo-epipolar-evaluation-integration-001-audit.json": "7c0e5aa9133d89bdf0d106855c2a0110dbe7ffa7f3976fcaf89e3d269cd128ee",
+    "data/runs/stereo-epipolar-evaluation-integration-001-cycle.json": "1fcae14e2e71e45573da605633db4150a99221e4efadafe2bc2c5082c20638ec",
+    "data/runs/stereo-epipolar-evaluation-integration-001-launch.json": "d8afe497fdbb62bdf3f83acb5e9449b1715ac2de76654a26fcd8e6cfad9292b2",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000036-predictions.npz": "335b61329313e86157e554164533a1fce3e7837b71c8d7c2452c895280ce59bd",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000054-predictions.npz": "df54e40e7ff0d41a9fd500040764ab00677f0f8eb9e86764c920894ddeadfce3",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000071-predictions.npz": "45fdbe73bc60f24df5482b54de851f0d44a797d8a8bb718bd1db8b8d129c8c63",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000082-predictions.npz": "aa79a0fbcef6cece3ea71c09ed53d0fb1564e5e5c68628c5e976cafed388e389",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000113-predictions.npz": "52eb03b3717208621e22f92275f02c545320f410e84e6ad4d249389eee647e4a",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000141-predictions.npz": "859b602da1e5995f58d991b298ee767d3df1ec759cd08d530fb505191e8337ad",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/dataset.log": "c5eef0ed7d72824ddd3b76ce7ba6238e94a071be7d0cb4e39b0a32aa228eb5cc",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/receiver-reference.npz": "5e6fc0c44976a564efe4d66c94c285e43b80b8b8537fee94426e5391cf5018e7",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/records.jsonl": "ab5de2bc415462251460a082a95cd789915252ff55f616b1c873acb87475ceeb",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000036-predictions.npz": "706524ab6a80d4d04330f397edc3f8c7df2eb0a262c5c54025de835ef7466f9b",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000054-predictions.npz": "b574c1093a7b229156e6e0ea2d914aabf4c88478ec1a0f17a84ca872d52be10d",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000071-predictions.npz": "ce36a173c7653e41e6ff2a7fac5339eaf4748a9925dcc2958f5fca7a7ed18faf",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000082-predictions.npz": "20120006668838ec8ab258b5407858db7f7731d7f38d2c777d937973481c3980",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000113-predictions.npz": "ad8fb2ad2867df8f5188eaaad3873dcf52201499cfc27bc5ae4f860c8dd00ad9",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000141-predictions.npz": "f46434c11342a3f01ae9a358ec81e7cc451789d80505827a3f6c339b5f8c6005",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/dataset.log": "9348dad05d761485417e99dd4b802be33d6e01b348f5ced27790f4d7c36b39df",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/receiver-reference.npz": "c08928b9a119913a1e182440c95c20021b38e5adedc565f96416e7732114db32",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/records.jsonl": "8c75a8ac75704690b6f4dd53370be605c2bcae30f872d07c38d91ea83ddcd650",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000036-predictions.npz": "335b61329313e86157e554164533a1fce3e7837b71c8d7c2452c895280ce59bd",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000054-predictions.npz": "df54e40e7ff0d41a9fd500040764ab00677f0f8eb9e86764c920894ddeadfce3",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000071-predictions.npz": "45fdbe73bc60f24df5482b54de851f0d44a797d8a8bb718bd1db8b8d129c8c63",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000082-predictions.npz": "aa79a0fbcef6cece3ea71c09ed53d0fb1564e5e5c68628c5e976cafed388e389",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000113-predictions.npz": "52eb03b3717208621e22f92275f02c545320f410e84e6ad4d249389eee647e4a",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000141-predictions.npz": "859b602da1e5995f58d991b298ee767d3df1ec759cd08d530fb505191e8337ad",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/dataset.log": "b03883049418bfcc2208aa4ac28799b05c7089a10d25d8e2e4bc34c913225e2e",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/receiver-reference.npz": "5e6fc0c44976a564efe4d66c94c285e43b80b8b8537fee94426e5391cf5018e7",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/records.jsonl": "85eef7bfd0bf7b275237f71a32caa79a95d6b9cce685d479ed219d396a2c1a91",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000036-predictions.npz": "706524ab6a80d4d04330f397edc3f8c7df2eb0a262c5c54025de835ef7466f9b",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000054-predictions.npz": "b574c1093a7b229156e6e0ea2d914aabf4c88478ec1a0f17a84ca872d52be10d",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000071-predictions.npz": "ce36a173c7653e41e6ff2a7fac5339eaf4748a9925dcc2958f5fca7a7ed18faf",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000082-predictions.npz": "20120006668838ec8ab258b5407858db7f7731d7f38d2c777d937973481c3980",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000113-predictions.npz": "ad8fb2ad2867df8f5188eaaad3873dcf52201499cfc27bc5ae4f860c8dd00ad9",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000141-predictions.npz": "f46434c11342a3f01ae9a358ec81e7cc451789d80505827a3f6c339b5f8c6005",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/dataset.log": "92e2986436fece079d5255d62d82a557296784f673b9367b31b707f21cb68565",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/receiver-reference.npz": "c08928b9a119913a1e182440c95c20021b38e5adedc565f96416e7732114db32",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/records.jsonl": "70dfb6077d5f325007a7bcc822bab3566f6ff90d8a1847fbcde8c4a050dab733",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000036-predictions.npz": "335b61329313e86157e554164533a1fce3e7837b71c8d7c2452c895280ce59bd",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000054-predictions.npz": "df54e40e7ff0d41a9fd500040764ab00677f0f8eb9e86764c920894ddeadfce3",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000071-predictions.npz": "45fdbe73bc60f24df5482b54de851f0d44a797d8a8bb718bd1db8b8d129c8c63",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000082-predictions.npz": "aa79a0fbcef6cece3ea71c09ed53d0fb1564e5e5c68628c5e976cafed388e389",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000113-predictions.npz": "52eb03b3717208621e22f92275f02c545320f410e84e6ad4d249389eee647e4a",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000141-predictions.npz": "859b602da1e5995f58d991b298ee767d3df1ec759cd08d530fb505191e8337ad",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/dataset.log": "ca39281194885dc14cbd1864196c8f9e87de177c2cc3d8932751755c60aa039f",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/receiver-reference.npz": "5e6fc0c44976a564efe4d66c94c285e43b80b8b8537fee94426e5391cf5018e7",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/records.jsonl": "a89ec2b9853ab7c5f4da065e00a5d0c0b5c09c22d37c4f57643ec51fe8aae231",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000036-predictions.npz": "706524ab6a80d4d04330f397edc3f8c7df2eb0a262c5c54025de835ef7466f9b",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000054-predictions.npz": "b574c1093a7b229156e6e0ea2d914aabf4c88478ec1a0f17a84ca872d52be10d",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000071-predictions.npz": "ce36a173c7653e41e6ff2a7fac5339eaf4748a9925dcc2958f5fca7a7ed18faf",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000082-predictions.npz": "20120006668838ec8ab258b5407858db7f7731d7f38d2c777d937973481c3980",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000113-predictions.npz": "ad8fb2ad2867df8f5188eaaad3873dcf52201499cfc27bc5ae4f860c8dd00ad9",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000141-predictions.npz": "f46434c11342a3f01ae9a358ec81e7cc451789d80505827a3f6c339b5f8c6005",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/dataset.log": "0b0089358ee1e3ce2fc310a63a9ff4b9a1ebf74925097af1d6acd010f2dd827a",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/receiver-reference.npz": "c08928b9a119913a1e182440c95c20021b38e5adedc565f96416e7732114db32",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/records.jsonl": "5dbb1061c71a4bfb2e9ed1e7c262b5830ae61dea127a906308ee8477645b387f",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000036-predictions.npz": "335b61329313e86157e554164533a1fce3e7837b71c8d7c2452c895280ce59bd",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000054-predictions.npz": "df54e40e7ff0d41a9fd500040764ab00677f0f8eb9e86764c920894ddeadfce3",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000071-predictions.npz": "45fdbe73bc60f24df5482b54de851f0d44a797d8a8bb718bd1db8b8d129c8c63",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000082-predictions.npz": "aa79a0fbcef6cece3ea71c09ed53d0fb1564e5e5c68628c5e976cafed388e389",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000113-predictions.npz": "52eb03b3717208621e22f92275f02c545320f410e84e6ad4d249389eee647e4a",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000141-predictions.npz": "859b602da1e5995f58d991b298ee767d3df1ec759cd08d530fb505191e8337ad",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/dataset.log": "ac8370d133c15396ea2c35c8de0415f45c06d4a693d47d31b5192115c587f439",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/receiver-reference.npz": "5e6fc0c44976a564efe4d66c94c285e43b80b8b8537fee94426e5391cf5018e7",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/records.jsonl": "7c91b1b3e2e51533364480c9a7239f07b0058060e8af939f86d4c2b607c492a7",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000036-predictions.npz": "706524ab6a80d4d04330f397edc3f8c7df2eb0a262c5c54025de835ef7466f9b",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000054-predictions.npz": "b574c1093a7b229156e6e0ea2d914aabf4c88478ec1a0f17a84ca872d52be10d",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000071-predictions.npz": "ce36a173c7653e41e6ff2a7fac5339eaf4748a9925dcc2958f5fca7a7ed18faf",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000082-predictions.npz": "20120006668838ec8ab258b5407858db7f7731d7f38d2c777d937973481c3980",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000113-predictions.npz": "ad8fb2ad2867df8f5188eaaad3873dcf52201499cfc27bc5ae4f860c8dd00ad9",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000141-predictions.npz": "f46434c11342a3f01ae9a358ec81e7cc451789d80505827a3f6c339b5f8c6005",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/dataset.log": "356d1b3f8507ea0e54fb6cb41df3171b1c9b7630c52adfca7f3e6508f4fe5a21",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/receiver-reference.npz": "c08928b9a119913a1e182440c95c20021b38e5adedc565f96416e7732114db32",
+    "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/records.jsonl": "7d65b8fd925595fb427a4f68e054882594c62e56342c5a48d96d4e4e5d8ccb75",
+    "logs/stereo-epipolar-evaluation-integration-001-G-awgn10.log": "cf22a077814a932116156c871f807b42cf2b2685356f7eedafcc3912f36970f0",
+    "logs/stereo-epipolar-evaluation-integration-001-G-identity10.log": "707ed1ffcf5f35097a11faf8cabc9f89fc394c3c3b6ddb5fad118e39efe1cac5",
+    "logs/stereo-epipolar-evaluation-integration-001-P-awgn10.log": "f181f70a6bd9d7ddfb9a23c9221031e335d9139ff6ee947117daea15f0dd2c7c",
+    "logs/stereo-epipolar-evaluation-integration-001-P-identity10.log": "1615c68f7a630eb882afcfe9ba5b68de3a9d040c2081de98416b97db642ea42e",
+    "logs/stereo-epipolar-evaluation-integration-001-S-awgn10.log": "c1996f7d389b1fcfe58fcf8c60b2129ca9b0f6ef3b77eb703a0112f4e439cdc7",
+    "logs/stereo-epipolar-evaluation-integration-001-S-identity10.log": "7624fe1d0aa274e86783eb9ff21029982bc025131e2b3c475e5548a5c99bff18",
+    "logs/stereo-epipolar-evaluation-integration-001-U-awgn10.log": "47a276dbf8d956c3e01cdcac76d4f08a95f1f0a952a4451c87c4c64f3e5be9bd",
+    "logs/stereo-epipolar-evaluation-integration-001-U-identity10.log": "477b4ae42c0f311e2c010e0d0ed0ac6e1e073186bbbeca71b9ccce4913661cf7",
+    "logs/stereo-epipolar-evaluation-integration-001-controller.log": "0fc6cbe495d53f794458696a6782b279d225fe06fda66289cf035cfdca2e94c2",
+    "logs/stereo-epipolar-evaluation-integration-001-independent-audit.log": "53444e48282a2f7a55f2e615a2ddd4a253b6a38f42a9b8d69022b9c42e12e140"
+  },
+  "snapshots": {
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-identity10/000036-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000036-predictions.npz",
+      "sha256": "706524ab6a80d4d04330f397edc3f8c7df2eb0a262c5c54025de835ef7466f9b"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-identity10/000054-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000054-predictions.npz",
+      "sha256": "b574c1093a7b229156e6e0ea2d914aabf4c88478ec1a0f17a84ca872d52be10d"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-identity10/000071-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000071-predictions.npz",
+      "sha256": "ce36a173c7653e41e6ff2a7fac5339eaf4748a9925dcc2958f5fca7a7ed18faf"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-identity10/000082-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000082-predictions.npz",
+      "sha256": "20120006668838ec8ab258b5407858db7f7731d7f38d2c777d937973481c3980"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-identity10/000113-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000113-predictions.npz",
+      "sha256": "ad8fb2ad2867df8f5188eaaad3873dcf52201499cfc27bc5ae4f860c8dd00ad9"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-identity10/000141-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/000141-predictions.npz",
+      "sha256": "f46434c11342a3f01ae9a358ec81e7cc451789d80505827a3f6c339b5f8c6005"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-identity10/dataset.log": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/dataset.log",
+      "sha256": "356d1b3f8507ea0e54fb6cb41df3171b1c9b7630c52adfca7f3e6508f4fe5a21"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-identity10/receiver-reference.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/receiver-reference.npz",
+      "sha256": "c08928b9a119913a1e182440c95c20021b38e5adedc565f96416e7732114db32"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-identity10/records.jsonl": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-identity10/records.jsonl",
+      "sha256": "7d65b8fd925595fb427a4f68e054882594c62e56342c5a48d96d4e4e5d8ccb75"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-awgn10/000036-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000036-predictions.npz",
+      "sha256": "335b61329313e86157e554164533a1fce3e7837b71c8d7c2452c895280ce59bd"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-awgn10/000054-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000054-predictions.npz",
+      "sha256": "df54e40e7ff0d41a9fd500040764ab00677f0f8eb9e86764c920894ddeadfce3"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-awgn10/000071-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000071-predictions.npz",
+      "sha256": "45fdbe73bc60f24df5482b54de851f0d44a797d8a8bb718bd1db8b8d129c8c63"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-awgn10/000082-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000082-predictions.npz",
+      "sha256": "aa79a0fbcef6cece3ea71c09ed53d0fb1564e5e5c68628c5e976cafed388e389"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-awgn10/000113-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000113-predictions.npz",
+      "sha256": "52eb03b3717208621e22f92275f02c545320f410e84e6ad4d249389eee647e4a"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-awgn10/000141-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/000141-predictions.npz",
+      "sha256": "859b602da1e5995f58d991b298ee767d3df1ec759cd08d530fb505191e8337ad"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-awgn10/dataset.log": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/dataset.log",
+      "sha256": "ac8370d133c15396ea2c35c8de0415f45c06d4a693d47d31b5192115c587f439"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-awgn10/receiver-reference.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/receiver-reference.npz",
+      "sha256": "5e6fc0c44976a564efe4d66c94c285e43b80b8b8537fee94426e5391cf5018e7"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-U-awgn10/records.jsonl": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/U-awgn10/records.jsonl",
+      "sha256": "7c91b1b3e2e51533364480c9a7239f07b0058060e8af939f86d4c2b607c492a7"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-identity10/000036-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000036-predictions.npz",
+      "sha256": "706524ab6a80d4d04330f397edc3f8c7df2eb0a262c5c54025de835ef7466f9b"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-identity10/000054-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000054-predictions.npz",
+      "sha256": "b574c1093a7b229156e6e0ea2d914aabf4c88478ec1a0f17a84ca872d52be10d"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-identity10/000071-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000071-predictions.npz",
+      "sha256": "ce36a173c7653e41e6ff2a7fac5339eaf4748a9925dcc2958f5fca7a7ed18faf"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-identity10/000082-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000082-predictions.npz",
+      "sha256": "20120006668838ec8ab258b5407858db7f7731d7f38d2c777d937973481c3980"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-identity10/000113-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000113-predictions.npz",
+      "sha256": "ad8fb2ad2867df8f5188eaaad3873dcf52201499cfc27bc5ae4f860c8dd00ad9"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-identity10/000141-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/000141-predictions.npz",
+      "sha256": "f46434c11342a3f01ae9a358ec81e7cc451789d80505827a3f6c339b5f8c6005"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-identity10/dataset.log": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/dataset.log",
+      "sha256": "9348dad05d761485417e99dd4b802be33d6e01b348f5ced27790f4d7c36b39df"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-identity10/receiver-reference.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/receiver-reference.npz",
+      "sha256": "c08928b9a119913a1e182440c95c20021b38e5adedc565f96416e7732114db32"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-identity10/records.jsonl": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-identity10/records.jsonl",
+      "sha256": "8c75a8ac75704690b6f4dd53370be605c2bcae30f872d07c38d91ea83ddcd650"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-awgn10/000036-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000036-predictions.npz",
+      "sha256": "335b61329313e86157e554164533a1fce3e7837b71c8d7c2452c895280ce59bd"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-awgn10/000054-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000054-predictions.npz",
+      "sha256": "df54e40e7ff0d41a9fd500040764ab00677f0f8eb9e86764c920894ddeadfce3"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-awgn10/000071-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000071-predictions.npz",
+      "sha256": "45fdbe73bc60f24df5482b54de851f0d44a797d8a8bb718bd1db8b8d129c8c63"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-awgn10/000082-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000082-predictions.npz",
+      "sha256": "aa79a0fbcef6cece3ea71c09ed53d0fb1564e5e5c68628c5e976cafed388e389"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-awgn10/000113-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000113-predictions.npz",
+      "sha256": "52eb03b3717208621e22f92275f02c545320f410e84e6ad4d249389eee647e4a"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-awgn10/000141-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/000141-predictions.npz",
+      "sha256": "859b602da1e5995f58d991b298ee767d3df1ec759cd08d530fb505191e8337ad"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-awgn10/dataset.log": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/dataset.log",
+      "sha256": "c5eef0ed7d72824ddd3b76ce7ba6238e94a071be7d0cb4e39b0a32aa228eb5cc"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-awgn10/receiver-reference.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/receiver-reference.npz",
+      "sha256": "5e6fc0c44976a564efe4d66c94c285e43b80b8b8537fee94426e5391cf5018e7"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-G-awgn10/records.jsonl": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/G-awgn10/records.jsonl",
+      "sha256": "ab5de2bc415462251460a082a95cd789915252ff55f616b1c873acb87475ceeb"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-identity10/000036-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000036-predictions.npz",
+      "sha256": "706524ab6a80d4d04330f397edc3f8c7df2eb0a262c5c54025de835ef7466f9b"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-identity10/000054-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000054-predictions.npz",
+      "sha256": "b574c1093a7b229156e6e0ea2d914aabf4c88478ec1a0f17a84ca872d52be10d"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-identity10/000071-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000071-predictions.npz",
+      "sha256": "ce36a173c7653e41e6ff2a7fac5339eaf4748a9925dcc2958f5fca7a7ed18faf"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-identity10/000082-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000082-predictions.npz",
+      "sha256": "20120006668838ec8ab258b5407858db7f7731d7f38d2c777d937973481c3980"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-identity10/000113-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000113-predictions.npz",
+      "sha256": "ad8fb2ad2867df8f5188eaaad3873dcf52201499cfc27bc5ae4f860c8dd00ad9"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-identity10/000141-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/000141-predictions.npz",
+      "sha256": "f46434c11342a3f01ae9a358ec81e7cc451789d80505827a3f6c339b5f8c6005"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-identity10/dataset.log": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/dataset.log",
+      "sha256": "92e2986436fece079d5255d62d82a557296784f673b9367b31b707f21cb68565"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-identity10/receiver-reference.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/receiver-reference.npz",
+      "sha256": "c08928b9a119913a1e182440c95c20021b38e5adedc565f96416e7732114db32"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-identity10/records.jsonl": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-identity10/records.jsonl",
+      "sha256": "70dfb6077d5f325007a7bcc822bab3566f6ff90d8a1847fbcde8c4a050dab733"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-awgn10/000036-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000036-predictions.npz",
+      "sha256": "335b61329313e86157e554164533a1fce3e7837b71c8d7c2452c895280ce59bd"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-awgn10/000054-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000054-predictions.npz",
+      "sha256": "df54e40e7ff0d41a9fd500040764ab00677f0f8eb9e86764c920894ddeadfce3"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-awgn10/000071-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000071-predictions.npz",
+      "sha256": "45fdbe73bc60f24df5482b54de851f0d44a797d8a8bb718bd1db8b8d129c8c63"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-awgn10/000082-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000082-predictions.npz",
+      "sha256": "aa79a0fbcef6cece3ea71c09ed53d0fb1564e5e5c68628c5e976cafed388e389"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-awgn10/000113-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000113-predictions.npz",
+      "sha256": "52eb03b3717208621e22f92275f02c545320f410e84e6ad4d249389eee647e4a"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-awgn10/000141-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/000141-predictions.npz",
+      "sha256": "859b602da1e5995f58d991b298ee767d3df1ec759cd08d530fb505191e8337ad"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-awgn10/dataset.log": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/dataset.log",
+      "sha256": "b03883049418bfcc2208aa4ac28799b05c7089a10d25d8e2e4bc34c913225e2e"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-awgn10/receiver-reference.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/receiver-reference.npz",
+      "sha256": "5e6fc0c44976a564efe4d66c94c285e43b80b8b8537fee94426e5391cf5018e7"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-P-awgn10/records.jsonl": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/P-awgn10/records.jsonl",
+      "sha256": "85eef7bfd0bf7b275237f71a32caa79a95d6b9cce685d479ed219d396a2c1a91"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-identity10/000036-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000036-predictions.npz",
+      "sha256": "706524ab6a80d4d04330f397edc3f8c7df2eb0a262c5c54025de835ef7466f9b"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-identity10/000054-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000054-predictions.npz",
+      "sha256": "b574c1093a7b229156e6e0ea2d914aabf4c88478ec1a0f17a84ca872d52be10d"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-identity10/000071-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000071-predictions.npz",
+      "sha256": "ce36a173c7653e41e6ff2a7fac5339eaf4748a9925dcc2958f5fca7a7ed18faf"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-identity10/000082-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000082-predictions.npz",
+      "sha256": "20120006668838ec8ab258b5407858db7f7731d7f38d2c777d937973481c3980"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-identity10/000113-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000113-predictions.npz",
+      "sha256": "ad8fb2ad2867df8f5188eaaad3873dcf52201499cfc27bc5ae4f860c8dd00ad9"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-identity10/000141-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/000141-predictions.npz",
+      "sha256": "f46434c11342a3f01ae9a358ec81e7cc451789d80505827a3f6c339b5f8c6005"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-identity10/dataset.log": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/dataset.log",
+      "sha256": "0b0089358ee1e3ce2fc310a63a9ff4b9a1ebf74925097af1d6acd010f2dd827a"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-identity10/receiver-reference.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/receiver-reference.npz",
+      "sha256": "c08928b9a119913a1e182440c95c20021b38e5adedc565f96416e7732114db32"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-identity10/records.jsonl": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-identity10/records.jsonl",
+      "sha256": "5dbb1061c71a4bfb2e9ed1e7c262b5830ae61dea127a906308ee8477645b387f"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-awgn10/000036-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000036-predictions.npz",
+      "sha256": "335b61329313e86157e554164533a1fce3e7837b71c8d7c2452c895280ce59bd"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-awgn10/000054-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000054-predictions.npz",
+      "sha256": "df54e40e7ff0d41a9fd500040764ab00677f0f8eb9e86764c920894ddeadfce3"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-awgn10/000071-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000071-predictions.npz",
+      "sha256": "45fdbe73bc60f24df5482b54de851f0d44a797d8a8bb718bd1db8b8d129c8c63"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-awgn10/000082-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000082-predictions.npz",
+      "sha256": "aa79a0fbcef6cece3ea71c09ed53d0fb1564e5e5c68628c5e976cafed388e389"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-awgn10/000113-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000113-predictions.npz",
+      "sha256": "52eb03b3717208621e22f92275f02c545320f410e84e6ad4d249389eee647e4a"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-awgn10/000141-predictions.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/000141-predictions.npz",
+      "sha256": "859b602da1e5995f58d991b298ee767d3df1ec759cd08d530fb505191e8337ad"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-awgn10/dataset.log": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/dataset.log",
+      "sha256": "ca39281194885dc14cbd1864196c8f9e87de177c2cc3d8932751755c60aa039f"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-awgn10/receiver-reference.npz": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/receiver-reference.npz",
+      "sha256": "5e6fc0c44976a564efe4d66c94c285e43b80b8b8537fee94426e5391cf5018e7"
+    },
+    "/mnt/d/paper6/runs/stereo-epipolar-evaluation-integration-001-S-awgn10/records.jsonl": {
+      "snapshot": "data/runs/stereo-epipolar-evaluation-integration-001-raw/S-awgn10/records.jsonl",
+      "sha256": "a89ec2b9853ab7c5f4da065e00a5d0c0b5c09c22d37c4f57643ec51fe8aae231"
+    }
+  },
+  "scope": "Complete terminal/small raw prediction-record/state evidence closure; large native weights stay on sheng"
+}

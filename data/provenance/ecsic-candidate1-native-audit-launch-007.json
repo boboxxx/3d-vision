@@ -1,0 +1,19 @@
+{
+  "state": "submitted_candidate1_native_audit_pending_actual_training_completion",
+  "submitted_unix": 1791203306.103374,
+  "candidate": 1,
+  "training_raw_job": "11425119",
+  "last_train_updates_observed": 24768,
+  "audit_job": "11425239",
+  "dependency": "afterok:11425119",
+  "input_sha256": "effbc0eabf71bc54d1f604d8b3272bc5600444b26b3e7ce474ebe0ca65eb15b8",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--dependency=afterok:11425119",
+    "experiments/original-paper-scenarios/ecsic-candidate1-audit-code-007/audit1.sbatch"
+  ],
+  "actual_scontrol": "JobId=11425239 JobName=paper6-ecsic-c1-audit\n   UserId=wc296(1007844) GroupId=wc296_g(1007844) MCS_label=N/A\n   Priority=12423 Nice=0 Account=engdes QOS=normal\n   JobState=PENDING Reason=Dependency Dependency=afterok:11425119(unfulfilled)\n   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0\n   RunTime=00:00:00 TimeLimit=00:20:00 TimeMin=N/A\n   SubmitTime=2026-10-05T12:28:26 EligibleTime=Unknown\n   AccrueTime=Unknown\n   StartTime=Unknown EndTime=Unknown Deadline=N/A\n   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-05T12:28:26 Scheduler=Main\n   Partition=short AllocNode:Sid=artemis-login-0:2177035\n   ReqNodeList=(null) ExcNodeList=(null)\n   NodeList=\n   NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=2 ReqB:S:C:T=0:0:*:*\n   ReqTRES=cpu=2,mem=8G,node=1,billing=2\n   AllocTRES=(null)\n   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*\n   MinCPUsNode=2 MinMemoryNode=8G MinTmpDiskNode=0\n   Features=(null) DelayBoot=00:00:00\n   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)\n   Command=/mnt/nfs2/engdes/wc296/paper6/experiments/original-paper-scenarios/ecsic-candidate1-audit-code-007/audit1.sbatch\n   WorkDir=/mnt/nfs2/engdes/wc296/paper6\n   StdErr=/mnt/nfs2/engdes/wc296/paper6/logs/ecsic-candidate1-audit007-11425239.err\n   StdIn=/dev/null\n   StdOut=/mnt/nfs2/engdes/wc296/paper6/logs/ecsic-candidate1-audit007-11425239.out\n   Power=\n   TresPerTask=cpu:2\n   \n\n",
+  "audit_passed": false,
+  "local_replay_or_rate_or_AP_complete": false
+}

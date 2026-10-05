@@ -1,0 +1,36 @@
+{
+  "epoch": 4,
+  "complete_training_epoch": true,
+  "updates": 3340,
+  "unique_returned_training_frames": 3340,
+  "native_empty_augmented_GT_resampling_retained": true,
+  "checkpoint_path": "/mnt/d/paper6/runs/student-feature-seed17-001/checkpoint_epoch_4.pth",
+  "checkpoint_sha256": "50c7c6a19cf05ac876eecabc10bc935fff3082f1e4af9dfb7d7f3f9e2a7d11e3",
+  "original_states_identical": 484,
+  "holdout": {
+    "frames": 372,
+    "records_sha256": "608caf62f74964861ec86a7d7f6e1a4295cc702dec53a0bc53ef6b55439c04c2",
+    "aggregation": "arithmetic mean of per-frame interface metrics",
+    "interfaces": {
+      "left_stereo": {
+        "student_rms": 1.035101615453279,
+        "teacher_rms": 1.2714668970595124,
+        "normalized_mse": 0.3306082292429863,
+        "cosine": 0.8182311274351612
+      },
+      "right_stereo": {
+        "student_rms": 1.0325172266332052,
+        "teacher_rms": 1.266608367684067,
+        "normalized_mse": 0.3336158340336174,
+        "cosine": 0.8163653378204633
+      },
+      "left_appearance": {
+        "student_rms": 0.8474609063517663,
+        "teacher_rms": 1.482391837463584,
+        "normalized_mse": 0.6673361537277057,
+        "cosine": 0.5766128142995219
+      }
+    }
+  },
+  "completed_at_unix": 1791061854.009077
+}

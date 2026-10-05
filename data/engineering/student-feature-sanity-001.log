@@ -1,0 +1,28 @@
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+2026-10-03 21:37:31,192   INFO  boxes_gt_in_cam2_view False
+2026-10-03 21:37:31,197   INFO  Loading KITTI dataset
+2026-10-03 21:37:31,423   INFO  Total samples for KITTI dataset: 3340
+2026-10-03 21:37:31,424   INFO  boxes_gt_in_cam2_view False
+2026-10-03 21:37:31,430   INFO  Loading KITTI dataset
+2026-10-03 21:37:31,449   INFO  Total samples for KITTI dataset: 372
+Traceback (most recent call last):
+  File "/home/sheng/paper6/scripts/pretrain_student.py", line 258, in <module>
+    main()
+  File "/home/sheng/paper6/scripts/pretrain_student.py", line 159, in main
+    model = build_network(config.MODEL, len(config.CLASS_NAMES), train_set).cuda().eval()
+  File "/home/sheng/paper6/third_party/LIGA-Stereo/liga/models/__init__.py", line 12, in build_network
+    model = build_stereo_detector(
+  File "/home/sheng/paper6/third_party/LIGA-Stereo/liga/models/detectors_stereo/__init__.py", line 9, in build_detector
+    model = __all__[model_cfg.NAME](
+  File "/home/sheng/paper6/third_party/LIGA-Stereo/liga/models/detectors_stereo/liga.py", line 8, in __init__
+    self.module_list = self.build_networks()
+  File "/home/sheng/paper6/third_party/LIGA-Stereo/liga/models/detectors_stereo/stereo_detector3d_template.py", line 55, in build_networks
+    module, model_info_dict = getattr(self, 'build_%s' % module_name)(
+  File "/home/sheng/paper6/third_party/LIGA-Stereo/liga/models/detectors_stereo/stereo_detector3d_template.py", line 74, in build_lidar_model
+    logger = create_logger(rank=dist.get_rank())
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1997, in get_rank
+    default_pg = _get_default_group()
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1150, in _get_default_group
+    raise ValueError(
+ValueError: Default process group has not been initialized, please make sure to call init_process_group.

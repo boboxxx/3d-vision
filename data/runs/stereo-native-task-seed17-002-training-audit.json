@@ -1,0 +1,41 @@
+{
+  "state": "passed",
+  "evidence_type": "exploratory_clean3D_codec_task_adaptation",
+  "steps": 3340,
+  "inactive_states_identical": 519,
+  "trained_parameter_tensors": 16,
+  "all_optimizer_update_counts": 3340,
+  "summary": {
+    "nonzero_gradient_frames": {
+      "left_stereo": 3340,
+      "right_stereo": 3340,
+      "appearance": 3340,
+      "symbols": 3340,
+      "native_cost": 3340
+    },
+    "empty_GT_frames": 62,
+    "steps": 3340,
+    "unique_returned_frames": 3340,
+    "max_preclip_gradient": 130.52349853515625,
+    "first100_loss_median": 1.704758644104004,
+    "last100_loss_median": 1.3677864074707031,
+    "component_first100_medians": {
+      "classification_loss": 0.8593058288097382,
+      "location_loss": 0.17744719982147217,
+      "direction_loss": 0.11350115016102791,
+      "iou_loss_raw": 0.43657416105270386
+    },
+    "component_last100_medians": {
+      "classification_loss": 0.7067062854766846,
+      "location_loss": 0.1220487505197525,
+      "direction_loss": 0.05115971527993679,
+      "iou_loss_raw": 0.37334567308425903
+    }
+  },
+  "full_initialization_sha256": "924e0de8fe105dc122c64a9f31e502643757be97d3b1b0bb45dc4f9adf34e196",
+  "checkpoint_sha256": "77bc73021a139099e3d0f9c12e0fba8b17eb62f9b9c243eb8f0ad099bd6e8867",
+  "manifest_sha256": "55563c9b2981fb217b499c352ff717fb37ed0ec9daab79cb001dbc941eedf749",
+  "source_manifest_sha256": "d0f36823d3c048c477019502566151fdb1ff3fa49e01c1dcf6f318d4bc3b1a7b",
+  "raw_snapshot_sha256": "0085a766e33c40525a41d099280747ccecc54e343be0877c4003361c9b3a0bc2",
+  "limitations": "exact state and saved scalar/counter audit; no fresh feature reconstruction or detection AP proof"
+}

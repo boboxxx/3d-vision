@@ -1,0 +1,27 @@
+{
+  "evidence_type": "engineering_only",
+  "state": "failed",
+  "checkpoint_sha256": "3f36af30b686f23d0868482675177b29cc50c2b378577dd12f9092ddb0235b2e",
+  "config_sha256": "fdf2ddb3c5c73c8bb9c7a16f39b57318da9cda684a13f78fa6566c5a033dda04",
+  "started_at_unix": 1791041885.250649,
+  "torch": "2.5.0+cu118",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "expected_state_tensors": 484,
+  "checkpoint_state_tensors": 484,
+  "missing_detector_weights": [],
+  "unexpected_weights": [],
+  "checkpoint_epoch": 53,
+  "checkpoint_version": "liga+0.1.0+7aa7b92+py72af526",
+  "modules": [
+    "lidar_model",
+    "backbone_3d",
+    "map_to_bev_module",
+    "backbone_2d",
+    "dense_head_2d",
+    "dense_head",
+    "depth_loss_head"
+  ],
+  "parameters": 8763917,
+  "exception": "RuntimeError('indices should be either on cpu or on the same device as the indexed tensor (cpu)')",
+  "ended_at_unix": 1791041890.900546
+}

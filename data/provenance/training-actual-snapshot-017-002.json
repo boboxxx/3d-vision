@@ -1,0 +1,28 @@
+{
+  "checked_unix": 1791215940.3800461,
+  "reports": {
+    "original-public30-formal-seed17-003-stage1": {
+      "state": "running_complete_public_semantic_stage",
+      "job_id": "11426592",
+      "update_count": 41728,
+      "traceback": null,
+      "completed_epochs_count": 11
+    },
+    "ecsic-KITTI-lambda0.1-seed17-002": {
+      "state": "finished_all37120_source_RD_updates_pending_actual_terminal_full_audit_and_real_byte_calibration",
+      "job_id": "11429214",
+      "update_count": 37120,
+      "traceback": null,
+      "completed_epochs_count": 10
+    },
+    "ecsic-KITTI-lambda0.3-seed17-002": {
+      "state": "running_full_KITTI_source_RD_training",
+      "job_id": "11425047",
+      "update_count": 1664,
+      "traceback": null,
+      "completed_epochs_count": 0
+    }
+  },
+  "sacct": "11425240|COMPLETED|0:0|01:40:23\n11425240.batch|COMPLETED|0:0|01:40:23\n11425240.extern|COMPLETED|0:0|01:40:23\n11425240.0|COMPLETED|0:0|01:40:21\n11425814|RUNNING|0:0|00:40:21\n11425814.extern|RUNNING|0:0|00:40:21\n11425814.0|RUNNING|0:0|00:40:21\n11426592|RUNNING|0:0|02:10:37\n11426592.batch|RUNNING|0:0|02:10:37\n11426592.extern|RUNNING|0:0|02:10:37\n11426592.0|RUNNING|0:0|02:10:37\n11426847|PENDING|0:0|00:00:00\n11429210|PENDING|0:0|00:00:00\n11429212|PENDING|0:0|00:00:00\n11429211|PENDING|0:0|00:00:00\n11429218|COMPLETED|0:0|00:00:44\n11429218.batch|COMPLETED|0:0|00:00:44\n11429218.extern|COMPLETED|0:0|00:00:44\n11429218.0|COMPLETED|0:0|00:00:44\n11429217|PENDING|0:0|00:00:00\n11429221|RUNNING|0:0|00:02:14\n11429221.extern|RUNNING|0:0|00:02:14\n11429221.0|RUNNING|0:0|00:02:14\n11429222|PENDING|0:0|00:00:00\n",
+  "squeue": "                 JOBID                             NAME        STATE         TIME NODELIST(REASON)\n    11429210_[10,50%1]        paper6-source-engineer009      PENDING         0:00 (QOSGrpGRES)\n            11425047_5           paper6-ecsic-KITTI-002      RUNNING         2:59 artemis-rtx-03\n              11426592  paper6-original-public30-stage1      RUNNING      2:10:37 artemis-rtx-03\n              11425814            paper6-cost-export013      RUNNING        40:21 artemis-rtx-01\n              11429371         paper6-original-local008      PENDING         0:00 (Dependency)\n            11429217_5         paper6-ecsic-final-audit      PENDING         0:00 (Dependency)\n           11429211_50           paper6-source-audit009      PENDING         0:00 (Dependency)\n           11429211_10           paper6-source-audit009      PENDING         0:00 (Dependency)\n              11426847  paper6-original-stage1-audit007      PENDING         0:00 (Dependency)\n              11429222        paper6-ecsic-c5-export013      PENDING         0:00 (Dependency)\n              11429221        paper6-ecsic-c4-export013      RUNNING         2:14 artemis-rtx-00\n"
+}

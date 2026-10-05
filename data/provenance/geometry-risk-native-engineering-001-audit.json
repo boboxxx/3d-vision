@@ -1,0 +1,74 @@
+{
+  "state": "passed_independent_native_engineering_audit",
+  "checked_unix": 1791123151.966003,
+  "verifier_sha256": "bcf667541cb6cc58d79a33a2be96837b426ae9082d2a773b355d1b02762b5a00",
+  "evidence_type": "engineering_only_no_fit_AP_allocation_or_calibration_claim",
+  "manifest_sha256": "d708d3852097a016ab808adce1ec8d1c81dab30795cc0e1559c05525b5d0e3cc",
+  "queue_manifest_sha256": "e6fd208453201422814708fdbc19c67d5712801326e0cf0eb3c4b91eb0687be7",
+  "actual_terminal_PIDs": [
+    73911,
+    68491
+  ],
+  "records_sha256": "3f6352d1192e6489fca161dddff82cf07c1bd0dea7ac48abce5cb6c22054ba00",
+  "native_rows": 260,
+  "attempted_complex_uses": 16224000,
+  "actual_total_transmit_energy": 16224001.015625,
+  "summaries": {
+    "000000": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.19621659815311432,
+      "full_AWGN10_loss": 0.19529014825820923,
+      "readonly_states": 535,
+      "frame_report_sha256": "1311ec1ba79d328f3c128ee6124e6b8fbac435d9d36de4e7e081566b83854cb4",
+      "fixture_sha256": "cbb10d56055ec6c540b5f103d25a904e67d80c06300580fe6ee3104fa927fd17",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000000.png": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+        "/mnt/d/paper6/data/kitti/training/image_3/000000.png": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3",
+        "/mnt/d/paper6/data/kitti/training/label_2/000000.txt": "6627ff300809ccdb8f0402c1003b7c691a64e3027ceaf0ce7cabfeef9809d0c3",
+        "/mnt/d/paper6/data/kitti/training/calib/000000.txt": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f"
+      }
+    },
+    "000003": {
+      "geometry_max_errors": {
+        "left_entropy": 0.0,
+        "left_depth_mean": 0.0,
+        "left_depth_variance": 0.0,
+        "left_disparity_mean": 0.0,
+        "left_disparity_variance": 0.0,
+        "right_entropy": 0.0,
+        "right_depth_mean": 0.0,
+        "right_depth_variance": 0.0,
+        "right_disparity_mean": 0.0,
+        "right_disparity_variance": 0.0
+      },
+      "clean_loss": 0.2338983416557312,
+      "full_AWGN10_loss": 0.21960978209972382,
+      "readonly_states": 535,
+      "frame_report_sha256": "a12e15dcfc4d5e6be259babdbab409dd36a6630285d07f3d2be2986b3b5b33c6",
+      "fixture_sha256": "402f4c91fc9a26100d8e20f14a16b6b9215a65d93d39858d6986ad8299062a58",
+      "source_files": {
+        "/mnt/d/paper6/data/kitti/training/image_2/000003.png": "d22f4692c924e0ba7ff2ac00827547d4bd018d991fb9f1959025b183a949af19",
+        "/mnt/d/paper6/data/kitti/training/image_3/000003.png": "ca44da39dcc83befde20753ac2bdb527314a2a78067757f2298ae6df947a1f9d",
+        "/mnt/d/paper6/data/kitti/training/label_2/000003.txt": "56f275a7b3464992db4bb524ee84cc09fb4ca621b6e63e281f6defa0a79b2651",
+        "/mnt/d/paper6/data/kitti/training/calib/000003.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+      }
+    }
+  },
+  "artifacts_sha256": {
+    "data/engineering/geometry-risk-native-engineering-001.json": "d708d3852097a016ab808adce1ec8d1c81dab30795cc0e1559c05525b5d0e3cc",
+    "data/engineering/geometry-risk-native-sheng-CPU-001.json": "41f521193903968f81527e9d37985a1d76f2da6fd2afa57b7cb99b20e200fd0a",
+    "/mnt/d/paper6/runs/geometry-risk-native-engineering-001/000000.json": "1311ec1ba79d328f3c128ee6124e6b8fbac435d9d36de4e7e081566b83854cb4",
+    "/mnt/d/paper6/runs/geometry-risk-native-engineering-001/000003.json": "a12e15dcfc4d5e6be259babdbab409dd36a6630285d07f3d2be2986b3b5b33c6"
+  }
+}

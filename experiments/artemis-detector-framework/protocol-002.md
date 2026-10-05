@@ -1,0 +1,3 @@
+# Dependency resolution repair 002
+
+Locked before rerunning. Resolution001 failed because fire0.7.0 has no binary wheel; the binary-only resolver found fire0.7.1. No installation, compilation or model execution occurred. Retain the full001 log/status/index. Replace only fire0.7.0 with fire0.7.1 in requirements002 and use a separate resolution002 directory. All requirements, overlay isolation, official-source/hash locking, CPU build/GPU/task boundaries and original-runtime/source preservation in protocol001 remain. Fire is a CLI dependency, not a detector or learning-rule change. Keep resolver001 and its inputs intact.

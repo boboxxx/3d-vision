@@ -1,0 +1,42 @@
+/home/sheng/paper6/third_party/yolov5/models/experimental.py:79: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(attempt_download(w), map_location='cpu')  # load
+Fusing layers... 
+YOLOv5n summary: 213 layers, 1867405 parameters, 0 gradients, 4.5 GFLOPs
+{"scope": "main", "frames": 100}
+{"scope": "main", "frames": 200}
+{"scope": "main", "frames": 300}
+{"scope": "main", "frames": 400}
+{"scope": "main", "frames": 500}
+{"scope": "main", "frames": 600}
+{"scope": "main", "frames": 700}
+{"scope": "main", "frames": 800}
+{"scope": "main", "frames": 900}
+{"scope": "main", "frames": 1000}
+{"scope": "main", "frames": 1100}
+{"scope": "main", "frames": 1200}
+{"scope": "main", "frames": 1300}
+{"scope": "main", "frames": 1400}
+{"scope": "main", "frames": 1500}
+{"scope": "main", "frames": 1600}
+{"scope": "main", "frames": 1700}
+{"scope": "main", "frames": 1800}
+{"scope": "main", "frames": 1900}
+{"scope": "main", "frames": 2000}
+{"scope": "main", "frames": 2100}
+{"scope": "main", "frames": 2200}
+{"scope": "main", "frames": 2300}
+{"scope": "main", "frames": 2400}
+{"scope": "main", "frames": 2500}
+{"scope": "main", "frames": 2600}
+{"scope": "main", "frames": 2700}
+{"scope": "main", "frames": 2800}
+{"scope": "main", "frames": 2900}
+{"scope": "main", "frames": 3000}
+{"scope": "main", "frames": 3100}
+{"scope": "main", "frames": 3200}
+{"scope": "main", "frames": 3300}
+{"scope": "main", "frames": 3400}
+{"scope": "main", "frames": 3500}
+{"scope": "main", "frames": 3600}
+{"scope": "main", "frames": 3700}
+{"state": "finished", "frames": 3769, "views": 7538}

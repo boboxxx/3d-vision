@@ -1,0 +1,28 @@
+{
+  "state": "closed_zero_optimizer_updates_no_learned_checkpoint",
+  "terminal_PIDs": [
+    50852,
+    51440,
+    53134
+  ],
+  "whole535_initialization_equals_parent": true,
+  "actual_optimizer_steps": 0,
+  "training_rows": 0,
+  "sources_sha256": {
+    "project": "42b4b52a174f9c2a8c365ea45b3477e87d4c8165d3254d6b04b97bd2dad74b21",
+    "liga": "0ffb2cda5f2fa7596fd18342562f08414d2a61e28892d317aaae946b50967a01",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f",
+    "experiment": "8576c5299a661ac9349e40f33ad24f3c5791570ceca40c64d560acadac48d368"
+  },
+  "initialization_sha256": "5733d337ef9e8219387a80dc2a763677dc0d4af5008588363bd0e6bec9023487",
+  "failure": "CUDA generator.device is cuda, native tensor.device is cuda:0; strict equality false",
+  "records": {
+    "data/runs/stereo-channel-native-sanity-001-identity.json": "7937a8e552e720e33ced176c1a070f88e11f84a16cff64760a2e20540e9508e1",
+    "data/runs/stereo-channel-native-sanity-001-cycle.json": "2a82a6aa591781f94ba29ff3105a8100f59de142d0bc659118fe10cd9c83d67d",
+    "logs/stereo-channel-native-sanity-001-identity-train.log": "e6af6825fe7666a5010a03b302ef85bb106846c03b4e8eb86b56853696f4cb03",
+    "logs/stereo-channel-native-sanity-001-cycle.log": "37c683c53e16ff4f9d56fcd0dd794409d6ced8315d18ff0dc6aab0e338922cd9",
+    "data/runs/native-validation-queue-001.json": "1cc9c899b4cea82fb592cc3c871a794e285c38f163388b8ef3b9f972917db483",
+    "data/runs/final-receiver-queue-001.json": "ab660f6a0416faf499e5ddd0291c5372080bb7c681961df85b4bd80a906820f3"
+  }
+}

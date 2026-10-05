@@ -1,0 +1,55 @@
+{
+  "state": "passed_complete_Q2_attempt001_002_selected_and_physical_record_comparison",
+  "checked_unix": 1791174001.80025,
+  "views": {
+    "000000-left": {
+      "sha256": [
+        "9c1cbd9e6d460a8c530d4147636a2cacb11b8d25ee0a13c23e088c1eaa625895",
+        "66037e3a6c517912ec61fdcea755a766a19102fb2851cfaedd0103cb2cc3dc17"
+      ],
+      "changed_keys": [
+        "candidate_W1"
+      ],
+      "candidate_values_changed": 107657,
+      "max_candidate_correction": 83.02697740998988,
+      "all_selected_laws_and_physical_arrays_identical": true
+    },
+    "000000-right": {
+      "sha256": [
+        "96ce97b35307fc9132f9ba46e2c67b6da7fc6f76d7ef9de7aac362d5a9635273",
+        "47c6dc19663e0a5aa063472d5efe28a516bff9d92aadb2bb6cbe8d0c637efaf8"
+      ],
+      "changed_keys": [
+        "candidate_W1"
+      ],
+      "candidate_values_changed": 107414,
+      "max_candidate_correction": 79.93840164894388,
+      "all_selected_laws_and_physical_arrays_identical": true
+    },
+    "000003-left": {
+      "sha256": [
+        "5de16f12033a2a01b3c50643c067a3309a0371f6816290767e8fa8eec0a2af40",
+        "fd3f8e4a7fbbbfbad3670d4a3bf85d5e1e4b1bc3020b193e9392a48c0c4b3f56"
+      ],
+      "changed_keys": [
+        "candidate_W1"
+      ],
+      "candidate_values_changed": 109246,
+      "max_candidate_correction": 87.68076213925912,
+      "all_selected_laws_and_physical_arrays_identical": true
+    },
+    "000003-right": {
+      "sha256": [
+        "3ddc3d175c0fd45350bce68cc3c9fe3c20267b91e192789cdadc091060d29187",
+        "2471d3346b20a1fb38eb850a49674728e4bd0ae1ff8359497ee97d2e871a1c2f"
+      ],
+      "changed_keys": [
+        "candidate_W1"
+      ],
+      "candidate_values_changed": 104103,
+      "max_candidate_correction": 85.54053753750716,
+      "all_selected_laws_and_physical_arrays_identical": true
+    }
+  },
+  "limitations": "Attempt001 still unaccepted: all-candidate audit fails; comparison does not promote it"
+}

@@ -1,0 +1,46 @@
+{
+  "state": "closed_local_and_sheng_CPU_all130_phase_checks_actual_exit0",
+  "checked_unix": 1791202817.5800571,
+  "local_actual_exit": 0,
+  "sheng_actual_exit": 0,
+  "local_report_sha256": "c3b38e50fa3d54fab5eef4fc8411e3e5284cd509d5a2948aa575b4387b546128",
+  "sheng_report_sha256": "4d58c7946c7c0e7ef72a5b99f322e74c923473f88b655c920b07a0d7e14b0e51",
+  "source_sha256": {
+    "data/provenance/check-position-phase-theory-010.py": "8943f5639d969ee479ffd5ce2dc4be6f6d9ed0040dddd328573aaf4664e6f685",
+    "experiments/cost-field/position-phase-serialization-repair-010.md": "60a9a82fa73348d60890f36186e9fa4fc55c29fdddbdbad635c4f3e113f47ee3",
+    "data/provenance/check-position-phase-theory-009.py": "2518ab65d51cd674dcacdfb1b61686f5e7af2d59c76d039cd9faa810abbb18ef",
+    "experiments/cost-field/position-phase-theory-protocol-009.md": "38000594dcae8f79e12ae7d6cd94026c61b7f688350c9c736b13e60fd4a52bd2",
+    "experiments/cost-field/position-phase-derivation-009.md": "7841a1ff12a2a3b756d9b33afe6ca7ce48de144dfb78ad846592df24270bef9f",
+    "experiments/cost-field/code_004/codec.py": "e947855bd0565af14f9846714cefb8b7e2343e627eb667e8a6b85783f924a8eb"
+  },
+  "local_versions": {
+    "python": "3.12.8",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "sheng_versions": {
+    "python": "3.10.15",
+    "numpy": "1.26.3",
+    "scipy": "1.14.1"
+  },
+  "all130_conditions_checked": true,
+  "all26_phase_PDFs_normalized_symmetric_and_radial_verified": true,
+  "maximum_cross_host_absolute_differences": {
+    "exact_mse_m2": 2.842170943040401e-14,
+    "exact_rmse_m": 1.7763568394002505e-15,
+    "exact_clipping_probability": 2.220446049250313e-16,
+    "mc_mse_m2": 8.526512829121202e-14,
+    "mc_rmse_m": 5.329070518200751e-15,
+    "mc_mse_SE_m2": 1.6653345369377348e-16,
+    "mc_clipping_probability": 0.0,
+    "clipping_SE": 5.421010862427522e-20,
+    "mse_z": 5.853095785823825e-13,
+    "quadrature_mse_error": 9.983772702710707e-16,
+    "quadrature_probability_error": 8.355900615324868e-18,
+    "fallback_probability_bound": 0.0
+  },
+  "maximum_mse_standard_errors": 2.649595126385013,
+  "coordinate_observations_per_host": 136314880,
+  "original009_failure_retained": true,
+  "AP_or_detector_error_claim": false
+}

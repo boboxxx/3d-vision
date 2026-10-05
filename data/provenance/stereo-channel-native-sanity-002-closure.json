@@ -1,0 +1,35 @@
+{
+  "state": "closed_all_audits_passed",
+  "prefix": "stereo-channel-native-sanity-002",
+  "checked_at_unix": 1791114090.1529064,
+  "engineering": true,
+  "training_updates_per_arm": 6,
+  "paired_audit_sha256": "3dfd2842f8af98715bc245d4bbdf334eaf54a51752ce28c700d7e576102738ae",
+  "source_sha256": {
+    "project": "42b4b52a174f9c2a8c365ea45b3477e87d4c8165d3254d6b04b97bd2dad74b21",
+    "liga": "0ffb2cda5f2fa7596fd18342562f08414d2a61e28892d317aaae946b50967a01",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f",
+    "experiment": "66113f599ed26d3e0ca35d64540e82c0f6d5857682565a7a5781c5db91967379"
+  },
+  "original21_unchanged": true,
+  "artifacts_sha256": {
+    "data/runs/stereo-channel-native-sanity-002-cycle.json": "bff848e96a707fd3a0a23988e4b83c7bb515671f0e4e028bc63db949074c623c",
+    "data/provenance/server-source-manifest-stereo-channel-native-sanity-002.json": "b73b885fe26d608c475a0065d0b09b19aa6320eb75b78d27814ea07a0f41564f",
+    "data/runs/stereo-channel-native-sanity-002-pair-audit.json": "3dfd2842f8af98715bc245d4bbdf334eaf54a51752ce28c700d7e576102738ae",
+    "data/runs/stereo-channel-native-sanity-002-identity.json": "52bc9de3b5c6603bfcd2e6adc3d0fd5fa1e4243a587cf8fd8df4af8895da94c7",
+    "data/runs/stereo-channel-native-sanity-002-identity-training-audit.json": "4ed62b7ded4336f07474744677fe9d6ed9c2a7a11901b8dc99ee4852909222a9",
+    "data/runs/stereo-channel-native-sanity-002-identity-training-audit.records/training.jsonl": "8ef0fc498da0ddbce988f855dac39302debdd2ec36de42650105192b410ba731",
+    "data/runs/stereo-channel-native-sanity-002-awgn.json": "3c14c3d36305638df5aca0263e5e29ba0b2c66080300da26f3fcb022ed718adb",
+    "data/runs/stereo-channel-native-sanity-002-awgn-training-audit.json": "2df7b7d354d69c003738881c693e98bd45ed6d9f3076fa93fb07296d72112a6e",
+    "data/runs/stereo-channel-native-sanity-002-awgn-training-audit.records/training.jsonl": "adbed2c09b4bbb520cdd9c74eccdee9d915131fdbac0cbfed393f7da6ddf2a4f",
+    "logs/stereo-channel-native-sanity-002-identity-train.log": "dcae76a33d8caa86fb1d6249b6d250e7e0aec07796c81cd379ef232e1e36119e",
+    "logs/stereo-channel-native-sanity-002-identity-training-audit.log": "72fb0cb13eb61b4a207d065c7cd40cc0f78376d36935bfd7254f5ac6daeae9e9",
+    "logs/stereo-channel-native-sanity-002-awgn-train.log": "ceda72f0bf663bce89f34997416684f9413f9aebcba36f4e689b13aee7a46c69",
+    "logs/stereo-channel-native-sanity-002-awgn-training-audit.log": "84727dc560636860399149795f0d9eb2b2df3246e93cfe391fe0d89c2619377b",
+    "logs/stereo-channel-native-sanity-002-pair-audit.log": "62557db079f139c04adbe940e2f2417603fadb4ff5b1574331e57a23e405f922"
+  },
+  "evaluations": {},
+  "primary_AWGN10_Moderate_treatment_minus_control_pp": null,
+  "limitations": "Fixed exploratory internal paired channel adaptation only; author-pretraining overlap, single seed, no novelty/general superiority/mainval/fading/project-completion claim"
+}

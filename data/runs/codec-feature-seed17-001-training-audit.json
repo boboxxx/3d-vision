@@ -1,0 +1,24 @@
+{
+  "state": "passed",
+  "evidence_type": "exploratory_codec_feature_warmup",
+  "steps": 3340,
+  "inactive_states_identical": 533,
+  "trained_parameter_tensors": 16,
+  "all_optimizer_update_counts": 3340,
+  "summary": {
+    "steps": 3340,
+    "unique_returned_frames": 3340,
+    "max_preclip_gradient": 2.512692928314209,
+    "first100_loss_median": 1.149474859237671,
+    "last100_loss_median": 0.6214553713798523,
+    "first100_cost_median": 0.6330991387367249,
+    "last100_cost_median": 0.4877369701862335,
+    "first100_appearance_median": 0.5101053714752197,
+    "last100_appearance_median": 0.13294770568609238
+  },
+  "checkpoint_sha256": "984771355f145441f785a8bca5ddde2762fec4925d504298b7fb9abe8c3f57f0",
+  "manifest_sha256": "c3bea7dedc133761e17f59f813d92f57bd8b3632366d507cec782e0f3cf3bb78",
+  "source_manifest_sha256": "4d100e31ce64502a08d2ccfbef6a1e1c5d75ad8f59df31039f39f2f6e23dd772",
+  "raw_snapshot_sha256": "4578905efb229cb35588fb759dad38068950c607c9883b36e0140fd6669f22e6",
+  "limitations": "exact state and saved scalar/counter audit; no fresh feature reconstruction or detection AP proof"
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/sheng/paper6/experiments/job-control/final_receiver_queue.py", line 85, in <module>
+    main()
+  File "/home/sheng/paper6/experiments/job-control/final_receiver_queue.py", line 41, in main
+    check(previous['state'] != 'failed', 'previous native queue failed; preserve failure and stop')
+  File "/home/sheng/paper6/experiments/original-detector-integration/final-code/common.py", line 28, in check
+    raise RuntimeError(message)
+RuntimeError: previous native queue failed; preserve failure and stop

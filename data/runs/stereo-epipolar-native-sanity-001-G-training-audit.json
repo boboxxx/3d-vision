@@ -1,0 +1,38 @@
+{
+  "state": "passed",
+  "arm": "G",
+  "evidence_type": "engineering_only",
+  "steps": 6,
+  "inactive_states_identical": 484,
+  "trained_parameter_tensors": 55,
+  "all_optimizer_update_counts": 6,
+  "summary": {
+    "steps": 6,
+    "unique_returned_frames": 6,
+    "empty_GT_frames": 1,
+    "nonzero_gradient_frames": {
+      "left_stereo": 6,
+      "right_stereo": 6,
+      "appearance": 6,
+      "symbols": 6,
+      "native_cost": 6
+    },
+    "first100_loss_median": 1.4108580350875854,
+    "last100_loss_median": 1.4108580350875854,
+    "max_preclip_gradient": 37.538055419921875
+  },
+  "noise_rng_replay": {
+    "state": "passed",
+    "actual_calls": 6,
+    "device": "cuda:0",
+    "seed": 1928,
+    "initial_sha256": "49e7858adc8fabd85d8f4a41e4e61c0d8fb6308c7f1429e7040f5dc3cd75404c",
+    "final_sha256": "61a44b736d0b2fce3a5d5c5a8a4aa6ab66b1b897c9ee06967c87347051be54d0"
+  },
+  "checkpoint_sha256": "200defff8ba99b6c0f71fcd7974b0759b9f1d150087c35f2e45dbb978afc0e2f",
+  "full_initialization_sha256": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+  "manifest_sha256": "a03cac03fc92a1afc8da54e01f091b09647bc09dc40ddc4669085e7788481424",
+  "source_manifest_sha256": "408b14067ab51385656faa5bd00b37565b6ec35b50ca2ea722d87367283cebfa",
+  "raw_snapshot_sha256": "0c0ee3fdd7c49896604c202a2deed6e04dbf19e20413c7d73b221a3a9644e3be",
+  "limitations": "Independent full saved-state/actualAdam/scalar/schedule/noise-draw replay audit; no fresh native loss forward or AP proof"
+}

@@ -1,0 +1,77 @@
+{
+  "state": "passed_all6_actual_transferred_SRCNN_engineering_wire_files_and8_artifacts",
+  "checked_unix": 1791163857.206582,
+  "pairs": 6,
+  "unique_source_views": 4,
+  "artifacts_verified": 8,
+  "artifacts_sha256": {
+    "data/runs/srcnn-source-cache-engineering-001-encode.json": "50fce0b42fec0c6dee5ebf4235c92762401198a8690f0657fc1dce14625d02d4",
+    "data/provenance/srcnn-source-cache-engineering-001-wire-audit.json": "747836533244daef37251f2e7d90f5b18cbf82d442f8dc94bf968659266e5a1e",
+    "data/engineering/srcnn-source-cache-engineering-001-wire-transfer/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr10/wire/000000.p6sr": "fe603d3afe4e2c29103920f1d93424485432f200a4e7dc792623df8d57247848",
+    "data/engineering/srcnn-source-cache-engineering-001-wire-transfer/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr10/wire/000003.p6sr": "08e5f1ce7c0ba78bf1a0a8b786790d05e5f450069ce84e1a0fc24d1fc6da7788",
+    "data/engineering/srcnn-source-cache-engineering-001-wire-transfer/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr30/wire/000000.p6sr": "eec320d2d6e358663b90568aec19d55cc36a9f8f08bd660d793b732971e19a9e",
+    "data/engineering/srcnn-source-cache-engineering-001-wire-transfer/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr30/wire/000003.p6sr": "223a50c6a3ddaf79179f878cf3b184aab151465b35e4bc5afda8b34674b9eab2",
+    "data/engineering/srcnn-source-cache-engineering-001-wire-transfer/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr50/wire/000000.p6sr": "3a9db786b373d01a9b4286d6808161785ff1b9fa504abed2b1b48947caac0d6e",
+    "data/engineering/srcnn-source-cache-engineering-001-wire-transfer/mnt/d/paper6/runs/srcnn-source-cache-engineering-001/cr50/wire/000003.p6sr": "24b33ef8117ef941b511546d8a29daba280a377a7ce51525acc9f47fc2ca453b"
+  },
+  "sources": {
+    "cache": {
+      "experiments/original-paper-scenarios/srcnn-native-cache-code/audit.py": "ecd7a95c309b6e51429c7a773867ed199d1f4471200c4a74d58217568c989adc",
+      "experiments/original-paper-scenarios/srcnn-native-cache-code/check_cpu.py": "4912837cd7f3504c5b275d175537f6afb7524d7f2aa7736cc1838baff5e0ab22",
+      "experiments/original-paper-scenarios/srcnn-native-cache-code/common.py": "a0d72168c10d3e486e7b1690b4fbfb63b14447ded15180b4cc1fdc3bea175938",
+      "experiments/original-paper-scenarios/srcnn-native-cache-code/receive.py": "d18a2fbe326d2f2b09e01ab7a4ff252ca579bce3af8a7de8d854549934974935",
+      "experiments/original-paper-scenarios/srcnn-native-cache-code/encode.py": "0e62d69302e9c559457ac0f8454ecfe4e75847844ece1ce0e5da8c52ccd39acb",
+      "experiments/original-paper-scenarios/srcnn-float-reception-code/receiver.py": "b2a9e9ff4e33bff63d74f2f38e2c8d47c70999a1b614d30ef8eab9cec194db1d",
+      "experiments/original-paper-scenarios/srcnn-float-reception-code/check_cpu.py": "9d6ec0e5a139c72d9e66ffb4aa7c57ad268e17ba7e88415a2d97ab0d5af16ac7",
+      "experiments/original-paper-scenarios/srcnn-native-cache-audit-001.md": "81e5e8e78174b278e9aa600e1f8da61027cd31cf9cca29dc20557cb07771790e",
+      "experiments/original-paper-scenarios/srcnn-float-reception-protocol-001.md": "0626389a87f72979920dd08f8d7df173bf809ed87e5f3601ba448bb90fa5625d"
+    },
+    "training": {
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/audit.py": "c3bfe949c665faa398c085482e50cd49e23278856feb04f5d045c96baf2bc4c4",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/check_cpu.py": "5fad6d5d262284261cecb66ae1825ad16104dde30919a8ba2eaad0295e862e43",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/common.py": "f7cb682e5508d79680c2d6905bfec6ba9effebe4ea4b68c631ed6b26a2e7fa53",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/model.py": "d7fe16ac2ebeae0cc4787cb5b3298154c86c2c84dd49ed63c1693e05f20d677f",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/train.py": "9ac7afb5fb056b6d04924f5e1527a2da63824f6939ba5ea71618b63dd2d341df",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/audit.py": "c3bfe949c665faa398c085482e50cd49e23278856feb04f5d045c96baf2bc4c4",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/check_cpu.py": "2ca19c199481932d00c94f515567e258ae23e74b6b129963d2f545f5ab2d671e",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/common.py": "15d1c8e0295348b3d7ad82ff6bfc9c5f527a8be17ff7b1669387bd4805b7fc43",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/model.py": "d7fe16ac2ebeae0cc4787cb5b3298154c86c2c84dd49ed63c1693e05f20d677f",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/train.py": "7340d984dc882669465e3faa8f04f317dcdfc566d79a3e966275ff3103c862d0",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-protocol-001.md": "c737eb5580f20cc1636202385c018150f2224f3cdb7e9afb9c434aefc3ed7b18",
+      "experiments/original-paper-scenarios/srcnn-KITTI-checkpoint-repair-002.md": "16b47d43194f7a106147865666511aa56989212af3a5ac94e603399994ec55aa",
+      "experiments/original-paper-scenarios/srcnn-author-core-code/check_cpu.py": "e459ec63f734e1803705f020ccd5ee3cfeef2dceeff74689e85195ec70acbab8",
+      "experiments/original-paper-scenarios/srcnn-author-core-code/core.py": "40fbb09d52320f9b522d4361370400f6e604ab86f0bdba9484e022637e07cb67",
+      "experiments/original-paper-scenarios/srcnn-author-core-protocol-001.md": "f65369ab9e2f344e95975945b2847150aa95b99f5ad91a5af6c977f283f8986a",
+      "experiments/original-paper-scenarios/srcnn-compression-interface-code/check_cpu.py": "0f4b69e968da5d8f92e6766c7e1d573c5202c1b2deb7d8674f5fd9cb104b13e6",
+      "experiments/original-paper-scenarios/srcnn-compression-interface-code/interface.py": "e1d2efcdc7f30c4863c7f84921d8a8e11e6c7cecd920ae102396949d7a2262d9",
+      "experiments/original-paper-scenarios/srcnn-compression-interface-protocol-001.md": "d7cc0a16b449b6a351e9aa6458681f4faadc9d07d4dd2988cde60f09b63a7d5c",
+      "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/SRCNN.m": "314887a5b0908411aa20eadbd62f0559ad40205dba3d1ddc103f2bec8c94d266",
+      "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/model/9-5-5(ImageNet)/x3.mat": "fa2ee366d328b942b971c80c24f48dc2b015d5ed4b5790070f720ccfb6ab1578"
+    }
+  },
+  "dependencies": {
+    "training_closure_sha256": "eff4e5dcccdd811a3d6b7ef4d50d606ed8bf3ce86db44f2221c2c2a9e831ee45",
+    "training_local_proof_sha256": "895298c5f742e4d543393a777a99715376dfcbc3f4e625545bec41c8562a38d5",
+    "float_CPU_local_proof_sha256": "c582deb06f9e0291b97d488522e58113b8868655c73299a79f572baba1335f7d"
+  },
+  "summaries": {
+    "10": {
+      "raw_RGB8_bytes": 5511780,
+      "wire_bytes": 549274,
+      "actual_pooled_raw_to_wire_ratio": 10.034663938216628
+    },
+    "30": {
+      "raw_RGB8_bytes": 5511780,
+      "wire_bytes": 181918,
+      "actual_pooled_raw_to_wire_ratio": 30.29815631218461
+    },
+    "50": {
+      "raw_RGB8_bytes": 5511780,
+      "wire_bytes": 109690,
+      "actual_pooled_raw_to_wire_ratio": 50.24870088431033
+    }
+  },
+  "native_wire_audit_sha256": "747836533244daef37251f2e7d90f5b18cbf82d442f8dc94bf968659266e5a1e",
+  "verifier_sha256": "39b8c492000a80055f074b9330a1488c2682b1d3c82717c484bc3f732a816381",
+  "limitation": "Every actual wire/framing/CRC and full metadata lineage checked locally; fresh source PNG/RGB replay native only, no GPU SRCNN receiver/cache, formal result, quality, radio or AP"
+}

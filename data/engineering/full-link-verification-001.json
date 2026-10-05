@@ -1,0 +1,54 @@
+{
+  "evidence_type": "engineering_only",
+  "state": "passed",
+  "checkpoint_sha256": "3f36af30b686f23d0868482675177b29cc50c2b378577dd12f9092ddb0235b2e",
+  "config_sha256": "b7a67874de8614fc2b973a5a4e35676f0dcecb46f1466de69bed6f5f51a9056c",
+  "started_at_unix": 1791042057.6650822,
+  "torch": "2.5.0+cu118",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "expected_state_tensors": 504,
+  "checkpoint_state_tensors": 484,
+  "missing_detector_weights": [],
+  "unexpected_weights": [],
+  "checkpoint_epoch": 53,
+  "checkpoint_version": "liga+0.1.0+7aa7b92+py72af526",
+  "modules": [
+    "lidar_model",
+    "backbone_3d",
+    "map_to_bev_module",
+    "backbone_2d",
+    "dense_head_2d",
+    "dense_head",
+    "depth_loss_head"
+  ],
+  "parameters": 8847647,
+  "synthetic_forward": {
+    "input_shape": [
+      1,
+      3,
+      320,
+      1280
+    ],
+    "elapsed_seconds": 0.801699639999697,
+    "peak_allocated_bytes": 4019255808,
+    "predictions": 25,
+    "inference_inputs": "random stereo RGB and calibration; no LiDAR or ground truth",
+    "teacher_forward_calls": 0,
+    "communication_accounting": {
+      "data_complex_uses": 64000,
+      "pilot_complex_uses": 0,
+      "header_complex_uses": 0,
+      "total_complex_uses": 64000,
+      "tx_energy_per_frame": [
+        64000.0
+      ],
+      "snr_db": 10.0,
+      "channel": "awgn",
+      "receiver_csi": "not_needed",
+      "cbr_complex_per_input_real_scalar": 0.026041666666666668,
+      "allocation": "geometry"
+    },
+    "timing_note": "single cold engineering pass; not a latency benchmark"
+  },
+  "ended_at_unix": 1791042064.736216
+}

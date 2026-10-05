@@ -1,0 +1,573 @@
+{
+  "state": "closed_actual_native32_codec_task_optimizer_updates",
+  "actual_terminal": true,
+  "job_id": "11424927",
+  "checked_unix": 1791184773.7175896,
+  "sacct": "11424927|COMPLETED|0:0\n11424927.batch|COMPLETED|0:0\n11424927.extern|COMPLETED|0:0\n11424927.0|COMPLETED|0:0\n",
+  "squeue": "",
+  "report_sha256": "b28e1fe982afa7bf893d5f3c68aad658699472a017f685aa68d2edfbd9af96bd",
+  "complete_saved_array_values": 172007982,
+  "all_gradient_values": 107216,
+  "complex_uses": 948480,
+  "updates": 32,
+  "rows": [
+    {
+      "arm": "G",
+      "step": 0,
+      "frame": "000000",
+      "channel": "identity",
+      "snr_db": 10,
+      "losses": [
+        0.5089776515960693,
+        0.3350173532962799,
+        0.8439949750900269
+      ],
+      "gradient_norm": 12.045355762727283,
+      "Adam_FP64_max_parameter_error": 7.24361615134228e-08,
+      "changed_state_count": 11
+    },
+    {
+      "arm": "G",
+      "step": 1,
+      "frame": "000003",
+      "channel": "identity",
+      "snr_db": 10,
+      "losses": [
+        1.8821656703948975,
+        1.1515058279037476,
+        3.0336713790893555
+      ],
+      "gradient_norm": 25.932429347301504,
+      "Adam_FP64_max_parameter_error": 1.404780451963461e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "G",
+      "step": 2,
+      "frame": "000000",
+      "channel": "awgn",
+      "snr_db": 6,
+      "losses": [
+        0.582240879535675,
+        0.29955026507377625,
+        0.8817911148071289
+      ],
+      "gradient_norm": 17.746567134517715,
+      "Adam_FP64_max_parameter_error": 2.1661640925429992e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "G",
+      "step": 3,
+      "frame": "000003",
+      "channel": "awgn",
+      "snr_db": 10,
+      "losses": [
+        1.7448028326034546,
+        0.8431594371795654,
+        2.5879621505737305
+      ],
+      "gradient_norm": 10.443923144518056,
+      "Adam_FP64_max_parameter_error": 2.2950406464161688e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "G",
+      "step": 4,
+      "frame": "000000",
+      "channel": "awgn",
+      "snr_db": 18,
+      "losses": [
+        0.3294622600078583,
+        0.2515656650066376,
+        0.5810279250144958
+      ],
+      "gradient_norm": 5.7800918235364325,
+      "Adam_FP64_max_parameter_error": 2.9442990490125e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "G",
+      "step": 5,
+      "frame": "000003",
+      "channel": "rayleigh",
+      "snr_db": 6,
+      "losses": [
+        1.564521074295044,
+        1.1020735502243042,
+        2.6665945053100586
+      ],
+      "gradient_norm": 10.660765621175447,
+      "Adam_FP64_max_parameter_error": 2.1357925916731801e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "G",
+      "step": 6,
+      "frame": "000000",
+      "channel": "rayleigh",
+      "snr_db": 10,
+      "losses": [
+        0.7444911599159241,
+        0.2319161295890808,
+        0.9764072895050049
+      ],
+      "gradient_norm": 15.088412612868947,
+      "Adam_FP64_max_parameter_error": 2.2750612238553458e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "G",
+      "step": 7,
+      "frame": "000003",
+      "channel": "rayleigh",
+      "snr_db": 18,
+      "losses": [
+        1.414323329925537,
+        1.1284035444259644,
+        2.542726993560791
+      ],
+      "gradient_norm": 8.75217824937231,
+      "Adam_FP64_max_parameter_error": 3.214686570274239e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "P",
+      "step": 0,
+      "frame": "000000",
+      "channel": "identity",
+      "snr_db": 10,
+      "losses": [
+        0.48530226945877075,
+        0.34542810916900635,
+        0.8307303786277771
+      ],
+      "gradient_norm": 7.045409383814858,
+      "Adam_FP64_max_parameter_error": 7.246121436210728e-08,
+      "changed_state_count": 11
+    },
+    {
+      "arm": "P",
+      "step": 1,
+      "frame": "000003",
+      "channel": "identity",
+      "snr_db": 10,
+      "losses": [
+        1.8086000680923462,
+        1.0656185150146484,
+        2.874218463897705
+      ],
+      "gradient_norm": 13.476277503427996,
+      "Adam_FP64_max_parameter_error": 1.2994604903227014e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "P",
+      "step": 2,
+      "frame": "000000",
+      "channel": "awgn",
+      "snr_db": 6,
+      "losses": [
+        0.4455678164958954,
+        0.3218499720096588,
+        0.7674177885055542
+      ],
+      "gradient_norm": 7.011344436334817,
+      "Adam_FP64_max_parameter_error": 8.006183804809552e-08,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "P",
+      "step": 3,
+      "frame": "000003",
+      "channel": "awgn",
+      "snr_db": 10,
+      "losses": [
+        1.7141780853271484,
+        0.949546217918396,
+        2.663724422454834
+      ],
+      "gradient_norm": 8.905848396430082,
+      "Adam_FP64_max_parameter_error": 1.642363329779073e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "P",
+      "step": 4,
+      "frame": "000000",
+      "channel": "awgn",
+      "snr_db": 18,
+      "losses": [
+        0.386060893535614,
+        0.3262593150138855,
+        0.7123202085494995
+      ],
+      "gradient_norm": 2.392484426584728,
+      "Adam_FP64_max_parameter_error": 8.158934816648866e-08,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "P",
+      "step": 5,
+      "frame": "000003",
+      "channel": "rayleigh",
+      "snr_db": 6,
+      "losses": [
+        1.613241195678711,
+        0.9668136835098267,
+        2.580054759979248
+      ],
+      "gradient_norm": 8.077832593338693,
+      "Adam_FP64_max_parameter_error": 6.931334517457088e-08,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "P",
+      "step": 6,
+      "frame": "000000",
+      "channel": "rayleigh",
+      "snr_db": 10,
+      "losses": [
+        0.5325226783752441,
+        0.3172321021556854,
+        0.849754810333252
+      ],
+      "gradient_norm": 20.301546130132884,
+      "Adam_FP64_max_parameter_error": 6.878207525762292e-08,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "P",
+      "step": 7,
+      "frame": "000003",
+      "channel": "rayleigh",
+      "snr_db": 18,
+      "losses": [
+        1.8412647247314453,
+        0.7893087863922119,
+        2.6305735111236572
+      ],
+      "gradient_norm": 9.74396500641023,
+      "Adam_FP64_max_parameter_error": 6.848134131987038e-08,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "S",
+      "step": 0,
+      "frame": "000000",
+      "channel": "identity",
+      "snr_db": 10,
+      "losses": [
+        0.9631351828575134,
+        0.2936668395996094,
+        1.2568020820617676
+      ],
+      "gradient_norm": 20.73876026707878,
+      "Adam_FP64_max_parameter_error": 7.245808397726705e-08,
+      "changed_state_count": 11
+    },
+    {
+      "arm": "S",
+      "step": 1,
+      "frame": "000003",
+      "channel": "identity",
+      "snr_db": 10,
+      "losses": [
+        1.1914445161819458,
+        1.691365361213684,
+        2.88280987739563
+      ],
+      "gradient_norm": 14.584013018945129,
+      "Adam_FP64_max_parameter_error": 3.280601301725028e-08,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "S",
+      "step": 2,
+      "frame": "000000",
+      "channel": "awgn",
+      "snr_db": 6,
+      "losses": [
+        0.4178447723388672,
+        0.3139238953590393,
+        0.7317686676979065
+      ],
+      "gradient_norm": 6.24359582509146,
+      "Adam_FP64_max_parameter_error": 4.0289151570505055e-08,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "S",
+      "step": 3,
+      "frame": "000003",
+      "channel": "awgn",
+      "snr_db": 10,
+      "losses": [
+        1.0903911590576172,
+        1.4860339164733887,
+        2.576425075531006
+      ],
+      "gradient_norm": 13.570303130829,
+      "Adam_FP64_max_parameter_error": 1.5834244404544506e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "S",
+      "step": 4,
+      "frame": "000000",
+      "channel": "awgn",
+      "snr_db": 18,
+      "losses": [
+        0.3602561354637146,
+        0.27971363067626953,
+        0.6399697661399841
+      ],
+      "gradient_norm": 3.872254380352033,
+      "Adam_FP64_max_parameter_error": 9.173386050775889e-08,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "S",
+      "step": 5,
+      "frame": "000003",
+      "channel": "rayleigh",
+      "snr_db": 6,
+      "losses": [
+        1.3879274129867554,
+        1.3364078998565674,
+        2.724335193634033
+      ],
+      "gradient_norm": 25.135363558930685,
+      "Adam_FP64_max_parameter_error": 5.567414235185808e-08,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "S",
+      "step": 6,
+      "frame": "000000",
+      "channel": "rayleigh",
+      "snr_db": 10,
+      "losses": [
+        0.40517669916152954,
+        0.3154866099357605,
+        0.72066330909729
+      ],
+      "gradient_norm": 5.201837017712181,
+      "Adam_FP64_max_parameter_error": 1.0187475441014726e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "S",
+      "step": 7,
+      "frame": "000003",
+      "channel": "rayleigh",
+      "snr_db": 18,
+      "losses": [
+        1.1068153381347656,
+        1.3797283172607422,
+        2.486543655395508
+      ],
+      "gradient_norm": 16.549098946145847,
+      "Adam_FP64_max_parameter_error": 1.678036860575105e-07,
+      "changed_state_count": 13
+    },
+    {
+      "arm": "B",
+      "step": 0,
+      "frame": "000000",
+      "channel": "identity",
+      "snr_db": 10,
+      "losses": [
+        2.0251715183258057,
+        0.3043765425682068,
+        2.3295481204986572
+      ],
+      "gradient_norm": 51.48578095324371,
+      "Adam_FP64_max_parameter_error": 2.6436307254407154e-08,
+      "changed_state_count": 12
+    },
+    {
+      "arm": "B",
+      "step": 1,
+      "frame": "000003",
+      "channel": "identity",
+      "snr_db": 10,
+      "losses": [
+        3.504880428314209,
+        0.6614761352539062,
+        4.166356563568115
+      ],
+      "gradient_norm": 29.214108203681047,
+      "Adam_FP64_max_parameter_error": 4.161598332608207e-08,
+      "changed_state_count": 12
+    },
+    {
+      "arm": "B",
+      "step": 2,
+      "frame": "000000",
+      "channel": "awgn",
+      "snr_db": 6,
+      "losses": [
+        0.8714728951454163,
+        0.2662186324596405,
+        1.1376914978027344
+      ],
+      "gradient_norm": 22.445232997490432,
+      "Adam_FP64_max_parameter_error": 6.293877263807701e-08,
+      "changed_state_count": 12
+    },
+    {
+      "arm": "B",
+      "step": 3,
+      "frame": "000003",
+      "channel": "awgn",
+      "snr_db": 10,
+      "losses": [
+        2.989473819732666,
+        0.6985491514205933,
+        3.688023090362549
+      ],
+      "gradient_norm": 24.734162038697274,
+      "Adam_FP64_max_parameter_error": 9.028887049122858e-08,
+      "changed_state_count": 12
+    },
+    {
+      "arm": "B",
+      "step": 4,
+      "frame": "000000",
+      "channel": "awgn",
+      "snr_db": 18,
+      "losses": [
+        1.177168369293213,
+        0.2681603729724884,
+        1.445328712463379
+      ],
+      "gradient_norm": 38.62252025025431,
+      "Adam_FP64_max_parameter_error": 1.1031305802156055e-07,
+      "changed_state_count": 12
+    },
+    {
+      "arm": "B",
+      "step": 5,
+      "frame": "000003",
+      "channel": "rayleigh",
+      "snr_db": 6,
+      "losses": [
+        3.088233232498169,
+        0.7154470086097717,
+        3.803680181503296
+      ],
+      "gradient_norm": 14.34534924492346,
+      "Adam_FP64_max_parameter_error": 1.2837510188212775e-07,
+      "changed_state_count": 12
+    },
+    {
+      "arm": "B",
+      "step": 6,
+      "frame": "000000",
+      "channel": "rayleigh",
+      "snr_db": 10,
+      "losses": [
+        0.5062875747680664,
+        0.25096070766448975,
+        0.7572482824325562
+      ],
+      "gradient_norm": 9.51000091796191,
+      "Adam_FP64_max_parameter_error": 1.1797381538336538e-07,
+      "changed_state_count": 12
+    },
+    {
+      "arm": "B",
+      "step": 7,
+      "frame": "000003",
+      "channel": "rayleigh",
+      "snr_db": 18,
+      "losses": [
+        3.045102119445801,
+        0.558276891708374,
+        3.603379011154175
+      ],
+      "gradient_norm": 27.924621008456626,
+      "Adam_FP64_max_parameter_error": 9.91781510251144e-08,
+      "changed_state_count": 12
+    }
+  ],
+  "artifacts_sha256": {
+    "data/engineering/cost-field-GPU-optimizer-003/000000-G-step0.npz": "7181928312917ab0914bc8be4541933d26e4296767f3edb40b1a2545388df6c6",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-G-step0-state.pt": "bd527b8ca420ccac675548a547dc320379da93a7ba1f7420b24c2c1bd1e6388f",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-G-step1.npz": "6920c9ccf28b95abd5c6d209b8ffce9c7f2b497a232eca03200e23f9f86db57c",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-G-step1-state.pt": "909665abd6a78b1bf1a3f53f90b9a134dd9aeb0674fb3bf37c839d8a5267cf98",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-G-step2.npz": "0460f7e32f394696416ec91052870fb933fc3ae0b732234ee73ffe17ba9930bb",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-G-step2-state.pt": "c1cd139966afccad4ae8b012156b503064f9b3cb0446cbea8d9a4750d619b224",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-G-step3.npz": "381de73b7f8e72beb83c6bdd5a5b6c51b5d30ff9241d15d0389f4b24e6291680",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-G-step3-state.pt": "b44532992bdb7a6cb1b5ebb4704f7565437bf122f9495d95ec0d2b762aaa3908",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-G-step4.npz": "c22b1c1d4f14ed69bbea42356414853bdc464f5c769cb2c7636b79ed4c9dabb7",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-G-step4-state.pt": "fa159a1f48f891937f68ed2fba4bb6f326905c82924b3feb19dd051a05bf70b7",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-G-step5.npz": "5318faf1ee6e02a639c06450456e8430dabbeffe80488d831238bbc74a761852",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-G-step5-state.pt": "7bfab06868ba9b2e17415eb8119332f631e3006881b4df159f7f6dd605dda2aa",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-G-step6.npz": "b52a79a7c43ee99fadba0b69df09fd05a2ab0fbac33b40e6f37c7a04e49fdc4b",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-G-step6-state.pt": "b7070fbbd9e306ecba1afc15e6d14814eeae1fff8bb1e37c60276e7cb8901cd8",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-G-step7.npz": "0097d0e8843753b2ce310aff9cef2283b4d761781afe4ac5e6033b05d18a39c8",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-G-step7-state.pt": "9666496c70d0afb6003f61816b60c3726f35fa9eba7243626c5ff04d935d9718",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-P-step0.npz": "965a6a38b6993a0131dfd54e177e0563513a7ba5710c98726fd05494ac6823a6",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-P-step0-state.pt": "b40027c4e835eedccada87b1ba047a455bbdfcb01732161f9801fce447f04030",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-P-step1.npz": "155a33ebef9e7f18b2af42becc6590e43dc441ce3337099251755ba4fbecb86b",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-P-step1-state.pt": "2e40ec59b498d079de0f0cbf9c5c3faebec48992894ccf0fe93d27f33f32feee",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-P-step2.npz": "fc712473d0b99d7c9b471832019ac7148d52031dd2ff5f16df9a564eef1e9215",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-P-step2-state.pt": "518755e2d0d166b3eb5deb6858c4aabec49f5a29353fd28d41c236b47052b8a4",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-P-step3.npz": "d867ec5df167e199864e6ec224d7e236e3813b254fd8f9cbd370a3b045a8c36e",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-P-step3-state.pt": "1d722a03bf6bc8958704558a7086b023de96bcbe0c097a9e384199f3667eeda8",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-P-step4.npz": "eaf69d337d19461304af7e48079425c0b450c388d2c08c188e1aec185de363c0",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-P-step4-state.pt": "6b4bd6a0544168d68df46a33241cf2e7ab8d98f924274581dc5ec238c3b09f5f",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-P-step5.npz": "54a4ee97429244fc97f9adaafc11fd93d5cbcdb731e837d4025227684e1c0a4f",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-P-step5-state.pt": "aa1e753a0736f14d92705720d1fd6e3a57bcf142f0811ff6705080ae3829f37a",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-P-step6.npz": "94c543e2780a364bccb905ff549b82b01c1fc4af0b2acf08929352552d145a7e",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-P-step6-state.pt": "9233aedfc6d4e49a7c01dd7d67d9ea965a97501f9912188ba50ca2ea9dab5bc3",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-P-step7.npz": "8e3284cb9f56ed577c231908e3c20d7ea4971b6eeea905cc420ebe51670d22c3",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-P-step7-state.pt": "66570b862f842fc1f0fc66f854139fec2038b13739eb702d291742f6799bfb6e",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-S-step0.npz": "4fc7a1c2e5c74d755195842f431b21b4ebbc472bf328cf247bdfeb19a0113053",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-S-step0-state.pt": "0c2b39e690eda7a6e5086ffe7a89940d35fefbbb4377c51bdbfe56c836a822f1",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-S-step1.npz": "2adca9005ea565f5ac8e60e10e067e010e2a3284e4e1f707c4b3d1bb7e231b54",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-S-step1-state.pt": "1d6a3cf156c0aa5ccdcb94c300c5df0b3f9093e9a33f1263cb6f41a7f2e245ba",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-S-step2.npz": "f2b080416c137eafc947fd344080948f6aa5033905d857eab5d043d2318936ec",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-S-step2-state.pt": "80f9aa97e2ec31aa4df08fd8b71ba8a050497ca460e81da05bf0a9340900aa63",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-S-step3.npz": "f1153741e6e7bf9fe3a8b97ec1cc4992b662f40669e5b490ce6114aaf1a6eda5",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-S-step3-state.pt": "941229b7e7ad159179742e89f0966e8a3085ba444aa3910afe1d93611e3fe16f",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-S-step4.npz": "8d9ab7b01f2b1a8ec84585849367490fef4242866a2f329ad6784a5297b6cb9a",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-S-step4-state.pt": "95457b15f302d0ab2f20991c59b17b9ca258a57caab2dd8231aa40a2a644ed6f",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-S-step5.npz": "8fd758ef47496bef2486b9a93297bd5b5eb1f5808c3f37521e8c1977c391d6aa",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-S-step5-state.pt": "8081b65fe2dc7a3c30a078d5140740e560473005796be0f90a0ddb34f58fdc79",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-S-step6.npz": "ed2fe29ea4065649a07e9f10d09338cfe7d07fbe05f50b55e688e4253c534cc6",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-S-step6-state.pt": "5f13b89e7a44a8d75428f8ea1e0c1c7714e3d7d3d1f1aae04152e8d3c3ee6170",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-S-step7.npz": "a165124459688b148caf8476b17ba80f6576b5f59d9f07f5302656739b29977b",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-S-step7-state.pt": "870ad802ec2aa9b36782582199e3d4cd697811dfbad015ba4835abd1e803bada",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-B-step0.npz": "cc18a0936c1f430fa911a31b28523872fcf0ca1773387470939beec2e32cc180",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-B-step0-state.pt": "0dfe33ce51b0d2263182f0033ee96298a04c3df257fd0be4e2434ed99e8a05ab",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-B-step1.npz": "73d4846b34fbc08365e5a812d4fdb472d8fc632fa8241761ffc9f7fed1af99df",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-B-step1-state.pt": "515e4389d05d0406c779877d47a0d8a0f066c3ffba66cc91faa4697cedd613b0",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-B-step2.npz": "eb6d649609ef330fd943efc409dc1cf1c53e2382f4981dfea7458217c799a501",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-B-step2-state.pt": "743c644b0c239f262de0aed0016c57cb407fe7dd022cce5d16f5b7f8990bcd85",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-B-step3.npz": "7b3ef5faf8fffbf522e46e8a970a5c254301653a6ed85c69d657063a29f35620",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-B-step3-state.pt": "f6a7eacd522703318cac2b348020d18d3eec1ae0b95a52653ca845f2f80a233a",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-B-step4.npz": "e8fb169834e17f366078ea8bf5d71d85302e18cbf5e2702c4f59e2893ef19ed6",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-B-step4-state.pt": "96c0463768c3481b03a74a02069668586291f7bdc223a19e8c0188bd138b2095",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-B-step5.npz": "d45884db8b94cebc241d11a6d2f2e58853addce93eab0db749c0cefe90b1aaed",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-B-step5-state.pt": "cfa632bc79a86380fed5967c8b14bf6ef3264a1a296860299cbf70c8116ae3d8",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-B-step6.npz": "d8cb4da50d8daf5e784bed09b82e0d559a63c7cd304f94d502b98a6bbae2b373",
+    "data/engineering/cost-field-GPU-optimizer-003/000000-B-step6-state.pt": "dfe35d3d88ce76fe193b58a23180617ff04c4b5284873f45c38736b610fb742f",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-B-step7.npz": "5388ac815780d7652e6358a15b4b0ac6c430bb80b2d11601d23ef7ea2b6e2ed5",
+    "data/engineering/cost-field-GPU-optimizer-003/000003-B-step7-state.pt": "3cac0153c545dd58b8e33ae93b88b5aa303f9dcf3b686b90b517c8d0cad20017",
+    "data/engineering/cost-field-GPU-optimizer-003/inputs/000000-left.png": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+    "data/engineering/cost-field-GPU-optimizer-003/inputs/000000-right.png": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3",
+    "data/engineering/cost-field-GPU-optimizer-003/inputs/000000-calib.txt": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+    "data/engineering/cost-field-GPU-optimizer-003/inputs/000000-label.txt": "6627ff300809ccdb8f0402c1003b7c691a64e3027ceaf0ce7cabfeef9809d0c3",
+    "data/engineering/cost-field-GPU-optimizer-003/inputs/000003-left.png": "d22f4692c924e0ba7ff2ac00827547d4bd018d991fb9f1959025b183a949af19",
+    "data/engineering/cost-field-GPU-optimizer-003/inputs/000003-right.png": "ca44da39dcc83befde20753ac2bdb527314a2a78067757f2298ae6df947a1f9d",
+    "data/engineering/cost-field-GPU-optimizer-003/inputs/000003-calib.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+    "data/engineering/cost-field-GPU-optimizer-003/inputs/000003-label.txt": "56f275a7b3464992db4bb524ee84cc09fb4ca621b6e63e281f6defa0a79b2651",
+    "data/engineering/cost-field-GPU-optimizer-003/report.json": "b28e1fe982afa7bf893d5f3c68aad658699472a017f685aa68d2edfbd9af96bd",
+    "data/engineering/cost-field-GPU-optimizer-003/codec-initial.pt": "a77e4fbf04c9db55da10c437ea0f9a5864bdee209be35329aca76999a60a1bf6"
+  },
+  "verifier_sha256": "f3d23e4009f73962a8d584ad580eaa5546ce15e71b0ead1e0c54dbc6de4502b9",
+  "limitation": "Two training frames/eight engineering updates per arm. No full training, validation/AP, generic superiority, multi-seed effect or numerical gradient oracle. Full decoded tensors are not saved/replayed locally."
+}

@@ -1,0 +1,44 @@
+{
+  "state": "passed",
+  "scope": "independent fixed-layout cost audit; no trained channel/RGB/AP claim",
+  "frames": 3340,
+  "split": "geocomm_tune_train",
+  "summary": {
+    "data_uses": {
+      "min": 113832,
+      "max": 737793,
+      "mean": 196902.87275449102,
+      "total": 657655595
+    },
+    "control_uses": {
+      "min": 1176,
+      "max": 26040,
+      "mean": 6963.046706586826,
+      "total": 23256576
+    },
+    "awgn_total_uses": {
+      "min": 115008,
+      "max": 755097,
+      "mean": 203865.91946107784,
+      "total": 680912171
+    },
+    "rayleigh_total_uses": {
+      "min": 115016,
+      "max": 755105,
+      "mean": 203873.91946107784,
+      "total": 680938891
+    },
+    "aggregate_awgn_CBR_complex_per_rgb_real_value": 0.07319838740485948,
+    "aggregate_rayleigh_CBR_complex_per_rgb_real_value": 0.0732012598177708,
+    "control_fraction_of_awgn_uses": 0.034155030546516696
+  },
+  "records_sha256": "f7413abe7a587ac2c09ba5a3e5a4851f20db8bdfb8b7a3a5e1c90ac0ee87fad2",
+  "inherited_roi_audit_sha256": "549f77c79973a8d3a095374b2b1fe4b5d572647bab57d2b6baf31737caa30b8a",
+  "per_frame_sha256": "eb0fe26ccc093f233f0b1b9fff937175bd47678b9b90f03744ea445c883ec883",
+  "source_sha256": "77be3b34ce15049f55b34d0ccef817291239d20cc16b0cfe22d83173660d44dd",
+  "implemented_protocol_sources": {
+    "radio.py": "76ea572a5334de5bcb4a2fd89dc776661fd423e1ca5090fe769220245e9052f6",
+    "wireless.py": "11424b4e566065d7dbbc8c990351cf7fea451e4b67603c811a460a8ae10ffd7d"
+  },
+  "limitations": "image identity inherited from ROI audit; sparse transmission uses dense CNN computation; unit energy is enforced by transmitter, not newly measured on trained frames; analog data have no asserted digital bitrate/compression ratio"
+}

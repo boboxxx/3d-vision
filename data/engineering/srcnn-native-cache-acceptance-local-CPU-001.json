@@ -1,0 +1,50 @@
+{
+  "state": "passed_preparation_actual6_wire_and_float_cache_acceptance_CPU_checks",
+  "checked_unix": 1791165436.472267,
+  "actual_transferred_wires": 6,
+  "synthetic_float_values": 12,
+  "rejected_corrupt_or_changed_cases": 16,
+  "overshoot_values_preserved": true,
+  "sources": {
+    "cache": {
+      "experiments/original-paper-scenarios/srcnn-native-cache-code/encode.py": "0e62d69302e9c559457ac0f8454ecfe4e75847844ece1ce0e5da8c52ccd39acb",
+      "experiments/original-paper-scenarios/srcnn-native-cache-code/audit.py": "ecd7a95c309b6e51429c7a773867ed199d1f4471200c4a74d58217568c989adc",
+      "experiments/original-paper-scenarios/srcnn-native-cache-code/receive.py": "d18a2fbe326d2f2b09e01ab7a4ff252ca579bce3af8a7de8d854549934974935",
+      "experiments/original-paper-scenarios/srcnn-native-cache-code/common.py": "a0d72168c10d3e486e7b1690b4fbfb63b14447ded15180b4cc1fdc3bea175938",
+      "experiments/original-paper-scenarios/srcnn-native-cache-code/check_cpu.py": "4912837cd7f3504c5b275d175537f6afb7524d7f2aa7736cc1838baff5e0ab22",
+      "experiments/original-paper-scenarios/srcnn-float-reception-code/receiver.py": "b2a9e9ff4e33bff63d74f2f38e2c8d47c70999a1b614d30ef8eab9cec194db1d",
+      "experiments/original-paper-scenarios/srcnn-float-reception-code/check_cpu.py": "9d6ec0e5a139c72d9e66ffb4aa7c57ad268e17ba7e88415a2d97ab0d5af16ac7",
+      "experiments/original-paper-scenarios/srcnn-native-cache-audit-001.md": "81e5e8e78174b278e9aa600e1f8da61027cd31cf9cca29dc20557cb07771790e",
+      "experiments/original-paper-scenarios/srcnn-float-reception-protocol-001.md": "0626389a87f72979920dd08f8d7df173bf809ed87e5f3601ba448bb90fa5625d"
+    },
+    "training": {
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/audit.py": "c3bfe949c665faa398c085482e50cd49e23278856feb04f5d045c96baf2bc4c4",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/check_cpu.py": "5fad6d5d262284261cecb66ae1825ad16104dde30919a8ba2eaad0295e862e43",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/common.py": "f7cb682e5508d79680c2d6905bfec6ba9effebe4ea4b68c631ed6b26a2e7fa53",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/model.py": "d7fe16ac2ebeae0cc4787cb5b3298154c86c2c84dd49ed63c1693e05f20d677f",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/train.py": "9ac7afb5fb056b6d04924f5e1527a2da63824f6939ba5ea71618b63dd2d341df",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/audit.py": "c3bfe949c665faa398c085482e50cd49e23278856feb04f5d045c96baf2bc4c4",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/check_cpu.py": "2ca19c199481932d00c94f515567e258ae23e74b6b129963d2f545f5ab2d671e",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/common.py": "15d1c8e0295348b3d7ad82ff6bfc9c5f527a8be17ff7b1669387bd4805b7fc43",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/model.py": "d7fe16ac2ebeae0cc4787cb5b3298154c86c2c84dd49ed63c1693e05f20d677f",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/train.py": "7340d984dc882669465e3faa8f04f317dcdfc566d79a3e966275ff3103c862d0",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-protocol-001.md": "c737eb5580f20cc1636202385c018150f2224f3cdb7e9afb9c434aefc3ed7b18",
+      "experiments/original-paper-scenarios/srcnn-KITTI-checkpoint-repair-002.md": "16b47d43194f7a106147865666511aa56989212af3a5ac94e603399994ec55aa",
+      "experiments/original-paper-scenarios/srcnn-author-core-code/check_cpu.py": "e459ec63f734e1803705f020ccd5ee3cfeef2dceeff74689e85195ec70acbab8",
+      "experiments/original-paper-scenarios/srcnn-author-core-code/core.py": "40fbb09d52320f9b522d4361370400f6e604ab86f0bdba9484e022637e07cb67",
+      "experiments/original-paper-scenarios/srcnn-author-core-protocol-001.md": "f65369ab9e2f344e95975945b2847150aa95b99f5ad91a5af6c977f283f8986a",
+      "experiments/original-paper-scenarios/srcnn-compression-interface-code/check_cpu.py": "0f4b69e968da5d8f92e6766c7e1d573c5202c1b2deb7d8674f5fd9cb104b13e6",
+      "experiments/original-paper-scenarios/srcnn-compression-interface-code/interface.py": "e1d2efcdc7f30c4863c7f84921d8a8e11e6c7cecd920ae102396949d7a2262d9",
+      "experiments/original-paper-scenarios/srcnn-compression-interface-protocol-001.md": "d7cc0a16b449b6a351e9aa6458681f4faadc9d07d4dd2988cde60f09b63a7d5c",
+      "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/SRCNN.m": "314887a5b0908411aa20eadbd62f0559ad40205dba3d1ddc103f2bec8c94d266",
+      "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/model/9-5-5(ImageNet)/x3.mat": "fa2ee366d328b942b971c80c24f48dc2b015d5ed4b5790070f720ccfb6ab1578"
+    }
+  },
+  "acceptance_sources": {
+    "data/provenance/srcnn-native-cache-cycle-001.py": "41a7f70e83b1274c8cf4ecca64858e7fe70fc56736086c8e2ca8f5de642b3682",
+    "data/provenance/verify-srcnn-native-cache-local-001.py": "fcfdf50e558ddf7ba96f6d8a92c6a0ea9aeb976e6c2e40e0bcf8debcbd78e3b7",
+    "data/provenance/check-srcnn-native-cache-acceptance-CPU-001.py": "a27757a905e62b7399a2a790ec95f5cb4777920998a843c25b0ad1869a058998",
+    "experiments/original-paper-scenarios/srcnn-native-cache-terminal-orchestration-001.md": "668ed2079df2551ae730346deae351016692f083e97c2c87f5b114b6ebfaa0ca"
+  },
+  "limitation": "CPU helper contracts only; no native GPU pair, controller dispatch, terminal closure, source quality or AP"
+}

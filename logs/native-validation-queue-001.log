@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/sheng/paper6/experiments/job-control/native_validation_queue.py", line 109, in <module>
+    main()
+  File "/home/sheng/paper6/experiments/job-control/native_validation_queue.py", line 93, in main
+    invoke(prefix + '-cycle', [ROOT / 'experiments/geometry-link/F7/code/cycle.py',
+  File "/home/sheng/paper6/experiments/job-control/native_validation_queue.py", line 66, in invoke
+    subprocess.run([sys.executable, *map(str, command)], cwd=ROOT, stdout=stream,
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/sheng/paper6/.venv/bin/python', '/home/sheng/paper6/experiments/geometry-link/F7/code/cycle.py', '--prefix', 'stereo-channel-native-sanity-001', '--engineering']' returned non-zero exit status 1.

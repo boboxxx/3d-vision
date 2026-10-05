@@ -1,0 +1,26 @@
+{
+  "state": "passed_whole37120_source_training_records_and_all10_epoch_states",
+  "candidate": 1,
+  "lambda_RD": 0.003,
+  "seed": 17,
+  "checked_updates": 37120,
+  "checked_epoch_checkpoints": 10,
+  "checkpoint_saved_values": 955923300,
+  "max_loss_algebra_error": 1.5498396166435668e-07,
+  "full_raw_gradient_replay": false,
+  "actual_source_bytes_calibrated": false,
+  "AP_measured": false,
+  "metadata": {
+    "candidate": 1,
+    "report_sha256": "d8001382c7aa3b62eff98943d6dfc9cabc3e4fdd258936be0cdd8e10b8a5f161",
+    "actual_terminal": "11425119|COMPLETED|0:0\n11425119.batch|COMPLETED|0:0\n11425119.extern|COMPLETED|0:0\n11425119.0|COMPLETED|0:0\n"
+  },
+  "updates_jsonl_sha256": "cf189eeb67a51e57690f0baeb5dc3c0b757125e4bcb378a0b085fb47cf065f15",
+  "ordered_CUDA_rng_identity_ledger_sha256": "e22a9958793c840d59209475d121282fba9368c5fa9fe5d1bfe2b80fdcea7e31",
+  "initial_CUDA_rng_sha256": "8b47fb8c37b46edd9f7329da45697f422f78543f594538e47b07768e1629457e",
+  "verifier_sha256": "f862b432331dd44d4dd802ba37010284f39d8146bed47dcab5b600252d8a3cff",
+  "count_repair_protocol_sha256": "b6258aa360880904e07f16ec4b1ee999d1fba692863b102d19c04f3943f55998",
+  "protocol_sha256": "b8a61d56f40aa5e37f1976c1fd62beb38b6c616d2ef82c9186ab7b59113b6e3f",
+  "checked_unix": 1791204883.015213,
+  "limitation": "Full exposure/scalar/native-invariant logs and all saved epoch weights/moments; not independent full RGB/gradient/Adam transition replay. Actual entropy rates, calibration and AP remain required."
+}

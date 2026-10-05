@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/sheng/paper6/scripts/audit_student_task.py", line 118, in <module>
+    main()
+  File "/home/sheng/paper6/scripts/audit_student_task.py", line 103, in main
+    check('meta_data/learning_rate' in values and set(values['meta_data/learning_rate'])==set(range(3340)), 'LR coverage differs')
+  File "/home/sheng/paper6/scripts/audit_student_task.py", line 23, in check
+    raise ValueError(message)
+ValueError: LR coverage differs

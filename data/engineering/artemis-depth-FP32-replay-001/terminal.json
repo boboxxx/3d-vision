@@ -1,0 +1,18 @@
+{
+  "state": "passed_actual_complete_native_FP32_arithmetic_replay_native",
+  "actual_terminal": true,
+  "checked_unix": 1791177734.0365534,
+  "job_id": "11424868",
+  "report_sha256": "0d8d45004a5cf26ac814da897894513ff61b90cc12901f9c2e0287cabe5fc0cf",
+  "sacct": "11424868|COMPLETED|0:0\n11424868.batch|COMPLETED|0:0\n11424868.extern|COMPLETED|0:0\n11424868.0|COMPLETED|0:0\n",
+  "squeue": "",
+  "all_native_FP32_depth_values_bit_equal": 798720,
+  "artifacts_sha256": {
+    "data/engineering/artemis-depth-FP32-replay-001/report.json": "0d8d45004a5cf26ac814da897894513ff61b90cc12901f9c2e0287cabe5fc0cf",
+    "data/engineering/artemis-depth-FP32-replay-001/000000.npz": "2dd664688cd679664bfe841d405d464909ebd25d3c7a42527afc219ac04585cd",
+    "data/engineering/artemis-depth-FP32-replay-001/000003.npz": "19afb38e7d071cbbc3d3f077b777fa44fe8aa54fa55d1cc931c97dca566e0384"
+  },
+  "verifier_sha256": "ac3174d96e729fc4eb2586f679c4f515613f9e9ebc41c61412abea8e1c409c1f",
+  "original_FP64_depth_criterion_passed": false,
+  "limitation": "Same native arithmetic reproduces all saved depth values; original strict FP64 tolerance remains failed, no independent GPU algorithm/task or training claim"
+}

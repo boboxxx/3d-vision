@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/sheng/paper6/experiments/geometry-link/F7/code/cycle.py", line 110, in <module>
+    if __name__=='__main__':main()
+  File "/home/sheng/paper6/experiments/geometry-link/F7/code/cycle.py", line 71, in main
+    invoke(arm+'-train',[HERE/'train.py',*common,'--checkpoint',parent,'--arm',arm,'--output-dir',checkpoint_dir,'--manifest',manifest,*(['--engineering-steps','6'] if args.engineering else [])])
+  File "/home/sheng/paper6/experiments/geometry-link/F7/code/cycle.py", line 55, in invoke
+    with path.open('x') as stream:subprocess.run([sys.executable,*map(str,command)],cwd=ROOT,stdout=stream,stderr=subprocess.STDOUT,check=True)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/sheng/paper6/.venv/bin/python', '/home/sheng/paper6/experiments/geometry-link/F7/code/train.py', '--config', '/home/sheng/paper6/configs/tuning/stereo_task_seed17_epoch1.yaml', '--protocol', '/home/sheng/paper6/experiments/geometry-link/F7-matched-channel-adaptation.md', '--fold', '/home/sheng/paper6/data/internal-tuning-fold-001.json', '--source-manifest', '/home/sheng/paper6/data/provenance/server-source-manifest-stereo-channel-native-sanity-001.json', '--checkpoint', '/mnt/d/paper6/runs/stereo-native-task-seed17-002/checkpoint_epoch_1.pth', '--arm', 'identity', '--output-dir', '/mnt/d/paper6/runs/stereo-channel-native-sanity-001-identity', '--manifest', '/home/sheng/paper6/data/runs/stereo-channel-native-sanity-001-identity.json', '--engineering-steps', '6']' returned non-zero exit status 1.

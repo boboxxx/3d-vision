@@ -1,0 +1,34 @@
+{
+  "state": "passed",
+  "scope": "paired actual recorded augmented data and independent channel schedule/RNG evidence",
+  "steps": 6,
+  "schedule_sha256": "f2318e456ef14a33c1b7862efab5b75c38765300c41e0d8dcae05681bb5567de",
+  "ordered_fingerprints_sha256": "6b27dd867b8bf773ef3fdae0541fec0630da2feea22b16af586ae94e8101b27e",
+  "final_noise_rng_sha256": {
+    "codec": "c4596d2caa6a4d248c879db953e49431f48632b9c4aaa2dc3b90780c823634ac",
+    "joint": "c4596d2caa6a4d248c879db953e49431f48632b9c4aaa2dc3b90780c823634ac"
+  },
+  "limitations": "Runtime fingerprints are recorded by the source-audited producer; this does not reload native model weights or recompute AP.",
+  "evidence_type": "engineering_only",
+  "parent_sha256": "ea93fb1ec7d7328e0ae603ec40385882da255414e876efa2c1abda4fa4de36a3",
+  "full_initialization_sha256": "f8a19b79cba6d8f36c347b83dfb205eb40e9e305dd0fb6c49f11720ff86ee065",
+  "source_manifest_sha256": "b3c155dc05bd139e9c98a2be5d3cd8cb268b7c795cec472ab184eb0cc24cb482",
+  "arms": {
+    "codec": {
+      "manifest_path": "/home/sheng/paper6/data/runs/stereo-encoder-native-sanity-001-codec.json",
+      "manifest_sha256": "4b4ecfcf3cb8d9bef6a1e10bcdaa45520da739bc24db786fe278fe7e921eaef5",
+      "audit_path": "/home/sheng/paper6/data/runs/stereo-encoder-native-sanity-001-codec-training-audit.json",
+      "audit_sha256": "3145bc516fffee45a88a233e7fbbec01c1012c4ac2408eb21cdc6af60745516b",
+      "checkpoint_sha256": "bd3559b2df05baee75d2cc154d10d82f016dbfc29d787652c7ebbbc767fbf7f5",
+      "raw_snapshot_sha256": "5087c2fe1ea793f49daa6b46ff46d84476becdcbffa71e33b558bfe3a9c246c9"
+    },
+    "joint": {
+      "manifest_path": "/home/sheng/paper6/data/runs/stereo-encoder-native-sanity-001-joint.json",
+      "manifest_sha256": "10615720e0261565fa1371b0424149e2ec2028d1d2ac8b8431265c5c0b321933",
+      "audit_path": "/home/sheng/paper6/data/runs/stereo-encoder-native-sanity-001-joint-training-audit.json",
+      "audit_sha256": "8d2ed503f84b2fded1f275e9aeb6d84caf5ebf6d11e4d6ef4e2587ac9cd6d404",
+      "checkpoint_sha256": "81f8491dfa776c085558e2d1a898b200f94e0af0a1bd702644922f703ad13e7a",
+      "raw_snapshot_sha256": "ba89d3a6852ba963105967337eaec02ee5fcfbacecc9ad71b0a744d2cbd92639"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "state": "passed_all_native_Q2_cells_independent_spatial_CDF_and_direct_partition_replay",
+  "checked_unix": 1791174004.618919,
+  "verifier_sha256": "b1f249b88e7c5f7d0895edab926bda2e5c0a1a9d21948bdfc2f8a198eb12fbda",
+  "artifacts_sha256": {
+    "data/engineering/depth-particles-native-Q2-sheng-CPU-002/report.json": "99ad15f01b2eb29207b9d390467dde89fae9ce805fb4e5d9aa995afae4e04870",
+    "data/engineering/depth-particles-native-Q2-sheng-CPU-002/000000-left.npz": "66037e3a6c517912ec61fdcea755a766a19102fb2851cfaedd0103cb2cc3dc17",
+    "data/engineering/depth-particles-native-Q2-sheng-CPU-002/000000-right.npz": "47c6dc19663e0a5aa063472d5efe28a516bff9d92aadb2bb6cbe8d0c637efaf8",
+    "data/engineering/depth-particles-native-Q2-sheng-CPU-002/000003-left.npz": "fd3f8e4a7fbbbfbad3670d4a3bf85d5e1e4b1bc3020b193e9392a48c0c4b3f56",
+    "data/engineering/depth-particles-native-Q2-sheng-CPU-002/000003-right.npz": "2471d3346b20a1fb38eb850a49674728e4bd0ae1ff8359497ee97d2e871a1c2f"
+  },
+  "grid_cells": 99840,
+  "valid_cells": 98199,
+  "fit_candidate_records": 4713552,
+  "method_condition_cells": 599040,
+  "attempted_complex_uses": 1198080,
+  "source_provenance": {
+    "000000": {
+      "sealed_native_verification_sha256": "3f5060b64079a103e8fe6ca6546f1164c4c0d5161c66de0278e41febae9a7b20"
+    },
+    "000003": {
+      "sealed_native_verification_sha256": "3f5060b64079a103e8fe6ca6546f1164c4c0d5161c66de0278e41febae9a7b20"
+    }
+  },
+  "maximum_errors": {
+    "calibrated_support": 0,
+    "partition_mass": 0,
+    "direct_partition_cost": 1.3855583347321954e-13,
+    "source_two_atoms": 0,
+    "source_mass": 0,
+    "source_quantiles": 0,
+    "PCG_noise": 0,
+    "coordinates": 0,
+    "carrier": 2.220446049250313e-16,
+    "energy": 8.881784197001252e-16,
+    "intrinsic_CDF": 1.056932319443149e-13,
+    "actual_noise": 4.440892098500626e-16,
+    "independent_projection": 4.440892098500626e-16,
+    "received_atoms": 2.842170943040401e-14,
+    "received_weights": 1.0436096431476471e-14,
+    "full_CDF": 1.5631940186722204e-13,
+    "channel_CDF": 3.552713678800501e-14
+  },
+  "pooled": {
+    "identity_Q0": {
+      "mean_W1_m": 4.00037192984418,
+      "median_W1_m": 3.41467510954277,
+      "max_W1_m": 15.170620716723173,
+      "p95_W1_m": 9.34368454884959,
+      "count": 98199
+    },
+    "awgn10_Q0": {
+      "mean_W1_m": 12.057837758203675,
+      "median_W1_m": 10.851360770777314,
+      "max_W1_m": 49.00507143221039,
+      "p95_W1_m": 24.01049854341832,
+      "count": 98199
+    },
+    "identity_Q1": {
+      "mean_W1_m": 3.2318755439311597,
+      "median_W1_m": 2.8107378276935173,
+      "max_W1_m": 14.980982950191313,
+      "p95_W1_m": 7.271912623270275,
+      "count": 98199
+    },
+    "awgn10_Q1": {
+      "mean_W1_m": 12.998187155612856,
+      "median_W1_m": 10.886118854375601,
+      "max_W1_m": 64.54807420797822,
+      "p95_W1_m": 28.556241981498328,
+      "count": 98199
+    },
+    "identity_Q2": {
+      "mean_W1_m": 3.2318755439311597,
+      "median_W1_m": 2.8107378276935218,
+      "max_W1_m": 14.980982950191313,
+      "p95_W1_m": 7.271912623270276,
+      "count": 98199
+    },
+    "awgn10_Q2": {
+      "mean_W1_m": 13.803805674988858,
+      "median_W1_m": 11.983387450775638,
+      "max_W1_m": 61.6512330450473,
+      "p95_W1_m": 28.91235578909205,
+      "count": 98199
+    }
+  },
+  "limitation": "Four cached training views/uncalibrated cosine sender posterior; no native depth teacher, calibrated truth, task/AP or novelty claim"
+}

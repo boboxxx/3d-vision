@@ -1,0 +1,144 @@
+{
+  "observed_unix": 1791187200.7267764,
+  "queue": "11424940_41 PENDING paper6-cost-full-004 \n11424940_23 RUNNING paper6-cost-full-004 artemis-rtx-03\n11424939 RUNNING paper6-cost-full-17-004 artemis-rtx-03\n",
+  "runs": {
+    "17": {
+      "state": "running_full_split_task_training",
+      "stage": "actual_native_detection_loss_backward",
+      "seed": 17,
+      "job_id": "11424939",
+      "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "capability": [
+        12,
+        0
+      ],
+      "update_count": 535,
+      "last_update": {
+        "arm": "G",
+        "epoch": 1,
+        "index": 534,
+        "step": 534,
+        "frame": "004019",
+        "loss": 1.438129186630249,
+        "complex_uses": 29640
+      },
+      "traceback": null,
+      "dataset_manifest_sha256": "ecf1f0e41de5757bd438b2a73252dc999eed80fa9828270beff342ccf6ea1310",
+      "input_sha256": "8f2b3be5ca639f2bbb5f2c20c1ce73db858f7bc443cb6477000ccd375fde7fc4"
+    },
+    "23": {
+      "state": "running_full_split_task_training",
+      "stage": "actual_native_detection_loss_backward",
+      "seed": 23,
+      "job_id": "11424941",
+      "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "capability": [
+        12,
+        0
+      ],
+      "update_count": 311,
+      "last_update": {
+        "arm": "G",
+        "epoch": 1,
+        "index": 310,
+        "step": 310,
+        "frame": "002394",
+        "loss": 1.4937646389007568,
+        "complex_uses": 29640
+      },
+      "traceback": null,
+      "dataset_manifest_sha256": "ecf1f0e41de5757bd438b2a73252dc999eed80fa9828270beff342ccf6ea1310",
+      "input_sha256": "8f2b3be5ca639f2bbb5f2c20c1ce73db858f7bc443cb6477000ccd375fde7fc4"
+    },
+    "41": {
+      "report_present": false
+    }
+  },
+  "snapshotter_source": "import json,subprocess,shlex,time\nfrom pathlib import Path\nroot=Path('/Users/chen/Documents/ChatGPT/paper6')\ncode='''import json,subprocess,time\nfrom pathlib import Path\nr={\"observed_unix\":time.time(),\"queue\":subprocess.check_output([\"squeue\",\"-h\",\"-u\",\"wc296\",\"-o\",\"%i %T %j %N\"],text=True),\"runs\":{}}\nroot=Path(\"/mnt/nfs2/engdes/wc296/paper6\")\nfor seed in (17,23,41):\n p=root/\"data/runs\"/(\"cost-field-full-seed\"+str(seed)+\"-004\")/\"report.json\"\n if not p.exists():r[\"runs\"][str(seed)]={\"report_present\":False};continue\n j=json.loads(p.read_text());r[\"runs\"][str(seed)]={k:j.get(k) for k in (\"state\",\"stage\",\"seed\",\"job_id\",\"GPU\",\"capability\",\"update_count\",\"last_update\",\"traceback\",\"dataset_manifest_sha256\",\"input_sha256\")}\nprint(json.dumps(r))\n'''\ncmd=['ssh','-o','BatchMode=yes','-o','ConnectTimeout=15','-o','ControlPath=/private/tmp/hitac-artemis.sock','artemis-ood','python3 -c '+shlex.quote(code)]\np=subprocess.run(cmd,capture_output=True,text=True,check=True);r=json.loads(p.stdout)\nr['snapshotter_source']=Path(__file__).read_text();r['launch_driver']=json.loads((root/'data/runs/cost-field-full-launch-004.json').read_text())\nout=root/'data/provenance/cost-field-full-actual-snapshot-004-001.json';assert not out.exists();out.write_text(json.dumps(r,indent=2)+'\\n')\nprint(json.dumps({k:v for k,v in r.items() if k in ('queue','runs')}))\n",
+  "launch_driver": {
+    "state": "finished_full_dataset_and_three_seed_training_dispatched_pending_full_closure",
+    "pid": 37826,
+    "phase": "submit_paper6-cost-full-004",
+    "started_unix": 1791186690.558231,
+    "optimizer_gate_sha256": "fcb5a8581edb68e929dca02fe4d52a69b1c83f50e64f7623789dae02874a2f20",
+    "stages": [
+      {
+        "name": "transfer_whole_dataset_manifest",
+        "returncode": 0,
+        "log": "logs/cost-field-full-launch-004-transfer_whole_dataset_manifest.log",
+        "sha256": "9d5e24ac334712ce2f0481c54f01799459eebcefa907dc25c7324d34c68fb7d0"
+      },
+      {
+        "name": "commit_full_input_lock",
+        "returncode": 0,
+        "log": "logs/cost-field-full-launch-004-commit_full_input_lock.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "seal_full_input_lock",
+        "returncode": 0,
+        "log": "logs/cost-field-full-launch-004-seal_full_input_lock.log",
+        "sha256": "a901a412f944b155722c2f028f486d67e6c26c0b7b2f9ad1c33c7a3aac37f353"
+      },
+      {
+        "name": "stage_full_training",
+        "returncode": 0,
+        "log": "logs/cost-field-full-launch-004-stage_full_training.log",
+        "sha256": "9d5e24ac334712ce2f0481c54f01799459eebcefa907dc25c7324d34c68fb7d0"
+      },
+      {
+        "name": "prelaunch_paper6-cost-full-17-004",
+        "returncode": 0,
+        "log": "logs/cost-field-full-launch-004-prelaunch_paper6-cost-full-17-004.log",
+        "sha256": "64775eb686f14784ece98206b308c6c1de8c44902446ee24cd46787f8e277473"
+      },
+      {
+        "name": "submit_paper6-cost-full-17-004",
+        "returncode": 0,
+        "log": "logs/cost-field-full-launch-004-submit_paper6-cost-full-17-004.log",
+        "sha256": "0e1412fc7b01e1c33b74af1800c56fafa1258f9cb5ba74bd226a77fca339d1e6"
+      },
+      {
+        "name": "prelaunch_paper6-cost-full-004",
+        "returncode": 0,
+        "log": "logs/cost-field-full-launch-004-prelaunch_paper6-cost-full-004.log",
+        "sha256": "64775eb686f14784ece98206b308c6c1de8c44902446ee24cd46787f8e277473"
+      },
+      {
+        "name": "submit_paper6-cost-full-004",
+        "returncode": 0,
+        "log": "logs/cost-field-full-launch-004-submit_paper6-cost-full-004.log",
+        "sha256": "18c001cdce39ca6816e573936f8db30aee77477fd407b68da6ae191aaa556641"
+      }
+    ],
+    "last_dataset_observation": {
+      "state": "complete",
+      "sha256": "ecf1f0e41de5757bd438b2a73252dc999eed80fa9828270beff342ccf6ea1310",
+      "files": 29924,
+      "bytes": 12175258741
+    },
+    "submission_intent": {
+      "job_name": "paper6-cost-full-004",
+      "script": "experiments/cost-field/GPU-full-23-41-004.sbatch"
+    },
+    "seed17_job": "11424939",
+    "last_actual_full_training": {
+      "state": "running_full_split_task_training",
+      "updates": 86,
+      "job_id": "11424939",
+      "last_update": {
+        "arm": "G",
+        "epoch": 1,
+        "index": 85,
+        "step": 85,
+        "frame": "004607",
+        "loss": 2.9359166622161865,
+        "complex_uses": 29640
+      },
+      "traceback": null,
+      "queue": "11424939 RUNNING paper6-cost-full-17-004\n"
+    },
+    "seed23_41_array_job": "11424940",
+    "ended_unix": 1791187002.4785018
+  }
+}

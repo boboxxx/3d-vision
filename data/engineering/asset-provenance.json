@@ -1,0 +1,25 @@
+{
+  "checkpoint": {
+    "source": "https://drive.google.com/file/d/1M97Wa2ehAdCD6rwEhe67Vde7y4fLtVXo/view",
+    "path": "/mnt/d/paper6/checkpoints/liga-author-download",
+    "bytes": 93383301,
+    "sha256": "3f36af30b686f23d0868482675177b29cc50c2b378577dd12f9092ddb0235b2e"
+  },
+  "kitti_split": {
+    "source_revision": "233f849829b6ac19afb8af8837a0246890908755",
+    "splits": {
+      "train": {
+        "url": "https://raw.githubusercontent.com/open-mmlab/OpenPCDet/233f849829b6ac19afb8af8837a0246890908755/data/kitti/ImageSets/train.txt",
+        "count": 3712,
+        "sha256": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb"
+      },
+      "val": {
+        "url": "https://raw.githubusercontent.com/open-mmlab/OpenPCDet/233f849829b6ac19afb8af8837a0246890908755/data/kitti/ImageSets/val.txt",
+        "count": 3769,
+        "sha256": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86"
+      }
+    },
+    "note": "Standard 3712/3769 KITTI split; original semantic-paper split still requires verification."
+  },
+  "recorded_unix": 1791043732.235313
+}

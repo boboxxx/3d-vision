@@ -1,0 +1,15 @@
+{
+  "state": "passed",
+  "evidence_type": "independent_full_fold_ROI_coverage_and_union_mask_audit",
+  "frames": 372,
+  "views": 744,
+  "split": "geocomm_tune_holdout",
+  "records_sha256": "883a35bbe3e7a3dbaccc75e71406512360a1d844f65400239a53cfb5ed7dadde",
+  "manifest_sha256": "7d0bd16e77a6830ae190d270b29a9ce4416246917513ab9ea8fd58382997eefd",
+  "fold_sha256": "35f22b0022b5968c09c9a8a7e1b9ad6c8ab23c52283673495a36ddba59406f4c",
+  "mean_union_mask_fraction": 0.07229578958416087,
+  "empty_views": 136,
+  "mean_boxes_per_view": 3.9596774193548385,
+  "max_boxes_per_view": 17,
+  "limitations": "verifies image identity and saved ROI/mask geometry; no fresh YOLO inference, GT quality, communication or AP claim"
+}

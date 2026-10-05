@@ -1,0 +1,47 @@
+{
+  "state": "completed_exit0_CPU_only_all5_component_ID_sets_and_splits_verified",
+  "job_id": "11423915",
+  "checked_at_unix": 1791115148.1735466,
+  "deployment_manifest_sha256": "6a33794bbbdd8a43587686b06a0552f368b3065da191f56add6f97325da2c645",
+  "rows": [
+    {
+      "JobID": "11423915",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "billing=8,cpu=8,mem=16G,node=1"
+    },
+    {
+      "JobID": "11423915.batch",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "cpu=8,mem=16G,node=1"
+    },
+    {
+      "JobID": "11423915.extern",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "billing=8,cpu=8,mem=16G,node=1"
+    },
+    {
+      "JobID": "11423915.0",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "cpu=8,mem=16G,node=1"
+    }
+  ],
+  "counts": {
+    "image_2": 7481,
+    "image_3": 7481,
+    "label_2": 7481,
+    "calib": 7481,
+    "velodyne": 7481
+  },
+  "split_sha256": {
+    "train": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb",
+    "val": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86"
+  },
+  "training000000_images_sha256": {
+    "image_2": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+    "image_3": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3"
+  }
+}

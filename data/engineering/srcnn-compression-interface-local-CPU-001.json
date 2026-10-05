@@ -1,0 +1,299 @@
+{
+  "state": "passed_four_synthetic_interface_check_families",
+  "checked_unix": 1791151381.417259,
+  "families": 4,
+  "rates": 3,
+  "native_output_views": 6,
+  "readonly_states": 6,
+  "sources": {
+    "experiments/original-paper-scenarios/srcnn-compression-interface-code/interface.py": "e1d2efcdc7f30c4863c7f84921d8a8e11e6c7cecd920ae102396949d7a2262d9",
+    "experiments/original-paper-scenarios/srcnn-compression-interface-code/check_cpu.py": "0f4b69e968da5d8f92e6766c7e1d573c5202c1b2deb7d8674f5fd9cb104b13e6",
+    "experiments/original-paper-scenarios/srcnn-compression-interface-protocol-001.md": "d7cc0a16b449b6a351e9aa6458681f4faadc9d07d4dd2988cde60f09b63a7d5c",
+    "experiments/original-paper-scenarios/srcnn-author-core-code/core.py": "40fbb09d52320f9b522d4361370400f6e604ab86f0bdba9484e022637e07cb67",
+    "experiments/original-paper-scenarios/srcnn-author-core-code/check_cpu.py": "e459ec63f734e1803705f020ccd5ee3cfeef2dceeff74689e85195ec70acbab8",
+    "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/SRCNN.m": "314887a5b0908411aa20eadbd62f0559ad40205dba3d1ddc103f2bec8c94d266",
+    "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/model/9-5-5(ImageNet)/x3.mat": "fa2ee366d328b942b971c80c24f48dc2b015d5ed4b5790070f720ccfb6ab1578"
+  },
+  "environment": {
+    "Python": "3.12.8",
+    "NumPy": "2.4.4",
+    "Pillow": "12.2.0",
+    "Torch": "2.12.0"
+  },
+  "records": [
+    {
+      "rate": 10,
+      "encoded": {
+        "nominal_compression": 10,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          10,
+          15
+        ],
+        "payload_bytes": [
+          450,
+          450
+        ],
+        "framing_bytes": 32,
+        "source_bytes": 932,
+        "source_bits": 7456,
+        "raw_RGB8_bits": 73728,
+        "actual_raw_to_wire_ratio": 9.888412017167383,
+        "source_only_PHY_uses": null,
+        "source_only_PHY_energy": null
+      },
+      "received": {
+        "nominal_compression": 10,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          10,
+          15
+        ],
+        "source_bytes": 932,
+        "framing_bytes": 32,
+        "received_header_only_geometry": true,
+        "output_unclipped": true,
+        "ranges": [
+          {
+            "minimum": -0.019119792075490145,
+            "maximum": 1.0277522087610964,
+            "out_of_range_fraction": 0.001736111111111111
+          },
+          {
+            "minimum": -0.09216314151615095,
+            "maximum": 0.9978927892426083,
+            "out_of_range_fraction": 0.01171875
+          }
+        ]
+      },
+      "wire_sha256": "9b6b9af4fec92f5cd76fb08dee24ff350262413da81b2626dc07953715bdb220",
+      "output_arrays": [
+        {
+          "dtype": "<f8",
+          "shape": [
+            32,
+            48,
+            3
+          ],
+          "sha256": "ab33425bd31161ce7b3ed2e7e1abc63c85353347da7e24f6a558773ab3ee8af3"
+        },
+        {
+          "dtype": "<f8",
+          "shape": [
+            32,
+            48,
+            3
+          ],
+          "sha256": "155259b6a7aaf4191f407f9c489b16dff65df23d12d25e4512ddf9b4d2954985"
+        }
+      ]
+    },
+    {
+      "rate": 30,
+      "encoded": {
+        "nominal_compression": 30,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          5,
+          8
+        ],
+        "payload_bytes": [
+          120,
+          120
+        ],
+        "framing_bytes": 32,
+        "source_bytes": 272,
+        "source_bits": 2176,
+        "raw_RGB8_bits": 73728,
+        "actual_raw_to_wire_ratio": 33.88235294117647,
+        "source_only_PHY_uses": null,
+        "source_only_PHY_energy": null
+      },
+      "received": {
+        "nominal_compression": 30,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          5,
+          8
+        ],
+        "source_bytes": 272,
+        "framing_bytes": 32,
+        "received_header_only_geometry": true,
+        "output_unclipped": true,
+        "ranges": [
+          {
+            "minimum": 0.05375941875119214,
+            "maximum": 0.9032674931217979,
+            "out_of_range_fraction": 0.0
+          },
+          {
+            "minimum": 0.04314534405919036,
+            "maximum": 0.9124224422753817,
+            "out_of_range_fraction": 0.0
+          }
+        ]
+      },
+      "wire_sha256": "c04d8632e86f3cae3d59e24d49d7135ed9da26ee699c33a5894a5c02d866f8d3",
+      "output_arrays": [
+        {
+          "dtype": "<f8",
+          "shape": [
+            32,
+            48,
+            3
+          ],
+          "sha256": "1703bb802837ea3ffdb70b22b0ef8da1097ec3b17ff31563bdd082392638dd76"
+        },
+        {
+          "dtype": "<f8",
+          "shape": [
+            32,
+            48,
+            3
+          ],
+          "sha256": "1f64bfd386d8a7763a523d5b2882665c277c45f019a588cbef2205efc5898a07"
+        }
+      ]
+    },
+    {
+      "rate": 50,
+      "encoded": {
+        "nominal_compression": 50,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          4,
+          6
+        ],
+        "payload_bytes": [
+          72,
+          72
+        ],
+        "framing_bytes": 32,
+        "source_bytes": 176,
+        "source_bits": 1408,
+        "raw_RGB8_bits": 73728,
+        "actual_raw_to_wire_ratio": 52.36363636363637,
+        "source_only_PHY_uses": null,
+        "source_only_PHY_energy": null
+      },
+      "received": {
+        "nominal_compression": 50,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          4,
+          6
+        ],
+        "source_bytes": 176,
+        "framing_bytes": 32,
+        "received_header_only_geometry": true,
+        "output_unclipped": true,
+        "ranges": [
+          {
+            "minimum": 0.08108944962191042,
+            "maximum": 0.8877351177636773,
+            "out_of_range_fraction": 0.0
+          },
+          {
+            "minimum": 0.07156040170292381,
+            "maximum": 0.8735256973830194,
+            "out_of_range_fraction": 0.0
+          }
+        ]
+      },
+      "wire_sha256": "1d5e701451b2088fc8423060863846f25a0441d7b2e2f8d56edfe7ef813c9c82",
+      "output_arrays": [
+        {
+          "dtype": "<f8",
+          "shape": [
+            32,
+            48,
+            3
+          ],
+          "sha256": "be97500a3fe2cac51eb3468fd00e103b641776d44392cd7d95d5114108a7bec2"
+        },
+        {
+          "dtype": "<f8",
+          "shape": [
+            32,
+            48,
+            3
+          ],
+          "sha256": "a49a3858bd8717aed6a0193660160db1fbcd38f3c67bc460a81e2bfbbd0decc0"
+        }
+      ]
+    }
+  ],
+  "author_state_hashes": {
+    "weight1": {
+      "dtype": "<f8",
+      "shape": [
+        64,
+        1,
+        9,
+        9
+      ],
+      "sha256": "202d3419b3cf37dd9f7290df453b1140be7ddeaaec21a9c452b450a17e5655a8"
+    },
+    "bias1": {
+      "dtype": "<f8",
+      "shape": [
+        64
+      ],
+      "sha256": "1c1d9488b7ff76274d12bdd5bef088da75af876abc7a1bfe027e447463c1ceb4"
+    },
+    "weight2": {
+      "dtype": "<f8",
+      "shape": [
+        32,
+        64,
+        5,
+        5
+      ],
+      "sha256": "aeb9f14cb52f610a2421a6510cf3d335a5029d3152b980ea82874c28e3144c82"
+    },
+    "bias2": {
+      "dtype": "<f8",
+      "shape": [
+        32
+      ],
+      "sha256": "6378aa9b497403d375ea0c64730f4dd10c2b3a0ccd2f1741df998f07d5dc136c"
+    },
+    "weight3": {
+      "dtype": "<f8",
+      "shape": [
+        1,
+        32,
+        5,
+        5
+      ],
+      "sha256": "ce2f8deea986e287a8ea21f3be320a14fd68c68391cbdb745a3fef3d37cfc1eb"
+    },
+    "bias3": {
+      "dtype": "<f8",
+      "shape": [
+        1
+      ],
+      "sha256": "70523ef6cf327e6fe65a155d52beac006db5eccf13200ec24ea22b7f7973d1bc"
+    }
+  },
+  "no_KITTI_GT_calibration_training_quality_or_AP": true,
+  "limitation": "Declared byte/color/geometry engineering only; original SRCNN compression adaptation and KITTI training unresolved"
+}

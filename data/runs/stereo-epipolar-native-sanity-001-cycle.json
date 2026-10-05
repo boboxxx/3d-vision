@@ -1,0 +1,92 @@
+{
+  "state": "finished_all_four_engineering_audits_pending_terminal_closure",
+  "pid": 255389,
+  "prefix": "stereo-epipolar-native-sanity-001",
+  "engineering": true,
+  "started_unix": 1791138904.7938404,
+  "source_manifest_sha256": "408b14067ab51385656faa5bd00b37565b6ec35b50ca2ea722d87367283cebfa",
+  "eligibility": {
+    "state": "passed_full_F8_closure_actual_terminal",
+    "artifacts_sha256": {
+      "data/provenance/stereo-encoder-native-seed17-001-closure.json": "39a35095fe64f6a281fb90b6eec508c1057c042ca06e9d9d2a7dc98204632758",
+      "data/provenance/stereo-encoder-native-seed17-001-local-verification-001.json": "7585d4f20c24e740c18088b36666ad17651535c258894a3ff5629530683180cb",
+      "data/provenance/stereo-encoder-native-seed17-001-actual-terminal-001.json": "5b7d1800a0445a186f4f97a712322d9bbecc118341853cca13d092c229fc1aff"
+    },
+    "actual_terminal_PID": 167748
+  },
+  "completed_commands": [
+    {
+      "label": "U-train",
+      "log_path": "logs/stereo-epipolar-native-sanity-001-U-train.log",
+      "log_sha256": "63062577aa9db316c5cfcdc9d24c07796bd2c73fe35176ba50f95148e6cc212d"
+    },
+    {
+      "label": "U-audit",
+      "log_path": "logs/stereo-epipolar-native-sanity-001-U-audit.log",
+      "log_sha256": "953bf413afa139837ad9ad4e9a03e048db2b7504a18c9dcc9e4f612e4fb1e063"
+    },
+    {
+      "label": "G-train",
+      "log_path": "logs/stereo-epipolar-native-sanity-001-G-train.log",
+      "log_sha256": "5aa5b4b6d3acb86f9a81886998a80ee20fc277dc03df6a49e6e0a58fcabb467f"
+    },
+    {
+      "label": "G-audit",
+      "log_path": "logs/stereo-epipolar-native-sanity-001-G-audit.log",
+      "log_sha256": "8de4806a835bba7ee3c9c217b6df78fbab44725cbbf7602f63194a1ded953dc1"
+    },
+    {
+      "label": "P-train",
+      "log_path": "logs/stereo-epipolar-native-sanity-001-P-train.log",
+      "log_sha256": "b3f477d62f3739e9548cdffd075b96a817ca9d7846137caf1fbf1da1d55b5400"
+    },
+    {
+      "label": "P-audit",
+      "log_path": "logs/stereo-epipolar-native-sanity-001-P-audit.log",
+      "log_sha256": "8b72df938dec00709f5c909c36e1e1d5ff45dfd970280a515a892f5cd5d0c3fa"
+    },
+    {
+      "label": "S-train",
+      "log_path": "logs/stereo-epipolar-native-sanity-001-S-train.log",
+      "log_sha256": "1e8543cb257aa53d0f3e64af4693f81f040974b77fa4a4b3df59a74e1a2d4e9e"
+    },
+    {
+      "label": "S-audit",
+      "log_path": "logs/stereo-epipolar-native-sanity-001-S-audit.log",
+      "log_sha256": "5205b19f4e521698d039e0acb7d264ccb7c7ff13550a8c4119ffbc79dc9b50fd"
+    }
+  ],
+  "arms": {
+    "U": {
+      "manifest_path": "/home/sheng/paper6/data/runs/stereo-epipolar-native-sanity-001-U.json",
+      "manifest_sha256": "000378e5ea67c2e6450b85981fff351bec0e2fa432c62875b03cd0ed2652744d",
+      "audit_path": "/home/sheng/paper6/data/runs/stereo-epipolar-native-sanity-001-U-training-audit.json",
+      "audit_sha256": "3965228c2947e0cbc25e5162e29e90aa970d337c3d2939dfeb250053ef1d2ceb"
+    },
+    "G": {
+      "manifest_path": "/home/sheng/paper6/data/runs/stereo-epipolar-native-sanity-001-G.json",
+      "manifest_sha256": "a03cac03fc92a1afc8da54e01f091b09647bc09dc40ddc4669085e7788481424",
+      "audit_path": "/home/sheng/paper6/data/runs/stereo-epipolar-native-sanity-001-G-training-audit.json",
+      "audit_sha256": "74ec5911da1cb9c9c1416c92213443efe2b53cbb26c20df5eda8e79bb5ecc9bf"
+    },
+    "P": {
+      "manifest_path": "/home/sheng/paper6/data/runs/stereo-epipolar-native-sanity-001-P.json",
+      "manifest_sha256": "95cae044c534ad37baf6396ce86e1b0940f5d210252cf8430fe09ef03c7f1686",
+      "audit_path": "/home/sheng/paper6/data/runs/stereo-epipolar-native-sanity-001-P-training-audit.json",
+      "audit_sha256": "71da2e36b4799203a5ee2e594f77cdaad56cfa68c62007d1c03893cf3713de05"
+    },
+    "S": {
+      "manifest_path": "/home/sheng/paper6/data/runs/stereo-epipolar-native-sanity-001-S.json",
+      "manifest_sha256": "f28bf847afbe4b9618806ea62e617fe222a5514eaa6db6f6cf8d25033ffc1d76",
+      "audit_path": "/home/sheng/paper6/data/runs/stereo-epipolar-native-sanity-001-S-training-audit.json",
+      "audit_sha256": "41a725bc10eec27b8e4c3f5670dbc5781e7985a1e581020f2660b6d4e9fe8f98"
+    }
+  },
+  "CPU_training_gate_sha256": "cba14c3ebd780e7010e7f3d71d639da374c72e5da29b1008683440eeae743feb",
+  "native_AP_started": false,
+  "current_arm": null,
+  "ended_unix": 1791139029.0736287,
+  "updates_per_arm": 6,
+  "paired_audit_sha256": "f420bd9b0796be52164f52409cd2f540a14eca6b6f78d9ffd888bc7ea6c459ee",
+  "limitations": "Six-step native engineering only; discarded weights, no AP/formal-method or project completion claim."
+}

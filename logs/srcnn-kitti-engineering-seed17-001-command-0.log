@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/sheng/paper6/experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/train.py", line 145, in <module>
+    main()
+  File "/home/sheng/paper6/experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/train.py", line 135, in main
+    checkpoint=str(checkpoint), checkpoint_sha256=c.sha(checkpoint), raw_sha256=c.sha(raw),
+  File "/home/sheng/paper6/experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/common.py", line 30, in sha
+    with Path(path).open('rb') as stream:
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+  File "/home/sheng/paper6/experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/train.py", line 64, in guard
+    assert not name.lower().endswith(('.pkl', '.npz', '.pth', '.pt', '.bin'))
+AssertionError

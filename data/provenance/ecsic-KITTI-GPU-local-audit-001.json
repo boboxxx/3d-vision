@@ -1,0 +1,25 @@
+{
+  "state": "passed_complete_two_native_RGB_RD_Adam_steps",
+  "checked_steps": 2,
+  "complete_saved_values": 144085094,
+  "gradient_values": 126562968,
+  "optimizer_parameters_checked": 63281484,
+  "max_errors": {
+    "input": 7.433049820093629e-08,
+    "loss": 5.708343721266829e-06,
+    "norm": 1.8754851804914097e-07,
+    "clip": 1.5125733554555154e-08,
+    "moment": 2.4680048213432393e-09,
+    "parameter": 2.3725260955842487e-07
+  },
+  "formal_training_closed": false,
+  "AP_measured": false,
+  "metadata": {
+    "report_sha256": "abd252619f013be06fe5a28b9909d47b30242d0ecf03923d76f5cdda33b1fd3a",
+    "actual_terminal": "11425032|COMPLETED|0:0\n11425032.batch|COMPLETED|0:0\n11425032.extern|COMPLETED|0:0\n11425032.0|COMPLETED|0:0\n"
+  },
+  "verifier_sha256": "eac4e1233355f25cd768f76cec058c66434524556e683570956ddf24a3870333",
+  "protocol_sha256": "22b3bffae8719400943efb68181d9d622c21266ca3178109bcee5430051e68ce",
+  "checked_unix": 1791196580.507759,
+  "limitation": "Complete saved tensors and independent RGB/RD/Adam arithmetic; no independent CUDA gradient, actual entropy-bitstream rate, full KITTI training or AP claim."
+}

@@ -1,0 +1,19 @@
+{
+  "state": "failed",
+  "pid": 175218,
+  "started_unix": 1791135489.364825,
+  "cases": {},
+  "sources_sha256": {
+    "experiments/original-paper-scenarios/ecsic-entropy-code/cdf-u32le.bin": "507d22e35fb0bb605f05a3312600a8aff3ff10f1ec1c4964358cb390e35d56e5",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/codec.py": "a22fb7717cd1e2a13e4539a74a541958e93a7f6b215ae960b9c2736ad53ec157",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/native.py": "7b8abe4ae4e45fa0d8a3cb267d6c5db57bb3fb61fc52bb2716ba701f8ba67a5b",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/check_cpu.py": "5ab07f74993ad1e342deada8cc562e10483a89ce95696b7bae1940b0bbc526f3",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/reference.cpp": "dcf5ab4588dc01ee01ac192d39dcc4677be75086ae9e9c24483e6fe1816485d0",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/cdf.sha256": "7b9b459d9f1a337e2b9734c3586fdf4720231d5f15f103549ff84d9549723d59"
+  },
+  "CDF_sha256": "507d22e35fb0bb605f05a3312600a8aff3ff10f1ec1c4964358cb390e35d56e5",
+  "stage_A_audit_sha256": "d0f563954856abede65e0007c1e05f15f00516cea9211497634e7bfe7a2bce86",
+  "protocol_sha256": "d264b2ed4c26859bd85a7aab17ce49e70f01b63ebae861ba0c136736b5541b81",
+  "failed_unix": 1791135497.2876754,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/sheng/paper6/experiments/original-paper-scenarios/ecsic-entropy-code/native.py\", line 118, in run\n    a.check(result.returncode==0,'byte-only receiver failure: '+case)\n  File \"/home/sheng/paper6/experiments/original-paper-scenarios/ecsic-recovery-code/recover.py\", line 29, in check\n    raise RuntimeError(message)\nRuntimeError: byte-only receiver failure: synthetic32x64\n"
+}

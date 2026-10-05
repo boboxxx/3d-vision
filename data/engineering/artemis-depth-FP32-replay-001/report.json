@@ -1,0 +1,53 @@
+{
+  "state": "passed_every_native_FP32_depth_output_exact_replay_pending_terminal",
+  "job_id": "11424868",
+  "started_unix": 1791177480.0563915,
+  "frames": [
+    {
+      "frame": "000000",
+      "all_values": 399360,
+      "all_values_bit_equal": true,
+      "source_sha256": "3a2ed3f8c1d2295fe3ba5a1bf1e787cf48f63a2eb07735f05283a4fecd35c86b",
+      "artifact": "data/engineering/artemis-depth-FP32-replay-001/000000.npz",
+      "sha256": "2dd664688cd679664bfe841d405d464909ebd25d3c7a42527afc219ac04585cd",
+      "replay_array_sha256": "7ee54c803b50f6e41b46c39f6f12513157ce48799294eb9599827f06e5ebeab4",
+      "dtype": "float32",
+      "shape": [
+        1,
+        320,
+        1248
+      ]
+    },
+    {
+      "frame": "000003",
+      "all_values": 399360,
+      "all_values_bit_equal": true,
+      "source_sha256": "148188858646a6566cc9b2de6e268176986cca2ca1b6dac2f426a07b69a36fd9",
+      "artifact": "data/engineering/artemis-depth-FP32-replay-001/000003.npz",
+      "sha256": "19afb38e7d071cbbc3d3f077b777fa44fe8aa54fa55d1cc931c97dca566e0384",
+      "replay_array_sha256": "06ebf45f0432654683db67f8eac6c8d9506c22c4be9d2a5cd1db9fe7d360300a",
+      "dtype": "float32",
+      "shape": [
+        1,
+        320,
+        1248
+      ]
+    }
+  ],
+  "code_sha256": "a0f4686e6f95052ec1aa260cfe64e2d060c0bedf2b86b8cf73fb9dd25315884b",
+  "input_sha256": "94651711472f9ed12021dd4439030ffd1a54d02899a517f8cda754bcd044277b",
+  "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "capability": [
+    12,
+    0
+  ],
+  "torch_version": "2.7.1+cu128",
+  "peak_reserved_bytes": 1407188992,
+  "original_FP64_3e5_criterion_passed": false,
+  "detector_constructed": false,
+  "optimizer_used": false,
+  "frozen_inputs_unchanged": true,
+  "base_freeze_after": "filelock==3.32.3\nfsspec==2026.7.0\nJinja2==3.1.6\nMarkupSafe==3.0.3\nmpmath==1.3.0\nnetworkx==3.6.1\nnumpy==1.26.4\nnvidia-cublas-cu12==12.8.3.14\nnvidia-cuda-cupti-cu12==12.8.57\nnvidia-cuda-nvrtc-cu12==12.8.61\nnvidia-cuda-runtime-cu12==12.8.57\nnvidia-cudnn-cu12==9.7.1.26\nnvidia-cufft-cu12==11.3.3.41\nnvidia-cufile-cu12==1.13.0.11\nnvidia-curand-cu12==10.3.9.55\nnvidia-cusolver-cu12==11.7.2.55\nnvidia-cusparse-cu12==12.5.7.53\nnvidia-cusparselt-cu12==0.6.3\nnvidia-nccl-cu12==2.26.2\nnvidia-nvjitlink-cu12==12.8.61\nnvidia-nvtx-cu12==12.8.55\npillow==10.2.0\nPyYAML==6.0.2\nsetuptools==78.1.0\nsympy==1.14.0\ntorch==2.7.1+cu128\ntriton==3.3.1\ntyping_extensions==4.16.0\n",
+  "base_runtime_unchanged": true,
+  "ended_unix": 1791177491.167022
+}

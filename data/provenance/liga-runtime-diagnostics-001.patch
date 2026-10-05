@@ -1,0 +1,807 @@
+diff --git a/liga/datasets/kitti/kitti_object_eval_python/kitti_common.py b/liga/datasets/kitti/kitti_object_eval_python/kitti_common.py
+index e68f924..97007da 100644
+--- a/liga/datasets/kitti/kitti_object_eval_python/kitti_common.py
++++ b/liga/datasets/kitti/kitti_object_eval_python/kitti_common.py
+@@ -262,9 +262,9 @@ def add_difficulty_to_annos(info):
+     occlusion = annos['occluded']
+     truncation = annos['truncated']
+     diff = []
+-    easy_mask = np.ones((len(dims), ), dtype=np.bool)
+-    moderate_mask = np.ones((len(dims), ), dtype=np.bool)
+-    hard_mask = np.ones((len(dims), ), dtype=np.bool)
++    easy_mask = np.ones((len(dims), ), dtype=bool)
++    moderate_mask = np.ones((len(dims), ), dtype=bool)
++    hard_mask = np.ones((len(dims), ), dtype=bool)
+     i = 0
+     for h, o, t in zip(height, occlusion, truncation):
+         if o > max_occlusion[0] or h <= min_height[0] or t > max_trunc[0]:
+diff --git a/liga/datasets/processor/data_processor.py b/liga/datasets/processor/data_processor.py
+index 9eafbf8..ea3e0a6 100644
+--- a/liga/datasets/processor/data_processor.py
++++ b/liga/datasets/processor/data_processor.py
+@@ -51,7 +51,7 @@ class DataProcessor(object):
+             try:
+                 from spconv.utils import VoxelGeneratorV2 as VoxelGenerator
+             except:
+-                from spconv.utils import VoxelGenerator
++                from geocomm.compat import VoxelGenerator
+ 
+             voxel_generator = VoxelGenerator(
+                 voxel_size=config.VOXEL_SIZE,
+diff --git a/liga/models/backbones_2d/base_bev_backbone.py b/liga/models/backbones_2d/base_bev_backbone.py
+index dc93c24..7acc925 100644
+--- a/liga/models/backbones_2d/base_bev_backbone.py
++++ b/liga/models/backbones_2d/base_bev_backbone.py
+@@ -59,7 +59,7 @@ class BaseBEVBackbone(nn.Module):
+                         nn.ReLU()
+                     ))
+                 else:
+-                    stride = np.round(1 / stride).astype(np.int)
++                    stride = np.round(1 / stride).astype(int)
+                     self.deblocks.append(nn.Sequential(
+                         nn.Conv2d(
+                             num_filters[idx], num_upsample_filters[idx],
+diff --git a/liga/models/backbones_3d_lidar/spconv_backbone.py b/liga/models/backbones_3d_lidar/spconv_backbone.py
+index ab40e24..5b79a4a 100644
+--- a/liga/models/backbones_3d_lidar/spconv_backbone.py
++++ b/liga/models/backbones_3d_lidar/spconv_backbone.py
+@@ -2,7 +2,7 @@
+ 
+ 
+ from functools import partial
+-import spconv
++import spconv.pytorch as spconv
+ import torch.nn as nn
+ import warnings
+ import torch.distributed as dist
+@@ -54,17 +54,17 @@ class SparseBasicBlock(spconv.SparseModule):
+         identity = x
+ 
+         out = self.conv1(x)
+-        out.features = self.bn1(out.features)
+-        out.features = self.relu(out.features)
++        out = out.replace_feature(self.bn1(out.features))
++        out = out.replace_feature(self.relu(out.features))
+ 
+         out = self.conv2(out)
+-        out.features = self.bn2(out.features)
++        out = out.replace_feature(self.bn2(out.features))
+ 
+         if self.downsample is not None:
+             identity = self.downsample(x)
+ 
+-        out.features += identity.features
+-        out.features = self.relu(out.features)
++        out = out.replace_feature(out.features + identity.features)
++        out = out.replace_feature(self.relu(out.features))
+ 
+         return out
+ 
+diff --git a/liga/models/backbones_3d_stereo/liga_backbone.py b/liga/models/backbones_3d_stereo/liga_backbone.py
+index 2062bd8..0ba9c0f 100644
+--- a/liga/models/backbones_3d_stereo/liga_backbone.py
++++ b/liga/models/backbones_3d_stereo/liga_backbone.py
+@@ -127,6 +127,41 @@ class LigaBackbone(nn.Module):
+         if feature_backbone_pretrained:
+             self.feature_backbone.init_weights(pretrained=feature_backbone_pretrained)
+ 
++        # GEOCOMM_BOUNDARY: initialize after upstream weight initialization.
++        self.semantic_link = None
++        link_cfg = self.model_cfg.get('SEMANTIC_LINK', None)
++        if link_cfg is not None and link_cfg.get('enabled', False):
++            from geocomm.link import GeometryLink
++            options = dict(link_cfg)
++            options.pop('enabled')
++            # GEOCOMM_EARLIER_BOUNDARY: move original dres0/dres1 to receiver.
++            self.semantic_link_boundary = options.pop('boundary', 'processed_cost')
++            if self.semantic_link_boundary not in ('processed_cost', 'raw_cost'):
++                raise ValueError('unknown communication boundary')
++            # GEOCOMM_NONLINEAR_POSTERIOR: raw concat requires left/right coupling.
++            options.setdefault('posterior_hidden', 16 if self.semantic_link_boundary == 'raw_cost' else 0)
++            self.semantic_link = GeometryLink(
++                cost_channels=CV_INPUT_DIM if self.semantic_link_boundary == 'raw_cost' else self.cv_dim,
++                appearance_channels=self.feature_neck.sem_dim[-1], **options)
++
++        # GEOCOMM_STUDENT_ENCODER: original features are a training-only teacher.
++        self.student_semantic_link_encoder = None
++        student_cfg = self.model_cfg.get('STUDENT_ENCODER', {})
++        if student_cfg.get('enabled', False):
++            if self.semantic_link is None or self.semantic_link_boundary != 'raw_cost':
++                raise ValueError('student requires a raw-cost geometry communication boundary')
++            if not self.fullres_stereo_feature:
++                raise ValueError('student supports the released full-resolution stereo feature interface')
++            from geocomm.student import StereoStudentEncoder
++            self.student_semantic_link_encoder = StereoStudentEncoder(
++                self.feature_neck.stereo_dim[-1], self.feature_neck.sem_dim[-1])
++            self.student_distill_weight = float(student_cfg.get('distill_weight', 0.1))
++            if self.student_distill_weight < 0:
++                raise ValueError('negative distillation weight')
++            for module in [self.feature_backbone, self.feature_neck]:
++                for parameter in module.parameters():
++                    parameter.requires_grad_(False)
++
+     def build_depth_pred_module(self):
+         return nn.Sequential(
+             convbn_3d(self.cv_dim, self.cv_dim, 3, 1, 1, gn=self.GN),
+@@ -244,20 +279,21 @@ class LigaBackbone(nn.Module):
+         N = batch_dict['batch_size']
+ 
+         # feature extraction
+-        left_features = self.feature_backbone(left)
+-        left_features = [left] + list(left_features)
+-        right_features = self.feature_backbone(right)
+-        right_features = [right] + list(right_features)
+-
+-        left_stereo_feat, left_sem_feat = self.feature_neck(left_features)
+-        right_stereo_feat, _ = self.feature_neck(right_features)
+-
+-        if self.sem_neck is not None:
+-            batch_dict['sem_features'] = self.sem_neck([left_sem_feat])
++        if self.student_semantic_link_encoder is None:
++            left_features = self.feature_backbone(left)
++            left_features = [left] + list(left_features)
++            right_features = self.feature_backbone(right)
++            right_features = [right] + list(right_features)
++            left_stereo_feat, left_sem_feat = self.feature_neck(left_features)
++            right_stereo_feat, _ = self.feature_neck(right_features)
+         else:
+-            batch_dict['sem_features'] = [left_sem_feat]
+-
+-        batch_dict['rpn_feature'] = left_sem_feat
++            left_stereo_feat, left_sem_feat = self.student_semantic_link_encoder(left)
++            right_stereo_feat, _ = self.student_semantic_link_encoder(right)
++            if self.training and self.student_distill_weight > 0:
++                from geocomm.student import teacher_feature_targets, feature_distillation
++                targets = teacher_feature_targets(self.feature_backbone, self.feature_neck, left, right)
++                batch_dict['communication_student_loss'] = self.student_distill_weight * feature_distillation(
++                    (left_stereo_feat, right_stereo_feat, left_sem_feat), targets)
+ 
+         # stereo matching: build stereo volume
+         downsampled_depth = self.downsampled_depth.cuda()
+@@ -268,8 +304,22 @@ class LigaBackbone(nn.Module):
+                                    None, None, downsampled_disp)
+ 
+         # stereo matching network
++        if self.semantic_link is not None and self.semantic_link_boundary == 'raw_cost':
++            cost_raw, left_sem_feat = self.semantic_link(
++                cost_raw, left_sem_feat, batch_dict, downsampled_depth)
+         cost0 = self.dres0(cost_raw)
+         cost0 = self.dres1(cost0) + cost0
++        if self.semantic_link is not None and self.semantic_link_boundary == 'processed_cost':
++            cost0, left_sem_feat = self.semantic_link(
++                cost0, left_sem_feat, batch_dict, downsampled_depth)
++
++        if self.sem_neck is not None:
++            batch_dict['sem_features'] = self.sem_neck([left_sem_feat])
++        else:
++            batch_dict['sem_features'] = [left_sem_feat]
++
++        batch_dict['rpn_feature'] = left_sem_feat
++
+         if len(self.hg_stereo) > 0:
+             all_costs = []
+             cur_cost = cost0
+diff --git a/liga/models/dense_heads/anchor_head_template.py b/liga/models/dense_heads/anchor_head_template.py
+index 48110c5..0b044fa 100644
+--- a/liga/models/dense_heads/anchor_head_template.py
++++ b/liga/models/dense_heads/anchor_head_template.py
+@@ -455,6 +455,9 @@ class AnchorHeadTemplate(nn.Module):
+         box_loss, tb_dict_box = self.get_box_reg_layer_loss()
+         tb_dict.update(tb_dict_box)
+         rpn_loss = cls_loss + box_loss
++        # GEOCOMM_NATIVE_3D_LOSS: a separate sum excludes in-place imitation additions.
++        if getattr(self, 'communication_sensitivity_enabled', False):
++            self.forward_ret_dict['communication_detection_loss'] = cls_loss + box_loss
+ 
+         if 'imitation_features_pairs' in self.forward_ret_dict:
+             npairs = len(self.forward_ret_dict["imitation_features_pairs"])
+diff --git a/liga/models/dense_heads/depth_loss_head.py b/liga/models/dense_heads/depth_loss_head.py
+index db7a6e0..56a5ae1 100644
+--- a/liga/models/dense_heads/depth_loss_head.py
++++ b/liga/models/dense_heads/depth_loss_head.py
+@@ -103,6 +103,9 @@ class DepthLossHead(nn.Module):
+         return depth_loss, tb_dict
+ 
+     def forward(self, batch_dict):
++        # GEOCOMM_OPTIONAL_DEPTH_DIAGNOSTICS: no GT needed to predict.
++        if not self.training and 'depth_gt_img' not in batch_dict:
++            return batch_dict
+         if batch_dict['depth_preds'][-1].shape[0] != 1:
+             raise NotImplementedError
+ 
+diff --git a/liga/models/detectors_lidar/lidar_detector3d_template.py b/liga/models/detectors_lidar/lidar_detector3d_template.py
+index 8c949a5..359ee17 100644
+--- a/liga/models/detectors_lidar/lidar_detector3d_template.py
++++ b/liga/models/detectors_lidar/lidar_detector3d_template.py
+@@ -295,7 +295,9 @@ class Detector3DTemplate(nn.Module):
+         logger.info('==> Loading parameters from checkpoint %s to %s' % (filename, 'CPU' if to_cpu else 'GPU'))
+         loc_type = torch.device('cpu') if to_cpu else None
+         checkpoint = torch.load(filename, map_location=loc_type)
+-        model_state_disk = checkpoint['model_state']
++        # GEOCOMM_SPCONV_LAYOUT: retain every sparse kernel value.
++        from geocomm.compat import adapt_spconv_state
++        model_state_disk = adapt_spconv_state(self, checkpoint['model_state'])
+ 
+         if 'version' in checkpoint:
+             logger.info('==> Checkpoint trained from version: %s' % checkpoint['version'])
+@@ -303,7 +305,7 @@ class Detector3DTemplate(nn.Module):
+         update_model_state = {}
+         invalid_states = []
+         for key, val in model_state_disk.items():
+-            if key in self.state_dict() and self.state_dict()[key].shape == model_state_disk[key].shape:
++            if key in self.state_dict() and self.state_dict()[key].shape == val.shape:
+                 update_model_state[key] = val
+                 # logger.info('Update weight %s: %s' % (key, str(val.shape)))
+             else:
+@@ -331,7 +333,8 @@ class Detector3DTemplate(nn.Module):
+         epoch = checkpoint.get('epoch', -1)
+         it = checkpoint.get('it', 0.0)
+ 
+-        self.load_state_dict(checkpoint['model_state'])
++        from geocomm.compat import adapt_spconv_state
++        self.load_state_dict(adapt_spconv_state(self, checkpoint['model_state']))
+ 
+         if optimizer is not None:
+             if 'optimizer_state' in checkpoint and checkpoint['optimizer_state'] is not None:
+diff --git a/liga/models/detectors_stereo/liga.py b/liga/models/detectors_stereo/liga.py
+index 9247a22..22f2c04 100644
+--- a/liga/models/detectors_stereo/liga.py
++++ b/liga/models/detectors_stereo/liga.py
+@@ -6,9 +6,29 @@ class LIGA(StereoDetector3DTemplate):
+     def __init__(self, model_cfg, num_class, dataset):
+         super().__init__(model_cfg=model_cfg, num_class=num_class, dataset=dataset)
+         self.module_list = self.build_networks()
++        link = self.backbone_3d.semantic_link
++        self.dense_head.communication_sensitivity_enabled = (
++            link is not None and link.sensitivity_predictor is not None)
++        # GEOCOMM_RGB_BOUNDARY: exclusive with geometry communication.
++        self.rgb_semantic_link = None
++        rgb_cfg = model_cfg.get('RGB_LINK', None)
++        if rgb_cfg is not None and rgb_cfg.get('enabled', False):
++            if model_cfg.BACKBONE_3D.get('SEMANTIC_LINK', {}).get('enabled', False):
++                raise ValueError('RGB and geometry boundaries cannot both be enabled')
++            from geocomm.rgb_link import RGBLink
++            options = dict(rgb_cfg)
++            options.pop('enabled')
++            self.rgb_semantic_link = RGBLink(**options)
++
+ 
+     def forward(self, batch_dict):
++        if self.rgb_semantic_link is not None:
++            batch_dict['left_img'], batch_dict['right_img'] = self.rgb_semantic_link(
++                batch_dict['left_img'], batch_dict['right_img'], batch_dict)
+         for cur_module in self.module_list:
++            # GEOCOMM_SENSOR_ONLY_INFERENCE: teacher is training-only.
++            if cur_module is self.lidar_model and not self.training:
++                continue
+             batch_dict = cur_module(batch_dict)
+ 
+         if self.training:
+@@ -48,6 +68,30 @@ class LIGA(StereoDetector3DTemplate):
+             **tb_dict
+         }
+         loss = loss_rpn + loss_depth
++        # GEOCOMM_SENSITIVITY_LOSS: no GT gradients or labels at inference.
++        if 'communication_sensitivity_context' in batch_dict:
++            received, importance = batch_dict.pop('communication_sensitivity_context')
++            link = self.backbone_3d.semantic_link
++            sensitivity_loss, target_log = link.sensitivity_predictor.distillation_loss(
++                self.dense_head.forward_ret_dict.pop('communication_detection_loss'),
++                received, importance)
++            loss = loss + link.sensitivity_weight * sensitivity_loss
++            tb_dict['loss_communication_sensitivity'] = sensitivity_loss.item()
++            tb_dict['communication_sensitivity_target_log_std'] = target_log.std().item()
++        # GEOCOMM_STUDENT_LOSS: feature supervision only during training.
++        if 'communication_student_loss' in batch_dict:
++            loss += batch_dict['communication_student_loss']
++            tb_dict['loss_communication_student'] = batch_dict['communication_student_loss'].item()
++        # GEOCOMM_TASK_LOSS: task gradients pass through received latents.
++        if 'communication_aux_loss' in batch_dict:
++            loss += batch_dict['communication_aux_loss']
++            tb_dict['loss_communication_posterior'] = batch_dict['communication_aux_loss'].item()
++        if 'communication_accounting' in batch_dict:
++            account = batch_dict['communication_accounting']
++            tb_dict['communication_complex_uses'] = account['total_complex_uses']
++            tb_dict['communication_cbr'] = account['cbr_complex_per_input_real_scalar']
++            tb_dict['communication_energy'] = account['tx_energy_per_frame'].mean().item()
++
+ 
+         if getattr(self, 'dense_head_2d', None):
+             loss_rpn_2d, tb_dict = self.dense_head_2d.get_loss(batch_dict, tb_dict)
+diff --git a/liga/models/detectors_stereo/stereo_detector3d_template.py b/liga/models/detectors_stereo/stereo_detector3d_template.py
+index a00fa7c..b46b0c0 100644
+--- a/liga/models/detectors_stereo/stereo_detector3d_template.py
++++ b/liga/models/detectors_stereo/stereo_detector3d_template.py
+@@ -340,7 +340,9 @@ class StereoDetector3DTemplate(nn.Module):
+                     (filename, 'CPU' if to_cpu else 'GPU'))
+         loc_type = torch.device('cpu') if to_cpu else None
+         checkpoint = torch.load(filename, map_location=loc_type)
+-        model_state_disk = checkpoint['model_state']
++        # GEOCOMM_SPCONV_LAYOUT: retain every sparse kernel value.
++        from geocomm.compat import adapt_spconv_state
++        model_state_disk = adapt_spconv_state(self, checkpoint['model_state'])
+ 
+         if 'version' in checkpoint:
+             logger.info('==> Checkpoint trained from version: %s' %
+@@ -348,7 +350,7 @@ class StereoDetector3DTemplate(nn.Module):
+ 
+         update_model_state = {}
+         for key, val in model_state_disk.items():
+-            if key in self.state_dict() and self.state_dict()[key].shape == model_state_disk[key].shape:
++            if key in self.state_dict() and self.state_dict()[key].shape == val.shape:
+                 update_model_state[key] = val
+                 # logger.info('Update weight %s: %s' % (key, str(val.shape)))
+ 
+@@ -375,7 +377,8 @@ class StereoDetector3DTemplate(nn.Module):
+         epoch = checkpoint.get('epoch', -1)
+         it = checkpoint.get('it', 0.0)
+ 
+-        self.load_state_dict(checkpoint['model_state'])
++        from geocomm.compat import adapt_spconv_state
++        self.load_state_dict(adapt_spconv_state(self, checkpoint['model_state']))
+ 
+         if optimizer is not None:
+             if 'optimizer_state' in checkpoint and checkpoint['optimizer_state'] is not None:
+diff --git a/liga/ops/build_cost_volume/src/BuildCostVolume.cpp b/liga/ops/build_cost_volume/src/BuildCostVolume.cpp
+index ad52c7f..1e2a2b5 100755
+--- a/liga/ops/build_cost_volume/src/BuildCostVolume.cpp
++++ b/liga/ops/build_cost_volume/src/BuildCostVolume.cpp
+@@ -15,7 +15,7 @@ at::Tensor BuildCostVolume_forward(const at::Tensor &left,
+                                    const at::Tensor &shift,
+                                    const int downsample)
+ {
+-  if (left.type().is_cuda())
++  if (left.is_cuda())
+   {
+ #ifdef WITH_CUDA
+     return BuildCostVolume_forward_cuda(left, right, shift, downsample);
+@@ -30,7 +30,7 @@ std::tuple<at::Tensor, at::Tensor> BuildCostVolume_backward(const at::Tensor &gr
+                                                             const at::Tensor &shift,
+                                                             const int downsample)
+ {
+-  if (grad.type().is_cuda())
++  if (grad.is_cuda())
+   {
+ #ifdef WITH_CUDA
+     return BuildCostVolume_backward_cuda(grad, shift, downsample);
+diff --git a/liga/ops/build_cost_volume/src/BuildCostVolume_cuda.cu b/liga/ops/build_cost_volume/src/BuildCostVolume_cuda.cu
+index 8b3c9b8..92bf876 100755
+--- a/liga/ops/build_cost_volume/src/BuildCostVolume_cuda.cu
++++ b/liga/ops/build_cost_volume/src/BuildCostVolume_cuda.cu
+@@ -2,9 +2,9 @@
+ #include <ATen/ATen.h>
+ #include <ATen/cuda/CUDAContext.h>
+ 
+-#include <THC/THC.h>
+-#include <THC/THCAtomics.cuh>
+-#include <THC/THCDeviceUtils.cuh>
++#include <c10/cuda/CUDAException.h>
++#include <ATen/cuda/Atomic.cuh>
++#include <ATen/ceil_div.h>
+ 
+ // TODO make it in a common file
+ #define CUDA_1D_KERNEL_LOOP(i, n)                            \
+@@ -209,9 +209,9 @@ at::Tensor BuildCostVolume_forward_cuda(const at::Tensor& left,
+                                  const at::Tensor& right,
+                                  const at::Tensor& shift,
+                                  const int downsample) {
+-  AT_ASSERTM(left.type().is_cuda(), "left must be a CUDA tensor");
+-  AT_ASSERTM(right.type().is_cuda(), "right must be a CUDA tensor");
+-  AT_ASSERTM(shift.type().is_cuda(), "shift must be a CUDA tensor");
++  AT_ASSERTM(left.is_cuda(), "left must be a CUDA tensor");
++  AT_ASSERTM(right.is_cuda(), "right must be a CUDA tensor");
++  AT_ASSERTM(shift.is_cuda(), "shift must be a CUDA tensor");
+ 
+   AT_ASSERTM((left.size(0) == right.size(0)) && (left.size(1) == right.size(1)) && \
+     (left.size(2) == right.size(2)) && (left.size(3) == right.size(3)), \
+@@ -229,29 +229,29 @@ at::Tensor BuildCostVolume_forward_cuda(const at::Tensor& left,
+   auto output_size = num_batch * channels * 2 * max_disp * height * width;
+   cudaStream_t stream = at::cuda::getCurrentCUDAStream();
+ 
+-  dim3 grid(std::min(THCCeilDiv((long)(output_size / 2), 512L), 4096L));
++  dim3 grid(std::min(at::ceil_div((long)(output_size / 2), 512L), 4096L));
+   dim3 block(512);
+ 
+   if (output.numel() == 0) {
+-    THCudaCheck(cudaGetLastError());
++    C10_CUDA_CHECK(cudaGetLastError());
+     return output;
+   }
+ 
+-  AT_DISPATCH_FLOATING_TYPES(left.type(), "BuildCostVolume_forward", [&] {
++  AT_DISPATCH_FLOATING_TYPES(left.scalar_type(), "BuildCostVolume_forward", [&] {
+     BuildCostVolumeForward<scalar_t><<<grid, block, 0, stream>>>(
+          output_size / 2,
+-         left.contiguous().data<scalar_t>(),
+-         right.contiguous().data<scalar_t>(),
+-         shift.contiguous().data<scalar_t>(),
++         left.contiguous().data_ptr<scalar_t>(),
++         right.contiguous().data_ptr<scalar_t>(),
++         shift.contiguous().data_ptr<scalar_t>(),
+          num_batch,
+          channels,
+          height,
+          width,
+          max_disp,
+-         output.data<scalar_t>(),
++         output.data_ptr<scalar_t>(),
+          downsample);
+   });
+-  THCudaCheck(cudaGetLastError());
++  C10_CUDA_CHECK(cudaGetLastError());
+   return output;
+ }
+ 
+@@ -259,7 +259,7 @@ at::Tensor BuildCostVolume_forward_cuda(const at::Tensor& left,
+ std::tuple<at::Tensor, at::Tensor> BuildCostVolume_backward_cuda(const at::Tensor& grad,
+                                   const at::Tensor& shift,
+                                   const int downsample) {
+-  AT_ASSERTM(shift.type().is_cuda(), "shift must be a CUDA tensor");
++  AT_ASSERTM(shift.is_cuda(), "shift must be a CUDA tensor");
+ 
+   auto num_batch = grad.size(0);
+   auto channels = grad.size(1) / 2;
+@@ -275,30 +275,30 @@ std::tuple<at::Tensor, at::Tensor> BuildCostVolume_backward_cuda(const at::Tenso
+ 
+   cudaStream_t stream = at::cuda::getCurrentCUDAStream();
+ 
+-  dim3 grid(std::min(THCCeilDiv((long)grad.numel(), 512L), 4096L));
++  dim3 grid(std::min(at::ceil_div((long)grad.numel(), 512L), 4096L));
+   dim3 block(512);
+ 
+   // handle possibly empty gradients
+   if (grad.numel() == 0) {
+-    THCudaCheck(cudaGetLastError());
++    C10_CUDA_CHECK(cudaGetLastError());
+     return std::make_tuple(grad_left, grad_right);
+   }
+ 
+-  AT_DISPATCH_FLOATING_TYPES(grad.type(), "BuildCostVolume_backward", [&] {
++  AT_DISPATCH_FLOATING_TYPES(grad.scalar_type(), "BuildCostVolume_backward", [&] {
+     BuildCostVolumeBackwardFeature<scalar_t><<<grid, block, 0, stream>>>(
+          grad.numel() / 2,
+-         grad.contiguous().data<scalar_t>(),
+-         shift.contiguous().data<scalar_t>(),
++         grad.contiguous().data_ptr<scalar_t>(),
++         shift.contiguous().data_ptr<scalar_t>(),
+          num_batch,
+          channels,
+          height,
+          width,
+          max_disp,
+-         grad_left.data<scalar_t>(),
+-         grad_right.data<scalar_t>(),
++         grad_left.data_ptr<scalar_t>(),
++         grad_right.data_ptr<scalar_t>(),
+          downsample);
+   });
+-  THCudaCheck(cudaGetLastError());
++  C10_CUDA_CHECK(cudaGetLastError());
+   return std::make_tuple(grad_left, grad_right);
+ }
+ 
+diff --git a/liga/ops/iou3d_nms/numerical_jaccobian.py b/liga/ops/iou3d_nms/numerical_jaccobian.py
+index e9e81f8..84aa157 100644
+--- a/liga/ops/iou3d_nms/numerical_jaccobian.py
++++ b/liga/ops/iou3d_nms/numerical_jaccobian.py
+@@ -1,5 +1,5 @@
+ import torch
+-from torch._six import container_abcs, istuple
++import collections.abc as container_abcs
+ 
+ from itertools import product
+ 
+diff --git a/liga/ops/iou3d_nms/src/iou3d_cpu.cpp b/liga/ops/iou3d_nms/src/iou3d_cpu.cpp
+index d528ad9..22ab25e 100644
+--- a/liga/ops/iou3d_nms/src/iou3d_cpu.cpp
++++ b/liga/ops/iou3d_nms/src/iou3d_cpu.cpp
+@@ -14,7 +14,7 @@ All Rights Reserved 2020.
+ #include "iou3d_cpu.h"
+ 
+ #define CHECK_CUDA(x) do { \
+-  if (!x.type().is_cuda()) { \
++  if (!x.is_cuda()) { \
+     fprintf(stderr, "%s must be CUDA tensor at %s:%d\n", #x, __FILE__, __LINE__); \
+     exit(-1); \
+   } \
+@@ -239,9 +239,9 @@ int boxes_iou_bev_cpu(at::Tensor boxes_a_tensor, at::Tensor boxes_b_tensor, at::
+ 
+     int num_boxes_a = boxes_a_tensor.size(0);
+     int num_boxes_b = boxes_b_tensor.size(0);
+-    const float *boxes_a = boxes_a_tensor.data<float>();
+-    const float *boxes_b = boxes_b_tensor.data<float>();
+-    float *ans_iou = ans_iou_tensor.data<float>();
++    const float *boxes_a = boxes_a_tensor.data_ptr<float>();
++    const float *boxes_b = boxes_b_tensor.data_ptr<float>();
++    float *ans_iou = ans_iou_tensor.data_ptr<float>();
+ 
+     for (int i = 0; i < num_boxes_a; i++){
+         for (int j = 0; j < num_boxes_b; j++){
+diff --git a/liga/ops/iou3d_nms/src/iou3d_nms.cpp b/liga/ops/iou3d_nms/src/iou3d_nms.cpp
+index df25ce8..5e7e538 100644
+--- a/liga/ops/iou3d_nms/src/iou3d_nms.cpp
++++ b/liga/ops/iou3d_nms/src/iou3d_nms.cpp
+@@ -12,7 +12,7 @@ All Rights Reserved 2019-2020.
+ #include "iou3d_nms.h"
+ 
+ #define CHECK_CUDA(x) do { \
+-  if (!x.type().is_cuda()) { \
++  if (!x.is_cuda()) { \
+     fprintf(stderr, "%s must be CUDA tensor at %s:%d\n", #x, __FILE__, __LINE__); \
+     exit(-1); \
+   } \
+@@ -60,9 +60,9 @@ int boxes_overlap_bev_gpu(at::Tensor boxes_a, at::Tensor boxes_b, at::Tensor ans
+     int num_a = boxes_a.size(0);
+     int num_b = boxes_b.size(0);
+ 
+-    const float * boxes_a_data = boxes_a.data<float>();
+-    const float * boxes_b_data = boxes_b.data<float>();
+-    float * ans_overlap_data = ans_overlap.data<float>();
++    const float * boxes_a_data = boxes_a.data_ptr<float>();
++    const float * boxes_b_data = boxes_b.data_ptr<float>();
++    float * ans_overlap_data = ans_overlap.data_ptr<float>();
+ 
+     boxesoverlapLauncher(num_a, boxes_a_data, num_b, boxes_b_data, ans_overlap_data);
+ 
+@@ -80,9 +80,9 @@ int boxes_overlap_bev_onebyone_gpu(at::Tensor boxes_a, at::Tensor boxes_b, at::T
+ 
+     int num_a = boxes_a.size(0);
+ 
+-    const float * boxes_a_data = boxes_a.data<float>();
+-    const float * boxes_b_data = boxes_b.data<float>();
+-    float * ans_overlap_data = ans_overlap.data<float>();
++    const float * boxes_a_data = boxes_a.data_ptr<float>();
++    const float * boxes_b_data = boxes_b.data_ptr<float>();
++    float * ans_overlap_data = ans_overlap.data_ptr<float>();
+ 
+     boxesoverlapOnebyoneLauncher(num_a, boxes_a_data, boxes_b_data, ans_overlap_data);
+ 
+@@ -100,9 +100,9 @@ int boxes_iou_bev_gpu(at::Tensor boxes_a, at::Tensor boxes_b, at::Tensor ans_iou
+     int num_a = boxes_a.size(0);
+     int num_b = boxes_b.size(0);
+ 
+-    const float * boxes_a_data = boxes_a.data<float>();
+-    const float * boxes_b_data = boxes_b.data<float>();
+-    float * ans_iou_data = ans_iou.data<float>();
++    const float * boxes_a_data = boxes_a.data_ptr<float>();
++    const float * boxes_b_data = boxes_b.data_ptr<float>();
++    float * ans_iou_data = ans_iou.data_ptr<float>();
+ 
+     boxesioubevLauncher(num_a, boxes_a_data, num_b, boxes_b_data, ans_iou_data);
+ 
+@@ -119,9 +119,9 @@ int boxes_iou_bev_onebyone_gpu(at::Tensor boxes_a, at::Tensor boxes_b, at::Tenso
+ 
+     int num_a = boxes_a.size(0);
+ 
+-    const float * boxes_a_data = boxes_a.data<float>();
+-    const float * boxes_b_data = boxes_b.data<float>();
+-    float * ans_iou_data = ans_iou.data<float>();
++    const float * boxes_a_data = boxes_a.data_ptr<float>();
++    const float * boxes_b_data = boxes_b.data_ptr<float>();
++    float * ans_iou_data = ans_iou.data_ptr<float>();
+ 
+     boxesioubevOnebyoneLauncher(num_a, boxes_a_data, boxes_b_data, ans_iou_data);
+ 
+@@ -135,8 +135,8 @@ int nms_gpu(at::Tensor boxes, at::Tensor keep, float nms_overlap_thresh){
+     CHECK_CONTIGUOUS(keep);
+ 
+     int boxes_num = boxes.size(0);
+-    const float * boxes_data = boxes.data<float>();
+-    long * keep_data = keep.data<long>();
++    const float * boxes_data = boxes.data_ptr<float>();
++    long * keep_data = keep.data_ptr<long>();
+ 
+     const int col_blocks = DIVUP(boxes_num, THREADS_PER_BLOCK_NMS);
+ 
+@@ -185,8 +185,8 @@ int nms_normal_gpu(at::Tensor boxes, at::Tensor keep, float nms_overlap_thresh){
+     CHECK_CONTIGUOUS(keep);
+ 
+     int boxes_num = boxes.size(0);
+-    const float * boxes_data = boxes.data<float>();
+-    long * keep_data = keep.data<long>();
++    const float * boxes_data = boxes.data_ptr<float>();
++    long * keep_data = keep.data_ptr<long>();
+ 
+     const int col_blocks = DIVUP(boxes_num, THREADS_PER_BLOCK_NMS);
+ 
+diff --git a/liga/ops/roiaware_pool3d/src/roiaware_pool3d.cpp b/liga/ops/roiaware_pool3d/src/roiaware_pool3d.cpp
+index 00edfef..0c3d73f 100644
+--- a/liga/ops/roiaware_pool3d/src/roiaware_pool3d.cpp
++++ b/liga/ops/roiaware_pool3d/src/roiaware_pool3d.cpp
+@@ -11,7 +11,7 @@ All Rights Reserved 2019-2020.
+ #include <assert.h>
+ 
+ 
+-//#define CHECK_CUDA(x) AT_CHECK(x.type().is_cuda(), #x, " must be a CUDAtensor ")
++//#define CHECK_CUDA(x) AT_CHECK(x.is_cuda(), #x, " must be a CUDAtensor ")
+ //#define CHECK_CONTIGUOUS(x) AT_CHECK(x.is_contiguous(), #x, " must be contiguous ")
+ //#define CHECK_INPUT(x) CHECK_CUDA(x);CHECK_CONTIGUOUS(x)
+ 
+@@ -52,12 +52,12 @@ int roiaware_pool3d_gpu(at::Tensor rois, at::Tensor pts, at::Tensor pts_feature,
+     int out_z = pts_idx_of_voxels.size(3);
+     assert ((out_x < 256) && (out_y < 256) && (out_z < 256));  // we encode index with 8bit
+ 
+-    const float *rois_data = rois.data<float>();
+-    const float *pts_data = pts.data<float>();
+-    const float *pts_feature_data = pts_feature.data<float>();
+-    int *argmax_data = argmax.data<int>();
+-    int *pts_idx_of_voxels_data = pts_idx_of_voxels.data<int>();
+-    float *pooled_features_data = pooled_features.data<float>();
++    const float *rois_data = rois.data_ptr<float>();
++    const float *pts_data = pts.data_ptr<float>();
++    const float *pts_feature_data = pts_feature.data_ptr<float>();
++    int *argmax_data = argmax.data_ptr<int>();
++    int *pts_idx_of_voxels_data = pts_idx_of_voxels.data_ptr<int>();
++    float *pooled_features_data = pooled_features.data_ptr<float>();
+ 
+     roiaware_pool3d_launcher(boxes_num, pts_num, channels, max_pts_each_voxel, out_x, out_y, out_z,
+         rois_data, pts_data, pts_feature_data, argmax_data, pts_idx_of_voxels_data, pooled_features_data, pool_method);
+@@ -84,10 +84,10 @@ int roiaware_pool3d_gpu_backward(at::Tensor pts_idx_of_voxels, at::Tensor argmax
+     int max_pts_each_voxel = pts_idx_of_voxels.size(4);  // index 0 is the counter
+     int channels = grad_out.size(4);
+ 
+-    const int *pts_idx_of_voxels_data = pts_idx_of_voxels.data<int>();
+-    const int *argmax_data = argmax.data<int>();
+-    const float *grad_out_data = grad_out.data<float>();
+-    float *grad_in_data = grad_in.data<float>();
++    const int *pts_idx_of_voxels_data = pts_idx_of_voxels.data_ptr<int>();
++    const int *argmax_data = argmax.data_ptr<int>();
++    const float *grad_out_data = grad_out.data_ptr<float>();
++    float *grad_in_data = grad_in.data_ptr<float>();
+ 
+     roiaware_pool3d_backward_launcher(boxes_num, out_x, out_y, out_z, channels, max_pts_each_voxel,
+         pts_idx_of_voxels_data, argmax_data, grad_out_data, grad_in_data, pool_method);
+@@ -108,9 +108,9 @@ int points_in_boxes_gpu(at::Tensor boxes_tensor, at::Tensor pts_tensor, at::Tens
+     int boxes_num = boxes_tensor.size(1);
+     int pts_num = pts_tensor.size(1);
+ 
+-    const float *boxes = boxes_tensor.data<float>();
+-    const float *pts = pts_tensor.data<float>();
+-    int *box_idx_of_points = box_idx_of_points_tensor.data<int>();
++    const float *boxes = boxes_tensor.data_ptr<float>();
++    const float *pts = pts_tensor.data_ptr<float>();
++    int *box_idx_of_points = box_idx_of_points_tensor.data_ptr<int>();
+ 
+     points_in_boxes_launcher(batch_size, boxes_num, pts_num, boxes, pts, box_idx_of_points);
+ 
+@@ -152,9 +152,9 @@ int points_in_boxes_cpu(at::Tensor boxes_tensor, at::Tensor pts_tensor, at::Tens
+     int boxes_num = boxes_tensor.size(0);
+     int pts_num = pts_tensor.size(0);
+ 
+-    const float *boxes = boxes_tensor.data<float>();
+-    const float *pts = pts_tensor.data<float>();
+-    int *pts_indices = pts_indices_tensor.data<int>();
++    const float *boxes = boxes_tensor.data_ptr<float>();
++    const float *pts = pts_tensor.data_ptr<float>();
++    int *pts_indices = pts_indices_tensor.data_ptr<int>();
+ 
+     float local_x = 0, local_y = 0;
+     for (int i = 0; i < boxes_num; i++){
+diff --git a/liga/utils/box_utils.py b/liga/utils/box_utils.py
+index e51bc11..b217dbd 100644
+--- a/liga/utils/box_utils.py
++++ b/liga/utils/box_utils.py
+@@ -21,7 +21,7 @@ def in_hull(p, hull):
+         flag = hull.find_simplex(p) >= 0
+     except scipy.spatial.qhull.QhullError:
+         print('Warning: not a hull %s' % str(hull))
+-        flag = np.zeros(p.shape[0], dtype=np.bool)
++        flag = np.zeros(p.shape[0], dtype=bool)
+ 
+     return flag
+ 
+@@ -116,7 +116,7 @@ def boxes3d_kitti_camera_to_lidar(boxes3d_camera, calib, pseudo_lidar=False, pse
+ def boxes3d_fliplr(boxes3d, cam_view=True):
+     if cam_view:
+         alpha = boxes3d[:, 6:7]
+-        alpha = np.pi-alpha  # ((alpha > 0).astype(np.float) + (alpha <= 0).astype(np.float) * -1) * np.pi - alpha
++        alpha = np.pi-alpha  # ((alpha > 0).astype(float) + (alpha <= 0).astype(float) * -1) * np.pi - alpha
+         return np.concatenate([-boxes3d[:, 0:1], boxes3d[:, 1:6], alpha], axis=1)
+     else:
+         raise NotImplementedError
+diff --git a/liga/utils/common_utils.py b/liga/utils/common_utils.py
+index 2c36c77..6c40742 100644
+--- a/liga/utils/common_utils.py
++++ b/liga/utils/common_utils.py
+@@ -176,7 +176,9 @@ def init_dist_pytorch(tcp_port, local_rank, backend='nccl'):
+     torch.cuda.set_device(local_rank % num_gpus)
+     dist.init_process_group(
+         backend=backend,
+-        init_method='tcp://127.0.0.1:%d' % tcp_port,
++        # GEOCOMM_ELASTIC_RENDEZVOUS: use the launcher-hosted store endpoint.
++        init_method='env://' if 'MASTER_ADDR' in os.environ and 'MASTER_PORT' in os.environ
++                    else 'tcp://127.0.0.1:%d' % tcp_port,
+         rank=local_rank,
+         world_size=num_gpus
+     )
+diff --git a/tools/eval_utils/eval_utils.py b/tools/eval_utils/eval_utils.py
+index e9aa32f..7173295 100644
+--- a/tools/eval_utils/eval_utils.py
++++ b/tools/eval_utils/eval_utils.py
+@@ -70,12 +70,19 @@ def eval_one_epoch(cfg, model, dataloader, epoch_id, logger, dist_test=False, sa
+ 
+     if cfg.LOCAL_RANK == 0:
+         progress_bar = tqdm.tqdm(total=len(dataloader), leave=True, desc='eval', dynamic_ncols=True)
++    # GEOCOMM_EVIDENCE: keep per-batch channel/energy measurements.
++    from geocomm.evidence import save_link_accounting
++    communication_file = result_dir / ('communication_rank%d.jsonl' % cfg.LOCAL_RANK)
++    communication_file.write_text('', encoding='utf-8')
+     start_time = time.time()
+     for i, batch_dict in enumerate(dataloader):
+         load_data_to_gpu(batch_dict)
+ 
+         with torch.no_grad():
+             pred_dicts, ret_dict = model(batch_dict)
++        # GEOCOMM_PREDICTION_ACCOUNTING: survive DDP input dictionary copies.
++        from geocomm.evidence import prediction_link_accounting
++        prediction_link_accounting(communication_file, pred_dicts, batch_dict)
+         disp_dict = {}
+ 
+         statistics_info(cfg, ret_dict, metric, disp_dict)
+diff --git a/tools/test.py b/tools/test.py
+index cbcb792..5af70d4 100644
+--- a/tools/test.py
++++ b/tools/test.py
+@@ -35,7 +35,7 @@ def parse_config():
+     # distributed options
+     parser.add_argument('--launcher', choices=['none', 'pytorch', 'slurm'], default='pytorch')
+     parser.add_argument('--tcp_port', type=int, default=18888, help='tcp port for distrbuted training')
+-    parser.add_argument('--local_rank', type=int, default=0, help='local rank for distributed training')
++    parser.add_argument('--local-rank', '--local_rank', dest='local_rank', type=int, default=0, help='local rank for distributed training')
+     # config options
+     parser.add_argument('--set', dest='set_cfgs', default=None, nargs=argparse.REMAINDER, help='set extra config keys if needed')
+     parser.add_argument('--trainval', action='store_true', default=False, help='')
+@@ -48,7 +48,7 @@ def parse_config():
+     cfg.TAG = Path(args.cfg_file).stem
+     cfg.EXP_GROUP_PATH = '_'.join(args.cfg_file.split('/')[1:-1])  # remove 'cfgs' and 'xxxx.yaml'
+ 
+-    np.random.seed(1024)
++    np.random.seed(int(os.environ.get('GEOCOMM_RANK_SEED', '1024')))
+ 
+     assert args.ckpt or args.ckpt_id, "pls specify ckpt or ckpt_dir or ckpt_id"
+ 
+diff --git a/tools/train.py b/tools/train.py
+index 1aba585..558bb90 100644
+--- a/tools/train.py
++++ b/tools/train.py
+@@ -43,7 +43,7 @@ def parse_config():
+     parser.add_argument('--tcp_port', type=int, default=18888, help='tcp port for distrbuted training')
+     parser.add_argument('--sync_bn', action='store_true', default=False, help='whether to use sync bn')
+     parser.add_argument('--find_unused_parameters', action='store_true', default=False, help='whether to find find_unused_parameters')
+-    parser.add_argument('--local_rank', type=int, default=0, help='local rank for distributed training')
++    parser.add_argument('--local-rank', '--local_rank', dest='local_rank', type=int, default=0, help='local rank for distributed training')
+     # config options
+     parser.add_argument('--set', dest='set_cfgs', default=None, nargs=argparse.REMAINDER, help='set extra config keys if needed')
+     parser.add_argument('--trainval', action='store_true', default=False, help='')
+diff --git a/tools/train_utils/optimization/fastai_optim.py b/tools/train_utils/optimization/fastai_optim.py
+index 5c54135..4509f7b 100644
+--- a/tools/train_utils/optimization/fastai_optim.py
++++ b/tools/train_utils/optimization/fastai_optim.py
+@@ -1,6 +1,6 @@
+ # This file is modified from https://github.com/traveller59/second.pytorch
+ 
+-from collections import Iterable
++from collections.abc import Iterable
+ 
+ import torch
+ from torch import nn
+diff --git a/tools/train_utils/train_utils.py b/tools/train_utils/train_utils.py
+index dfb4633..3824650 100644
+--- a/tools/train_utils/train_utils.py
++++ b/tools/train_utils/train_utils.py
+@@ -38,9 +38,13 @@ def train_one_epoch(model, optimizer, train_loader, model_func, lr_scheduler, ac
+         optimizer.zero_grad()
+ 
+         loss, tb_dict, disp_dict = model_func(model, batch)
++        # GEOCOMM_FINITE_TRAINING_UPDATE: apply the declared optimization protocol.
++        if not torch.isfinite(loss).all():
++            raise FloatingPointError('nonfinite training loss before optimizer update')
+         loss.backward()
+-        # if getattr('optim_cfg', 'GRAD_NORM_CLIP', None) is not None:
+-        #     clip_grad_norm_(model.parameters(), optim_cfg.GRAD_NORM_CLIP)
++        gradient_norm = clip_grad_norm_(model.parameters(), optim_cfg.GRAD_NORM_CLIP,
++                                       error_if_nonfinite=True)
++        tb_dict['gradient_norm_before_clip'] = gradient_norm.item()
+         optimizer.step()
+ 
+         accumulated_iter += 1

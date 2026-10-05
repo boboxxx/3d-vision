@@ -1,0 +1,180 @@
+{
+  "state": "passed_training_AP_feature_and_source_closure",
+  "closed_at_unix": 1791070978.606503,
+  "implementation_commit": "f94205b",
+  "sanity_result_commit": "8f23ba2",
+  "frozen_source_sha256": {
+    "project": "8d2c56c4c39f8ea8a587e4f0dfd1d4fdab41e636888a035e1b730dc53cca8208",
+    "liga": "e2495ab11c90143c14a6666c875c382131e4db0feb48711754bd2100ac8a9d29",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f"
+  },
+  "artifact_sha256": {
+    "data/runs/codec-feature-seed17-001-awgn-AP-audit.json": "87b13e985b38126b6f56b0c78d1c0bd05e4a00e28c2294dc77dc8f7ce1b4d009",
+    "data/runs/codec-feature-seed17-001-awgn-feature-audit.json": "ae33cbb1626ddf5947621d6f5e8aea5b32a58e33849e19665b0ef311aa109a8e",
+    "data/runs/codec-feature-seed17-001-awgn-features.jsonl": "b8dbf598057ea2ab43c7f45c81eea9754e20feb5fc18422c192a53aaa1baa3ea",
+    "data/runs/codec-feature-seed17-001-awgn.json": "ed98dcb93302bd6903d59cfd989ebaabc80f9923f7a6d9989192c1144d0d7e9e",
+    "data/runs/codec-feature-seed17-001-identity-AP-audit.json": "20e8daf1a3e32f2f08fdc504340d07f1fff1fbb61db6ce004f42044612eb659f",
+    "data/runs/codec-feature-seed17-001-identity-feature-audit.json": "382af048d73966dc6c712aa6dfd02d85164afb72b03c48f937a069bec5d5db56",
+    "data/runs/codec-feature-seed17-001-identity-features.jsonl": "d821e02f64ba3376257901b15237211d46a7d4af753f3c8e856cf682a892c3d6",
+    "data/runs/codec-feature-seed17-001-identity.json": "1980d25e85e1fe341e8180044f7957e8bc9f9ae8f421465c711a369c5a84e9c5",
+    "data/runs/codec-feature-seed17-001-training-audit.json": "995b97ce9b247ea246ed9540bb897fa18f6e0d35c0f2c0aefafcac934a3988b2",
+    "data/runs/codec-feature-seed17-001-training-audit.records/training.jsonl": "4578905efb229cb35588fb759dad38068950c607c9883b36e0140fd6669f22e6",
+    "data/runs/codec-feature-seed17-001.json": "c3bea7dedc133761e17f59f813d92f57bd8b3632366d507cec782e0f3cf3bb78"
+  },
+  "checkpoint_sha256": "984771355f145441f785a8bca5ddde2762fec4925d504298b7fb9abe8c3f57f0",
+  "summaries": {
+    "identity": {
+      "Car_3d_AP_R40_percent": {
+        "Car_3d/easy_R40": 0.0,
+        "Car_3d/moderate_R40": 0.0,
+        "Car_3d/hard_R40": 0.0
+      },
+      "features": {
+        "cost": {
+          "elements": 42785832960,
+          "pooled_over_frames_mse": 0.4883733877213235,
+          "pooled_over_frames_nmse": 0.6102321604925686,
+          "pooled_over_frames_cosine": 0.6243167766534659,
+          "median_frame_nmse": 0.6130689863571023,
+          "median_frame_cosine": 0.6220413532193838,
+          "reference_shapes": [
+            [
+              1,
+              64,
+              72,
+              80,
+              312
+            ]
+          ]
+        },
+        "appearance": {
+          "elements": 297123840,
+          "pooled_over_frames_mse": 0.13310020277528822,
+          "pooled_over_frames_nmse": 0.15002589111789646,
+          "pooled_over_frames_cosine": 0.9219620784359486,
+          "median_frame_nmse": 0.15112580749007645,
+          "median_frame_cosine": 0.9214311337624241,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              80,
+              312
+            ]
+          ]
+        },
+        "cost_pool_interpolate_reference": {
+          "elements": 42785832960,
+          "pooled_over_frames_mse": 0.47414514883278996,
+          "pooled_over_frames_nmse": 0.5924536959503756,
+          "pooled_over_frames_cosine": 0.6391054424365133,
+          "median_frame_nmse": 0.5960424151829511,
+          "median_frame_cosine": 0.6363136913524491,
+          "reference_shapes": [
+            [
+              1,
+              64,
+              72,
+              80,
+              312
+            ]
+          ]
+        },
+        "appearance_pool_interpolate_reference": {
+          "elements": 297123840,
+          "pooled_over_frames_mse": 0.11315878804902253,
+          "pooled_over_frames_nmse": 0.12754862622964938,
+          "pooled_over_frames_cosine": 0.9344262351224472,
+          "median_frame_nmse": 0.12979211822991493,
+          "median_frame_cosine": 0.9332274975659485,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              80,
+              312
+            ]
+          ]
+        }
+      }
+    },
+    "awgn": {
+      "Car_3d_AP_R40_percent": {
+        "Car_3d/easy_R40": 0.0,
+        "Car_3d/moderate_R40": 0.0,
+        "Car_3d/hard_R40": 0.0
+      },
+      "features": {
+        "cost": {
+          "elements": 42785832960,
+          "pooled_over_frames_mse": 0.4947670101937899,
+          "pooled_over_frames_nmse": 0.6182211176160336,
+          "pooled_over_frames_cosine": 0.6180713901304786,
+          "median_frame_nmse": 0.6212151866809537,
+          "median_frame_cosine": 0.6155934862907573,
+          "reference_shapes": [
+            [
+              1,
+              64,
+              72,
+              80,
+              312
+            ]
+          ]
+        },
+        "appearance": {
+          "elements": 297123840,
+          "pooled_over_frames_mse": 0.14826993413900721,
+          "pooled_over_frames_nmse": 0.16712468149091597,
+          "pooled_over_frames_cosine": 0.9128078679888327,
+          "median_frame_nmse": 0.1680941414508889,
+          "median_frame_cosine": 0.9123025064131609,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              80,
+              312
+            ]
+          ]
+        },
+        "cost_pool_interpolate_reference": {
+          "elements": 42785832960,
+          "pooled_over_frames_mse": 0.47414514883278996,
+          "pooled_over_frames_nmse": 0.5924536959503756,
+          "pooled_over_frames_cosine": 0.6391054424365133,
+          "median_frame_nmse": 0.5960424151829511,
+          "median_frame_cosine": 0.6363136913524491,
+          "reference_shapes": [
+            [
+              1,
+              64,
+              72,
+              80,
+              312
+            ]
+          ]
+        },
+        "appearance_pool_interpolate_reference": {
+          "elements": 297123840,
+          "pooled_over_frames_mse": 0.11315878804902253,
+          "pooled_over_frames_nmse": 0.12754862622964938,
+          "pooled_over_frames_cosine": 0.9344262351224472,
+          "median_frame_nmse": 0.12979211822991493,
+          "median_frame_cosine": 0.9332274975659485,
+          "reference_shapes": [
+            [
+              1,
+              32,
+              80,
+              312
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "interpretation": "Feature reconstruction improved after3340 updates but native3D AP remains zero under identity andAWGN10; no useful task transmission established. Pool/interpolation is diagnostic reference only.",
+  "launch_metadata_correction": "Incorrect hand-entered sanity commit label corrected from4db7e77 to8f23ba2; both launch records retained; no process/source/initialization change."
+}

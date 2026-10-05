@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.venv/
+third_party/
+data/kitti/
+*.pth
+*.pt
+*.zip
+*.tar*
+build/
+*.egg-info/
+.pytest_cache/
+assets/liga-native-001/liga-author-download
+data/engineering/artemis-full-detector-GPU-001/*.npz
+
+# Retained per-trial risk data; indexed by immutable report/proof SHA.
+data/**/ordered-receiver-*.paired/*.npz
+
+# Native LaTeX editor build intermediates; retain source and reviewable PDF.
+paper/*.aux
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.synctex.gz
+
+# Keep publication manifests; large raw artifacts remain external.
+results/*.tmp

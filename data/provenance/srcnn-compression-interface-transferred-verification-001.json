@@ -1,0 +1,45 @@
+{
+  "state": "passed_all_six_transferred_interface_records_and_complete_source_weight_identity",
+  "checked_unix": 1791151484.450884,
+  "sources": {
+    "experiments/original-paper-scenarios/srcnn-compression-interface-code/interface.py": "e1d2efcdc7f30c4863c7f84921d8a8e11e6c7cecd920ae102396949d7a2262d9",
+    "experiments/original-paper-scenarios/srcnn-compression-interface-code/check_cpu.py": "0f4b69e968da5d8f92e6766c7e1d573c5202c1b2deb7d8674f5fd9cb104b13e6",
+    "experiments/original-paper-scenarios/srcnn-compression-interface-protocol-001.md": "d7cc0a16b449b6a351e9aa6458681f4faadc9d07d4dd2988cde60f09b63a7d5c",
+    "experiments/original-paper-scenarios/srcnn-author-core-code/core.py": "40fbb09d52320f9b522d4361370400f6e604ab86f0bdba9484e022637e07cb67",
+    "experiments/original-paper-scenarios/srcnn-author-core-code/check_cpu.py": "e459ec63f734e1803705f020ccd5ee3cfeef2dceeff74689e85195ec70acbab8",
+    "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/SRCNN.m": "314887a5b0908411aa20eadbd62f0559ad40205dba3d1ddc103f2bec8c94d266",
+    "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/model/9-5-5(ImageNet)/x3.mat": "fa2ee366d328b942b971c80c24f48dc2b015d5ed4b5790070f720ccfb6ab1578"
+  },
+  "families_each_host": 4,
+  "views_each_host": 6,
+  "readonly_states": 6,
+  "reports_sha256": {
+    "data/engineering/srcnn-compression-interface-local-CPU-001.json": "1768b5b30c924979da0e0437a195f19939b16efe86c0944c88ae36b6080243c7",
+    "data/engineering/srcnn-compression-interface-sheng-CPU-001.json": "b6362bbd9b0c04a7264548882f6f1f6998adb6ab1adaef520c66c18581a8d36a"
+  },
+  "environments": {
+    "local": {
+      "Python": "3.12.8",
+      "NumPy": "2.4.4",
+      "Pillow": "12.2.0",
+      "Torch": "2.12.0"
+    },
+    "sheng": {
+      "Python": "3.10.15",
+      "NumPy": "1.26.3",
+      "Pillow": "10.2.0",
+      "Torch": "2.5.0+cu118"
+    }
+  },
+  "same_source_wire_hashes": [
+    true,
+    true,
+    true
+  ],
+  "same_cross_host_output_hashes": [
+    false,
+    false,
+    false
+  ],
+  "limitation": "Complete transferred synthetic records and source identity, no local native-byte/output replay, no MATLAB/full compression adaptation/KITTI training/AP"
+}

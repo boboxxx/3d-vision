@@ -1,0 +1,14 @@
+slurm_load_jobs error: Invalid job id specified
+Traceback (most recent call last):
+  File "/mnt/nfs2/engdes/wc296/paper6/data/provenance/close-cost-field-GPU-001.py", line 54, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/nfs2/engdes/wc296/paper6/data/provenance/close-cost-field-GPU-001.py", line 19, in main
+    queue=subprocess.check_output(['squeue','-h','-j','11424889','-o','%i %T %N'],text=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/its/home/wc296/miniconda3/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/its/home/wc296/miniconda3/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['squeue', '-h', '-j', '11424889', '-o', '%i %T %N']' returned non-zero exit status 1.

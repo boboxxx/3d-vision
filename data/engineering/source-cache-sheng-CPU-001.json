@@ -1,0 +1,33 @@
+{
+  "state": "passed",
+  "tests": 4,
+  "checked_unix": 1791147123.3163712,
+  "sources": {
+    "historical": {
+      "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+      "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+      "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+      "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+    },
+    "current": {
+      "experiments/original-paper-scenarios/source-cache-code/audit.py": "6406a041435bdb9cda489be5d4b109f93720740682dc26424b71a30a8d421c1f",
+      "experiments/original-paper-scenarios/source-cache-code/check_cpu.py": "03628bab20dbdd35a8c047c4c0a947dbfc07d4129c6c90ce60772f952e82ef78",
+      "experiments/original-paper-scenarios/source-cache-code/common.py": "e73c1c5022afedf75875e7249bf963664ad07d73a13a8fd3cb9fe4bfff486fd3",
+      "experiments/original-paper-scenarios/source-cache-code/encode.py": "c2516c6a174d497d0fcb84de510af269bb65d735c5b9fd783ebd2a2000cbce5c",
+      "experiments/original-paper-scenarios/source-cache-code/receive.py": "4dad57323e9a7ce797f507858070a0233b826198ca7d6cd8357997960375d662"
+    }
+  },
+  "predecessor": {
+    "data/runs/original-jpeg-rate-calibration-001.json": "ad41d390c7084a7279920cce7d881f327071630b3bf8852c65dbc88033379d62",
+    "data/provenance/original-jpeg-rate-calibration-001-audit.json": "e014bc8b45d172189eaaa43b7aeca7abb1cbdd1a34401fe59aa5ecca28dc5ecd",
+    "data/provenance/original-jpeg-rate-calibration-001-local-verification-001.json": "320570301851fbabd5024ee70253839c7bcdcad517b06e06248a326f773dcceb",
+    "data/engineering/original-scenarios-sheng-CPU-001.json": "64cadae456fcc2e0d94bc3c972d5e3a93275ae02acb0af20ca03969afc6ccb46"
+  },
+  "protocol_sha256": "84ec93430f9fdea3d1aacaaf6453cda81a8bfa5e247ed1cc39e535807e7d098e",
+  "families": [
+    "fixed_six_conditions_and_training_ids",
+    "received_HWC_uint8_schema",
+    "actual_fresh_process_PNG_GT_NPZ_read_barriers_and_memory_output",
+    "locked_closed_predecessor_source_identity_and_syntax"
+  ]
+}

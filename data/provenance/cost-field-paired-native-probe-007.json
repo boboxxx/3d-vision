@@ -1,0 +1,25 @@
+{
+  "state": "passed_fixed_all256_G_P_actual_waveform_pairs",
+  "seed": 17,
+  "paired_cases": 256,
+  "full_training_closed": false,
+  "AP_endpoint_closed": false,
+  "checked_records": 512,
+  "complete_selected_physical_array_values": 151756800,
+  "complex_uses": 15175680,
+  "max_errors": {
+    "baseband": 5.957689381830278e-07,
+    "ZF": 2.540855925303731e-05
+  },
+  "metadata": {
+    "seed": 17,
+    "count": 256,
+    "G_jsonl_sha256": "7ebd8ba880d3a821f968384faa7561f58279e043a49e68b8dcaedb1bc93123ae",
+    "sealed_proof_sha256": "8077dd1e98f39ac41c6327dec4ce0656230573acc16949e7b8b28d4ba3bf843d",
+    "verifier_sha256": "e8e9e0bea61bc4f5d35844c4b45f0a17221d9811f580afdcb7e35ba2677bffb9",
+    "base_verifier_sha256": "5b1e4e22fe70ade48e94fb0eeadd6d2ce883df38b1f8c00c3073dde49fa9863c"
+  },
+  "checked_record_ledger_sha256": "1827bafbf31a1ef4e692e1e215ca4a3c79598fdf01e63fda8aaa34015d6fbed7",
+  "checked_unix": 1791195356.9703503,
+  "limitation": "All five saved physical arrays for all fixed first256 G/P records; no independent gradient, complete training, validation, AP or method-superiority claim."
+}

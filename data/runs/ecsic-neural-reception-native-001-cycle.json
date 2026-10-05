@@ -1,0 +1,103 @@
+{
+  "state": "finished_all20_outcomes11_neural_crop_pairs_and_audit_pending_terminal_closure",
+  "prefix": "ecsic-neural-reception-native-001",
+  "pid": 261130,
+  "started_unix": 1791143945.7291732,
+  "sources": {
+    "historical": {
+      "experiments/original-paper-scenarios/digital-code/check_cpu.py": "49154a760dad70f30b1196936477b63aa31c1f04ccdf753d034c5481cd98e133",
+      "experiments/original-paper-scenarios/digital-code/transceiver.py": "75b55723e9b50459dc89cdaefaedbddb17a220cb50bc5c267d89686adf6238e3",
+      "experiments/original-paper-scenarios/framing-code/check_artemis.py": "7697e7823027878575c5cb0fd592bc13fd2ff6da95db457a76f75feb2d58ff69",
+      "experiments/original-paper-scenarios/framing-code/check_local.py": "b0a3af3e7392ecd4005b2bf90b9fcdb6ff5b3c932505d20a0fcef018219ecfb5",
+      "experiments/original-paper-scenarios/framing-code/receiver.py": "3502d5ceb88b34b67bbad773f32486ca5e45541cd4838c8ce7ffaa8facc26e51",
+      "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+      "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+      "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+      "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8",
+      "experiments/original-paper-scenarios/ecsic-entropy-code/cdf-u32le.bin": "507d22e35fb0bb605f05a3312600a8aff3ff10f1ec1c4964358cb390e35d56e5",
+      "experiments/original-paper-scenarios/ecsic-entropy-code/cdf.sha256": "7b9b459d9f1a337e2b9734c3586fdf4720231d5f15f103549ff84d9549723d59",
+      "experiments/original-paper-scenarios/ecsic-entropy-code/check_cpu.py": "5ab07f74993ad1e342deada8cc562e10483a89ce95696b7bae1940b0bbc526f3",
+      "experiments/original-paper-scenarios/ecsic-entropy-code/codec.py": "a22fb7717cd1e2a13e4539a74a541958e93a7f6b215ae960b9c2736ad53ec157",
+      "experiments/original-paper-scenarios/ecsic-entropy-code/native.py": "33dbb471f341f73e8179ac100544c238141020ffdfe80909051add819da812b5",
+      "experiments/original-paper-scenarios/ecsic-entropy-code/reference.cpp": "dcf5ab4588dc01ee01ac192d39dcc4677be75086ae9e9c24483e6fe1816485d0",
+      "experiments/original-paper-scenarios/ecsic-recovery-code/recover.py": "140c3e821b9e6d2a4bcb06df8fa1a3d67a34ae0c31dca72cea5bf1496908929e",
+      "experiments/original-paper-scenarios/ecsic-digital-code/README.md": "2cde20618f18e76f37cba77c58b8f59d2f3f5ed71c0220f875418abe2d093880",
+      "experiments/original-paper-scenarios/ecsic-digital-code/check_local.py": "e3545cd751e5dc9d3cb2f08af5ddc67ea3f1cb8dd6838642b09476e03d01d144",
+      "experiments/original-paper-scenarios/ecsic-digital-code/common.py": "1e071c0be80d4c0d41038ff575418a5e57412152324ea89410c8818652e53949",
+      "experiments/original-paper-scenarios/ecsic-digital-code/engineering-001.sbatch": "1ea5e9cb01ce4ec9777f26996e3648341229472a925c6381f15a3ae58acbe6f4",
+      "experiments/original-paper-scenarios/ecsic-digital-code/historical-source-sha256.json": "e1192951b49d0fc7e1b1ad6381bf7f10ad0ceff0c4b91c2fa348d6d69b994929",
+      "experiments/original-paper-scenarios/ecsic-digital-code/receiver.py": "e3855737cce12807596e88c041dd8c6f003682d81cb412e5f21424c040293fe0",
+      "experiments/original-paper-scenarios/ecsic-digital-code/run_artemis.py": "f7a312d2d0059de1b532807c14db8f94989d7e3b81844d909197884fec9d7103",
+      "experiments/original-paper-scenarios/ecsic-digital-protocol-001.md": "da3c6a000af96628d954bbcdd2af8cce8343c3b7d66d731ceb9d5731af54208a"
+    },
+    "current": {
+      "experiments/original-paper-scenarios/ecsic-neural-reception-code/audit.py": "365386fae7f2fc45dbc300461713d336098e99c5220124e8d9c74e16ca6023fc",
+      "experiments/original-paper-scenarios/ecsic-neural-reception-code/check_cpu.py": "39b5c9bfee94085064a5181d089e04eb36ffef9cd68efdae27c35e02e63bb840",
+      "experiments/original-paper-scenarios/ecsic-neural-reception-code/contract.py": "1ef8f435c5d5901291b046df8d4cbe73cd5dd38c162f5101d8ca54886e4f5b0a",
+      "experiments/original-paper-scenarios/ecsic-neural-reception-code/crop.py": "69a01cbbe649fc0d859cb6b232a8ba60af5a8d1c8320a07fdba700ecdb575bc5",
+      "experiments/original-paper-scenarios/ecsic-neural-reception-code/run.py": "12fc1b1783e595719f176501fdfca92adec34e55eca440468a13dbd534cbc4b1"
+    }
+  },
+  "predecessor": {
+    "locked_evidence_sha256": {
+      "experiments/original-paper-scenarios/ecsic-neural-reception-protocol-001.md": "61034c2453e6d80671d5fff63774777b260e74f2ce11ea2ffa95092415ec5c4a",
+      "data/engineering/artemis-ecsic-digital-CPU-001.json": "f265c56a7fdcc3e98fde0ff580758479aa50036d4b474fa949ec7cbc605227d3",
+      "data/provenance/ecsic-received-transfer-index-001.json": "d5026b31126e90035017890028b2e1daf4b12776c28e6971b8a90f755b6fc6de",
+      "data/provenance/ecsic-digital-CPU-001-audit.json": "05d75ce7170697218776308d60b0d17b328e5d42f16379fed6b40a09135bf928",
+      "data/provenance/artemis-ecsic-digital-CPU-001-terminal.json": "c186a53680f529a6e384d73ae01f38af818d9299c7edf4402b5acd20df70f191",
+      "data/provenance/artemis-ecsic-digital-audit-terminal-001.json": "7f7298d25d9c1ad737fcfcf42b0a6b240c9666e0b044d1f7b92d35a3b3cb4e03",
+      "data/provenance/ecsic-digital-transferred-verification-001.json": "48ba48f1127bca9a631347ab4be2f9b123156580f2468421e8471f982ab3099e"
+    },
+    "transfer_proofs_sha256": {
+      "ecsic-received-artemis-fresh-001.json": "c50b7fe16ae922e2b2bed84f674ced01f4fb8e8bcffe6a9d985403e16e8e6c33",
+      "ecsic-received-local-transfer-001.json": "85b9132e188b39e403fb4b4db1d65f682a3857c8c5261e262229b7c6f4d30f7f",
+      "ecsic-received-sheng-transfer-001.json": "30cc449d9ae716bad3859a2f5e0fcf78bae4d43a71185d3890404e1a20ba95d3"
+    },
+    "received_files_sha256": {
+      "data/engineering/artemis-ecsic-digital-CPU-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10-received.p6sb": "56809fd87f175f073249095b113ecdfbf1533f5f41faa5af33f5e9dbe91d089d",
+      "data/engineering/artemis-ecsic-digital-CPU-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10-received.p6ec": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f",
+      "data/engineering/artemis-ecsic-digital-CPU-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18-received.p6sb": "56809fd87f175f073249095b113ecdfbf1533f5f41faa5af33f5e9dbe91d089d",
+      "data/engineering/artemis-ecsic-digital-CPU-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18-received.p6ec": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f",
+      "data/engineering/artemis-ecsic-digital-CPU-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18-received.p6sb": "56809fd87f175f073249095b113ecdfbf1533f5f41faa5af33f5e9dbe91d089d",
+      "data/engineering/artemis-ecsic-digital-CPU-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18-received.p6ec": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f",
+      "data/engineering/artemis-ecsic-digital-CPU-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10-received.p6sb": "56809fd87f175f073249095b113ecdfbf1533f5f41faa5af33f5e9dbe91d089d",
+      "data/engineering/artemis-ecsic-digital-CPU-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10-received.p6ec": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f",
+      "data/engineering/artemis-ecsic-digital-CPU-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18-received.p6sb": "56809fd87f175f073249095b113ecdfbf1533f5f41faa5af33f5e9dbe91d089d",
+      "data/engineering/artemis-ecsic-digital-CPU-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18-received.p6ec": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f",
+      "data/engineering/artemis-ecsic-digital-CPU-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18-received.p6sb": "56809fd87f175f073249095b113ecdfbf1533f5f41faa5af33f5e9dbe91d089d",
+      "data/engineering/artemis-ecsic-digital-CPU-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18-received.p6ec": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f",
+      "data/engineering/artemis-ecsic-digital-CPU-001/10-training000000-ldpc_2_3_qam64-identity-10-received.p6sb": "e1fa359f6342fc01741d6a5fd04783add4ac5a6c7368f9892d7e9ca7e2d0f6d1",
+      "data/engineering/artemis-ecsic-digital-CPU-001/10-training000000-ldpc_2_3_qam64-identity-10-received.p6ec": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a",
+      "data/engineering/artemis-ecsic-digital-CPU-001/12-training000000-ldpc_2_3_qam64-awgn-18-received.p6sb": "e1fa359f6342fc01741d6a5fd04783add4ac5a6c7368f9892d7e9ca7e2d0f6d1",
+      "data/engineering/artemis-ecsic-digital-CPU-001/12-training000000-ldpc_2_3_qam64-awgn-18-received.p6ec": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a",
+      "data/engineering/artemis-ecsic-digital-CPU-001/14-training000000-ldpc_2_3_qam64-rayleigh-18-received.p6sb": "e1fa359f6342fc01741d6a5fd04783add4ac5a6c7368f9892d7e9ca7e2d0f6d1",
+      "data/engineering/artemis-ecsic-digital-CPU-001/14-training000000-ldpc_2_3_qam64-rayleigh-18-received.p6ec": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a",
+      "data/engineering/artemis-ecsic-digital-CPU-001/15-training000000-ldpc_1_2_qam256-identity-10-received.p6sb": "e1fa359f6342fc01741d6a5fd04783add4ac5a6c7368f9892d7e9ca7e2d0f6d1",
+      "data/engineering/artemis-ecsic-digital-CPU-001/15-training000000-ldpc_1_2_qam256-identity-10-received.p6ec": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a",
+      "data/engineering/artemis-ecsic-digital-CPU-001/17-training000000-ldpc_1_2_qam256-awgn-18-received.p6sb": "e1fa359f6342fc01741d6a5fd04783add4ac5a6c7368f9892d7e9ca7e2d0f6d1",
+      "data/engineering/artemis-ecsic-digital-CPU-001/17-training000000-ldpc_1_2_qam256-awgn-18-received.p6ec": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a"
+    }
+  },
+  "completed_commands": [
+    {
+      "label": "neural-crop",
+      "pid": 261140,
+      "returncode": 0,
+      "log_path": "logs/ecsic-neural-reception-native-001-neural-crop.log",
+      "log_sha256": "0024b7a6547205a537263b05e4590ff976df96b6c97a71f888a2cd049ed6d99c"
+    },
+    {
+      "label": "independent-audit",
+      "pid": 261607,
+      "returncode": 0,
+      "log_path": "logs/ecsic-neural-reception-native-001-independent-audit.log",
+      "log_sha256": "c316ef7e8f9d4cf284b668b322db8b10e97ec47096cef5ba11c2e9bcdbe1f15e"
+    }
+  ],
+  "no_new_channel_draws": true,
+  "no_GPU_or_KITTI_AP": true,
+  "output_dir": "/mnt/d/paper6/runs/ecsic-neural-reception-native-001",
+  "ended_unix": 1791144050.8566012,
+  "audit_sha256": "013a1a4abd99dd840e3749b2495292f8d126bebcf202508f7cc3e089f9a7f217",
+  "manifest_sha256": "2132577c8f2c64d2f7320df5dd5b6bf260a21ba85b7827886e74ff1fe765f029"
+}

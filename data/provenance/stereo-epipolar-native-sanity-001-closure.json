@@ -1,0 +1,161 @@
+{
+  "state": "closed_all_four_engineering_audits_actual_terminal",
+  "prefix": "stereo-epipolar-native-sanity-001",
+  "checked_unix": 1791139090.7989063,
+  "actual_terminal": true,
+  "actual_ps": "    PID STAT     ELAPSED COMMAND\n",
+  "ps_returncode": 1,
+  "cycle_pid": 255389,
+  "engineering_updates_per_arm": 6,
+  "actual_training_records": 24,
+  "arms": {
+    "U": {
+      "selected": 51,
+      "fixed": 488,
+      "empty_GT": 1,
+      "peak_reserved_GiB": 7.33203125,
+      "sender_profile": {
+        "scope": "first_actual_step_from_sender_backbone_entry_to_channel_input",
+        "wall_seconds": 0.580301096997573,
+        "cuda_elapsed_ms": 571.4631958007812,
+        "student_parameters": 13904,
+        "source_codec_parameters": 2442,
+        "new_head_parameters": 561,
+        "new_head_executed": false,
+        "correspondence_executed": false,
+        "correspondence_candidate_shifts_per_direction": 0,
+        "limitations": "Cold first actual forward with audits/profiling; no warm deployment-latency or complete-FLOPs claim.",
+        "operator_FLOPs_lower_bound": 5428903685,
+        "profiler_trace_path": "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-U/first-actual-step-profile.json",
+        "profiler_trace_sha256": "0ea74d1f993e8b9509a4910e102792b77195d294cf3e0a11f9fa4626315320bb",
+        "recorded_sender_events": 2554,
+        "FLOPs_scope": "PyTorch-supported operators within F9_sender only; matching/reductions and unsupported operators may be omitted"
+      }
+    },
+    "G": {
+      "selected": 55,
+      "fixed": 484,
+      "empty_GT": 1,
+      "peak_reserved_GiB": 7.333984375,
+      "sender_profile": {
+        "scope": "first_actual_step_from_sender_backbone_entry_to_channel_input",
+        "wall_seconds": 0.4931409309938317,
+        "cuda_elapsed_ms": 492.3772277832031,
+        "student_parameters": 13904,
+        "source_codec_parameters": 2442,
+        "new_head_parameters": 561,
+        "new_head_executed": true,
+        "correspondence_executed": false,
+        "correspondence_candidate_shifts_per_direction": 0,
+        "limitations": "Cold first actual forward with audits/profiling; no warm deployment-latency or complete-FLOPs claim.",
+        "operator_FLOPs_lower_bound": 5429091661,
+        "profiler_trace_path": "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-G/first-actual-step-profile.json",
+        "profiler_trace_sha256": "0b84a29d086a92223245088c56f5d1c2f72c7bf9071b687f1b76309866c09ed6",
+        "recorded_sender_events": 3572,
+        "FLOPs_scope": "PyTorch-supported operators within F9_sender only; matching/reductions and unsupported operators may be omitted"
+      }
+    },
+    "P": {
+      "selected": 55,
+      "fixed": 484,
+      "empty_GT": 1,
+      "peak_reserved_GiB": 7.41015625,
+      "sender_profile": {
+        "scope": "first_actual_step_from_sender_backbone_entry_to_channel_input",
+        "wall_seconds": 0.5167376870085718,
+        "cuda_elapsed_ms": 515.83154296875,
+        "student_parameters": 13904,
+        "source_codec_parameters": 2442,
+        "new_head_parameters": 561,
+        "new_head_executed": true,
+        "correspondence_executed": true,
+        "correspondence_candidate_shifts_per_direction": 49,
+        "limitations": "Cold first actual forward with audits/profiling; no warm deployment-latency or complete-FLOPs claim.",
+        "operator_FLOPs_lower_bound": 5490887055,
+        "profiler_trace_path": "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-P/first-actual-step-profile.json",
+        "profiler_trace_sha256": "617267fb2c1f9090df92750e9ccdbe959e144764cbb4911cb184ab89715d6b8a",
+        "recorded_sender_events": 6327,
+        "FLOPs_scope": "PyTorch-supported operators within F9_sender only; matching/reductions and unsupported operators may be omitted"
+      }
+    },
+    "S": {
+      "selected": 55,
+      "fixed": 484,
+      "empty_GT": 1,
+      "peak_reserved_GiB": 7.41015625,
+      "sender_profile": {
+        "scope": "first_actual_step_from_sender_backbone_entry_to_channel_input",
+        "wall_seconds": 0.5373912139912136,
+        "cuda_elapsed_ms": 536.7113037109375,
+        "student_parameters": 13904,
+        "source_codec_parameters": 2442,
+        "new_head_parameters": 561,
+        "new_head_executed": true,
+        "correspondence_executed": true,
+        "correspondence_candidate_shifts_per_direction": 49,
+        "limitations": "Cold first actual forward with audits/profiling; no warm deployment-latency or complete-FLOPs claim.",
+        "operator_FLOPs_lower_bound": 5490887055,
+        "profiler_trace_path": "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-S/first-actual-step-profile.json",
+        "profiler_trace_sha256": "c2f0832862a9b9b71b891b997711bbdb36fcd15f761cd36b0e5de8cd7ace655e",
+        "recorded_sender_events": 6361,
+        "FLOPs_scope": "PyTorch-supported operators within F9_sender only; matching/reductions and unsupported operators may be omitted"
+      }
+    }
+  },
+  "source_manifest_sha256": "408b14067ab51385656faa5bd00b37565b6ec35b50ca2ea722d87367283cebfa",
+  "paired_audit_sha256": "f420bd9b0796be52164f52409cd2f540a14eca6b6f78d9ffd888bc7ea6c459ee",
+  "artifacts_sha256": {
+    "data/engineering/F9-coupling-sheng-CPU-001.json": "43151f1388b5538cf8fe379f9e042cbec056a5984bf82a819015efaf3ba35e5a",
+    "data/engineering/F9-training-sheng-CPU-001.json": "cba14c3ebd780e7010e7f3d71d639da374c72e5da29b1008683440eeae743feb",
+    "data/provenance/server-source-manifest-stereo-epipolar-native-sanity-001.json": "408b14067ab51385656faa5bd00b37565b6ec35b50ca2ea722d87367283cebfa",
+    "data/runs/stereo-epipolar-native-sanity-001-G-training-audit.json": "74ec5911da1cb9c9c1416c92213443efe2b53cbb26c20df5eda8e79bb5ecc9bf",
+    "data/runs/stereo-epipolar-native-sanity-001-G-training-audit.records/training.jsonl": "0c0ee3fdd7c49896604c202a2deed6e04dbf19e20413c7d73b221a3a9644e3be",
+    "data/runs/stereo-epipolar-native-sanity-001-G.json": "a03cac03fc92a1afc8da54e01f091b09647bc09dc40ddc4669085e7788481424",
+    "data/runs/stereo-epipolar-native-sanity-001-P-training-audit.json": "71da2e36b4799203a5ee2e594f77cdaad56cfa68c62007d1c03893cf3713de05",
+    "data/runs/stereo-epipolar-native-sanity-001-P-training-audit.records/training.jsonl": "54e87bea72f4edf3046e20e4d8b981ce7cec476b062a073985b7aa818b8db441",
+    "data/runs/stereo-epipolar-native-sanity-001-P.json": "95cae044c534ad37baf6396ce86e1b0940f5d210252cf8430fe09ef03c7f1686",
+    "data/runs/stereo-epipolar-native-sanity-001-S-training-audit.json": "41a725bc10eec27b8e4c3f5670dbc5781e7985a1e581020f2660b6d4e9fe8f98",
+    "data/runs/stereo-epipolar-native-sanity-001-S-training-audit.records/training.jsonl": "bb96b54398c43a5eca662a7a55c8189d390b82e640ba0669937f5e0d32919855",
+    "data/runs/stereo-epipolar-native-sanity-001-S.json": "f28bf847afbe4b9618806ea62e617fe222a5514eaa6db6f6cf8d25033ffc1d76",
+    "data/runs/stereo-epipolar-native-sanity-001-U-training-audit.json": "3965228c2947e0cbc25e5162e29e90aa970d337c3d2939dfeb250053ef1d2ceb",
+    "data/runs/stereo-epipolar-native-sanity-001-U-training-audit.records/training.jsonl": "6b985400d85f91ee00f62ae570069c523bc31032a42f486ff8f8b7234288ad6d",
+    "data/runs/stereo-epipolar-native-sanity-001-U.json": "000378e5ea67c2e6450b85981fff351bec0e2fa432c62875b03cd0ed2652744d",
+    "data/runs/stereo-epipolar-native-sanity-001-cycle.json": "b4e8adb820dc8bb2651d6ae18e5eef6713ad38870b81e84fcdca751605d5fd7e",
+    "data/runs/stereo-epipolar-native-sanity-001-launch.json": "6b1fb98cc28984ef6a2b38da6c864e10db48b2cb6855a5412f7b5cf4dda3ca56",
+    "data/runs/stereo-epipolar-native-sanity-001-pair-audit.json": "f420bd9b0796be52164f52409cd2f540a14eca6b6f78d9ffd888bc7ea6c459ee",
+    "logs/stereo-epipolar-native-sanity-001-G-audit.log": "8de4806a835bba7ee3c9c217b6df78fbab44725cbbf7602f63194a1ded953dc1",
+    "logs/stereo-epipolar-native-sanity-001-G-train.log": "5aa5b4b6d3acb86f9a81886998a80ee20fc277dc03df6a49e6e0a58fcabb467f",
+    "logs/stereo-epipolar-native-sanity-001-P-audit.log": "8b72df938dec00709f5c909c36e1e1d5ff45dfd970280a515a892f5cd5d0c3fa",
+    "logs/stereo-epipolar-native-sanity-001-P-train.log": "b3f477d62f3739e9548cdffd075b96a817ca9d7846137caf1fbf1da1d55b5400",
+    "logs/stereo-epipolar-native-sanity-001-S-audit.log": "5205b19f4e521698d039e0acb7d264ccb7c7ff13550a8c4119ffbc79dc9b50fd",
+    "logs/stereo-epipolar-native-sanity-001-S-train.log": "1e8543cb257aa53d0f3e64af4693f81f040974b77fa4a4b3df59a74e1a2d4e9e",
+    "logs/stereo-epipolar-native-sanity-001-U-audit.log": "953bf413afa139837ad9ad4e9a03e048db2b7504a18c9dcc9e4f612e4fb1e063",
+    "logs/stereo-epipolar-native-sanity-001-U-train.log": "63062577aa9db316c5cfcdc9d24c07796bd2c73fe35176ba50f95148e6cc212d",
+    "logs/stereo-epipolar-native-sanity-001-controller.log": "28a032a951444a9c4886e4f30a2bf15076c3988d290301f36b53173b89242fdf"
+  },
+  "native_large_sha256": {
+    "U": {
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-U/checkpoint_sanity.pth": "ee1d88d380db2b9a7b3e3c7a4e863e33ff6fce382e6f65722548df83c9e17b2f",
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-U/initialization.pth": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-U/first-actual-step-profile.json": "0ea74d1f993e8b9509a4910e102792b77195d294cf3e0a11f9fa4626315320bb"
+    },
+    "G": {
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-G/checkpoint_sanity.pth": "200defff8ba99b6c0f71fcd7974b0759b9f1d150087c35f2e45dbb978afc0e2f",
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-G/initialization.pth": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-G/first-actual-step-profile.json": "0b84a29d086a92223245088c56f5d1c2f72c7bf9071b687f1b76309866c09ed6"
+    },
+    "P": {
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-P/checkpoint_sanity.pth": "01d879e3bcb5b38561f0a2fb66faaeb0c163504c0236cbad5214412ee92769d8",
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-P/initialization.pth": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-P/first-actual-step-profile.json": "617267fb2c1f9090df92750e9ccdbe959e144764cbb4911cb184ab89715d6b8a"
+    },
+    "S": {
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-S/checkpoint_sanity.pth": "d61ab8cb57ab268ca91a5c7b45035cf9f6a00d3efd75e67b728607ebd18718e5",
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-S/initialization.pth": "fbb0716e27bcd20a632eaadf434083a89e1a1472beb45a560e4520cafaa960cf",
+      "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-S/first-actual-step-profile.json": "c2f0832862a9b9b71b891b997711bbdb36fcd15f761cd36b0e5de8cd7ace655e"
+    }
+  },
+  "formal_AP_started": false,
+  "engineering_weights_excluded_from_formal_parent": true,
+  "scope": "Post-terminal full native saved-state/Adam/input-noise/record/source closure; no AP or project completion."
+}

@@ -1,0 +1,86 @@
+{
+  "state": "finished_full_dataset_and_three_seed_training_dispatched_pending_full_closure",
+  "pid": 37826,
+  "phase": "submit_paper6-cost-full-004",
+  "started_unix": 1791186690.558231,
+  "optimizer_gate_sha256": "fcb5a8581edb68e929dca02fe4d52a69b1c83f50e64f7623789dae02874a2f20",
+  "stages": [
+    {
+      "name": "transfer_whole_dataset_manifest",
+      "returncode": 0,
+      "log": "logs/cost-field-full-launch-004-transfer_whole_dataset_manifest.log",
+      "sha256": "9d5e24ac334712ce2f0481c54f01799459eebcefa907dc25c7324d34c68fb7d0"
+    },
+    {
+      "name": "commit_full_input_lock",
+      "returncode": 0,
+      "log": "logs/cost-field-full-launch-004-commit_full_input_lock.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "seal_full_input_lock",
+      "returncode": 0,
+      "log": "logs/cost-field-full-launch-004-seal_full_input_lock.log",
+      "sha256": "a901a412f944b155722c2f028f486d67e6c26c0b7b2f9ad1c33c7a3aac37f353"
+    },
+    {
+      "name": "stage_full_training",
+      "returncode": 0,
+      "log": "logs/cost-field-full-launch-004-stage_full_training.log",
+      "sha256": "9d5e24ac334712ce2f0481c54f01799459eebcefa907dc25c7324d34c68fb7d0"
+    },
+    {
+      "name": "prelaunch_paper6-cost-full-17-004",
+      "returncode": 0,
+      "log": "logs/cost-field-full-launch-004-prelaunch_paper6-cost-full-17-004.log",
+      "sha256": "64775eb686f14784ece98206b308c6c1de8c44902446ee24cd46787f8e277473"
+    },
+    {
+      "name": "submit_paper6-cost-full-17-004",
+      "returncode": 0,
+      "log": "logs/cost-field-full-launch-004-submit_paper6-cost-full-17-004.log",
+      "sha256": "0e1412fc7b01e1c33b74af1800c56fafa1258f9cb5ba74bd226a77fca339d1e6"
+    },
+    {
+      "name": "prelaunch_paper6-cost-full-004",
+      "returncode": 0,
+      "log": "logs/cost-field-full-launch-004-prelaunch_paper6-cost-full-004.log",
+      "sha256": "64775eb686f14784ece98206b308c6c1de8c44902446ee24cd46787f8e277473"
+    },
+    {
+      "name": "submit_paper6-cost-full-004",
+      "returncode": 0,
+      "log": "logs/cost-field-full-launch-004-submit_paper6-cost-full-004.log",
+      "sha256": "18c001cdce39ca6816e573936f8db30aee77477fd407b68da6ae191aaa556641"
+    }
+  ],
+  "last_dataset_observation": {
+    "state": "complete",
+    "sha256": "ecf1f0e41de5757bd438b2a73252dc999eed80fa9828270beff342ccf6ea1310",
+    "files": 29924,
+    "bytes": 12175258741
+  },
+  "submission_intent": {
+    "job_name": "paper6-cost-full-004",
+    "script": "experiments/cost-field/GPU-full-23-41-004.sbatch"
+  },
+  "seed17_job": "11424939",
+  "last_actual_full_training": {
+    "state": "running_full_split_task_training",
+    "updates": 86,
+    "job_id": "11424939",
+    "last_update": {
+      "arm": "G",
+      "epoch": 1,
+      "index": 85,
+      "step": 85,
+      "frame": "004607",
+      "loss": 2.9359166622161865,
+      "complex_uses": 29640
+    },
+    "traceback": null,
+    "queue": "11424939 RUNNING paper6-cost-full-17-004\n"
+  },
+  "seed23_41_array_job": "11424940",
+  "ended_unix": 1791187002.4785018
+}

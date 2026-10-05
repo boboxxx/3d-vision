@@ -1,0 +1,51 @@
+{
+  "state": "live_readonly_snapshot",
+  "prefix": "stereo-epipolar-native-seed17-001",
+  "checked_unix": 1791145351.6152084,
+  "pid": 260096,
+  "actual_ps": "    PID STAT     ELAPSED COMMAND\n 260096 Ssl        51:34 python experiments/geometry-link/F9/evaluation/formal_cycle.py --prefix stereo-epipolar-native-seed17-001\n",
+  "ps_returncode": 0,
+  "cycle_state": "running",
+  "cycle_sha256": "e7728a52782695928881baba75acc19e425f04ea5cd5fc674cd39b6c576a82c3",
+  "current_stage": "training",
+  "current_arm": "S",
+  "complete_commands": 6,
+  "completed_endpoints": [],
+  "training": {
+    "U": {
+      "state": "finished",
+      "manifest_sha256": "9a69f8a611fb0c2d27354ec8f8427a92c4db84d51d7f89270cdb96acbef49701",
+      "reported_optimizer_steps": 3340,
+      "complete_raw_rows": 3340,
+      "last_actual_completed_step": 3340,
+      "incomplete_trailing_record": false
+    },
+    "G": {
+      "state": "finished",
+      "manifest_sha256": "e1b4d13196030f6b09e395c518df89415df2457435b6e9ca15dc6021f41d3d6f",
+      "reported_optimizer_steps": 3340,
+      "complete_raw_rows": 3340,
+      "last_actual_completed_step": 3340,
+      "incomplete_trailing_record": false
+    },
+    "P": {
+      "state": "finished",
+      "manifest_sha256": "6d9f0758fe5bef5e09413b09643bb5ea9a295d4121589d841962a0b587c4791b",
+      "reported_optimizer_steps": 3340,
+      "complete_raw_rows": 3340,
+      "last_actual_completed_step": 3340,
+      "incomplete_trailing_record": false
+    },
+    "S": {
+      "state": "training",
+      "manifest_sha256": "5e04638db709eb26cfc18a72ce22f960fa562a94ba2f5be9bd861bb803ca31b3",
+      "reported_optimizer_steps": 2300,
+      "complete_raw_rows": 2352,
+      "last_actual_completed_step": 2352,
+      "incomplete_trailing_record": false
+    }
+  },
+  "eight_tree_sources_match": true,
+  "NVIDIA_memory": "9712 MiB, 24564 MiB",
+  "scope": "Live progress only; incomplete runs are not final results, no AP interpretation or restart"
+}

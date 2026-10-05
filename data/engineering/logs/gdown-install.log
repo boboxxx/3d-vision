@@ -1,0 +1,15 @@
+Requirement already satisfied: gdown in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (6.1.0)
+Requirement already satisfied: requests[socks] in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from gdown) (2.32.3)
+Requirement already satisfied: tqdm in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from gdown) (4.66.5)
+Requirement already satisfied: beautifulsoup4 in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from gdown) (4.15.0)
+Requirement already satisfied: filelock in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from gdown) (3.13.1)
+Requirement already satisfied: typing-extensions>=4.0 in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from gdown) (4.9.0)
+Requirement already satisfied: soupsieve>=1.6.1 in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from beautifulsoup4->gdown) (2.9.1)
+Requirement already satisfied: idna<4,>=2.5 in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from requests[socks]->gdown) (3.10)
+Requirement already satisfied: certifi>=2017.4.17 in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from requests[socks]->gdown) (2024.8.30)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from requests[socks]->gdown) (3.4.0)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from requests[socks]->gdown) (2.2.3)
+Requirement already satisfied: PySocks!=1.5.7,>=1.5.6 in ./anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from requests[socks]->gdown) (1.7.1)
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: /home/sheng/paper6/.venv/bin/python -m pip install --upgrade pip

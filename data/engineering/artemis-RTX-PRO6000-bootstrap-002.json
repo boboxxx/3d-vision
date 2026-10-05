@@ -1,0 +1,66 @@
+{
+  "state": "hardware_and_tensor_probe_passed",
+  "scope": "GPU_bootstrap_only_no_training_AP",
+  "started_at_unix": 1791110618.8522162,
+  "hostname": "artemis-rtx-03.local",
+  "slurm": {
+    "SLURM_JOB_ID": "11423898",
+    "SLURM_JOB_PARTITION": "enginf",
+    "SLURM_JOB_ACCOUNT": "engdes",
+    "SLURM_STEP_ID": "0",
+    "SLURM_JOB_GPUS": "0",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "SLURM_CPUS_PER_TASK": "8"
+  },
+  "sources": {
+    "bootstrap.sbatch": "36f8558186bdad818f98378f20bfa00a6c0c7c3bf3a63c67b309cc6d56596ec4",
+    "probe.py": "ee45226eaad44cfc4ab893d393278f708a8d2827328d663130939b35912c11af",
+    "protocol.md": "8219c9ce1619d013a81d6b72883939046bdb15c60ce6ea35d02939178bff7f44",
+    "runtime-probe-002.sbatch": "28530a33fdfa4c2ece2d84b9b5c6ec3234cfb9740bc974a64c67e2f8df024b54",
+    "runtime-protocol-001.md": "2f912d99245e8f3e6347844b62cf3618f834b265d658d4bc3209c2cfb08774dd",
+    "setup-runtime-001.sbatch": "e2e37f0817e1238cf0ddbaa76fea06691041cc6c07de51a0ce2129cc3d31ec1a",
+    "setup_runtime.py": "fc20d2b3a657d6051829b663a0e2ecc2d9001c3c40be499c6c6df581b7496867"
+  },
+  "Python": "3.12.8",
+  "GPU_products": [
+    {
+      "index": "0",
+      "uuid": "GPU-badb730f-cae3-8429-717d-89d0f06e10f0",
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "memory_MiB": 97887,
+      "driver": "610.57.04"
+    }
+  ],
+  "allocated_GPU": {
+    "index": "0",
+    "uuid": "GPU-badb730f-cae3-8429-717d-89d0f06e10f0",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "memory_MiB": 97887,
+    "driver": "610.57.04"
+  },
+  "hardware_verified": true,
+  "GPU_tensor_probe_passed": true,
+  "PyTorch": "2.7.1+cu128",
+  "torch_CUDA": "12.8",
+  "torch_GPU": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "major": 12,
+    "minor": 0,
+    "total_memory": 102016548864
+  },
+  "torch_compiled_archs": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120",
+    "compute_120"
+  ],
+  "probe_losses": [
+    258.0948486328125,
+    0.29508399963378906
+  ],
+  "peak_allocated_bytes": 18547200,
+  "finished_at_unix": 1791110625.7935827
+}

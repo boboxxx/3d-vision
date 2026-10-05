@@ -1,0 +1,296 @@
+{
+  "state": "passed",
+  "evidence_type": "saved_training_scalars_only",
+  "training_run_state": "finished",
+  "completed_evidence_steps": 3340,
+  "manifest_sha256": "faefe4feeb8e372f0b5e02bef3a9d53908eaec162dcadd5974443fced1a24075",
+  "event_files": {
+    "data/runs/frozen-student-uniform-seed17-001-scalar-audit.events/events.out.tfevents.1791065311.DESKTOP-UGDDO8T": {
+      "bytes": 6355587,
+      "sha256": "47ef01efaf906bf3f1a788ebae25d3b698d86939d667be3a8951325b29906aae"
+    }
+  },
+  "scalars": {
+    "meta_data/learning_rate": {
+      "unique_steps": 3341,
+      "first_step": 0,
+      "last_step": 3340,
+      "min": 9.999999747378752e-05,
+      "max": 9.999999747378752e-05,
+      "first_window_median": 9.999999747378752e-05,
+      "last_window_median": 9.999999747378752e-05,
+      "window_steps": 100
+    },
+    "train/loss": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 6.382320404052734,
+      "max": 24.134042739868164,
+      "first_window_median": 13.189355850219727,
+      "last_window_median": 9.397646427154541,
+      "window_steps": 100
+    },
+    "train/loss_rpn": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0004992447793483734,
+      "max": 11.26144790649414,
+      "first_window_median": 4.105954647064209,
+      "last_window_median": 3.116776466369629,
+      "window_steps": 100
+    },
+    "train/loss_depth": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 3.0259931087493896,
+      "max": 13.443721771240234,
+      "first_window_median": 5.167821407318115,
+      "last_window_median": 3.9119925498962402,
+      "window_steps": 100
+    },
+    "train/rpn_loss_cls": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0004992447793483734,
+      "max": 2.288858413696289,
+      "first_window_median": 1.6393629312515259,
+      "last_window_median": 0.9673289656639099,
+      "window_steps": 100
+    },
+    "rpn3d_cls_loss": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0004992447793483734,
+      "max": 2.288858413696289,
+      "first_window_median": 1.6393629312515259,
+      "last_window_median": 0.9673289656639099,
+      "window_steps": 100
+    },
+    "train/rpn_loss_loc": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0,
+      "max": 0.8778975605964661,
+      "first_window_median": 0.2585901468992233,
+      "last_window_median": 0.1757960096001625,
+      "window_steps": 100
+    },
+    "rpn3d_reg_loss": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0,
+      "max": 0.8778975605964661,
+      "first_window_median": 0.2585901468992233,
+      "last_window_median": 0.1757960096001625,
+      "window_steps": 100
+    },
+    "train/rpn_loss_iou": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0,
+      "max": 0.9913101196289062,
+      "first_window_median": 0.5310217142105103,
+      "last_window_median": 0.4479672610759735,
+      "window_steps": 100
+    },
+    "train/rpn_loss_dir": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0,
+      "max": 1.3969194889068604,
+      "first_window_median": 0.1966581717133522,
+      "last_window_median": 0.10995457321405411,
+      "window_steps": 100
+    },
+    "train/rpn_loss_imitation_spatial_features_2d": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0,
+      "max": 3.3637912273406982,
+      "first_window_median": 0.40815161168575287,
+      "last_window_median": 0.42552563548088074,
+      "window_steps": 100
+    },
+    "train/rel_err_imitation_feature_spatial_features_2d": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0,
+      "max": 0.9192681312561035,
+      "first_window_median": 0.5646741986274719,
+      "last_window_median": 0.5825167298316956,
+      "window_steps": 100
+    },
+    "train/rpn_loss_imitation_volume_features": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0,
+      "max": 7.513913631439209,
+      "first_window_median": 0.8633460998535156,
+      "last_window_median": 0.8627782762050629,
+      "window_steps": 100
+    },
+    "train/rel_err_imitation_feature_volume_features": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0,
+      "max": 1.2483969926834106,
+      "first_window_median": 1.0485041737556458,
+      "last_window_median": 1.067207932472229,
+      "window_steps": 100
+    },
+    "train/rpn_loss": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.0004992447793483734,
+      "max": 11.26144790649414,
+      "first_window_median": 4.105954647064209,
+      "last_window_median": 3.116776466369629,
+      "window_steps": 100
+    },
+    "train/loss_depth_0_ce": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 3.0259931087493896,
+      "max": 13.443721771240234,
+      "first_window_median": 5.167821407318115,
+      "last_window_median": 3.9119925498962402,
+      "window_steps": 100
+    },
+    "disp_loss": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 3.0259931087493896,
+      "max": 13.443721771240234,
+      "first_window_median": 5.167821407318115,
+      "last_window_median": 3.9119925498962402,
+      "window_steps": 100
+    },
+    "train/loss_communication_sensitivity": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 1.244140863418579,
+      "max": 6.4519829750061035,
+      "first_window_median": 4.6606199741363525,
+      "last_window_median": 1.9761101007461548,
+      "window_steps": 100
+    },
+    "train/communication_sensitivity_target_log_std": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 1.6904637813568115,
+      "max": 4.147769927978516,
+      "first_window_median": 3.5604331493377686,
+      "last_window_median": 2.954498767852783,
+      "window_steps": 100
+    },
+    "train/loss_communication_posterior": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.23640072345733643,
+      "max": 0.4277382493019104,
+      "first_window_median": 0.42553770542144775,
+      "last_window_median": 0.2898208349943161,
+      "window_steps": 100
+    },
+    "train/communication_complex_uses": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 62400.0,
+      "max": 62400.0,
+      "first_window_median": 62400.0,
+      "last_window_median": 62400.0,
+      "window_steps": 100
+    },
+    "train/communication_cbr": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.02604166604578495,
+      "max": 0.02604166604578495,
+      "first_window_median": 0.02604166604578495,
+      "last_window_median": 0.02604166604578495,
+      "window_steps": 100
+    },
+    "train/communication_energy": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 62400.0,
+      "max": 62400.0,
+      "first_window_median": 62400.0,
+      "last_window_median": 62400.0,
+      "window_steps": 100
+    },
+    "train/rpn2d_loss_cls": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.1920437514781952,
+      "max": 3.045905590057373,
+      "first_window_median": 1.2868027687072754,
+      "last_window_median": 0.48117466270923615,
+      "window_steps": 100
+    },
+    "train/rpn2d_loss_bbox": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.301937997341156,
+      "max": 1.9340846538543701,
+      "first_window_median": 1.1002126932144165,
+      "last_window_median": 0.723199874162674,
+      "window_steps": 100
+    },
+    "train/rpn2d_loss_centerness": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 0.4268036484718323,
+      "max": 0.9904659986495972,
+      "first_window_median": 0.6095975637435913,
+      "last_window_median": 0.5804232060909271,
+      "window_steps": 100
+    },
+    "train/loss_rpn2d": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 1.0980165004730225,
+      "max": 5.630177021026611,
+      "first_window_median": 2.9749382734298706,
+      "last_window_median": 1.8258402943611145,
+      "window_steps": 100
+    },
+    "train/gradient_norm_before_clip": {
+      "unique_steps": 3340,
+      "first_step": 1,
+      "last_step": 3340,
+      "min": 10.026562690734863,
+      "max": 486.4145812988281,
+      "first_window_median": 63.30045509338379,
+      "last_window_median": 22.968608856201172,
+      "window_steps": 100
+    }
+  },
+  "limitations": "finite loss/preclip norm and optimizer-loop step records; checkpoint updates and AP require separate audit; source files can grow after these immutable event snapshots"
+}

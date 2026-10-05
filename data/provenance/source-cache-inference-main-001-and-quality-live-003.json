@@ -1,0 +1,59 @@
+{
+  "observed_unix": 1791161682.7921216,
+  "observed_UTC": "2026-10-05T00:54:42.792122+00:00",
+  "ps": "    PID    PPID STAT     ELAPSED     TIME COMMAND\n 269262       1 Ssl     01:46:23 00:00:01 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/source-cache-inference-cycle-001.py --mode run --scope main\n 270132       1 Ssl        41:57 00:00:01 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/source-quality-main-cycle-001.py --mode run\n",
+  "quality_children": "    PID    PPID STAT     ELAPSED     TIME COMMAND\n 270141  270132 Rl         41:55 00:33:38 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/native-source-quality-001.py --scope main --mode measure\n",
+  "source-cache-inference-main-001": {
+    "state": "running",
+    "pid": 269262,
+    "completed_commands": 4,
+    "returncodes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "error": null,
+    "completed_endpoints": 2,
+    "endpoints": {
+      "source-cache-inference-main-001-jpeg-cr10-liga.json": {
+        "state": "finished",
+        "frames_done": null,
+        "views_done": null,
+        "pid": 270043,
+        "error": null
+      },
+      "source-cache-inference-main-001-jpeg-cr10-stereo_rcnn.json": {
+        "state": "finished",
+        "frames_done": null,
+        "views_done": null,
+        "pid": 269264,
+        "error": null
+      },
+      "source-cache-inference-main-001-jpeg-cr30-stereo_rcnn.json": {
+        "state": "running",
+        "frames_done": null,
+        "views_done": null,
+        "pid": 270175,
+        "error": null
+      }
+    }
+  },
+  "source-quality-main-001": {
+    "state": "running",
+    "pid": 270132,
+    "completed_commands": 0,
+    "returncodes": [],
+    "error": null,
+    "completed_endpoints": 0,
+    "endpoints": {
+      "source-quality-main-001.json": {
+        "state": "running",
+        "frames_done": null,
+        "views_done": 12738,
+        "pid": 270141,
+        "error": null
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "state": "failed",
+  "seed": 17,
+  "job_id": "11424939",
+  "whole_training_closed": false,
+  "requested_updates": 256,
+  "checked_updates": 0,
+  "unique_frames": 0,
+  "complete_saved_array_values": 0,
+  "gradient_values": 0,
+  "complex_uses": 0,
+  "range_ambiguous_decisions": 0,
+  "max_errors": {
+    "Adam_parameter": 0.0,
+    "Adam_moment": 0.0,
+    "baseband": 0.0,
+    "ZF": 0.0,
+    "GT": 0.0,
+    "crop": 0.0
+  },
+  "noise_normalized_moments": [
+    0.0,
+    0.0,
+    0
+  ],
+  "fading_component_moments": [
+    0.0,
+    0.0,
+    0
+  ],
+  "verifier_sha256": "99c53352825228a9d50a4e43ef4e8d5524480a839b7b180a314de88e9bcc7fad",
+  "protocol_sha256": "4f4ae85c410d20e5399ef33a2b5ddaa437dcb7bb9deef60d693aabb5e53da905",
+  "report_sha256": "33979bf9368ab3dc58898279cafa37f33768864117661bb27747f5d01c983d13",
+  "updates_jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "actual_terminal": null,
+  "checked_unix": 1791190051.5071628,
+  "limitation": "Full saved-record transitions, not independent CUDA gradients, full decoded fields or processed RGB replay. Repeated targets checked for identity, not independent assignment. Prefix is engineering only; no validation AP evidence.",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/chen/Documents/ChatGPT/paper6/data/provenance/audit-cost-field-full-005.py\", line 269, in main\n    audit.start()\n  File \"/Users/chen/Documents/ChatGPT/paper6/data/provenance/audit-cost-field-full-005.py\", line 95, in start\n    assert r['training_schedule']['channels_and_snr']==[list(x) for x in schedule]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "checked_record_ledger_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,30 @@
+{
+  "state": "passed_all23296_transferred_Q1_Q0_cells_independent_CDF_replay",
+  "checked_unix": 1791171669.751486,
+  "artifacts_sha256": {
+    "data/engineering/depth-particles-Q1-local-CPU-001/report.json": "0f1168e42df720b88ab51be0d9167719806a1bb555edc86c24e553db020124b6",
+    "data/engineering/depth-particles-Q1-local-CPU-001/complete_arrays.npz": "556beed09ae8aa87be6a398a7307d6754490811fa3d2f888c02a7c5ffa2e5038",
+    "data/engineering/depth-particles-Q1-sheng-CPU-001/report.json": "912f54ab75e61a3496f120bfae35942d56ac7c0544a16b2424509ca4414f40f6",
+    "data/engineering/depth-particles-Q1-sheng-CPU-001/complete_arrays.npz": "125dd8abf0180e1bb3a35442b85b1505e76b3c1bd3ed24c342209188dac00897"
+  },
+  "artifacts_verified": 4,
+  "source_conditions_statistics_verified": 364,
+  "cells_verified": 23296,
+  "all_actual_fit_candidate_records_checked": 944,
+  "global240000_sample_max_disagreement": 2.6350863269186675e-06,
+  "previous_Q0_cells_replayed": 10752,
+  "sources": {
+    "experiments/depth-particles/protocol-002.md": "e37c5fcc98eedae1b34c843b7ff2b6a0a5e12a753b9a423c6a3a0d8a6acc5b2b",
+    "experiments/depth-particles/protocol-001.md": "ce923258acd3171ae607949a948a237a61556a3a45bb1afb6092ab3e7660c8cf",
+    "experiments/depth-particles/code/representation.py": "2ee8cd578dd18976a1f9c1daf094ac3a1b19e47c0cc6d6b44add87491ef7f5ef",
+    "experiments/depth-particles/code/run_CPU.py": "582de5d838d9eaf187d8fda16c1d377a6fe2e310eaf77199aca292c7796fea19",
+    "experiments/depth-particles/code_Q1/representation.py": "bb9ac915a3970dcc1fcb341787e22126c012cd60bd00a7790660aad56e081c6a",
+    "experiments/depth-particles/code_Q1/run_CPU.py": "19468ed1612c7ea1f1294750f90e084a7f270679e9b180104850264fbda9d20f"
+  },
+  "independent_histogram_W1_max_error": 1.0302869668521453e-13,
+  "independent_law_W1_max_error": 1.4210854715202004e-14,
+  "independent_scalar_projection_max_error": 5.551115123125783e-16,
+  "cross_host_physical_max_error": 2.842170943040401e-14,
+  "verifier_sha256": "9c0edb9493d98c9ad2bad3847cbc737e766acd304a5c0ee4da5a0cc6e0ac7ce2",
+  "limitation": "Complete synthetic files/physical/source-stability records; no native teacher, differentiable fitting/task adapter, KITTI, GPU, AP or novelty claim"
+}

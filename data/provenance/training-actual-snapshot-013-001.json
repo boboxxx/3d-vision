@@ -1,0 +1,127 @@
+{
+  "observed_unix": 1791206089.484156,
+  "main": {
+    "seed": 17,
+    "state": "running_full_split_task_training",
+    "update_count": 41577,
+    "job_id": "11424939",
+    "completed_epochs": [
+      {
+        "arm": "G",
+        "epoch": 1,
+        "updates": 3712,
+        "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch1.pt",
+        "sha256": "24c485644d903b488b48ad25ee8550fc46677fb4b02bbc2ce0f0d09de53b7380"
+      },
+      {
+        "arm": "G",
+        "epoch": 2,
+        "updates": 3712,
+        "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch2.pt",
+        "sha256": "7e247683cdaea734fd210eb07f202cc59824484098bcded77646804e73dac208"
+      },
+      {
+        "arm": "G",
+        "epoch": 3,
+        "updates": 3712,
+        "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch3.pt",
+        "sha256": "130369c740c014e1e61893858191ff8f9c3baed689e3b1709ad9c2df871c4108"
+      },
+      {
+        "arm": "P",
+        "epoch": 1,
+        "updates": 3712,
+        "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-P-epoch1.pt",
+        "sha256": "06dc7023bd11c930717239053cca728ff23c52b45ecc8b20321e8b4658cab3a8"
+      },
+      {
+        "arm": "P",
+        "epoch": 2,
+        "updates": 3712,
+        "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-P-epoch2.pt",
+        "sha256": "b661a14958b885bbe002caee5fffb3595cad87e0aa86c2b4b9c41d9e3339e80e"
+      },
+      {
+        "arm": "P",
+        "epoch": 3,
+        "updates": 3712,
+        "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-P-epoch3.pt",
+        "sha256": "f52ba24e80525c67f415f05f5dd24339ebef4b1f58b7f14610ea0b6c3e243d1c"
+      },
+      {
+        "arm": "S",
+        "epoch": 1,
+        "updates": 3712,
+        "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-S-epoch1.pt",
+        "sha256": "39a2e254f6c876521cdc98d89b705f9bb9828d4521c51ed36b615c5836f8ac19"
+      },
+      {
+        "arm": "S",
+        "epoch": 2,
+        "updates": 3712,
+        "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-S-epoch2.pt",
+        "sha256": "dc1d61f9bf30a398eab7c55b805bb3546b235a0a8288ed9025a4d9c6f6c409fd"
+      },
+      {
+        "arm": "S",
+        "epoch": 3,
+        "updates": 3712,
+        "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-S-epoch3.pt",
+        "sha256": "e383f3fcff326f73af44fd3faf3dd4fcf0d6fa971b78da5a38d393ab8dd88d70"
+      },
+      {
+        "arm": "B",
+        "epoch": 1,
+        "updates": 3712,
+        "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-B-epoch1.pt",
+        "sha256": "8d32e5e68938aa98a8f9399c56fc336ad016c9ec7438a76d2f99f5351ebf02f1"
+      },
+      {
+        "arm": "B",
+        "epoch": 2,
+        "updates": 3712,
+        "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-B-epoch2.pt",
+        "sha256": "9e7f25ef5159da83861fa614a92211d555501dc7b6e2aedd5bf0f747a7ad8df3"
+      }
+    ],
+    "last_update": {
+      "step": 8168,
+      "epoch": 3,
+      "index": 744
+    }
+  },
+  "candidate2": {
+    "seed": 17,
+    "state": "running_full_KITTI_source_RD_training",
+    "update_count": 14976,
+    "job_id": "11425607",
+    "completed_epochs": [
+      {
+        "epoch": 1,
+        "updates": 3712,
+        "sha256": "18e4047244c870ba38e693d3de55312f4a5a996eb2074354e731bedd44d4c3b9"
+      },
+      {
+        "epoch": 2,
+        "updates": 7424,
+        "sha256": "03b3d585fc43f241f23053618239c73a98401f2a0e341c051473af6afd427cb4"
+      },
+      {
+        "epoch": 3,
+        "updates": 11136,
+        "sha256": "ec4263df9538b3b3e344356681a86e1072d19a5ae63a4733c730c480823a4744"
+      },
+      {
+        "epoch": 4,
+        "updates": 14848,
+        "sha256": "0377658563ba990e4f97d0ff09e8309a8f133bfc25aa8cc6b4f4203825d9082d"
+      }
+    ],
+    "last_update": {
+      "step": 14975,
+      "epoch": 5,
+      "index": 127,
+      "frame_id": "002660"
+    }
+  }
+}

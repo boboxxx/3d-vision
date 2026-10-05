@@ -1,0 +1,39 @@
+{
+  "checked_unix": 1791208381.1794896,
+  "reports": {
+    "data/runs/original-public30-formal-seed17-003-stage1/report.json": {
+      "sha256": "9072dc01d177c51736c1cd3244c098af47b2d0e17f17d04c0efac8c49a459010",
+      "fields": {
+        "state": "running_complete_public_semantic_stage",
+        "scope": "formal",
+        "stage": 1,
+        "seed": 17,
+        "update_count": 1408,
+        "job_id": "11426592",
+        "traceback": null,
+        "started_unix": 1791208105.8575861,
+        "engineering_gate_sha256": "3183070fa35cb1153763fbf2ed4188cd1c81d70bd72240208a883e1788e54d2f",
+        "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+      },
+      "completed_epochs": 0
+    },
+    "data/runs/ecsic-KITTI-lambda0.01-seed17-002/report.json": {
+      "sha256": "2376f77f1c04bc7e4ee5a6bdce29b0e5ef672f29210365274dac1a7767a6dc18",
+      "fields": {
+        "state": "finished_all37120_source_RD_updates_pending_actual_terminal_full_audit_and_real_byte_calibration",
+        "scope": null,
+        "stage": null,
+        "seed": 17,
+        "update_count": 37120,
+        "job_id": "11425607",
+        "traceback": null,
+        "started_unix": 1791204558.1310477,
+        "engineering_gate_sha256": null,
+        "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+      },
+      "completed_epochs": 10
+    }
+  },
+  "squeue": "                   JOBID          STATE         TIME     NODELIST(REASON)\n        11425047_[4-5%1]        PENDING         0:00  (JobArrayTaskLimit)\n              11425047_3        RUNNING         1:04       artemis-rtx-03\n                11426592        RUNNING         4:38       artemis-rtx-03\n                11425814        PENDING         0:00         (Dependency)\n                11425240        RUNNING        14:46       artemis-a40-03\n                11425840        PENDING         0:00 (Nodes required for \n",
+  "audit_tail": "{\"checked\": 3456, \"count\": 44544, \"seed\": 17}\n{\"checked\": 3520, \"count\": 44544, \"seed\": 17}\n{\"checked\": 3584, \"count\": 44544, \"seed\": 17}\n"
+}

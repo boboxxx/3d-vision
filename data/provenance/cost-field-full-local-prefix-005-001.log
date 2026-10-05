@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/audit-cost-field-full-005.py", line 280, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/audit-cost-field-full-005.py", line 269, in main
+    audit.start()
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/audit-cost-field-full-005.py", line 95, in start
+    assert r['training_schedule']['channels_and_snr']==[list(x) for x in schedule]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

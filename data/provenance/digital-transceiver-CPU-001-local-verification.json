@@ -1,0 +1,97 @@
+{
+  "state": "passed_all8_transferred_actual_packet_audits",
+  "scope": "CPU_engineering_not_main_noise_AP_or_exact_original_configuration",
+  "manifest_sha256": "9113136eedc18b9dea951e9bc7b619c34bd4f180a73af6ffb7ac72a9b188fec3",
+  "terminal_sha256": "8829e18aadb9ddd21ec15b703e0dc8dda3d0ee88634ab8d7391db251212ba490",
+  "artifacts": 16,
+  "verified": [
+    {
+      "configuration": "ldpc_2_3_qam64",
+      "packet": "synthetic262bytes",
+      "channel": "identity",
+      "source_bit_errors": 0,
+      "actual_energy": 505.52380952380963,
+      "uses": 648,
+      "channel_max_roundoff": 0.0,
+      "channel_tolerance": 2.1707439140811104e-14,
+      "APP_max_roundoff": 0.0
+    },
+    {
+      "configuration": "ldpc_2_3_qam64",
+      "packet": "synthetic262bytes",
+      "channel": "awgn",
+      "source_bit_errors": 375,
+      "actual_energy": 505.52380952380963,
+      "uses": 648,
+      "channel_max_roundoff": 0.0,
+      "channel_tolerance": 2.865038248248418e-14,
+      "APP_max_roundoff": 3.552713678800501e-15
+    },
+    {
+      "configuration": "ldpc_2_3_qam64",
+      "packet": "synthetic262bytes",
+      "channel": "rayleigh",
+      "source_bit_errors": 504,
+      "actual_energy": 505.52380952380963,
+      "uses": 648,
+      "channel_max_roundoff": 4.965068306494546e-16,
+      "channel_tolerance": 7.344716535928563e-14,
+      "APP_max_roundoff": 1.7763568394002505e-15
+    },
+    {
+      "configuration": "ldpc_2_3_qam64",
+      "packet": "native000000_JP2rates30",
+      "channel": "identity",
+      "source_bit_errors": 0,
+      "actual_energy": 180816.5714285714,
+      "uses": 181116,
+      "channel_max_roundoff": 0.0,
+      "channel_tolerance": 2.1707439140811104e-14,
+      "APP_max_roundoff": 0.0
+    },
+    {
+      "configuration": "ldpc_1_2_qam256",
+      "packet": "synthetic262bytes",
+      "channel": "identity",
+      "source_bit_errors": 0,
+      "actual_energy": 668.1529411764704,
+      "uses": 729,
+      "channel_max_roundoff": 0.0,
+      "channel_tolerance": 2.3120754145223846e-14,
+      "APP_max_roundoff": 0.0
+    },
+    {
+      "configuration": "ldpc_1_2_qam256",
+      "packet": "synthetic262bytes",
+      "channel": "awgn",
+      "source_bit_errors": 367,
+      "actual_energy": 668.1529411764704,
+      "uses": 729,
+      "channel_max_roundoff": 0.0,
+      "channel_tolerance": 2.883664283946935e-14,
+      "APP_max_roundoff": 3.552713678800501e-15
+    },
+    {
+      "configuration": "ldpc_1_2_qam256",
+      "packet": "synthetic262bytes",
+      "channel": "rayleigh",
+      "source_bit_errors": 466,
+      "actual_energy": 668.1529411764704,
+      "uses": 729,
+      "channel_max_roundoff": 6.280369834735101e-16,
+      "channel_tolerance": 6.527983987344555e-14,
+      "APP_max_roundoff": 3.552713678800501e-15
+    },
+    {
+      "configuration": "ldpc_1_2_qam256",
+      "packet": "native000000_JP2rates30",
+      "channel": "identity",
+      "source_bit_errors": 0,
+      "actual_energy": 181008.77647058817,
+      "uses": 181278,
+      "channel_max_roundoff": 0.0,
+      "channel_tolerance": 2.3120754145223846e-14,
+      "APP_max_roundoff": 0.0
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "state": "passed_source_AP_and_full_feature_record_audits",
+  "closed_at_unix": 1791068596.5216289,
+  "prelaunch_commit": "73415b7",
+  "frozen_source_sha256": {
+    "project": "1d90e1ae8b3007d76891d99f92f0bee91a91379debe2201c75c0e1b832fdee5e",
+    "liga": "e2495ab11c90143c14a6666c875c382131e4db0feb48711754bd2100ac8a9d29",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f"
+  },
+  "artifact_sha256": {
+    "data/runs/frozen-codec-features-seed17-001-features.jsonl": "bd5649d5ebf92964d7f01552d57887f4ab53bbc975767b00b215cdd33ee819a0",
+    "data/runs/frozen-codec-features-seed17-001.json": "5abf48fa8a87dbd4d17821b5aa9f929b294b6fab9d9616178d34dc10baa87715",
+    "data/runs/frozen-codec-features-seed17-001-AP-audit.json": "34034dab3323a5675270ae3725b40582996b2dc8ac490d49f73ecfead37c1d6a",
+    "data/runs/frozen-codec-features-seed17-001-feature-audit.json": "2ccce96c77f69e05e246d8418a1e4f97260a0a15b78669563207593976f0e390"
+  },
+  "feature_summaries": {
+    "cost": {
+      "elements": 42785832960,
+      "pooled_over_frames_mse": 0.9874790760971605,
+      "pooled_over_frames_nmse": 1.233874541894219,
+      "pooled_over_frames_cosine": 0.1080731511644117,
+      "median_frame_nmse": 1.233698817831058,
+      "median_frame_cosine": 0.10856342933783864,
+      "reference_shapes": [
+        [
+          1,
+          64,
+          72,
+          80,
+          312
+        ]
+      ]
+    },
+    "appearance": {
+      "elements": 297123840,
+      "pooled_over_frames_mse": 0.9454065962775361,
+      "pooled_over_frames_nmse": 1.065629233598796,
+      "pooled_over_frames_cosine": 0.03492852595261567,
+      "median_frame_nmse": 1.0653244223963938,
+      "median_frame_cosine": 0.0365619615217424,
+      "reference_shapes": [
+        [
+          1,
+          32,
+          80,
+          312
+        ]
+      ]
+    },
+    "cost_pool_interpolate_reference": {
+      "elements": 42785832960,
+      "pooled_over_frames_mse": 0.47414514883278996,
+      "pooled_over_frames_nmse": 0.5924536959503756,
+      "pooled_over_frames_cosine": 0.6391054424365133,
+      "median_frame_nmse": 0.5960424151829511,
+      "median_frame_cosine": 0.6363136913524491,
+      "reference_shapes": [
+        [
+          1,
+          64,
+          72,
+          80,
+          312
+        ]
+      ]
+    },
+    "appearance_pool_interpolate_reference": {
+      "elements": 297123840,
+      "pooled_over_frames_mse": 0.11315878804902253,
+      "pooled_over_frames_nmse": 0.12754862622964938,
+      "pooled_over_frames_cosine": 0.9344262351224472,
+      "median_frame_nmse": 0.12979211822991493,
+      "median_frame_cosine": 0.9332274975659485,
+      "reference_shapes": [
+        [
+          1,
+          32,
+          80,
+          312
+        ]
+      ]
+    }
+  },
+  "algebraic_squared_error_identity_all_rows_checked": true,
+  "interpretation": "decoder feature alignment poor; reconstruction pretraining justified as exploratory next step, pooling/normalization/capacity still not uniquely isolated",
+  "limitations": "passive scalar observations, not independently rerun raw tensors; no AP ceiling or wireless improvement proof"
+}

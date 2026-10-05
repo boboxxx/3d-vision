@@ -1,0 +1,27 @@
+{
+  "state": "passed_complete_physical_array_replay_contract",
+  "rows": [
+    {
+      "channel": "identity",
+      "complex_uses": 114,
+      "noise_values": 228,
+      "fading_values": 228,
+      "baseband_values": 228
+    },
+    {
+      "channel": "awgn",
+      "complex_uses": 114,
+      "noise_values": 228,
+      "fading_values": 228,
+      "baseband_values": 228
+    },
+    {
+      "channel": "rayleigh",
+      "complex_uses": 114,
+      "noise_values": 228,
+      "fading_values": 228,
+      "baseband_values": 228
+    }
+  ],
+  "limitation": "CPU exact arithmetic contract only; full formal training remains unrun."
+}

@@ -1,0 +1,2484 @@
+{
+  "evidence_type": "engineering_compute_profile_only",
+  "state": "passed",
+  "checkpoint_sha256": "3f36af30b686f23d0868482675177b29cc50c2b378577dd12f9092ddb0235b2e",
+  "calibration_sha256": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+  "project_source": {
+    "sha256": "223c9de3508fc2cba042e76444808d1ccaaefe1d52b2e24ec2122480845669d5",
+    "file_hashes": {
+      "src/geocomm/allocation.py": "a6d2b1f374c37c77501007e826248a605994ba260edda31e387a420c3c62b815",
+      "src/geocomm/stereo_baseline.py": "c3df271960289f15ab9f4761024c38914c2da417f9115f765384fc4e27d01de1",
+      "src/geocomm/rgb_link.py": "8968701af22d3dcbdde92c40ce322897e0b46c40838d52a0277df6f4650f7c1a",
+      "src/geocomm/channel.py": "c1bec2ef80fd5d5a0b5601f1a22080658c15ea2156601ac6c07b54b8b0aa73ce",
+      "src/geocomm/compat.py": "c917bf6c9c1046267f254907acc632ce710503071e5ed88f6b3b2138530e85ed",
+      "src/geocomm/link.py": "1920c6e7a6250e837212f0d9a4532177e449796bccc63706309e06211faa9072",
+      "src/geocomm/__init__.py": "f60c3dd0d4e869b617fbbf545f1ff53ddcca2f206ebbf52eb4031e7889b62768",
+      "src/geocomm/student.py": "d2c481f52398873e33dc06653faa7f61fa60c33051bcfc6adee690ba718a0181",
+      "src/geocomm/evidence.py": "2714e85f7905d1e05dd3f086d7d90b1026e01e362b24b7866a2ed8b207a1a3f0",
+      "scripts/modernize_liga.py": "a673b00c12223d0435c340919aee1fd7501b73d8ed8d28d5031ae5a62e6fb4b8",
+      "scripts/prepare_kitti_splits.py": "fddbab9f609202e8d4fdcdc0daf5ad6c6ca3d28c4bb64c5701edcdfbbc1ef4b9",
+      "scripts/patch_student_liga.py": "1d195bbdb378eeae91c9644ba7e1b9553e2125cbdcc281f7b2fccae8f2c9c1c1",
+      "scripts/patch_rgb_liga.py": "ede666c80d61631d3d69575879f1fd3ee1a43c1f8a171843487bda171fdb067a",
+      "scripts/verify_stereo_evaluator.py": "c5d4428b658ce7cbdefb0b71aa1a2ab3ff8b1729ea1a7e809b89fa9c8a0132ed",
+      "scripts/modernize_stereo_rcnn.py": "e3243b092a53d83ca442c783102f9e81621b2eb02274fbf490fc61f9d35f5ff3",
+      "scripts/audit_stereo_run.py": "a7782c6177a56ec1dbdd385b071a29c338f4f0782508f6d706ccb99424ee8d5f",
+      "scripts/verify_stereo_rcnn.py": "61446f67951f4c5ea33a8a756b5250d4c258870a066a7f21448f2a7a8c6043dd",
+      "scripts/cuda_driver_path.py": "9a16415cbb05532ae794f7fb182a46884e023ea010374fd8103cd892a32c11b0",
+      "scripts/eval_stereo_rcnn.py": "2fc9fba84618071a88d614f390b1b4e87c66bbb6ca550c2e7255b312b0873490",
+      "scripts/record_sources.py": "a702b7dc75de3f2dc7028ddbe75323ddeb2f104e5d731d918cba0a1e21c2c818",
+      "scripts/download_kitti.py": "cb8d51f74dac5324a0ad21bb2e7d4450dc35420dad6d18952d28d9ed136bf7e5",
+      "scripts/audit_kitti.py": "a95136ecf29419effad679595ee140a017d40756a009bd5992789140419e207b",
+      "scripts/profile_full_system.py": "996e75c13c6e91f053c2f7fb167bbbc4341548d5ca33289a940fae1c0be53901",
+      "scripts/run_liga.py": "021b9e30d2d2355d25da85e66a5dd948058505a04c7dd57375ebed79d51ee965",
+      "scripts/patch_liga.py": "d2f432cf81fa00b3e9e1d9f07953d780e5c3da401cf3f4b223f447b437ae888c",
+      "scripts/make_liga_config.py": "93c136a876fdb9ee6feb74b8ebfa57ca77ac199aae3fc4276605d74a7d1cfc3d",
+      "scripts/verify_liga_runtime.py": "6e13e1321af2deb8e7b0e73cca102f2862a0a744b12a5a98a6b41f7bde2073d1",
+      "scripts/prepare_liga_data.py": "33759d5f2f61296f8b4d448c7d4e56f4a30f7d9e0987c15b1172dc386ad356fa",
+      "scripts/verify_stereo_postprocess.py": "8bd088356b672b473be853d1397c931ea14e39d122502e3b1aab9320c02b27e1",
+      "scripts/verify_full_model.py": "597edb928f57bcb3557970a45b6077d47918fc23cea0e7132d570625a1764c63",
+      "configs/liga_geometry_awgn.yaml": "b7a67874de8614fc2b973a5a4e35676f0dcecb46f1466de69bed6f5f51a9056c",
+      "configs/liga_raw_geometry_awgn.yaml": "5a1dc5a76d7127dd85cb825d76a11f9f85f7d2f9a8753c505922ada1426aeff3",
+      "configs/liga_student_geometry_awgn.yaml": "ccc68274a179e33e0ae5ea5c90b88757754fd14af86ba8d2dd6da3aab8474e6d",
+      "configs/liga_rgb_awgn.yaml": "8716a4626ba3c1f02da86d259ead8083bbb1b3be6c7fc740b31615816f2efdc9"
+    },
+    "generated_version_py_excluded": true
+  },
+  "detector_source": {
+    "sha256": "391a0f93dacbca6fc1cbe92bf2752326501c243b11edd06bff69feea835e7e43",
+    "file_hashes": {
+      "liga/config.py": "90598b121d45216bd002ee1027a310e5a505e8c529bbe610067f59bbd98bbaa7",
+      "liga/__init__.py": "0c3c9371de1a1699b214a4d3cbc147a14e99a64b42a7b0e2a9867a9a4aea98ad",
+      "liga/datasets/stereo_dataset_template.py": "bce861b5d4f52fd363fabce0dc72f127084ec31cd3782370de89ed9a6fb46964",
+      "liga/datasets/__init__.py": "14ff525ca7d5788c4519d985d5012da88572547cda95a3ea9c3d40dd58bcdca3",
+      "liga/datasets/lidar_dataset_template.py": "eda9f2d46f77642ed720b584a844af0bcaee715f274caafa42ef6263f7403629",
+      "liga/datasets/kitti/lidar_kitti_dataset.py": "128e15ca8a377702edba733e46b686235b11b20ca8cf00dd62c51a31f1e1cf11",
+      "liga/datasets/kitti/stereo_kitti_dataset.py": "9e4faa3a7f363861bd14b416c6df31989cb3635f627fa466db64e40fafc51a2e",
+      "liga/datasets/kitti/kitti_object_eval_python/eval.py": "0c62fff46ed1ecd2b5373ee587ad650f91c3aa5f3d9f5fc565f264a0585819f8",
+      "liga/datasets/kitti/kitti_object_eval_python/evaluate.py": "bac38d13cb2f92e560a9c39309591d8310b6e74ff4c9cd9bdfefc44bc930ff09",
+      "liga/datasets/kitti/kitti_object_eval_python/kitti_common.py": "002d15d0882fdfaea7631212aecfe1199a33faee60278da604bf15c6a2ef2dac",
+      "liga/datasets/kitti/kitti_object_eval_python/rotate_iou.py": "9fc581761d11a8a531b9f9a20378c44ac052514e0c838cfee74038a494161b48",
+      "liga/datasets/augmentor/stereo_data_augmentor.py": "2a9795f5d576bcad2f97849084243521cc83a9aede2f6040a95ddf5ee8fa6f2b",
+      "liga/datasets/augmentor/augmentor_utils.py": "eea28388d1cdbc555ac40c67fa3505c3affb83df7b1f1561121a56ab9d2cf574",
+      "liga/datasets/augmentor/lidar_data_augmentor.py": "eca0d64959e3337f6f5a9048806e9753dc6df1c24e032d25514054e5495054ac",
+      "liga/datasets/augmentor/database_sampler.py": "384ca52c14b87197e84063a1add42f6335734de6ba020969dcf3a616d4831c84",
+      "liga/datasets/processor/point_feature_encoder.py": "0e020c34a59b6999afe4972b149fd262f5497760dae40cb5e9ef45a55224a152",
+      "liga/datasets/processor/data_processor.py": "810cc365c7e8cd293efced5c8c9e1394185acb3811fd9da1a6c68e37c91fb1e0",
+      "liga/models/__init__.py": "bdc61c25eecd975ef04ebd60b12832f6f01e507b6704c21665355dc03f7807dd",
+      "liga/models/detectors_lidar/second_net.py": "b5cc42c2757f3b1708a44b13f2654558717943cf8e630f67e6e5c5a7509cad48",
+      "liga/models/detectors_lidar/__init__.py": "c52ea5f374bb4b7f504721375a0b92308bbe02db46f7cfb3ab98736b5f82b8b4",
+      "liga/models/detectors_lidar/lidar_detector3d_template.py": "46348f7e854772c168a254d319d10caef7dab9eb796b83465328029233932f21",
+      "liga/models/dense_heads/depth_loss_head.py": "cbac0efffcd69813e63b63021be0c9625652348d410ef9185472c29e6492dc96",
+      "liga/models/dense_heads/anchor_head_template.py": "51c6906741905257855a4d5dc71155498bac6f48563677b7cac4278ff96db70d",
+      "liga/models/dense_heads/det_head.py": "b8b445958804bccf8ea6f1f502fe4e799958d7b25239cb7e6765867e03578ddd",
+      "liga/models/dense_heads/__init__.py": "f91e98894e196b4444a1c4b19c66bfb72dee618293256cf2ab3d5bb299496f40",
+      "liga/models/dense_heads/anchor_head_single.py": "b9e988a894867dc6754c161a6e03f58ad1d11c9343caf635de2478816faa33ae",
+      "liga/models/dense_heads/mmdet_2d_head.py": "9f4ebce070819bb8a841dbf0376bf9610f26c114662ee0f6212068dde46c5d49",
+      "liga/models/dense_heads/target_assigner/axis_aligned_target_assigner.py": "1a818cf410ac9c72c6382fb412d778b7aff0c9d2bae527eafbeb2640b7ff2b6b",
+      "liga/models/dense_heads/target_assigner/anchor_generator.py": "c0c6e0992a94b614533c993a1e938dceca0f007b602cf65b059d7a9e2786d6ff",
+      "liga/models/backbones_3d_stereo/cost_volume.py": "4db76abb9b54b9bfaf415c287ac690bd07ceed2f66ca2aa7b8cdaaa3fbafae2a",
+      "liga/models/backbones_3d_stereo/submodule.py": "04517bd4a3863eeccee94e48ca2dc11f7d0bf5e98958d58a8fb5bb942f13a97d",
+      "liga/models/backbones_3d_stereo/__init__.py": "91c09fbe98ff91fbb855af5776af4783840f629ba6fe86e32b24128fcb67b8d1",
+      "liga/models/backbones_3d_stereo/liga_backbone.py": "4736b5e5d630056a9abd50fe009dfa2435030f9424ab51e63ff43c32b5b436e8",
+      "liga/models/backbones_3d_lidar/spconv_backbone.py": "3e02f19ab8ccedca5df5b58bddaf66d531ac620d96211db02e94c8067bfd40f6",
+      "liga/models/backbones_3d_lidar/__init__.py": "59f170e4fa3d0220daff191aa39559fea547425a7431fac1117d0de01781cfc1",
+      "liga/models/backbones_3d_lidar/vfe/vfe_template.py": "8296bc3970fc12c5cbb7a5e18d1c92ffef254e47f621fa572f4c61b941ad3ab3",
+      "liga/models/backbones_3d_lidar/vfe/__init__.py": "f6f662ef9d45917ed828f5b55cb47e0c2065366305af2eac454ea552ef310c62",
+      "liga/models/backbones_3d_lidar/vfe/mean_vfe.py": "30122ece7d713e9f367bbd5df09a67d39db16cee9df3758dd60853e096d91829",
+      "liga/models/backbones_2d/base_bev_backbone.py": "78bde5fb3dd9b058ea9f451cc32168479fb8af6ff4b71083d21b4c683a39bd02",
+      "liga/models/backbones_2d/__init__.py": "82a7bff478f8139fcccac3c60e506bf0f59e9fbdeeae1d3cb2fd678425ada8e1",
+      "liga/models/backbones_2d/hg_bev_backbone.py": "f664203d8f4d83a503a3a4abe9d1ce11b3b647ea9fe875c64d4a4c618391e19a",
+      "liga/models/backbones_2d/map_to_bev/__init__.py": "c11168178641c2117932c4eedc0940efa875c97cf7532d7c3048f69b1c34613a",
+      "liga/models/backbones_2d/map_to_bev/height_compression.py": "c2208d68e3747762447f88d4892eacbfe1624ac9f626a4c75c64eb83e8e6e144",
+      "liga/models/detectors_stereo/stereo_detector3d_template.py": "1074a90601b472b1f46c8c64c1f2a8e7876dcd707b47800e7c2137d708f367c3",
+      "liga/models/detectors_stereo/liga.py": "b555e7f48f568fda442fd6e8469b88ed88b5fd00e19a234931bcdf44e3ed4ef2",
+      "liga/models/detectors_stereo/__init__.py": "34f3b62adc2d01351d66efd254d949a38552806f8f246f1bd73bc15dfb0ffc9f",
+      "liga/ops/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liga/ops/roiaware_pool3d/roiaware_pool3d_utils.py": "88842d24f6b95a06959eecb19ad3245b35f3b17eefc06bc9bed6c5d6c34b8bfe",
+      "liga/ops/roiaware_pool3d/src/roiaware_pool3d_kernel.cu": "d34013f84a0094dd9ae814e0cf1e5bceb7d808bfcc1248a1832f334a96a1808e",
+      "liga/ops/roiaware_pool3d/src/roiaware_pool3d.cpp": "c71b96fa6e80c9cf5a03cb7ba4db7a90408e0f0968acd4259008e2be9a54cd33",
+      "liga/ops/iou3d_nms/iou3d_nms_utils.py": "0c6e58e335b929cf4b7fa4b0079585d9377b26b419605a62e71f2d36d4b79fcc",
+      "liga/ops/iou3d_nms/numerical_jaccobian.py": "8f53c625c32da81f2004a110ee440dadaf0392142229059b54434fa546a2732d",
+      "liga/ops/iou3d_nms/src/iou3d_cpu.h": "2a0c9325ef7e61035adedb67a4629ac0792750a4cbc292acdca48ff4e1d8b526",
+      "liga/ops/iou3d_nms/src/iou3d_nms_kernel.cu": "a92bf45c1533b383976886db87803f76acdbddb7f5cc7666e39e6379095c46e0",
+      "liga/ops/iou3d_nms/src/iou3d_nms_api.cpp": "f5b79c976e5cb40e8a54846a97f6ced386454988a4651009bbd6769e26451719",
+      "liga/ops/iou3d_nms/src/iou3d_cpu.cpp": "68d6ed8ddb9a8cdc4bee8563f7a4adf52a212621c3f6eeef60f924052856596f",
+      "liga/ops/iou3d_nms/src/iou3d_nms.h": "2e2f73f41d4c17f13fc94be7c03a48409f19c1b745e2b5ade9e016c265c3c0de",
+      "liga/ops/iou3d_nms/src/iou3d_nms.cpp": "33e88f2b96ab1baa11cd76e9291707042a786162f9512f14d74dde5a558be893",
+      "liga/ops/build_cost_volume/__init__.py": "d6248b31be2aa6bfdf6342852cb0f168f3594ceaf2dacb5eb2c2395039ebe975",
+      "liga/ops/build_cost_volume/src/BuildCostVolume_cuda.cu": "71d3c54aa11d648fa72d5f3f2a938436367fc80b3cd4bcd1f91151a13b79d8c9",
+      "liga/ops/build_cost_volume/src/BuildCostVolume.cpp": "da59e8bfc30eaa4a615f55ecf23196135524d98bc01300f7f8fc6feb3d6bdc07",
+      "liga/utils/nms_utils.py": "0774f518450fb27951e0104600c8bdcf816be59ed87ba177d39182cffcbaf326",
+      "liga/utils/box_utils.py": "6ca661f8763d7193db30bc6c1c413246177e056dc5d7e9c42fa39e990eb5c48f",
+      "liga/utils/object3d_kitti.py": "856707463846ae570112423246af9bd84a78a5442b81d51befef27755d30af8b",
+      "liga/utils/common_utils.py": "37d683d5be1176e4f828e94de4a302c63c241fd789c0cef0814d3e78e06a6c45",
+      "liga/utils/depth_map_utils.py": "fb360bc0001796825bdecd41c7a082e355e5ae3d137406de2f11a74439e9c290",
+      "liga/utils/loss_utils.py": "3dc2e2e1e20ff6903615f9b794447fb3e4baf36305959cf91cfb7c5f2446cad0",
+      "liga/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "liga/utils/calibration_kitti.py": "4c70c42ba2695e219a4eaff8995c654eaad7243166290276e01b9febb2f345ea",
+      "liga/utils/box_coder_utils.py": "a7418738b09bfb22253e069ed19138fc5b3ed0c3aff2d2064a1056d389b360f9"
+    },
+    "generated_version_py_excluded": true
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch": "2.5.0+cu118",
+  "threads": 4,
+  "input_shape": [
+    1,
+    3,
+    320,
+    1280
+  ],
+  "profiles": [
+    {
+      "config_sha256": "ccc68274a179e33e0ae5ea5c90b88757754fd14af86ba8d2dd6da3aab8474e6d",
+      "config": "/home/sheng/paper6/configs/liga_student_geometry_awgn.yaml",
+      "parameters": 9034767,
+      "untrained_random_codec": true,
+      "teacher_forward_calls": 0,
+      "student_enabled": true,
+      "feature_teacher_forward_calls": 0,
+      "dense_MACs_by_phase": {
+        "receiver": 390869110784,
+        "transmitter": 4441292800
+      },
+      "dense_FLOPs_lower_bound_by_phase": {
+        "receiver": 781738221568,
+        "transmitter": 8882585600
+      },
+      "dense_layer_calls": [
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            3,
+            320,
+            1280
+          ],
+          "output_shape": [
+            1,
+            16,
+            160,
+            640
+          ],
+          "MACs": 44236800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.3",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            16,
+            160,
+            640
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 117964800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.6.body.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 7372800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.6.body.3",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 26214400
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.7.body.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 7372800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.7.body.3",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 26214400
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.8.body.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 7372800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.8.body.3",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 26214400
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.stereo_context",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            24,
+            80,
+            320
+          ],
+          "MACs": 19660800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.local.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            3,
+            320,
+            1280
+          ],
+          "output_shape": [
+            1,
+            8,
+            320,
+            1280
+          ],
+          "MACs": 88473600
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.stereo.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "output_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "MACs": 419430400
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.stereo.1",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "output_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "MACs": 117964800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.stereo.2",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "output_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "MACs": 419430400
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.appearance.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 26214400
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            3,
+            320,
+            1280
+          ],
+          "output_shape": [
+            1,
+            16,
+            160,
+            640
+          ],
+          "MACs": 44236800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.3",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            16,
+            160,
+            640
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 117964800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.6.body.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 7372800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.6.body.3",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 26214400
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.7.body.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 7372800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.7.body.3",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 26214400
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.8.body.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 7372800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.context.8.body.3",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 26214400
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.stereo_context",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            24,
+            80,
+            320
+          ],
+          "MACs": 19660800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.local.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            3,
+            320,
+            1280
+          ],
+          "output_shape": [
+            1,
+            8,
+            320,
+            1280
+          ],
+          "MACs": 88473600
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.stereo.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "output_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "MACs": 419430400
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.stereo.1",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "output_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "MACs": 117964800
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.stereo.2",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "output_shape": [
+            1,
+            32,
+            320,
+            1280
+          ],
+          "MACs": 419430400
+        },
+        {
+          "module": "backbone_3d.student_semantic_link_encoder.appearance.0",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "MACs": 26214400
+        },
+        {
+          "module": "backbone_3d.semantic_link.posterior",
+          "kind": "Conv3d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            64,
+            72,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            1,
+            72,
+            80,
+            320
+          ],
+          "MACs": 117964800
+        },
+        {
+          "module": "backbone_3d.semantic_link.cost_encoder.1",
+          "kind": "Conv3d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            64,
+            9,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            9,
+            20,
+            80
+          ],
+          "MACs": 1592524800
+        },
+        {
+          "module": "backbone_3d.semantic_link.cost_encoder.3",
+          "kind": "Conv3d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            64,
+            9,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            8,
+            9,
+            20,
+            80
+          ],
+          "MACs": 7372800
+        },
+        {
+          "module": "backbone_3d.semantic_link.appearance_encoder.1",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            32,
+            20,
+            80
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "backbone_3d.semantic_link.appearance_encoder.3",
+          "kind": "Conv2d",
+          "phase": "transmitter",
+          "input_shape": [
+            1,
+            32,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            8,
+            20,
+            80
+          ],
+          "MACs": 409600
+        },
+        {
+          "module": "backbone_3d.semantic_link.cost_decoder.0",
+          "kind": "Conv3d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            8,
+            9,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            9,
+            20,
+            80
+          ],
+          "MACs": 199065600
+        },
+        {
+          "module": "backbone_3d.semantic_link.cost_decoder.2",
+          "kind": "Conv3d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            9,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            9,
+            20,
+            80
+          ],
+          "MACs": 1592524800
+        },
+        {
+          "module": "backbone_3d.semantic_link.appearance_decoder.0",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            8,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            32,
+            20,
+            80
+          ],
+          "MACs": 3686400
+        },
+        {
+          "module": "backbone_3d.semantic_link.appearance_decoder.2",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            32,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            32,
+            20,
+            80
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "backbone_3d.dres0.0.0",
+          "kind": "Conv3d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            72,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            72,
+            80,
+            320
+          ],
+          "MACs": 101921587200
+        },
+        {
+          "module": "backbone_3d.dres1.0.0",
+          "kind": "Conv3d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            32,
+            72,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            72,
+            80,
+            320
+          ],
+          "MACs": 50960793600
+        },
+        {
+          "module": "backbone_3d.sem_neck.lateral_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            32,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "MACs": 52428800
+        },
+        {
+          "module": "backbone_3d.sem_neck.fpn_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "MACs": 943718400
+        },
+        {
+          "module": "backbone_3d.sem_neck.fpn_convs.1.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "MACs": 235929600
+        },
+        {
+          "module": "backbone_3d.sem_neck.fpn_convs.2.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "MACs": 58982400
+        },
+        {
+          "module": "backbone_3d.sem_neck.fpn_convs.3.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "backbone_3d.sem_neck.fpn_convs.4.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "MACs": 3686400
+        },
+        {
+          "module": "backbone_3d.hg_stereo.0.conv1.0.0",
+          "kind": "Conv3d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            32,
+            72,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            36,
+            40,
+            160
+          ],
+          "MACs": 12740198400
+        },
+        {
+          "module": "backbone_3d.hg_stereo.0.conv2.0",
+          "kind": "Conv3d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            36,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            64,
+            36,
+            40,
+            160
+          ],
+          "MACs": 25480396800
+        },
+        {
+          "module": "backbone_3d.hg_stereo.0.conv3.0.0",
+          "kind": "Conv3d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            36,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            64,
+            18,
+            20,
+            80
+          ],
+          "MACs": 3185049600
+        },
+        {
+          "module": "backbone_3d.hg_stereo.0.conv4.0.0",
+          "kind": "Conv3d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            18,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            18,
+            20,
+            80
+          ],
+          "MACs": 3185049600
+        },
+        {
+          "module": "backbone_3d.pred_stereo.0.0.0",
+          "kind": "Conv3d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            32,
+            72,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            32,
+            72,
+            80,
+            320
+          ],
+          "MACs": 50960793600
+        },
+        {
+          "module": "backbone_3d.pred_stereo.0.2",
+          "kind": "Conv3d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            32,
+            72,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            1,
+            72,
+            80,
+            320
+          ],
+          "MACs": 1592524800
+        },
+        {
+          "module": "backbone_3d.rpn3d_convs.0.0.0",
+          "kind": "Conv3d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            304,
+            288
+          ],
+          "output_shape": [
+            1,
+            32,
+            20,
+            304,
+            288
+          ],
+          "MACs": 96825507840
+        },
+        {
+          "module": "backbone_2d.rpn3d_conv2.0.0",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            160,
+            304,
+            288
+          ],
+          "output_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "MACs": 8068792320
+        },
+        {
+          "module": "backbone_2d.rpn3d_conv3.conv1.0.0",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "output_shape": [
+            1,
+            128,
+            152,
+            144
+          ],
+          "MACs": 1613758464
+        },
+        {
+          "module": "backbone_2d.rpn3d_conv3.conv2.0",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            128,
+            152,
+            144
+          ],
+          "output_shape": [
+            1,
+            128,
+            152,
+            144
+          ],
+          "MACs": 3227516928
+        },
+        {
+          "module": "backbone_2d.rpn3d_conv3.conv3.0.0",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            128,
+            152,
+            144
+          ],
+          "output_shape": [
+            1,
+            128,
+            76,
+            72
+          ],
+          "MACs": 806879232
+        },
+        {
+          "module": "backbone_2d.rpn3d_conv3.conv4.0.0",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            128,
+            76,
+            72
+          ],
+          "output_shape": [
+            1,
+            128,
+            76,
+            72
+          ],
+          "MACs": 806879232
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "MACs": 943718400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.1.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "MACs": 943718400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.2.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "MACs": 943718400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.3.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "MACs": 943718400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "MACs": 943718400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.1.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "MACs": 943718400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.2.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "MACs": 943718400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.3.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "MACs": 943718400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_cls",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            3,
+            80,
+            320
+          ],
+          "MACs": 44236800
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_reg",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            12,
+            80,
+            320
+          ],
+          "MACs": 176947200
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_centerness",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            80,
+            320
+          ],
+          "output_shape": [
+            1,
+            1,
+            80,
+            320
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "MACs": 235929600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.1.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "MACs": 235929600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.2.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "MACs": 235929600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.3.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "MACs": 235929600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "MACs": 235929600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.1.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "MACs": 235929600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.2.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "MACs": 235929600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.3.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "MACs": 235929600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_cls",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            3,
+            40,
+            160
+          ],
+          "MACs": 11059200
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_reg",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            12,
+            40,
+            160
+          ],
+          "MACs": 44236800
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_centerness",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            40,
+            160
+          ],
+          "output_shape": [
+            1,
+            1,
+            40,
+            160
+          ],
+          "MACs": 3686400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "MACs": 58982400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.1.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "MACs": 58982400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.2.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "MACs": 58982400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.3.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "MACs": 58982400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "MACs": 58982400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.1.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "MACs": 58982400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.2.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "MACs": 58982400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.3.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "MACs": 58982400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_cls",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            3,
+            20,
+            80
+          ],
+          "MACs": 2764800
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_reg",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            12,
+            20,
+            80
+          ],
+          "MACs": 11059200
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_centerness",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            20,
+            80
+          ],
+          "output_shape": [
+            1,
+            1,
+            20,
+            80
+          ],
+          "MACs": 921600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.1.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.2.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.3.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.1.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.2.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.3.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "MACs": 14745600
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_cls",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            3,
+            10,
+            40
+          ],
+          "MACs": 691200
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_reg",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            12,
+            10,
+            40
+          ],
+          "MACs": 2764800
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_centerness",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            10,
+            40
+          ],
+          "output_shape": [
+            1,
+            1,
+            10,
+            40
+          ],
+          "MACs": 230400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "output_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "MACs": 3686400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.1.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "output_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "MACs": 3686400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.2.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "output_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "MACs": 3686400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.cls_convs.3.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "output_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "MACs": 3686400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.0.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "output_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "MACs": 3686400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.1.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "output_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "MACs": 3686400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.2.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "output_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "MACs": 3686400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.reg_convs.3.conv",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "output_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "MACs": 3686400
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_cls",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "output_shape": [
+            1,
+            3,
+            5,
+            20
+          ],
+          "MACs": 172800
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_reg",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "output_shape": [
+            1,
+            12,
+            5,
+            20
+          ],
+          "MACs": 691200
+        },
+        {
+          "module": "dense_head_2d.bbox_head.atss_centerness",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            5,
+            20
+          ],
+          "output_shape": [
+            1,
+            1,
+            5,
+            20
+          ],
+          "MACs": 57600
+        },
+        {
+          "module": "dense_head.rpn3d_cls_convs.0.0.0",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "output_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "MACs": 3227516928
+        },
+        {
+          "module": "dense_head.rpn3d_cls_convs.1.0.0",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "output_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "MACs": 3227516928
+        },
+        {
+          "module": "dense_head.rpn3d_bbox_convs.0.0.0",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "output_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "MACs": 3227516928
+        },
+        {
+          "module": "dense_head.rpn3d_bbox_convs.1.0.0",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "output_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "MACs": 3227516928
+        },
+        {
+          "module": "dense_head.conv_box",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "output_shape": [
+            1,
+            42,
+            304,
+            288
+          ],
+          "MACs": 2118057984
+        },
+        {
+          "module": "dense_head.conv_cls",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "output_shape": [
+            1,
+            18,
+            304,
+            288
+          ],
+          "MACs": 907739136
+        },
+        {
+          "module": "dense_head.conv_dir_cls",
+          "kind": "Conv2d",
+          "phase": "receiver",
+          "input_shape": [
+            1,
+            64,
+            304,
+            288
+          ],
+          "output_shape": [
+            1,
+            12,
+            304,
+            288
+          ],
+          "MACs": 67239936
+        }
+      ],
+      "warmup": 3,
+      "repeats": 20,
+      "samples": [
+        {
+          "wall_ms": 89.74821899937524,
+          "stream_elapsed_ms": 89.70012664794922,
+          "transmitter_stream_ms": 16.628511428833008,
+          "receiver_including_channel_stream_ms": 73.07161712646484,
+          "predictions": 4
+        },
+        {
+          "wall_ms": 88.20587600166618,
+          "stream_elapsed_ms": 88.15718078613281,
+          "transmitter_stream_ms": 15.570943832397461,
+          "receiver_including_channel_stream_ms": 72.58624267578125,
+          "predictions": 5
+        },
+        {
+          "wall_ms": 89.31772000141791,
+          "stream_elapsed_ms": 89.27232360839844,
+          "transmitter_stream_ms": 13.583359718322754,
+          "receiver_including_channel_stream_ms": 75.68895721435547,
+          "predictions": 6
+        },
+        {
+          "wall_ms": 87.83337100067001,
+          "stream_elapsed_ms": 87.78854370117188,
+          "transmitter_stream_ms": 14.617600440979004,
+          "receiver_including_channel_stream_ms": 73.17094421386719,
+          "predictions": 6
+        },
+        {
+          "wall_ms": 86.77891099978297,
+          "stream_elapsed_ms": 86.73955535888672,
+          "transmitter_stream_ms": 14.20246410369873,
+          "receiver_including_channel_stream_ms": 72.5370864868164,
+          "predictions": 4
+        },
+        {
+          "wall_ms": 89.12848700128961,
+          "stream_elapsed_ms": 89.08595275878906,
+          "transmitter_stream_ms": 15.618047714233398,
+          "receiver_including_channel_stream_ms": 73.46790313720703,
+          "predictions": 4
+        },
+        {
+          "wall_ms": 89.65145799993479,
+          "stream_elapsed_ms": 89.60205078125,
+          "transmitter_stream_ms": 16.932863235473633,
+          "receiver_including_channel_stream_ms": 72.66918182373047,
+          "predictions": 7
+        },
+        {
+          "wall_ms": 87.17449399955512,
+          "stream_elapsed_ms": 87.12214660644531,
+          "transmitter_stream_ms": 15.519904136657715,
+          "receiver_including_channel_stream_ms": 71.60224151611328,
+          "predictions": 4
+        },
+        {
+          "wall_ms": 90.65555300003325,
+          "stream_elapsed_ms": 90.61888122558594,
+          "transmitter_stream_ms": 15.386624336242676,
+          "receiver_including_channel_stream_ms": 75.23225402832031,
+          "predictions": 6
+        },
+        {
+          "wall_ms": 87.03620699998282,
+          "stream_elapsed_ms": 86.99874877929688,
+          "transmitter_stream_ms": 14.695136070251465,
+          "receiver_including_channel_stream_ms": 72.30361938476562,
+          "predictions": 4
+        },
+        {
+          "wall_ms": 88.62112700080615,
+          "stream_elapsed_ms": 88.58505249023438,
+          "transmitter_stream_ms": 14.105440139770508,
+          "receiver_including_channel_stream_ms": 74.4796142578125,
+          "predictions": 3
+        },
+        {
+          "wall_ms": 92.75049699863303,
+          "stream_elapsed_ms": 92.69939422607422,
+          "transmitter_stream_ms": 16.91417694091797,
+          "receiver_including_channel_stream_ms": 75.78521728515625,
+          "predictions": 7
+        },
+        {
+          "wall_ms": 86.05651399921044,
+          "stream_elapsed_ms": 86.00697326660156,
+          "transmitter_stream_ms": 14.197759628295898,
+          "receiver_including_channel_stream_ms": 71.80921936035156,
+          "predictions": 5
+        },
+        {
+          "wall_ms": 89.06578200003423,
+          "stream_elapsed_ms": 89.02655792236328,
+          "transmitter_stream_ms": 13.945856094360352,
+          "receiver_including_channel_stream_ms": 75.08070373535156,
+          "predictions": 8
+        },
+        {
+          "wall_ms": 87.82894499927352,
+          "stream_elapsed_ms": 87.77932739257812,
+          "transmitter_stream_ms": 14.554112434387207,
+          "receiver_including_channel_stream_ms": 73.2252197265625,
+          "predictions": 4
+        },
+        {
+          "wall_ms": 93.9029950004624,
+          "stream_elapsed_ms": 93.86176300048828,
+          "transmitter_stream_ms": 14.875391960144043,
+          "receiver_including_channel_stream_ms": 78.98636627197266,
+          "predictions": 9
+        },
+        {
+          "wall_ms": 87.8039670005819,
+          "stream_elapsed_ms": 87.66259002685547,
+          "transmitter_stream_ms": 14.604576110839844,
+          "receiver_including_channel_stream_ms": 73.05801391601562,
+          "predictions": 4
+        },
+        {
+          "wall_ms": 86.7334619997564,
+          "stream_elapsed_ms": 86.6723861694336,
+          "transmitter_stream_ms": 13.949151992797852,
+          "receiver_including_channel_stream_ms": 72.72322845458984,
+          "predictions": 6
+        },
+        {
+          "wall_ms": 86.44343899868545,
+          "stream_elapsed_ms": 86.39692687988281,
+          "transmitter_stream_ms": 13.54751968383789,
+          "receiver_including_channel_stream_ms": 72.84941101074219,
+          "predictions": 4
+        },
+        {
+          "wall_ms": 85.1256360001571,
+          "stream_elapsed_ms": 85.09030151367188,
+          "transmitter_stream_ms": 13.548416137695312,
+          "receiver_including_channel_stream_ms": 71.54188537597656,
+          "predictions": 5
+        }
+      ],
+      "peak_allocated_bytes": 3909990912,
+      "accounting": {
+        "data_complex_uses": 64000,
+        "pilot_complex_uses": 0,
+        "header_complex_uses": 0,
+        "total_complex_uses": 64000,
+        "tx_energy_per_frame": [
+          64000.00390625
+        ],
+        "snr_db": 10.0,
+        "channel": "awgn",
+        "receiver_csi": "not_needed",
+        "cbr_complex_per_input_real_scalar": 0.026041666666666668,
+        "allocation": "geometry"
+      },
+      "median_wall_ms": 88.0196235011681,
+      "median_transmitter_stream_ms": 14.611088275909424
+    }
+  ],
+  "limitations": "fixed synthetic RGB; random new codecs; outputs can affect NMS timing; no AP or data loader/I/O; dense FLOPs are lower bounds; host launch gaps included in stream elapsed times"
+}

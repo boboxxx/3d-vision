@@ -1,0 +1,42 @@
+{
+  "state": "passed_six_independent_RGB_quality_CPU_families",
+  "checked_unix": 1791156789.7904232,
+  "families": 6,
+  "sources": {
+    "experiments/original-paper-scenarios/source-quality-code/check_cpu.py": "40ac5bb45def6468c727e78b37ddea39e37a50d6c54b334a0f411ad26e6c46a5",
+    "experiments/original-paper-scenarios/source-quality-code/metrics.py": "dcd4a60aa8c75ab263264d2208b422671407f5ba4bbdcfc6a08264d06dbe8705",
+    "experiments/original-paper-scenarios/main-ROI-quality-protocol-001.md": "970e5ea8b494ad356eee4ac2bdf9014fcb2fa150185bd5d702644400963a7768"
+  },
+  "SSIM_literal_max_abs_errors": [
+    0.0,
+    0.0,
+    2.1094237467877974e-15,
+    2.220446049250313e-16
+  ],
+  "maximum_SSIM_error": 2.1094237467877974e-15,
+  "SSIM_values_each_fixture": 351,
+  "pooled_fixture": {
+    "views": 2,
+    "defined_views": 2,
+    "empty_views": 0,
+    "perfect_views": 0,
+    "pixel_centers": 234,
+    "channel_values": 702,
+    "squared_error_sum": 59.67000000000003,
+    "ssim_sum": 3.6944855010173083,
+    "pooled_mse": 0.08500000000000005,
+    "pooled_psnr_dB": 10.70581074285707,
+    "pooled_psnr_infinite": false,
+    "pooled_ssim": 0.005262799858999015,
+    "secondary_finite_view_psnr_mean": 13.979400086720373,
+    "secondary_finite_view_psnr_count": 2
+  },
+  "empty_and_perfect_JSON_policy_verified": true,
+  "quantization_half_ties_and_overshoot_verified": true,
+  "environment": {
+    "Python": "3.12.8",
+    "NumPy": "2.4.4",
+    "SciPy": "1.17.1"
+  },
+  "scope": "Independent synthetic quality formulas and aggregation only; no KITTI/ROI received-cache quality or AP"
+}

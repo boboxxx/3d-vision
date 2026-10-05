@@ -1,0 +1,22 @@
+test_GT_changes_cannot_reach_sender_and_forbidden_modules_rejected (__main__.Tests) ... ok
+test_both_scopes_actual_gradients_Adam_and_frozen_state (__main__.Tests) ... ok
+test_dedicated_noise_replay_pairing_and_global_RNG_unchanged (__main__.Tests) ... ok
+test_joint_detached_student_output_rejected (__main__.Tests) ... ok
+test_pair_audit_detects_input_and_noise_mismatch (__main__.Tests) ... ok
+test_scope_rejects_changed_architecture_and_channel (__main__.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.911s
+
+OK
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/sheng/paper6/experiments/geometry-link/F8/code/eligibility.py", line 9, in verify_eligibility
+    cp=ROOT/'data/provenance/stereo-channel-native-seed17-001-closure.json';c=read(cp)
+  File "/home/sheng/paper6/experiments/geometry-link/F8/code/eligibility.py", line 6, in read
+    def read(p):return json.loads(Path(p).read_text())
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sheng/paper6/experiments/data/provenance/stereo-channel-native-seed17-001-closure.json'

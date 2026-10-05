@@ -1,0 +1,19 @@
+{
+  "state": "failed",
+  "prefix": "stereo-channel-native-sanity-001",
+  "pid": 53134,
+  "engineering": true,
+  "started_at_unix": 1791109853.8394537,
+  "source_manifest_sha256": "c4c50c58d9c4c3f74abb2785e6ff087a2f115b19e972eacd136e6ef7945d8749",
+  "sources_sha256": {
+    "project": "42b4b52a174f9c2a8c365ea45b3477e87d4c8165d3254d6b04b97bd2dad74b21",
+    "liga": "0ffb2cda5f2fa7596fd18342562f08414d2a61e28892d317aaae946b50967a01",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f",
+    "experiment": "8576c5299a661ac9349e40f33ad24f3c5791570ceca40c64d560acadac48d368"
+  },
+  "completed_commands": [],
+  "evaluations": {},
+  "exception": "CalledProcessError(1, ['/home/sheng/paper6/.venv/bin/python', '/home/sheng/paper6/experiments/geometry-link/F7/code/train.py', '--config', '/home/sheng/paper6/configs/tuning/stereo_task_seed17_epoch1.yaml', '--protocol', '/home/sheng/paper6/experiments/geometry-link/F7-matched-channel-adaptation.md', '--fold', '/home/sheng/paper6/data/internal-tuning-fold-001.json', '--source-manifest', '/home/sheng/paper6/data/provenance/server-source-manifest-stereo-channel-native-sanity-001.json', '--checkpoint', '/mnt/d/paper6/runs/stereo-native-task-seed17-002/checkpoint_epoch_1.pth', '--arm', 'identity', '--output-dir', '/mnt/d/paper6/runs/stereo-channel-native-sanity-001-identity', '--manifest', '/home/sheng/paper6/data/runs/stereo-channel-native-sanity-001-identity.json', '--engineering-steps', '6'])",
+  "ended_at_unix": 1791109870.5983853
+}

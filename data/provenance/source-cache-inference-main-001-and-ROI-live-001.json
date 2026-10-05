@@ -1,0 +1,30 @@
+{
+  "checked_unix": 1791156264.33043,
+  "runs": {
+    "public-val-ROI-main-001": {
+      "state": "running",
+      "pid": 269672,
+      "actual_ps": "    PID STAT     ELAPSED     TIME   RSS\n 269672 Ssl        00:55 00:00:00 33620\n",
+      "ps_returncode": 0,
+      "commands": 0,
+      "error": null,
+      "frames": 0,
+      "views": 0,
+      "GPU_used": false
+    },
+    "source-cache-inference-main-001": {
+      "state": "running",
+      "pid": 269262,
+      "actual_ps": "    PID STAT     ELAPSED     TIME   RSS\n 269262 Ssl        16:05 00:00:01 349124\n",
+      "ps_returncode": 0,
+      "commands": 0,
+      "error": null
+    },
+    "source-cache-inference-main-001-jpeg-cr10-stereo_rcnn": {
+      "state": "running",
+      "pid": 269264,
+      "frames": 1233,
+      "error": null
+    }
+  }
+}

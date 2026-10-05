@@ -1,0 +1,164 @@
+{
+  "observed_unix": 1791177214.8180227,
+  "processes": {
+    "269262": {
+      "returncode": 0,
+      "stdout": "    PID STAT     ELAPSED COMMAND\n 269262 Ssl     06:05:15 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/source-cache-inference-cycle-001.py --mode run --scope main\n"
+    },
+    "270132": {
+      "returncode": 1,
+      "stdout": "    PID STAT     ELAPSED COMMAND\n"
+    }
+  },
+  "main_endpoints": [
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr10-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr10-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr30-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr30-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr50-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr50-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg2000-cr10-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg2000-cr10-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg2000-cr30-stereo_rcnn.json",
+      "state": "running",
+      "frames": 3433,
+      "audit_state": null
+    }
+  ],
+  "source-cache-inference-main-001": {
+    "state": "running",
+    "commands": 16,
+    "returncodes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "error": null
+  },
+  "source-quality-main-001": {
+    "state": "finished_all_three_commands_native_quality_closed",
+    "commands": 3,
+    "returncodes": [
+      0,
+      0,
+      0
+    ],
+    "error": null
+  },
+  "quality_measurement": {
+    "exists": true,
+    "state": "finished_all_six_native_quality_conditions",
+    "keys": [
+      "state",
+      "scope",
+      "pid",
+      "sources",
+      "dependencies",
+      "ordered_ids",
+      "records_path",
+      "started_unix",
+      "views_done",
+      "conditions",
+      "GPU_used",
+      "GT_calibration_LiDAR_model_read",
+      "source_only_PHY_uses",
+      "source_only_PHY_energy",
+      "ended_unix",
+      "records_sha256",
+      "read_barrier"
+    ],
+    "views": null
+  },
+  "quality_audit": {
+    "exists": true,
+    "state": "passed_every_native_quality_record_fresh_pixels_integer_MSE_and_frozen_SSIM_replay",
+    "keys": [
+      "state",
+      "scope",
+      "checked_unix",
+      "sources",
+      "dependencies",
+      "views",
+      "manifest_sha256",
+      "records_sha256",
+      "conditions",
+      "independent_RGB8_integer_MSE",
+      "limitation"
+    ],
+    "views": 45228
+  },
+  "quality_closure": {
+    "exists": true,
+    "state": "closed_native_quality_actual_terminal_all_records",
+    "keys": [
+      "state",
+      "actual_terminal",
+      "scope",
+      "checked_unix",
+      "pid",
+      "sources",
+      "dependencies",
+      "frames_each_condition",
+      "views",
+      "conditions",
+      "artifacts_sha256",
+      "native_to_local_artifacts",
+      "closure_script_sha256"
+    ],
+    "views": 45228
+  }
+}

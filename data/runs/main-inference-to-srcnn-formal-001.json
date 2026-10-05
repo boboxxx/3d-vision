@@ -1,0 +1,65 @@
+{
+  "state": "failed",
+  "pid": 22899,
+  "started_unix": 1791162387.926711,
+  "existing_main_native_PID": 269262,
+  "driver_sha256": "e1275a6dbb80992ffed0a8ef676747a0935add355505a1687709861d98f25f48",
+  "engineering_complete_proof_sha256": "69d4e357ba493c737debbbbf85f47d65c64b8fd2ba521e5cf955a3db7b897d56",
+  "phase": "transfer_native_closure",
+  "completed_stages": [
+    {
+      "name": "native_actual_terminal_closure",
+      "returncode": 0,
+      "finished_unix": 1791185540.931482,
+      "log": "/Users/chen/Documents/ChatGPT/paper6/logs/main-inference-to-srcnn-formal-001-native_actual_terminal_closure.log",
+      "log_sha256": "30ad344fc6558f8d4e7d07cc41241f411cba78bac1589d9ce3db1e9c55527e6b"
+    },
+    {
+      "name": "transfer_native_closure",
+      "returncode": 0,
+      "finished_unix": 1791185541.8437078,
+      "log": "/Users/chen/Documents/ChatGPT/paper6/logs/main-inference-to-srcnn-formal-001-transfer_native_closure.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "last_actual_native_snapshot": {
+    "checked_unix": 1791183581.4191356,
+    "state": "finished12_native_endpoints12_audits_pending_terminal_closure",
+    "pid": 269262,
+    "ps_returncode": 1,
+    "actual_ps": "    PID STAT COMMAND\n",
+    "commands": 24,
+    "returncodes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "endpoints": 12,
+    "error": null
+  },
+  "last_poll_unix": 1791183581.4489012,
+  "phase_started_unix": 1791185540.935672,
+  "error": "AssertionError()",
+  "ended_unix": 1791185541.9153411
+}

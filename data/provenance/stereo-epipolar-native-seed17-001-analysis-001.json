@@ -1,0 +1,171 @@
+{
+  "state": "closed_result_analysis",
+  "local_proof_sha256": "d5d9acd905b1bc52a2b9289aaff373a2b5cd7953ad6f43c7146b71c9c0e36b02",
+  "table": [
+    {
+      "arm": "U",
+      "condition": "identity10",
+      "easy": 54.129191342705965,
+      "moderate": 31.8639020562047,
+      "hard": 26.071837142759215
+    },
+    {
+      "arm": "U",
+      "condition": "awgn6",
+      "easy": 44.01494020836903,
+      "moderate": 25.3073478672981,
+      "hard": 21.0929418600804
+    },
+    {
+      "arm": "U",
+      "condition": "awgn10",
+      "easy": 48.998791581993224,
+      "moderate": 28.55250967153794,
+      "hard": 23.34310714521386
+    },
+    {
+      "arm": "U",
+      "condition": "awgn18",
+      "easy": 54.850184940061176,
+      "moderate": 31.716037797092834,
+      "hard": 26.6314320893117
+    },
+    {
+      "arm": "G",
+      "condition": "identity10",
+      "easy": 55.0757880393169,
+      "moderate": 33.24920836883448,
+      "hard": 27.367172882838155
+    },
+    {
+      "arm": "G",
+      "condition": "awgn6",
+      "easy": 46.654449791087735,
+      "moderate": 26.728882238724395,
+      "hard": 22.553667047800502
+    },
+    {
+      "arm": "G",
+      "condition": "awgn10",
+      "easy": 51.17198725769146,
+      "moderate": 29.540467682760287,
+      "hard": 24.72000210537303
+    },
+    {
+      "arm": "G",
+      "condition": "awgn18",
+      "easy": 54.582851300672985,
+      "moderate": 32.1878120606251,
+      "hard": 26.153288505368284
+    },
+    {
+      "arm": "P",
+      "condition": "identity10",
+      "easy": 54.89722169877511,
+      "moderate": 33.207239287713094,
+      "hard": 27.026526089309744
+    },
+    {
+      "arm": "P",
+      "condition": "awgn6",
+      "easy": 48.142236293410754,
+      "moderate": 28.190435044668575,
+      "hard": 22.922758572850835
+    },
+    {
+      "arm": "P",
+      "condition": "awgn10",
+      "easy": 52.29117769604128,
+      "moderate": 29.433569764360996,
+      "hard": 24.69239035794308
+    },
+    {
+      "arm": "P",
+      "condition": "awgn18",
+      "easy": 54.673620398712174,
+      "moderate": 31.70520604054304,
+      "hard": 25.668649010339845
+    },
+    {
+      "arm": "S",
+      "condition": "identity10",
+      "easy": 58.580069432589966,
+      "moderate": 34.53160759857707,
+      "hard": 28.295445139290955
+    },
+    {
+      "arm": "S",
+      "condition": "awgn6",
+      "easy": 46.539346141453045,
+      "moderate": 27.15609099334888,
+      "hard": 22.311674952010666
+    },
+    {
+      "arm": "S",
+      "condition": "awgn10",
+      "easy": 49.95400291134363,
+      "moderate": 29.797786558946125,
+      "hard": 24.630560009689937
+    },
+    {
+      "arm": "S",
+      "condition": "awgn18",
+      "easy": 55.59644618696915,
+      "moderate": 33.48957495668291,
+      "hard": 27.661707784949456
+    }
+  ],
+  "prelocked_primary_differences_pp": {
+    "P_minus_G": -0.10689791839929086,
+    "P_minus_S": -0.3642167945851291,
+    "P_minus_U": 0.8810600928230556
+  },
+  "geometric_primary_supported": false,
+  "exploratory_post_AP_gain_summary": {
+    "U": {
+      "raw_records_sha256": "eeb0d9e0a67072e2ad06668481e2c845d233441247b1b0aceba482baf49f4cbb",
+      "last_steps": [
+        2841,
+        3340
+      ],
+      "mean_absolute_gain_deviation": 0.0,
+      "median_per_frame_gain_span": 0.0,
+      "minimum": 1.0,
+      "maximum": 1.0
+    },
+    "G": {
+      "raw_records_sha256": "fa9188de6d0d92ccf64adb9496dc726203561e6d2f19598ec6037d31f172dceb",
+      "last_steps": [
+        2841,
+        3340
+      ],
+      "mean_absolute_gain_deviation": 0.008680668637156486,
+      "median_per_frame_gain_span": 0.01808631420135498,
+      "minimum": 0.9687857627868652,
+      "maximum": 1.0120943784713745
+    },
+    "P": {
+      "raw_records_sha256": "5bc55b683291d7857f4ac287e29b946147d431a37fe8b96ce6efe49b226a2f60",
+      "last_steps": [
+        2841,
+        3340
+      ],
+      "mean_absolute_gain_deviation": 0.0067618889939039944,
+      "median_per_frame_gain_span": 0.019115746021270752,
+      "minimum": 0.9757275581359863,
+      "maximum": 1.012473702430725
+    },
+    "S": {
+      "raw_records_sha256": "e72bbc755d4dd673669b61810d2f8a20d451564020a239c55652a573720815ef",
+      "last_steps": [
+        2841,
+        3340
+      ],
+      "mean_absolute_gain_deviation": 0.006361073149368167,
+      "median_per_frame_gain_span": 0.00921127200126648,
+      "minimum": 0.9676843285560608,
+      "maximum": 1.0040452480316162
+    }
+  },
+  "limitation": "Single internal372/seed17, author-pretraining exposure; no main/multiseed/statistical superiority or overall geometry rejection"
+}

@@ -1,0 +1,153 @@
+{
+  "state": "passed_two_actual_container_model_binding_and_independent_header_gates",
+  "checked_unix": 1791199957.472061,
+  "sources": {
+    "experiments/original-paper-scenarios/ecsic-entropy-code/codec.py": "a22fb7717cd1e2a13e4539a74a541958e93a7f6b215ae960b9c2736ad53ec157",
+    "experiments/original-paper-scenarios/ecsic-KITTI-byte-code-004/codec.py": "1628b1c6e5e99edaddecd5a84e346644dc0d0f9b0a6abefffa5e81c2581ffb30",
+    "experiments/original-paper-scenarios/ecsic-KITTI-byte-code-004/check_cpu.py": "fc58f8d09381ea9740026a34ca363ea2c6285dee0caa5dcc8c30589bf12a1f91",
+    "experiments/original-paper-scenarios/ecsic-KITTI-byte-protocol-004.md": "8dc4e850b8ac05ce725a797d7db762ee31af9028fbd528cbdfb833cc42d79ab5"
+  },
+  "CDF_sha256": "507d22e35fb0bb605f05a3312600a8aff3ff10f1ec1c4964358cb390e35d56e5",
+  "fixtures": [
+    {
+      "case": "synthetic32x64",
+      "original_container_sha256": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f",
+      "new_container_sha256": "4e40d0a97026012b9cbc139c8d78203335719783bcde87141b38bc9b26f3d0d7",
+      "container_bytes": 813,
+      "header_CRC_bytes": 166,
+      "unchanged_stream_body_sha256": "e06942a625cc7494e2846c73037eba8cbf240ef9ad30fb156e524dc5515def73",
+      "descriptors": [
+        [
+          0,
+          96,
+          15,
+          0
+        ],
+        [
+          1,
+          96,
+          20,
+          0
+        ],
+        [
+          2,
+          1536,
+          318,
+          0
+        ],
+        [
+          3,
+          1536,
+          294,
+          0
+        ]
+      ],
+      "alternate_model_binding_sha256": "ed4c29dc45739cc04f8106e40f882eff7468531102418696ee3a41dd85a66588"
+    },
+    {
+      "case": "training000000",
+      "original_container_sha256": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a",
+      "new_container_sha256": "83950f529949590d8d5a0b0b25ad57c342e99001628e61c2cc23d185ab72e073",
+      "container_bytes": 44824,
+      "header_CRC_bytes": 166,
+      "unchanged_stream_body_sha256": "146f16c11f66eed0de6aac2cc08c1e5ba48cac2539a85868e8626fe51cf9da13",
+      "descriptors": [
+        [
+          0,
+          22464,
+          2173,
+          0
+        ],
+        [
+          1,
+          22464,
+          2584,
+          0
+        ],
+        [
+          2,
+          359424,
+          19968,
+          0
+        ],
+        [
+          3,
+          359424,
+          19933,
+          0
+        ]
+      ],
+      "alternate_model_binding_sha256": "ed4c29dc45739cc04f8106e40f882eff7468531102418696ee3a41dd85a66588"
+    }
+  ],
+  "rejected_cases": [
+    "synthetic32x64_cross_expected_model",
+    "synthetic32x64_foreign_wire_model",
+    "synthetic32x64_legacy_magic",
+    "synthetic32x64_valid_CRC_magic",
+    "synthetic32x64_valid_CRC_version",
+    "synthetic32x64_valid_CRC_count",
+    "synthetic32x64_valid_CRC_weight",
+    "synthetic32x64_valid_CRC_config",
+    "synthetic32x64_valid_CRC_CDF",
+    "synthetic32x64_valid_CRC_height",
+    "synthetic32x64_valid_CRC_stream_id",
+    "synthetic32x64_valid_CRC_symbol_count",
+    "synthetic32x64_valid_CRC_rans_length",
+    "synthetic32x64_valid_CRC_escape_length",
+    "synthetic32x64_truncated_0",
+    "synthetic32x64_truncated_1",
+    "synthetic32x64_truncated_165",
+    "synthetic32x64_truncated_181",
+    "synthetic32x64_truncated_812",
+    "synthetic32x64_trailing_byte",
+    "synthetic32x64_bitflip_0",
+    "synthetic32x64_bitflip_14",
+    "synthetic32x64_bitflip_45",
+    "synthetic32x64_bitflip_78",
+    "synthetic32x64_bitflip_109",
+    "synthetic32x64_bitflip_110",
+    "synthetic32x64_bitflip_161",
+    "synthetic32x64_bitflip_162",
+    "synthetic32x64_bitflip_808",
+    "synthetic32x64_bitflip_812",
+    "training000000_cross_expected_model",
+    "training000000_foreign_wire_model",
+    "training000000_legacy_magic",
+    "training000000_valid_CRC_magic",
+    "training000000_valid_CRC_version",
+    "training000000_valid_CRC_count",
+    "training000000_valid_CRC_weight",
+    "training000000_valid_CRC_config",
+    "training000000_valid_CRC_CDF",
+    "training000000_valid_CRC_height",
+    "training000000_valid_CRC_stream_id",
+    "training000000_valid_CRC_symbol_count",
+    "training000000_valid_CRC_rans_length",
+    "training000000_valid_CRC_escape_length",
+    "training000000_truncated_0",
+    "training000000_truncated_1",
+    "training000000_truncated_165",
+    "training000000_truncated_181",
+    "training000000_truncated_44823",
+    "training000000_trailing_byte",
+    "training000000_bitflip_0",
+    "training000000_bitflip_14",
+    "training000000_bitflip_45",
+    "training000000_bitflip_78",
+    "training000000_bitflip_109",
+    "training000000_bitflip_110",
+    "training000000_bitflip_161",
+    "training000000_bitflip_162",
+    "training000000_bitflip_44819",
+    "training000000_bitflip_44823",
+    "noncanonical_model_''",
+    "noncanonical_model_'E66B55E2F888F5D113EA6C6414640C7486280D6E18838BA77C650720A5636052'",
+    "noncanonical_model_'e66b55e2f888f5d113ea6c6414640c7486280d6e18838ba77c650720a563605'",
+    "noncanonical_model_'gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg'",
+    "noncanonical_model_None"
+  ],
+  "actual_candidate_final_weight_or_calibration": false,
+  "neural_reception_executed": false,
+  "limitation": "Pure framing/header/identity gate on two already decoded public-model fixtures; no adapted-model neural decode, calibration, PHY or AP."
+}

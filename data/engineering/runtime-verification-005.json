@@ -1,0 +1,111 @@
+{
+  "evidence_type": "engineering_only",
+  "torch": "2.5.0+cu118",
+  "cuda": "11.8",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "started_at_unix": 1791043221.8575447,
+  "checks": {
+    "cost_volume": [
+      {
+        "dtype": "torch.float32",
+        "stride": 1,
+        "max_absolute_errors": {
+          "forward": 1.1920928955078125e-07,
+          "grad_left": 9.5367431640625e-07,
+          "grad_right": 4.76837158203125e-07
+        }
+      },
+      {
+        "dtype": "torch.float32",
+        "stride": 2,
+        "max_absolute_errors": {
+          "forward": 1.1920928955078125e-07,
+          "grad_left": 4.76837158203125e-07,
+          "grad_right": 2.384185791015625e-07
+        }
+      },
+      {
+        "dtype": "torch.float32",
+        "stride": 4,
+        "max_absolute_errors": {
+          "forward": 1.1920928955078125e-07,
+          "grad_left": 4.76837158203125e-07,
+          "grad_right": 2.384185791015625e-07
+        }
+      },
+      {
+        "dtype": "torch.float64",
+        "stride": 1,
+        "max_absolute_errors": {
+          "forward": 4.440892098500626e-16,
+          "grad_left": 8.881784197001252e-16,
+          "grad_right": 8.881784197001252e-16
+        }
+      },
+      {
+        "dtype": "torch.float64",
+        "stride": 2,
+        "max_absolute_errors": {
+          "forward": 4.440892098500626e-16,
+          "grad_left": 1.3322676295501878e-15,
+          "grad_right": 4.440892098500626e-16
+        }
+      },
+      {
+        "dtype": "torch.float64",
+        "stride": 4,
+        "max_absolute_errors": {
+          "forward": 5.551115123125783e-17,
+          "grad_left": 1.7763568394002505e-15,
+          "grad_right": 2.220446049250313e-16
+        }
+      }
+    ],
+    "voxelizer": {
+      "voxels": 2,
+      "coordinate_order": "ZYX",
+      "owns_storage": true
+    },
+    "sparse_convolution": {
+      "legacy_shape": [
+        3,
+        3,
+        3,
+        2,
+        5
+      ],
+      "runtime_shape": [
+        5,
+        3,
+        3,
+        3,
+        2
+      ],
+      "max_absolute_errors": {
+        "forward": 4.76837158203125e-06,
+        "grad_features": 7.62939453125e-06,
+        "grad_kernel": 3.814697265625e-06
+      }
+    },
+    "boxes": {
+      "iou_max_absolute_error": 0.0,
+      "nms_kept": [
+        0,
+        2
+      ],
+      "point_box_ids": [
+        [
+          0,
+          1,
+          -1
+        ]
+      ]
+    }
+  },
+  "state": "crashed",
+  "current_check": "evaluator_fixture",
+  "external_exit_code": 139,
+  "external_signal": "SIGSEGV",
+  "crashed_pid": 5875,
+  "log": "logs/runtime-verification-005.log"
+}

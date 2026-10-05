@@ -1,0 +1,35 @@
+{
+  "state": "closed_actual_whole37120_all10_native_local_and_normal_scheduler_terminals",
+  "candidate": 4,
+  "lambda_RD": 0.1,
+  "seed": 17,
+  "training_actual_raw_job": "11429214",
+  "native_actual_raw_job": "11429218",
+  "export_actual_job": "11429221",
+  "local_actual_exec_session": 55964,
+  "local_actual_exit_code": 0,
+  "checked_updates": 37120,
+  "checked_epoch_checkpoints": 10,
+  "checkpoint_saved_values": 955923300,
+  "complete_metadata_agreement": true,
+  "proof_files": {
+    "native": {
+      "path": "data/provenance/ecsic-KITTI-lambda0.1-seed17-002-native-audit-003.json",
+      "sha256": "453679083be8d545dc45068193496d3c0e64328bb85d4a46bd9ed2d1e3297f12"
+    },
+    "local": {
+      "path": "data/provenance/ecsic-KITTI-lambda0.1-seed17-002-local-audit-003.json",
+      "sha256": "9d7db8c35a0a4b250cfe73efce44d657ba980b88d4500b6de11dcebb003899a2"
+    }
+  },
+  "native_execution_sha256": "1fe69d6cc596b6e50deb4e3f7721695e43600f841ba468ab97f2400aa84a5f99",
+  "local_launcher_sha256": "1cfbdf285bde3d2232786f366ba6baebd4dc8154c7de192c557e474d9c5a4397",
+  "terminal_snapshot_sha256": "2cf2f62f708db0ccfbfa09337cd6495775928b6cd036adfe3e8be07b23009a09",
+  "training_report_sha256": "4b48c39e3dfc7a9a2597be3fbed96efe134b01f281973f1961b66f64a57d8375",
+  "updates_jsonl_sha256": "b165fcff212cb04b885eb30fb2de4b1d4b76a76753fb61e2096673be325410c1",
+  "all_six_candidates_closed": false,
+  "actual_source_bytes_calibrated": false,
+  "AP_measured": false,
+  "limitation": "Full exposure/scalar/native-invariant logs and all saved epoch weights/moments; not independent full RGB/gradient/Adam transition replay. Actual entropy rates, calibration and AP remain required.",
+  "checked_unix": 1791217242.258911
+}

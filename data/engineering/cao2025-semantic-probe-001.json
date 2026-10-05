@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "scope": "synthetic semantic variant engineering only; no channel or AP",
+  "device": "cpu",
+  "torch_version": "2.4.1",
+  "seed": 17,
+  "checkpoint_sha256": "3d2a1287666aa71752ebaedc06999212886ef476f77d691a1b0006107088e714",
+  "checkpoint_bytes": 5770711,
+  "upstream_sources_verified": true,
+  "learned_flow_tensors_exactly_loaded": 60,
+  "fixed_flow_buffers": [
+    "mean",
+    "std"
+  ],
+  "missing_learned_weight_rejected": true,
+  "warp_positive_x_samples_right": true,
+  "original_shape": [
+    1,
+    3,
+    197,
+    203
+  ],
+  "padded_shape": [
+    1,
+    3,
+    198,
+    204
+  ],
+  "output_shapes": [
+    [
+      1,
+      3,
+      197,
+      203
+    ],
+    [
+      1,
+      3,
+      197,
+      203
+    ]
+  ],
+  "parameter_tensors": 638,
+  "parameters": 12349974,
+  "all_parameter_gradients_finite": true,
+  "parameter_groups": {
+    "global_encoder": {
+      "parameters": 680494,
+      "gradient_squared_norm": 0.00861133708178579
+    },
+    "global_decoder": {
+      "parameters": 11437874,
+      "gradient_squared_norm": 0.006109110189373634
+    },
+    "key_encoders": {
+      "parameters": 2214,
+      "gradient_squared_norm": 2.3123882975035436e-05
+    },
+    "key_decoders": {
+      "parameters": 1674,
+      "gradient_squared_norm": 3.1607287604740685e-06
+    },
+    "fusions": {
+      "parameters": 227718,
+      "gradient_squared_norm": 0.03808651059398926
+    }
+  },
+  "global_warmup_finite": true,
+  "synthetic_untrained_loss": 0.18090149760246277,
+  "source_hashes": {
+    "model.py": "da3ec01b947047e2640a5551b48ecc5719ffa398eae05e3dfa680940de8f0416",
+    "probe.py": "2f9fd294d5fe37b21aaefaf7b6424a7b1824bad21491b80f916d605f23cca334",
+    "upstream/sources.json": "d47d8e00d2fafcd7cbc9c399459199586639babd99da3b92e79890288680c4c2"
+  },
+  "elapsed_seconds": 2.893509864807129
+}

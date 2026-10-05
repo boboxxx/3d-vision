@@ -1,0 +1,39 @@
+{"command": "experiments/geometry-link/F7/code/test_conditions.py", "returncode": 0}
+test_AWGN_is_dedicated_exact_replay_with_native_hooks_grad_and_unchanged_states (__main__.Tests.test_AWGN_is_dedicated_exact_replay_with_native_hooks_grad_and_unchanged_states) ... ok
+test_SNR_schedule_does_not_consume_global_RNG_and_rejects_different_seed (__main__.Tests.test_SNR_schedule_does_not_consume_global_RNG_and_rejects_different_seed) ... ok
+test_augmented_fingerprint_captures_pixels_target_camera_transform_and_flipped_empty_GT (__main__.Tests.test_augmented_fingerprint_captures_pixels_target_camera_transform_and_flipped_empty_GT) ... ok
+test_identity_does_not_draw_noise_and_bad_order_generator_layout_rejected (__main__.Tests.test_identity_does_not_draw_noise_and_bad_order_generator_layout_rejected) ... ok
+test_independent_pair_audit_rejects_mismatched_images_targets_SNR_and_noise_rng (__main__.Tests.test_independent_pair_audit_rejects_mismatched_images_targets_SNR_and_noise_rng) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.118s
+
+OK
+{"command": "experiments/geometry-link/F7/code/test_native_scope.py", "returncode": 0}
+test_actual_16_Adam_moments_steps_and_corruption_rejected (__main__.Tests.test_actual_16_Adam_moments_steps_and_corruption_rejected) ... ok
+test_explicit_noisy_scope_keeps_GT_barrier_teacher_rejection_and_all_codec_gradients (__main__.Tests.test_explicit_noisy_scope_keeps_GT_barrier_teacher_rejection_and_all_codec_gradients) ... ok
+test_independent_native_record_audit_rejects_wrong_loss_barrier_symbols_SNR_and_GT (__main__.Tests.test_independent_native_record_audit_rejects_wrong_loss_barrier_symbols_SNR_and_GT) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.829s
+
+OK
+{"command": "tests/test_stereo_task_adaptation.py", "returncode": 0}
+test_GT_contents_cannot_change_sender_or_received_features (__main__.Tests.test_GT_contents_cannot_change_sender_or_received_features) ... ok
+test_actual_16_optimizer_step_and_native_receiver_backward (__main__.Tests.test_actual_16_optimizer_step_and_native_receiver_backward) ... ok
+test_independent_loss_weight_target_barrier_and_cost_gradient_audit (__main__.Tests.test_independent_loss_weight_target_barrier_and_cost_gradient_audit) ... ok
+test_native_empty_GT_keeps_background_objective_and_receiver_gradient (__main__.Tests.test_native_empty_GT_keeps_background_objective_and_receiver_gradient) ... ok
+test_non_sensor_target_train_mode_teacher_and_broken_cost_graph_rejected (__main__.Tests.test_non_sensor_target_train_mode_teacher_and_broken_cost_graph_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.528s
+
+OK
+usage: cycle.py [-h] --prefix PREFIX [--engineering]
+                [--engineering-prefix ENGINEERING_PREFIX]
+
+options:
+  -h, --help            show this help message and exit
+  --prefix PREFIX
+  --engineering
+  --engineering-prefix ENGINEERING_PREFIX

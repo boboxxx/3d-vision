@@ -1,0 +1,5 @@
+# Complete missing framework source staging and build repair002
+
+Locked before staging/installation/retry. CPU Slurm11424733 ended FAILED1:0 at initial input checks: 330 framework Python source files had never been copied to Artemis. The complete inventory finds 27 existing inputs identical and zero differing inputs. No dependency installation or compilation occurred and the base runtime is unchanged. Preserve build001 and its actual terminal/logs.
+
+Copy exactly the 330 missing Python files from the already frozen local LIGA/mmdetection/src tree, using --ignore-existing and the retained file list; do not overwrite any existing source/operator/binary. Require the full exact hash table before proceeding. This completes source availability, without changing baseline mathematics or source bytes. Use independent overlay002, report/build002 and import-probe002 with the identical 48 official dependency archives. Previous scripts/protocols and failed overlay001 remain intact. All CPU allocation, sm120 compilation, original-runtime preservation, actual-terminal and later GPU/task boundaries from protocol001/002/003 remain.

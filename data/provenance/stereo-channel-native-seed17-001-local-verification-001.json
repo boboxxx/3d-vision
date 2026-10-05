@@ -1,0 +1,36 @@
+{
+  "state": "passed",
+  "closure_sha256": "45e818675042e4d6d5e25567a972aaf85b92562d5488abbc395424193e35fe12",
+  "verifier_sha256": "c02986661f280f32cb84c0280d39fb1148b0541564fd163cfd2eecf9d3df804e",
+  "actual_terminal_evidence_sha256": "dea9b08f914ecbf68f675ed05aa855ad9f7e960c6be3bbc4bc7bd956942485a7",
+  "artifacts_verified": 46,
+  "paired_steps": 3340,
+  "empty_GT": {
+    "identity": 62,
+    "awgn": 62
+  },
+  "metrics": {
+    "stereo-channel-native-seed17-001-identity-test-identity": {
+      "Car_3d/easy_R40": 46.86301357235884,
+      "Car_3d/moderate_R40": 25.607495963649363,
+      "Car_3d/hard_R40": 21.992639063058867
+    },
+    "stereo-channel-native-seed17-001-identity-test-awgn": {
+      "Car_3d/easy_R40": 35.5365295945205,
+      "Car_3d/moderate_R40": 17.402863631619304,
+      "Car_3d/hard_R40": 15.064950096767477
+    },
+    "stereo-channel-native-seed17-001-awgn-test-identity": {
+      "Car_3d/easy_R40": 48.527808321395774,
+      "Car_3d/moderate_R40": 26.191523275266583,
+      "Car_3d/hard_R40": 21.74878580463781
+    },
+    "stereo-channel-native-seed17-001-awgn-test-awgn": {
+      "Car_3d/easy_R40": 45.77659621708678,
+      "Car_3d/moderate_R40": 24.53278277452134,
+      "Car_3d/hard_R40": 20.00461531076727
+    }
+  },
+  "primary_AWGN10_Moderate_treatment_minus_control_pp": 7.129919142902036,
+  "scope": "Sealed paired raw records and full server audits; local audit does not re-run CUDA RNG, checkpoints or AP."
+}

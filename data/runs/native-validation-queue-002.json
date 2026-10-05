@@ -1,0 +1,37 @@
+{
+  "state": "finished_all_native_engineering_closed",
+  "pid": 54337,
+  "identity_sha256": "6a3914da305801d69e8e32c3d89f0a78851cd788cdad065a777878106ef77a42",
+  "started_at_unix": 1791111062.5730968,
+  "completed_commands": [
+    {
+      "label": "F7-cycle",
+      "log_sha256": "462baf61141769046c1238d586d3c4a7a7b21b22a0510b8d0e37a65eb8abc43e"
+    },
+    {
+      "label": "F7-close",
+      "log_sha256": "c409f0ae35abc9677c296dfa8803c125d5087a1d8f72e7fe02ef32be0499f630"
+    },
+    {
+      "label": "final-stereo_rcnn",
+      "log_sha256": "60e2855c0f2e36fbf59c434242dc69ec7d8b1f29db68a1cfb102ad6e2a1e3ae8"
+    },
+    {
+      "label": "final-liga",
+      "log_sha256": "9d49cd045b6f2b885bc8c7909a0d035cd918ae5b3ee9ec215f5692a169e286cf"
+    }
+  ],
+  "scope": "repaired F7 six-step pair and final receiver GPU engineering only; no formal AP",
+  "last_original_state": "finished",
+  "last_checked_at_unix": 1791114036.9842734,
+  "original_cycle_terminal": false,
+  "original_stage5_audit_sha256": "3d8ec9a779fd7c6116a4ddb836b5828ed2970f9513c3b9a98011bd9cc641a870",
+  "current_command": "final-liga",
+  "F7_engineering_closure_sha256": "e4c5f5245af0bcb76129ec7c559c3fc9f4da8cee51c82ed0bed1098c870c25ff",
+  "ended_at_unix": 1791114146.5585241,
+  "native_probe_sha256": {
+    "stereo_rcnn": "3cdf7171008acd8be9ea0405bd3e7ae006fb650e6eb332c8f234f40cc03db1a8",
+    "liga": "5b0a3dd6645f7933f06a94cb1260e91d7f793df684959a482379121d0ddb5e1f"
+  },
+  "formal_training_or_AP_started": false
+}

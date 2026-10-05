@@ -1,0 +1,38 @@
+{
+  "state": "retained_all_three_S_epoch_weights_exact_native_hashes_safe_finite",
+  "seed": 17,
+  "checked_unix": 1791202769.3123531,
+  "actual_running_job": "11424939",
+  "checkpoint_source_snapshot": "data/provenance/training-actual-snapshot-011-001.json",
+  "checkpoints": [
+    {
+      "path": "data/engineering/cost-field-full-checkpoints-004/seed17/checkpoint-S-epoch1.pt",
+      "sha256": "39a2e254f6c876521cdc98d89b705f9bb9828d4521c51ed36b615c5836f8ac19",
+      "epoch": 1,
+      "arm": "S",
+      "safe_finite": true,
+      "optimizer_steps": 3712,
+      "all_model_and_optimizer_saved_values": 5035
+    },
+    {
+      "path": "data/engineering/cost-field-full-checkpoints-004/seed17/checkpoint-S-epoch2.pt",
+      "sha256": "dc1d61f9bf30a398eab7c55b805bb3546b235a0a8288ed9025a4d9c6f6c409fd",
+      "epoch": 2,
+      "arm": "S",
+      "safe_finite": true,
+      "optimizer_steps": 7424,
+      "all_model_and_optimizer_saved_values": 5035
+    },
+    {
+      "path": "data/engineering/cost-field-full-checkpoints-004/seed17/checkpoint-S-epoch3.pt",
+      "sha256": "e383f3fcff326f73af44fd3faf3dd4fcf0d6fa971b78da5a38d393ab8dd88d70",
+      "epoch": 3,
+      "arm": "S",
+      "safe_finite": true,
+      "optimizer_steps": 11136,
+      "all_model_and_optimizer_saved_values": 5035
+    }
+  ],
+  "AP_executed": false,
+  "full_training_007_proof_claimed": false
+}

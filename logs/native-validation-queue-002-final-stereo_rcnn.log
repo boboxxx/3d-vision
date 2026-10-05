@@ -1,0 +1,9 @@
+/home/sheng/paper6/third_party/Stereo-RCNN/lib/model/dense_align/box_3d.py:39: UserWarning: Using torch.cross without specifying the dim arg is deprecated.
+Please either pass the dim explicitly or simply use torch.linalg.cross.
+The default value of dim will change to agree with that of linalg.cross in a future release. (Triggered internally at ../aten/src/ATen/native/Cross.cpp:62.)
+  normal = torch.cross(arrow1, arrow2)
+{"detector": "stereo_rcnn", "channel": "clean_relay", "count": 5}
+/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/torch/functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3595.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+{"detector": "stereo_rcnn", "channel": "identity", "count": 0}
+{"detector": "stereo_rcnn", "channel": "awgn", "count": 0}

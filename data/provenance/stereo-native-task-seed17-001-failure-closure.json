@@ -1,0 +1,24 @@
+{
+  "state": "closed_failed_attempt",
+  "run_id": "stereo-native-task-seed17-001",
+  "optimizer_steps_recorded": 5,
+  "raw_rows": 5,
+  "no_final_checkpoint": true,
+  "no_final_AP_evaluation": true,
+  "all4_source_trees_unchanged": true,
+  "original21_sources_unchanged": true,
+  "original_pid26642_alive": true,
+  "closed_at_unix": 1791078219.6183538,
+  "exception": "ValueError('native augmented3D GT layout/finite differs')",
+  "files": {
+    "/home/sheng/paper6/data/runs/stereo-native-task-seed17-001.json": "eb0494876c51ad000e912d49b4b186b366f1cf450b997614b8ece50ede224d0a",
+    "/home/sheng/paper6/data/provenance/stereo-native-task-seed17-001-launch.json": "f700f20cde92f6301430c65512d9f33753c3659809124cc44b054186e3f96b22",
+    "/home/sheng/paper6/data/provenance/server-source-manifest-stereo-native-task-seed17-001.json": "12fb5a8d8bfe9515adbf99a33aa88c24bfcff4fe3c542ff49ba116d1f87ee48b",
+    "/home/sheng/paper6/data/provenance/server-source-closure-stereo-native-task-seed17-001-failed.json": "12fb5a8d8bfe9515adbf99a33aa88c24bfcff4fe3c542ff49ba116d1f87ee48b",
+    "/mnt/d/paper6/runs/stereo-native-task-seed17-001/training.jsonl": "363caa529cc12070e3b3d153842a3263246ec7e5318877146c9bdba25c83ff59",
+    "/home/sheng/paper6/logs/stereo-native-task-seed17-001-train.log": "a6d39b4e243f7a2cbf41bc5a9cd4ad7e9355854a06c4f65a06f84c9af78baa98",
+    "/home/sheng/paper6/logs/stereo-native-task-seed17-001-cycle.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "initial535_snapshot_sha256": "924e0de8fe105dc122c64a9f31e502643757be97d3b1b0bb45dc4f9adf34e196",
+  "limitation": "Five recorded updates only; process exited before final state/optimizer checkpoint, no full-state or final performance claim. Repaired independent run must use original F5b initialization, never this attempt weights."
+}

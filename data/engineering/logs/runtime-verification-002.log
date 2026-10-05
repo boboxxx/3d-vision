@@ -1,0 +1,47 @@
+cost_volume passed
+voxelizer passed
+sparse_convolution passed
+/home/sheng/paper6/third_party/LIGA-Stereo/liga/ops/iou3d_nms/iou3d_nms_utils.py:70: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  overlaps_bev = torch.cuda.FloatTensor(torch.Size((boxes_a.shape[0], boxes_b.shape[0]))).zero_()  # (N, M)
+boxes passed
+Traceback (most recent call last):
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/cudadrv/driver.py", line 254, in ensure_initialized
+    self.cuInit(0)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/cudadrv/driver.py", line 327, in safe_cuda_api_call
+    self._check_ctypes_error(fname, retcode)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/cudadrv/driver.py", line 399, in _check_ctypes_error
+    raise CudaAPIError(retcode, msg)
+numba.cuda.cudadrv.driver.CudaAPIError: [100] Call to cuInit results in CUDA_ERROR_NO_DEVICE
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sheng/paper6/scripts/verify_liga_runtime.py", line 177, in <module>
+    main()
+  File "/home/sheng/paper6/scripts/verify_liga_runtime.py", line 163, in main
+    info["checks"][name] = check()
+  File "/home/sheng/paper6/scripts/verify_liga_runtime.py", line 134, in evaluator_fixture
+    from liga.datasets.kitti.kitti_object_eval_python.eval import get_official_eval_result
+  File "/home/sheng/paper6/third_party/LIGA-Stereo/liga/datasets/kitti/kitti_object_eval_python/eval.py", line 5, in <module>
+    from .rotate_iou import rotate_iou_gpu_eval
+  File "/home/sheng/paper6/third_party/LIGA-Stereo/liga/datasets/kitti/kitti_object_eval_python/rotate_iou.py", line 18, in <module>
+    def trangle_area(a, b, c):
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/decorators.py", line 133, in _jit
+    disp.compile_device(argtypes, restype)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/dispatcher.py", line 883, in compile_device
+    cc = get_current_device().compute_capability
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/api.py", line 443, in get_current_device
+    return current_context().device
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/cudadrv/devices.py", line 220, in get_context
+    return _runtime.get_or_create_context(devnum)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/cudadrv/devices.py", line 138, in get_or_create_context
+    return self._get_or_create_context_uncached(devnum)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/cudadrv/devices.py", line 153, in _get_or_create_context_uncached
+    with driver.get_active_context() as ac:
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/cudadrv/driver.py", line 499, in __enter__
+    driver.cuCtxGetCurrent(byref(hctx))
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/cudadrv/driver.py", line 292, in __getattr__
+    self.ensure_initialized()
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/numba/cuda/cudadrv/driver.py", line 258, in ensure_initialized
+    raise CudaSupportError(f"Error at driver init: {description}")
+numba.cuda.cudadrv.error.CudaSupportError: Error at driver init: Call to cuInit results in CUDA_ERROR_NO_DEVICE (100)

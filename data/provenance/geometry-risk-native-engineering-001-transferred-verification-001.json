@@ -1,0 +1,31 @@
+{
+  "state": "passed_260_transferred_raw_rows_and_sealed_native_audit",
+  "manifest_sha256": "d708d3852097a016ab808adce1ec8d1c81dab30795cc0e1559c05525b5d0e3cc",
+  "audit_sha256": "543608cf18815bd7381908a12bdb6894652e13c32a9d518a93f49a5dcd5662cc",
+  "raw_records_sha256": "3f6352d1192e6489fca161dddff82cf07c1bd0dea7ac48abce5cb6c22054ba00",
+  "verifier_sha256": "46ab7c2ff4e1d1473ccd2fa74f7734083444a322382d0f182533390271e3def9",
+  "native_rows": 260,
+  "summaries": {
+    "000000": {
+      "clean_loss": 0.19621659815311432,
+      "full_AWGN10_loss": 0.19529014825820923,
+      "native_loss_passes": 130,
+      "attempted_complex_uses": 8112000,
+      "valid_image_shape": [
+        320,
+        1224
+      ]
+    },
+    "000003": {
+      "clean_loss": 0.2338983416557312,
+      "full_AWGN10_loss": 0.21960978209972382,
+      "native_loss_passes": 130,
+      "attempted_complex_uses": 8112000,
+      "valid_image_shape": [
+        320,
+        1242
+      ]
+    }
+  },
+  "scope": "Complete local raw scalar/source/state metadata verification; complete sensor/noise/feature/posterior/parent replay performed independently on sheng. No fit/AP/allocation claim."
+}

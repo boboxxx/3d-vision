@@ -1,0 +1,527 @@
+{
+  "state": "passed_six_trained_SRCNN_float_reception_CPU_families",
+  "checked_unix": 1791155257.1986299,
+  "families": 6,
+  "views": 6,
+  "pixels": 27648,
+  "sources": {
+    "experiments/original-paper-scenarios/srcnn-float-reception-code/check_cpu.py": "9d6ec0e5a139c72d9e66ffb4aa7c57ad268e17ba7e88415a2d97ab0d5af16ac7",
+    "experiments/original-paper-scenarios/srcnn-float-reception-code/receiver.py": "b2a9e9ff4e33bff63d74f2f38e2c8d47c70999a1b614d30ef8eab9cec194db1d"
+  },
+  "protocol_sha256": "0626389a87f72979920dd08f8d7df173bf809ed87e5f3601ba448bb90fa5625d",
+  "training_sources": {
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/audit.py": "c3bfe949c665faa398c085482e50cd49e23278856feb04f5d045c96baf2bc4c4",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/check_cpu.py": "5fad6d5d262284261cecb66ae1825ad16104dde30919a8ba2eaad0295e862e43",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/common.py": "f7cb682e5508d79680c2d6905bfec6ba9effebe4ea4b68c631ed6b26a2e7fa53",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/model.py": "d7fe16ac2ebeae0cc4787cb5b3298154c86c2c84dd49ed63c1693e05f20d677f",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/train.py": "9ac7afb5fb056b6d04924f5e1527a2da63824f6939ba5ea71618b63dd2d341df",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/audit.py": "c3bfe949c665faa398c085482e50cd49e23278856feb04f5d045c96baf2bc4c4",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/check_cpu.py": "2ca19c199481932d00c94f515567e258ae23e74b6b129963d2f545f5ab2d671e",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/common.py": "15d1c8e0295348b3d7ad82ff6bfc9c5f527a8be17ff7b1669387bd4805b7fc43",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/model.py": "d7fe16ac2ebeae0cc4787cb5b3298154c86c2c84dd49ed63c1693e05f20d677f",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/train.py": "7340d984dc882669465e3faa8f04f317dcdfc566d79a3e966275ff3103c862d0",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-protocol-001.md": "c737eb5580f20cc1636202385c018150f2224f3cdb7e9afb9c434aefc3ed7b18",
+    "experiments/original-paper-scenarios/srcnn-KITTI-checkpoint-repair-002.md": "16b47d43194f7a106147865666511aa56989212af3a5ac94e603399994ec55aa",
+    "experiments/original-paper-scenarios/srcnn-author-core-code/check_cpu.py": "e459ec63f734e1803705f020ccd5ee3cfeef2dceeff74689e85195ec70acbab8",
+    "experiments/original-paper-scenarios/srcnn-author-core-code/core.py": "40fbb09d52320f9b522d4361370400f6e604ab86f0bdba9484e022637e07cb67",
+    "experiments/original-paper-scenarios/srcnn-author-core-protocol-001.md": "f65369ab9e2f344e95975945b2847150aa95b99f5ad91a5af6c977f283f8986a",
+    "experiments/original-paper-scenarios/srcnn-compression-interface-code/check_cpu.py": "0f4b69e968da5d8f92e6766c7e1d573c5202c1b2deb7d8674f5fd9cb104b13e6",
+    "experiments/original-paper-scenarios/srcnn-compression-interface-code/interface.py": "e1d2efcdc7f30c4863c7f84921d8a8e11e6c7cecd920ae102396949d7a2262d9",
+    "experiments/original-paper-scenarios/srcnn-compression-interface-protocol-001.md": "d7cc0a16b449b6a351e9aa6458681f4faadc9d07d4dd2988cde60f09b63a7d5c",
+    "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/SRCNN.m": "314887a5b0908411aa20eadbd62f0559ad40205dba3d1ddc103f2bec8c94d266",
+    "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/model/9-5-5(ImageNet)/x3.mat": "fa2ee366d328b942b971c80c24f48dc2b015d5ed4b5790070f720ccfb6ab1578"
+  },
+  "engineering_closure_sha256": "eff4e5dcccdd811a3d6b7ef4d50d606ed8bf3ce86db44f2221c2c2a9e831ee45",
+  "records": [
+    {
+      "rate": 10,
+      "checkpoint_sha256": "83cae6c3be7d9dc8de901fdc5ccdddf69c5f33d22fb6cdcee8490207dc60bf79",
+      "independent_model_max_abs_errors": [
+        1.3709068298339844e-06,
+        1.3113021850585938e-06
+      ],
+      "independent_RGB_max_abs_errors": [
+        1.6093254089355469e-06,
+        1.5497207641601562e-06
+      ],
+      "source_bytes": 932,
+      "source_metadata": {
+        "nominal_compression": 10,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          10,
+          15
+        ],
+        "payload_bytes": [
+          450,
+          450
+        ],
+        "framing_bytes": 32,
+        "source_bytes": 932,
+        "source_bits": 7456,
+        "raw_RGB8_bits": 73728,
+        "actual_raw_to_wire_ratio": 9.888412017167383,
+        "source_only_PHY_uses": null,
+        "source_only_PHY_energy": null
+      },
+      "received": {
+        "nominal_compression": 10,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          10,
+          15
+        ],
+        "source_bytes": 932,
+        "framing_bytes": 32,
+        "wire_sha256": "bbda06b306916fb5b10e8e27df0d7b2230b5b123990eb3dca99804bd7019a03c",
+        "readonly_states": {
+          "weight1": {
+            "dtype": "<f4",
+            "shape": [
+              64,
+              1,
+              9,
+              9
+            ],
+            "sha256": "de2ce7f79735647cfea9fecedc1a0dfe28c4067f08451cf053f2a5572a54582f"
+          },
+          "bias1": {
+            "dtype": "<f4",
+            "shape": [
+              64
+            ],
+            "sha256": "939ba119c3c2d77406821aebb1e6fff4f7ed97259246e8deb774aed0f5458b11"
+          },
+          "weight2": {
+            "dtype": "<f4",
+            "shape": [
+              32,
+              64,
+              5,
+              5
+            ],
+            "sha256": "cface836d8930672d9001f1e0ec8a129b2e55844ba547c8d1ccca303b34f7d82"
+          },
+          "bias2": {
+            "dtype": "<f4",
+            "shape": [
+              32
+            ],
+            "sha256": "1421783b2fc68635f38c87760135e00f6ceaa73d08d58160d17b6791a9b2bb10"
+          },
+          "weight3": {
+            "dtype": "<f4",
+            "shape": [
+              1,
+              32,
+              5,
+              5
+            ],
+            "sha256": "d6a6e9a0e0069c8599fb49398667edd5a96914bd81f3b82999bf14c24e2328fb"
+          },
+          "bias3": {
+            "dtype": "<f4",
+            "shape": [
+              1
+            ],
+            "sha256": "24002029f1055a57d081a3157a32ebae6265f90bca5973417215cdcfd0a9b8f8"
+          }
+        },
+        "arrays": {
+          "left": {
+            "dtype": "<f4",
+            "shape": [
+              32,
+              48,
+              3
+            ],
+            "sha256": "8806bbe3506e7b6884c1f51d76dfc6e4db7b4402952c091eba2e07662302fb41"
+          },
+          "right": {
+            "dtype": "<f4",
+            "shape": [
+              32,
+              48,
+              3
+            ],
+            "sha256": "a22f88f9fc7b713fbcc03fbbf8888ac62bc8febfc3036905e9605fd7102d9cea"
+          }
+        },
+        "ranges": [
+          {
+            "minimum": -0.05753864347934723,
+            "maximum": 1.052672028541565,
+            "out_of_range_fraction": 0.003689236111111111
+          },
+          {
+            "minimum": -0.05253987014293671,
+            "maximum": 1.032913327217102,
+            "out_of_range_fraction": 0.004123263888888889
+          }
+        ],
+        "received_header_only_geometry": true,
+        "output_unclipped": true,
+        "source_only_PHY_uses": null,
+        "source_only_PHY_energy": null
+      },
+      "tensors": [
+        {
+          "dtype": "<f4",
+          "shape": [
+            1,
+            3,
+            32,
+            48
+          ],
+          "sha256": "ad610d33cd6c4eba37090a093af7e9cbbf631331481af288f08fe17ef5724861"
+        },
+        {
+          "dtype": "<f4",
+          "shape": [
+            1,
+            3,
+            32,
+            48
+          ],
+          "sha256": "62d8c0457c55bf73c3c62d73069807579d904a95465385569076cc295238f546"
+        }
+      ]
+    },
+    {
+      "rate": 30,
+      "checkpoint_sha256": "421c454e72034fd0a8f10bf026e07137870b59b147486db7ba569a430b826b90",
+      "independent_model_max_abs_errors": [
+        1.1920928955078125e-06,
+        1.0132789611816406e-06
+      ],
+      "independent_RGB_max_abs_errors": [
+        1.3709068298339844e-06,
+        1.1920928955078125e-06
+      ],
+      "source_bytes": 272,
+      "source_metadata": {
+        "nominal_compression": 30,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          5,
+          8
+        ],
+        "payload_bytes": [
+          120,
+          120
+        ],
+        "framing_bytes": 32,
+        "source_bytes": 272,
+        "source_bits": 2176,
+        "raw_RGB8_bits": 73728,
+        "actual_raw_to_wire_ratio": 33.88235294117647,
+        "source_only_PHY_uses": null,
+        "source_only_PHY_energy": null
+      },
+      "received": {
+        "nominal_compression": 30,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          5,
+          8
+        ],
+        "source_bytes": 272,
+        "framing_bytes": 32,
+        "wire_sha256": "1f80b14131e78c2db3d061dd731b1a1ed25b86959c5eb2bb17b1a28b8fb933c7",
+        "readonly_states": {
+          "weight1": {
+            "dtype": "<f4",
+            "shape": [
+              64,
+              1,
+              9,
+              9
+            ],
+            "sha256": "93ed8225d952541036e585ae86534c83e6dd52e4196a332150e9dae26e2b8ad1"
+          },
+          "bias1": {
+            "dtype": "<f4",
+            "shape": [
+              64
+            ],
+            "sha256": "34a893eb5f82ceeeb69da20c726b2592b71763b2e84fc5facafc1be799a92b46"
+          },
+          "weight2": {
+            "dtype": "<f4",
+            "shape": [
+              32,
+              64,
+              5,
+              5
+            ],
+            "sha256": "1d708dd574320b101ac18e2ce45b9198b3b0eb9aada0c473f88005bfa6554560"
+          },
+          "bias2": {
+            "dtype": "<f4",
+            "shape": [
+              32
+            ],
+            "sha256": "0f3a700e2124e1f837b9ecc19fbce7dda6da3f9ee02c6eaba5b25895b7ba854e"
+          },
+          "weight3": {
+            "dtype": "<f4",
+            "shape": [
+              1,
+              32,
+              5,
+              5
+            ],
+            "sha256": "67e96931de69a788ed1d296198e8112dbdcaf83886a5dfcf12ed6a96e29fdcbe"
+          },
+          "bias3": {
+            "dtype": "<f4",
+            "shape": [
+              1
+            ],
+            "sha256": "f7a046b53f37a8c9cb0d865e80223f4ce658325d357491f94946fb24a3e32b14"
+          }
+        },
+        "arrays": {
+          "left": {
+            "dtype": "<f4",
+            "shape": [
+              32,
+              48,
+              3
+            ],
+            "sha256": "e6de569ad9c0cb005b68f50bb89f2d33e3009b9b2c8dc302e7097d5b6e251768"
+          },
+          "right": {
+            "dtype": "<f4",
+            "shape": [
+              32,
+              48,
+              3
+            ],
+            "sha256": "48ef212a6b28ac1ff9411fa16973dbb29e0b7e684fd8c605a1e4437a1804010e"
+          }
+        },
+        "ranges": [
+          {
+            "minimum": 0.0384223535656929,
+            "maximum": 0.8979560732841492,
+            "out_of_range_fraction": 0.0
+          },
+          {
+            "minimum": 0.03158598393201828,
+            "maximum": 0.9157328009605408,
+            "out_of_range_fraction": 0.0
+          }
+        ],
+        "received_header_only_geometry": true,
+        "output_unclipped": true,
+        "source_only_PHY_uses": null,
+        "source_only_PHY_energy": null
+      },
+      "tensors": [
+        {
+          "dtype": "<f4",
+          "shape": [
+            1,
+            3,
+            32,
+            48
+          ],
+          "sha256": "7f9b76ba29d6c42957821424eedcfa329e3c087a677ab0fa237b478a5ad60a1d"
+        },
+        {
+          "dtype": "<f4",
+          "shape": [
+            1,
+            3,
+            32,
+            48
+          ],
+          "sha256": "933e66b9c30b5b993c290b3cb8d9330df36487c570eef9f8535e850fd770fe66"
+        }
+      ]
+    },
+    {
+      "rate": 50,
+      "checkpoint_sha256": "7b692dbd567142939cbfa97b10e9c28789f84b4c92cb9d2d7cfef71a01bfba0a",
+      "independent_model_max_abs_errors": [
+        1.1324882507324219e-06,
+        1.0132789611816406e-06
+      ],
+      "independent_RGB_max_abs_errors": [
+        1.3113021850585938e-06,
+        1.1920928955078125e-06
+      ],
+      "source_bytes": 176,
+      "source_metadata": {
+        "nominal_compression": 50,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          4,
+          6
+        ],
+        "payload_bytes": [
+          72,
+          72
+        ],
+        "framing_bytes": 32,
+        "source_bytes": 176,
+        "source_bits": 1408,
+        "raw_RGB8_bits": 73728,
+        "actual_raw_to_wire_ratio": 52.36363636363637,
+        "source_only_PHY_uses": null,
+        "source_only_PHY_energy": null
+      },
+      "received": {
+        "nominal_compression": 50,
+        "native_hw": [
+          32,
+          48
+        ],
+        "low_hw": [
+          4,
+          6
+        ],
+        "source_bytes": 176,
+        "framing_bytes": 32,
+        "wire_sha256": "57c1a15207d6a077a78d710bbdc5fac9eccb71c08cea1ab1ca3ed88bf5c5d692",
+        "readonly_states": {
+          "weight1": {
+            "dtype": "<f4",
+            "shape": [
+              64,
+              1,
+              9,
+              9
+            ],
+            "sha256": "0458fac03e79024ff1d7ff03beacfcf2ac0cfe047c6634d50de26393068e99f4"
+          },
+          "bias1": {
+            "dtype": "<f4",
+            "shape": [
+              64
+            ],
+            "sha256": "534d514c0afbc917e20e95759bd44c6b6ab5c2eb77beb2b809f06bfb09493b26"
+          },
+          "weight2": {
+            "dtype": "<f4",
+            "shape": [
+              32,
+              64,
+              5,
+              5
+            ],
+            "sha256": "6ca1dd682682f9f72b3054a50c9fd98794fa2e22913ee6bd3bdd6e9a19b19895"
+          },
+          "bias2": {
+            "dtype": "<f4",
+            "shape": [
+              32
+            ],
+            "sha256": "c7a5d647b6d2192841cd671828e2c4ed5764a5b999baf8c54ccce363f5897a1f"
+          },
+          "weight3": {
+            "dtype": "<f4",
+            "shape": [
+              1,
+              32,
+              5,
+              5
+            ],
+            "sha256": "333407654b16b14f0c7c5ebe3626d6179f7f0784bbf48630ef2d20e3fb5be1a8"
+          },
+          "bias3": {
+            "dtype": "<f4",
+            "shape": [
+              1
+            ],
+            "sha256": "82447681c803803f581f89a3a28f44f0ee33c4367dd2c987ba46185cc87a7995"
+          }
+        },
+        "arrays": {
+          "left": {
+            "dtype": "<f4",
+            "shape": [
+              32,
+              48,
+              3
+            ],
+            "sha256": "c94d8f83b1c0a484cacc82dc7b8bc6f830eda1beedfbc727e7cabe39a61fb31b"
+          },
+          "right": {
+            "dtype": "<f4",
+            "shape": [
+              32,
+              48,
+              3
+            ],
+            "sha256": "eb3c3c3c572fb7ef30c45be16e1efda0ed015f2c5dfa3bf733da3bf4fa916265"
+          }
+        },
+        "ranges": [
+          {
+            "minimum": 0.07684724032878876,
+            "maximum": 0.8955570459365845,
+            "out_of_range_fraction": 0.0
+          },
+          {
+            "minimum": 0.08139998465776443,
+            "maximum": 0.9073785543441772,
+            "out_of_range_fraction": 0.0
+          }
+        ],
+        "received_header_only_geometry": true,
+        "output_unclipped": true,
+        "source_only_PHY_uses": null,
+        "source_only_PHY_energy": null
+      },
+      "tensors": [
+        {
+          "dtype": "<f4",
+          "shape": [
+            1,
+            3,
+            32,
+            48
+          ],
+          "sha256": "87219e80da72c9c107dc3dae15ace1fed730868cc1db6cf9937601d33b354fe1"
+        },
+        {
+          "dtype": "<f4",
+          "shape": [
+            1,
+            3,
+            32,
+            48
+          ],
+          "sha256": "2f30fc887d5d57b3aa78f3e85e2f3144ba21aad14c7cb7484d9bfbf52524c84c"
+        }
+      ]
+    }
+  ],
+  "readonly_states_each": 6,
+  "maximum_RGB_error": 1.6093254089355469e-06,
+  "maximum_model_error": 1.3709068298339844e-06,
+  "environment": {
+    "Python": "3.12.8",
+    "Torch": "2.12.0",
+    "NumPy": "2.4.4",
+    "Pillow": "12.2.0"
+  },
+  "scope": "Actual engineering checkpoints, synthetic bytes and float interface; no native KITTI reception or AP"
+}

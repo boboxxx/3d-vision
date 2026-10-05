@@ -1,0 +1,92 @@
+{"downloaded": "data_object_label_2.zip", "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_label_2.zip", "bytes": 5601213, "etag": "c846a1608cbba1e555ac56280ebca4a1", "sha256": "4efc76220d867e1c31bb980bbf8cbc02599f02a9cb4350effa98dbb04aaed880", "etag_is_content_md5": true}
+{"downloaded": "data_object_calib.zip", "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_calib.zip", "bytes": 26854811, "etag": "381220ea3e2ed12165b28daffa183524-4", "sha256": "8f7777c2221d79fcb0303838d832311ad4d324c8b9d8243a8ec06952c72802bb", "etag_is_content_md5": false}
+{"extracted": "data_object_label_2.zip", "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_label_2.zip", "bytes": 5601213, "etag": "c846a1608cbba1e555ac56280ebca4a1", "sha256": "4efc76220d867e1c31bb980bbf8cbc02599f02a9cb4350effa98dbb04aaed880", "etag_is_content_md5": true, "training_files": 7481, "training_member_identity_sha256": "4b86781faa0cd2af77b84a992a408a917d80204b063198cb328e7a4cee627d14", "validation": "ZIP_CRC_and_file_size"}
+{"extracted": "data_object_calib.zip", "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_calib.zip", "bytes": 26854811, "etag": "381220ea3e2ed12165b28daffa183524-4", "sha256": "8f7777c2221d79fcb0303838d832311ad4d324c8b9d8243a8ec06952c72802bb", "etag_is_content_md5": false, "training_files": 7481, "training_member_identity_sha256": "915d181cbc62795569a47b8ae0569f9ccaa992539ad5cc399f03c0d8c427c55f", "validation": "ZIP_CRC_and_file_size"}
+{"downloaded": "data_object_image_3.zip", "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_3.zip", "bytes": 12002946646, "etag": "d82c193f9cae7ba84ef0498aef534f72-1431", "sha256": "0d6f853225c24edc9dd2a59bfbc5cea7444827bcc18f98325a723252fda9185b", "etag_is_content_md5": false}
+{"downloaded": "data_object_image_2.zip", "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip", "bytes": 12569945557, "etag": "be09c488198aa792a69ccac2c82f7152-1499", "sha256": "351c5a2aa0cd9238b50174a3a62b846bc5855da256b82a196431d60ff8d43617", "etag_is_content_md5": false}
+{"extracted": "data_object_image_3.zip", "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_3.zip", "bytes": 12002946646, "etag": "d82c193f9cae7ba84ef0498aef534f72-1431", "sha256": "0d6f853225c24edc9dd2a59bfbc5cea7444827bcc18f98325a723252fda9185b", "etag_is_content_md5": false, "training_files": 7481, "training_member_identity_sha256": "571d944548b06c7b09ba853977c5b7aab520b1c5a5c1cb12c7d6f4c0189f2cb2", "validation": "ZIP_CRC_and_file_size"}
+{"extracted": "data_object_image_2.zip", "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip", "bytes": 12569945557, "etag": "be09c488198aa792a69ccac2c82f7152-1499", "sha256": "351c5a2aa0cd9238b50174a3a62b846bc5855da256b82a196431d60ff8d43617", "etag_is_content_md5": false, "training_files": 7481, "training_member_identity_sha256": "fa6f4352f2bd047f68a0517765c26ba86f84348e6923f75aa36cd7b0dcd5a074", "validation": "ZIP_CRC_and_file_size"}
+{"downloaded": "data_object_velodyne.zip", "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_velodyne.zip", "bytes": 28750710812, "etag": "792097aacc2052bb0344ab15617818f0-3428", "sha256": "2a005138e7a7c01eda7abe0ba48139b27d864984f1c1cab38f3df1c54e87eb28", "etag_is_content_md5": false}
+{"extracted": "data_object_velodyne.zip", "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_velodyne.zip", "bytes": 28750710812, "etag": "792097aacc2052bb0344ab15617818f0-3428", "sha256": "2a005138e7a7c01eda7abe0ba48139b27d864984f1c1cab38f3df1c54e87eb28", "etag_is_content_md5": false, "training_files": 7481, "training_member_identity_sha256": "6dffc9e2a171bc51a0e18d355cb51d913e1b5920b9fe04b2b8604e31923228a7", "validation": "ZIP_CRC_and_file_size"}
+{
+  "train": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/OpenPCDet/233f849829b6ac19afb8af8837a0246890908755/data/kitti/ImageSets/train.txt",
+    "count": 3712,
+    "sha256": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb"
+  },
+  "val": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/OpenPCDet/233f849829b6ac19afb8af8837a0246890908755/data/kitti/ImageSets/val.txt",
+    "count": 3769,
+    "sha256": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86"
+  }
+}
+{
+  "state": "passed_all5_archives_CRC_SHA_and_fixed3712_3769_splits",
+  "job_id": "11423915",
+  "started_at_unix": 1791112352.5305204,
+  "target": "/mnt/nfs2/engdes/wc296/paper6/data/kitti",
+  "source_sha256": {
+    "download_kitti.py": "cb8d51f74dac5324a0ad21bb2e7d4450dc35420dad6d18952d28d9ed136bf7e5",
+    "prepare_kitti_splits.py": "fddbab9f609202e8d4fdcdc0daf5ad6c6ca3d28c4bb64c5701edcdfbbc1ef4b9"
+  },
+  "reference_sha256": "c09b048f323e08c57730d7396745ba581629377d5f4f503e743cd09298df2b26",
+  "scope": "complete_KITTI_deployment_only_no_training_AP",
+  "archive_manifest_sha256": "fe2c2863e375a736faa1391ec42f6587586b8d7b81cb54e2d5bee577b3b73f4a",
+  "splits_sha256": {
+    "train": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb",
+    "val": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86"
+  },
+  "archives": {
+    "data_object_label_2.zip": {
+      "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_label_2.zip",
+      "bytes": 5601213,
+      "etag": "c846a1608cbba1e555ac56280ebca4a1",
+      "sha256": "4efc76220d867e1c31bb980bbf8cbc02599f02a9cb4350effa98dbb04aaed880",
+      "etag_is_content_md5": true,
+      "training_files": 7481,
+      "training_member_identity_sha256": "4b86781faa0cd2af77b84a992a408a917d80204b063198cb328e7a4cee627d14",
+      "validation": "ZIP_CRC_and_file_size"
+    },
+    "data_object_calib.zip": {
+      "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_calib.zip",
+      "bytes": 26854811,
+      "etag": "381220ea3e2ed12165b28daffa183524-4",
+      "sha256": "8f7777c2221d79fcb0303838d832311ad4d324c8b9d8243a8ec06952c72802bb",
+      "etag_is_content_md5": false,
+      "training_files": 7481,
+      "training_member_identity_sha256": "915d181cbc62795569a47b8ae0569f9ccaa992539ad5cc399f03c0d8c427c55f",
+      "validation": "ZIP_CRC_and_file_size"
+    },
+    "data_object_image_2.zip": {
+      "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip",
+      "bytes": 12569945557,
+      "etag": "be09c488198aa792a69ccac2c82f7152-1499",
+      "sha256": "351c5a2aa0cd9238b50174a3a62b846bc5855da256b82a196431d60ff8d43617",
+      "etag_is_content_md5": false,
+      "training_files": 7481,
+      "training_member_identity_sha256": "fa6f4352f2bd047f68a0517765c26ba86f84348e6923f75aa36cd7b0dcd5a074",
+      "validation": "ZIP_CRC_and_file_size"
+    },
+    "data_object_image_3.zip": {
+      "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_3.zip",
+      "bytes": 12002946646,
+      "etag": "d82c193f9cae7ba84ef0498aef534f72-1431",
+      "sha256": "0d6f853225c24edc9dd2a59bfbc5cea7444827bcc18f98325a723252fda9185b",
+      "etag_is_content_md5": false,
+      "training_files": 7481,
+      "training_member_identity_sha256": "571d944548b06c7b09ba853977c5b7aab520b1c5a5c1cb12c7d6f4c0189f2cb2",
+      "validation": "ZIP_CRC_and_file_size"
+    },
+    "data_object_velodyne.zip": {
+      "url": "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_velodyne.zip",
+      "bytes": 28750710812,
+      "etag": "792097aacc2052bb0344ab15617818f0-3428",
+      "sha256": "2a005138e7a7c01eda7abe0ba48139b27d864984f1c1cab38f3df1c54e87eb28",
+      "etag_is_content_md5": false,
+      "training_files": 7481,
+      "training_member_identity_sha256": "6dffc9e2a171bc51a0e18d355cb51d913e1b5920b9fe04b2b8604e31923228a7",
+      "validation": "ZIP_CRC_and_file_size"
+    }
+  },
+  "finished_at_unix": 1791114975.51974
+}

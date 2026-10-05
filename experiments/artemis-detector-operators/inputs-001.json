@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "metadata_url": "https://developer.download.nvidia.com/compute/cuda/redist/redistrib_12.8.1.json",
+  "metadata_sha256": "249e28a83008d711d5f72880541c8be6253f6d61608461de4fcb715554a6cf17",
+  "components": {
+    "cuda_nvcc": {
+      "version": "12.8.93",
+      "relative_path": "cuda_nvcc/linux-x86_64/cuda_nvcc-linux-x86_64-12.8.93-archive.tar.xz",
+      "sha256": "9961b3484b6b71314063709a4f9529654f96782ad39e72bf1e00f070db8210d3",
+      "md5": "5d7d11d3c8713fe8f19a2228b2b2b4bf",
+      "size": "79015464"
+    },
+    "cuda_cudart": {
+      "version": "12.8.90",
+      "relative_path": "cuda_cudart/linux-x86_64/cuda_cudart-linux-x86_64-12.8.90-archive.tar.xz",
+      "sha256": "8d566b5fe745c46842dc16945cf36686227536decd2302c372be86da37faca68",
+      "md5": "4c374fabd7d36cac110ada9aea3c0743",
+      "size": "1354240"
+    },
+    "cuda_cccl": {
+      "version": "12.8.90",
+      "relative_path": "cuda_cccl/linux-x86_64/cuda_cccl-linux-x86_64-12.8.90-archive.tar.xz",
+      "sha256": "0740e9e01e4f15e17c5ab8d68bba4f8ec0eb6b84edccba4ac45112d2d2174e4b",
+      "md5": "97f6ad8c8717cc555974d03483200f43",
+      "size": "928524"
+    }
+  },
+  "source_files": {
+    "third_party/LIGA-Stereo/liga/ops/build_cost_volume/src/BuildCostVolume.cpp": "da59e8bfc30eaa4a615f55ecf23196135524d98bc01300f7f8fc6feb3d6bdc07",
+    "third_party/LIGA-Stereo/liga/ops/build_cost_volume/src/BuildCostVolume_cuda.cu": "71d3c54aa11d648fa72d5f3f2a938436367fc80b3cd4bcd1f91151a13b79d8c9",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_cpu.cpp": "68d6ed8ddb9a8cdc4bee8563f7a4adf52a212621c3f6eeef60f924052856596f",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_cpu.h": "2a0c9325ef7e61035adedb67a4629ac0792750a4cbc292acdca48ff4e1d8b526",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms.cpp": "33e88f2b96ab1baa11cd76e9291707042a786162f9512f14d74dde5a558be893",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms.h": "2e2f73f41d4c17f13fc94be7c03a48409f19c1b745e2b5ade9e016c265c3c0de",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms_api.cpp": "f5b79c976e5cb40e8a54846a97f6ced386454988a4651009bbd6769e26451719",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms_kernel.cu": "a92bf45c1533b383976886db87803f76acdbddb7f5cc7666e39e6379095c46e0",
+    "third_party/LIGA-Stereo/liga/ops/roiaware_pool3d/src/roiaware_pool3d.cpp": "c71b96fa6e80c9cf5a03cb7ba4db7a90408e0f0968acd4259008e2be9a54cd33",
+    "third_party/LIGA-Stereo/liga/ops/roiaware_pool3d/src/roiaware_pool3d_kernel.cu": "d34013f84a0094dd9ae814e0cf1e5bceb7d808bfcc1248a1832f334a96a1808e"
+  },
+  "toolkit_directory": "toolchains/cuda-12.8-001",
+  "build_directory": "dependencies/liga-operators-cu128-001",
+  "architecture": "12.0"
+}

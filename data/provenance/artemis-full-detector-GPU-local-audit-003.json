@@ -1,0 +1,63 @@
+{
+  "state": "completed_full_transfer_state_pixel_array_audit_strict_depth_criterion_pending",
+  "strict_depth_criterion_passed": false,
+  "checked_unix": 1791176930.370029,
+  "verifier_sha256": "baed1fb618a431075cf15bdc5094c46f154d8a55d02e4af962e0426e6a4d5496",
+  "artifacts_sha256": {
+    "data/engineering/artemis-full-detector-GPU-001/report.json": "58eb9ee4ed5f0e916531d5b12734a98334524ad19992f002bd915b94668b2879",
+    "data/engineering/artemis-full-detector-GPU-001/terminal.json": "4609efbec5797fd186c6262e61105801660253b98453e14b309cf6bbdc16a13c",
+    "assets/liga-native-001/liga-author-download": "3f36af30b686f23d0868482675177b29cc50c2b378577dd12f9092ddb0235b2e",
+    "data/engineering/artemis-full-detector-GPU-001/000000.npz": "3a2ed3f8c1d2295fe3ba5a1bf1e787cf48f63a2eb07735f05283a4fecd35c86b",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000000-left.png": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000000-right.png": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000000-calib.txt": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+    "data/engineering/artemis-full-detector-GPU-001/000003.npz": "148188858646a6566cc9b2de6e268176986cca2ca1b6dac2f426a07b69a36fd9",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000003-left.png": "d22f4692c924e0ba7ff2ac00827547d4bd018d991fb9f1959025b183a949af19",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000003-right.png": "ca44da39dcc83befde20753ac2bdb527314a2a78067757f2298ae6df947a1f9d",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000003-calib.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+  },
+  "actual_terminal": true,
+  "job_id": "11424837",
+  "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "capability": [
+    12,
+    0
+  ],
+  "full484_states_verified": true,
+  "all_input_RGB_values_verified": 4792320,
+  "frames": [
+    {
+      "frame": "000000",
+      "all_array_values": 123464101,
+      "input_RGB_max_error": 0.0,
+      "public_calibration_max_errors": [
+        6.103515625e-05,
+        6.103515625e-05
+      ],
+      "prediction_count": 1,
+      "all_postNMS_rows_present_in_raw_head": true,
+      "raw_score_max_error": 1.5647486306669123e-08,
+      "native_depth_regression_max_error": 4.3329383698775814e-05,
+      "strict_depth_criterion_passed": false,
+      "states_verified": 484,
+      "saved_array_count": 18
+    },
+    {
+      "frame": "000003",
+      "all_array_values": 123464119,
+      "input_RGB_max_error": 0.0,
+      "public_calibration_max_errors": [
+        1.6298145055770874e-08,
+        3.655441105365753e-08
+      ],
+      "prediction_count": 3,
+      "all_postNMS_rows_present_in_raw_head": true,
+      "raw_score_max_error": 1.8050737349284418e-08,
+      "native_depth_regression_max_error": 8.133609242477746e-05,
+      "strict_depth_criterion_passed": false,
+      "states_verified": 484,
+      "saved_array_count": 18
+    }
+  ],
+  "limitation": "Two actual sensor-only full-detector GPU forwards; no training/backward/sparse-teacher-GPU or fullval/AP/new-method claim"
+}

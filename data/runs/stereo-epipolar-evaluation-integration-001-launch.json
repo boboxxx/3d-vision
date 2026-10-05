@@ -1,0 +1,15 @@
+{
+  "state": "launched_once_engineering_no_AP",
+  "pid": 258021,
+  "prefix": "stereo-epipolar-evaluation-integration-001",
+  "launched_unix": 1791141277.0500739,
+  "command": [
+    "bash",
+    "-c",
+    "source scripts/sheng_env.sh; export PYTHONDONTWRITEBYTECODE=1 WANDB_MODE=disabled; exec python experiments/geometry-link/F9/evaluation/integration_cycle.py --prefix stereo-epipolar-evaluation-integration-001"
+  ],
+  "controller_log": "/home/sheng/paper6/logs/stereo-epipolar-evaluation-integration-001-controller.log",
+  "frames_locked": 48,
+  "references_locked": 8,
+  "launcher_sha256": "e0b4499402abdae3814dd56454c474ac47eefa21180fa3723ac177ffd7d0cabb"
+}

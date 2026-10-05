@@ -1,0 +1,79 @@
+{
+  "observed_unix": 1791190732.7258415,
+  "queue": "11424940_41 PENDING 0:00 (QOSGrpGRES)\n11424940_23 RUNNING 1:02:09 artemis-rtx-03\n11424939 RUNNING 1:05:31 artemis-rtx-03\n",
+  "runs": {
+    "17": {
+      "state": "running_full_split_task_training",
+      "stage": "actual_native_detection_loss_backward",
+      "seed": 17,
+      "job_id": "11424939",
+      "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "update_count": 8133,
+      "last_update": {
+        "arm": "G",
+        "epoch": 3,
+        "index": 708,
+        "step": 8132,
+        "frame": "001788",
+        "loss": 1.0372214317321777,
+        "complex_uses": 29640
+      },
+      "completed_epochs": [
+        {
+          "arm": "G",
+          "epoch": 1,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch1.pt",
+          "sha256": "24c485644d903b488b48ad25ee8550fc46677fb4b02bbc2ce0f0d09de53b7380"
+        },
+        {
+          "arm": "G",
+          "epoch": 2,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch2.pt",
+          "sha256": "7e247683cdaea734fd210eb07f202cc59824484098bcded77646804e73dac208"
+        }
+      ],
+      "traceback": null,
+      "report_snapshot_sha256": "4e49fa9a7ede981ec392dafc69bf39e02ea3d2db88fefb5203d60a943317a92a"
+    },
+    "23": {
+      "state": "running_full_split_task_training",
+      "stage": "actual_native_detection_loss_backward",
+      "seed": 23,
+      "job_id": "11424941",
+      "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "update_count": 7934,
+      "last_update": {
+        "arm": "G",
+        "epoch": 3,
+        "index": 509,
+        "step": 7933,
+        "frame": "006089",
+        "loss": 0.5273104310035706,
+        "complex_uses": 29640
+      },
+      "completed_epochs": [
+        {
+          "arm": "G",
+          "epoch": 1,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed23-004/checkpoint-G-epoch1.pt",
+          "sha256": "c72929996baf1b9e604f29a7c02e186b62b5f7205c25505741b68d87e7fe572c"
+        },
+        {
+          "arm": "G",
+          "epoch": 2,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed23-004/checkpoint-G-epoch2.pt",
+          "sha256": "dc79c1c30f18acd1464d0371a28a3b88ec3ab34d9b52c9ac79bd003f7bc75d6f"
+        }
+      ],
+      "traceback": null,
+      "report_snapshot_sha256": "a0cf71dffc0de094b5a8b1ec3b4894ea12d1478d24e949838c8d24063cb1586f"
+    },
+    "41": {
+      "state": "report_absent_queue_pending"
+    }
+  }
+}

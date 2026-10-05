@@ -1,0 +1,33 @@
+{
+  "state": "launched_once",
+  "pid": 265448,
+  "prefix": "original-source-cache-engineering-001",
+  "scope": "engineering",
+  "launched_unix": 1791147123.4122417,
+  "sources": {
+    "historical": {
+      "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+      "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+      "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+      "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+    },
+    "current": {
+      "experiments/original-paper-scenarios/source-cache-code/audit.py": "6406a041435bdb9cda489be5d4b109f93720740682dc26424b71a30a8d421c1f",
+      "experiments/original-paper-scenarios/source-cache-code/check_cpu.py": "03628bab20dbdd35a8c047c4c0a947dbfc07d4129c6c90ce60772f952e82ef78",
+      "experiments/original-paper-scenarios/source-cache-code/common.py": "e73c1c5022afedf75875e7249bf963664ad07d73a13a8fd3cb9fe4bfff486fd3",
+      "experiments/original-paper-scenarios/source-cache-code/encode.py": "c2516c6a174d497d0fcb84de510af269bb65d735c5b9fd783ebd2a2000cbce5c",
+      "experiments/original-paper-scenarios/source-cache-code/receive.py": "4dad57323e9a7ce797f507858070a0233b826198ca7d6cd8357997960375d662"
+    }
+  },
+  "controller_sha256": "343c6e7345cb3ad93ae5e887c1c5f3e0379cc3c92dd2738c6f3d33e94aa91bd6",
+  "command": [
+    "/home/sheng/paper6/.venv/bin/python",
+    "/home/sheng/paper6/data/provenance/source-cache-cycle-001.py",
+    "--mode",
+    "run",
+    "--scope",
+    "engineering"
+  ],
+  "log": "/home/sheng/paper6/logs/original-source-cache-engineering-001-controller.log",
+  "directory": "/mnt/d/paper6/runs/original-source-cache-engineering-001"
+}

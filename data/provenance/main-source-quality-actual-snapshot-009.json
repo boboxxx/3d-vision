@@ -1,0 +1,100 @@
+{
+  "observed_unix": 1791173207.0662303,
+  "processes": {
+    "269262": {
+      "returncode": 0,
+      "stdout": "269262 Ssl     04:58:27 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/source-cache-inference-cycle-001.py --mode run --scope main"
+    },
+    "270132": {
+      "returncode": 0,
+      "stdout": "270132 Ssl     03:54:01 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/source-quality-main-cycle-001.py --mode run"
+    }
+  },
+  "main_endpoints": [
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr10-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr10-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr30-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr30-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr50-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr50-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg2000-cr10-liga.json",
+      "state": "running",
+      "frames": 557,
+      "audit_state": null
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg2000-cr10-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    }
+  ],
+  "source-cache-inference-main-001": {
+    "state": "running",
+    "commands": 14,
+    "returncodes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "error": null
+  },
+  "source-quality-main-001": {
+    "state": "running",
+    "commands": 1,
+    "returncodes": [
+      0
+    ],
+    "error": null
+  },
+  "quality_measurement": {
+    "state": "finished_all_six_native_quality_conditions",
+    "views_done": 45228,
+    "error": null
+  },
+  "quality_audit": {
+    "exists": false
+  }
+}

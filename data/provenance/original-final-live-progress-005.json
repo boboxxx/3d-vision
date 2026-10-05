@@ -1,0 +1,105 @@
+{
+  "snapshot_utc": "2026-10-04T14:05:32Z",
+  "host": "sheng",
+  "nonterminal_partial_snapshot": true,
+  "processes": "    PID     ELAPSED COMMAND\n  56638    02:15:55 bash -c source scripts/sheng_env.sh && python experiments/original-detector-integration/final-code/cycle.py --prefix original-final-native-seed17-001 && python experiments/original-detector-integration/final-code/close.py --prefix original-final-native-seed17-001\n  56656    02:15:54 python experiments/original-detector-integration/final-code/cycle.py --prefix original-final-native-seed17-001\n  68491    01:04:27 python experiments/geometry-risk/code/queue_native.py\n",
+  "artifacts": {
+    "data/runs/original-final-native-seed17-001-cache-awgn-audit.json": {
+      "state": "passed",
+      "frames": 372,
+      "sha256": "820ff7f5eeaf8c5ce8686b0504604080d74d9ffa70209ab060ef0d38c039561c"
+    },
+    "data/runs/original-final-native-seed17-001-cache-awgn.json": {
+      "state": "finished",
+      "frames": 372,
+      "sha256": "11a164b89bace5feb6dccfbff658d0e13f1001c9cbf34bc177f1394d1c28782d"
+    },
+    "data/runs/original-final-native-seed17-001-cache-identity-audit.json": {
+      "state": "passed",
+      "frames": 372,
+      "sha256": "286f33b7c6bb972261a19bf9e687ffc2a668f4254a6834fbf8184295d05f3560"
+    },
+    "data/runs/original-final-native-seed17-001-cache-identity.json": {
+      "state": "finished",
+      "frames": 372,
+      "sha256": "dc9516d73fcb281a685aa432962d5f853bdf9b053a3cf285fc94030d5a9c874c"
+    },
+    "data/runs/original-final-native-seed17-001-cycle.json": {
+      "state": "running",
+      "pid": 56656,
+      "current_command": "original-final-native-seed17-001-liga-awgn",
+      "sha256": "ae5c323f4a053e1d352a21bbbd96080fe26fcf7984a6f5e2fa9b23cdcfe00254"
+    },
+    "data/runs/original-final-native-seed17-001-launch.json": {
+      "state": "dispatched",
+      "pid": 56638,
+      "command": "python experiments/original-detector-integration/final-code/cycle.py --prefix original-final-native-seed17-001 && python experiments/original-detector-integration/final-code/close.py --prefix original-final-native-seed17-001",
+      "sha256": "a7d79c262d4aebea19acf8dbaf036bca3ec73ba0d4fa571d4b5c36ff0cb0f33b"
+    },
+    "data/runs/original-final-native-seed17-001-liga-awgn.json": {
+      "state": "running",
+      "frames": 147,
+      "sha256": "3d61062a2a66b8c8a56ef8c3e084b29314ad91ceddfdea77e624f22c54f3ebfa"
+    },
+    "data/runs/original-final-native-seed17-001-liga-clean-relay-audit.json": {
+      "state": "passed",
+      "frames": 372,
+      "sha256": "8a280443bb8f321e71570e03e9fe6d985910c02c57432f51f06f466562a35693"
+    },
+    "data/runs/original-final-native-seed17-001-liga-clean-relay.json": {
+      "state": "finished",
+      "frames": 372,
+      "sha256": "3eb40e4ed96e3805293fff9e94fc3cf26f280e84d63f1b7e6ae20f3bb383f69a"
+    },
+    "data/runs/original-final-native-seed17-001-liga-identity-audit.json": {
+      "state": "passed",
+      "frames": 372,
+      "sha256": "3d242afeddc151a827c38bdf7e7892985a8f0e054bef2ce5760e366ffb5ec065"
+    },
+    "data/runs/original-final-native-seed17-001-liga-identity.json": {
+      "state": "finished",
+      "frames": 372,
+      "sha256": "4efb51cf16e567967efb04ec3fa86f55ca5c8ae13b7acd97117e9e6d3e6b1492"
+    },
+    "data/runs/original-final-native-seed17-001-stereo-rcnn-awgn-audit.json": {
+      "state": "passed",
+      "frames": 372,
+      "sha256": "d94de5d836bba00273071408f7a04c3283fa24d6b3230cc0cd537b3a12234cb9"
+    },
+    "data/runs/original-final-native-seed17-001-stereo-rcnn-awgn.json": {
+      "state": "finished",
+      "frames": 372,
+      "sha256": "1606eb985795c196843b98a7d352b2eea1112a3da01571718f2c2ec736f2a3eb"
+    },
+    "data/runs/original-final-native-seed17-001-stereo-rcnn-clean-relay-audit.json": {
+      "state": "passed",
+      "frames": 372,
+      "sha256": "54e009000ac935717eee2cefe2637033d8df714c83976791c2e288951748c026"
+    },
+    "data/runs/original-final-native-seed17-001-stereo-rcnn-clean-relay.json": {
+      "state": "finished",
+      "frames": 372,
+      "sha256": "140b9f39dab6e6f61c223276c3902934053e3f1f461e767d73586caaa6232419"
+    },
+    "data/runs/original-final-native-seed17-001-stereo-rcnn-identity-audit.json": {
+      "state": "passed",
+      "frames": 372,
+      "sha256": "18ab7edf9b9b4b42d0e562d65aee28e43bdd5f49813735b64f5d9e1b7ff2c7ab"
+    },
+    "data/runs/original-final-native-seed17-001-stereo-rcnn-identity.json": {
+      "state": "finished",
+      "frames": 372,
+      "sha256": "6ae189c2ef6b7c0b459b9eda580879f0095371c9af6b1c9b17e68bc38da859c1"
+    }
+  },
+  "geometry_queue": {
+    "state": "waiting_previous_actual_processes",
+    "pid": 68491,
+    "previous_actual_live_PIDs": [
+      56638,
+      56656
+    ],
+    "checked_unix": 1791122731.0767639,
+    "CPU_gate_sha256": "41f521193903968f81527e9d37985a1d76f2da6fd2afa57b7cb99b20e200fd0a"
+  }
+}

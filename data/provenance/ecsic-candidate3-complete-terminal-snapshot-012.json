@@ -1,0 +1,15 @@
+{
+  "checked_unix": 1791212593.6457005,
+  "report_sha256": "79cbabad7ee763e803585737ccc35e686f7a6be6cc1e9d1c29316e5b822c88f6",
+  "report": {
+    "state": "finished_all37120_source_RD_updates_pending_actual_terminal_full_audit_and_real_byte_calibration",
+    "candidate": 3,
+    "seed": 17,
+    "job_id": "11426641",
+    "update_count": 37120,
+    "updates_jsonl_sha256": "8885fd9262022e1731c838716673f21aec8607acdc16e155975b713567c5f0a2"
+  },
+  "completed_epochs": 10,
+  "sacct": "11426641|COMPLETED|0:0|01:02:17\n11426641.batch|COMPLETED|0:0|01:02:17\n11426641.extern|COMPLETED|0:0|01:02:17\n11426641.0|COMPLETED|0:0|01:02:17\n11426848|COMPLETED|0:0|00:00:54\n11426848.batch|COMPLETED|0:0|00:00:54\n11426848.extern|COMPLETED|0:0|00:00:54\n11426848.0|COMPLETED|0:0|00:00:48\n11428494|COMPLETED|0:0|00:05:21\n11428494.extern|COMPLETED|0:0|00:05:21\n11428494.0|COMPLETED|0:0|00:05:21\n",
+  "squeue": "                 JOBID                          NAME        STATE       TIME               NODELIST(REASON)\n            11425047_5        paper6-ecsic-KITTI-002      PENDING       0:00            (JobArrayTaskLimit)\n    11429210_[10,50%1]     paper6-source-engineer009      PENDING       0:00                   (QOSGrpGRES)\n            11425047_4        paper6-ecsic-KITTI-002      RUNNING       8:59                 artemis-rtx-03\n              11426592 paper6-original-public30-stag      RUNNING    1:14:50                 artemis-rtx-03\n              11425814         paper6-cost-export013      PENDING       0:00                   (Dependency)\n              11425240        paper6-cost-full-audit      RUNNING    1:24:58                 artemis-a40-03\n            11429217_5      paper6-ecsic-final-audit      PENDING       0:00                   (Dependency)\n            11429217_4      paper6-ecsic-final-audit      PENDING       0:00                   (Dependency)\n           11429211_50        paper6-source-audit009      PENDING       0:00                   (Dependency)\n           11429211_10        paper6-source-audit009      PENDING       0:00                   (Dependency)\n              11426847 paper6-original-stage1-audit0      PENDING       0:00                   (Dependency)\n              11429222     paper6-ecsic-c5-export013      PENDING       0:00                   (Dependency)\n              11429221     paper6-ecsic-c4-export013      PENDING       0:00                   (Dependency)\n"
+}

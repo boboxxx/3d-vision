@@ -1,0 +1,22 @@
+{
+  "state": "passed_all3712_transferred_preserved_rows_7424_mask_and_native_source_metadata",
+  "mode": "local",
+  "frames": 3712,
+  "views": 7424,
+  "boxes": 31709,
+  "mask_pixel_values": 3445709672,
+  "empty_views": 1086,
+  "mean_union_fraction": 0.07496161829433437,
+  "records_sha256": "8f4a5ba2b0a35d6da58c580743c88bc7399149c811ed4d8d8da0344d7b668765",
+  "ordered_record_ledger_sha256": "8f4a5ba2b0a35d6da58c580743c88bc7399149c811ed4d8d8da0344d7b668765",
+  "merge_sha256": "51ba12a3366f561e88d3f6b37c0403d141de86a3ebbe5615f2c263d18d77c673",
+  "dataset_manifest_sha256": "ecf1f0e41de5757bd438b2a73252dc999eed80fa9828270beff342ccf6ea1310",
+  "verifier_sha256": "714a92942a9412011c98a608759d75ccc0b0fbbe6bb8508a87abe3c9dd0d0960",
+  "started_unix": 1791198846.257237,
+  "ended_unix": 1791198850.486163,
+  "actual_native_RGB_bytes": null,
+  "native_RGB_pixel_ledger_sha256": "5180bb871d72880786c86d4cb3b477b1f7ccabe7a02ddeb953d137ee3bf8886b",
+  "native_audit_sha256": "231dbc317f78796dd4bbf476e28c4f2bd69f798bb9410d63235b328b849e5c7a",
+  "GT_calibration_LiDAR_validation_RGB_read": false,
+  "limitation": "All unchanged saved YOLO detections and union masks; no fresh YOLO inference, baseline training, radio or AP. Local scope uses native RGB proof and frozen full-data identities rather than reopening PNGs."
+}

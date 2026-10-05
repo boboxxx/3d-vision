@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/sheng/paper6/data/provenance/verify-geometry-risk-pilot-001.py", line 136, in <module>
+    if __name__=='__main__':main()
+  File "/home/sheng/paper6/data/provenance/verify-geometry-risk-pilot-001.py", line 94, in main
+    assert math.isclose(row['gradient_norms']['symbols'],float(np.linalg.norm(f['gradient'])),rel_tol=3e-6,abs_tol=1e-6)
+AssertionError

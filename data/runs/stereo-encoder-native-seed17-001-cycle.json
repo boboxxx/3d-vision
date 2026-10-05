@@ -1,0 +1,160 @@
+{
+  "state": "finished_all_independent_audits_passed",
+  "prefix": "stereo-encoder-native-seed17-001",
+  "pid": 167748,
+  "engineering": false,
+  "started_at_unix": 1791133764.6003401,
+  "source_manifest_sha256": "b3c155dc05bd139e9c98a2be5d3cd8cb268b7c795cec472ab184eb0cc24cb482",
+  "sources_sha256": {
+    "project": "42b4b52a174f9c2a8c365ea45b3477e87d4c8165d3254d6b04b97bd2dad74b21",
+    "liga": "0ffb2cda5f2fa7596fd18342562f08414d2a61e28892d317aaae946b50967a01",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f",
+    "F7": "66113f599ed26d3e0ca35d64540e82c0f6d5857682565a7a5781c5db91967379",
+    "experiment": "6608e2073d41aef8910eeb7bcce996341088e4d06f0beac0fbf7a025c270d7b9"
+  },
+  "completed_commands": [
+    {
+      "label": "codec-train",
+      "log_sha256": "7453038a57e449fe4f5ca246d25d806fa8d0b055f99b22ce451627ee4be20fdf"
+    },
+    {
+      "label": "codec-training-audit",
+      "log_sha256": "9d38fd73f8f2036da92e87bae0e44fed8e91941f12950250961989802e60f9a8"
+    },
+    {
+      "label": "joint-train",
+      "log_sha256": "5498970aeadd4d9c099e3ccc4e1d513c374c60f3a41b6641ce3edbe969ba533b"
+    },
+    {
+      "label": "joint-training-audit",
+      "log_sha256": "9239de22a32c20841359a5bc7c7fb870d320c6e81aa217c43eb47cf50df94a27"
+    },
+    {
+      "label": "pair-audit",
+      "log_sha256": "90b63c0a04bdbaf9103c1632d46278180313a4109de18eb5142650c57fb028f3"
+    },
+    {
+      "label": "codec-test-identity",
+      "log_sha256": "802161b37856e94911579c7477f865440919c5fded5767c139cb6bbf98cd2ebf"
+    },
+    {
+      "label": "codec-identity-AP-audit",
+      "log_sha256": "1e060d1e2d000493450f7f708da46c005ff177a99af4d4b1aed545ec9b1d873d"
+    },
+    {
+      "label": "codec-identity-feature-audit",
+      "log_sha256": "23a4b4fbebdf1a05eae3eaa5108f8c96b925396c9220afae7a31e3f33cb6eb83"
+    },
+    {
+      "label": "codec-test-awgn",
+      "log_sha256": "ad1667c5ef5b51f550e326b03be107c4ad6c0c10d3034420782068ec19959336"
+    },
+    {
+      "label": "codec-awgn-AP-audit",
+      "log_sha256": "5d4d21f1d7c1d79c274984d29f2e4f6005a30eadfb5493b86859810bee2e3f74"
+    },
+    {
+      "label": "codec-awgn-feature-audit",
+      "log_sha256": "fda949c0f1d9ca18113afd8db5f4f961ee41209c30fc376d76311e19ed2955bf"
+    },
+    {
+      "label": "joint-test-identity",
+      "log_sha256": "9091628c5f8831839cfa3b158f7ac529aeada53f069b61545925b1d355d1a934"
+    },
+    {
+      "label": "joint-identity-AP-audit",
+      "log_sha256": "7521e4d851cfa4fb1a71ccce51b9499a09eca1ecbb80ff3641e1153b0e83bc15"
+    },
+    {
+      "label": "joint-identity-feature-audit",
+      "log_sha256": "52130f56df3a5f8679476160ff1304598b3a90983f97f5866284eeb56829d05b"
+    },
+    {
+      "label": "joint-test-awgn",
+      "log_sha256": "5ff3c85e7b3bb873d3c9e7078a9589b2cf241dbbae9e660486a84f8a653e4995"
+    },
+    {
+      "label": "joint-awgn-AP-audit",
+      "log_sha256": "3efd937fa219fa2d56409b10fd17d744c25b7b6f7cd96133bb7634c292f3e22d"
+    },
+    {
+      "label": "joint-awgn-feature-audit",
+      "log_sha256": "9e7548c44fd9af38cbe45ed94dcf0c970ece5d85b775385be1d9dd6291ebc456"
+    }
+  ],
+  "evaluations": {
+    "stereo-encoder-native-seed17-001-codec-test-identity": {
+      "arm": "codec",
+      "channel": "identity",
+      "checkpoint_sha256": "e2b76e2b84b0f42a13e9d291753f5031f3c1b4304f3ac147f6fce74e9b008961",
+      "artifacts_sha256": {
+        "data/runs/stereo-encoder-native-seed17-001-codec-test-identity.json": "7a67ec6f60a4e0421563ac8b2462f9cd2bbf473250dd3f569888acedec0f1769",
+        "data/runs/stereo-encoder-native-seed17-001-codec-test-identity-AP-audit.json": "dc13d32e1a52647b829b1cfcb63832f92e1815352b5784ddb4283df714d5e324",
+        "data/runs/stereo-encoder-native-seed17-001-codec-test-identity-feature-audit.json": "481fb0f2560b71f63db7299a64115e66f871f0447c161d13d172de9e31e04318",
+        "data/runs/stereo-encoder-native-seed17-001-codec-test-identity-boundary-report.json": "ab573b076676bbf0b53c1094714c8353ec84c20d36486572722a38892649eb9e",
+        "data/runs/stereo-encoder-native-seed17-001-codec-test-identity-features.jsonl": "568de55e5be86253057d32c84015b6ec68fcf902ea53bae9cc323b6dd45a1d39"
+      },
+      "Car3D_AP_R40_percent": {
+        "Car_3d/easy_R40": 47.07845712524815,
+        "Car_3d/moderate_R40": 25.664854076190046,
+        "Car_3d/hard_R40": 21.252795725280198
+      }
+    },
+    "stereo-encoder-native-seed17-001-codec-test-awgn": {
+      "arm": "codec",
+      "channel": "awgn",
+      "checkpoint_sha256": "e2b76e2b84b0f42a13e9d291753f5031f3c1b4304f3ac147f6fce74e9b008961",
+      "artifacts_sha256": {
+        "data/runs/stereo-encoder-native-seed17-001-codec-test-awgn.json": "8260c20d013840b78011b57a0ccf48bc71183933b3b3e76ccef4da4e41b97885",
+        "data/runs/stereo-encoder-native-seed17-001-codec-test-awgn-AP-audit.json": "6b98196b2579e1fb9b1ef4fbafffba70fb63d11a017d2c603475d4f10324d831",
+        "data/runs/stereo-encoder-native-seed17-001-codec-test-awgn-feature-audit.json": "7be8e3d991d049e67da2288042b7f7678b488ae26e6d5ab3f087b36a61e2dac5",
+        "data/runs/stereo-encoder-native-seed17-001-codec-test-awgn-boundary-report.json": "f7b2df496d17656a82cb88170f54de33b938bbb4158eec60b27a0610578b8dc2",
+        "data/runs/stereo-encoder-native-seed17-001-codec-test-awgn-features.jsonl": "c52d51dbbb5b439df30a990dcedc9e3f5a53731ecd9e4887e895c272551ee3c3"
+      },
+      "Car3D_AP_R40_percent": {
+        "Car_3d/easy_R40": 41.92429535620373,
+        "Car_3d/moderate_R40": 22.37853643730824,
+        "Car_3d/hard_R40": 18.633586438570816
+      }
+    },
+    "stereo-encoder-native-seed17-001-joint-test-identity": {
+      "arm": "joint",
+      "channel": "identity",
+      "checkpoint_sha256": "6e54ebc5fa696db26b3902cdd129ff42544635db4cfb56dfdb7f4b94841c5193",
+      "artifacts_sha256": {
+        "data/runs/stereo-encoder-native-seed17-001-joint-test-identity.json": "c6c0bf7962d64ab0db7b2ba05bc4a89e8dd5bf752a72cfa3893d2a34daa9c498",
+        "data/runs/stereo-encoder-native-seed17-001-joint-test-identity-AP-audit.json": "bcf5dedb2f4908b4458cc3cfac2d456f595c92d020132e989c198116519f9d24",
+        "data/runs/stereo-encoder-native-seed17-001-joint-test-identity-feature-audit.json": "39c8dca394a28c2e4857a2b921ce138725ba532ed566ce8e1d062167f8bd2d81",
+        "data/runs/stereo-encoder-native-seed17-001-joint-test-identity-boundary-report.json": "8de51e939f89221ad3c54d6e245538776f56d6237ff9c61d54077aa256f9e768",
+        "data/runs/stereo-encoder-native-seed17-001-joint-test-identity-features.jsonl": "a73c45a92b017504abbe0ff671fd163241c85c537a17b3f26508d12fa90b0ed1"
+      },
+      "Car3D_AP_R40_percent": {
+        "Car_3d/easy_R40": 48.912255434397046,
+        "Car_3d/moderate_R40": 28.013624861142127,
+        "Car_3d/hard_R40": 23.062692975116057
+      }
+    },
+    "stereo-encoder-native-seed17-001-joint-test-awgn": {
+      "arm": "joint",
+      "channel": "awgn",
+      "checkpoint_sha256": "6e54ebc5fa696db26b3902cdd129ff42544635db4cfb56dfdb7f4b94841c5193",
+      "artifacts_sha256": {
+        "data/runs/stereo-encoder-native-seed17-001-joint-test-awgn.json": "c598e8dbc5ae767bcd614c6daab9a6e10dcc80f33717c4bcf1d6cb724cc16b4e",
+        "data/runs/stereo-encoder-native-seed17-001-joint-test-awgn-AP-audit.json": "da2f639c546ba95d7e9e49cd73a9cb24afbdb1ee3755411f7f1400d8dcbe3e86",
+        "data/runs/stereo-encoder-native-seed17-001-joint-test-awgn-feature-audit.json": "8e1838d8d4b5843b783f778dfebc2dcedd802b4cdcc9bf36aaf82649928ae714",
+        "data/runs/stereo-encoder-native-seed17-001-joint-test-awgn-boundary-report.json": "89c69b607f06b825372c269fd7ce0627e9c739f4f3df18aa64470c06b1f5e263",
+        "data/runs/stereo-encoder-native-seed17-001-joint-test-awgn-features.jsonl": "b7bdf83357e0192e30a489c52968cdf0ed0922ef75f7090cc9311af521b715c8"
+      },
+      "Car3D_AP_R40_percent": {
+        "Car_3d/easy_R40": 48.16432563335844,
+        "Car_3d/moderate_R40": 25.66490597034148,
+        "Car_3d/hard_R40": 21.70880992920751
+      }
+    }
+  },
+  "paired_audit_sha256": "b5c8197b68ce5701e97f4b86cd98afb25fc5a8b533ceeb004d9ddcd25938d0df",
+  "primary_AWGN10_Moderate_treatment_minus_control_pp": 3.2863695330332376,
+  "ended_at_unix": 1791136104.4896789,
+  "limitations": "Fixed exploratory internal paired encoder optimization scope only; author-pretraining overlap, single seed, no novelty/general superiority/mainval/fading/project-completion claim"
+}

@@ -1,0 +1,79 @@
+import json
+from pathlib import Path
+import sys
+import time
+import torch
+
+ROOT = Path.cwd()
+sys.path[:0] = [str(ROOT/'scripts'), str(ROOT/'src')]
+from audit_student_pretraining import frozen_original, holdout_records, scalar_records
+from geocomm.evidence import sha256, source_identity
+
+output = ROOT/'data/runs/student-feature-epoch1-audit-001.json'
+if output.exists():
+    raise RuntimeError('preserve previous audit')
+run = json.loads((ROOT/'data/runs/student-feature-seed17-001.json').read_text())
+source_path = ROOT/'data/provenance/server-source-manifest-student-feature-seed17-001.json'
+source = json.loads(source_path.read_text())
+for name, root, paths, key in [
+    ('project', ROOT, ['src', 'scripts', 'configs', 'pyproject.toml'], 'project_sources'),
+    ('liga', ROOT/'third_party/LIGA-Stereo', ['liga', 'configs', 'tools', 'setup.py'], 'detector_sources'),
+    ('mmdet', ROOT/'third_party/mmdetection_kitti', ['mmdet'], 'mmdet_sources')]:
+    if source_identity(root, paths) != source[name]['actual_sources'] or run[key] != source[name]['actual_sources']:
+        raise RuntimeError('source identity differs')
+epoch = json.loads((Path(run['output_dir'])/'epoch_1.json').read_text())
+assert epoch['epoch'] == 1 and epoch['updates'] == 3340 and epoch['complete_training_epoch']
+checkpoint_path = Path(epoch['checkpoint_path'])
+assert sha256(checkpoint_path) == epoch['checkpoint_sha256']
+init_path = Path('/mnt/d/paper6/checkpoints/liga-author-download')
+assert sha256(init_path) == run['initialization_sha256']
+reference = torch.load(init_path, map_location='cpu', weights_only=False)['model_state']
+checkpoint = torch.load(checkpoint_path, map_location='cpu', weights_only=False)
+assert len(reference) == 484 and checkpoint['it'] == 3340 and checkpoint['epoch'] == 1
+converted = frozen_original(reference, checkpoint['model_state'])
+optimizer = checkpoint['optimizer_state']
+names = run['trainable_parameter_names']
+assert names and all(name.startswith('backbone_3d.student_semantic_link_encoder.') for name in names)
+assert len(optimizer['param_groups']) == 1
+group = optimizer['param_groups'][0]
+assert group['lr'] == .001 and group['weight_decay'] == .0001
+ids = group['params']
+assert len(ids) == len(set(ids)) == len(names) == len(optimizer['state']) == 35
+assert set(ids) == set(optimizer['state'])
+for name, key in zip(names, ids):
+    parameter = checkpoint['model_state'][name]
+    state = optimizer['state'][key]
+    assert torch.isfinite(parameter).all() and float(state['step']) == 3340
+    for moment in ('exp_avg', 'exp_avg_sq'):
+        assert state[moment].shape == parameter.shape and torch.isfinite(state[moment]).all()
+    assert (state['exp_avg_sq'] >= 0).all() and (state['exp_avg_sq'] > 0).any()
+fold_path = ROOT/'data/internal-tuning-fold-001.json'
+assert sha256(fold_path) == run['fold_sha256']
+fold = json.loads(fold_path.read_text())
+train_ids = set(fold['folds']['geocomm_tune_train']['ids'])
+holdout_ids = fold['folds']['geocomm_tune_holdout']['ids']
+assert not train_ids.intersection(holdout_ids)
+holdout = Path(run['output_dir'])/'feature_holdout_epoch_1.jsonl'
+frames = holdout_records(holdout, holdout_ids, epoch['holdout'], False)
+snapshot = ROOT/'data/runs/student-feature-epoch1-evidence-001'
+snapshot.mkdir(exist_ok=False)
+# Copy exactly the closed first-epoch rows; later epochs keep writing elsewhere.
+scalar_path = snapshot/'training.jsonl'
+with (Path(run['output_dir'])/'training.jsonl').open() as original, scalar_path.open('x') as saved:
+    for index in range(3340):
+        line = original.readline()
+        if not line.endswith('\n'):
+            raise RuntimeError('first epoch scalar snapshot incomplete')
+        saved.write(line)
+summary = scalar_records(scalar_path, train_ids, 3340, False)
+result = dict(state='passed', evidence_type='completed_first_epoch_only_not_full_F1_or_AP_audit',
+    epoch=1, steps=3340, original_states_identical=484,
+    trainable_parameter_tensors=35, all_student_optimizer_steps=3340,
+    value_preserving_sparse_layout_keys=converted, holdout_frames=frames,
+    source_manifest_sha256=sha256(source_path), checkpoint_sha256=sha256(checkpoint_path),
+    initialization_sha256=sha256(init_path), training_snapshot_sha256=sha256(scalar_path),
+    audit_code_sha256=sha256(Path(__file__)), interfaces=epoch['holdout']['interfaces'],
+    scalar_summary=summary, audited_at_unix=time.time(),
+    limitations='no fresh feature recomputation; only first epoch audited; final native AP and five-epoch audit remain required')
+output.write_text(json.dumps(result, indent=2, allow_nan=False)+'\n')
+print(json.dumps(result, allow_nan=False))

@@ -1,0 +1,5 @@
+# Official CDN client identification repair004
+
+Locked before staging/retry. Staging003 also received CDN403 on the login node after25 verified archives; retain its report and cache. A read-only64-byte HTTP Range test finds the same official download-r2 URL returns403 to Python-urllib/3.12 and206 to pip/24.3.1. The official download.pytorch.org alias also returns206, but no URL substitution is needed. This is a client-identification issue observed on both node types, not proof of compute-only network restrictions.
+
+Staging004 makes the identical official requests with User-Agent pip/24.3.1, copies only matching prior staged files into independent cache004 and verifies all48 exact hashes. Package versions, URLs, hashes, source, compile flags and software are unchanged. Independent build004 consumes only local cache004 in CPU Slurm; overlay004 and all prior failed attempts remain separate. No network in compilation, login compilation, GPU dispatch, detector/task or scientific performance claim.

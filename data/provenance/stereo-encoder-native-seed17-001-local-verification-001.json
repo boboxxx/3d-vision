@@ -1,0 +1,36 @@
+{
+  "state": "passed",
+  "closure_sha256": "39a35095fe64f6a281fb90b6eec508c1057c042ca06e9d9d2a7dc98204632758",
+  "verifier_sha256": "f1375bb209f5fcb340e32bcb4244cbb51fb1fbc497a727ac8229fb90c957bd2c",
+  "actual_terminal_evidence_sha256": "5b7d1800a0445a186f4f97a712322d9bbecc118341853cca13d092c229fc1aff",
+  "artifacts_verified": 46,
+  "paired_steps": 3340,
+  "empty_GT": {
+    "codec": 62,
+    "joint": 62
+  },
+  "metrics": {
+    "stereo-encoder-native-seed17-001-codec-test-identity": {
+      "Car_3d/easy_R40": 47.07845712524815,
+      "Car_3d/moderate_R40": 25.664854076190046,
+      "Car_3d/hard_R40": 21.252795725280198
+    },
+    "stereo-encoder-native-seed17-001-codec-test-awgn": {
+      "Car_3d/easy_R40": 41.92429535620373,
+      "Car_3d/moderate_R40": 22.37853643730824,
+      "Car_3d/hard_R40": 18.633586438570816
+    },
+    "stereo-encoder-native-seed17-001-joint-test-identity": {
+      "Car_3d/easy_R40": 48.912255434397046,
+      "Car_3d/moderate_R40": 28.013624861142127,
+      "Car_3d/hard_R40": 23.062692975116057
+    },
+    "stereo-encoder-native-seed17-001-joint-test-awgn": {
+      "Car_3d/easy_R40": 48.16432563335844,
+      "Car_3d/moderate_R40": 25.66490597034148,
+      "Car_3d/hard_R40": 21.70880992920751
+    }
+  },
+  "primary_AWGN10_Moderate_treatment_minus_control_pp": 3.2863695330332376,
+  "scope": "Sealed paired raw records and full server audits; local audit does not re-run CUDA RNG, checkpoints or AP."
+}

@@ -1,0 +1,72 @@
+{
+  "evidence_type": "engineering_only",
+  "state": "passed",
+  "fixture": "100 identical exact synthetic cars; not KITTI benchmark AP",
+  "checked_metrics": {
+    "primary_Car_IoU_0_7_R40": {
+      "Car_aos/easy_R40": 100.0,
+      "Car_aos/moderate_R40": 100.0,
+      "Car_aos/hard_R40": 100.0,
+      "Car_3d/easy_R40": 100.0,
+      "Car_3d/moderate_R40": 100.0,
+      "Car_3d/hard_R40": 100.0,
+      "Car_bev/easy_R40": 100.0,
+      "Car_bev/moderate_R40": 100.0,
+      "Car_bev/hard_R40": 100.0,
+      "Car_image/easy_R40": 100.0,
+      "Car_image/moderate_R40": 100.0,
+      "Car_image/hard_R40": 100.0
+    },
+    "secondary_Car_IoU_0_5": {
+      "bbox_R11": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "bbox_R40": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "bev_R11": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "bev_R40": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "3d_R11": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "3d_R40": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "aos_R11": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "aos_R40": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    "difficulty_order": [
+      "easy",
+      "moderate",
+      "hard"
+    ],
+    "original_paper_reproduction": false,
+    "note": "clean released detector; original codec/split/evaluator version still unresolved"
+  },
+  "expected_percent": 100,
+  "torch_context_initialized": true
+}

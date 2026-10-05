@@ -1,0 +1,9 @@
+{
+  "evidence_type": "branch_compatibility_run_only",
+  "recorded_unix": 1791048418.981666,
+  "reason": "Python3 branch1 source with master-released epoch21 checkpoint; official branch1 epoch13 checkpoint has different learned tensors; ROI sampling also differs between branches",
+  "comparison": "/home/sheng/paper6/data/engineering/stereo-branch-checkpoints-001.json",
+  "main_clean_baseline": false,
+  "new_main_run": "/mnt/d/paper6/runs/stereo-branch1-clean-seed17",
+  "note": "retain raw predictions and AP; do not use as branch-matched clean baseline or original-paper reproduction"
+}

@@ -1,0 +1,19 @@
+{
+  "state": "closed",
+  "scope": "engineering failure before any optimizer update",
+  "optimizer_updates": 0,
+  "original_implementation_commit": "5a8356f",
+  "original_protocol_commit": "9aed254",
+  "reason": "ValueError('locked stereo/appearance shape agreement required')",
+  "diagnosis": "F2 student returns full-resolution32x320x1248 stereo and32x80x312 appearance, not three equal quarter-resolution maps",
+  "manifest_sha256": "a3c5f28335fbe7b738ab6479817409df0987a70d035c7471f34cb1341d94e566",
+  "all4_trees_unchanged": {
+    "project": "6897b7373768b677ac053de927e2d83e7288a36772e71ed3dbf8fd7663bd4246",
+    "liga": "0ffb2cda5f2fa7596fd18342562f08414d2a61e28892d317aaae946b50967a01",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f"
+  },
+  "formal_training_started": false,
+  "scientific_AP_evidence": false,
+  "correction_requires_new_precommitted_protocol": true
+}

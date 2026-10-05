@@ -1,0 +1,36 @@
+{
+  "epoch": 1,
+  "complete_training_epoch": false,
+  "updates": 3,
+  "unique_returned_training_frames": 3,
+  "native_empty_augmented_GT_resampling_retained": true,
+  "checkpoint_path": "/mnt/d/paper6/runs/student-feature-sanity-002/checkpoint_epoch_0.pth",
+  "checkpoint_sha256": "c3345d04f41aa9642d68a1ea2b35bbd2944e638f2740b7ab751e8fde88f3ef51",
+  "original_states_identical": 484,
+  "holdout": {
+    "frames": 3,
+    "records_sha256": "4350d06717ab7d70e22a058fc82be5f768db4a0ea535b30be890a855180de601",
+    "aggregation": "arithmetic mean of per-frame interface metrics",
+    "interfaces": {
+      "left_stereo": {
+        "student_rms": 0.12236943592627843,
+        "teacher_rms": 1.2663299640019734,
+        "normalized_mse": 0.9927644729614258,
+        "cosine": 0.08585259566704433
+      },
+      "right_stereo": {
+        "student_rms": 0.12327182044585545,
+        "teacher_rms": 1.262264370918274,
+        "normalized_mse": 0.9927652279535929,
+        "cosine": 0.08608892063299815
+      },
+      "left_appearance": {
+        "student_rms": 0.5847344001134237,
+        "teacher_rms": 1.4831060568491619,
+        "normalized_mse": 0.9439519047737122,
+        "cosine": 0.2681783636411031
+      }
+    }
+  },
+  "completed_at_unix": 1791059958.1406968
+}

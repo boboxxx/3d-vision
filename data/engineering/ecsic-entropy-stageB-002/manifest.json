@@ -1,0 +1,247 @@
+{
+  "state": "passed",
+  "pid": 178153,
+  "started_unix": 1791135618.0839233,
+  "cases": {
+    "synthetic32x64": {
+      "state": "passed",
+      "container_bytes": 813,
+      "container_bits": 6504,
+      "streams": {
+        "z_left": {
+          "symbols": 96,
+          "rans_bytes": 15,
+          "escape_bytes": 0,
+          "escape_symbols": 0,
+          "finite_CDF_ideal_bits": 92.17219968866884,
+          "derived_scale_indices": {
+            "shape": [
+              96
+            ],
+            "dtype": "uint8",
+            "sha256": "08e92ef8ece4a4bbbbd36c1d3cd17a6dbb6fca8563d94dedc955ea5eb0affc53",
+            "finite": true,
+            "min": 0.0,
+            "max": 101.0
+          }
+        },
+        "z_right": {
+          "symbols": 96,
+          "rans_bytes": 20,
+          "escape_bytes": 0,
+          "escape_symbols": 0,
+          "finite_CDF_ideal_bits": 129.58403821494989,
+          "derived_scale_indices": {
+            "shape": [
+              96
+            ],
+            "dtype": "uint8",
+            "sha256": "07bbb03ee2643968922121ed87fcc5500d0b134d7773484df54e21971ec1643b",
+            "finite": true,
+            "min": 0.0,
+            "max": 109.0
+          }
+        },
+        "y_left": {
+          "symbols": 1536,
+          "rans_bytes": 318,
+          "escape_bytes": 0,
+          "escape_symbols": 0,
+          "finite_CDF_ideal_bits": 2519.095899154916,
+          "derived_scale_indices": {
+            "shape": [
+              1536
+            ],
+            "dtype": "uint8",
+            "sha256": "2b8dc272ff9260e06c161ab7da6a73032f934c9b05690c3e584bee0835709a00",
+            "finite": true,
+            "min": 0.0,
+            "max": 128.0
+          }
+        },
+        "y_right": {
+          "symbols": 1536,
+          "rans_bytes": 294,
+          "escape_bytes": 0,
+          "escape_symbols": 0,
+          "finite_CDF_ideal_bits": 2320.1691575397695,
+          "derived_scale_indices": {
+            "shape": [
+              1536
+            ],
+            "dtype": "uint8",
+            "sha256": "2ece2eeb145a6078643d02ed76b902f63ad22f15cb03566abbfb079e09349826",
+            "finite": true,
+            "min": 0.0,
+            "max": 124.0
+          }
+        }
+      },
+      "header_CRC_bytes": 166,
+      "estimated_CDF_plus_literal_bits": 5061.021294598304,
+      "actual_minus_estimate_bits": 1442.978705401696,
+      "exact_arrays": {
+        "z_left_loc": true,
+        "z_left_scale": true,
+        "z_left_hat": true,
+        "z_left_symbols": true,
+        "z_right_loc": true,
+        "z_right_scale": true,
+        "z_right_hat": true,
+        "z_right_symbols": true,
+        "y_left_loc": true,
+        "y_left_scale": true,
+        "y_left_hat": true,
+        "y_left_symbols": true,
+        "y_right_loc": true,
+        "y_right_scale": true,
+        "y_right_hat": true,
+        "y_right_symbols": true,
+        "pred_left": true,
+        "pred_right": true
+      },
+      "original_hw": [
+        32,
+        64
+      ],
+      "padded_hw": [
+        32,
+        64
+      ],
+      "files": {
+        "receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+        "receiver.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "reconstructed.npz": "28eec43206d78e3b770cb661fe61090d666a36e840b708e16aca8d4209f3dded",
+        "source.p6ec": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f"
+      }
+    },
+    "training000000": {
+      "state": "passed",
+      "container_bytes": 44824,
+      "container_bits": 358592,
+      "streams": {
+        "z_left": {
+          "symbols": 22464,
+          "rans_bytes": 2173,
+          "escape_bytes": 0,
+          "escape_symbols": 0,
+          "finite_CDF_ideal_bits": 17352.88603765757,
+          "derived_scale_indices": {
+            "shape": [
+              22464
+            ],
+            "dtype": "uint8",
+            "sha256": "490bad646864df56722ff2f041829cbbcdcf08deb4594da7f679f1cd89a0bc1c",
+            "finite": true,
+            "min": 0.0,
+            "max": 101.0
+          }
+        },
+        "z_right": {
+          "symbols": 22464,
+          "rans_bytes": 2584,
+          "escape_bytes": 0,
+          "escape_symbols": 0,
+          "finite_CDF_ideal_bits": 20646.782729708517,
+          "derived_scale_indices": {
+            "shape": [
+              22464
+            ],
+            "dtype": "uint8",
+            "sha256": "dbba179c2127c1729152ef78542a9818fd0a55390e8ef186747b040a2b299afd",
+            "finite": true,
+            "min": 0.0,
+            "max": 137.0
+          }
+        },
+        "y_left": {
+          "symbols": 359424,
+          "rans_bytes": 19968,
+          "escape_bytes": 0,
+          "escape_symbols": 0,
+          "finite_CDF_ideal_bits": 159713.65492790504,
+          "derived_scale_indices": {
+            "shape": [
+              359424
+            ],
+            "dtype": "uint8",
+            "sha256": "f0a454117e776695386c2feaad6d87459e6d49f7edb3fdbce9ad3966208a4ccf",
+            "finite": true,
+            "min": 0.0,
+            "max": 136.0
+          }
+        },
+        "y_right": {
+          "symbols": 359424,
+          "rans_bytes": 19933,
+          "escape_bytes": 0,
+          "escape_symbols": 0,
+          "finite_CDF_ideal_bits": 159434.07271037652,
+          "derived_scale_indices": {
+            "shape": [
+              359424
+            ],
+            "dtype": "uint8",
+            "sha256": "7c8418f658f43199cf5c7e1b1427aae4c062b406215ceef783cfc23dfe11996c",
+            "finite": true,
+            "min": 0.0,
+            "max": 128.0
+          }
+        }
+      },
+      "header_CRC_bytes": 166,
+      "estimated_CDF_plus_literal_bits": 357147.3964056476,
+      "actual_minus_estimate_bits": 1444.6035943523748,
+      "exact_arrays": {
+        "z_left_loc": true,
+        "z_left_scale": true,
+        "z_left_hat": true,
+        "z_left_symbols": true,
+        "z_right_loc": true,
+        "z_right_scale": true,
+        "z_right_hat": true,
+        "z_right_symbols": true,
+        "y_left_loc": true,
+        "y_left_scale": true,
+        "y_left_hat": true,
+        "y_left_symbols": true,
+        "y_right_loc": true,
+        "y_right_scale": true,
+        "y_right_hat": true,
+        "y_right_symbols": true,
+        "pred_left": true,
+        "pred_right": true
+      },
+      "original_hw": [
+        370,
+        1224
+      ],
+      "padded_hw": [
+        384,
+        1248
+      ],
+      "files": {
+        "receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+        "receiver.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "reconstructed.npz": "a008476e633b39b71263a50a277807f9b2583869a194b266c6e2734f0df399d9",
+        "source.p6ec": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a"
+      }
+    }
+  },
+  "sources_sha256": {
+    "experiments/original-paper-scenarios/ecsic-entropy-code/cdf-u32le.bin": "507d22e35fb0bb605f05a3312600a8aff3ff10f1ec1c4964358cb390e35d56e5",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/codec.py": "a22fb7717cd1e2a13e4539a74a541958e93a7f6b215ae960b9c2736ad53ec157",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/native.py": "33dbb471f341f73e8179ac100544c238141020ffdfe80909051add819da812b5",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/check_cpu.py": "5ab07f74993ad1e342deada8cc562e10483a89ce95696b7bae1940b0bbc526f3",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/reference.cpp": "dcf5ab4588dc01ee01ac192d39dcc4677be75086ae9e9c24483e6fe1816485d0",
+    "experiments/original-paper-scenarios/ecsic-entropy-code/cdf.sha256": "7b9b459d9f1a337e2b9734c3586fdf4720231d5f15f103549ff84d9549723d59"
+  },
+  "CDF_sha256": "507d22e35fb0bb605f05a3312600a8aff3ff10f1ec1c4964358cb390e35d56e5",
+  "stage_A_audit_sha256": "d0f563954856abede65e0007c1e05f15f00516cea9211497634e7bfe7a2bce86",
+  "protocol_sha256": "d264b2ed4c26859bd85a7aab17ce49e70f01b63ebae861ba0c136736b5541b81",
+  "finished_unix": 1791135645.0043588,
+  "actual_entropy_source_bytes": true,
+  "physical_channel_executed": false,
+  "KITTI_AP_measured": false,
+  "limitation": "Declared finite-CDF source codec; probabilities not billed as physical uses. Fixed two engineering inputs only."
+}

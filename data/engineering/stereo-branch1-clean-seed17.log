@@ -1,0 +1,111 @@
+/home/sheng/paper6/third_party/Stereo-RCNN/lib/model/dense_align/box_3d.py:39: UserWarning: Using torch.cross without specifying the dim arg is deprecated.
+Please either pass the dim explicitly or simply use torch.linalg.cross.
+The default value of dim will change to agree with that of linalg.cross in a future release. (Triggered internally at ../aten/src/ATen/native/Cross.cpp:62.)
+  normal = torch.cross(arrow1, arrow2)
+{"frames_complete": 50, "total": 3769}
+{"frames_complete": 100, "total": 3769}
+{"frames_complete": 150, "total": 3769}
+{"frames_complete": 200, "total": 3769}
+{"frames_complete": 250, "total": 3769}
+{"frames_complete": 300, "total": 3769}
+{"frames_complete": 350, "total": 3769}
+{"frames_complete": 400, "total": 3769}
+{"frames_complete": 450, "total": 3769}
+{"frames_complete": 500, "total": 3769}
+{"frames_complete": 550, "total": 3769}
+{"frames_complete": 600, "total": 3769}
+{"frames_complete": 650, "total": 3769}
+{"frames_complete": 700, "total": 3769}
+{"frames_complete": 750, "total": 3769}
+{"frames_complete": 800, "total": 3769}
+{"frames_complete": 850, "total": 3769}
+{"frames_complete": 900, "total": 3769}
+{"frames_complete": 950, "total": 3769}
+{"frames_complete": 1000, "total": 3769}
+{"frames_complete": 1050, "total": 3769}
+{"frames_complete": 1100, "total": 3769}
+{"frames_complete": 1150, "total": 3769}
+{"frames_complete": 1200, "total": 3769}
+{"frames_complete": 1250, "total": 3769}
+{"frames_complete": 1300, "total": 3769}
+{"frames_complete": 1350, "total": 3769}
+{"frames_complete": 1400, "total": 3769}
+{"frames_complete": 1450, "total": 3769}
+{"frames_complete": 1500, "total": 3769}
+{"frames_complete": 1550, "total": 3769}
+{"frames_complete": 1600, "total": 3769}
+{"frames_complete": 1650, "total": 3769}
+{"frames_complete": 1700, "total": 3769}
+{"frames_complete": 1750, "total": 3769}
+{"frames_complete": 1800, "total": 3769}
+{"frames_complete": 1850, "total": 3769}
+{"frames_complete": 1900, "total": 3769}
+{"frames_complete": 1950, "total": 3769}
+{"frames_complete": 2000, "total": 3769}
+{"frames_complete": 2050, "total": 3769}
+{"frames_complete": 2100, "total": 3769}
+{"frames_complete": 2150, "total": 3769}
+{"frames_complete": 2200, "total": 3769}
+{"frames_complete": 2250, "total": 3769}
+{"frames_complete": 2300, "total": 3769}
+{"frames_complete": 2350, "total": 3769}
+{"frames_complete": 2400, "total": 3769}
+{"frames_complete": 2450, "total": 3769}
+{"frames_complete": 2500, "total": 3769}
+{"frames_complete": 2550, "total": 3769}
+{"frames_complete": 2600, "total": 3769}
+{"frames_complete": 2650, "total": 3769}
+{"frames_complete": 2700, "total": 3769}
+{"frames_complete": 2750, "total": 3769}
+{"frames_complete": 2800, "total": 3769}
+{"frames_complete": 2850, "total": 3769}
+{"frames_complete": 2900, "total": 3769}
+{"frames_complete": 2950, "total": 3769}
+{"frames_complete": 3000, "total": 3769}
+{"frames_complete": 3050, "total": 3769}
+{"frames_complete": 3100, "total": 3769}
+{"frames_complete": 3150, "total": 3769}
+{"frames_complete": 3200, "total": 3769}
+{"frames_complete": 3250, "total": 3769}
+{"frames_complete": 3300, "total": 3769}
+{"frames_complete": 3350, "total": 3769}
+{"frames_complete": 3400, "total": 3769}
+{"frames_complete": 3450, "total": 3769}
+{"frames_complete": 3500, "total": 3769}
+{"frames_complete": 3550, "total": 3769}
+{"frames_complete": 3600, "total": 3769}
+{"frames_complete": 3650, "total": 3769}
+{"frames_complete": 3700, "total": 3769}
+{"frames_complete": 3750, "total": 3769}
+{"frames_complete": 3769, "total": 3769}
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 8 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 10 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 15 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 12 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 32 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/core/typed_passes.py:336: NumbaPerformanceWarning: [1m
+The keyword argument 'parallel=True' was specified but no transformation for parallel execution was possible.
+
+To find out why, try turning on parallel diagnostics, see https://numba.readthedocs.io/en/stable/user/parallel.html#diagnostics for help.
+[1m
+File "third_party/LIGA-Stereo/liga/datasets/kitti/kitti_object_eval_python/eval.py", line 121:[0m
+[1m@numba.jit(nopython=True, parallel=True)
+[1mdef d3_box_overlap_kernel(boxes, qboxes, rinc, criterion=-1):
+[0m[1m^[0m[0m
+[0m
+  warnings.warn(errors.NumbaPerformanceWarning(msg,
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 10 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 15 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 8 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 12 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 32 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))

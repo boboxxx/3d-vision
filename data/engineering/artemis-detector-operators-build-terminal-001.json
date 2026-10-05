@@ -1,0 +1,52 @@
+{
+  "state": "passed_build_only_actual_terminal_GPU_pending",
+  "checked_unix": 1791116983.5610933,
+  "job_id": "11423973",
+  "jobs": [
+    {
+      "JobID": "11423973",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "billing=8,cpu=8,mem=32G,node=1",
+      "NodeList": "artemis-general-02"
+    },
+    {
+      "JobID": "11423973.batch",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "cpu=8,mem=32G,node=1",
+      "NodeList": "artemis-general-02"
+    },
+    {
+      "JobID": "11423973.extern",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "billing=8,cpu=8,mem=32G,node=1",
+      "NodeList": "artemis-general-02"
+    },
+    {
+      "JobID": "11423973.0",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "cpu=8,mem=32G,node=1",
+      "NodeList": "artemis-general-02"
+    }
+  ],
+  "fresh_file_sha256": {
+    "data/engineering/artemis-detector-operators-build-001.json": "7f5d014570f799bbec15ba09c1a83b8d3f7eaf7763f4f53836de279f0a96834b",
+    "dependencies/liga-operators-cu128-001/lib/build_cost_volume_cuda.cpython-312-x86_64-linux-gnu.so": "96e75c600b2120412899669880c55b7cfea841ebb3f01fbf45739be72d2e61d0",
+    "dependencies/liga-operators-cu128-001/lib/iou3d_nms_cuda.cpython-312-x86_64-linux-gnu.so": "9471d238d9747eaf97df4ff4a9c9ff27723331b6a9005a7824a3ef19b56d6b63",
+    "dependencies/liga-operators-cu128-001/lib/roiaware_pool3d_cuda.cpython-312-x86_64-linux-gnu.so": "9c2dd4f95b7a82e9209f2f3dbabc968579d0cf6216aebada90adb4bf113e55a9",
+    "third_party/LIGA-Stereo/liga/ops/build_cost_volume/src/BuildCostVolume.cpp": "da59e8bfc30eaa4a615f55ecf23196135524d98bc01300f7f8fc6feb3d6bdc07",
+    "third_party/LIGA-Stereo/liga/ops/build_cost_volume/src/BuildCostVolume_cuda.cu": "71d3c54aa11d648fa72d5f3f2a938436367fc80b3cd4bcd1f91151a13b79d8c9",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_cpu.cpp": "68d6ed8ddb9a8cdc4bee8563f7a4adf52a212621c3f6eeef60f924052856596f",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_cpu.h": "2a0c9325ef7e61035adedb67a4629ac0792750a4cbc292acdca48ff4e1d8b526",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms.cpp": "33e88f2b96ab1baa11cd76e9291707042a786162f9512f14d74dde5a558be893",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms.h": "2e2f73f41d4c17f13fc94be7c03a48409f19c1b745e2b5ade9e016c265c3c0de",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms_api.cpp": "f5b79c976e5cb40e8a54846a97f6ced386454988a4651009bbd6769e26451719",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms_kernel.cu": "a92bf45c1533b383976886db87803f76acdbddb7f5cc7666e39e6379095c46e0",
+    "third_party/LIGA-Stereo/liga/ops/roiaware_pool3d/src/roiaware_pool3d.cpp": "c71b96fa6e80c9cf5a03cb7ba4db7a90408e0f0968acd4259008e2be9a54cd33",
+    "third_party/LIGA-Stereo/liga/ops/roiaware_pool3d/src/roiaware_pool3d_kernel.cu": "d34013f84a0094dd9ae814e0cf1e5bceb7d808bfcc1248a1832f334a96a1808e"
+  },
+  "GPU_probe_job_id": "11423980"
+}

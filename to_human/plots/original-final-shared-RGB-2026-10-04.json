@@ -1,0 +1,25 @@
+{
+  "scope": "internal_372_original_variant_shared_received_RGB_no_fair_new_method_comparison",
+  "source_manifest": "data/provenance/original-final-native-seed17-001-local-verification-001.json",
+  "detectors": [
+    "stereo_rcnn",
+    "liga"
+  ],
+  "conditions": [
+    "clean_relay",
+    "identity",
+    "awgn"
+  ],
+  "moderate_AP_R40": [
+    [
+      40.49105380063896,
+      40.53297439929175,
+      41.760362568650486
+    ],
+    [
+      99.86290209828039,
+      79.36053793549623,
+      75.9221159317749
+    ]
+  ]
+}

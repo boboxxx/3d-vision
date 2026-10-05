@@ -1,0 +1,27 @@
+{
+  "state": "live_readonly_snapshot",
+  "prefix": "stereo-epipolar-native-seed17-001",
+  "checked_unix": 1791142615.3013473,
+  "pid": 260096,
+  "actual_ps": "    PID STAT     ELAPSED COMMAND\n 260096 Ssl        06:00 python experiments/geometry-link/F9/evaluation/formal_cycle.py --prefix stereo-epipolar-native-seed17-001\n",
+  "ps_returncode": 0,
+  "cycle_state": "running",
+  "cycle_sha256": "807fc24ec6151baaae2e3fdce9dbaf7f72b51de45966322afab4027a55703a5b",
+  "current_stage": "training",
+  "current_arm": "U",
+  "complete_commands": 0,
+  "completed_endpoints": [],
+  "training": {
+    "U": {
+      "state": "training",
+      "manifest_sha256": "c52c6e95fad35323c2f97548d533127876947f059fface82584865a740ed2760",
+      "reported_optimizer_steps": 1600,
+      "complete_raw_rows": 1658,
+      "last_actual_completed_step": 1658,
+      "incomplete_trailing_record": false
+    }
+  },
+  "eight_tree_sources_match": true,
+  "NVIDIA_memory": "9624 MiB, 24564 MiB",
+  "scope": "Live progress only; incomplete runs are not final results, no AP interpretation or restart"
+}

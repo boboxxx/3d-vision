@@ -1,0 +1,17 @@
+{
+  "checked_unix": 1791133966.7671847,
+  "prefix": "stereo-encoder-native-seed17-001",
+  "cycle_pid": 167748,
+  "cycle_state": "running",
+  "actual_ps_stdout": "    PID STAT     ELAPSED COMMAND\n 167748 Ssl        03:23 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/experiments/geometry-link/F8/code/cycle.py --prefix stereo-encoder-native-seed17-001 --engineering-prefix stereo-encoder-native-sanity-001\n",
+  "actual_ps_exit_code": 0,
+  "arms": {
+    "codec": {
+      "state": "training",
+      "optimizer_steps": 900,
+      "exception": null,
+      "initialization_sha256": "ea93fb1ec7d7328e0ae603ec40385882da255414e876efa2c1abda4fa4de36a3",
+      "actual_raw_rows": 999
+    }
+  }
+}

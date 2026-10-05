@@ -1,0 +1,105 @@
+{
+  "state": "passed_native_operator_GPU_only",
+  "job_id": "11423980",
+  "started_unix": 1791166137.3152518,
+  "input_sha256": "7c8ef42df59587e9f427c7f82d33284d666911fcef28395c902d2c8b4c985159",
+  "execution_sources": {
+    "experiments/artemis-detector-operators/code/build.py": "eeb70213c358092be3a6fdc5454b0dd41709403bba138a295eb6dd1a4ca713ff",
+    "experiments/artemis-detector-operators/code/setup_build.py": "84a3a97b8923b59d2b419ed0dd6870bc35387ea15ad37ddcd338c697f56ad973",
+    "experiments/artemis-detector-operators/code/probe.py": "1440aa6321ae192a97946e10012a1ce2fae29082e3da70c7a5a2ba39bff5f5ad"
+  },
+  "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "capability": [
+    12,
+    0
+  ],
+  "nvidia_smi": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 610.57.04, 97887 MiB\n",
+  "torch_version": "2.7.1+cu128",
+  "torch_cuda": "12.8",
+  "build_manifest_sha256": "7f5d014570f799bbec15ba09c1a83b8d3f7eaf7763f4f53836de279f0a96834b",
+  "sources_before": {
+    "third_party/LIGA-Stereo/liga/ops/build_cost_volume/src/BuildCostVolume.cpp": "da59e8bfc30eaa4a615f55ecf23196135524d98bc01300f7f8fc6feb3d6bdc07",
+    "third_party/LIGA-Stereo/liga/ops/build_cost_volume/src/BuildCostVolume_cuda.cu": "71d3c54aa11d648fa72d5f3f2a938436367fc80b3cd4bcd1f91151a13b79d8c9",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_cpu.cpp": "68d6ed8ddb9a8cdc4bee8563f7a4adf52a212621c3f6eeef60f924052856596f",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_cpu.h": "2a0c9325ef7e61035adedb67a4629ac0792750a4cbc292acdca48ff4e1d8b526",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms.cpp": "33e88f2b96ab1baa11cd76e9291707042a786162f9512f14d74dde5a558be893",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms.h": "2e2f73f41d4c17f13fc94be7c03a48409f19c1b745e2b5ade9e016c265c3c0de",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms_api.cpp": "f5b79c976e5cb40e8a54846a97f6ced386454988a4651009bbd6769e26451719",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms_kernel.cu": "a92bf45c1533b383976886db87803f76acdbddb7f5cc7666e39e6379095c46e0",
+    "third_party/LIGA-Stereo/liga/ops/roiaware_pool3d/src/roiaware_pool3d.cpp": "c71b96fa6e80c9cf5a03cb7ba4db7a90408e0f0968acd4259008e2be9a54cd33",
+    "third_party/LIGA-Stereo/liga/ops/roiaware_pool3d/src/roiaware_pool3d_kernel.cu": "d34013f84a0094dd9ae814e0cf1e5bceb7d808bfcc1248a1832f334a96a1808e"
+  },
+  "binaries": {
+    "dependencies/liga-operators-cu128-001/lib/build_cost_volume_cuda.cpython-312-x86_64-linux-gnu.so": {
+      "sha256": "96e75c600b2120412899669880c55b7cfea841ebb3f01fbf45739be72d2e61d0",
+      "bytes": 237456
+    },
+    "dependencies/liga-operators-cu128-001/lib/iou3d_nms_cuda.cpython-312-x86_64-linux-gnu.so": {
+      "sha256": "9471d238d9747eaf97df4ff4a9c9ff27723331b6a9005a7824a3ef19b56d6b63",
+      "bytes": 501240
+    },
+    "dependencies/liga-operators-cu128-001/lib/roiaware_pool3d_cuda.cpython-312-x86_64-linux-gnu.so": {
+      "sha256": "9c2dd4f95b7a82e9209f2f3dbabc968579d0cf6216aebada90adb4bf113e55a9",
+      "bytes": 239392
+    }
+  },
+  "packages_before": "filelock==3.32.3\nfsspec==2026.7.0\nJinja2==3.1.6\nMarkupSafe==3.0.3\nmpmath==1.3.0\nnetworkx==3.6.1\nnumpy==1.26.4\nnvidia-cublas-cu12==12.8.3.14\nnvidia-cuda-cupti-cu12==12.8.57\nnvidia-cuda-nvrtc-cu12==12.8.61\nnvidia-cuda-runtime-cu12==12.8.57\nnvidia-cudnn-cu12==9.7.1.26\nnvidia-cufft-cu12==11.3.3.41\nnvidia-cufile-cu12==1.13.0.11\nnvidia-curand-cu12==10.3.9.55\nnvidia-cusolver-cu12==11.7.2.55\nnvidia-cusparse-cu12==12.5.7.53\nnvidia-cusparselt-cu12==0.6.3\nnvidia-nccl-cu12==2.26.2\nnvidia-nvjitlink-cu12==12.8.61\nnvidia-nvtx-cu12==12.8.55\npillow==10.2.0\nPyYAML==6.0.2\nsetuptools==78.1.0\nsympy==1.14.0\ntorch==2.7.1+cu128\ntriton==3.3.1\ntyping_extensions==4.16.0\n",
+  "cost_checks": [
+    {
+      "downsample": 1,
+      "max_absolute_errors": {
+        "forward": 0.0,
+        "left_gradient": 0.0,
+        "right_gradient": 5.960464477539063e-08
+      },
+      "fixture_sha256": "6c1af67ae152af7e0c2c55a56c68a9b376dde8278f6497d1ddb456656c23b49c"
+    },
+    {
+      "downsample": 2,
+      "max_absolute_errors": {
+        "forward": 0.0,
+        "left_gradient": 5.960464477539063e-08,
+        "right_gradient": 0.0
+      },
+      "fixture_sha256": "5edcd0d7d6de30d5ddefb317615843869183af7917e948c7699ac279024e989b"
+    }
+  ],
+  "geometry_checks": {
+    "NMS_keep": [
+      0,
+      2,
+      3
+    ],
+    "fixture_sha256": "2012cfa0ee7ed3db387a6e521d243756aa6606d576de29be2a862818f5064555",
+    "ROI_membership": "passed",
+    "BEV_overlap_and_IoU": "passed"
+  },
+  "sources_after": {
+    "third_party/LIGA-Stereo/liga/ops/build_cost_volume/src/BuildCostVolume.cpp": "da59e8bfc30eaa4a615f55ecf23196135524d98bc01300f7f8fc6feb3d6bdc07",
+    "third_party/LIGA-Stereo/liga/ops/build_cost_volume/src/BuildCostVolume_cuda.cu": "71d3c54aa11d648fa72d5f3f2a938436367fc80b3cd4bcd1f91151a13b79d8c9",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_cpu.cpp": "68d6ed8ddb9a8cdc4bee8563f7a4adf52a212621c3f6eeef60f924052856596f",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_cpu.h": "2a0c9325ef7e61035adedb67a4629ac0792750a4cbc292acdca48ff4e1d8b526",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms.cpp": "33e88f2b96ab1baa11cd76e9291707042a786162f9512f14d74dde5a558be893",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms.h": "2e2f73f41d4c17f13fc94be7c03a48409f19c1b745e2b5ade9e016c265c3c0de",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms_api.cpp": "f5b79c976e5cb40e8a54846a97f6ced386454988a4651009bbd6769e26451719",
+    "third_party/LIGA-Stereo/liga/ops/iou3d_nms/src/iou3d_nms_kernel.cu": "a92bf45c1533b383976886db87803f76acdbddb7f5cc7666e39e6379095c46e0",
+    "third_party/LIGA-Stereo/liga/ops/roiaware_pool3d/src/roiaware_pool3d.cpp": "c71b96fa6e80c9cf5a03cb7ba4db7a90408e0f0968acd4259008e2be9a54cd33",
+    "third_party/LIGA-Stereo/liga/ops/roiaware_pool3d/src/roiaware_pool3d_kernel.cu": "d34013f84a0094dd9ae814e0cf1e5bceb7d808bfcc1248a1832f334a96a1808e"
+  },
+  "packages_after": "filelock==3.32.3\nfsspec==2026.7.0\nJinja2==3.1.6\nMarkupSafe==3.0.3\nmpmath==1.3.0\nnetworkx==3.6.1\nnumpy==1.26.4\nnvidia-cublas-cu12==12.8.3.14\nnvidia-cuda-cupti-cu12==12.8.57\nnvidia-cuda-nvrtc-cu12==12.8.61\nnvidia-cuda-runtime-cu12==12.8.57\nnvidia-cudnn-cu12==9.7.1.26\nnvidia-cufft-cu12==11.3.3.41\nnvidia-cufile-cu12==1.13.0.11\nnvidia-curand-cu12==10.3.9.55\nnvidia-cusolver-cu12==11.7.2.55\nnvidia-cusparse-cu12==12.5.7.53\nnvidia-cusparselt-cu12==0.6.3\nnvidia-nccl-cu12==2.26.2\nnvidia-nvjitlink-cu12==12.8.61\nnvidia-nvtx-cu12==12.8.55\npillow==10.2.0\nPyYAML==6.0.2\nsetuptools==78.1.0\nsympy==1.14.0\ntorch==2.7.1+cu128\ntriton==3.3.1\ntyping_extensions==4.16.0\n",
+  "artifacts": {
+    "cost-downsample-1.npz": {
+      "sha256": "6c1af67ae152af7e0c2c55a56c68a9b376dde8278f6497d1ddb456656c23b49c",
+      "bytes": 11866
+    },
+    "cost-downsample-2.npz": {
+      "sha256": "5edcd0d7d6de30d5ddefb317615843869183af7917e948c7699ac279024e989b",
+      "bytes": 6682
+    },
+    "geometric-fixtures.npz": {
+      "sha256": "2012cfa0ee7ed3db387a6e521d243756aa6606d576de29be2a862818f5064555",
+      "bytes": 4044
+    }
+  },
+  "ended_unix": 1791166144.255666
+}

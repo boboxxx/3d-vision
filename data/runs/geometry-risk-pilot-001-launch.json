@@ -1,0 +1,18 @@
+{
+  "state": "dispatched",
+  "pid": 74257,
+  "prefix": "geometry-risk-pilot-001",
+  "command": "source scripts/sheng_env.sh && exec python experiments/geometry-risk/pilot-code/run_native.py",
+  "submitted_unix": 1791124787.264386,
+  "protocol_commit": "8ea728b",
+  "implementation_commit": "621113f",
+  "eligibility_evidence_commit": "7bc6c27",
+  "CPU_gate_sha256": "b32cb2889866c3fa1947019df5c033aae170f2cf8aaab828601b1e67dea620f2",
+  "source_sha256": {
+    "experiments/geometry-risk/pilot-code/analyze.py": "95e5842e410080f653731780bed2be33d3f7b879d0680936a853935fcc105ac2",
+    "experiments/geometry-risk/pilot-code/check_cpu.py": "b73bdb9733c9d196df212721c7f5335108edcee209c67b80ecc7f5b077b0852a",
+    "experiments/geometry-risk/pilot-code/risk_stats.py": "6dd766c8c01cff5449a78149abf1b25cccc3d2f408d7e362b46442ec76ddec67",
+    "experiments/geometry-risk/pilot-code/run_native.py": "d335166f12f62bf846cd3ba911b4fee8eee9f5aae0a95600cc2dc361838bd4c7"
+  },
+  "scope": "full64_training_only_native_risk_observations_no_fit_or_AP"
+}

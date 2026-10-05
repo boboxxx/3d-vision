@@ -1,0 +1,20 @@
+{
+  "state": "passed",
+  "tests": 4,
+  "failures": [],
+  "errors": [],
+  "torch": "2.12.0",
+  "CUDA_VISIBLE_DEVICES": "",
+  "source_sha256": {
+    "experiments/geometry-link/F9/code/audit.py": "f711bb5afa7e988fb259fb34deb1746dbcfd652410774d091f53204100408d36",
+    "experiments/geometry-link/F9/code/check_training_cpu.py": "d24b9f3874446cccfb272866e5863004aa7785e7dbc99e3e2c4e0c97620e0f75",
+    "experiments/geometry-link/F9/code/coupling.py": "39672ec59ee2c7ae797c73f15d9402c94a7e878bf678bb893fe57a658cfa5157",
+    "experiments/geometry-link/F9/code/native_observer.py": "5fb040bfd56e7e1bca28a8dce13087a207559447454e65ffaca3b3b90e716d0d",
+    "experiments/geometry-link/F9/code/engineering_cycle.py": "2cea17a555a0820503398b3314b4f27962c39932917b6821116c7a3d9f214266",
+    "experiments/geometry-link/F9/code/conditions.py": "7a042c606a5b315032bce3bae410a4f2e00b4eca727b95ab971362415c16ddd6",
+    "experiments/geometry-link/F9/code/train.py": "9bb6bdbf1d7d3641ca25f1574c2dbf1b0de1372a264cd274d4279ee084bc0031",
+    "experiments/geometry-link/F9/code/check_cpu.py": "ac2fccd73aa14fc1c790b0ac8c62c613890a3782da154d098c1086b6330f0016",
+    "experiments/geometry-link/F9/code/eligibility.py": "fd6e257687c4430f74ad65f8a5bbb81930fcd30f7f946a1f5a33321290d2a66d"
+  },
+  "scope": "CPU target barrier, actual selected Adam updates and four-arm noise/data pairing; no native KITTI/AP"
+}

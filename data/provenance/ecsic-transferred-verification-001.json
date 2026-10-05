@@ -1,0 +1,33 @@
+{
+  "state": "passed",
+  "verifier_sha256": "970dc42a9bce5e830d046d05459e70622ad6f6a0b387fa8d86e0b0c1e26aafc4",
+  "runs": {
+    "ecsic-recovery-stageA-001": {
+      "manifest_sha256": "f90328a3506c81dc394824ddfc4d732ef971b1ebd6785c53b21672bc467e7ff5",
+      "server_audit_sha256": "d0f563954856abede65e0007c1e05f15f00516cea9211497634e7bfe7a2bce86"
+    },
+    "ecsic-entropy-stageB-002": {
+      "manifest_sha256": "e098d9ec03e7783746ee9a150d0caf2b71e2c82816a47b088b3c4e6e54e6b867",
+      "server_audit_sha256": "7fb7ca99b75054e7e099e2435a05ff94dff00fe1e8896ba320ed83d86bd99524"
+    }
+  },
+  "files": {
+    "data/engineering/ecsic-recovery-stageA-001/manifest.json": "f90328a3506c81dc394824ddfc4d732ef971b1ebd6785c53b21672bc467e7ff5",
+    "data/engineering/ecsic-recovery-stageA-001/synthetic32x64/public.json": "c8808c0f13781f74a39e07925edc82d61a2ca3a2f20de2570045087da963f06f",
+    "data/engineering/ecsic-recovery-stageA-001/synthetic32x64/receiver.json": "334eb3be1960f47f42e9e3ed2db3b9c79e669641781df54e2f841a0af0088bf7",
+    "data/engineering/ecsic-recovery-stageA-001/synthetic32x64/receiver.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/engineering/ecsic-recovery-stageA-001/synthetic32x64/sender.json": "2294074848f854622c1487057b73726ca5eb6c685d5948d7368551d555a8551c",
+    "data/engineering/ecsic-recovery-stageA-001/training000000/public.json": "e3b5c9fe2acf96d05adaf92284d84d464cbd512cec0fdc7031440f767d5f3752",
+    "data/engineering/ecsic-recovery-stageA-001/training000000/receiver.json": "667d698577e722e6ed4df103a07f3ce502053aca1f748404346140d198022afe",
+    "data/engineering/ecsic-recovery-stageA-001/training000000/receiver.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/engineering/ecsic-recovery-stageA-001/training000000/sender.json": "70afa4e72d0f9bf836c8f77243e29dc3851c3693a9b31636f189d8b87a3d6d56",
+    "data/engineering/ecsic-entropy-stageB-002/manifest.json": "e098d9ec03e7783746ee9a150d0caf2b71e2c82816a47b088b3c4e6e54e6b867",
+    "data/engineering/ecsic-entropy-stageB-002/synthetic32x64/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "data/engineering/ecsic-entropy-stageB-002/synthetic32x64/receiver.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/engineering/ecsic-entropy-stageB-002/synthetic32x64/source.p6ec": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f",
+    "data/engineering/ecsic-entropy-stageB-002/training000000/receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+    "data/engineering/ecsic-entropy-stageB-002/training000000/receiver.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/engineering/ecsic-entropy-stageB-002/training000000/source.p6ec": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a"
+  },
+  "scope": "Complete transferred JSON/logs/real P6EC bytes and source identities; full NPZ/checkpoint/C++ native-stream audit ran on sheng."
+}

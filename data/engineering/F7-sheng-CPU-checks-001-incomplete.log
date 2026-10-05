@@ -1,0 +1,17 @@
+test_AWGN_is_dedicated_exact_replay_with_native_hooks_grad_and_unchanged_states (__main__.Tests) ... ok
+test_SNR_schedule_does_not_consume_global_RNG_and_rejects_different_seed (__main__.Tests) ... ok
+test_augmented_fingerprint_captures_pixels_target_camera_transform_and_flipped_empty_GT (__main__.Tests) ... ok
+test_identity_does_not_draw_noise_and_bad_order_generator_layout_rejected (__main__.Tests) ... ok
+test_independent_pair_audit_rejects_mismatched_images_targets_SNR_and_noise_rng (__main__.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.231s
+
+OK
+Traceback (most recent call last):
+  File "/home/sheng/paper6/experiments/geometry-link/F7/code/test_native_scope.py", line 13, in <module>
+    fixture=importlib.util.module_from_spec(spec);spec.loader.exec_module(fixture)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sheng/paper6/tests/test_stereo_task_adaptation.py'

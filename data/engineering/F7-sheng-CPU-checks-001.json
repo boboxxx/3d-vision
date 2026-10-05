@@ -1,0 +1,24 @@
+{
+  "state": "passed",
+  "scope": "sheng CPU fixtures only; no GPU or AP result",
+  "tests": 13,
+  "first_attempt": {
+    "tests_completed": 5,
+    "remaining_tests_not_run": "missing existing tests/test_stereo_task_adaptation.py dependency; now synced without changing training sources"
+  },
+  "remaining_tests_after_sync": 8,
+  "sources_sha256": {
+    "project": "42b4b52a174f9c2a8c365ea45b3477e87d4c8165d3254d6b04b97bd2dad74b21",
+    "liga": "0ffb2cda5f2fa7596fd18342562f08414d2a61e28892d317aaae946b50967a01",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f",
+    "experiment": "8576c5299a661ac9349e40f33ad24f3c5791570ceca40c64d560acadac48d368"
+  },
+  "original21_unchanged": true,
+  "fixture_sha256": "0a8f7bef1e757738e7b5e8654ffd6241623d8b416a23ea18a4711f4cb9c02ee1",
+  "logs_sha256": {
+    "data/engineering/F7-sheng-CPU-checks-001-incomplete.log": "b6858c992e5a5c20c944fadc7a809065b6e0e1a61e309f9d92f64f28bdcc7618",
+    "data/engineering/F7-sheng-CPU-checks-002.log": "bfb2e2fdcf8ad22f5651b0657dd3c2e95d6055249f305b1bcadcc60af8fc9ff7"
+  },
+  "limitations": "CPU fixtures and deployed source identity only; native engineering is pending physical GPU margin."
+}

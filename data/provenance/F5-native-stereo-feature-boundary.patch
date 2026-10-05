@@ -1,0 +1,129 @@
+diff --git a/liga/models/backbones_3d_stereo/liga_backbone.py b/liga/models/backbones_3d_stereo/liga_backbone.py
+index 2062bd8..12e7fbb 100644
+--- a/liga/models/backbones_3d_stereo/liga_backbone.py
++++ b/liga/models/backbones_3d_stereo/liga_backbone.py
+@@ -127,6 +127,58 @@ class LigaBackbone(nn.Module):
+         if feature_backbone_pretrained:
+             self.feature_backbone.init_weights(pretrained=feature_backbone_pretrained)
+ 
++        # GEOCOMM_BOUNDARY: initialize after upstream weight initialization.
++        self.semantic_link = None
++        link_cfg = self.model_cfg.get('SEMANTIC_LINK', None)
++        if link_cfg is not None and link_cfg.get('enabled', False):
++            from geocomm.link import GeometryLink
++            options = dict(link_cfg)
++            options.pop('enabled')
++            # GEOCOMM_EARLIER_BOUNDARY: move original dres0/dres1 to receiver.
++            self.semantic_link_boundary = options.pop('boundary', 'processed_cost')
++            if self.semantic_link_boundary not in ('processed_cost', 'raw_cost'):
++                raise ValueError('unknown communication boundary')
++            # GEOCOMM_NONLINEAR_POSTERIOR: raw concat requires left/right coupling.
++            options.setdefault('posterior_hidden', 16 if self.semantic_link_boundary == 'raw_cost' else 0)
++            self.semantic_link = GeometryLink(
++                cost_channels=CV_INPUT_DIM if self.semantic_link_boundary == 'raw_cost' else self.cv_dim,
++                appearance_channels=self.feature_neck.sem_dim[-1], **options)
++
++        # GEOCOMM_STEREO_FEATURE_BOUNDARY: transport before receiver build_cost.
++        self.stereo_feature_link = None
++        feature_link_cfg = self.model_cfg.get('STEREO_FEATURE_LINK', {})
++        if feature_link_cfg.get('enabled', False):
++            if self.semantic_link is not None or not self.model_cfg.get('STUDENT_ENCODER', {}).get('enabled', False):
++                raise ValueError('stereo-feature link requires student and no raw-cost link')
++            from geocomm.stereo_feature_link import StereoFeatureLink
++            feature_options = dict(feature_link_cfg)
++            feature_options.pop('enabled')
++            self.stereo_feature_link = StereoFeatureLink(
++                stereo_channels=self.feature_neck.stereo_dim[-1],
++                appearance_channels=self.feature_neck.sem_dim[-1], **feature_options)
++
++        # GEOCOMM_STUDENT_ENCODER: original features are a training-only teacher.
++        self.student_semantic_link_encoder = None
++        student_cfg = self.model_cfg.get('STUDENT_ENCODER', {})
++        if student_cfg.get('enabled', False):
++            # GEOCOMM_UNCOMPRESSED_DIAGNOSTIC: explicitly configured no-channel ablation.
++            if self.semantic_link is None:
++                if self.stereo_feature_link is None and not student_cfg.get('allow_uncompressed_diagnostic', False):
++                    raise ValueError('student without communication requires explicit diagnostic flag')
++            elif self.semantic_link_boundary != 'raw_cost':
++                raise ValueError('student requires a raw-cost geometry communication boundary')
++            if not self.fullres_stereo_feature:
++                raise ValueError('student supports the released full-resolution stereo feature interface')
++            from geocomm.student import StereoStudentEncoder
++            self.student_semantic_link_encoder = StereoStudentEncoder(
++                self.feature_neck.stereo_dim[-1], self.feature_neck.sem_dim[-1])
++            self.student_distill_weight = float(student_cfg.get('distill_weight', 0.1))
++            if self.student_distill_weight < 0:
++                raise ValueError('negative distillation weight')
++            for module in [self.feature_backbone, self.feature_neck]:
++                for parameter in module.parameters():
++                    parameter.requires_grad_(False)
++
+     def build_depth_pred_module(self):
+         return nn.Sequential(
+             convbn_3d(self.cv_dim, self.cv_dim, 3, 1, 1, gn=self.GN),
+@@ -244,22 +296,27 @@ class LigaBackbone(nn.Module):
+         N = batch_dict['batch_size']
+ 
+         # feature extraction
+-        left_features = self.feature_backbone(left)
+-        left_features = [left] + list(left_features)
+-        right_features = self.feature_backbone(right)
+-        right_features = [right] + list(right_features)
+-
+-        left_stereo_feat, left_sem_feat = self.feature_neck(left_features)
+-        right_stereo_feat, _ = self.feature_neck(right_features)
+-
+-        if self.sem_neck is not None:
+-            batch_dict['sem_features'] = self.sem_neck([left_sem_feat])
++        if self.student_semantic_link_encoder is None:
++            left_features = self.feature_backbone(left)
++            left_features = [left] + list(left_features)
++            right_features = self.feature_backbone(right)
++            right_features = [right] + list(right_features)
++            left_stereo_feat, left_sem_feat = self.feature_neck(left_features)
++            right_stereo_feat, _ = self.feature_neck(right_features)
+         else:
+-            batch_dict['sem_features'] = [left_sem_feat]
+-
+-        batch_dict['rpn_feature'] = left_sem_feat
+-
+-        # stereo matching: build stereo volume
++            left_stereo_feat, left_sem_feat = self.student_semantic_link_encoder(left)
++            right_stereo_feat, _ = self.student_semantic_link_encoder(right)
++            if self.training and self.student_distill_weight > 0:
++                from geocomm.student import teacher_feature_targets, feature_distillation
++                targets = teacher_feature_targets(self.feature_backbone, self.feature_neck, left, right)
++                batch_dict['communication_student_loss'] = self.student_distill_weight * feature_distillation(
++                    (left_stereo_feat, right_stereo_feat, left_sem_feat), targets)
++
++        if self.stereo_feature_link is not None:
++            left_stereo_feat, right_stereo_feat, left_sem_feat = self.stereo_feature_link(
++                left_stereo_feat, right_stereo_feat, left_sem_feat, batch_dict)
++
++        # stereo matching: build stereo volume (receiver after feature channel)
+         downsampled_depth = self.downsampled_depth.cuda()
+         downsampled_disp = fu_mul_baseline[:, None] / \
+             downsampled_depth[None, :] / (self.downsample_disp if not self.fullres_stereo_feature else 1)
+@@ -268,8 +325,22 @@ class LigaBackbone(nn.Module):
+                                    None, None, downsampled_disp)
+ 
+         # stereo matching network
++        if self.semantic_link is not None and self.semantic_link_boundary == 'raw_cost':
++            cost_raw, left_sem_feat = self.semantic_link(
++                cost_raw, left_sem_feat, batch_dict, downsampled_depth)
+         cost0 = self.dres0(cost_raw)
+         cost0 = self.dres1(cost0) + cost0
++        if self.semantic_link is not None and self.semantic_link_boundary == 'processed_cost':
++            cost0, left_sem_feat = self.semantic_link(
++                cost0, left_sem_feat, batch_dict, downsampled_depth)
++
++        if self.sem_neck is not None:
++            batch_dict['sem_features'] = self.sem_neck([left_sem_feat])
++        else:
++            batch_dict['sem_features'] = [left_sem_feat]
++
++        batch_dict['rpn_feature'] = left_sem_feat
++
+         if len(self.hg_stereo) > 0:
+             all_costs = []
+             cur_cost = cost0

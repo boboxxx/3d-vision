@@ -1,0 +1,25 @@
+{
+  "state": "closed_actual_native_full_detector_GPU_terminal",
+  "actual_terminal": true,
+  "job_id": 11424837,
+  "checked_unix": 1791175481.0214634,
+  "report_sha256": "58eb9ee4ed5f0e916531d5b12734a98334524ad19992f002bd915b94668b2879",
+  "sacct": "11424837|COMPLETED|0:0\n11424837.batch|COMPLETED|0:0\n11424837.extern|COMPLETED|0:0\n11424837.0|COMPLETED|0:0\n",
+  "squeue": "",
+  "artifacts_sha256": {
+    "data/engineering/artemis-full-detector-GPU-001/report.json": "58eb9ee4ed5f0e916531d5b12734a98334524ad19992f002bd915b94668b2879",
+    "data/engineering/artemis-full-detector-GPU-001/000000.npz": "3a2ed3f8c1d2295fe3ba5a1bf1e787cf48f63a2eb07735f05283a4fecd35c86b",
+    "data/engineering/artemis-full-detector-GPU-001/000003.npz": "148188858646a6566cc9b2de6e268176986cca2ca1b6dac2f426a07b69a36fd9",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000000-left.png": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000000-right.png": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000000-calib.txt": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000003-left.png": "d22f4692c924e0ba7ff2ac00827547d4bd018d991fb9f1959025b183a949af19",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000003-right.png": "ca44da39dcc83befde20753ac2bdb527314a2a78067757f2298ae6df947a1f9d",
+    "data/engineering/artemis-full-detector-GPU-001/inputs/000003-calib.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918"
+  },
+  "complete_saved_array_values": 246928220,
+  "full484_states_unchanged": true,
+  "source_inputs_unchanged": true,
+  "base_runtime_unchanged": true,
+  "teacher_GPU_or_backward": false
+}

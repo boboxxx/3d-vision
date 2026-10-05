@@ -1,0 +1,21 @@
+{
+  "run_id": "student-feature-seed17-001",
+  "implementation_commit_before_launch": "df055bb",
+  "pipeline_pid_at_launch": 15754,
+  "evidence_type": "formal_F1_launch_provenance",
+  "recorded_at": "2026-10-03T20:49:51.735425+00:00",
+  "project_sources_sha256": "e9bac702c1f130510f925968c18df7216fcd458aa6c7d8b2b4f73ff2815c2a63",
+  "file_hashes": {
+    "scripts/run_student_cycle.sh": "f26ca5fe9ecc58f17a0cf5994b2394bd2a75188c890454286a1bea9f9920eed3",
+    "scripts/sheng_env.sh": "6b0759aaeb8eee45ec6d99395be1cab9282850f88c0469b5e964104e63630b6b",
+    "experiments/geometry-link/student-warmup.md": "51979c564ac38de869dc07174dff37975e00392f347a571463d008833c587820"
+  },
+  "source_hash_note": "source_identity covers .py/.cpp/.cu/.h/.yaml/.toml; shell files explicitly recorded here",
+  "fixed_updates": 16700,
+  "automatic_followups": [
+    "training-state-audit",
+    "uncompressed-native-372-frame-AP",
+    "independent-prediction-raw-GT-AP-audit"
+  ],
+  "limitations": "launch record is not a completed experiment or AP evidence"
+}

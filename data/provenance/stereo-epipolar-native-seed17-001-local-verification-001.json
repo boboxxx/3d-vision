@@ -1,0 +1,105 @@
+{
+  "state": "passed_all_transferred_artifacts13360_training_rows16_final_endpoints",
+  "checked_unix": 1791148339.329107,
+  "closure_sha256": "b8f27c0ac01c72cf42de51662fdfdc88f2bebaef37f6320b06bbe70bac63c760",
+  "verifier_sha256": "912d9fdf46c76336f02ccf253d127d5f2109a8fbba78f0293b6059dacbb1861a",
+  "artifacts_verified": 6156,
+  "training_rows": 13360,
+  "paired_steps": 3340,
+  "empty_GT": {
+    "U": 62,
+    "G": 62,
+    "P": 62,
+    "S": 62
+  },
+  "inference_rows": 5952,
+  "prediction_files": 5952,
+  "metrics": {
+    "U-identity10": {
+      "Car_3d/easy_R40": 54.129191342705965,
+      "Car_3d/moderate_R40": 31.8639020562047,
+      "Car_3d/hard_R40": 26.071837142759215
+    },
+    "U-awgn6": {
+      "Car_3d/easy_R40": 44.01494020836903,
+      "Car_3d/moderate_R40": 25.3073478672981,
+      "Car_3d/hard_R40": 21.0929418600804
+    },
+    "U-awgn10": {
+      "Car_3d/easy_R40": 48.998791581993224,
+      "Car_3d/moderate_R40": 28.55250967153794,
+      "Car_3d/hard_R40": 23.34310714521386
+    },
+    "U-awgn18": {
+      "Car_3d/easy_R40": 54.850184940061176,
+      "Car_3d/moderate_R40": 31.716037797092834,
+      "Car_3d/hard_R40": 26.6314320893117
+    },
+    "G-identity10": {
+      "Car_3d/easy_R40": 55.0757880393169,
+      "Car_3d/moderate_R40": 33.24920836883448,
+      "Car_3d/hard_R40": 27.367172882838155
+    },
+    "G-awgn6": {
+      "Car_3d/easy_R40": 46.654449791087735,
+      "Car_3d/moderate_R40": 26.728882238724395,
+      "Car_3d/hard_R40": 22.553667047800502
+    },
+    "G-awgn10": {
+      "Car_3d/easy_R40": 51.17198725769146,
+      "Car_3d/moderate_R40": 29.540467682760287,
+      "Car_3d/hard_R40": 24.72000210537303
+    },
+    "G-awgn18": {
+      "Car_3d/easy_R40": 54.582851300672985,
+      "Car_3d/moderate_R40": 32.1878120606251,
+      "Car_3d/hard_R40": 26.153288505368284
+    },
+    "P-identity10": {
+      "Car_3d/easy_R40": 54.89722169877511,
+      "Car_3d/moderate_R40": 33.207239287713094,
+      "Car_3d/hard_R40": 27.026526089309744
+    },
+    "P-awgn6": {
+      "Car_3d/easy_R40": 48.142236293410754,
+      "Car_3d/moderate_R40": 28.190435044668575,
+      "Car_3d/hard_R40": 22.922758572850835
+    },
+    "P-awgn10": {
+      "Car_3d/easy_R40": 52.29117769604128,
+      "Car_3d/moderate_R40": 29.433569764360996,
+      "Car_3d/hard_R40": 24.69239035794308
+    },
+    "P-awgn18": {
+      "Car_3d/easy_R40": 54.673620398712174,
+      "Car_3d/moderate_R40": 31.70520604054304,
+      "Car_3d/hard_R40": 25.668649010339845
+    },
+    "S-identity10": {
+      "Car_3d/easy_R40": 58.580069432589966,
+      "Car_3d/moderate_R40": 34.53160759857707,
+      "Car_3d/hard_R40": 28.295445139290955
+    },
+    "S-awgn6": {
+      "Car_3d/easy_R40": 46.539346141453045,
+      "Car_3d/moderate_R40": 27.15609099334888,
+      "Car_3d/hard_R40": 22.311674952010666
+    },
+    "S-awgn10": {
+      "Car_3d/easy_R40": 49.95400291134363,
+      "Car_3d/moderate_R40": 29.797786558946125,
+      "Car_3d/hard_R40": 24.630560009689937
+    },
+    "S-awgn18": {
+      "Car_3d/easy_R40": 55.59644618696915,
+      "Car_3d/moderate_R40": 33.48957495668291,
+      "Car_3d/hard_R40": 27.661707784949456
+    }
+  },
+  "prelocked_AWGN10_Moderate_differences_pp": {
+    "P_minus_G": -0.10689791839929086,
+    "P_minus_S": -0.3642167945851291,
+    "P_minus_U": 0.8810600928230556
+  },
+  "scope": "Local complete metadata/raw-record/prediction-file checks; saved checkpoint, CUDA RNG and official AP replay are server audits"
+}

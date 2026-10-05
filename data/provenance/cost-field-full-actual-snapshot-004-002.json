@@ -1,0 +1,75 @@
+{
+  "observed_unix": 1791190097.051045,
+  "queue": "11424940_41 PENDING 0:00 (QOSGrpGRES)\n11424940_23 RUNNING 51:34 artemis-rtx-03\n11424939 RUNNING 54:56 artemis-rtx-03\n",
+  "runs": {
+    "17": {
+      "state": "running_full_split_task_training",
+      "stage": "actual_native_detection_loss_backward",
+      "seed": 17,
+      "job_id": "11424939",
+      "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "capability": [
+        12,
+        0
+      ],
+      "update_count": 6803,
+      "last_update": {
+        "arm": "G",
+        "epoch": 2,
+        "index": 3090,
+        "step": 6802,
+        "frame": "006845",
+        "loss": 1.498950719833374,
+        "complex_uses": 29640
+      },
+      "completed_epochs": [
+        {
+          "arm": "G",
+          "epoch": 1,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed17-004/checkpoint-G-epoch1.pt",
+          "sha256": "24c485644d903b488b48ad25ee8550fc46677fb4b02bbc2ce0f0d09de53b7380"
+        }
+      ],
+      "traceback": null,
+      "dataset_manifest_sha256": "ecf1f0e41de5757bd438b2a73252dc999eed80fa9828270beff342ccf6ea1310",
+      "input_sha256": "8f2b3be5ca639f2bbb5f2c20c1ce73db858f7bc443cb6477000ccd375fde7fc4"
+    },
+    "23": {
+      "state": "running_full_split_task_training",
+      "stage": "actual_native_detection_loss_backward",
+      "seed": 23,
+      "job_id": "11424941",
+      "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "capability": [
+        12,
+        0
+      ],
+      "update_count": 6605,
+      "last_update": {
+        "arm": "G",
+        "epoch": 2,
+        "index": 2892,
+        "step": 6604,
+        "frame": "005208",
+        "loss": 1.2837026119232178,
+        "complex_uses": 29640
+      },
+      "completed_epochs": [
+        {
+          "arm": "G",
+          "epoch": 1,
+          "updates": 3712,
+          "checkpoint": "data/runs/cost-field-full-seed23-004/checkpoint-G-epoch1.pt",
+          "sha256": "c72929996baf1b9e604f29a7c02e186b62b5f7205c25505741b68d87e7fe572c"
+        }
+      ],
+      "traceback": null,
+      "dataset_manifest_sha256": "ecf1f0e41de5757bd438b2a73252dc999eed80fa9828270beff342ccf6ea1310",
+      "input_sha256": "8f2b3be5ca639f2bbb5f2c20c1ce73db858f7bc443cb6477000ccd375fde7fc4"
+    },
+    "41": {
+      "state": "report_absent_queue_pending"
+    }
+  }
+}

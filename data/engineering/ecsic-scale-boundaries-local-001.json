@@ -1,0 +1,4877 @@
+{
+  "state": "passed",
+  "source_sha256": "a22fb7717cd1e2a13e4539a74a541958e93a7f6b215ae960b9c2736ad53ec157",
+  "verifier_sha256": "0782e8e7c6dc58fd9f6df3216eadba4523d1420ec5279d4070106fc4bd13ea2d",
+  "numpy_version": "2.4.4",
+  "decimal_precision": 60,
+  "transition_sides_checked": 510,
+  "exact_half_tie_boundaries_checked": 203,
+  "exact_half_ties": [
+    {
+      "boundary": 9,
+      "representable": [
+        {
+          "scale_hex": "0x1.125961074e5d0p-3",
+          "index": 10
+        },
+        {
+          "scale_hex": "0x1.125961074e5d1p-3",
+          "index": 10
+        }
+      ]
+    },
+    {
+      "boundary": 13,
+      "representable": [
+        {
+          "scale_hex": "0x1.3649f2d1fffbcp-3",
+          "index": 14
+        },
+        {
+          "scale_hex": "0x1.3649f2d1fffbdp-3",
+          "index": 14
+        }
+      ]
+    },
+    {
+      "boundary": 16,
+      "representable": [
+        {
+          "scale_hex": "0x1.544d094382156p-3",
+          "index": 16
+        },
+        {
+          "scale_hex": "0x1.544d094382157p-3",
+          "index": 16
+        }
+      ]
+    },
+    {
+      "boundary": 17,
+      "representable": [
+        {
+          "scale_hex": "0x1.5eefcace1ab08p-3",
+          "index": 18
+        },
+        {
+          "scale_hex": "0x1.5eefcace1ab09p-3",
+          "index": 18
+        }
+      ]
+    },
+    {
+      "boundary": 20,
+      "representable": [
+        {
+          "scale_hex": "0x1.80e15d3034006p-3",
+          "index": 20
+        }
+      ]
+    },
+    {
+      "boundary": 21,
+      "representable": [
+        {
+          "scale_hex": "0x1.8ce8cd0b58bf6p-3",
+          "index": 22
+        },
+        {
+          "scale_hex": "0x1.8ce8cd0b58bf7p-3",
+          "index": 22
+        }
+      ]
+    },
+    {
+      "boundary": 24,
+      "representable": [
+        {
+          "scale_hex": "0x1.b34cb4ced12ffp-3",
+          "index": 24
+        },
+        {
+          "scale_hex": "0x1.b34cb4ced1300p-3",
+          "index": 24
+        }
+      ]
+    },
+    {
+      "boundary": 25,
+      "representable": [
+        {
+          "scale_hex": "0x1.c0e78ca02bb18p-3",
+          "index": 26
+        },
+        {
+          "scale_hex": "0x1.c0e78ca02bb19p-3",
+          "index": 26
+        }
+      ]
+    },
+    {
+      "boundary": 28,
+      "representable": [
+        {
+          "scale_hex": "0x1.ec52e8e8c9c3bp-3",
+          "index": 28
+        },
+        {
+          "scale_hex": "0x1.ec52e8e8c9c3cp-3",
+          "index": 28
+        }
+      ]
+    },
+    {
+      "boundary": 29,
+      "representable": [
+        {
+          "scale_hex": "0x1.fbb6014facb3fp-3",
+          "index": 30
+        },
+        {
+          "scale_hex": "0x1.fbb6014facb40p-3",
+          "index": 30
+        }
+      ]
+    },
+    {
+      "boundary": 32,
+      "representable": [
+        {
+          "scale_hex": "0x1.1668bd192197ap-2",
+          "index": 32
+        }
+      ]
+    },
+    {
+      "boundary": 33,
+      "representable": [
+        {
+          "scale_hex": "0x1.1f1c4c06dd44bp-2",
+          "index": 34
+        }
+      ]
+    },
+    {
+      "boundary": 34,
+      "representable": [
+        {
+          "scale_hex": "0x1.281579b4418adp-2",
+          "index": 34
+        }
+      ]
+    },
+    {
+      "boundary": 35,
+      "representable": [
+        {
+          "scale_hex": "0x1.315673298e1ddp-2",
+          "index": 36
+        }
+      ]
+    },
+    {
+      "boundary": 36,
+      "representable": [
+        {
+          "scale_hex": "0x1.3ae176d7d6c7ap-2",
+          "index": 36
+        }
+      ]
+    },
+    {
+      "boundary": 37,
+      "representable": [
+        {
+          "scale_hex": "0x1.44b8d5244e996p-2",
+          "index": 38
+        }
+      ]
+    },
+    {
+      "boundary": 38,
+      "representable": [
+        {
+          "scale_hex": "0x1.4edef0f7ed9b7p-2",
+          "index": 38
+        }
+      ]
+    },
+    {
+      "boundary": 39,
+      "representable": [
+        {
+          "scale_hex": "0x1.5956405393d02p-2",
+          "index": 40
+        }
+      ]
+    },
+    {
+      "boundary": 40,
+      "representable": [
+        {
+          "scale_hex": "0x1.64214ce8cd75bp-2",
+          "index": 40
+        }
+      ]
+    },
+    {
+      "boundary": 41,
+      "representable": [
+        {
+          "scale_hex": "0x1.6f42b4b75d91fp-2",
+          "index": 42
+        }
+      ]
+    },
+    {
+      "boundary": 43,
+      "representable": [
+        {
+          "scale_hex": "0x1.8693775a7d483p-2",
+          "index": 44
+        }
+      ]
+    },
+    {
+      "boundary": 44,
+      "representable": [
+        {
+          "scale_hex": "0x1.92c8798560399p-2",
+          "index": 44
+        },
+        {
+          "scale_hex": "0x1.92c879856039ap-2",
+          "index": 44
+        }
+      ]
+    },
+    {
+      "boundary": 45,
+      "representable": [
+        {
+          "scale_hex": "0x1.9f5f26f53598ap-2",
+          "index": 46
+        }
+      ]
+    },
+    {
+      "boundary": 46,
+      "representable": [
+        {
+          "scale_hex": "0x1.ac5a8d1dc2aa5p-2",
+          "index": 46
+        },
+        {
+          "scale_hex": "0x1.ac5a8d1dc2aa6p-2",
+          "index": 46
+        },
+        {
+          "scale_hex": "0x1.ac5a8d1dc2aa7p-2",
+          "index": 46
+        }
+      ]
+    },
+    {
+      "boundary": 47,
+      "representable": [
+        {
+          "scale_hex": "0x1.b9bdd1df37d23p-2",
+          "index": 48
+        },
+        {
+          "scale_hex": "0x1.b9bdd1df37d24p-2",
+          "index": 48
+        },
+        {
+          "scale_hex": "0x1.b9bdd1df37d25p-2",
+          "index": 48
+        }
+      ]
+    },
+    {
+      "boundary": 48,
+      "representable": [
+        {
+          "scale_hex": "0x1.c78c34499a533p-2",
+          "index": 48
+        }
+      ]
+    },
+    {
+      "boundary": 49,
+      "representable": [
+        {
+          "scale_hex": "0x1.d5c90d6649911p-2",
+          "index": 50
+        },
+        {
+          "scale_hex": "0x1.d5c90d6649912p-2",
+          "index": 50
+        },
+        {
+          "scale_hex": "0x1.d5c90d6649913p-2",
+          "index": 50
+        }
+      ]
+    },
+    {
+      "boundary": 50,
+      "representable": [
+        {
+          "scale_hex": "0x1.e477d107d0b22p-2",
+          "index": 50
+        },
+        {
+          "scale_hex": "0x1.e477d107d0b23p-2",
+          "index": 50
+        },
+        {
+          "scale_hex": "0x1.e477d107d0b24p-2",
+          "index": 50
+        }
+      ]
+    },
+    {
+      "boundary": 51,
+      "representable": [
+        {
+          "scale_hex": "0x1.f39c0ea03703dp-2",
+          "index": 52
+        }
+      ]
+    },
+    {
+      "boundary": 52,
+      "representable": [
+        {
+          "scale_hex": "0x1.019cb90f018ccp-1",
+          "index": 52
+        },
+        {
+          "scale_hex": "0x1.019cb90f018cdp-1",
+          "index": 52
+        }
+      ]
+    },
+    {
+      "boundary": 53,
+      "representable": [
+        {
+          "scale_hex": "0x1.09a9e26813207p-1",
+          "index": 54
+        }
+      ]
+    },
+    {
+      "boundary": 54,
+      "representable": [
+        {
+          "scale_hex": "0x1.11f7772883c55p-1",
+          "index": 54
+        }
+      ]
+    },
+    {
+      "boundary": 55,
+      "representable": [
+        {
+          "scale_hex": "0x1.1a877abc73b60p-1",
+          "index": 56
+        }
+      ]
+    },
+    {
+      "boundary": 57,
+      "representable": [
+        {
+          "scale_hex": "0x1.2c772d1bbed12p-1",
+          "index": 58
+        },
+        {
+          "scale_hex": "0x1.2c772d1bbed13p-1",
+          "index": 58
+        }
+      ]
+    },
+    {
+      "boundary": 58,
+      "representable": [
+        {
+          "scale_hex": "0x1.35db3552788c2p-1",
+          "index": 58
+        },
+        {
+          "scale_hex": "0x1.35db3552788c3p-1",
+          "index": 58
+        }
+      ]
+    },
+    {
+      "boundary": 59,
+      "representable": [
+        {
+          "scale_hex": "0x1.3f8a60416b9e5p-1",
+          "index": 60
+        }
+      ]
+    },
+    {
+      "boundary": 60,
+      "representable": [
+        {
+          "scale_hex": "0x1.498707120e93dp-1",
+          "index": 60
+        },
+        {
+          "scale_hex": "0x1.498707120e93ep-1",
+          "index": 60
+        }
+      ]
+    },
+    {
+      "boundary": 61,
+      "representable": [
+        {
+          "scale_hex": "0x1.53d395b7c158dp-1",
+          "index": 62
+        }
+      ]
+    },
+    {
+      "boundary": 62,
+      "representable": [
+        {
+          "scale_hex": "0x1.5e728b8621714p-1",
+          "index": 62
+        }
+      ]
+    },
+    {
+      "boundary": 63,
+      "representable": [
+        {
+          "scale_hex": "0x1.69667bcc10fb1p-1",
+          "index": 64
+        },
+        {
+          "scale_hex": "0x1.69667bcc10fb2p-1",
+          "index": 64
+        }
+      ]
+    },
+    {
+      "boundary": 64,
+      "representable": [
+        {
+          "scale_hex": "0x1.74b20e7396105p-1",
+          "index": 64
+        },
+        {
+          "scale_hex": "0x1.74b20e7396106p-1",
+          "index": 64
+        },
+        {
+          "scale_hex": "0x1.74b20e7396107p-1",
+          "index": 64
+        }
+      ]
+    },
+    {
+      "boundary": 65,
+      "representable": [
+        {
+          "scale_hex": "0x1.805800a6b94efp-1",
+          "index": 66
+        },
+        {
+          "scale_hex": "0x1.805800a6b94f0p-1",
+          "index": 66
+        }
+      ]
+    },
+    {
+      "boundary": 66,
+      "representable": [
+        {
+          "scale_hex": "0x1.8c5b25798b7ecp-1",
+          "index": 66
+        },
+        {
+          "scale_hex": "0x1.8c5b25798b7edp-1",
+          "index": 66
+        },
+        {
+          "scale_hex": "0x1.8c5b25798b7eep-1",
+          "index": 66
+        }
+      ]
+    },
+    {
+      "boundary": 67,
+      "representable": [
+        {
+          "scale_hex": "0x1.98be66997b939p-1",
+          "index": 68
+        },
+        {
+          "scale_hex": "0x1.98be66997b93ap-1",
+          "index": 68
+        },
+        {
+          "scale_hex": "0x1.98be66997b93bp-1",
+          "index": 68
+        }
+      ]
+    },
+    {
+      "boundary": 68,
+      "representable": [
+        {
+          "scale_hex": "0x1.a584c502278a4p-1",
+          "index": 68
+        },
+        {
+          "scale_hex": "0x1.a584c502278a5p-1",
+          "index": 68
+        },
+        {
+          "scale_hex": "0x1.a584c502278a6p-1",
+          "index": 68
+        }
+      ]
+    },
+    {
+      "boundary": 69,
+      "representable": [
+        {
+          "scale_hex": "0x1.b2b159b7d3ff5p-1",
+          "index": 70
+        },
+        {
+          "scale_hex": "0x1.b2b159b7d3ff6p-1",
+          "index": 70
+        },
+        {
+          "scale_hex": "0x1.b2b159b7d3ff7p-1",
+          "index": 70
+        }
+      ]
+    },
+    {
+      "boundary": 70,
+      "representable": [
+        {
+          "scale_hex": "0x1.c0475687b7b0cp-1",
+          "index": 70
+        },
+        {
+          "scale_hex": "0x1.c0475687b7b0dp-1",
+          "index": 70
+        },
+        {
+          "scale_hex": "0x1.c0475687b7b0ep-1",
+          "index": 70
+        }
+      ]
+    },
+    {
+      "boundary": 71,
+      "representable": [
+        {
+          "scale_hex": "0x1.ce4a06ce498edp-1",
+          "index": 72
+        },
+        {
+          "scale_hex": "0x1.ce4a06ce498eep-1",
+          "index": 72
+        },
+        {
+          "scale_hex": "0x1.ce4a06ce498efp-1",
+          "index": 72
+        }
+      ]
+    },
+    {
+      "boundary": 72,
+      "representable": [
+        {
+          "scale_hex": "0x1.dcbcd043c172ep-1",
+          "index": 72
+        },
+        {
+          "scale_hex": "0x1.dcbcd043c172dp-1",
+          "index": 72
+        },
+        {
+          "scale_hex": "0x1.dcbcd043c172fp-1",
+          "index": 72
+        }
+      ]
+    },
+    {
+      "boundary": 73,
+      "representable": [
+        {
+          "scale_hex": "0x1.eba333cefd0fap-1",
+          "index": 74
+        },
+        {
+          "scale_hex": "0x1.eba333cefd0fbp-1",
+          "index": 74
+        },
+        {
+          "scale_hex": "0x1.eba333cefd0fcp-1",
+          "index": 74
+        }
+      ]
+    },
+    {
+      "boundary": 74,
+      "representable": [
+        {
+          "scale_hex": "0x1.fb00ce5efc40cp-1",
+          "index": 74
+        },
+        {
+          "scale_hex": "0x1.fb00ce5efc40dp-1",
+          "index": 74
+        },
+        {
+          "scale_hex": "0x1.fb00ce5efc40ep-1",
+          "index": 74
+        },
+        {
+          "scale_hex": "0x1.fb00ce5efc40fp-1",
+          "index": 74
+        }
+      ]
+    },
+    {
+      "boundary": 75,
+      "representable": [
+        {
+          "scale_hex": "0x1.056cace594bbcp+0",
+          "index": 76
+        },
+        {
+          "scale_hex": "0x1.056cace594bbdp+0",
+          "index": 76
+        }
+      ]
+    },
+    {
+      "boundary": 76,
+      "representable": [
+        {
+          "scale_hex": "0x1.0d9856dd52514p+0",
+          "index": 76
+        },
+        {
+          "scale_hex": "0x1.0d9856dd52515p+0",
+          "index": 76
+        }
+      ]
+    },
+    {
+      "boundary": 77,
+      "representable": [
+        {
+          "scale_hex": "0x1.1605604964567p+0",
+          "index": 78
+        },
+        {
+          "scale_hex": "0x1.1605604964568p+0",
+          "index": 78
+        }
+      ]
+    },
+    {
+      "boundary": 78,
+      "representable": [
+        {
+          "scale_hex": "0x1.1eb5d43692b2fp+0",
+          "index": 78
+        },
+        {
+          "scale_hex": "0x1.1eb5d43692b30p+0",
+          "index": 78
+        }
+      ]
+    },
+    {
+      "boundary": 79,
+      "representable": [
+        {
+          "scale_hex": "0x1.27abce0a94bbep+0",
+          "index": 80
+        },
+        {
+          "scale_hex": "0x1.27abce0a94bbfp+0",
+          "index": 80
+        }
+      ]
+    },
+    {
+      "boundary": 80,
+      "representable": [
+        {
+          "scale_hex": "0x1.30e97a06dcf99p+0",
+          "index": 80
+        },
+        {
+          "scale_hex": "0x1.30e97a06dcf98p+0",
+          "index": 80
+        },
+        {
+          "scale_hex": "0x1.30e97a06dcf9ap+0",
+          "index": 80
+        }
+      ]
+    },
+    {
+      "boundary": 81,
+      "representable": [
+        {
+          "scale_hex": "0x1.3a7115cf7b6cap+0",
+          "index": 82
+        },
+        {
+          "scale_hex": "0x1.3a7115cf7b6cbp+0",
+          "index": 82
+        }
+      ]
+    },
+    {
+      "boundary": 82,
+      "representable": [
+        {
+          "scale_hex": "0x1.4444f0f63708ep+0",
+          "index": 82
+        },
+        {
+          "scale_hex": "0x1.4444f0f63708fp+0",
+          "index": 82
+        },
+        {
+          "scale_hex": "0x1.4444f0f637090p+0",
+          "index": 82
+        }
+      ]
+    },
+    {
+      "boundary": 83,
+      "representable": [
+        {
+          "scale_hex": "0x1.4e676d8a00215p+0",
+          "index": 84
+        },
+        {
+          "scale_hex": "0x1.4e676d8a00214p+0",
+          "index": 84
+        },
+        {
+          "scale_hex": "0x1.4e676d8a00216p+0",
+          "index": 84
+        }
+      ]
+    },
+    {
+      "boundary": 84,
+      "representable": [
+        {
+          "scale_hex": "0x1.58db00aade8bdp+0",
+          "index": 84
+        },
+        {
+          "scale_hex": "0x1.58db00aade8bep+0",
+          "index": 84
+        }
+      ]
+    },
+    {
+      "boundary": 85,
+      "representable": [
+        {
+          "scale_hex": "0x1.63a233227f5d8p+0",
+          "index": 86
+        },
+        {
+          "scale_hex": "0x1.63a233227f5d9p+0",
+          "index": 86
+        },
+        {
+          "scale_hex": "0x1.63a233227f5dap+0",
+          "index": 86
+        }
+      ]
+    },
+    {
+      "boundary": 86,
+      "representable": [
+        {
+          "scale_hex": "0x1.6ebfa201873d9p+0",
+          "index": 86
+        },
+        {
+          "scale_hex": "0x1.6ebfa201873dap+0",
+          "index": 86
+        },
+        {
+          "scale_hex": "0x1.6ebfa201873dbp+0",
+          "index": 86
+        }
+      ]
+    },
+    {
+      "boundary": 87,
+      "representable": [
+        {
+          "scale_hex": "0x1.7a35ff41cf724p+0",
+          "index": 88
+        },
+        {
+          "scale_hex": "0x1.7a35ff41cf725p+0",
+          "index": 88
+        }
+      ]
+    },
+    {
+      "boundary": 88,
+      "representable": [
+        {
+          "scale_hex": "0x1.8608126db502bp+0",
+          "index": 88
+        },
+        {
+          "scale_hex": "0x1.8608126db502ap+0",
+          "index": 88
+        },
+        {
+          "scale_hex": "0x1.8608126db502cp+0",
+          "index": 88
+        }
+      ]
+    },
+    {
+      "boundary": 89,
+      "representable": [
+        {
+          "scale_hex": "0x1.9238b94ca27c8p+0",
+          "index": 90
+        },
+        {
+          "scale_hex": "0x1.9238b94ca27c9p+0",
+          "index": 90
+        },
+        {
+          "scale_hex": "0x1.9238b94ca27cap+0",
+          "index": 90
+        }
+      ]
+    },
+    {
+      "boundary": 90,
+      "representable": [
+        {
+          "scale_hex": "0x1.9ecae894fe34ep+0",
+          "index": 90
+        },
+        {
+          "scale_hex": "0x1.9ecae894fe34fp+0",
+          "index": 90
+        },
+        {
+          "scale_hex": "0x1.9ecae894fe350p+0",
+          "index": 90
+        }
+      ]
+    },
+    {
+      "boundary": 91,
+      "representable": [
+        {
+          "scale_hex": "0x1.abc1aca3a82b2p+0",
+          "index": 92
+        },
+        {
+          "scale_hex": "0x1.abc1aca3a82b1p+0",
+          "index": 92
+        },
+        {
+          "scale_hex": "0x1.abc1aca3a82b3p+0",
+          "index": 92
+        },
+        {
+          "scale_hex": "0x1.abc1aca3a82b0p+0",
+          "index": 92
+        }
+      ]
+    },
+    {
+      "boundary": 92,
+      "representable": [
+        {
+          "scale_hex": "0x1.b9202a3934099p+0",
+          "index": 92
+        },
+        {
+          "scale_hex": "0x1.b9202a393409ap+0",
+          "index": 92
+        },
+        {
+          "scale_hex": "0x1.b9202a393409bp+0",
+          "index": 92
+        },
+        {
+          "scale_hex": "0x1.b9202a393409cp+0",
+          "index": 92
+        }
+      ]
+    },
+    {
+      "boundary": 93,
+      "representable": [
+        {
+          "scale_hex": "0x1.c6e99f3d0d287p+0",
+          "index": 94
+        },
+        {
+          "scale_hex": "0x1.c6e99f3d0d288p+0",
+          "index": 94
+        }
+      ]
+    },
+    {
+      "boundary": 94,
+      "representable": [
+        {
+          "scale_hex": "0x1.d5216386b3e46p+0",
+          "index": 94
+        },
+        {
+          "scale_hex": "0x1.d5216386b3e47p+0",
+          "index": 94
+        },
+        {
+          "scale_hex": "0x1.d5216386b3e48p+0",
+          "index": 94
+        }
+      ]
+    },
+    {
+      "boundary": 95,
+      "representable": [
+        {
+          "scale_hex": "0x1.e3cae9ad45136p+0",
+          "index": 96
+        },
+        {
+          "scale_hex": "0x1.e3cae9ad45137p+0",
+          "index": 96
+        },
+        {
+          "scale_hex": "0x1.e3cae9ad45138p+0",
+          "index": 96
+        },
+        {
+          "scale_hex": "0x1.e3cae9ad45139p+0",
+          "index": 96
+        }
+      ]
+    },
+    {
+      "boundary": 96,
+      "representable": [
+        {
+          "scale_hex": "0x1.f2e9bfdd7dedap+0",
+          "index": 96
+        },
+        {
+          "scale_hex": "0x1.f2e9bfdd7ded9p+0",
+          "index": 96
+        },
+        {
+          "scale_hex": "0x1.f2e9bfdd7dedbp+0",
+          "index": 96
+        }
+      ]
+    },
+    {
+      "boundary": 97,
+      "representable": [
+        {
+          "scale_hex": "0x1.0140c85b3825ep+1",
+          "index": 98
+        },
+        {
+          "scale_hex": "0x1.0140c85b3825fp+1",
+          "index": 98
+        }
+      ]
+    },
+    {
+      "boundary": 98,
+      "representable": [
+        {
+          "scale_hex": "0x1.094b12168e60dp+1",
+          "index": 98
+        },
+        {
+          "scale_hex": "0x1.094b12168e60ep+1",
+          "index": 98
+        },
+        {
+          "scale_hex": "0x1.094b12168e60fp+1",
+          "index": 98
+        }
+      ]
+    },
+    {
+      "boundary": 99,
+      "representable": [
+        {
+          "scale_hex": "0x1.1195b03b94e3ap+1",
+          "index": 100
+        }
+      ]
+    },
+    {
+      "boundary": 100,
+      "representable": [
+        {
+          "scale_hex": "0x1.1a22a57e786acp+1",
+          "index": 100
+        },
+        {
+          "scale_hex": "0x1.1a22a57e786adp+1",
+          "index": 100
+        }
+      ]
+    },
+    {
+      "boundary": 101,
+      "representable": [
+        {
+          "scale_hex": "0x1.22f404a98e16bp+1",
+          "index": 102
+        },
+        {
+          "scale_hex": "0x1.22f404a98e16cp+1",
+          "index": 102
+        }
+      ]
+    },
+    {
+      "boundary": 102,
+      "representable": [
+        {
+          "scale_hex": "0x1.2c0bf11e08e7bp+1",
+          "index": 102
+        },
+        {
+          "scale_hex": "0x1.2c0bf11e08e7cp+1",
+          "index": 102
+        },
+        {
+          "scale_hex": "0x1.2c0bf11e08e7dp+1",
+          "index": 102
+        }
+      ]
+    },
+    {
+      "boundary": 103,
+      "representable": [
+        {
+          "scale_hex": "0x1.356c9f58b505bp+1",
+          "index": 104
+        },
+        {
+          "scale_hex": "0x1.356c9f58b505cp+1",
+          "index": 104
+        }
+      ]
+    },
+    {
+      "boundary": 104,
+      "representable": [
+        {
+          "scale_hex": "0x1.3f18557ad9070p+1",
+          "index": 104
+        },
+        {
+          "scale_hex": "0x1.3f18557ad906fp+1",
+          "index": 104
+        },
+        {
+          "scale_hex": "0x1.3f18557ad9071p+1",
+          "index": 104
+        }
+      ]
+    },
+    {
+      "boundary": 105,
+      "representable": [
+        {
+          "scale_hex": "0x1.49116bd75e641p+1",
+          "index": 106
+        },
+        {
+          "scale_hex": "0x1.49116bd75e642p+1",
+          "index": 106
+        },
+        {
+          "scale_hex": "0x1.49116bd75e643p+1",
+          "index": 106
+        }
+      ]
+    },
+    {
+      "boundary": 106,
+      "representable": [
+        {
+          "scale_hex": "0x1.535a4d846353cp+1",
+          "index": 106
+        },
+        {
+          "scale_hex": "0x1.535a4d846353dp+1",
+          "index": 106
+        }
+      ]
+    },
+    {
+      "boundary": 107,
+      "representable": [
+        {
+          "scale_hex": "0x1.5df578f1595d8p+1",
+          "index": 108
+        },
+        {
+          "scale_hex": "0x1.5df578f1595d7p+1",
+          "index": 108
+        },
+        {
+          "scale_hex": "0x1.5df578f1595d9p+1",
+          "index": 108
+        },
+        {
+          "scale_hex": "0x1.5df578f1595dap+1",
+          "index": 108
+        }
+      ]
+    },
+    {
+      "boundary": 108,
+      "representable": [
+        {
+          "scale_hex": "0x1.68e58081d5070p+1",
+          "index": 108
+        },
+        {
+          "scale_hex": "0x1.68e58081d5071p+1",
+          "index": 108
+        },
+        {
+          "scale_hex": "0x1.68e58081d5072p+1",
+          "index": 108
+        },
+        {
+          "scale_hex": "0x1.68e58081d5073p+1",
+          "index": 108
+        }
+      ]
+    },
+    {
+      "boundary": 109,
+      "representable": [
+        {
+          "scale_hex": "0x1.742d0b2d34276p+1",
+          "index": 110
+        }
+      ]
+    },
+    {
+      "boundary": 111,
+      "representable": [
+        {
+          "scale_hex": "0x1.8bcdb075fe2bdp+1",
+          "index": 112
+        },
+        {
+          "scale_hex": "0x1.8bcdb075fe2bep+1",
+          "index": 112
+        },
+        {
+          "scale_hex": "0x1.8bcdb075fe2bfp+1",
+          "index": 112
+        },
+        {
+          "scale_hex": "0x1.8bcdb075fe2c0p+1",
+          "index": 112
+        }
+      ]
+    },
+    {
+      "boundary": 112,
+      "representable": [
+        {
+          "scale_hex": "0x1.982c85c8b81f9p+1",
+          "index": 112
+        }
+      ]
+    },
+    {
+      "boundary": 113,
+      "representable": [
+        {
+          "scale_hex": "0x1.a4ee55049b6d0p+1",
+          "index": 114
+        },
+        {
+          "scale_hex": "0x1.a4ee55049b6d1p+1",
+          "index": 114
+        }
+      ]
+    },
+    {
+      "boundary": 114,
+      "representable": [
+        {
+          "scale_hex": "0x1.b2163612e6d4dp+1",
+          "index": 114
+        },
+        {
+          "scale_hex": "0x1.b2163612e6d4cp+1",
+          "index": 114
+        },
+        {
+          "scale_hex": "0x1.b2163612e6d4ep+1",
+          "index": 114
+        },
+        {
+          "scale_hex": "0x1.b2163612e6d4fp+1",
+          "index": 114
+        },
+        {
+          "scale_hex": "0x1.b2163612e6d50p+1",
+          "index": 114
+        }
+      ]
+    },
+    {
+      "boundary": 115,
+      "representable": [
+        {
+          "scale_hex": "0x1.bfa7599cf2c0cp+1",
+          "index": 116
+        },
+        {
+          "scale_hex": "0x1.bfa7599cf2c0dp+1",
+          "index": 116
+        }
+      ]
+    },
+    {
+      "boundary": 116,
+      "representable": [
+        {
+          "scale_hex": "0x1.cda509d2388dfp+1",
+          "index": 116
+        },
+        {
+          "scale_hex": "0x1.cda509d2388e0p+1",
+          "index": 116
+        }
+      ]
+    },
+    {
+      "boundary": 117,
+      "representable": [
+        {
+          "scale_hex": "0x1.dc12ab348a461p+1",
+          "index": 118
+        },
+        {
+          "scale_hex": "0x1.dc12ab348a460p+1",
+          "index": 118
+        },
+        {
+          "scale_hex": "0x1.dc12ab348a462p+1",
+          "index": 118
+        },
+        {
+          "scale_hex": "0x1.dc12ab348a45fp+1",
+          "index": 118
+        },
+        {
+          "scale_hex": "0x1.dc12ab348a463p+1",
+          "index": 118
+        },
+        {
+          "scale_hex": "0x1.dc12ab348a464p+1",
+          "index": 118
+        }
+      ]
+    },
+    {
+      "boundary": 118,
+      "representable": [
+        {
+          "scale_hex": "0x1.eaf3bd6aac4d0p+1",
+          "index": 118
+        },
+        {
+          "scale_hex": "0x1.eaf3bd6aac4cfp+1",
+          "index": 118
+        }
+      ]
+    },
+    {
+      "boundary": 119,
+      "representable": [
+        {
+          "scale_hex": "0x1.fa4bdc1984115p+1",
+          "index": 120
+        },
+        {
+          "scale_hex": "0x1.fa4bdc1984116p+1",
+          "index": 120
+        }
+      ]
+    },
+    {
+      "boundary": 120,
+      "representable": [
+        {
+          "scale_hex": "0x1.050f5fe208361p+2",
+          "index": 120
+        },
+        {
+          "scale_hex": "0x1.050f5fe208360p+2",
+          "index": 120
+        },
+        {
+          "scale_hex": "0x1.050f5fe208362p+2",
+          "index": 120
+        }
+      ]
+    },
+    {
+      "boundary": 121,
+      "representable": [
+        {
+          "scale_hex": "0x1.0d381f5930ffbp+2",
+          "index": 122
+        },
+        {
+          "scale_hex": "0x1.0d381f5930ffcp+2",
+          "index": 122
+        },
+        {
+          "scale_hex": "0x1.0d381f5930ffdp+2",
+          "index": 122
+        }
+      ]
+    },
+    {
+      "boundary": 122,
+      "representable": [
+        {
+          "scale_hex": "0x1.15a226efe5c90p+2",
+          "index": 122
+        }
+      ]
+    },
+    {
+      "boundary": 123,
+      "representable": [
+        {
+          "scale_hex": "0x1.1e4f80f842177p+2",
+          "index": 124
+        },
+        {
+          "scale_hex": "0x1.1e4f80f842176p+2",
+          "index": 124
+        },
+        {
+          "scale_hex": "0x1.1e4f80f842178p+2",
+          "index": 124
+        }
+      ]
+    },
+    {
+      "boundary": 124,
+      "representable": [
+        {
+          "scale_hex": "0x1.274248177b4a6p+2",
+          "index": 124
+        },
+        {
+          "scale_hex": "0x1.274248177b4a7p+2",
+          "index": 124
+        },
+        {
+          "scale_hex": "0x1.274248177b4a8p+2",
+          "index": 124
+        }
+      ]
+    },
+    {
+      "boundary": 125,
+      "representable": [
+        {
+          "scale_hex": "0x1.307ca7c87db1cp+2",
+          "index": 126
+        },
+        {
+          "scale_hex": "0x1.307ca7c87db1dp+2",
+          "index": 126
+        }
+      ]
+    },
+    {
+      "boundary": 126,
+      "representable": [
+        {
+          "scale_hex": "0x1.3a00dce29eb02p+2",
+          "index": 126
+        },
+        {
+          "scale_hex": "0x1.3a00dce29eb01p+2",
+          "index": 126
+        },
+        {
+          "scale_hex": "0x1.3a00dce29eb03p+2",
+          "index": 126
+        },
+        {
+          "scale_hex": "0x1.3a00dce29eb04p+2",
+          "index": 126
+        }
+      ]
+    },
+    {
+      "boundary": 127,
+      "representable": [
+        {
+          "scale_hex": "0x1.43d136248490fp+2",
+          "index": 128
+        },
+        {
+          "scale_hex": "0x1.43d1362484910p+2",
+          "index": 128
+        },
+        {
+          "scale_hex": "0x1.43d1362484911p+2",
+          "index": 128
+        },
+        {
+          "scale_hex": "0x1.43d1362484912p+2",
+          "index": 128
+        }
+      ]
+    },
+    {
+      "boundary": 128,
+      "representable": [
+        {
+          "scale_hex": "0x1.4df014c365c19p+2",
+          "index": 128
+        },
+        {
+          "scale_hex": "0x1.4df014c365c1ap+2",
+          "index": 128
+        },
+        {
+          "scale_hex": "0x1.4df014c365c1bp+2",
+          "index": 128
+        },
+        {
+          "scale_hex": "0x1.4df014c365c1cp+2",
+          "index": 128
+        },
+        {
+          "scale_hex": "0x1.4df014c365c1dp+2",
+          "index": 128
+        }
+      ]
+    },
+    {
+      "boundary": 129,
+      "representable": [
+        {
+          "scale_hex": "0x1.585fecfec22a5p+2",
+          "index": 130
+        },
+        {
+          "scale_hex": "0x1.585fecfec22a4p+2",
+          "index": 130
+        },
+        {
+          "scale_hex": "0x1.585fecfec22a6p+2",
+          "index": 130
+        },
+        {
+          "scale_hex": "0x1.585fecfec22a3p+2",
+          "index": 130
+        },
+        {
+          "scale_hex": "0x1.585fecfec22a7p+2",
+          "index": 130
+        },
+        {
+          "scale_hex": "0x1.585fecfec22a8p+2",
+          "index": 130
+        }
+      ]
+    },
+    {
+      "boundary": 130,
+      "representable": [
+        {
+          "scale_hex": "0x1.632346b8ba78cp+2",
+          "index": 130
+        },
+        {
+          "scale_hex": "0x1.632346b8ba78bp+2",
+          "index": 130
+        },
+        {
+          "scale_hex": "0x1.632346b8ba78dp+2",
+          "index": 130
+        },
+        {
+          "scale_hex": "0x1.632346b8ba78ap+2",
+          "index": 130
+        },
+        {
+          "scale_hex": "0x1.632346b8ba78ep+2",
+          "index": 130
+        },
+        {
+          "scale_hex": "0x1.632346b8ba78fp+2",
+          "index": 130
+        },
+        {
+          "scale_hex": "0x1.632346b8ba790p+2",
+          "index": 130
+        }
+      ]
+    },
+    {
+      "boundary": 131,
+      "representable": [
+        {
+          "scale_hex": "0x1.6e3cbe132a4bdp+2",
+          "index": 132
+        },
+        {
+          "scale_hex": "0x1.6e3cbe132a4bep+2",
+          "index": 132
+        },
+        {
+          "scale_hex": "0x1.6e3cbe132a4bfp+2",
+          "index": 132
+        },
+        {
+          "scale_hex": "0x1.6e3cbe132a4c0p+2",
+          "index": 132
+        },
+        {
+          "scale_hex": "0x1.6e3cbe132a4c1p+2",
+          "index": 132
+        },
+        {
+          "scale_hex": "0x1.6e3cbe132a4c2p+2",
+          "index": 132
+        },
+        {
+          "scale_hex": "0x1.6e3cbe132a4c3p+2",
+          "index": 132
+        }
+      ]
+    },
+    {
+      "boundary": 132,
+      "representable": [
+        {
+          "scale_hex": "0x1.79af0411ab5b4p+2",
+          "index": 132
+        },
+        {
+          "scale_hex": "0x1.79af0411ab5b3p+2",
+          "index": 132
+        },
+        {
+          "scale_hex": "0x1.79af0411ab5b5p+2",
+          "index": 132
+        },
+        {
+          "scale_hex": "0x1.79af0411ab5b2p+2",
+          "index": 132
+        },
+        {
+          "scale_hex": "0x1.79af0411ab5b1p+2",
+          "index": 132
+        }
+      ]
+    },
+    {
+      "boundary": 133,
+      "representable": [
+        {
+          "scale_hex": "0x1.857cdf40a8e26p+2",
+          "index": 134
+        },
+        {
+          "scale_hex": "0x1.857cdf40a8e25p+2",
+          "index": 134
+        },
+        {
+          "scale_hex": "0x1.857cdf40a8e27p+2",
+          "index": 134
+        },
+        {
+          "scale_hex": "0x1.857cdf40a8e28p+2",
+          "index": 134
+        }
+      ]
+    },
+    {
+      "boundary": 134,
+      "representable": [
+        {
+          "scale_hex": "0x1.91a92c61abd20p+2",
+          "index": 134
+        },
+        {
+          "scale_hex": "0x1.91a92c61abd21p+2",
+          "index": 134
+        },
+        {
+          "scale_hex": "0x1.91a92c61abd22p+2",
+          "index": 134
+        },
+        {
+          "scale_hex": "0x1.91a92c61abd23p+2",
+          "index": 134
+        },
+        {
+          "scale_hex": "0x1.91a92c61abd24p+2",
+          "index": 134
+        }
+      ]
+    },
+    {
+      "boundary": 135,
+      "representable": [
+        {
+          "scale_hex": "0x1.9e36df1d0990fp+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.9e36df1d0990ep+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.9e36df1d09910p+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.9e36df1d0990dp+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.9e36df1d09911p+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.9e36df1d0990cp+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.9e36df1d09912p+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.9e36df1d0990bp+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.9e36df1d0990ap+2",
+          "index": 136
+        }
+      ]
+    },
+    {
+      "boundary": 136,
+      "representable": [
+        {
+          "scale_hex": "0x1.ab2902b920621p+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.ab2902b920620p+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.ab2902b920622p+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.ab2902b92061fp+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.ab2902b920623p+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.ab2902b92061ep+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.ab2902b920624p+2",
+          "index": 136
+        },
+        {
+          "scale_hex": "0x1.ab2902b920625p+2",
+          "index": 136
+        }
+      ]
+    },
+    {
+      "boundary": 137,
+      "representable": [
+        {
+          "scale_hex": "0x1.b882bad74ddbfp+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.b882bad74ddbep+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.b882bad74ddc0p+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.b882bad74ddc1p+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.b882bad74ddc2p+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.b882bad74ddc3p+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.b882bad74ddc4p+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.b882bad74ddc5p+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.b882bad74ddc6p+2",
+          "index": 138
+        }
+      ]
+    },
+    {
+      "boundary": 138,
+      "representable": [
+        {
+          "scale_hex": "0x1.c6474436cd478p+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.c6474436cd477p+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.c6474436cd476p+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.c6474436cd475p+2",
+          "index": 138
+        },
+        {
+          "scale_hex": "0x1.c6474436cd474p+2",
+          "index": 138
+        }
+      ]
+    },
+    {
+      "boundary": 139,
+      "representable": [
+        {
+          "scale_hex": "0x1.d479f57dad237p+2",
+          "index": 140
+        },
+        {
+          "scale_hex": "0x1.d479f57dad236p+2",
+          "index": 140
+        },
+        {
+          "scale_hex": "0x1.d479f57dad238p+2",
+          "index": 140
+        },
+        {
+          "scale_hex": "0x1.d479f57dad239p+2",
+          "index": 140
+        },
+        {
+          "scale_hex": "0x1.d479f57dad23ap+2",
+          "index": 140
+        }
+      ]
+    },
+    {
+      "boundary": 140,
+      "representable": [
+        {
+          "scale_hex": "0x1.e31e40080c89ap+2",
+          "index": 140
+        },
+        {
+          "scale_hex": "0x1.e31e40080c89bp+2",
+          "index": 140
+        },
+        {
+          "scale_hex": "0x1.e31e40080c89cp+2",
+          "index": 140
+        },
+        {
+          "scale_hex": "0x1.e31e40080c89dp+2",
+          "index": 140
+        }
+      ]
+    },
+    {
+      "boundary": 142,
+      "representable": [
+        {
+          "scale_hex": "0x1.00e4f8778a3d2p+3",
+          "index": 142
+        },
+        {
+          "scale_hex": "0x1.00e4f8778a3d1p+3",
+          "index": 142
+        },
+        {
+          "scale_hex": "0x1.00e4f8778a3d3p+3",
+          "index": 142
+        },
+        {
+          "scale_hex": "0x1.00e4f8778a3d0p+3",
+          "index": 142
+        },
+        {
+          "scale_hex": "0x1.00e4f8778a3d4p+3",
+          "index": 142
+        },
+        {
+          "scale_hex": "0x1.00e4f8778a3cfp+3",
+          "index": 142
+        }
+      ]
+    },
+    {
+      "boundary": 143,
+      "representable": [
+        {
+          "scale_hex": "0x1.08ec639bae969p+3",
+          "index": 144
+        },
+        {
+          "scale_hex": "0x1.08ec639bae968p+3",
+          "index": 144
+        },
+        {
+          "scale_hex": "0x1.08ec639bae96ap+3",
+          "index": 144
+        },
+        {
+          "scale_hex": "0x1.08ec639bae96bp+3",
+          "index": 144
+        },
+        {
+          "scale_hex": "0x1.08ec639bae96cp+3",
+          "index": 144
+        },
+        {
+          "scale_hex": "0x1.08ec639bae96dp+3",
+          "index": 144
+        }
+      ]
+    },
+    {
+      "boundary": 144,
+      "representable": [
+        {
+          "scale_hex": "0x1.11340c3408feep+3",
+          "index": 144
+        },
+        {
+          "scale_hex": "0x1.11340c3408fefp+3",
+          "index": 144
+        },
+        {
+          "scale_hex": "0x1.11340c3408ff0p+3",
+          "index": 144
+        },
+        {
+          "scale_hex": "0x1.11340c3408ff1p+3",
+          "index": 144
+        },
+        {
+          "scale_hex": "0x1.11340c3408ff2p+3",
+          "index": 144
+        },
+        {
+          "scale_hex": "0x1.11340c3408ff3p+3",
+          "index": 144
+        },
+        {
+          "scale_hex": "0x1.11340c3408ff4p+3",
+          "index": 144
+        }
+      ]
+    },
+    {
+      "boundary": 145,
+      "representable": [
+        {
+          "scale_hex": "0x1.19bdf43d145b4p+3",
+          "index": 146
+        },
+        {
+          "scale_hex": "0x1.19bdf43d145b3p+3",
+          "index": 146
+        }
+      ]
+    },
+    {
+      "boundary": 146,
+      "representable": [
+        {
+          "scale_hex": "0x1.228c2dc3b6363p+3",
+          "index": 146
+        },
+        {
+          "scale_hex": "0x1.228c2dc3b6364p+3",
+          "index": 146
+        }
+      ]
+    },
+    {
+      "boundary": 147,
+      "representable": [
+        {
+          "scale_hex": "0x1.2ba0db65c64b1p+3",
+          "index": 148
+        },
+        {
+          "scale_hex": "0x1.2ba0db65c64b2p+3",
+          "index": 148
+        },
+        {
+          "scale_hex": "0x1.2ba0db65c64b3p+3",
+          "index": 148
+        }
+      ]
+    },
+    {
+      "boundary": 148,
+      "representable": [
+        {
+          "scale_hex": "0x1.34fe30d69a6ffp+3",
+          "index": 148
+        },
+        {
+          "scale_hex": "0x1.34fe30d69a6fep+3",
+          "index": 148
+        },
+        {
+          "scale_hex": "0x1.34fe30d69a700p+3",
+          "index": 148
+        },
+        {
+          "scale_hex": "0x1.34fe30d69a6fdp+3",
+          "index": 148
+        },
+        {
+          "scale_hex": "0x1.34fe30d69a701p+3",
+          "index": 148
+        },
+        {
+          "scale_hex": "0x1.34fe30d69a6fcp+3",
+          "index": 148
+        },
+        {
+          "scale_hex": "0x1.34fe30d69a702p+3",
+          "index": 148
+        }
+      ]
+    },
+    {
+      "boundary": 149,
+      "representable": [
+        {
+          "scale_hex": "0x1.3ea67367b7020p+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.3ea67367b701fp+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.3ea67367b7021p+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.3ea67367b701ep+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.3ea67367b7022p+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.3ea67367b7023p+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.3ea67367b7024p+3",
+          "index": 150
+        }
+      ]
+    },
+    {
+      "boundary": 150,
+      "representable": [
+        {
+          "scale_hex": "0x1.489bfa95c4f7dp+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.489bfa95c4f7cp+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.489bfa95c4f7ep+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.489bfa95c4f7fp+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.489bfa95c4f80p+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.489bfa95c4f81p+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.489bfa95c4f82p+3",
+          "index": 150
+        },
+        {
+          "scale_hex": "0x1.489bfa95c4f83p+3",
+          "index": 150
+        }
+      ]
+    },
+    {
+      "boundary": 151,
+      "representable": [
+        {
+          "scale_hex": "0x1.52e13099efca8p+3",
+          "index": 152
+        },
+        {
+          "scale_hex": "0x1.52e13099efca7p+3",
+          "index": 152
+        }
+      ]
+    },
+    {
+      "boundary": 152,
+      "representable": [
+        {
+          "scale_hex": "0x1.5d7892ffce73dp+3",
+          "index": 152
+        },
+        {
+          "scale_hex": "0x1.5d7892ffce73ep+3",
+          "index": 152
+        },
+        {
+          "scale_hex": "0x1.5d7892ffce73fp+3",
+          "index": 152
+        }
+      ]
+    },
+    {
+      "boundary": 153,
+      "representable": [
+        {
+          "scale_hex": "0x1.6864b33ffbdb6p+3",
+          "index": 154
+        },
+        {
+          "scale_hex": "0x1.6864b33ffbdb7p+3",
+          "index": 154
+        },
+        {
+          "scale_hex": "0x1.6864b33ffbdb8p+3",
+          "index": 154
+        }
+      ]
+    },
+    {
+      "boundary": 154,
+      "representable": [
+        {
+          "scale_hex": "0x1.73a8375f842fap+3",
+          "index": 154
+        },
+        {
+          "scale_hex": "0x1.73a8375f842f9p+3",
+          "index": 154
+        },
+        {
+          "scale_hex": "0x1.73a8375f842fbp+3",
+          "index": 154
+        },
+        {
+          "scale_hex": "0x1.73a8375f842f8p+3",
+          "index": 154
+        },
+        {
+          "scale_hex": "0x1.73a8375f842fcp+3",
+          "index": 154
+        },
+        {
+          "scale_hex": "0x1.73a8375f842f7p+3",
+          "index": 154
+        },
+        {
+          "scale_hex": "0x1.73a8375f842fdp+3",
+          "index": 154
+        },
+        {
+          "scale_hex": "0x1.73a8375f842f6p+3",
+          "index": 154
+        },
+        {
+          "scale_hex": "0x1.73a8375f842f5p+3",
+          "index": 154
+        }
+      ]
+    },
+    {
+      "boundary": 155,
+      "representable": [
+        {
+          "scale_hex": "0x1.7f45da944dd4bp+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.7f45da944dd4ap+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.7f45da944dd4cp+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.7f45da944dd49p+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.7f45da944dd4dp+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.7f45da944dd48p+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.7f45da944dd4ep+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.7f45da944dd47p+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.7f45da944dd4fp+3",
+          "index": 156
+        }
+      ]
+    },
+    {
+      "boundary": 156,
+      "representable": [
+        {
+          "scale_hex": "0x1.8b406deea5c3bp+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.8b406deea5c3ap+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.8b406deea5c3cp+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.8b406deea5c39p+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.8b406deea5c3dp+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.8b406deea5c3ep+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.8b406deea5c3fp+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.8b406deea5c40p+3",
+          "index": 156
+        },
+        {
+          "scale_hex": "0x1.8b406deea5c41p+3",
+          "index": 156
+        }
+      ]
+    },
+    {
+      "boundary": 157,
+      "representable": [
+        {
+          "scale_hex": "0x1.979ad908187b6p+3",
+          "index": 158
+        },
+        {
+          "scale_hex": "0x1.979ad908187b5p+3",
+          "index": 158
+        },
+        {
+          "scale_hex": "0x1.979ad908187b4p+3",
+          "index": 158
+        }
+      ]
+    },
+    {
+      "boundary": 158,
+      "representable": [
+        {
+          "scale_hex": "0x1.a4581ab7c1e57p+3",
+          "index": 158
+        },
+        {
+          "scale_hex": "0x1.a4581ab7c1e56p+3",
+          "index": 158
+        },
+        {
+          "scale_hex": "0x1.a4581ab7c1e58p+3",
+          "index": 158
+        },
+        {
+          "scale_hex": "0x1.a4581ab7c1e59p+3",
+          "index": 158
+        }
+      ]
+    },
+    {
+      "boundary": 159,
+      "representable": [
+        {
+          "scale_hex": "0x1.b17b49cc3fe9dp+3",
+          "index": 160
+        },
+        {
+          "scale_hex": "0x1.b17b49cc3fe9ep+3",
+          "index": 160
+        },
+        {
+          "scale_hex": "0x1.b17b49cc3fe9fp+3",
+          "index": 160
+        }
+      ]
+    },
+    {
+      "boundary": 160,
+      "representable": [
+        {
+          "scale_hex": "0x1.bf0795cb74c81p+3",
+          "index": 160
+        },
+        {
+          "scale_hex": "0x1.bf0795cb74c82p+3",
+          "index": 160
+        },
+        {
+          "scale_hex": "0x1.bf0795cb74c83p+3",
+          "index": 160
+        },
+        {
+          "scale_hex": "0x1.bf0795cb74c84p+3",
+          "index": 160
+        }
+      ]
+    },
+    {
+      "boundary": 161,
+      "representable": [
+        {
+          "scale_hex": "0x1.cd0047b847b55p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.cd0047b847b54p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.cd0047b847b56p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.cd0047b847b53p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.cd0047b847b57p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.cd0047b847b52p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.cd0047b847b58p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.cd0047b847b51p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.cd0047b847b59p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.cd0047b847b50p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.cd0047b847b5ap+3",
+          "index": 162
+        }
+      ]
+    },
+    {
+      "boundary": 162,
+      "representable": [
+        {
+          "scale_hex": "0x1.db68c2de93b47p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.db68c2de93b46p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.db68c2de93b48p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.db68c2de93b45p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.db68c2de93b49p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.db68c2de93b44p+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.db68c2de93b4ap+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.db68c2de93b4bp+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.db68c2de93b4cp+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.db68c2de93b4dp+3",
+          "index": 162
+        },
+        {
+          "scale_hex": "0x1.db68c2de93b4ep+3",
+          "index": 162
+        }
+      ]
+    },
+    {
+      "boundary": 163,
+      "representable": [
+        {
+          "scale_hex": "0x1.ea4485a57617ap+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.ea4485a576179p+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.ea4485a57617bp+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.ea4485a57617cp+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.ea4485a57617dp+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.ea4485a57617ep+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.ea4485a57617fp+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.ea4485a576180p+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.ea4485a576181p+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.ea4485a576182p+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.ea4485a576183p+3",
+          "index": 164
+        }
+      ]
+    },
+    {
+      "boundary": 164,
+      "representable": [
+        {
+          "scale_hex": "0x1.f9972a682fafdp+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.f9972a682fafcp+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.f9972a682fafbp+3",
+          "index": 164
+        },
+        {
+          "scale_hex": "0x1.f9972a682fafap+3",
+          "index": 164
+        }
+      ]
+    },
+    {
+      "boundary": 165,
+      "representable": [
+        {
+          "scale_hex": "0x1.04b2342ae69ebp+4",
+          "index": 166
+        },
+        {
+          "scale_hex": "0x1.04b2342ae69ecp+4",
+          "index": 166
+        }
+      ]
+    },
+    {
+      "boundary": 166,
+      "representable": [
+        {
+          "scale_hex": "0x1.0cd80a2be6afap+4",
+          "index": 166
+        },
+        {
+          "scale_hex": "0x1.0cd80a2be6afbp+4",
+          "index": 166
+        }
+      ]
+    },
+    {
+      "boundary": 167,
+      "representable": [
+        {
+          "scale_hex": "0x1.153f10fffdf69p+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.153f10fffdf68p+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.153f10fffdf6ap+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.153f10fffdf67p+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.153f10fffdf6bp+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.153f10fffdf66p+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.153f10fffdf65p+4",
+          "index": 168
+        }
+      ]
+    },
+    {
+      "boundary": 168,
+      "representable": [
+        {
+          "scale_hex": "0x1.1de9523ede369p+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.1de9523ede368p+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.1de9523ede36ap+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.1de9523ede367p+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.1de9523ede36bp+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.1de9523ede366p+4",
+          "index": 168
+        },
+        {
+          "scale_hex": "0x1.1de9523ede36cp+4",
+          "index": 168
+        }
+      ]
+    },
+    {
+      "boundary": 169,
+      "representable": [
+        {
+          "scale_hex": "0x1.26d8e7cd7f8d4p+4",
+          "index": 170
+        },
+        {
+          "scale_hex": "0x1.26d8e7cd7f8d3p+4",
+          "index": 170
+        },
+        {
+          "scale_hex": "0x1.26d8e7cd7f8d5p+4",
+          "index": 170
+        },
+        {
+          "scale_hex": "0x1.26d8e7cd7f8d6p+4",
+          "index": 170
+        },
+        {
+          "scale_hex": "0x1.26d8e7cd7f8d7p+4",
+          "index": 170
+        },
+        {
+          "scale_hex": "0x1.26d8e7cd7f8d8p+4",
+          "index": 170
+        },
+        {
+          "scale_hex": "0x1.26d8e7cd7f8d9p+4",
+          "index": 170
+        }
+      ]
+    },
+    {
+      "boundary": 170,
+      "representable": [
+        {
+          "scale_hex": "0x1.300ffc608eec9p+4",
+          "index": 170
+        },
+        {
+          "scale_hex": "0x1.300ffc608eec8p+4",
+          "index": 170
+        },
+        {
+          "scale_hex": "0x1.300ffc608eec7p+4",
+          "index": 170
+        }
+      ]
+    },
+    {
+      "boundary": 171,
+      "representable": [
+        {
+          "scale_hex": "0x1.3990cc02f02a2p+4",
+          "index": 172
+        },
+        {
+          "scale_hex": "0x1.3990cc02f02a1p+4",
+          "index": 172
+        },
+        {
+          "scale_hex": "0x1.3990cc02f02a3p+4",
+          "index": 172
+        }
+      ]
+    },
+    {
+      "boundary": 172,
+      "representable": [
+        {
+          "scale_hex": "0x1.435da4a074424p+4",
+          "index": 172
+        },
+        {
+          "scale_hex": "0x1.435da4a074425p+4",
+          "index": 172
+        }
+      ]
+    },
+    {
+      "boundary": 173,
+      "representable": [
+        {
+          "scale_hex": "0x1.4d78e694e5717p+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.4d78e694e5716p+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.4d78e694e5718p+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.4d78e694e5715p+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.4d78e694e5719p+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.4d78e694e5714p+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.4d78e694e5713p+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.4d78e694e5712p+4",
+          "index": 174
+        }
+      ]
+    },
+    {
+      "boundary": 174,
+      "representable": [
+        {
+          "scale_hex": "0x1.57e5053f8bd4fp+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.57e5053f8bd4ep+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.57e5053f8bd50p+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.57e5053f8bd4dp+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.57e5053f8bd51p+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.57e5053f8bd4cp+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.57e5053f8bd52p+4",
+          "index": 174
+        },
+        {
+          "scale_hex": "0x1.57e5053f8bd53p+4",
+          "index": 174
+        }
+      ]
+    },
+    {
+      "boundary": 175,
+      "representable": [
+        {
+          "scale_hex": "0x1.62a4879b4e55ap+4",
+          "index": 176
+        },
+        {
+          "scale_hex": "0x1.62a4879b4e559p+4",
+          "index": 176
+        },
+        {
+          "scale_hex": "0x1.62a4879b4e55bp+4",
+          "index": 176
+        },
+        {
+          "scale_hex": "0x1.62a4879b4e558p+4",
+          "index": 176
+        },
+        {
+          "scale_hex": "0x1.62a4879b4e55cp+4",
+          "index": 176
+        },
+        {
+          "scale_hex": "0x1.62a4879b4e55dp+4",
+          "index": 176
+        },
+        {
+          "scale_hex": "0x1.62a4879b4e55ep+4",
+          "index": 176
+        },
+        {
+          "scale_hex": "0x1.62a4879b4e55fp+4",
+          "index": 176
+        }
+      ]
+    },
+    {
+      "boundary": 177,
+      "representable": [
+        {
+          "scale_hex": "0x1.7928390e11292p+4",
+          "index": 178
+        },
+        {
+          "scale_hex": "0x1.7928390e11291p+4",
+          "index": 178
+        },
+        {
+          "scale_hex": "0x1.7928390e11293p+4",
+          "index": 178
+        }
+      ]
+    },
+    {
+      "boundary": 178,
+      "representable": [
+        {
+          "scale_hex": "0x1.84f1ddc197989p+4",
+          "index": 178
+        },
+        {
+          "scale_hex": "0x1.84f1ddc19798ap+4",
+          "index": 178
+        },
+        {
+          "scale_hex": "0x1.84f1ddc19798bp+4",
+          "index": 178
+        },
+        {
+          "scale_hex": "0x1.84f1ddc19798cp+4",
+          "index": 178
+        }
+      ]
+    },
+    {
+      "boundary": 179,
+      "representable": [
+        {
+          "scale_hex": "0x1.9119d2b22cdc6p+4",
+          "index": 180
+        },
+        {
+          "scale_hex": "0x1.9119d2b22cdc7p+4",
+          "index": 180
+        },
+        {
+          "scale_hex": "0x1.9119d2b22cdc8p+4",
+          "index": 180
+        }
+      ]
+    },
+    {
+      "boundary": 180,
+      "representable": [
+        {
+          "scale_hex": "0x1.9da30a7a75cf6p+4",
+          "index": 180
+        },
+        {
+          "scale_hex": "0x1.9da30a7a75cf5p+4",
+          "index": 180
+        },
+        {
+          "scale_hex": "0x1.9da30a7a75cf7p+4",
+          "index": 180
+        },
+        {
+          "scale_hex": "0x1.9da30a7a75cf4p+4",
+          "index": 180
+        },
+        {
+          "scale_hex": "0x1.9da30a7a75cf8p+4",
+          "index": 180
+        },
+        {
+          "scale_hex": "0x1.9da30a7a75cf3p+4",
+          "index": 180
+        },
+        {
+          "scale_hex": "0x1.9da30a7a75cf9p+4",
+          "index": 180
+        },
+        {
+          "scale_hex": "0x1.9da30a7a75cf2p+4",
+          "index": 180
+        },
+        {
+          "scale_hex": "0x1.9da30a7a75cf1p+4",
+          "index": 180
+        }
+      ]
+    },
+    {
+      "boundary": 181,
+      "representable": [
+        {
+          "scale_hex": "0x1.aa908f4ab25dbp+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.aa908f4ab25dap+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.aa908f4ab25dcp+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.aa908f4ab25d9p+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.aa908f4ab25ddp+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.aa908f4ab25d8p+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.aa908f4ab25dep+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.aa908f4ab25dfp+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.aa908f4ab25e0p+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.aa908f4ab25e1p+4",
+          "index": 182
+        }
+      ]
+    },
+    {
+      "boundary": 182,
+      "representable": [
+        {
+          "scale_hex": "0x1.b7e583a5708b7p+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.b7e583a5708b6p+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.b7e583a5708b8p+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.b7e583a5708b9p+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.b7e583a5708bap+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.b7e583a5708bbp+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.b7e583a5708bcp+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.b7e583a5708bdp+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.b7e583a5708bep+4",
+          "index": 182
+        },
+        {
+          "scale_hex": "0x1.b7e583a5708bfp+4",
+          "index": 182
+        }
+      ]
+    },
+    {
+      "boundary": 183,
+      "representable": [
+        {
+          "scale_hex": "0x1.c5a5232225471p+4",
+          "index": 184
+        },
+        {
+          "scale_hex": "0x1.c5a5232225470p+4",
+          "index": 184
+        },
+        {
+          "scale_hex": "0x1.c5a523222546fp+4",
+          "index": 184
+        }
+      ]
+    },
+    {
+      "boundary": 184,
+      "representable": [
+        {
+          "scale_hex": "0x1.d3d2c335da34bp+4",
+          "index": 184
+        },
+        {
+          "scale_hex": "0x1.d3d2c335da34cp+4",
+          "index": 184
+        },
+        {
+          "scale_hex": "0x1.d3d2c335da34dp+4",
+          "index": 184
+        }
+      ]
+    },
+    {
+      "boundary": 185,
+      "representable": [
+        {
+          "scale_hex": "0x1.e271d402211c7p+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.e271d402211c8p+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.e271d402211c9p+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.e271d402211cap+4",
+          "index": 186
+        }
+      ]
+    },
+    {
+      "boundary": 186,
+      "representable": [
+        {
+          "scale_hex": "0x1.f185e12a7f2a1p+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.f185e12a7f2a0p+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.f185e12a7f2a2p+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.f185e12a7f29fp+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.f185e12a7f2a3p+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.f185e12a7f29ep+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.f185e12a7f2a4p+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.f185e12a7f29dp+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.f185e12a7f29cp+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.f185e12a7f29bp+4",
+          "index": 186
+        },
+        {
+          "scale_hex": "0x1.f185e12a7f29ap+4",
+          "index": 186
+        }
+      ]
+    },
+    {
+      "boundary": 187,
+      "representable": [
+        {
+          "scale_hex": "0x1.0089495841e00p+5",
+          "index": 188
+        },
+        {
+          "scale_hex": "0x1.0089495841dffp+5",
+          "index": 188
+        },
+        {
+          "scale_hex": "0x1.0089495841e01p+5",
+          "index": 188
+        },
+        {
+          "scale_hex": "0x1.0089495841dfep+5",
+          "index": 188
+        },
+        {
+          "scale_hex": "0x1.0089495841e02p+5",
+          "index": 188
+        },
+        {
+          "scale_hex": "0x1.0089495841e03p+5",
+          "index": 188
+        }
+      ]
+    },
+    {
+      "boundary": 188,
+      "representable": [
+        {
+          "scale_hex": "0x1.088dd6eb601c5p+5",
+          "index": 188
+        },
+        {
+          "scale_hex": "0x1.088dd6eb601c6p+5",
+          "index": 188
+        },
+        {
+          "scale_hex": "0x1.088dd6eb601c7p+5",
+          "index": 188
+        },
+        {
+          "scale_hex": "0x1.088dd6eb601c8p+5",
+          "index": 188
+        },
+        {
+          "scale_hex": "0x1.088dd6eb601c9p+5",
+          "index": 188
+        },
+        {
+          "scale_hex": "0x1.088dd6eb601cap+5",
+          "index": 188
+        }
+      ]
+    },
+    {
+      "boundary": 189,
+      "representable": [
+        {
+          "scale_hex": "0x1.10d28b056bd17p+5",
+          "index": 190
+        },
+        {
+          "scale_hex": "0x1.10d28b056bd16p+5",
+          "index": 190
+        }
+      ]
+    },
+    {
+      "boundary": 190,
+      "representable": [
+        {
+          "scale_hex": "0x1.195966eb6f9c9p+5",
+          "index": 190
+        },
+        {
+          "scale_hex": "0x1.195966eb6f9cap+5",
+          "index": 190
+        }
+      ]
+    },
+    {
+      "boundary": 191,
+      "representable": [
+        {
+          "scale_hex": "0x1.22247bed250ddp+5",
+          "index": 192
+        },
+        {
+          "scale_hex": "0x1.22247bed250dep+5",
+          "index": 192
+        }
+      ]
+    },
+    {
+      "boundary": 192,
+      "representable": [
+        {
+          "scale_hex": "0x1.2b35ebe54e548p+5",
+          "index": 192
+        },
+        {
+          "scale_hex": "0x1.2b35ebe54e547p+5",
+          "index": 192
+        },
+        {
+          "scale_hex": "0x1.2b35ebe54e549p+5",
+          "index": 192
+        },
+        {
+          "scale_hex": "0x1.2b35ebe54e546p+5",
+          "index": 192
+        },
+        {
+          "scale_hex": "0x1.2b35ebe54e545p+5",
+          "index": 192
+        },
+        {
+          "scale_hex": "0x1.2b35ebe54e544p+5",
+          "index": 192
+        },
+        {
+          "scale_hex": "0x1.2b35ebe54e543p+5",
+          "index": 192
+        }
+      ]
+    },
+    {
+      "boundary": 193,
+      "representable": [
+        {
+          "scale_hex": "0x1.348fe9be12dbbp+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.348fe9be12dbap+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.348fe9be12dbcp+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.348fe9be12db9p+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.348fe9be12dbdp+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.348fe9be12db8p+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.348fe9be12dbep+5",
+          "index": 194
+        }
+      ]
+    },
+    {
+      "boundary": 194,
+      "representable": [
+        {
+          "scale_hex": "0x1.3e34b9f97eecbp+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.3e34b9f97eecap+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.3e34b9f97eeccp+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.3e34b9f97eec9p+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.3e34b9f97eecdp+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.3e34b9f97eecep+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.3e34b9f97eecfp+5",
+          "index": 194
+        },
+        {
+          "scale_hex": "0x1.3e34b9f97eed0p+5",
+          "index": 194
+        }
+      ]
+    },
+    {
+      "boundary": 195,
+      "representable": [
+        {
+          "scale_hex": "0x1.4826b33e4773bp+5",
+          "index": 196
+        },
+        {
+          "scale_hex": "0x1.4826b33e4773cp+5",
+          "index": 196
+        },
+        {
+          "scale_hex": "0x1.4826b33e4773dp+5",
+          "index": 196
+        },
+        {
+          "scale_hex": "0x1.4826b33e4773ep+5",
+          "index": 196
+        },
+        {
+          "scale_hex": "0x1.4826b33e4773fp+5",
+          "index": 196
+        },
+        {
+          "scale_hex": "0x1.4826b33e47740p+5",
+          "index": 196
+        },
+        {
+          "scale_hex": "0x1.4826b33e47741p+5",
+          "index": 196
+        },
+        {
+          "scale_hex": "0x1.4826b33e47742p+5",
+          "index": 196
+        }
+      ]
+    },
+    {
+      "boundary": 196,
+      "representable": [
+        {
+          "scale_hex": "0x1.52683ee8f406fp+5",
+          "index": 196
+        },
+        {
+          "scale_hex": "0x1.52683ee8f406ep+5",
+          "index": 196
+        },
+        {
+          "scale_hex": "0x1.52683ee8f406dp+5",
+          "index": 196
+        }
+      ]
+    },
+    {
+      "boundary": 197,
+      "representable": [
+        {
+          "scale_hex": "0x1.5cfbd9a192641p+5",
+          "index": 198
+        },
+        {
+          "scale_hex": "0x1.5cfbd9a192642p+5",
+          "index": 198
+        },
+        {
+          "scale_hex": "0x1.5cfbd9a192643p+5",
+          "index": 198
+        }
+      ]
+    },
+    {
+      "boundary": 198,
+      "representable": [
+        {
+          "scale_hex": "0x1.67e413f617b15p+5",
+          "index": 198
+        },
+        {
+          "scale_hex": "0x1.67e413f617b16p+5",
+          "index": 198
+        },
+        {
+          "scale_hex": "0x1.67e413f617b17p+5",
+          "index": 198
+        }
+      ]
+    },
+    {
+      "boundary": 199,
+      "representable": [
+        {
+          "scale_hex": "0x1.732392f994f01p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.732392f994f00p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.732392f994f02p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.732392f994effp+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.732392f994f03p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.732392f994efep+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.732392f994f04p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.732392f994efdp+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.732392f994efcp+5",
+          "index": 200
+        }
+      ]
+    },
+    {
+      "boundary": 200,
+      "representable": [
+        {
+          "scale_hex": "0x1.7ebd10e8653e6p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.7ebd10e8653e5p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.7ebd10e8653e7p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.7ebd10e8653e4p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.7ebd10e8653e8p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.7ebd10e8653e3p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.7ebd10e8653e9p+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.7ebd10e8653eap+5",
+          "index": 200
+        },
+        {
+          "scale_hex": "0x1.7ebd10e8653ebp+5",
+          "index": 200
+        }
+      ]
+    },
+    {
+      "boundary": 201,
+      "representable": [
+        {
+          "scale_hex": "0x1.8ab35dd17db40p+5",
+          "index": 202
+        },
+        {
+          "scale_hex": "0x1.8ab35dd17db3fp+5",
+          "index": 202
+        },
+        {
+          "scale_hex": "0x1.8ab35dd17db41p+5",
+          "index": 202
+        },
+        {
+          "scale_hex": "0x1.8ab35dd17db42p+5",
+          "index": 202
+        },
+        {
+          "scale_hex": "0x1.8ab35dd17db43p+5",
+          "index": 202
+        },
+        {
+          "scale_hex": "0x1.8ab35dd17db44p+5",
+          "index": 202
+        },
+        {
+          "scale_hex": "0x1.8ab35dd17db45p+5",
+          "index": 202
+        },
+        {
+          "scale_hex": "0x1.8ab35dd17db46p+5",
+          "index": 202
+        },
+        {
+          "scale_hex": "0x1.8ab35dd17db47p+5",
+          "index": 202
+        }
+      ]
+    },
+    {
+      "boundary": 202,
+      "representable": [
+        {
+          "scale_hex": "0x1.9709604507eb8p+5",
+          "index": 202
+        },
+        {
+          "scale_hex": "0x1.9709604507eb7p+5",
+          "index": 202
+        },
+        {
+          "scale_hex": "0x1.9709604507eb6p+5",
+          "index": 202
+        }
+      ]
+    },
+    {
+      "boundary": 203,
+      "representable": [
+        {
+          "scale_hex": "0x1.a3c21608718d9p+5",
+          "index": 204
+        },
+        {
+          "scale_hex": "0x1.a3c21608718dap+5",
+          "index": 204
+        },
+        {
+          "scale_hex": "0x1.a3c21608718dbp+5",
+          "index": 204
+        }
+      ]
+    },
+    {
+      "boundary": 204,
+      "representable": [
+        {
+          "scale_hex": "0x1.b0e094d01c87ap+5",
+          "index": 204
+        },
+        {
+          "scale_hex": "0x1.b0e094d01c87bp+5",
+          "index": 204
+        },
+        {
+          "scale_hex": "0x1.b0e094d01c87cp+5",
+          "index": 204
+        },
+        {
+          "scale_hex": "0x1.b0e094d01c87dp+5",
+          "index": 204
+        }
+      ]
+    },
+    {
+      "boundary": 205,
+      "representable": [
+        {
+          "scale_hex": "0x1.be680afedcf48p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf47p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf49p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf46p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf4ap+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf45p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf4bp+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf44p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf4cp+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf43p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf4dp+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf42p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf41p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.be680afedcf40p+5",
+          "index": 206
+        }
+      ]
+    },
+    {
+      "boundary": 206,
+      "representable": [
+        {
+          "scale_hex": "0x1.cc5bc06b7327ep+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b7327dp+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b7327fp+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b7327cp+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b73280p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b7327bp+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b73281p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b7327ap+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b73282p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b73279p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b73283p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b73278p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b73284p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b73285p+5",
+          "index": 206
+        },
+        {
+          "scale_hex": "0x1.cc5bc06b73286p+5",
+          "index": 206
+        }
+      ]
+    },
+    {
+      "boundary": 207,
+      "representable": [
+        {
+          "scale_hex": "0x1.dabf172c31bc5p+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bc4p+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bc6p+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bc3p+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bc7p+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bc2p+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bc8p+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bc1p+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bc9p+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bcap+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bcbp+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bccp+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bcdp+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bcep+5",
+          "index": 208
+        },
+        {
+          "scale_hex": "0x1.dabf172c31bcfp+5",
+          "index": 208
+        }
+      ]
+    },
+    {
+      "boundary": 211,
+      "representable": [
+        {
+          "scale_hex": "0x1.0c78174931fb0p+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.0c78174931fafp+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.0c78174931fb1p+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.0c78174931faep+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.0c78174931fb2p+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.0c78174931fadp+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.0c78174931facp+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.0c78174931fabp+6",
+          "index": 212
+        }
+      ]
+    },
+    {
+      "boundary": 212,
+      "representable": [
+        {
+          "scale_hex": "0x1.14dc1e6d096b0p+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.14dc1e6d096afp+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.14dc1e6d096b1p+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.14dc1e6d096aep+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.14dc1e6d096b2p+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.14dc1e6d096adp+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.14dc1e6d096b3p+6",
+          "index": 212
+        },
+        {
+          "scale_hex": "0x1.14dc1e6d096acp+6",
+          "index": 212
+        }
+      ]
+    },
+    {
+      "boundary": 213,
+      "representable": [
+        {
+          "scale_hex": "0x1.1d8347fd5e7d1p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.1d8347fd5e7d0p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.1d8347fd5e7d2p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.1d8347fd5e7cfp+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.1d8347fd5e7d3p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.1d8347fd5e7cep+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.1d8347fd5e7d4p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.1d8347fd5e7d5p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.1d8347fd5e7d6p+6",
+          "index": 214
+        }
+      ]
+    },
+    {
+      "boundary": 214,
+      "representable": [
+        {
+          "scale_hex": "0x1.266fad1f30a95p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.266fad1f30a94p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.266fad1f30a96p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.266fad1f30a97p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.266fad1f30a98p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.266fad1f30a99p+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.266fad1f30a9ap+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.266fad1f30a9bp+6",
+          "index": 214
+        },
+        {
+          "scale_hex": "0x1.266fad1f30a9cp+6",
+          "index": 214
+        }
+      ]
+    },
+    {
+      "boundary": 218,
+      "representable": [
+        {
+          "scale_hex": "0x1.4d01e2ef4b955p+6",
+          "index": 218
+        },
+        {
+          "scale_hex": "0x1.4d01e2ef4b954p+6",
+          "index": 218
+        },
+        {
+          "scale_hex": "0x1.4d01e2ef4b956p+6",
+          "index": 218
+        },
+        {
+          "scale_hex": "0x1.4d01e2ef4b953p+6",
+          "index": 218
+        },
+        {
+          "scale_hex": "0x1.4d01e2ef4b957p+6",
+          "index": 218
+        },
+        {
+          "scale_hex": "0x1.4d01e2ef4b952p+6",
+          "index": 218
+        },
+        {
+          "scale_hex": "0x1.4d01e2ef4b958p+6",
+          "index": 218
+        },
+        {
+          "scale_hex": "0x1.4d01e2ef4b951p+6",
+          "index": 218
+        },
+        {
+          "scale_hex": "0x1.4d01e2ef4b959p+6",
+          "index": 218
+        },
+        {
+          "scale_hex": "0x1.4d01e2ef4b950p+6",
+          "index": 218
+        },
+        {
+          "scale_hex": "0x1.4d01e2ef4b94fp+6",
+          "index": 218
+        }
+      ]
+    },
+    {
+      "boundary": 219,
+      "representable": [
+        {
+          "scale_hex": "0x1.576a495d8e4f0p+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.576a495d8e4efp+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.576a495d8e4f1p+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.576a495d8e4eep+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.576a495d8e4f2p+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.576a495d8e4edp+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.576a495d8e4f3p+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.576a495d8e4ecp+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.576a495d8e4f4p+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.576a495d8e4f5p+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.576a495d8e4f6p+6",
+          "index": 220
+        }
+      ]
+    },
+    {
+      "boundary": 220,
+      "representable": [
+        {
+          "scale_hex": "0x1.6225f5ba10498p+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.6225f5ba10497p+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.6225f5ba10499p+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.6225f5ba10496p+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.6225f5ba1049ap+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.6225f5ba1049bp+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.6225f5ba1049cp+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.6225f5ba1049dp+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.6225f5ba1049ep+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.6225f5ba1049fp+6",
+          "index": 220
+        },
+        {
+          "scale_hex": "0x1.6225f5ba104a0p+6",
+          "index": 220
+        }
+      ]
+    },
+    {
+      "boundary": 224,
+      "representable": [
+        {
+          "scale_hex": "0x1.908aac2bdcc67p+6",
+          "index": 224
+        },
+        {
+          "scale_hex": "0x1.908aac2bdcc66p+6",
+          "index": 224
+        },
+        {
+          "scale_hex": "0x1.908aac2bdcc68p+6",
+          "index": 224
+        },
+        {
+          "scale_hex": "0x1.908aac2bdcc65p+6",
+          "index": 224
+        },
+        {
+          "scale_hex": "0x1.908aac2bdcc69p+6",
+          "index": 224
+        },
+        {
+          "scale_hex": "0x1.908aac2bdcc64p+6",
+          "index": 224
+        },
+        {
+          "scale_hex": "0x1.908aac2bdcc6ap+6",
+          "index": 224
+        },
+        {
+          "scale_hex": "0x1.908aac2bdcc63p+6",
+          "index": 224
+        },
+        {
+          "scale_hex": "0x1.908aac2bdcc6bp+6",
+          "index": 224
+        },
+        {
+          "scale_hex": "0x1.908aac2bdcc62p+6",
+          "index": 224
+        },
+        {
+          "scale_hex": "0x1.908aac2bdcc61p+6",
+          "index": 224
+        },
+        {
+          "scale_hex": "0x1.908aac2bdcc60p+6",
+          "index": 224
+        }
+      ]
+    },
+    {
+      "boundary": 225,
+      "representable": [
+        {
+          "scale_hex": "0x1.9d0f6a9a67cfcp+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67cfbp+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67cfdp+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67cfap+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67cfep+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67cf9p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67cffp+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67cf8p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67d00p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67cf7p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67d01p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67cf6p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.9d0f6a9a67d02p+6",
+          "index": 226
+        }
+      ]
+    },
+    {
+      "boundary": 226,
+      "representable": [
+        {
+          "scale_hex": "0x1.a9f85244ec1fdp+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec1fcp+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec1fep+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec1fbp+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec1ffp+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec1fap+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec200p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec1f9p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec201p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec202p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec203p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec204p+6",
+          "index": 226
+        },
+        {
+          "scale_hex": "0x1.a9f85244ec205p+6",
+          "index": 226
+        }
+      ]
+    },
+    {
+      "boundary": 231,
+      "representable": [
+        {
+          "scale_hex": "0x1.f0d4510cd53bep+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53bdp+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53bfp+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53bcp+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53c0p+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53bbp+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53c1p+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53bap+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53c2p+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53b9p+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53c3p+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53b8p+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53c4p+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53b7p+6",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.f0d4510cd53b6p+6",
+          "index": 232
+        }
+      ]
+    },
+    {
+      "boundary": 232,
+      "representable": [
+        {
+          "scale_hex": "0x1.002dbaf1ad49cp+7",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.002dbaf1ad49bp+7",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.002dbaf1ad49dp+7",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.002dbaf1ad49ap+7",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.002dbaf1ad49ep+7",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.002dbaf1ad49fp+7",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.002dbaf1ad4a0p+7",
+          "index": 232
+        },
+        {
+          "scale_hex": "0x1.002dbaf1ad4a1p+7",
+          "index": 232
+        }
+      ]
+    },
+    {
+      "boundary": 233,
+      "representable": [
+        {
+          "scale_hex": "0x1.082f6bf9939c3p+7",
+          "index": 234
+        },
+        {
+          "scale_hex": "0x1.082f6bf9939c2p+7",
+          "index": 234
+        },
+        {
+          "scale_hex": "0x1.082f6bf9939c4p+7",
+          "index": 234
+        },
+        {
+          "scale_hex": "0x1.082f6bf9939c5p+7",
+          "index": 234
+        },
+        {
+          "scale_hex": "0x1.082f6bf9939c6p+7",
+          "index": 234
+        },
+        {
+          "scale_hex": "0x1.082f6bf9939c7p+7",
+          "index": 234
+        },
+        {
+          "scale_hex": "0x1.082f6bf9939c8p+7",
+          "index": 234
+        },
+        {
+          "scale_hex": "0x1.082f6bf9939c9p+7",
+          "index": 234
+        }
+      ]
+    },
+    {
+      "boundary": 237,
+      "representable": [
+        {
+          "scale_hex": "0x1.2acb228efd3d7p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.2acb228efd3d6p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.2acb228efd3d8p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.2acb228efd3d5p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.2acb228efd3d9p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.2acb228efd3d4p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.2acb228efd3dap+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.2acb228efd3d3p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.2acb228efd3d2p+7",
+          "index": 238
+        }
+      ]
+    },
+    {
+      "boundary": 238,
+      "representable": [
+        {
+          "scale_hex": "0x1.3421ca010d604p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.3421ca010d603p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.3421ca010d605p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.3421ca010d602p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.3421ca010d606p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.3421ca010d601p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.3421ca010d607p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.3421ca010d600p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.3421ca010d608p+7",
+          "index": 238
+        },
+        {
+          "scale_hex": "0x1.3421ca010d609p+7",
+          "index": 238
+        }
+      ]
+    },
+    {
+      "boundary": 239,
+      "representable": [
+        {
+          "scale_hex": "0x1.3dc32921af539p+7",
+          "index": 240
+        },
+        {
+          "scale_hex": "0x1.3dc32921af538p+7",
+          "index": 240
+        },
+        {
+          "scale_hex": "0x1.3dc32921af53ap+7",
+          "index": 240
+        },
+        {
+          "scale_hex": "0x1.3dc32921af537p+7",
+          "index": 240
+        },
+        {
+          "scale_hex": "0x1.3dc32921af53bp+7",
+          "index": 240
+        },
+        {
+          "scale_hex": "0x1.3dc32921af536p+7",
+          "index": 240
+        },
+        {
+          "scale_hex": "0x1.3dc32921af53cp+7",
+          "index": 240
+        },
+        {
+          "scale_hex": "0x1.3dc32921af53dp+7",
+          "index": 240
+        },
+        {
+          "scale_hex": "0x1.3dc32921af53ep+7",
+          "index": 240
+        },
+        {
+          "scale_hex": "0x1.3dc32921af53fp+7",
+          "index": 240
+        }
+      ]
+    },
+    {
+      "boundary": 243,
+      "representable": [
+        {
+          "scale_hex": "0x1.6763a293c09efp+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.6763a293c09eep+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.6763a293c09f0p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.6763a293c09edp+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.6763a293c09f1p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.6763a293c09ecp+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.6763a293c09f2p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.6763a293c09ebp+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.6763a293c09f3p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.6763a293c09eap+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.6763a293c09e9p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.6763a293c09e8p+7",
+          "index": 244
+        }
+      ]
+    },
+    {
+      "boundary": 244,
+      "representable": [
+        {
+          "scale_hex": "0x1.729f1dea7b3b2p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.729f1dea7b3b1p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.729f1dea7b3b3p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.729f1dea7b3b0p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.729f1dea7b3b4p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.729f1dea7b3afp+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.729f1dea7b3b5p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.729f1dea7b3aep+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.729f1dea7b3b6p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.729f1dea7b3adp+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.729f1dea7b3b7p+7",
+          "index": 244
+        },
+        {
+          "scale_hex": "0x1.729f1dea7b3b8p+7",
+          "index": 244
+        }
+      ]
+    },
+    {
+      "boundary": 245,
+      "representable": [
+        {
+          "scale_hex": "0x1.7e34780e1549ap+7",
+          "index": 246
+        },
+        {
+          "scale_hex": "0x1.7e34780e15499p+7",
+          "index": 246
+        },
+        {
+          "scale_hex": "0x1.7e34780e1549bp+7",
+          "index": 246
+        },
+        {
+          "scale_hex": "0x1.7e34780e15498p+7",
+          "index": 246
+        },
+        {
+          "scale_hex": "0x1.7e34780e1549cp+7",
+          "index": 246
+        },
+        {
+          "scale_hex": "0x1.7e34780e15497p+7",
+          "index": 246
+        },
+        {
+          "scale_hex": "0x1.7e34780e1549dp+7",
+          "index": 246
+        },
+        {
+          "scale_hex": "0x1.7e34780e15496p+7",
+          "index": 246
+        },
+        {
+          "scale_hex": "0x1.7e34780e1549ep+7",
+          "index": 246
+        },
+        {
+          "scale_hex": "0x1.7e34780e1549fp+7",
+          "index": 246
+        },
+        {
+          "scale_hex": "0x1.7e34780e154a0p+7",
+          "index": 246
+        },
+        {
+          "scale_hex": "0x1.7e34780e154a1p+7",
+          "index": 246
+        }
+      ]
+    },
+    {
+      "boundary": 250,
+      "representable": [
+        {
+          "scale_hex": "0x1.bdc8b922d1bb0p+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1bafp+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1bb1p+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1baep+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1bb2p+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1badp+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1bb3p+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1bacp+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1bb4p+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1babp+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1bb5p+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1baap+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1bb6p+7",
+          "index": 250
+        },
+        {
+          "scale_hex": "0x1.bdc8b922d1ba9p+7",
+          "index": 250
+        }
+      ]
+    },
+    {
+      "boundary": 251,
+      "representable": [
+        {
+          "scale_hex": "0x1.cbb773d6be883p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be882p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be884p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be881p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be885p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be880p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be886p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be87fp+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be887p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be87ep+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be888p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be889p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be88ap+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.cbb773d6be88bp+7",
+          "index": 252
+        }
+      ]
+    },
+    {
+      "boundary": 252,
+      "representable": [
+        {
+          "scale_hex": "0x1.da15a807c017ep+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c017dp+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c017fp+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c017cp+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c0180p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c017bp+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c0181p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c017ap+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c0182p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c0183p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c0184p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c0185p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c0186p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c0187p+7",
+          "index": 252
+        },
+        {
+          "scale_hex": "0x1.da15a807c0188p+7",
+          "index": 252
+        }
+      ]
+    }
+  ],
+  "no_exact_tie_in_65_neighboring_floats": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    14,
+    15,
+    18,
+    19,
+    22,
+    23,
+    26,
+    27,
+    30,
+    31,
+    42,
+    56,
+    110,
+    141,
+    176,
+    208,
+    209,
+    210,
+    215,
+    216,
+    217,
+    221,
+    222,
+    223,
+    227,
+    228,
+    229,
+    230,
+    234,
+    235,
+    236,
+    240,
+    241,
+    242,
+    246,
+    247,
+    248,
+    249,
+    253,
+    254
+  ],
+  "scope": "No native rerun or source/CDF changes; high precision midpoint sides and exact representable computed-log ties."
+}

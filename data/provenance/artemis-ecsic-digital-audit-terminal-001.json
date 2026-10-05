@@ -1,0 +1,34 @@
+{
+  "schema": "ecsic-digital-audit-terminal-v1",
+  "state": "completed_exit0_CPU_only",
+  "job_id": "11424237",
+  "checked_unix": 1791138011.3617647,
+  "slurm_time_zone": "UTC",
+  "sacct_command": [
+    "env",
+    "TZ=UTC",
+    "sacct",
+    "-n",
+    "-P",
+    "-j",
+    "11424237",
+    "--format=JobIDRaw,State,ExitCode,AllocTRES,Start,End"
+  ],
+  "sacct_raw": "11424237|COMPLETED|0:0|billing=4,cpu=4,mem=16G,node=1|2026-10-04T18:18:50|2026-10-04T18:19:32\n11424237.batch|COMPLETED|0:0|cpu=4,mem=16G,node=1|2026-10-04T18:18:50|2026-10-04T18:19:32\n11424237.extern|COMPLETED|0:0|billing=4,cpu=4,mem=16G,node=1|2026-10-04T18:18:50|2026-10-04T18:19:32\n",
+  "squeue_command": [
+    "squeue",
+    "-h",
+    "-j",
+    "11424237",
+    "-o",
+    "%i|%T"
+  ],
+  "squeue_raw": "",
+  "fresh_file_sha256": {
+    "data/provenance/ecsic-digital-CPU-001-audit.json": "05d75ce7170697218776308d60b0d17b328e5d42f16379fed6b40a09135bf928",
+    "data/provenance/verify-ecsic-digital-CPU-001.py": "43b4094774ff3dbbbf3ebbdcf9d4e44677c25dc7f524278c4521897156204831",
+    "data/provenance/audit-ecsic-digital-CPU-001.sbatch": "c0cdef205142043faf2ba9bf87b7ec7c9f15e254150b16ee645ceb20a7579382",
+    "logs/artemis-ecsic-digital-audit-001-11424237.out": "cd786370cb37bfd363677f603e3f55ff2c30917079fb8d8e1625bc192c5d832f",
+    "logs/artemis-ecsic-digital-audit-001-11424237.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

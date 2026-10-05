@@ -1,0 +1,66 @@
+{
+  "state": "passed_complete_actual_frozen_detector_detection_loss_RGB_autograd_evidence",
+  "checked_unix": 1791177288.6890628,
+  "verifier_sha256": "3153a6dd541d06b7595f78431494bdbaeb5046040e4589f59f2777ea5044fc51",
+  "job_id": "11424856",
+  "actual_terminal": true,
+  "whole_array_values": 20091058,
+  "all_gradient_values": 4792320,
+  "frames": [
+    {
+      "frame": "000000",
+      "whole_array_values": 10045520,
+      "positive_anchors": 2,
+      "losses": [
+        0.0027678741607815027,
+        0.06969308108091354,
+        0.07246095687150955
+      ],
+      "independent_GT_max_error": 0.0,
+      "both_gradient_values": 2396160,
+      "original_sensor_only_forward_inputs_exact": true,
+      "prediction_deltas_vs_no_grad": {
+        "pred_boxes": 3.063678741455078e-05,
+        "pred_scores": 8.225440979003906e-06,
+        "pred_labels": 0.0
+      },
+      "prediction_numerical_equivalence_verified": false,
+      "full484_states_unchanged": true
+    },
+    {
+      "frame": "000003",
+      "whole_array_values": 10045538,
+      "positive_anchors": 22,
+      "losses": [
+        0.0008506854646839201,
+        0.09715187549591064,
+        0.09800256043672562
+      ],
+      "independent_GT_max_error": 0.0,
+      "both_gradient_values": 2396160,
+      "original_sensor_only_forward_inputs_exact": true,
+      "prediction_deltas_vs_no_grad": {
+        "pred_boxes": 7.176399230957031e-05,
+        "pred_scores": 2.0712614059448242e-05,
+        "pred_labels": 0.0
+      },
+      "prediction_numerical_equivalence_verified": false,
+      "full484_states_unchanged": true
+    }
+  ],
+  "artifacts_sha256": {
+    "data/engineering/artemis-detector-gradient-GPU-001/report.json": "5ec2583818b40ea4b5d2a8a966d442ddf80307ab4433e5d7b0d3d8b5c34e5bee",
+    "data/engineering/artemis-detector-gradient-GPU-001/terminal.json": "cbf6d2f992945e84375b2df568e291a2edeecfb69d1b92066378ca8f24c478a3",
+    "data/engineering/artemis-detector-gradient-GPU-001/000000.npz": "4b8d396c943065341ec15a858c39382d132bdbfb1775fb35351ab9e0f5401f00",
+    "data/engineering/artemis-detector-gradient-GPU-001/000003.npz": "e669b099e9f779b272ac6d0589be4a5866ac7f2c21699b763b819a38a87afbfc",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000003-right.png": "ca44da39dcc83befde20753ac2bdb527314a2a78067757f2298ae6df947a1f9d",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000000-left.png": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000000-label.txt": "6627ff300809ccdb8f0402c1003b7c691a64e3027ceaf0ce7cabfeef9809d0c3",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000003-calib.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000003-left.png": "d22f4692c924e0ba7ff2ac00827547d4bd018d991fb9f1959025b183a949af19",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000000-calib.txt": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000000-right.png": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000003-label.txt": "56f275a7b3464992db4bb524ee84cc09fb4ca621b6e63e281f6defa0a79b2651"
+  },
+  "limitation": "Full saved autograd evidence and independently transformed GT; no finite-difference oracle, optimized codec, sparse teacher GPU, fullval or geometry-specific AP benefit"
+}

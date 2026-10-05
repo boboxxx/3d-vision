@@ -1,0 +1,544 @@
+diff --git a/lib/datasets/imdb.py b/lib/datasets/imdb.py
+index 20109dd..fd6a2e5 100644
+--- a/lib/datasets/imdb.py
++++ b/lib/datasets/imdb.py
+@@ -187,8 +187,8 @@ class imdb(object):
+       if gt_roidb is not None and gt_roidb[i]['boxes'].size > 0:
+         gt_boxes = gt_roidb[i]['boxes']
+         gt_classes = gt_roidb[i]['gt_classes']
+-        gt_overlaps = bbox_overlaps(boxes.astype(np.float),
+-                                    gt_boxes.astype(np.float))
++        gt_overlaps = bbox_overlaps(boxes.astype(float),
++                                    gt_boxes.astype(float))
+         argmaxes = gt_overlaps.argmax(axis=1)
+         maxes = gt_overlaps.max(axis=1)
+         I = np.where(maxes > 0)[0]
+diff --git a/lib/model/csrc/ROIAlign.h b/lib/model/csrc/ROIAlign.h
+index 3907dea..2b049f0 100644
+--- a/lib/model/csrc/ROIAlign.h
++++ b/lib/model/csrc/ROIAlign.h
+@@ -14,7 +14,7 @@ at::Tensor ROIAlign_forward(const at::Tensor& input,
+                             const int pooled_height,
+                             const int pooled_width,
+                             const int sampling_ratio) {
+-  if (input.type().is_cuda()) {
++  if (input.is_cuda()) {
+ #ifdef WITH_CUDA
+     return ROIAlign_forward_cuda(input, rois, spatial_scale, pooled_height, pooled_width, sampling_ratio);
+ #else
+@@ -34,7 +34,7 @@ at::Tensor ROIAlign_backward(const at::Tensor& grad,
+                              const int height,
+                              const int width,
+                              const int sampling_ratio) {
+-  if (grad.type().is_cuda()) {
++  if (grad.is_cuda()) {
+ #ifdef WITH_CUDA
+     return ROIAlign_backward_cuda(grad, rois, spatial_scale, pooled_height, pooled_width, batch_size, channels, height, width, sampling_ratio);
+ #else
+diff --git a/lib/model/csrc/ROIPool.h b/lib/model/csrc/ROIPool.h
+index 200fd73..13db1a2 100644
+--- a/lib/model/csrc/ROIPool.h
++++ b/lib/model/csrc/ROIPool.h
+@@ -13,7 +13,7 @@ std::tuple<at::Tensor, at::Tensor> ROIPool_forward(const at::Tensor& input,
+                                 const float spatial_scale,
+                                 const int pooled_height,
+                                 const int pooled_width) {
+-  if (input.type().is_cuda()) {
++  if (input.is_cuda()) {
+ #ifdef WITH_CUDA
+     return ROIPool_forward_cuda(input, rois, spatial_scale, pooled_height, pooled_width);
+ #else
+@@ -34,7 +34,7 @@ at::Tensor ROIPool_backward(const at::Tensor& grad,
+                                  const int channels,
+                                  const int height,
+                                  const int width) {
+-  if (grad.type().is_cuda()) {
++  if (grad.is_cuda()) {
+ #ifdef WITH_CUDA
+     return ROIPool_backward_cuda(grad, input, rois, argmax, spatial_scale, pooled_height, pooled_width, batch_size, channels, height, width);
+ #else
+diff --git a/lib/model/csrc/cpu/ROIAlign_cpu.cpp b/lib/model/csrc/cpu/ROIAlign_cpu.cpp
+index d35aedf..f67920a 100644
+--- a/lib/model/csrc/cpu/ROIAlign_cpu.cpp
++++ b/lib/model/csrc/cpu/ROIAlign_cpu.cpp
+@@ -224,8 +224,8 @@ at::Tensor ROIAlign_forward_cpu(const at::Tensor& input,
+                                 const int pooled_height,
+                                 const int pooled_width,
+                                 const int sampling_ratio) {
+-  AT_ASSERTM(!input.type().is_cuda(), "input must be a CPU tensor");
+-  AT_ASSERTM(!rois.type().is_cuda(), "rois must be a CPU tensor");
++  AT_ASSERTM(!input.is_cuda(), "input must be a CPU tensor");
++  AT_ASSERTM(!rois.is_cuda(), "rois must be a CPU tensor");
+ 
+   auto num_rois = rois.size(0);
+   auto channels = input.size(1);
+@@ -239,10 +239,10 @@ at::Tensor ROIAlign_forward_cpu(const at::Tensor& input,
+     return output;
+   }
+ 
+-  AT_DISPATCH_FLOATING_TYPES(input.type(), "ROIAlign_forward", [&] {
++  AT_DISPATCH_FLOATING_TYPES(input.scalar_type(), "ROIAlign_forward", [&] {
+     ROIAlignForward_cpu_kernel<scalar_t>(
+          output_size,
+-         input.data<scalar_t>(),
++         input.data_ptr<scalar_t>(),
+          spatial_scale,
+          channels,
+          height,
+@@ -250,8 +250,8 @@ at::Tensor ROIAlign_forward_cpu(const at::Tensor& input,
+          pooled_height,
+          pooled_width,
+          sampling_ratio,
+-         rois.data<scalar_t>(),
+-         output.data<scalar_t>());
++         rois.data_ptr<scalar_t>(),
++         output.data_ptr<scalar_t>());
+   });
+   return output;
+ }
+diff --git a/lib/model/csrc/cpu/nms_cpu.cpp b/lib/model/csrc/cpu/nms_cpu.cpp
+index 1153dea..791b375 100644
+--- a/lib/model/csrc/cpu/nms_cpu.cpp
++++ b/lib/model/csrc/cpu/nms_cpu.cpp
+@@ -6,9 +6,9 @@ template <typename scalar_t>
+ at::Tensor nms_cpu_kernel(const at::Tensor& dets,
+                           const at::Tensor& scores,
+                           const float threshold) {
+-  AT_ASSERTM(!dets.type().is_cuda(), "dets must be a CPU tensor");
+-  AT_ASSERTM(!scores.type().is_cuda(), "scores must be a CPU tensor");
+-  AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
++  AT_ASSERTM(!dets.is_cuda(), "dets must be a CPU tensor");
++  AT_ASSERTM(!scores.is_cuda(), "scores must be a CPU tensor");
++  AT_ASSERTM(dets.scalar_type() == scores.scalar_type(), "dets should have the same type as scores");
+ 
+   if (dets.numel() == 0) {
+     return at::empty({0}, dets.options().dtype(at::kLong).device(at::kCPU));
+@@ -26,13 +26,13 @@ at::Tensor nms_cpu_kernel(const at::Tensor& dets,
+   auto ndets = dets.size(0);
+   at::Tensor suppressed_t = at::zeros({ndets}, dets.options().dtype(at::kByte).device(at::kCPU));
+ 
+-  auto suppressed = suppressed_t.data<uint8_t>();
+-  auto order = order_t.data<int64_t>();
+-  auto x1 = x1_t.data<scalar_t>();
+-  auto y1 = y1_t.data<scalar_t>();
+-  auto x2 = x2_t.data<scalar_t>();
+-  auto y2 = y2_t.data<scalar_t>();
+-  auto areas = areas_t.data<scalar_t>();
++  auto suppressed = suppressed_t.data_ptr<uint8_t>();
++  auto order = order_t.data_ptr<int64_t>();
++  auto x1 = x1_t.data_ptr<scalar_t>();
++  auto y1 = y1_t.data_ptr<scalar_t>();
++  auto x2 = x2_t.data_ptr<scalar_t>();
++  auto y2 = y2_t.data_ptr<scalar_t>();
++  auto areas = areas_t.data_ptr<scalar_t>();
+ 
+   for (int64_t _i = 0; _i < ndets; _i++) {
+     auto i = order[_i];
+@@ -68,7 +68,7 @@ at::Tensor nms_cpu(const at::Tensor& dets,
+                const at::Tensor& scores,
+                const float threshold) {
+   at::Tensor result;
+-  AT_DISPATCH_FLOATING_TYPES(dets.type(), "nms", [&] {
++  AT_DISPATCH_FLOATING_TYPES(dets.scalar_type(), "nms", [&] {
+     result = nms_cpu_kernel<scalar_t>(dets, scores, threshold);
+   });
+   return result;
+diff --git a/lib/model/csrc/cuda/ROIAlign_cuda.cu b/lib/model/csrc/cuda/ROIAlign_cuda.cu
+index 5fe97ca..c3205f1 100644
+--- a/lib/model/csrc/cuda/ROIAlign_cuda.cu
++++ b/lib/model/csrc/cuda/ROIAlign_cuda.cu
+@@ -2,9 +2,9 @@
+ #include <ATen/ATen.h>
+ #include <ATen/cuda/CUDAContext.h>
+ 
+-#include <THC/THC.h>
+-#include <THC/THCAtomics.cuh>
+-#include <THC/THCDeviceUtils.cuh>
++#include <c10/cuda/CUDAException.h>
++#include <ATen/cuda/Atomic.cuh>
++template <typename T> __host__ __device__ T stereo_ceil_div(T a, T b) { return (a + b - 1) / b; }
+ 
+ // TODO make it in a common file
+ #define CUDA_1D_KERNEL_LOOP(i, n)                            \
+@@ -260,8 +260,8 @@ at::Tensor ROIAlign_forward_cuda(const at::Tensor& input,
+                                  const int pooled_height,
+                                  const int pooled_width,
+                                  const int sampling_ratio) {
+-  AT_ASSERTM(input.type().is_cuda(), "input must be a CUDA tensor");
+-  AT_ASSERTM(rois.type().is_cuda(), "rois must be a CUDA tensor");
++  AT_ASSERTM(input.is_cuda(), "input must be a CUDA tensor");
++  AT_ASSERTM(rois.is_cuda(), "rois must be a CUDA tensor");
+ 
+   auto num_rois = rois.size(0);
+   auto channels = input.size(1);
+@@ -272,18 +272,18 @@ at::Tensor ROIAlign_forward_cuda(const at::Tensor& input,
+   auto output_size = num_rois * pooled_height * pooled_width * channels;
+   cudaStream_t stream = at::cuda::getCurrentCUDAStream();
+ 
+-  dim3 grid(std::min(THCCeilDiv(output_size, 512L), 4096L));
++  dim3 grid(std::min(stereo_ceil_div(output_size, 512L), 4096L));
+   dim3 block(512);
+ 
+   if (output.numel() == 0) {
+-    THCudaCheck(cudaGetLastError());
++    C10_CUDA_CHECK(cudaGetLastError());
+     return output;
+   }
+ 
+-  AT_DISPATCH_FLOATING_TYPES(input.type(), "ROIAlign_forward", [&] {
++  AT_DISPATCH_FLOATING_TYPES(input.scalar_type(), "ROIAlign_forward", [&] {
+     RoIAlignForward<scalar_t><<<grid, block, 0, stream>>>(
+          output_size,
+-         input.contiguous().data<scalar_t>(),
++         input.contiguous().data_ptr<scalar_t>(),
+          spatial_scale,
+          channels,
+          height,
+@@ -291,10 +291,10 @@ at::Tensor ROIAlign_forward_cuda(const at::Tensor& input,
+          pooled_height,
+          pooled_width,
+          sampling_ratio,
+-         rois.contiguous().data<scalar_t>(),
+-         output.data<scalar_t>());
++         rois.contiguous().data_ptr<scalar_t>(),
++         output.data_ptr<scalar_t>());
+   });
+-  THCudaCheck(cudaGetLastError());
++  C10_CUDA_CHECK(cudaGetLastError());
+   return output;
+ }
+ 
+@@ -309,27 +309,27 @@ at::Tensor ROIAlign_backward_cuda(const at::Tensor& grad,
+                                   const int height,
+                                   const int width,
+                                   const int sampling_ratio) {
+-  AT_ASSERTM(grad.type().is_cuda(), "grad must be a CUDA tensor");
+-  AT_ASSERTM(rois.type().is_cuda(), "rois must be a CUDA tensor");
++  AT_ASSERTM(grad.is_cuda(), "grad must be a CUDA tensor");
++  AT_ASSERTM(rois.is_cuda(), "rois must be a CUDA tensor");
+ 
+   auto num_rois = rois.size(0);
+   auto grad_input = at::zeros({batch_size, channels, height, width}, grad.options());
+ 
+   cudaStream_t stream = at::cuda::getCurrentCUDAStream();
+ 
+-  dim3 grid(std::min(THCCeilDiv(grad.numel(), 512L), 4096L));
++  dim3 grid(std::min(stereo_ceil_div(grad.numel(), 512L), 4096L));
+   dim3 block(512);
+ 
+   // handle possibly empty gradients
+   if (grad.numel() == 0) {
+-    THCudaCheck(cudaGetLastError());
++    C10_CUDA_CHECK(cudaGetLastError());
+     return grad_input;
+   }
+ 
+-  AT_DISPATCH_FLOATING_TYPES(grad.type(), "ROIAlign_backward", [&] {
++  AT_DISPATCH_FLOATING_TYPES(grad.scalar_type(), "ROIAlign_backward", [&] {
+     RoIAlignBackwardFeature<scalar_t><<<grid, block, 0, stream>>>(
+          grad.numel(),
+-         grad.contiguous().data<scalar_t>(),
++         grad.contiguous().data_ptr<scalar_t>(),
+          num_rois,
+          spatial_scale,
+          channels,
+@@ -338,9 +338,9 @@ at::Tensor ROIAlign_backward_cuda(const at::Tensor& grad,
+          pooled_height,
+          pooled_width,
+          sampling_ratio,
+-         grad_input.data<scalar_t>(),
+-         rois.contiguous().data<scalar_t>());
++         grad_input.data_ptr<scalar_t>(),
++         rois.contiguous().data_ptr<scalar_t>());
+   });
+-  THCudaCheck(cudaGetLastError());
++  C10_CUDA_CHECK(cudaGetLastError());
+   return grad_input;
+ }
+diff --git a/lib/model/csrc/cuda/ROIPool_cuda.cu b/lib/model/csrc/cuda/ROIPool_cuda.cu
+index b826dd9..c2579ec 100644
+--- a/lib/model/csrc/cuda/ROIPool_cuda.cu
++++ b/lib/model/csrc/cuda/ROIPool_cuda.cu
+@@ -2,9 +2,9 @@
+ #include <ATen/ATen.h>
+ #include <ATen/cuda/CUDAContext.h>
+ 
+-#include <THC/THC.h>
+-#include <THC/THCAtomics.cuh>
+-#include <THC/THCDeviceUtils.cuh>
++#include <c10/cuda/CUDAException.h>
++#include <ATen/cuda/Atomic.cuh>
++template <typename T> __host__ __device__ T stereo_ceil_div(T a, T b) { return (a + b - 1) / b; }
+ 
+ 
+ // TODO make it in a common file
+@@ -112,8 +112,8 @@ std::tuple<at::Tensor, at::Tensor> ROIPool_forward_cuda(const at::Tensor& input,
+                                 const float spatial_scale,
+                                 const int pooled_height,
+                                 const int pooled_width) {
+-  AT_ASSERTM(input.type().is_cuda(), "input must be a CUDA tensor");
+-  AT_ASSERTM(rois.type().is_cuda(), "rois must be a CUDA tensor");
++  AT_ASSERTM(input.is_cuda(), "input must be a CUDA tensor");
++  AT_ASSERTM(rois.is_cuda(), "rois must be a CUDA tensor");
+ 
+   auto num_rois = rois.size(0);
+   auto channels = input.size(1);
+@@ -126,29 +126,29 @@ std::tuple<at::Tensor, at::Tensor> ROIPool_forward_cuda(const at::Tensor& input,
+ 
+   cudaStream_t stream = at::cuda::getCurrentCUDAStream();
+ 
+-  dim3 grid(std::min(THCCeilDiv(output_size, 512L), 4096L));
++  dim3 grid(std::min(stereo_ceil_div(output_size, 512L), 4096L));
+   dim3 block(512);
+ 
+   if (output.numel() == 0) {
+-    THCudaCheck(cudaGetLastError());
++    C10_CUDA_CHECK(cudaGetLastError());
+     return std::make_tuple(output, argmax);
+   }
+ 
+-  AT_DISPATCH_FLOATING_TYPES(input.type(), "ROIPool_forward", [&] {
++  AT_DISPATCH_FLOATING_TYPES(input.scalar_type(), "ROIPool_forward", [&] {
+     RoIPoolFForward<scalar_t><<<grid, block, 0, stream>>>(
+          output_size,
+-         input.contiguous().data<scalar_t>(),
++         input.contiguous().data_ptr<scalar_t>(),
+          spatial_scale,
+          channels,
+          height,
+          width,
+          pooled_height,
+          pooled_width,
+-         rois.contiguous().data<scalar_t>(),
+-         output.data<scalar_t>(),
+-         argmax.data<int>());
++         rois.contiguous().data_ptr<scalar_t>(),
++         output.data_ptr<scalar_t>(),
++         argmax.data_ptr<int>());
+   });
+-  THCudaCheck(cudaGetLastError());
++  C10_CUDA_CHECK(cudaGetLastError());
+   return std::make_tuple(output, argmax);
+ }
+ 
+@@ -164,8 +164,8 @@ at::Tensor ROIPool_backward_cuda(const at::Tensor& grad,
+                                  const int channels,
+                                  const int height,
+                                  const int width) {
+-  AT_ASSERTM(grad.type().is_cuda(), "grad must be a CUDA tensor");
+-  AT_ASSERTM(rois.type().is_cuda(), "rois must be a CUDA tensor");
++  AT_ASSERTM(grad.is_cuda(), "grad must be a CUDA tensor");
++  AT_ASSERTM(rois.is_cuda(), "rois must be a CUDA tensor");
+   // TODO add more checks
+ 
+   auto num_rois = rois.size(0);
+@@ -173,20 +173,20 @@ at::Tensor ROIPool_backward_cuda(const at::Tensor& grad,
+ 
+   cudaStream_t stream = at::cuda::getCurrentCUDAStream();
+ 
+-  dim3 grid(std::min(THCCeilDiv(grad.numel(), 512L), 4096L));
++  dim3 grid(std::min(stereo_ceil_div(grad.numel(), 512L), 4096L));
+   dim3 block(512);
+ 
+   // handle possibly empty gradients
+   if (grad.numel() == 0) {
+-    THCudaCheck(cudaGetLastError());
++    C10_CUDA_CHECK(cudaGetLastError());
+     return grad_input;
+   }
+ 
+-  AT_DISPATCH_FLOATING_TYPES(grad.type(), "ROIPool_backward", [&] {
++  AT_DISPATCH_FLOATING_TYPES(grad.scalar_type(), "ROIPool_backward", [&] {
+     RoIPoolFBackward<scalar_t><<<grid, block, 0, stream>>>(
+          grad.numel(),
+-         grad.contiguous().data<scalar_t>(),
+-         argmax.data<int>(),
++         grad.contiguous().data_ptr<scalar_t>(),
++         argmax.data_ptr<int>(),
+          num_rois,
+          spatial_scale,
+          channels,
+@@ -194,9 +194,9 @@ at::Tensor ROIPool_backward_cuda(const at::Tensor& grad,
+          width,
+          pooled_height,
+          pooled_width,
+-         grad_input.data<scalar_t>(),
+-         rois.contiguous().data<scalar_t>());
++         grad_input.data_ptr<scalar_t>(),
++         rois.contiguous().data_ptr<scalar_t>());
+   });
+-  THCudaCheck(cudaGetLastError());
++  C10_CUDA_CHECK(cudaGetLastError());
+   return grad_input;
+ }
+diff --git a/lib/model/csrc/cuda/nms.cu b/lib/model/csrc/cuda/nms.cu
+index 833d852..8326837 100644
+--- a/lib/model/csrc/cuda/nms.cu
++++ b/lib/model/csrc/cuda/nms.cu
+@@ -2,8 +2,8 @@
+ #include <ATen/ATen.h>
+ #include <ATen/cuda/CUDAContext.h>
+ 
+-#include <THC/THC.h>
+-#include <THC/THCDeviceUtils.cuh>
++#include <c10/cuda/CUDAException.h>
++template <typename T> __host__ __device__ T stereo_ceil_div(T a, T b) { return (a + b - 1) / b; }
+ 
+ #include <vector>
+ #include <iostream>
+@@ -61,7 +61,7 @@ __global__ void nms_kernel(const int n_boxes, const float nms_overlap_thresh,
+         t |= 1ULL << i;
+       }
+     }
+-    const int col_blocks = THCCeilDiv(n_boxes, threadsPerBlock);
++    const int col_blocks = stereo_ceil_div(n_boxes, threadsPerBlock);
+     dev_mask[cur_box_idx * col_blocks + col_start] = t;
+   }
+ }
+@@ -69,35 +69,30 @@ __global__ void nms_kernel(const int n_boxes, const float nms_overlap_thresh,
+ // boxes is a N x 5 tensor
+ at::Tensor nms_cuda(const at::Tensor boxes, float nms_overlap_thresh) {
+   using scalar_t = float;
+-  AT_ASSERTM(boxes.type().is_cuda(), "boxes must be a CUDA tensor");
++  AT_ASSERTM(boxes.is_cuda(), "boxes must be a CUDA tensor");
+   auto scores = boxes.select(1, 4);
+   auto order_t = std::get<1>(scores.sort(0, /* descending=*/true));
+   auto boxes_sorted = boxes.index_select(0, order_t);
+ 
+   int boxes_num = boxes.size(0);
+ 
+-  const int col_blocks = THCCeilDiv(boxes_num, threadsPerBlock);
++  const int col_blocks = stereo_ceil_div(boxes_num, threadsPerBlock);
+ 
+-  scalar_t* boxes_dev = boxes_sorted.data<scalar_t>();
++  scalar_t* boxes_dev = boxes_sorted.data_ptr<scalar_t>();
+ 
+-  THCState *state = at::globalContext().lazyInitCUDA(); // TODO replace with getTHCState
++  auto mask_tensor = at::empty({boxes_num * col_blocks}, boxes.options().dtype(at::kLong));
++  auto mask_dev = reinterpret_cast<unsigned long long*>(mask_tensor.data_ptr<int64_t>());
+ 
+-  unsigned long long* mask_dev = NULL;
+-  //THCudaCheck(THCudaMalloc(state, (void**) &mask_dev,
+-  //                      boxes_num * col_blocks * sizeof(unsigned long long)));
+-
+-  mask_dev = (unsigned long long*) THCudaMalloc(state, boxes_num * col_blocks * sizeof(unsigned long long));
+-
+-  dim3 blocks(THCCeilDiv(boxes_num, threadsPerBlock),
+-              THCCeilDiv(boxes_num, threadsPerBlock));
++  dim3 blocks(stereo_ceil_div(boxes_num, threadsPerBlock),
++              stereo_ceil_div(boxes_num, threadsPerBlock));
+   dim3 threads(threadsPerBlock);
+-  nms_kernel<<<blocks, threads>>>(boxes_num,
++  nms_kernel<<<blocks, threads, 0, at::cuda::getCurrentCUDAStream()>>>(boxes_num,
+                                   nms_overlap_thresh,
+                                   boxes_dev,
+                                   mask_dev);
+ 
+   std::vector<unsigned long long> mask_host(boxes_num * col_blocks);
+-  THCudaCheck(cudaMemcpy(&mask_host[0],
++  C10_CUDA_CHECK(cudaMemcpy(&mask_host[0],
+                         mask_dev,
+                         sizeof(unsigned long long) * boxes_num * col_blocks,
+                         cudaMemcpyDeviceToHost));
+@@ -106,7 +101,7 @@ at::Tensor nms_cuda(const at::Tensor boxes, float nms_overlap_thresh) {
+   memset(&remv[0], 0, sizeof(unsigned long long) * col_blocks);
+ 
+   at::Tensor keep = at::empty({boxes_num}, boxes.options().dtype(at::kLong).device(at::kCPU));
+-  int64_t* keep_out = keep.data<int64_t>();
++  int64_t* keep_out = keep.data_ptr<int64_t>();
+ 
+   int num_to_keep = 0;
+   for (int i = 0; i < boxes_num; i++) {
+@@ -122,7 +117,6 @@ at::Tensor nms_cuda(const at::Tensor boxes, float nms_overlap_thresh) {
+     }
+   }
+ 
+-  THCudaFree(state, mask_dev);
+   // TODO improve this part
+   return std::get<0>(order_t.index({
+                        keep.narrow(/*dim=*/0, /*start=*/0, /*length=*/num_to_keep).to(
+diff --git a/lib/model/csrc/nms.h b/lib/model/csrc/nms.h
+index 312fed4..0cf71db 100644
+--- a/lib/model/csrc/nms.h
++++ b/lib/model/csrc/nms.h
+@@ -11,7 +11,7 @@ at::Tensor nms(const at::Tensor& dets,
+                const at::Tensor& scores,
+                const float threshold) {
+ 
+-  if (dets.type().is_cuda()) {
++  if (dets.is_cuda()) {
+ #ifdef WITH_CUDA
+     // TODO raise error if not compiled with CUDA
+     if (dets.numel() == 0)
+diff --git a/lib/model/dense_align/dense_align.py b/lib/model/dense_align/dense_align.py
+index 6576a7e..253df80 100644
+--- a/lib/model/dense_align/dense_align.py
++++ b/lib/model/dense_align/dense_align.py
+@@ -129,8 +129,8 @@ def align(calib, scale, im_left, im_right, \
+ 		dis = depth.reciprocal()*f*bl
+ 		delta_d = (all_uvz[:,:,2]/(f*bl) + dis.reciprocal().unsqueeze(1).expand(-1,all_uvz.size(1))).reciprocal() # num calculate delta disparity for each pixel
+ 		grid_right[0,:,:,0] = (all_uvz[:,:,0] - delta_d - f_w/2)/(f_w/2)
+-		error = F.grid_sample(im_left,grid_left, padding_mode='border')-\
+-				F.grid_sample(im_right,grid_right, padding_mode='border')  # (1L, 3L, rois, num)
++		error = F.grid_sample(im_left,grid_left, padding_mode='border', align_corners=True)-\
++				F.grid_sample(im_right,grid_right, padding_mode='border', align_corners=True)  # (1L, 3L, rois, num)
+ 		
+ 		error = error.squeeze(0).data 					 		 # (3L, rois, num)
+ 		error_pixel = error.permute(1,0,2).contiguous() 	 	 # (rois, 3L, num)
+@@ -155,8 +155,8 @@ def align(calib, scale, im_left, im_right, \
+ 		dis = depth.reciprocal()*f*bl
+ 		delta_d = (all_uvz[:,:,2]/(f*bl) + dis.reciprocal().unsqueeze(1).expand(-1,all_uvz.size(1))).reciprocal() # num calculate delta disparity for each pixel
+ 		grid_right[0,:,:,0] = (all_uvz[:,:,0] - delta_d - f_w/2)/(f_w/2)
+-		error = F.grid_sample(im_left,grid_left, padding_mode='border')-\
+-				F.grid_sample(im_right,grid_right, padding_mode='border')  # (1L, 3L, rois, num)
++		error = F.grid_sample(im_left,grid_left, padding_mode='border', align_corners=True)-\
++				F.grid_sample(im_right,grid_right, padding_mode='border', align_corners=True)  # (1L, 3L, rois, num)
+ 		error = error.squeeze(0).data 					 		 # (3L, rois, num)
+ 		error_pixel = error.permute(1,0,2).contiguous() 	 	 # (rois, 3L, num)
+ 		error = error * all_weight
+@@ -218,8 +218,8 @@ def enumeration_depth(im_left, im_right, all_uvz, all_weight, depth_enum, fb):
+ 	all_u = all_u.view(-1,pixels_num)               			  				          # (iter x rois) x pixels
+ 	grid_right[0,:,:,0] = (all_u - global_delta_d - f_w/2)/(f_w/2)
+ 	
+-	error = F.grid_sample(im_left,grid_left, padding_mode='border')-\
+-				F.grid_sample(im_right,grid_right, padding_mode='border')  		  		  # (1L, 3L, iter x rois, pixels)
++	error = F.grid_sample(im_left,grid_left, padding_mode='border', align_corners=True)-\
++				F.grid_sample(im_right,grid_right, padding_mode='border', align_corners=True)  		  		  # (1L, 3L, iter x rois, pixels)
+ 	
+ 	error = error.squeeze(0).data 					 		 							  # (3L, iter x rois, pixels)
+ 	error = error.permute(1,0,2).contiguous() 	 	 									  # ((iter x rois), 3L, pixels)
+diff --git a/lib/model/utils/box_estimator.py b/lib/model/utils/box_estimator.py
+index b0e35e4..b1a78b5 100644
+--- a/lib/model/utils/box_estimator.py
++++ b/lib/model/utils/box_estimator.py
+@@ -364,7 +364,7 @@ def solve_x_y_z_theta_from_kpt(im_shape, calib, alpha, dim, box_left, box_right,
+         dalpha_dz = 2.0*res_alpha /(1.0+(-x/z)**2) * (x/(z*z))
+         dalpha_dth = 2.0*res_alpha 
+ 
+-        J = scipy.array([dul_dx + dur_dx + duk_dx + dvb_dx + dvt_dx + dul_r_dx + dur_r_dx + dalpha_dx, \
++        J = np.array([dul_dx + dur_dx + duk_dx + dvb_dx + dvt_dx + dul_r_dx + dur_r_dx + dalpha_dx, \
+                          dul_dy + dur_dy + duk_dy + dvb_dy + dvt_dy + dul_r_dy + dur_r_dy + dalpha_dy, \
+                          dul_dz + dur_dz + duk_dz + dvb_dz + dvt_dz + dul_r_dz + dur_r_dz + dalpha_dz, \
+                          dul_dth + dur_dth + duk_dth + dvb_dth + dvt_dth + dul_r_dth + dur_r_dth + dalpha_dth])
+@@ -531,7 +531,7 @@ def solve_x_y_theta_from_kpt(im_shape, calib, alpha, dim, box_left, disparity, k
+         dalpha_dy = 0.0
+         dalpha_dth = 2.0*res_alpha
+ 
+-        J = scipy.array([dul_dx + dur_dx + duk_dx + dvb_dx + dvt_dx + dalpha_dx, \
++        J = np.array([dul_dx + dur_dx + duk_dx + dvb_dx + dvt_dx + dalpha_dx, \
+                          dul_dy + dur_dy + duk_dy + dvb_dy + dvt_dy + dalpha_dy, \
+                          dul_dth + dur_dth + duk_dth + dvb_dth + dvt_dth + dalpha_dth])
+ 
+diff --git a/lib/model/utils/config.py b/lib/model/utils/config.py
+index 2d8c018..f942e86 100644
+--- a/lib/model/utils/config.py
++++ b/lib/model/utils/config.py
+@@ -290,7 +290,7 @@ def cfg_from_file(filename):
+   """Load a config file and merge it into the default options."""
+   import yaml
+   with open(filename, 'r') as f:
+-    yaml_cfg = edict(yaml.load(f))
++    yaml_cfg = edict(yaml.safe_load(f))
+ 
+   _merge_a_into_b(yaml_cfg, __C)
+ 

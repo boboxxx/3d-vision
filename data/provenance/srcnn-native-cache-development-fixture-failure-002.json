@@ -1,0 +1,9 @@
+{
+  "state": "development_CPU_fixture_assumption_failed_after_six_synthetic_views",
+  "error": "AssertionError: Synthetic contract must exercise unclipped output",
+  "origin": "Random reduced RGB fixture did not guarantee trained model output outside [0,1]",
+  "retained_prototype": "data/provenance/srcnn-native-cache-CPU-prototype-before-overshoot-fix-001.py",
+  "correction": "Add a separately identified explicit [-2,2] storage/tensor fixture; retain model outputs and report their own overshoot count independently",
+  "model_or_source_or_receiver_changed": false,
+  "native_KITTI_GPU_AP_execution": false
+}

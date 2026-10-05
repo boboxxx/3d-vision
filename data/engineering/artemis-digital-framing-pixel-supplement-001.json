@@ -1,0 +1,111 @@
+{
+  "state": "passed_all6_independent_on_platform_pixel_redecodes",
+  "scope": "posthoc_exploratory_independent_received_pixel_decode",
+  "job_id": "11424047",
+  "source_manifest_sha256": "dccbb1d81335292721f11cb68ecac83d2974d764f146c80da4e8a8c1cbaa6b38",
+  "code_sha256": "d703568423e0d4226e78632353b9347706ae0543b095f3d5554cf5282c0e3f36",
+  "started_unix": 1791122590.2318234,
+  "protocol_sha256": "14ce928774ece03e4b2d9a3202b8d1386d6f12ab7d6b31df4ca420adc48392db",
+  "Pillow": "12.3.0",
+  "OpenJPEG": "2.5.4",
+  "machine": "x86_64",
+  "views": [
+    {
+      "packet": "ldpc_2_3_qam64-native-identity-10",
+      "fixture_sha256": "10081eb19ad34cde5becf7e6f3fc65c904d4b6ddfe307ae155a31f89d7857055",
+      "wire_sha256": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+      "image_sha256": [
+        "7543fb62beba3df86961abebf9bae3e0d5c7f714755e82cf29b33d62d4a6b7b8",
+        "36f6cef1983b7c630bd21976d0b06ea794fa9778d15a1216e5b63e826abfe5b7"
+      ],
+      "shape": [
+        370,
+        1224,
+        3
+      ],
+      "pixel_arrays_path": "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_2_3_qam64-native-identity-10.npz",
+      "pixel_arrays_sha256": "6ee279be018fbc1e3114335ed497452829276485b89a965857c45b9de39ae2c7"
+    },
+    {
+      "packet": "ldpc_2_3_qam64-synthetic-awgn-18",
+      "fixture_sha256": "c03d4a19d5119e15cbc3250bdbec4c4044d328bbc7d3b65d38d3fccaf0f86d76",
+      "wire_sha256": "9eed1c301ab9f0cdb87d26b2374dce3602fce01de200993417d12cc27e309fac",
+      "image_sha256": [
+        "de5f0f1e5f8b71a012cc3b086eb660b638276f2ab71d252749733610f8f8e1b8",
+        "0a278455964a950c1de02e8e04ecc8cbd350983bff3de6d2ed20e10d0be2a825"
+      ],
+      "shape": [
+        8,
+        12,
+        3
+      ],
+      "pixel_arrays_path": "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_2_3_qam64-synthetic-awgn-18.npz",
+      "pixel_arrays_sha256": "c913187bcbb6d80d4dbbcc63c8fbc39f9d8b6b2a3a600a7c8175b34f1f658353"
+    },
+    {
+      "packet": "ldpc_2_3_qam64-synthetic-rayleigh-18",
+      "fixture_sha256": "26f9c225b7457caa0cdf5007bf526e78d7af8d4f635e02e51e253f93a36f27f7",
+      "wire_sha256": "9eed1c301ab9f0cdb87d26b2374dce3602fce01de200993417d12cc27e309fac",
+      "image_sha256": [
+        "de5f0f1e5f8b71a012cc3b086eb660b638276f2ab71d252749733610f8f8e1b8",
+        "0a278455964a950c1de02e8e04ecc8cbd350983bff3de6d2ed20e10d0be2a825"
+      ],
+      "shape": [
+        8,
+        12,
+        3
+      ],
+      "pixel_arrays_path": "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_2_3_qam64-synthetic-rayleigh-18.npz",
+      "pixel_arrays_sha256": "c913187bcbb6d80d4dbbcc63c8fbc39f9d8b6b2a3a600a7c8175b34f1f658353"
+    },
+    {
+      "packet": "ldpc_1_2_qam256-native-identity-10",
+      "fixture_sha256": "121fe271d3a8d638f0eb26a1cfd3e93b30221a786c970915be2750f07a45db3b",
+      "wire_sha256": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+      "image_sha256": [
+        "7543fb62beba3df86961abebf9bae3e0d5c7f714755e82cf29b33d62d4a6b7b8",
+        "36f6cef1983b7c630bd21976d0b06ea794fa9778d15a1216e5b63e826abfe5b7"
+      ],
+      "shape": [
+        370,
+        1224,
+        3
+      ],
+      "pixel_arrays_path": "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_1_2_qam256-native-identity-10.npz",
+      "pixel_arrays_sha256": "6ee279be018fbc1e3114335ed497452829276485b89a965857c45b9de39ae2c7"
+    },
+    {
+      "packet": "ldpc_1_2_qam256-synthetic-awgn-18",
+      "fixture_sha256": "74cf8b7173490b9c63bdadc6e6c98d2130756ea4f8017e8066e9f7fa7aa19332",
+      "wire_sha256": "9eed1c301ab9f0cdb87d26b2374dce3602fce01de200993417d12cc27e309fac",
+      "image_sha256": [
+        "de5f0f1e5f8b71a012cc3b086eb660b638276f2ab71d252749733610f8f8e1b8",
+        "0a278455964a950c1de02e8e04ecc8cbd350983bff3de6d2ed20e10d0be2a825"
+      ],
+      "shape": [
+        8,
+        12,
+        3
+      ],
+      "pixel_arrays_path": "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_1_2_qam256-synthetic-awgn-18.npz",
+      "pixel_arrays_sha256": "c913187bcbb6d80d4dbbcc63c8fbc39f9d8b6b2a3a600a7c8175b34f1f658353"
+    },
+    {
+      "packet": "ldpc_1_2_qam256-synthetic-rayleigh-18",
+      "fixture_sha256": "060e0160bd1794b5e125373eacb9dd3f8cf4f49842f2819b86813b1172d529f4",
+      "wire_sha256": "9eed1c301ab9f0cdb87d26b2374dce3602fce01de200993417d12cc27e309fac",
+      "image_sha256": [
+        "de5f0f1e5f8b71a012cc3b086eb660b638276f2ab71d252749733610f8f8e1b8",
+        "0a278455964a950c1de02e8e04ecc8cbd350983bff3de6d2ed20e10d0be2a825"
+      ],
+      "shape": [
+        8,
+        12,
+        3
+      ],
+      "pixel_arrays_path": "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_1_2_qam256-synthetic-rayleigh-18.npz",
+      "pixel_arrays_sha256": "c913187bcbb6d80d4dbbcc63c8fbc39f9d8b6b2a3a600a7c8175b34f1f658353"
+    }
+  ],
+  "finished_unix": 1791122591.113815
+}

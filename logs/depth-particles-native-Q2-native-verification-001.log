@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/sheng/paper6/data/provenance/verify-depth-particles-native-Q2-001.py", line 175, in <module>
+    if __name__=='__main__':main()
+  File "/home/sheng/paper6/data/provenance/verify-depth-particles-native-Q2-001.py", line 97, in main
+    close(data['candidate_W1'][v],reference,'direct_partition_cost')
+  File "/home/sheng/paper6/data/provenance/verify-depth-particles-native-Q2-001.py", line 59, in close
+    assert e<=tol,(label,e)
+AssertionError: ('direct_partition_cost', 83.02697740998991)

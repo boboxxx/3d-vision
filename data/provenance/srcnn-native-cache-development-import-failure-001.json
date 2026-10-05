@@ -1,0 +1,9 @@
+{
+  "state": "development_CPU_import_failed_before_any_fixture_or_native_execution",
+  "command": "PYTHONDONTWRITEBYTECODE=1 /Users/chen/miniconda3/bin/python experiments/original-paper-scenarios/srcnn-native-cache-code/check_cpu.py --host local",
+  "error": "ModuleNotFoundError: No module named 'model'",
+  "origin": "new common.py loading the unchanged training002 common.py without its relative module directory",
+  "correction": "Temporarily add the training002 directory while importing and restore sys.path afterward, preventing audit module name collisions",
+  "native_KITTI_GPU_AP_execution": false,
+  "measurement_or_training_source_changed": false
+}

@@ -1,0 +1,43 @@
+{
+  "state": "completed_exit0_CPU_only",
+  "job_id": "11424047",
+  "sacct_rows": [
+    {
+      "JobID": "11424047",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "billing=2,cpu=2,mem=4G,node=1"
+    },
+    {
+      "JobID": "11424047.batch",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "cpu=2,mem=4G,node=1"
+    },
+    {
+      "JobID": "11424047.extern",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "billing=2,cpu=2,mem=4G,node=1"
+    },
+    {
+      "JobID": "11424047.0",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "cpu=2,mem=4G,node=1"
+    }
+  ],
+  "checked_utc": "2026-10-04T14:04:29Z",
+  "fresh_file_sha256": {
+    "data/engineering/artemis-digital-framing-pixel-supplement-001.json": "766a2f676892ab464183588d71804a77c4bbe9c6ad1bbe2f6917e40460a33dfe",
+    "data/engineering/artemis-digital-framing-pixel-supplement-001-launch.json": "e1036bc672d9067213ea0cce5a7669d9f3fbea64c933fda8c75639c8eb20602b",
+    "logs/artemis-digital-framing-pixels-001-11424047.out": "e150b7a837d8a2f5a5888ef9d3e55d228605fc000e96ddb444615304447a9975",
+    "logs/artemis-digital-framing-pixels-001-11424047.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_2_3_qam64-native-identity-10.npz": "6ee279be018fbc1e3114335ed497452829276485b89a965857c45b9de39ae2c7",
+    "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_2_3_qam64-synthetic-awgn-18.npz": "c913187bcbb6d80d4dbbcc63c8fbc39f9d8b6b2a3a600a7c8175b34f1f658353",
+    "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_2_3_qam64-synthetic-rayleigh-18.npz": "c913187bcbb6d80d4dbbcc63c8fbc39f9d8b6b2a3a600a7c8175b34f1f658353",
+    "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_1_2_qam256-native-identity-10.npz": "6ee279be018fbc1e3114335ed497452829276485b89a965857c45b9de39ae2c7",
+    "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_1_2_qam256-synthetic-awgn-18.npz": "c913187bcbb6d80d4dbbcc63c8fbc39f9d8b6b2a3a600a7c8175b34f1f658353",
+    "data/engineering/artemis-digital-framing-pixel-supplement-001/ldpc_1_2_qam256-synthetic-rayleigh-18.npz": "c913187bcbb6d80d4dbbcc63c8fbc39f9d8b6b2a3a600a7c8175b34f1f658353"
+  }
+}

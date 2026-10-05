@@ -1,0 +1,35 @@
+Collecting mmcv-full==1.7.2
+  Downloading mmcv-full-1.7.2.tar.gz (607 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 607.9/607.9 kB 5.5 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: addict in /home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from mmcv-full==1.7.2) (2.4.0)
+Requirement already satisfied: numpy in /home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from mmcv-full==1.7.2) (1.26.3)
+Requirement already satisfied: packaging in /home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from mmcv-full==1.7.2) (24.1)
+Requirement already satisfied: Pillow in /home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from mmcv-full==1.7.2) (10.2.0)
+Requirement already satisfied: pyyaml in /home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from mmcv-full==1.7.2) (6.0.2)
+Collecting yapf
+  Downloading yapf-0.43.0-py3-none-any.whl (256 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 256.2/256.2 kB 31.4 MB/s eta 0:00:00
+Requirement already satisfied: platformdirs>=3.5.1 in /home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from yapf->mmcv-full==1.7.2) (4.9.6)
+Requirement already satisfied: tomli>=2.0.1 in /home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages (from yapf->mmcv-full==1.7.2) (2.4.1)
+Building wheels for collected packages: mmcv-full
+  Building wheel for mmcv-full (setup.py): started
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): finished with status 'done'
+  Created wheel for mmcv-full: filename=mmcv_full-1.7.2-cp310-cp310-linux_x86_64.whl size=4166932 sha256=b9fb3603e24e0d7dfdc6cdbdbbb6f1ded814b541075888a3392205742d73d3cb
+  Stored in directory: /tmp/pip-ephem-wheel-cache-aw6oetop/wheels/4e/10/0a/78fbabe3d28cc25866432d4ecd6c9b124b8f0a6f546974bb7e
+Successfully built mmcv-full
+Installing collected packages: yapf, mmcv-full
+Successfully installed mmcv-full-1.7.2 yapf-0.43.0
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip

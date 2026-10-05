@@ -1,0 +1,296 @@
+{
+  "input_arrays": [
+    {
+      "shape": [
+        32,
+        64,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256": "32e524d9d03a550ed1fba8c7d6d6a46970b7da32d1e7a0d2674306542fc7b97c",
+      "finite": true,
+      "min": 0.0,
+      "max": 255.0
+    },
+    {
+      "shape": [
+        32,
+        64,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256": "7cb946c5481bab5f85552962c9c61c907649c7799af0799dd47b8ac989eb019a",
+      "finite": true,
+      "min": 0.0,
+      "max": 255.0
+    }
+  ],
+  "public": {
+    "schema": "ecsic-integer-fixture-v1",
+    "stream_order": [
+      "z_left",
+      "z_right",
+      "y_left",
+      "y_right"
+    ],
+    "padded_hw": [
+      32,
+      64
+    ],
+    "original_hw": [
+      32,
+      64
+    ],
+    "padding_lrtb": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "model_sha256": "e66b55e2f888f5d113ea6c6414640c7486280d6e18838ba77c650720a5636052",
+    "config_sha256": "ba02cc1239b755a26ca0eb920c3014908c97c45fa210c447c47e96f7527102f8"
+  },
+  "malformed_cases_rejected": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "arrays": {
+    "z_left_loc": {
+      "shape": [
+        1,
+        48,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "sha256": "bdb4db8834b28e9cd3bd52767d488aaf53125b111f47a6bcab51f224ebeeeb24",
+      "finite": true,
+      "min": -0.3744604289531708,
+      "max": 0.30298537015914917
+    },
+    "z_left_scale": {
+      "shape": [
+        1,
+        48,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "sha256": "e644bbf67ff3ce2b6b81eaea3fb69a81c37f27072c59b859e6f7e51347fc2ca9",
+      "finite": true,
+      "min": 0.09968310594558716,
+      "max": 2.264211893081665
+    },
+    "z_left_hat": {
+      "shape": [
+        1,
+        48,
+        1,
+        2
+      ],
+      "dtype": "float32",
+      "sha256": "4be75a1f2e284a9614bda35d7cff95730ed8fc6efd7129ddd16530a885326795",
+      "finite": true,
+      "min": -1.0181629657745361,
+      "max": 3.9933226108551025
+    },
+    "z_left_symbols": {
+      "shape": [
+        1,
+        48,
+        1,
+        2
+      ],
+      "dtype": "int32",
+      "sha256": "462bb205b93c7650678f4d325c8daf0bd85812500e5d81ad068a91212ef60cce",
+      "finite": true,
+      "min": -1.0,
+      "max": 4.0
+    },
+    "z_right_loc": {
+      "shape": [
+        1,
+        48,
+        1,
+        2
+      ],
+      "dtype": "float32",
+      "sha256": "6ede565e245c38b3d95307d2b18639933e1eb37140a884b4248cb1fe889c3820",
+      "finite": true,
+      "min": -10.432489395141602,
+      "max": 3.7952094078063965
+    },
+    "z_right_scale": {
+      "shape": [
+        1,
+        48,
+        1,
+        2
+      ],
+      "dtype": "float32",
+      "sha256": "a4b1482dfffb809822ea7b5a9eea1ec0dd75ce839594ed62798b06f257dd0472",
+      "finite": true,
+      "min": 0.0,
+      "max": 2.9023871421813965
+    },
+    "z_right_hat": {
+      "shape": [
+        1,
+        48,
+        1,
+        2
+      ],
+      "dtype": "float32",
+      "sha256": "7a51fc67cfdeb73130a3779503a6b75151dc1dfb15fdf2cbc86c232b60d584c3",
+      "finite": true,
+      "min": -10.432489395141602,
+      "max": 7.7952094078063965
+    },
+    "z_right_symbols": {
+      "shape": [
+        1,
+        48,
+        1,
+        2
+      ],
+      "dtype": "int32",
+      "sha256": "3a3d89e351e7570d07d7d1c297d48abb968cbfb64e02d6224d0abbe1372f75b7",
+      "finite": true,
+      "min": -4.0,
+      "max": 4.0
+    },
+    "y_left_loc": {
+      "shape": [
+        1,
+        48,
+        4,
+        8
+      ],
+      "dtype": "float32",
+      "sha256": "9ab70d7e533c5397ff7959700bf3932044524506b95442bef957202788cc1120",
+      "finite": true,
+      "min": -2.3662304878234863,
+      "max": 13.434127807617188
+    },
+    "y_left_scale": {
+      "shape": [
+        1,
+        48,
+        4,
+        8
+      ],
+      "dtype": "float32",
+      "sha256": "8e19b1d8164d50ac24574b17fe4af666e6e07097b51144468ed4507b5f61ba78",
+      "finite": true,
+      "min": 0.09895610064268112,
+      "max": 5.198297500610352
+    },
+    "y_left_hat": {
+      "shape": [
+        1,
+        48,
+        4,
+        8
+      ],
+      "dtype": "float32",
+      "sha256": "2b47dd01ce5d1c043bbd4d9e46b7b03802f4ab3fd1a2d5680ffd969f159c1052",
+      "finite": true,
+      "min": -4.624751091003418,
+      "max": 10.883247375488281
+    },
+    "y_left_symbols": {
+      "shape": [
+        1,
+        48,
+        4,
+        8
+      ],
+      "dtype": "int32",
+      "sha256": "e05087808ec437cb6b43ad5ac63bd8b08ce37912c99d105eadabdfbe7f16d1ad",
+      "finite": true,
+      "min": -4.0,
+      "max": 8.0
+    },
+    "y_right_loc": {
+      "shape": [
+        1,
+        48,
+        4,
+        8
+      ],
+      "dtype": "float32",
+      "sha256": "f7b06976a38087ac2f2b276ce2ec32ad4e474552a67daa0ec7ae298ffdf80167",
+      "finite": true,
+      "min": -2.6728174686431885,
+      "max": 11.025346755981445
+    },
+    "y_right_scale": {
+      "shape": [
+        1,
+        48,
+        4,
+        8
+      ],
+      "dtype": "float32",
+      "sha256": "fe297861ea847d53fb55d7e2548fad0b77d2ac1d2832ea9be86b17b70fcbfdcd",
+      "finite": true,
+      "min": 0.0982990562915802,
+      "max": 4.586001396179199
+    },
+    "y_right_hat": {
+      "shape": [
+        1,
+        48,
+        4,
+        8
+      ],
+      "dtype": "float32",
+      "sha256": "936fbbc1a10a78eae8719865fe07ded189336037d116dfd1459906254a6a735f",
+      "finite": true,
+      "min": -3.7748820781707764,
+      "max": 10.9489107131958
+    },
+    "y_right_symbols": {
+      "shape": [
+        1,
+        48,
+        4,
+        8
+      ],
+      "dtype": "int32",
+      "sha256": "d72548c61d6197f2870c0c9997bfd50e460a7a2f8079b8f76fc33c30c228d82f",
+      "finite": true,
+      "min": -4.0,
+      "max": 5.0
+    },
+    "pred_left": {
+      "shape": [
+        1,
+        3,
+        32,
+        64
+      ],
+      "dtype": "float32",
+      "sha256": "ac01bcad1d0211e0950cac65722ce510521e177ea35476c2f127671c1a7dc5b8",
+      "finite": true,
+      "min": 0.13609850406646729,
+      "max": 0.9222882986068726
+    },
+    "pred_right": {
+      "shape": [
+        1,
+        3,
+        32,
+        64
+      ],
+      "dtype": "float32",
+      "sha256": "f3c0ccb5864700057d7749b89c79a4d5784b4c5de60613935f39de384ca3856f",
+      "finite": true,
+      "min": 0.15088000893592834,
+      "max": 0.956419050693512
+    }
+  },
+  "input_files": {}
+}

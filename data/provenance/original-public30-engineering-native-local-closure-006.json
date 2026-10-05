@@ -1,0 +1,28 @@
+{
+  "state": "closed_actual_GPU_native_local_original_public_engineering003",
+  "input_sha256": "76761fe49305dcbe9829973b8b11e70a2c928e7ac1c3962b7e40b09f72317338",
+  "GPU_engineering_job": "11425104",
+  "native_audit_job": "11425880",
+  "local_auditor_actual_exit_code": 0,
+  "local_auditor_completed_exec_session": 18305,
+  "report_sha256": "b512cff44ab42064736f2bfdfc3e9c6c869ee93ae4c78d9b59e5d7fbfae5e8de",
+  "records_sha256": "9363efe9a29e3b52284146b8238f2ec6595315feebab0f1f6306821995c89382",
+  "initial_sha256": "5e2afaec221a70d244a975a67caf0ed6f22aa6b092bd497babef90f66aae7fc1",
+  "GPU_terminal_sha256": "65f3a6e8f942c2f4da5ea5753ebfef4b930993f9b7cd09318da203320563a88e",
+  "proof_files": {
+    "native": {
+      "path": "data/provenance/original-public30-engineering-native-audit-004.json",
+      "sha256": "0c7a16d3bceabc76856f339f18b19acbb7e75118dd850772a6a915629bef0f7e"
+    },
+    "local": {
+      "path": "data/provenance/original-public30-engineering-local-audit-004.json",
+      "sha256": "78661e826be8a0004f34437f7dcf6a83994c34493573fc8768c23a7c1e0fbffe"
+    }
+  },
+  "actual_accounting_snapshot": "data/provenance/training-actual-terminal-snapshot-014-001.json",
+  "actual_GPU_and_native_audit_accounting": "11424939|COMPLETED|0:0|05:44:47\n11424939.batch|COMPLETED|0:0|05:44:47\n11424939.extern|COMPLETED|0:0|05:44:47\n11424939.0|COMPLETED|0:0|05:44:47\n11425104|COMPLETED|0:0|00:00:11\n11425104.batch|COMPLETED|0:0|00:00:11\n11425104.extern|COMPLETED|0:0|00:00:11\n11425104.0|COMPLETED|0:0|00:00:10\n11425880|COMPLETED|0:0|00:00:07\n11425880.batch|COMPLETED|0:0|00:00:07\n11425880.extern|COMPLETED|0:0|00:00:07\n11425880.0|COMPLETED|0:0|00:00:07\n",
+  "checked_unix": 1791207948.8638332,
+  "fresh_formal_weights_required": true,
+  "scope_limitation": "Complete source/order and saved-state/Adam-counter/moment/frozen-state proof; per-update raw forward/backward and Adam numerical transitions not independently recomputed.",
+  "formal_training_or_AP_completed": false
+}

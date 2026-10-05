@@ -1,0 +1,32 @@
+{
+  "checked_unix": 1791210766.7765033,
+  "reports": {
+    "data/runs/original-public30-formal-seed17-003-stage1/report.json": {
+      "state": "running_complete_public_semantic_stage",
+      "update_count": 14208,
+      "job_id": "11426592",
+      "traceback": null
+    },
+    "data/runs/ecsic-KITTI-lambda0.03-seed17-002/report.json": {
+      "state": "running_full_KITTI_source_RD_training",
+      "update_count": 24256,
+      "job_id": "11426641",
+      "traceback": null
+    }
+  },
+  "sacct": "11426641|RUNNING|0:0|00:40:49\n11426641.batch|RUNNING|0:0|00:40:49\n11426641.extern|RUNNING|0:0|00:40:49\n11426641.0|RUNNING|0:0|00:40:49\n11425240|RUNNING|0:0|00:54:31\n11425240.batch|RUNNING|0:0|00:54:31\n11425240.extern|RUNNING|0:0|00:54:31\n11425240.0|RUNNING|0:0|00:54:29\n11425814|PENDING|0:0|00:00:00\n11426592|RUNNING|0:0|00:44:23\n11426592.batch|RUNNING|0:0|00:44:23\n11426592.extern|RUNNING|0:0|00:44:23\n11426592.0|RUNNING|0:0|00:44:23\n11426847|PENDING|0:0|00:00:00\n11426848|PENDING|0:0|00:00:00\n11428494|PENDING|0:0|00:00:00\n",
+  "squeue": "               JOBID        STATE         TIME                    NODELIST(REASON)\n    11425047_[4-5%1]      PENDING         0:00                 (JobArrayTaskLimit)\n          11425047_3      RUNNING        40:49                      artemis-rtx-03\n            11426592      RUNNING        44:23                      artemis-rtx-03\n            11425814      PENDING         0:00                        (Dependency)\n            11425240      RUNNING        54:31                      artemis-a40-03\n            11426848      PENDING         0:00                        (Dependency)\n            11426847      PENDING         0:00                        (Dependency)\n            11428494      PENDING         0:00                        (Dependency)\n",
+  "data/provenance/cost-field-full-seed17-004-native-audit-007.json": {
+    "exists": false,
+    "bytes": null
+  },
+  "data/provenance/cost-field-full-seed17-004-native-audit-007.records.jsonl": {
+    "exists": true,
+    "bytes": 16127213
+  },
+  "audit_log_tails": {
+    "/mnt/nfs2/engdes/wc296/paper6/logs/cost-full-audit011-11425240.out": "",
+    "/mnt/nfs2/engdes/wc296/paper6/logs/cost-full-audit011-11425240.err": " \"seed\": 17}\n{\"checked\": 21056, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21120, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21184, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21248, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21312, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21376, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21440, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21504, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21568, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21632, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21696, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21760, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21824, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21888, \"count\": 44544, \"seed\": 17}\n{\"checked\": 21952, \"count\": 44544, \"seed\": 17}\n{\"checked\": 22016, \"count\": 44544, \"seed\": 17}\n{\"checked\": 22080, \"count\": 44544, \"seed\": 17}\n{\"checked\": 22144, \"count\": 44544, \"seed\": 17}\n{\"checked\": 22208, \"count\": 44544, \"seed\": 17}\n{\"checked\": 22272, \"count\": 44544, \"seed\": 17}\n{\"checked\": 22336, \"count\": 44544, \"seed\": 17}\n"
+  },
+  "observation_scope": "Read-only live progress; partial reports, not terminal proofs. Epoch count was not inspected."
+}

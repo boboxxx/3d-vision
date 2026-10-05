@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stereo-geocomm"
+version = "0.1.0"
+description = "Geometry-dependent stereo task communication research"
+requires-python = ">=3.8"
+dependencies = ["torch>=1.8", "numpy", "PyYAML"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

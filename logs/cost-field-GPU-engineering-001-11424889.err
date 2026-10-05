@@ -1,0 +1,10 @@
+/etc/profile.d/lmod.sh: line 10: PBS_NODEFILE: unbound variable
+/opt/ohpc/admin/lmod/lmod/init/bash: line 26: FPATH: unbound variable
+/mnt/nfs2/engdes/wc296/paper6/dependencies/artemis-framework-overlay-005/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/mnt/nfs2/engdes/wc296/paper6/third_party/mmdetection_kitti/mmdet/models/dense_heads/free_anchor_retina_head.py:247: SyntaxWarning: invalid escape sequence '\i'
+  """Compute negative bag loss.
+/mnt/nfs2/engdes/wc296/paper6/envs/torch-cu128-001/lib/python3.12/site-packages/torch/functional.py:554: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4314.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/mnt/nfs2/engdes/wc296/paper6/experiments/cost-field/forward_with_cut.py:14: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  calibs_Proj = torch.as_tensor(

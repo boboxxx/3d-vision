@@ -1,0 +1,10 @@
+{
+  "state": "prelaunch_eligibility_path_failure_no_native_run",
+  "source_commit": "9ec24db",
+  "source_sha256": "6ecfb8782c291e51f116bb7a116aa3e0b693fe62a39402b38965ba3c01ed4dc6",
+  "log_sha256": "085387863f197c8bc44728b4bf7d045f4abd22afcef3d0e0fefa44b3592799ed",
+  "exception": "FileNotFoundError /home/sheng/paper6/experiments/data/provenance/stereo-channel-native-seed17-001-closure.json",
+  "actual_training_updates": 0,
+  "CPU_tests_passed": 6,
+  "repair": "Correct file-relative root parents[3] to parents[4]; rerun exact-source CPU gates and eligibility before native launch."
+}

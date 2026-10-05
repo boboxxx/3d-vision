@@ -1,0 +1,79 @@
+{
+  "state": "passed",
+  "scope": "feature reductions/coverage/geometry audit; raw tensors not retained or independently rerun",
+  "frames": 372,
+  "summaries": {
+    "cost": {
+      "elements": 42785832960,
+      "pooled_over_frames_mse": 0.4883733877213235,
+      "pooled_over_frames_nmse": 0.6102321604925686,
+      "pooled_over_frames_cosine": 0.6243167766534659,
+      "median_frame_nmse": 0.6130689863571023,
+      "median_frame_cosine": 0.6220413532193838,
+      "reference_shapes": [
+        [
+          1,
+          64,
+          72,
+          80,
+          312
+        ]
+      ]
+    },
+    "appearance": {
+      "elements": 297123840,
+      "pooled_over_frames_mse": 0.13310020277528822,
+      "pooled_over_frames_nmse": 0.15002589111789646,
+      "pooled_over_frames_cosine": 0.9219620784359486,
+      "median_frame_nmse": 0.15112580749007645,
+      "median_frame_cosine": 0.9214311337624241,
+      "reference_shapes": [
+        [
+          1,
+          32,
+          80,
+          312
+        ]
+      ]
+    },
+    "cost_pool_interpolate_reference": {
+      "elements": 42785832960,
+      "pooled_over_frames_mse": 0.47414514883278996,
+      "pooled_over_frames_nmse": 0.5924536959503756,
+      "pooled_over_frames_cosine": 0.6391054424365133,
+      "median_frame_nmse": 0.5960424151829511,
+      "median_frame_cosine": 0.6363136913524491,
+      "reference_shapes": [
+        [
+          1,
+          64,
+          72,
+          80,
+          312
+        ]
+      ]
+    },
+    "appearance_pool_interpolate_reference": {
+      "elements": 297123840,
+      "pooled_over_frames_mse": 0.11315878804902253,
+      "pooled_over_frames_nmse": 0.12754862622964938,
+      "pooled_over_frames_cosine": 0.9344262351224472,
+      "median_frame_nmse": 0.12979211822991493,
+      "median_frame_cosine": 0.9332274975659485,
+      "reference_shapes": [
+        [
+          1,
+          32,
+          80,
+          312
+        ]
+      ]
+    }
+  },
+  "feature_records_sha256": "d821e02f64ba3376257901b15237211d46a7d4af753f3c8e856cf682a892c3d6",
+  "run_manifest_sha256": "1980d25e85e1fe341e8180044f7957e8bc9f9ae8f421465c711a369c5a84e9c5",
+  "AP_audit_sha256": "20e8daf1a3e32f2f08fdc504340d07f1fff1fbb61db6ce004f42044612eb659f",
+  "checkpoint_sha256": "984771355f145441f785a8bca5ddde2762fec4925d504298b7fb9abe8c3f57f0",
+  "source_sha256": "a5443343feba737b3668e53eef2ea4808f2ab192b47fe6b894c17e3802ba1fc6",
+  "limitations": "passive same-input observation; pool/interpolate is not optimal reconstruction or AP ceiling; original detector pretraining included heldout IDs; not a wireless gain or unique failure-cause proof"
+}

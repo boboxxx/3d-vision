@@ -1,0 +1,93 @@
+{
+  "state": "passed_all_transferred_engineering_artifacts_and24_raw_rows",
+  "checked_unix": 1791139234.134472,
+  "closure_sha256": "1132d4c239e676c21bc193253cf3cfcb6f361b8067f265fab07da3c2253b7a47",
+  "verifier_sha256": "297de232bc73a3da5fc7abd41b67e6bfae2783a80503058ce5a5761322c37ed4",
+  "artifacts_verified": 27,
+  "records": 24,
+  "paired_steps": 6,
+  "arms": [
+    "U",
+    "G",
+    "P",
+    "S"
+  ],
+  "empty_GT": {
+    "U": 1,
+    "G": 1,
+    "P": 1,
+    "S": 1
+  },
+  "sender_profiles": {
+    "U": {
+      "scope": "first_actual_step_from_sender_backbone_entry_to_channel_input",
+      "wall_seconds": 0.580301096997573,
+      "cuda_elapsed_ms": 571.4631958007812,
+      "student_parameters": 13904,
+      "source_codec_parameters": 2442,
+      "new_head_parameters": 561,
+      "new_head_executed": false,
+      "correspondence_executed": false,
+      "correspondence_candidate_shifts_per_direction": 0,
+      "limitations": "Cold first actual forward with audits/profiling; no warm deployment-latency or complete-FLOPs claim.",
+      "operator_FLOPs_lower_bound": 5428903685,
+      "profiler_trace_path": "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-U/first-actual-step-profile.json",
+      "profiler_trace_sha256": "0ea74d1f993e8b9509a4910e102792b77195d294cf3e0a11f9fa4626315320bb",
+      "recorded_sender_events": 2554,
+      "FLOPs_scope": "PyTorch-supported operators within F9_sender only; matching/reductions and unsupported operators may be omitted"
+    },
+    "G": {
+      "scope": "first_actual_step_from_sender_backbone_entry_to_channel_input",
+      "wall_seconds": 0.4931409309938317,
+      "cuda_elapsed_ms": 492.3772277832031,
+      "student_parameters": 13904,
+      "source_codec_parameters": 2442,
+      "new_head_parameters": 561,
+      "new_head_executed": true,
+      "correspondence_executed": false,
+      "correspondence_candidate_shifts_per_direction": 0,
+      "limitations": "Cold first actual forward with audits/profiling; no warm deployment-latency or complete-FLOPs claim.",
+      "operator_FLOPs_lower_bound": 5429091661,
+      "profiler_trace_path": "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-G/first-actual-step-profile.json",
+      "profiler_trace_sha256": "0b84a29d086a92223245088c56f5d1c2f72c7bf9071b687f1b76309866c09ed6",
+      "recorded_sender_events": 3572,
+      "FLOPs_scope": "PyTorch-supported operators within F9_sender only; matching/reductions and unsupported operators may be omitted"
+    },
+    "P": {
+      "scope": "first_actual_step_from_sender_backbone_entry_to_channel_input",
+      "wall_seconds": 0.5167376870085718,
+      "cuda_elapsed_ms": 515.83154296875,
+      "student_parameters": 13904,
+      "source_codec_parameters": 2442,
+      "new_head_parameters": 561,
+      "new_head_executed": true,
+      "correspondence_executed": true,
+      "correspondence_candidate_shifts_per_direction": 49,
+      "limitations": "Cold first actual forward with audits/profiling; no warm deployment-latency or complete-FLOPs claim.",
+      "operator_FLOPs_lower_bound": 5490887055,
+      "profiler_trace_path": "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-P/first-actual-step-profile.json",
+      "profiler_trace_sha256": "617267fb2c1f9090df92750e9ccdbe959e144764cbb4911cb184ab89715d6b8a",
+      "recorded_sender_events": 6327,
+      "FLOPs_scope": "PyTorch-supported operators within F9_sender only; matching/reductions and unsupported operators may be omitted"
+    },
+    "S": {
+      "scope": "first_actual_step_from_sender_backbone_entry_to_channel_input",
+      "wall_seconds": 0.5373912139912136,
+      "cuda_elapsed_ms": 536.7113037109375,
+      "student_parameters": 13904,
+      "source_codec_parameters": 2442,
+      "new_head_parameters": 561,
+      "new_head_executed": true,
+      "correspondence_executed": true,
+      "correspondence_candidate_shifts_per_direction": 49,
+      "limitations": "Cold first actual forward with audits/profiling; no warm deployment-latency or complete-FLOPs claim.",
+      "operator_FLOPs_lower_bound": 5490887055,
+      "profiler_trace_path": "/mnt/d/paper6/runs/stereo-epipolar-native-sanity-001-S/first-actual-step-profile.json",
+      "profiler_trace_sha256": "c2f0832862a9b9b71b891b997711bbdb36fcd15f761cd36b0e5de8cd7ace655e",
+      "recorded_sender_events": 6361,
+      "FLOPs_scope": "PyTorch-supported operators within F9_sender only; matching/reductions and unsupported operators may be omitted"
+    }
+  },
+  "formal_AP_started": false,
+  "scope": "Complete transferred metadata/raw-row verification; full539-state/Adam/CUDA-noise and large profile traces were checked on sheng, not rerun locally."
+}

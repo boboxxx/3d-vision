@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/verify-artemis-full-detector-GPU-local-001.py", line 134, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/verify-artemis-full-detector-GPU-local-001.py", line 92, in main
+    p2,p3=calibration(p);assert np.array_equal(arrays['original_P2'],p2) and np.array_equal(arrays['original_P3'],p3)
+          ^^^^^^^^^^^^^^
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/verify-artemis-full-detector-GPU-local-001.py", line 27, in calibration
+    key,*values=line.split();rows[key.rstrip(':')]=np.array([float(v) for v in values],np.float32)
+    ^^^^^^^^^^^
+ValueError: not enough values to unpack (expected at least 1, got 0)

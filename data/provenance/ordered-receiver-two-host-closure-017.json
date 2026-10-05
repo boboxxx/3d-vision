@@ -1,0 +1,93 @@
+{
+  "state": "closed_actual_local_sheng_full016_and_all_retained_paired_errors017",
+  "proof_files": {
+    "local": {
+      "report_path": "data/engineering/ordered-receiver-local-016.json",
+      "report_sha256": "c8a162459f2db79c9851b1a3946e13e29c6ad472fa63fd7553d2ce3e0bccb3e0",
+      "audit_path": "data/engineering/ordered-receiver-local-paired-audit-017.json",
+      "audit_sha256": "a69fc535467663fad0f4a434e1892dd91822c19e221ab4c6c37fc1c73442d655"
+    },
+    "native": {
+      "report_path": "data/provenance/ordered-receiver-sheng-016.json",
+      "report_sha256": "1f38cb76379c0bf23d472fd40a6dae4e07c4e17b0ef5deaaa19764b46b2358d7",
+      "audit_path": "data/provenance/ordered-receiver-sheng-paired-audit-017.json",
+      "audit_sha256": "e98089d7e87b404fbb8355d6f4cd997ee2f9f0f3a3c7feb730d94a613952e9d1"
+    }
+  },
+  "actual_exits": {
+    "local_summary015": {
+      "exec_session": 7803,
+      "exit_code": 0,
+      "retained_pair_arrays": false
+    },
+    "local016": {
+      "exec_session": 12722,
+      "exit_code": 0
+    },
+    "sheng016": {
+      "exec_session": 99857,
+      "exit_code": 0
+    },
+    "local017": {
+      "exec_session": 15401,
+      "exit_code": 0
+    },
+    "sheng017": {
+      "exec_session": 42247,
+      "exit_code": 0
+    }
+  },
+  "risk_conditions_per_host": 20,
+  "physical_triples_per_host": 1310720,
+  "physical_position_complex_uses_per_host": 3932160,
+  "saved_paired_values_verified_per_host": 14417920,
+  "synthetic_receiver_cases_per_host": 36,
+  "declared_prior": "Uniform over6545 inclusive ordered triples on33-point grid",
+  "cross_host_max_absolute_summary_difference_exploratory": 6.938893903907228e-18,
+  "all_cross_host_per_trial_bit_identities_claimed": false,
+  "metric10dB": [
+    {
+      "channel": "awgn",
+      "coordinate_latent_m2_MSE": {
+        "hard": 16.12336888125167,
+        "independent": 15.429693901939613,
+        "ordered": 12.930950085553983,
+        "isotonic": 14.353172006164533,
+        "ordered_blind": 12.930950085553983
+      },
+      "field_MSE": {
+        "hard": 0.0008115004924259003,
+        "independent": 0.0007517229312142225,
+        "ordered": 0.0005981342449092072,
+        "isotonic": 0.000687295387766026,
+        "ordered_blind": 0.0005981342449092072,
+        "ordered_mean": 0.0006049464977472629
+      }
+    },
+    {
+      "channel": "rayleigh",
+      "coordinate_latent_m2_MSE": {
+        "hard": 69.35909167004414,
+        "independent": 46.48747376197245,
+        "ordered": 26.537745939045454,
+        "isotonic": 40.833699955450726,
+        "ordered_blind": 31.53550015749273
+      },
+      "field_MSE": {
+        "hard": 0.0026699546114731135,
+        "independent": 0.0018683007146358863,
+        "ordered": 0.0011086419364281018,
+        "isotonic": 0.0017072560125665675,
+        "ordered_blind": 0.0012549315677818742,
+        "ordered_mean": 0.0011689043020865848
+      }
+    }
+  ],
+  "limitations": [
+    "Not actual KITTI latent prior or object depth uncertainty calibration",
+    "No detector AP or method advantage or rate allocation or source lightweight evidence",
+    "Finite33-grid physical-prior inference evidence is not continuous289-grid AP evidence",
+    "No new general Bayesian or message-passing theorem claimed"
+  ],
+  "checked_unix": 1791214332.364768
+}

@@ -1,0 +1,53 @@
+{
+  "state": "passed",
+  "container_sha256": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a",
+  "receiver_report_sha256": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+  "reconstructed_sha256": "a008476e633b39b71263a50a277807f9b2583869a194b266c6e2734f0df399d9",
+  "original_hw": [
+    370,
+    1224
+  ],
+  "padded_hw": [
+    384,
+    1248
+  ],
+  "crop": "top_left_public_header_NCHW[:, :, :h, :w]",
+  "arrays": {
+    "left": {
+      "shape": [
+        1,
+        3,
+        370,
+        1224
+      ],
+      "dtype": "<f4",
+      "sha256": "d8b9696987ecee03975986eb18be2e2905e1d1c1052fdb6796fbb57a98c72798",
+      "finite": true,
+      "min": -0.07256535440683365,
+      "max": 1.1054878234863281
+    },
+    "right": {
+      "shape": [
+        1,
+        3,
+        370,
+        1224
+      ],
+      "dtype": "<f4",
+      "sha256": "bbe89d6ca24b2b8f1d90cf6e7547f0498c41b454fa5ca59048efdfa521ffac1c",
+      "finite": true,
+      "min": -0.06848330795764923,
+      "max": 1.0990562438964844
+    }
+  },
+  "output_sha256": "8738231db6c045e87f779be54a7e643225a0ebf8b39f536f0c3c4fd746eca4d4",
+  "unclipped_FP32": true,
+  "no_resize_or_RGB8_conversion": true,
+  "source_NPZ_read_barrier": true,
+  "allowed_input_NPZ": "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/14-training000000-ldpc_2_3_qam64-rayleigh-18/reconstructed.npz",
+  "receiver_inputs": [
+    "actual_received_P6EC_public_header",
+    "this_packet_neural_reconstructed_arrays",
+    "this_packet_receiver_report"
+  ]
+}

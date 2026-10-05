@@ -1,0 +1,31 @@
+/etc/profile.d/lmod.sh: line 10: PBS_NODEFILE: unbound variable
+/opt/ohpc/admin/lmod/lmod/init/bash: line 26: FPATH: unbound variable
+Traceback (most recent call last):
+  File "/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-002.py", line 110, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-002.py", line 66, in main
+    wheels = [download(v) for v in lock['resolution']['archives']]
+              ^^^^^^^^^^^
+  File "/mnt/nfs2/engdes/wc296/paper6/experiments/artemis-detector-framework/build-002.py", line 45, in download
+    with urllib.request.urlopen(url, timeout=180) as inp, path.open('xb') as out:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/its/home/wc296/miniconda3/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/its/home/wc296/miniconda3/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/its/home/wc296/miniconda3/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/its/home/wc296/miniconda3/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/its/home/wc296/miniconda3/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/its/home/wc296/miniconda3/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+srun: error: artemis-a40-15: task 0: Exited with exit code 1

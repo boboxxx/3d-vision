@@ -1,0 +1,105 @@
+{
+  "state": "finished_all_received_pairs",
+  "pid": 265459,
+  "started_unix": 1791147127.0807881,
+  "scope": "engineering",
+  "condition": "jpeg-cr10",
+  "environment": {
+    "Python": "3.10.15",
+    "NumPy": "1.26.3",
+    "Pillow": "10.2.0",
+    "libjpeg": "6.2",
+    "libjpeg_turbo": "3.0.1",
+    "OpenJPEG": "2.5.0"
+  },
+  "sources": {
+    "historical": {
+      "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+      "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+      "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+      "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+    },
+    "current": {
+      "experiments/original-paper-scenarios/source-cache-code/audit.py": "6406a041435bdb9cda489be5d4b109f93720740682dc26424b71a30a8d421c1f",
+      "experiments/original-paper-scenarios/source-cache-code/check_cpu.py": "03628bab20dbdd35a8c047c4c0a947dbfc07d4129c6c90ce60772f952e82ef78",
+      "experiments/original-paper-scenarios/source-cache-code/common.py": "e73c1c5022afedf75875e7249bf963664ad07d73a13a8fd3cb9fe4bfff486fd3",
+      "experiments/original-paper-scenarios/source-cache-code/encode.py": "c2516c6a174d497d0fcb84de510af269bb65d735c5b9fd783ebd2a2000cbce5c",
+      "experiments/original-paper-scenarios/source-cache-code/receive.py": "4dad57323e9a7ce797f507858070a0233b826198ca7d6cd8357997960375d662"
+    }
+  },
+  "protocol_sha256": "84ec93430f9fdea3d1aacaaf6453cda81a8bfa5e247ed1cc39e535807e7d098e",
+  "frame_ids": [
+    "000000",
+    "000003"
+  ],
+  "records": [
+    {
+      "frame_id": "000000",
+      "wire_path": "/mnt/d/paper6/runs/original-source-cache-engineering-001/source/jpeg-cr10/000000.p6sb",
+      "wire_sha256": "3b7a302e5d3c0d1b682e8a786633621b9a2ff9ef6f32342b589fd8045ac01c7f",
+      "cache_path": "/mnt/d/paper6/runs/original-source-cache-engineering-001/received/jpeg-cr10/000000.npz",
+      "cache_sha256": "117ee3bb13a118d8f10776897cdb7a54593adc5f172bc4182e0829c24a4e45e5",
+      "public_hw": [
+        370,
+        1224
+      ],
+      "arrays": {
+        "left": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "976a27e24efe75ae40e4f6753809a2c3ed0e145667b04509deaedf0a9caf541d"
+        },
+        "right": {
+          "dtype": "|u1",
+          "shape": [
+            370,
+            1224,
+            3
+          ],
+          "sha256": "7716da4142207d0743d45f782e18e6b1b81c7a68b5026b52656db18612328e04"
+        }
+      }
+    },
+    {
+      "frame_id": "000003",
+      "wire_path": "/mnt/d/paper6/runs/original-source-cache-engineering-001/source/jpeg-cr10/000003.p6sb",
+      "wire_sha256": "acef6b8e6a45db94aefe50ad68a58dc88c1c2090b754ecb9f5065102fefd9772",
+      "cache_path": "/mnt/d/paper6/runs/original-source-cache-engineering-001/received/jpeg-cr10/000003.npz",
+      "cache_sha256": "5212db459f8ee85d7417b5f50dd0f229ce997e2ab81ece9f14b41de89a254a19",
+      "public_hw": [
+        375,
+        1242
+      ],
+      "arrays": {
+        "left": {
+          "dtype": "|u1",
+          "shape": [
+            375,
+            1242,
+            3
+          ],
+          "sha256": "29f01c496adac347a8c967ac1077413f50116c7b357a75c5ca294b5df9c77807"
+        },
+        "right": {
+          "dtype": "|u1",
+          "shape": [
+            375,
+            1242,
+            3
+          ],
+          "sha256": "4039c1ba7a698daf01e136d4aa1dbe6d59bef3df69445455879d06c85745e5d3"
+        }
+      }
+    }
+  ],
+  "input_barrier": true,
+  "PNG_or_source_manifest_inputs": false,
+  "dimensions_from_received_stream_headers": true,
+  "HWC_uint8_no_resize": true,
+  "no_model_AP_or_radio": true,
+  "ended_unix": 1791147127.1672597
+}

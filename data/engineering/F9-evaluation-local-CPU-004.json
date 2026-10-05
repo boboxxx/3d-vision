@@ -1,0 +1,28 @@
+{
+  "state": "passed",
+  "tests": 9,
+  "failures": [],
+  "errors": [],
+  "source_sha256": {
+    "experiments/geometry-link/F9/evaluation/diagnose.py": "4bb741645314b7fb57d8680815e47e5c4cdfcde5115798994f3a5ac6429772d0",
+    "experiments/geometry-link/F9/evaluation/common.py": "84fc3d2d6c8b85c2d93abc8a8c111f87f76542cd10e67eaab0b845afa7b832c1",
+    "experiments/geometry-link/F9/evaluation/check_cpu.py": "4be93600ed8c9beecbfe39dbbd9a008f5ca0ec2cdee80dd41dfe2e9249a3a68c",
+    "experiments/geometry-link/F9/evaluation/receiver_reference.py": "781a04f479129e56bde54f46d8b0319fca423a8f8618c7d285434b877076f6cd"
+  },
+  "evaluation_source_identity": {
+    "sha256": "f6f4b98aa6b3608e2687123b5e793e7e4c4d32c0a4e43f2a69a73b47756b013d",
+    "file_hashes": {
+      "experiments/geometry-link/F9/evaluation/diagnose.py": "4bb741645314b7fb57d8680815e47e5c4cdfcde5115798994f3a5ac6429772d0",
+      "experiments/geometry-link/F9/evaluation/common.py": "84fc3d2d6c8b85c2d93abc8a8c111f87f76542cd10e67eaab0b845afa7b832c1",
+      "experiments/geometry-link/F9/evaluation/check_cpu.py": "4be93600ed8c9beecbfe39dbbd9a008f5ca0ec2cdee80dd41dfe2e9249a3a68c",
+      "experiments/geometry-link/F9/evaluation/receiver_reference.py": "781a04f479129e56bde54f46d8b0319fca423a8f8618c7d285434b877076f6cd",
+      "experiments/geometry-link/F9/evaluation/configs/awgn6-holdout.yaml": "96df3083d6ce8fa5d3e77cd98ee80e9fce48073e077510351613b9a86003d129",
+      "experiments/geometry-link/F9/evaluation/configs/identity10-holdout.yaml": "8d8053cc19d69eceb89280182b30ccb2d60d9d1a7ff6971c2343fe3bee2c247f",
+      "experiments/geometry-link/F9/evaluation/configs/awgn18-holdout.yaml": "67341f0d15bd95f6f7844f0ad17c453f1cb0371dc864308b738946a7f4c1d3da",
+      "experiments/geometry-link/F9/evaluation/configs/awgn10-holdout.yaml": "0e4e64cfedcbbf605ff4a057d745307f2e64076b3089d395de5b8f5563b00941"
+    },
+    "generated_version_py_excluded": true
+  },
+  "torch": "2.12.0",
+  "scope": "Synthetic CPU539-state fixture and actual sender/receiver observer; no native KITTI, GPU inference or AP"
+}

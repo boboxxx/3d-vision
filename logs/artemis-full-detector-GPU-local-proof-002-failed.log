@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/verify-artemis-full-detector-GPU-local-002.py", line 135, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/chen/Documents/ChatGPT/paper6/data/provenance/verify-artemis-full-detector-GPU-local-002.py", line 125, in main
+    assert depth_cells==arrays['depth_pred'].size and depth_error<=3e-5
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,26 @@
+{
+  "state": "passed_source_and_independent_training_AP_audits",
+  "closed_at_unix": 1791067181.882185,
+  "frozen_source_sha256": {
+    "project": "f25f56205ef2f50447fc6fe0cc3e7d845fb917430b3dbbe4510e7825e6fcd1ac",
+    "liga": "e2495ab11c90143c14a6666c875c382131e4db0feb48711754bd2100ac8a9d29",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f"
+  },
+  "artifact_sha256": {
+    "data/runs/frozen-student-uniform-seed17-001.json": "faefe4feeb8e372f0b5e02bef3a9d53908eaec162dcadd5974443fced1a24075",
+    "data/runs/frozen-student-uniform-seed17-001-AP.json": "afe1c7360d7a369a991b08527b34fbf1769bedee84b605f45ce246594c22da68",
+    "data/runs/frozen-student-uniform-seed17-001-checkpoint-audit.json": "c2b120436e5c5fb3f14749a43b6f9b46c8d632fe4da7271d9e4e0f2ec7ca6ca5",
+    "data/runs/frozen-student-uniform-seed17-001-scalar-audit.json": "f3248b74bc7c6c08a3b94614b24261f65c2ac55ff50e070aad5fb716bf3a20ac",
+    "data/runs/frozen-student-uniform-seed17-001-AP-audit.json": "e582e98c421b37a5b467eeb69ff1ae1a4da7d8d590e179d2ba905201f75f63fb"
+  },
+  "checkpoint_sha256": "cb50b4d4073fb2e5be31533d949a2141a46389436a5080429753de8b038aef7c",
+  "fixed_updates": 3340,
+  "Car_3d_AP_R40_E_M_H_percent": [
+    0.2615169880098684,
+    0.0634880237191526,
+    0.03880545204716795
+  ],
+  "scientific_interpretation": "failed exploratory codec warmup; 42.31946% uncompressed student drops to0.06349% at10dB; defer allocation claims; diagnose codec/noise separately",
+  "limitations": "original author pretraining included heldout IDs; no main-validation or matched-budget method-gain claim"
+}

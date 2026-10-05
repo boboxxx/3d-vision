@@ -1,0 +1,33 @@
+{
+  "state": "live_progress_snapshot_not_final_audit",
+  "sampled_at_unix": 1791060508.0437768,
+  "run_id": "student-feature-seed17-001",
+  "run_state": "training",
+  "steps": 2339,
+  "completed_epochs": 0,
+  "source_sha256": "e9bac702c1f130510f925968c18df7216fcd458aa6c7d8b2b4f73ff2815c2a63",
+  "manifest_optimizer_steps": 2300,
+  "first100_loss_median": 0.8108510673046112,
+  "last100_loss_median": 0.4914267361164093,
+  "last100_interface_mean": {
+    "left_stereo": {
+      "student_rms": 0.9900811356306076,
+      "teacher_rms": 1.2723145282268524,
+      "normalized_mse": 0.38894025593996046,
+      "cosine": 0.7817778438329697
+    },
+    "right_stereo": {
+      "student_rms": 0.9892523330450058,
+      "teacher_rms": 1.2704628205299378,
+      "normalized_mse": 0.3909977477788925,
+      "cosine": 0.7804497557878495
+    },
+    "left_appearance": {
+      "student_rms": 0.8290081661939621,
+      "teacher_rms": 1.4830013406276703,
+      "normalized_mse": 0.6878927552700043,
+      "cosine": 0.55853888630867
+    }
+  },
+  "limitations": "live incomplete training records; no holdout or AP conclusion"
+}

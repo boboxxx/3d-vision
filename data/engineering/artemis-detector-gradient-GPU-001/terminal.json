@@ -1,0 +1,28 @@
+{
+  "state": "closed_actual_native_detection_loss_RGB_backward_terminal",
+  "actual_terminal": true,
+  "job_id": "11424856",
+  "checked_unix": 1791177147.0258045,
+  "verifier_sha256": "6f057a14b4395c05cb1adc3389324728c7e103337e55f8af7bd8364d08f8ada8",
+  "sacct": "11424856|COMPLETED|0:0\n11424856.batch|COMPLETED|0:0\n11424856.extern|COMPLETED|0:0\n11424856.0|COMPLETED|0:0\n",
+  "squeue": "",
+  "report_sha256": "5ec2583818b40ea4b5d2a8a966d442ddf80307ab4433e5d7b0d3d8b5c34e5bee",
+  "artifacts_sha256": {
+    "data/engineering/artemis-detector-gradient-GPU-001/report.json": "5ec2583818b40ea4b5d2a8a966d442ddf80307ab4433e5d7b0d3d8b5c34e5bee",
+    "data/engineering/artemis-detector-gradient-GPU-001/000000.npz": "4b8d396c943065341ec15a858c39382d132bdbfb1775fb35351ab9e0f5401f00",
+    "data/engineering/artemis-detector-gradient-GPU-001/000003.npz": "e669b099e9f779b272ac6d0589be4a5866ac7f2c21699b763b819a38a87afbfc",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000000-calib.txt": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000000-label.txt": "6627ff300809ccdb8f0402c1003b7c691a64e3027ceaf0ce7cabfeef9809d0c3",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000000-left.png": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000000-right.png": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000003-calib.txt": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000003-label.txt": "56f275a7b3464992db4bb524ee84cc09fb4ca621b6e63e281f6defa0a79b2651",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000003-left.png": "d22f4692c924e0ba7ff2ac00827547d4bd018d991fb9f1959025b183a949af19",
+    "data/engineering/artemis-detector-gradient-GPU-001/inputs/000003-right.png": "ca44da39dcc83befde20753ac2bdb527314a2a78067757f2298ae6df947a1f9d"
+  },
+  "complete_saved_array_values": 20091058,
+  "full484_states_unchanged": true,
+  "source_inputs_unchanged": true,
+  "base_runtime_unchanged": true,
+  "limitation": "Actual frozen-detector input autograd only; no numerical gradient oracle, optimizer, sparse GPU teacher, codec training or AP claim"
+}

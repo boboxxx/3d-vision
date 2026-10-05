@@ -1,0 +1,15 @@
+{
+  "state": "expected_CPU_rejection_before_any_GPU_or_validation_output",
+  "checked_unix": 1791203900.70352,
+  "actual_exit_code": 1,
+  "plan_index": 0,
+  "reason": "complete native/local training closure missing",
+  "no_endpoint_output": true,
+  "input_sha256": "ac29dd1d725f4d5fd63cecbe74151c83ee33033a8b8def7e285baecb2df0650e",
+  "log_sha256": "7ac2c40573026b1fd214dc6d989c5663cd4272138611e1d39ebcaac59078ea0d",
+  "full_inference_executed": false,
+  "AP_or_full_training_admission_claim": false,
+  "native_CPU_actual_exit_code": 1,
+  "native_rejection_log_sha256": "be2a43d86484064fe9473e2076f1348ed4a0c7a1c2205a50eb6ef7d08fb72fd6",
+  "same_missing_complete_gate_rejected_locally_and_natively": true
+}

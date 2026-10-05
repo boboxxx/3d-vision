@@ -1,0 +1,340 @@
+{
+  "state": "passed_all3_six_source_phases_complete_gradients_and_frozen30_bit_identity",
+  "started_unix": 1791211334.547282,
+  "scope": "synthetic263x265_source_losses_and_complete_gradients_no_updates",
+  "training_AP_radio_or_cross_host_bit_identity_claimed": false,
+  "raw_input_sha256": [
+    "8ecf6e709ca005685b614da820c2e9872b504ebc4216aeb4dbafa363f5a64bc7",
+    "2a9c12031164a1c00614dccb3f4a9975b4270394bffcaf0ed8d46c509d3a94c5"
+  ],
+  "boxes": [
+    [
+      {
+        "xyxy": [
+          20,
+          30,
+          181,
+          193
+        ],
+        "confidence": 0.8
+      }
+    ],
+    [
+      {
+        "xyxy": [
+          17,
+          33,
+          177,
+          191
+        ],
+        "confidence": 0.75
+      }
+    ]
+  ],
+  "inputs_sha256": "63d6057e910a3a4e32a60b53a44fa5020727a11fa8c21a66c1ea09d0ebf13560",
+  "torch_version": "2.12.0",
+  "numpy_version": "2.4.4",
+  "rates": [
+    {
+      "nominal_rate": 30,
+      "padded_hw": [
+        264,
+        270
+      ],
+      "complete_source_loss_gradient_conditions": [
+        {
+          "stage": 1,
+          "epoch": 1,
+          "loss_type": "global_charbonnier",
+          "loss": 0.25529560446739197,
+          "loss_sha256": "047b464978c2deb07ddfd5730141aeecbfea91a3743738e391696f678cc41c78",
+          "output_sha256": [
+            "977d264fe7a4840593efb026eaa47268b4d02bb816ae2ed42329c1e8b6e15f01",
+            "dc39153bd52128532c3da731368ff7e8f16ba7aa9c693697926c774b6e34ad60"
+          ],
+          "active_gradient_tensors": 562,
+          "gradient_values": 10905786,
+          "whole_gradient_ledger_sha256": "314b671234e8ad6127df385ddd38fe1e20127bc3f5e6cf3d86aeca9c0f0a2e20",
+          "states_unchanged": true
+        },
+        {
+          "stage": 1,
+          "epoch": 3,
+          "loss_type": "global_charbonnier",
+          "loss": 0.25529560446739197,
+          "loss_sha256": "047b464978c2deb07ddfd5730141aeecbfea91a3743738e391696f678cc41c78",
+          "output_sha256": [
+            "977d264fe7a4840593efb026eaa47268b4d02bb816ae2ed42329c1e8b6e15f01",
+            "dc39153bd52128532c3da731368ff7e8f16ba7aa9c693697926c774b6e34ad60"
+          ],
+          "active_gradient_tensors": 622,
+          "gradient_values": 12346086,
+          "whole_gradient_ledger_sha256": "ddf5be513e9c45d537135e5c095dfd62c5cc7e25259a399e478a9a63d76604d0",
+          "states_unchanged": true
+        },
+        {
+          "stage": 2,
+          "epoch": 1,
+          "loss_type": "masked_charbonnier",
+          "loss": 0.09865042567253113,
+          "loss_sha256": "3fab2d2bcbd47d6c970b7065d06495e3f6244b1374ad734e007b6360d25d24c6",
+          "output_sha256": [
+            "1491f6ab5615bd4ed8a805c03d59fa2f0d968c8d672b114fad07abcb9f41c6a8",
+            "a937b87684109faec552e0d37a1e466e07128611387ca1982f83972778d5a42a"
+          ],
+          "active_gradient_tensors": 16,
+          "gradient_values": 3888,
+          "whole_gradient_ledger_sha256": "34ef996d54826a74077e3431b21b55cfd8c70bc64369b0673ead1c1e706fa8fd",
+          "states_unchanged": true
+        },
+        {
+          "stage": 3,
+          "epoch": 1,
+          "loss_type": "hybrid_charbonnier",
+          "loss": 0.22287695109844208,
+          "loss_sha256": "a9b7bb47c6c94628dea682819f98d984fe1ae6d876dbb0918babb0687ae84e65",
+          "output_sha256": [
+            "686e8c67c88904d9285096d03a26f49169017c8e67d35ecfa43e62af9fb3cc8c",
+            "ada64913924bd83b73cc97b596bffdf773307d78472fccaa361108f65ed786be"
+          ],
+          "active_gradient_tensors": 12,
+          "gradient_values": 227718,
+          "whole_gradient_ledger_sha256": "bfd12f7c11bc03180390008421e001f4cada44e3cb50202ade823d94492f7aba",
+          "states_unchanged": true
+        },
+        {
+          "stage": 4,
+          "epoch": 1,
+          "loss_type": "hybrid_charbonnier",
+          "loss": 0.22287695109844208,
+          "loss_sha256": "a9b7bb47c6c94628dea682819f98d984fe1ae6d876dbb0918babb0687ae84e65",
+          "output_sha256": [
+            "686e8c67c88904d9285096d03a26f49169017c8e67d35ecfa43e62af9fb3cc8c",
+            "ada64913924bd83b73cc97b596bffdf773307d78472fccaa361108f65ed786be"
+          ],
+          "active_gradient_tensors": 638,
+          "gradient_values": 12349974,
+          "whole_gradient_ledger_sha256": "6ec9bf6e6d336ab4e4312689360b336a9306bfe818549f18b30008aacf941861",
+          "states_unchanged": true
+        },
+        {
+          "stage": 4,
+          "epoch": 6,
+          "loss_type": "global_charbonnier",
+          "loss": 0.2554382383823395,
+          "loss_sha256": "ac092cd08237df6e9a319497817ca6c842121815faf2dd063835cf71631f99d1",
+          "output_sha256": [
+            "686e8c67c88904d9285096d03a26f49169017c8e67d35ecfa43e62af9fb3cc8c",
+            "ada64913924bd83b73cc97b596bffdf773307d78472fccaa361108f65ed786be"
+          ],
+          "active_gradient_tensors": 638,
+          "gradient_values": 12349974,
+          "whole_gradient_ledger_sha256": "991c27b87496e45e2df999924881972665bffa5fe13a1336346e8141d7fea595",
+          "states_unchanged": true
+        }
+      ],
+      "nominal30_bit_identical_frozen_control": true
+    },
+    {
+      "nominal_rate": 10,
+      "padded_hw": [
+        264,
+        270
+      ],
+      "complete_source_loss_gradient_conditions": [
+        {
+          "stage": 1,
+          "epoch": 1,
+          "loss_type": "global_charbonnier",
+          "loss": 0.25412750244140625,
+          "loss_sha256": "be11a9aacb9f7546c9478bd116140186e5f2072d07bbafb825f19b33b3e03aae",
+          "output_sha256": [
+            "d48ef0a05838d4b56767bee5a0258c144b2750a6b8ccfb9f20875e76d7d6ad92",
+            "a3b5c49b7abb9b308797b6000e5dafd9d2668c30119aa9c9c3aa3a608676a4a1"
+          ],
+          "active_gradient_tensors": 562,
+          "gradient_values": 10905786,
+          "whole_gradient_ledger_sha256": "2629189f0a31d3fab13311099ff60975ae020ac0b07e77934f5827d15a97f1e1",
+          "states_unchanged": true
+        },
+        {
+          "stage": 1,
+          "epoch": 3,
+          "loss_type": "global_charbonnier",
+          "loss": 0.25412750244140625,
+          "loss_sha256": "be11a9aacb9f7546c9478bd116140186e5f2072d07bbafb825f19b33b3e03aae",
+          "output_sha256": [
+            "d48ef0a05838d4b56767bee5a0258c144b2750a6b8ccfb9f20875e76d7d6ad92",
+            "a3b5c49b7abb9b308797b6000e5dafd9d2668c30119aa9c9c3aa3a608676a4a1"
+          ],
+          "active_gradient_tensors": 622,
+          "gradient_values": 12346086,
+          "whole_gradient_ledger_sha256": "8ee7e6c8a8d5f868b2307ca9449f28f91c6e6d86ec63b8a3f75532bd1ca9cd8f",
+          "states_unchanged": true
+        },
+        {
+          "stage": 2,
+          "epoch": 1,
+          "loss_type": "masked_charbonnier",
+          "loss": 0.0670154020190239,
+          "loss_sha256": "6044307d64b844aaadd2fbb1d9a1cd4203182b2b0bd96f94772d391156e51e79",
+          "output_sha256": [
+            "36ed16a810964f97d1e4c50e3058e61fe2ee06c8e36722d859bb30e406233ddd",
+            "6ea0e245766bec47309b2be73a8b713bd640f82dc8cd108fea286881a0772e88"
+          ],
+          "active_gradient_tensors": 16,
+          "gradient_values": 1908,
+          "whole_gradient_ledger_sha256": "2b5417c8891548b737bfe0425d711b41ca83065627ccd6b1fc424b99a4aa3cd1",
+          "states_unchanged": true
+        },
+        {
+          "stage": 3,
+          "epoch": 1,
+          "loss_type": "hybrid_charbonnier",
+          "loss": 0.22316549718379974,
+          "loss_sha256": "0474add280941af016ceba18b1873f4f7295d44a611b57a3c09c365264caa5fa",
+          "output_sha256": [
+            "12d93b695e51f9874837568307e1ca617ed5d72215f75dad7335c85fa761a72d",
+            "a22e283c61be6eec0dfc5ab1d80359d77c2887a6c7d398eb087c5ecde20fb6f3"
+          ],
+          "active_gradient_tensors": 12,
+          "gradient_values": 227718,
+          "whole_gradient_ledger_sha256": "176f4911f2fb597b58bad9ffefaaeb1b7898d235587df5601cb6bdab03f341af",
+          "states_unchanged": true
+        },
+        {
+          "stage": 4,
+          "epoch": 1,
+          "loss_type": "hybrid_charbonnier",
+          "loss": 0.22316549718379974,
+          "loss_sha256": "0474add280941af016ceba18b1873f4f7295d44a611b57a3c09c365264caa5fa",
+          "output_sha256": [
+            "12d93b695e51f9874837568307e1ca617ed5d72215f75dad7335c85fa761a72d",
+            "a22e283c61be6eec0dfc5ab1d80359d77c2887a6c7d398eb087c5ecde20fb6f3"
+          ],
+          "active_gradient_tensors": 638,
+          "gradient_values": 12347994,
+          "whole_gradient_ledger_sha256": "a6ce087498ffdd253d4402bdb9142f30d15db7564e1a29b3797efe142a146b24",
+          "states_unchanged": true
+        },
+        {
+          "stage": 4,
+          "epoch": 6,
+          "loss_type": "global_charbonnier",
+          "loss": 0.2551664412021637,
+          "loss_sha256": "0f4e1c9f9b23dd2cf2c8d98d0bbaba0375072fbe190ccafde8c5c9c5995d5ea7",
+          "output_sha256": [
+            "12d93b695e51f9874837568307e1ca617ed5d72215f75dad7335c85fa761a72d",
+            "a22e283c61be6eec0dfc5ab1d80359d77c2887a6c7d398eb087c5ecde20fb6f3"
+          ],
+          "active_gradient_tensors": 638,
+          "gradient_values": 12347994,
+          "whole_gradient_ledger_sha256": "6ed541180481a3fc4d570fee1f5b2470ab8f899bd80dbeb188b4eea22227f71b",
+          "states_unchanged": true
+        }
+      ],
+      "nominal30_bit_identical_frozen_control": false
+    },
+    {
+      "nominal_rate": 50,
+      "padded_hw": [
+        264,
+        272
+      ],
+      "complete_source_loss_gradient_conditions": [
+        {
+          "stage": 1,
+          "epoch": 1,
+          "loss_type": "global_charbonnier",
+          "loss": 0.2578536868095398,
+          "loss_sha256": "f82152f71f4016d7846082c7239519da6a835a2389f879722e841815bd52bcc1",
+          "output_sha256": [
+            "7962aabf9864268d0db5e76462672348d521fd6b620857f3b856f82a920fa8a5",
+            "7b2bce8e4f454e07d8669696fbaaf1d6ad7a7447c259c429a2604ec13288330d"
+          ],
+          "active_gradient_tensors": 562,
+          "gradient_values": 11428826,
+          "whole_gradient_ledger_sha256": "871b4678f2182514a731c1dd51ff691ee4bcfc7a82f77ec6a724ee6f050553f9",
+          "states_unchanged": true
+        },
+        {
+          "stage": 1,
+          "epoch": 3,
+          "loss_type": "global_charbonnier",
+          "loss": 0.2578536868095398,
+          "loss_sha256": "f82152f71f4016d7846082c7239519da6a835a2389f879722e841815bd52bcc1",
+          "output_sha256": [
+            "7962aabf9864268d0db5e76462672348d521fd6b620857f3b856f82a920fa8a5",
+            "7b2bce8e4f454e07d8669696fbaaf1d6ad7a7447c259c429a2604ec13288330d"
+          ],
+          "active_gradient_tensors": 622,
+          "gradient_values": 12869126,
+          "whole_gradient_ledger_sha256": "4ea1b2a4f988f175ccce354cde2a765f06a71baf3b7cc925cfed5a82f3ff7943",
+          "states_unchanged": true
+        },
+        {
+          "stage": 2,
+          "epoch": 1,
+          "loss_type": "masked_charbonnier",
+          "loss": 0.10530588030815125,
+          "loss_sha256": "8c6584f5b2f323f16dd63c4c241f631d5b689fd52187842b6c85b27966c10cb0",
+          "output_sha256": [
+            "36acef6f844570fa200cd3fcb060344a671511aba914c94b021306e15ed28170",
+            "c6b21dffd78765530bc9978163fd2dfa51506521ebb7e7d53253e364a0099975"
+          ],
+          "active_gradient_tensors": 16,
+          "gradient_values": 11808,
+          "whole_gradient_ledger_sha256": "61b4e0feec260ed05cc4776b64fb5ebb23cc69f76612d37d0606ee04c02e0e81",
+          "states_unchanged": true
+        },
+        {
+          "stage": 3,
+          "epoch": 1,
+          "loss_type": "hybrid_charbonnier",
+          "loss": 0.22598561644554138,
+          "loss_sha256": "3a95946d8bd70879e04e294a77166b875f69eca41f174ce05f9754fb97a28ff1",
+          "output_sha256": [
+            "0c6cdd3dd82aca4bc93dd50b3877f4c66e9c163ff8c3ac8207fb45157c25a2d2",
+            "a578af2636bcd0d926b5209856bbcdd47abd7e26a0f1ad2191eeea6b2171071b"
+          ],
+          "active_gradient_tensors": 12,
+          "gradient_values": 227718,
+          "whole_gradient_ledger_sha256": "2badf0631aef18b55ebd60e681bf5706fc6b6bac6cfc113370d3965d86e84cec",
+          "states_unchanged": true
+        },
+        {
+          "stage": 4,
+          "epoch": 1,
+          "loss_type": "hybrid_charbonnier",
+          "loss": 0.22598561644554138,
+          "loss_sha256": "3a95946d8bd70879e04e294a77166b875f69eca41f174ce05f9754fb97a28ff1",
+          "output_sha256": [
+            "0c6cdd3dd82aca4bc93dd50b3877f4c66e9c163ff8c3ac8207fb45157c25a2d2",
+            "a578af2636bcd0d926b5209856bbcdd47abd7e26a0f1ad2191eeea6b2171071b"
+          ],
+          "active_gradient_tensors": 638,
+          "gradient_values": 12880934,
+          "whole_gradient_ledger_sha256": "e9d18b32abd7a65ac8c1f3807d298cb2a7dfe207b681849cc851b183d988d86f",
+          "states_unchanged": true
+        },
+        {
+          "stage": 4,
+          "epoch": 6,
+          "loss_type": "global_charbonnier",
+          "loss": 0.25863105058670044,
+          "loss_sha256": "36ef3a6dd58b0dcc0440f04b88e9cf3e5fb94addbf96e8c76ca3128763ce7f49",
+          "output_sha256": [
+            "0c6cdd3dd82aca4bc93dd50b3877f4c66e9c163ff8c3ac8207fb45157c25a2d2",
+            "a578af2636bcd0d926b5209856bbcdd47abd7e26a0f1ad2191eeea6b2171071b"
+          ],
+          "active_gradient_tensors": 638,
+          "gradient_values": 12880934,
+          "whole_gradient_ledger_sha256": "c877d636d71c097f3b225ee557115f3fcb7c89caa725d353f352806e980b73e9",
+          "states_unchanged": true
+        }
+      ],
+      "nominal30_bit_identical_frozen_control": false
+    }
+  ],
+  "ended_unix": 1791211403.8461199
+}

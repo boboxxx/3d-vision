@@ -1,0 +1,29 @@
+{
+  "state": "prelaunch_passed",
+  "run_id": "stereo-native-task-seed17-001",
+  "checked_at_unix": 1791077796.1186268,
+  "implementation_commit": "ad1541f",
+  "protocol_commit": "2de22b1",
+  "engineering_result_commit": "1a0c1f6",
+  "engineering_manifest_sha256": "6f1d02291980f4819d1a6d43cadf724a78807d059f26a2ffb879043f25d90c31",
+  "engineering_audit_sha256": "e4975c34d59f9daf34764fc1d4dd592e4b1aa1e45847efeba3e1a0b5316b02d8",
+  "engineering_probe_sha256": "bb2b7a15a6b76a43f1890cc9851758e148ecb8d2ecf9badc6744ce5a0beb6b74",
+  "source_manifest_sha256": "12fb5a8d8bfe9515adbf99a33aa88c24bfcff4fe3c542ff49ba116d1f87ee48b",
+  "original21_source_states_unchanged": true,
+  "original_process_pid": 26642,
+  "gpu_used_before_MiB": 9326,
+  "gpu_total_MiB": 24564,
+  "measured_DDP_peak_reserved_bytes": 4129292288,
+  "measured_task_backward_peak_reserved_bytes": 7327449088,
+  "script_sha256": "489daf38af4b0c55972efee052dc989405bd83be91096ca11756a353eaf7ecad",
+  "protocol_sha256": "33497d4b0ffeda350da786d8952fdb78d43184a441ec17b186abfb3d092e1a76",
+  "initialization_sha256": "9a4b291070df160e6c03e75ed31eeee1dda7f6bfbaa0528a43a9cdf526977553",
+  "new_initialization": "all535 F5b final states with freshAdamW; engineering weights excluded",
+  "planned_updates": 3340,
+  "predetermined_final_evaluations": [
+    "identity_full372",
+    "awgn10dB_full372"
+  ],
+  "complex_uses": 62400,
+  "scope": "clean native3D codec task adaptation, no completed-training/AP claim"
+}

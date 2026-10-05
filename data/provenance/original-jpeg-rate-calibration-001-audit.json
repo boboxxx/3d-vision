@@ -1,0 +1,44 @@
+{
+  "state": "passed6080_records128_source_files_three_prelocked_rate_choices_actual_terminal",
+  "checked_unix": 1791145515.136961,
+  "manifest_sha256": "ad41d390c7084a7279920cce7d881f327071630b3bf8852c65dbc88033379d62",
+  "records_sha256": "9136119caa58c036cb9d35a96627ba29641a8263e23d0794818a08d7d48b7631",
+  "rows": 6080,
+  "source_files": 128,
+  "actual_terminal": true,
+  "actual_ps": "    PID STAT     ELAPSED COMMAND\n",
+  "ps_returncode": 1,
+  "pid": 262111,
+  "selected_qualities": {
+    "10": {
+      "quality": 90,
+      "measured_ratio": 9.947833563866546,
+      "absolute_log_residual": 0.005230297805376264
+    },
+    "30": {
+      "quality": 39,
+      "measured_ratio": 30.062470202105118,
+      "absolute_log_residual": 0.0020801750051667846
+    },
+    "50": {
+      "quality": 17,
+      "measured_ratio": 49.7384857152573,
+      "absolute_log_residual": 0.005244011519988702
+    }
+  },
+  "sources": {
+    "historical": {
+      "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+      "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+      "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+      "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+    },
+    "current": {
+      "experiments/original-paper-scenarios/jpeg-rate-calibration-code/audit.py": "ad3fa0e908a8d934361219beeb34b5c5895bb5b00829ad7cb7749a51369565b0",
+      "experiments/original-paper-scenarios/jpeg-rate-calibration-code/calibrate.py": "1f232c17bb756b588a761c95dc2027473d8c031ef63eaad9ac0e3e1221db01fc"
+    }
+  },
+  "protocol_sha256": "2f1f514cbcd6b2005d97b292478953875cdbd40c025dac42267b4998844db955",
+  "candidate_wires_reencoded": false,
+  "scope": "Independent complete byte-accounting/selection audit; actual encoding covered by sealed native encoder, no wire re-encoding or AP"
+}

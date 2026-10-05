@@ -1,0 +1,40 @@
+{
+  "state": "passed",
+  "evidence_type": "engineering_only",
+  "steps": 3,
+  "inactive_states_identical": 519,
+  "trained_parameter_tensors": 16,
+  "all_optimizer_update_counts": 3,
+  "summary": {
+    "nonzero_gradient_frames": {
+      "left_stereo": 3,
+      "right_stereo": 3,
+      "appearance": 3,
+      "symbols": 3,
+      "native_cost": 3
+    },
+    "steps": 3,
+    "unique_returned_frames": 3,
+    "max_preclip_gradient": 38.37100601196289,
+    "first100_loss_median": 2.1173486709594727,
+    "last100_loss_median": 2.1173486709594727,
+    "component_first100_medians": {
+      "classification_loss": 1.1177723407745361,
+      "location_loss": 0.37110286951065063,
+      "direction_loss": 0.18124547600746155,
+      "iou_loss_raw": 0.4928510785102844
+    },
+    "component_last100_medians": {
+      "classification_loss": 1.1177723407745361,
+      "location_loss": 0.37110286951065063,
+      "direction_loss": 0.18124547600746155,
+      "iou_loss_raw": 0.4928510785102844
+    }
+  },
+  "full_initialization_sha256": "924e0de8fe105dc122c64a9f31e502643757be97d3b1b0bb45dc4f9adf34e196",
+  "checkpoint_sha256": "07786228e738f9b98758a7a20e57b6942d7d8418376658cd9f8ee8f2b5f5997b",
+  "manifest_sha256": "6f1d02291980f4819d1a6d43cadf724a78807d059f26a2ffb879043f25d90c31",
+  "source_manifest_sha256": "12fb5a8d8bfe9515adbf99a33aa88c24bfcff4fe3c542ff49ba116d1f87ee48b",
+  "raw_snapshot_sha256": "6cc26b2a00757e6b5e8ec083c919d2a5eedd744ee9638e9aeffa725c2e7fbd3f",
+  "limitations": "exact state and saved scalar/counter audit; no fresh feature reconstruction or detection AP proof"
+}

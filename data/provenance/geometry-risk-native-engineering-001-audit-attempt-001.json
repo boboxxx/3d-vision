@@ -1,0 +1,14 @@
+{
+  "state": "failed_GT_yaw_canonicalization_omitted_by_auditor",
+  "verifier_sha256": "73f7d1e17ef581b2459b5bb48f1e6d81e1c335ae3f260e787d2a26cae0d06c5b",
+  "native_pid": 73911,
+  "queue_pid": 68491,
+  "actual_terminal_confirmed": true,
+  "failed_assertion": "gt_boxes expected raw pseudoLiDAR yaw omits test-mode period wrap",
+  "actual_yaw": 3.092389,
+  "expected_yaw": -3.190796,
+  "maximum_error": 6.2831855,
+  "rtol": 2e-06,
+  "atol": 2e-06,
+  "scope": "auditor failure; native measurements unchanged"
+}

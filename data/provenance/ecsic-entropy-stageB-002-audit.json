@@ -1,0 +1,81 @@
+{
+  "state": "passed",
+  "actual_native_terminal": true,
+  "native_pid": 178153,
+  "audited_unix": 1791135703.9639904,
+  "manifest_sha256": "e098d9ec03e7783746ee9a150d0caf2b71e2c82816a47b088b3c4e6e54e6b867",
+  "verifier_sha256": "2c0dce6b01050f6c58fd482de13dc78c1f0511ca8a4fb4fb1d7b5646f29e390c",
+  "cases": {
+    "synthetic32x64": {
+      "container_bytes": 813,
+      "payload_sha256": "acbc2be75dc60f74903dc19c57d100f2ea9772a9c4606f3fb7681e75a632a35f",
+      "exact_arrays": 18,
+      "streams": {
+        "z_left": {
+          "symbols": 96,
+          "rans_bytes": 15,
+          "escape_bytes": 0,
+          "independent_Cxx_sha256": "892f9a814dcd2c90bb40f3e1e9851381093322c915e957db7b774a315b053055"
+        },
+        "z_right": {
+          "symbols": 96,
+          "rans_bytes": 20,
+          "escape_bytes": 0,
+          "independent_Cxx_sha256": "188705efdaaaea85f6a74c3758b067850cb1439cc8669fe162fcf8db4a16722a"
+        },
+        "y_left": {
+          "symbols": 1536,
+          "rans_bytes": 318,
+          "escape_bytes": 0,
+          "independent_Cxx_sha256": "cbe966599cfa50a2dbf198814d3864bb11a3571efb16e471550014091de39968"
+        },
+        "y_right": {
+          "symbols": 1536,
+          "rans_bytes": 294,
+          "escape_bytes": 0,
+          "independent_Cxx_sha256": "f9daa3d77147e3671200cce2954086d7aa05a6f85fc7cb984051a8a75d07f626"
+        }
+      }
+    },
+    "training000000": {
+      "container_bytes": 44824,
+      "payload_sha256": "e7242cca0a0edd43dbda26b8892894967a75690efeb1716ee538371c1905eb4a",
+      "exact_arrays": 18,
+      "streams": {
+        "z_left": {
+          "symbols": 22464,
+          "rans_bytes": 2173,
+          "escape_bytes": 0,
+          "independent_Cxx_sha256": "79e2f5f39fe1ad100973d28a647d25cf4720c73b3ad26d8a077ef702b0c9cf2f"
+        },
+        "z_right": {
+          "symbols": 22464,
+          "rans_bytes": 2584,
+          "escape_bytes": 0,
+          "independent_Cxx_sha256": "5a1fe90120b690caa3c9f251be77b33dc72ddfa2d5e631f8a2f038a1d7faa809"
+        },
+        "y_left": {
+          "symbols": 359424,
+          "rans_bytes": 19968,
+          "escape_bytes": 0,
+          "independent_Cxx_sha256": "a293f35fb61f266b73a815b4f4f3a73d2ab512aeb8633bb3e1557e457aa54916"
+        },
+        "y_right": {
+          "symbols": 359424,
+          "rans_bytes": 19933,
+          "escape_bytes": 0,
+          "independent_Cxx_sha256": "382669a05598f820db8664c2cb067455aaed3bbe25c0479880f8dc23b5a0fdf4"
+        }
+      }
+    }
+  },
+  "independent_reference": {
+    "repo": "https://github.com/rygorous/ryg_rans",
+    "commit": "c9d162d996fd600315af9ae8eb89d832576cb32d",
+    "url": "https://raw.githubusercontent.com/rygorous/ryg_rans/c9d162d996fd600315af9ae8eb89d832576cb32d/rans_byte.h",
+    "sha256": "66e9521b4485c1b36ee7527f1a6cd7c9fe7f8495f81420602fbdc26b7273bea6"
+  },
+  "complete_states": 225,
+  "actual_entropy_bytes": true,
+  "physical_channel_or_AP_claim": false
+}

@@ -1,0 +1,246 @@
+{
+  "state": "passed_all20_outcomes11_causal_neural_and_exact_crops",
+  "checked_unix": 1791144050.6467981,
+  "producer_manifest_sha256": "2132577c8f2c64d2f7320df5dd5b6bf260a21ba85b7827886e74ff1fe765f029",
+  "predecessor_manifest_sha256": "f265c56a7fdcc3e98fde0ff580758479aa50036d4b474fa949ec7cbc605227d3",
+  "packets": 20,
+  "received": 11,
+  "erased": 9,
+  "full_arrays_exact": 198,
+  "cropped_views_exact": 22,
+  "all225_states_exact_and_readonly": true,
+  "no_source_encoder_or_erasures_fallback": true,
+  "distinct_successful_child_processes": 22,
+  "packet_audits": [
+    {
+      "name": "00-synthetic32x64-ldpc_2_3_qam64-identity-10",
+      "state": "passed225_states18_arrays_exact_public_crop",
+      "full_arrays": 18,
+      "cropped_views": 2
+    },
+    {
+      "name": "01-synthetic32x64-ldpc_2_3_qam64-awgn-6",
+      "state": "erased_preserved",
+      "reason": "header_magic"
+    },
+    {
+      "name": "02-synthetic32x64-ldpc_2_3_qam64-awgn-18",
+      "state": "passed225_states18_arrays_exact_public_crop",
+      "full_arrays": 18,
+      "cropped_views": 2
+    },
+    {
+      "name": "03-synthetic32x64-ldpc_2_3_qam64-rayleigh-6",
+      "state": "erased_preserved",
+      "reason": "header_magic"
+    },
+    {
+      "name": "04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18",
+      "state": "passed225_states18_arrays_exact_public_crop",
+      "full_arrays": 18,
+      "cropped_views": 2
+    },
+    {
+      "name": "05-synthetic32x64-ldpc_1_2_qam256-identity-10",
+      "state": "passed225_states18_arrays_exact_public_crop",
+      "full_arrays": 18,
+      "cropped_views": 2
+    },
+    {
+      "name": "06-synthetic32x64-ldpc_1_2_qam256-awgn-6",
+      "state": "erased_preserved",
+      "reason": "header_magic"
+    },
+    {
+      "name": "07-synthetic32x64-ldpc_1_2_qam256-awgn-18",
+      "state": "passed225_states18_arrays_exact_public_crop",
+      "full_arrays": 18,
+      "cropped_views": 2
+    },
+    {
+      "name": "08-synthetic32x64-ldpc_1_2_qam256-rayleigh-6",
+      "state": "erased_preserved",
+      "reason": "header_magic"
+    },
+    {
+      "name": "09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18",
+      "state": "passed225_states18_arrays_exact_public_crop",
+      "full_arrays": 18,
+      "cropped_views": 2
+    },
+    {
+      "name": "10-training000000-ldpc_2_3_qam64-identity-10",
+      "state": "passed225_states18_arrays_exact_public_crop",
+      "full_arrays": 18,
+      "cropped_views": 2
+    },
+    {
+      "name": "11-training000000-ldpc_2_3_qam64-awgn-6",
+      "state": "erased_preserved",
+      "reason": "header_magic"
+    },
+    {
+      "name": "12-training000000-ldpc_2_3_qam64-awgn-18",
+      "state": "passed225_states18_arrays_exact_public_crop",
+      "full_arrays": 18,
+      "cropped_views": 2
+    },
+    {
+      "name": "13-training000000-ldpc_2_3_qam64-rayleigh-6",
+      "state": "erased_preserved",
+      "reason": "header_magic"
+    },
+    {
+      "name": "14-training000000-ldpc_2_3_qam64-rayleigh-18",
+      "state": "passed225_states18_arrays_exact_public_crop",
+      "full_arrays": 18,
+      "cropped_views": 2
+    },
+    {
+      "name": "15-training000000-ldpc_1_2_qam256-identity-10",
+      "state": "passed225_states18_arrays_exact_public_crop",
+      "full_arrays": 18,
+      "cropped_views": 2
+    },
+    {
+      "name": "16-training000000-ldpc_1_2_qam256-awgn-6",
+      "state": "erased_preserved",
+      "reason": "header_magic"
+    },
+    {
+      "name": "17-training000000-ldpc_1_2_qam256-awgn-18",
+      "state": "passed225_states18_arrays_exact_public_crop",
+      "full_arrays": 18,
+      "cropped_views": 2
+    },
+    {
+      "name": "18-training000000-ldpc_1_2_qam256-rayleigh-6",
+      "state": "erased_preserved",
+      "reason": "header_magic"
+    },
+    {
+      "name": "19-training000000-ldpc_1_2_qam256-rayleigh-18",
+      "state": "erased_preserved",
+      "reason": "nonzero_decoded_padding"
+    }
+  ],
+  "native_artifacts_sha256": {
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/manifest.json": "2132577c8f2c64d2f7320df5dd5b6bf260a21ba85b7827886e74ff1fe765f029",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10/crop.json": "a3e688c3132f581918ee9bcc865fa0f1fd2cc5427c770aba23fcf99026c16cdc",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10/received-RGB-FP32.npz": "cab787bf0aa2aaa404717ba2dece763324bf86f4f4418b6b8a2632c425b1a8d6",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10/reconstructed.npz": "28eec43206d78e3b770cb661fe61090d666a36e840b708e16aca8d4209f3dded",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18/crop.json": "fbe5ac582bcf3e601182a51e61e7c281124c53423b1048b8691a562025b8b7f3",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18/received-RGB-FP32.npz": "cab787bf0aa2aaa404717ba2dece763324bf86f4f4418b6b8a2632c425b1a8d6",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18/reconstructed.npz": "28eec43206d78e3b770cb661fe61090d666a36e840b708e16aca8d4209f3dded",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18/crop.json": "a40f238c3125fdc8cef803a2e9935621c3567860d6d833b3f3bbca9761764681",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18/received-RGB-FP32.npz": "cab787bf0aa2aaa404717ba2dece763324bf86f4f4418b6b8a2632c425b1a8d6",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18/reconstructed.npz": "28eec43206d78e3b770cb661fe61090d666a36e840b708e16aca8d4209f3dded",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10/crop.json": "d9866bdff42fed2c1dc46e6bd1250baf08c0e0141a704846fc53afdb342bcc12",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10/received-RGB-FP32.npz": "cab787bf0aa2aaa404717ba2dece763324bf86f4f4418b6b8a2632c425b1a8d6",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10/reconstructed.npz": "28eec43206d78e3b770cb661fe61090d666a36e840b708e16aca8d4209f3dded",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18/crop.json": "888e5a110b0c8ecb2b5c66ede0617689e10c1fdb73efc0691fcb71d3d4902b07",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18/received-RGB-FP32.npz": "cab787bf0aa2aaa404717ba2dece763324bf86f4f4418b6b8a2632c425b1a8d6",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18/reconstructed.npz": "28eec43206d78e3b770cb661fe61090d666a36e840b708e16aca8d4209f3dded",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18/crop.json": "6e1fa0538ad0d48a456e32b91277e0fd10cba82ef97016ec4e7172c7fb6e2556",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18/received-RGB-FP32.npz": "cab787bf0aa2aaa404717ba2dece763324bf86f4f4418b6b8a2632c425b1a8d6",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18/reconstructed.npz": "28eec43206d78e3b770cb661fe61090d666a36e840b708e16aca8d4209f3dded",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/10-training000000-ldpc_2_3_qam64-identity-10/crop.json": "746b6244f9f894d36231c0b02cd8d9c706a14d95c806d3aa46065c9f7679711a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/10-training000000-ldpc_2_3_qam64-identity-10/crop.log": "b83985d8771e5a6be5e7b0552d73c962123a21b4d251245b29f8771a1623e1b1",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/10-training000000-ldpc_2_3_qam64-identity-10/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/10-training000000-ldpc_2_3_qam64-identity-10/received-RGB-FP32.npz": "8738231db6c045e87f779be54a7e643225a0ebf8b39f536f0c3c4fd746eca4d4",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/10-training000000-ldpc_2_3_qam64-identity-10/receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/10-training000000-ldpc_2_3_qam64-identity-10/reconstructed.npz": "a008476e633b39b71263a50a277807f9b2583869a194b266c6e2734f0df399d9",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/12-training000000-ldpc_2_3_qam64-awgn-18/crop.json": "9857ed737a4db0d3ef4278096b6d6c04f39d5724f84fcdd7e48fb55bd2e0fa65",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/12-training000000-ldpc_2_3_qam64-awgn-18/crop.log": "b83985d8771e5a6be5e7b0552d73c962123a21b4d251245b29f8771a1623e1b1",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/12-training000000-ldpc_2_3_qam64-awgn-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/12-training000000-ldpc_2_3_qam64-awgn-18/received-RGB-FP32.npz": "8738231db6c045e87f779be54a7e643225a0ebf8b39f536f0c3c4fd746eca4d4",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/12-training000000-ldpc_2_3_qam64-awgn-18/receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/12-training000000-ldpc_2_3_qam64-awgn-18/reconstructed.npz": "a008476e633b39b71263a50a277807f9b2583869a194b266c6e2734f0df399d9",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/14-training000000-ldpc_2_3_qam64-rayleigh-18/crop.json": "23f00380705fbda9f65afae1dfd0459b4fc8b1d1831633864653fe9a94fa4617",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/14-training000000-ldpc_2_3_qam64-rayleigh-18/crop.log": "b83985d8771e5a6be5e7b0552d73c962123a21b4d251245b29f8771a1623e1b1",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/14-training000000-ldpc_2_3_qam64-rayleigh-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/14-training000000-ldpc_2_3_qam64-rayleigh-18/received-RGB-FP32.npz": "8738231db6c045e87f779be54a7e643225a0ebf8b39f536f0c3c4fd746eca4d4",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/14-training000000-ldpc_2_3_qam64-rayleigh-18/receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/14-training000000-ldpc_2_3_qam64-rayleigh-18/reconstructed.npz": "a008476e633b39b71263a50a277807f9b2583869a194b266c6e2734f0df399d9",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/15-training000000-ldpc_1_2_qam256-identity-10/crop.json": "a9dbcf7c5ea9dd2cb8519612589a1b21c33f03ceb1c07ea0609d373f6e4de48c",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/15-training000000-ldpc_1_2_qam256-identity-10/crop.log": "b83985d8771e5a6be5e7b0552d73c962123a21b4d251245b29f8771a1623e1b1",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/15-training000000-ldpc_1_2_qam256-identity-10/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/15-training000000-ldpc_1_2_qam256-identity-10/received-RGB-FP32.npz": "8738231db6c045e87f779be54a7e643225a0ebf8b39f536f0c3c4fd746eca4d4",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/15-training000000-ldpc_1_2_qam256-identity-10/receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/15-training000000-ldpc_1_2_qam256-identity-10/reconstructed.npz": "a008476e633b39b71263a50a277807f9b2583869a194b266c6e2734f0df399d9",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/17-training000000-ldpc_1_2_qam256-awgn-18/crop.json": "f95da0c261a3fa8be542b8148e9c5c8a0db44ffa9165b92787f00393f73ee218",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/17-training000000-ldpc_1_2_qam256-awgn-18/crop.log": "b83985d8771e5a6be5e7b0552d73c962123a21b4d251245b29f8771a1623e1b1",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/17-training000000-ldpc_1_2_qam256-awgn-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/17-training000000-ldpc_1_2_qam256-awgn-18/received-RGB-FP32.npz": "8738231db6c045e87f779be54a7e643225a0ebf8b39f536f0c3c4fd746eca4d4",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/17-training000000-ldpc_1_2_qam256-awgn-18/receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/17-training000000-ldpc_1_2_qam256-awgn-18/reconstructed.npz": "a008476e633b39b71263a50a277807f9b2583869a194b266c6e2734f0df399d9"
+  },
+  "metadata_artifacts_sha256": {
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/manifest.json": "2132577c8f2c64d2f7320df5dd5b6bf260a21ba85b7827886e74ff1fe765f029",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10/crop.json": "a3e688c3132f581918ee9bcc865fa0f1fd2cc5427c770aba23fcf99026c16cdc",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/00-synthetic32x64-ldpc_2_3_qam64-identity-10/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18/crop.json": "fbe5ac582bcf3e601182a51e61e7c281124c53423b1048b8691a562025b8b7f3",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/02-synthetic32x64-ldpc_2_3_qam64-awgn-18/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18/crop.json": "a40f238c3125fdc8cef803a2e9935621c3567860d6d833b3f3bbca9761764681",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/04-synthetic32x64-ldpc_2_3_qam64-rayleigh-18/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10/crop.json": "d9866bdff42fed2c1dc46e6bd1250baf08c0e0141a704846fc53afdb342bcc12",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/05-synthetic32x64-ldpc_1_2_qam256-identity-10/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18/crop.json": "888e5a110b0c8ecb2b5c66ede0617689e10c1fdb73efc0691fcb71d3d4902b07",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/07-synthetic32x64-ldpc_1_2_qam256-awgn-18/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18/crop.json": "6e1fa0538ad0d48a456e32b91277e0fd10cba82ef97016ec4e7172c7fb6e2556",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18/crop.log": "5b2abea3ff85a8d02dd64ecdd7a025d5105a8856412854cf3fcaf5f8170d4d9a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/09-synthetic32x64-ldpc_1_2_qam256-rayleigh-18/receiver.json": "23b5fda5a06195bf8d55004e2d76897919f86ffa66ac0c6f9090b154196f7e0b",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/10-training000000-ldpc_2_3_qam64-identity-10/crop.json": "746b6244f9f894d36231c0b02cd8d9c706a14d95c806d3aa46065c9f7679711a",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/10-training000000-ldpc_2_3_qam64-identity-10/crop.log": "b83985d8771e5a6be5e7b0552d73c962123a21b4d251245b29f8771a1623e1b1",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/10-training000000-ldpc_2_3_qam64-identity-10/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/10-training000000-ldpc_2_3_qam64-identity-10/receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/12-training000000-ldpc_2_3_qam64-awgn-18/crop.json": "9857ed737a4db0d3ef4278096b6d6c04f39d5724f84fcdd7e48fb55bd2e0fa65",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/12-training000000-ldpc_2_3_qam64-awgn-18/crop.log": "b83985d8771e5a6be5e7b0552d73c962123a21b4d251245b29f8771a1623e1b1",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/12-training000000-ldpc_2_3_qam64-awgn-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/12-training000000-ldpc_2_3_qam64-awgn-18/receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/14-training000000-ldpc_2_3_qam64-rayleigh-18/crop.json": "23f00380705fbda9f65afae1dfd0459b4fc8b1d1831633864653fe9a94fa4617",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/14-training000000-ldpc_2_3_qam64-rayleigh-18/crop.log": "b83985d8771e5a6be5e7b0552d73c962123a21b4d251245b29f8771a1623e1b1",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/14-training000000-ldpc_2_3_qam64-rayleigh-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/14-training000000-ldpc_2_3_qam64-rayleigh-18/receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/15-training000000-ldpc_1_2_qam256-identity-10/crop.json": "a9dbcf7c5ea9dd2cb8519612589a1b21c33f03ceb1c07ea0609d373f6e4de48c",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/15-training000000-ldpc_1_2_qam256-identity-10/crop.log": "b83985d8771e5a6be5e7b0552d73c962123a21b4d251245b29f8771a1623e1b1",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/15-training000000-ldpc_1_2_qam256-identity-10/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/15-training000000-ldpc_1_2_qam256-identity-10/receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/17-training000000-ldpc_1_2_qam256-awgn-18/crop.json": "f95da0c261a3fa8be542b8148e9c5c8a0db44ffa9165b92787f00393f73ee218",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/17-training000000-ldpc_1_2_qam256-awgn-18/crop.log": "b83985d8771e5a6be5e7b0552d73c962123a21b4d251245b29f8771a1623e1b1",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/17-training000000-ldpc_1_2_qam256-awgn-18/neural.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/paper6/runs/ecsic-neural-reception-native-001/17-training000000-ldpc_1_2_qam256-awgn-18/receiver.json": "cf0aca245c476c169e2613d651eb73dcd8545db8a065836774a1d1aadd163c22"
+  },
+  "physical_attempts_resources_unchanged": true,
+  "KITTI_AP_measured": false,
+  "scope": "Independent raw18-array/225weight/publiccrop checks on sheng; no model forward in auditor; fixed two-source engineering, not BLER/AP"
+}

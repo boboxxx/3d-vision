@@ -1,0 +1,11 @@
+{
+  "state": "failed_cross_platform_decoded_pixel_fingerprint",
+  "auditor_commit": "6c6b0a1",
+  "actual_manifest": "data/engineering/artemis-digital-framing-CPU-001.json",
+  "failed_assertion": "native identity JPEG2000 pixel SHA differs from local re-decode",
+  "observations": "Both native identity records differ; four synthetic successful records match. Actual source and decoded byte streams matched before this pixel assertion. No full audit success is claimed.",
+  "local_Pillow": "12.2.0",
+  "Artemis_Pillow": "12.3.0",
+  "local_OpenJPEG": "2.5.4",
+  "Artemis_OpenJPEG": "2.5.4"
+}

@@ -1,0 +1,9 @@
+{
+  "checked_unix": 1791217644.4943159,
+  "reports": {
+    "10": {"state":"finished", "optimizer_steps":37120, "required_updates":37120, "traceback":null},
+    "30": {"state":"running", "optimizer_steps":31700, "required_updates":37120, "traceback":null}
+  },
+  "actual_ps": "    PID STAT     ELAPSED COMMAND\n 282374 Ssl     08:45:00 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/srcnn-kitti-cycle-002.py --mode run --scope formal\n 283410 Rl      02:47:39 /home/sheng/paper6/.venv/bin/python experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/train.py --scope formal --rate 30\n",
+  "scope": "actual_running_process_and_report_observation_not_complete_training_or_AP"
+}

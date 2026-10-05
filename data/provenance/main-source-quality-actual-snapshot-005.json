@@ -1,0 +1,68 @@
+{
+  "observed_unix": 1791164726.676758,
+  "processes": {
+    "269262": {
+      "returncode": 0,
+      "stdout": "269262 Ssl     02:37:07 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/source-cache-inference-cycle-001.py --mode run --scope main"
+    },
+    "270132": {
+      "returncode": 0,
+      "stdout": "270132 Ssl     01:32:41 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/source-quality-main-cycle-001.py --mode run"
+    },
+    "270141": {
+      "returncode": 0,
+      "stdout": "270141 Rl      01:32:39 /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/native-source-quality-001.py --scope main --mode measure"
+    }
+  },
+  "main_endpoints": [
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr10-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr10-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr30-liga.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": null
+    },
+    {
+      "manifest": "data/runs/source-cache-inference-main-001-jpeg-cr30-stereo_rcnn.json",
+      "state": "finished",
+      "frames": 3769,
+      "audit_state": "passed"
+    }
+  ],
+  "source-cache-inference-main-001": {
+    "state": "running",
+    "commands": 7,
+    "returncodes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "error": null
+  },
+  "source-quality-main-001": {
+    "state": "running",
+    "commands": 0,
+    "returncodes": [],
+    "error": null
+  },
+  "quality_measurement": {
+    "state": "running",
+    "views_done": 28214,
+    "error": null
+  }
+}

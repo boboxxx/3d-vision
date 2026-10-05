@@ -1,0 +1,53 @@
+{
+  "state": "completed_exit0_CPU_only",
+  "job_id": "11424046",
+  "sacct_rows": [
+    {
+      "JobID": "11424046",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1"
+    },
+    {
+      "JobID": "11424046.batch",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "cpu=4,mem=16G,node=1"
+    },
+    {
+      "JobID": "11424046.extern",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1"
+    }
+  ],
+  "checked_utc": "2026-10-04T13:58:17Z",
+  "fresh_file_sha256": {
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_1_2_qam256-native-identity-10.npz": "121fe271d3a8d638f0eb26a1cfd3e93b30221a786c970915be2750f07a45db3b",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_1_2_qam256-native-identity-10.p6sb": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_1_2_qam256-synthetic-awgn-18.npz": "74cf8b7173490b9c63bdadc6e6c98d2130756ea4f8017e8066e9f7fa7aa19332",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_1_2_qam256-synthetic-awgn-18.p6sb": "9eed1c301ab9f0cdb87d26b2374dce3602fce01de200993417d12cc27e309fac",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_1_2_qam256-synthetic-awgn-6.npz": "f3d767be598bb1a2b69d2ca52ba700a1d578fad5f23fa8b49eee4e6d465a203d",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_1_2_qam256-synthetic-rayleigh-18.npz": "060e0160bd1794b5e125373eacb9dd3f8cf4f49842f2819b86813b1172d529f4",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_1_2_qam256-synthetic-rayleigh-18.p6sb": "9eed1c301ab9f0cdb87d26b2374dce3602fce01de200993417d12cc27e309fac",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_1_2_qam256-synthetic-rayleigh-6.npz": "474628b2bd9e9d350bb8e6c9538ac1337e91ba9a510ebc00361a81c0ecf03ac7",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_2_3_qam64-native-identity-10.npz": "10081eb19ad34cde5becf7e6f3fc65c904d4b6ddfe307ae155a31f89d7857055",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_2_3_qam64-native-identity-10.p6sb": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_2_3_qam64-synthetic-awgn-18.npz": "c03d4a19d5119e15cbc3250bdbec4c4044d328bbc7d3b65d38d3fccaf0f86d76",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_2_3_qam64-synthetic-awgn-18.p6sb": "9eed1c301ab9f0cdb87d26b2374dce3602fce01de200993417d12cc27e309fac",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_2_3_qam64-synthetic-awgn-6.npz": "eaecdabb5957b3dbf13b0ead836e8624935be48fd922dee8e455730c9d932a84",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_2_3_qam64-synthetic-rayleigh-18.npz": "26f9c225b7457caa0cdf5007bf526e78d7af8d4f635e02e51e253f93a36f27f7",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_2_3_qam64-synthetic-rayleigh-18.p6sb": "9eed1c301ab9f0cdb87d26b2374dce3602fce01de200993417d12cc27e309fac",
+    "data/engineering/artemis-digital-framing-CPU-001/ldpc_2_3_qam64-synthetic-rayleigh-6.npz": "a709d10dcd16c994efdcb53af689e74ee14ae94c7e319c45a2a03ee1ddb3adce",
+    "data/engineering/artemis-digital-framing-CPU-001/native-source.p6sb": "a9e92e1c66e138f35497984e763db1b63b58be54878d5413b08d68571d3912cd",
+    "data/engineering/artemis-digital-framing-CPU-001/synthetic-source.p6sb": "9eed1c301ab9f0cdb87d26b2374dce3602fce01de200993417d12cc27e309fac",
+    "data/engineering/artemis-digital-framing-CPU-001.json": "dccbb1d81335292721f11cb68ecac83d2974d764f146c80da4e8a8c1cbaa6b38",
+    "data/engineering/artemis-digital-framing-CPU-001-launch.json": "0a51956291be2a801fbe7feaa8667f5139e4f4df8becb7e3d2f1e8c82b27f4f5",
+    "data/engineering/artemis-digital-framing-local-CPU-001.json": "85dab3a9f5159a966e3933fc04f7a1e20ef4db95e242ddf09b15d62a17cf4ce7",
+    "data/engineering/artemis-digital-framing-local-CPU-001/jpeg.p6sb": "193a5eb452da787b460afb51f5b9cf016e135c31399a6fa45016c537202bb6d6",
+    "data/engineering/artemis-digital-framing-local-CPU-001/jpeg2000.p6sb": "9eed1c301ab9f0cdb87d26b2374dce3602fce01de200993417d12cc27e309fac",
+    "data/engineering/artemis-digital-framing-local-CPU-001/decoded-fixtures.npz": "809b313bf157e21441cd8500cca0b4f2c5e4c55693d53f60163c2276e84a9130",
+    "logs/artemis-digital-framing-CPU-001-11424046.out": "2f6e7fc45a16e4dbab0351f043e0365c3dc0d224af18d00c25b1531fdca1467d",
+    "logs/artemis-digital-framing-CPU-001-11424046.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

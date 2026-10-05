@@ -1,0 +1,98 @@
+{
+  "state": "passed_all_updates_native_independent_patches_and_final_Adam",
+  "checked_unix": 1791153172.3404932,
+  "scope": "engineering",
+  "rate": 10,
+  "updates": 6,
+  "patches": 192,
+  "unique_source_views": 4,
+  "source_view_visits": 24,
+  "manifest_sha256": "c05abc98d5e4a4a5c7c57458ae11b7cdda6ecdd74e5373df39945afecf9bda2a",
+  "raw_sha256": "573e1b916f0b57ffee2d040e964f46a5829c18465739f64d1828bb57843a31f6",
+  "checkpoint_sha256": "83cae6c3be7d9dc8de901fdc5ccdddf69c5f33d22fb6cdcee8490207dc60bf79",
+  "sources": {
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/audit.py": "c3bfe949c665faa398c085482e50cd49e23278856feb04f5d045c96baf2bc4c4",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/check_cpu.py": "5fad6d5d262284261cecb66ae1825ad16104dde30919a8ba2eaad0295e862e43",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/common.py": "f7cb682e5508d79680c2d6905bfec6ba9effebe4ea4b68c631ed6b26a2e7fa53",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/model.py": "d7fe16ac2ebeae0cc4787cb5b3298154c86c2c84dd49ed63c1693e05f20d677f",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/train.py": "9ac7afb5fb056b6d04924f5e1527a2da63824f6939ba5ea71618b63dd2d341df",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/audit.py": "c3bfe949c665faa398c085482e50cd49e23278856feb04f5d045c96baf2bc4c4",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/check_cpu.py": "2ca19c199481932d00c94f515567e258ae23e74b6b129963d2f545f5ab2d671e",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/common.py": "15d1c8e0295348b3d7ad82ff6bfc9c5f527a8be17ff7b1669387bd4805b7fc43",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/model.py": "d7fe16ac2ebeae0cc4787cb5b3298154c86c2c84dd49ed63c1693e05f20d677f",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/train.py": "7340d984dc882669465e3faa8f04f317dcdfc566d79a3e966275ff3103c862d0",
+    "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-protocol-001.md": "c737eb5580f20cc1636202385c018150f2224f3cdb7e9afb9c434aefc3ed7b18",
+    "experiments/original-paper-scenarios/srcnn-KITTI-checkpoint-repair-002.md": "16b47d43194f7a106147865666511aa56989212af3a5ac94e603399994ec55aa",
+    "experiments/original-paper-scenarios/srcnn-author-core-code/check_cpu.py": "e459ec63f734e1803705f020ccd5ee3cfeef2dceeff74689e85195ec70acbab8",
+    "experiments/original-paper-scenarios/srcnn-author-core-code/core.py": "40fbb09d52320f9b522d4361370400f6e604ab86f0bdba9484e022637e07cb67",
+    "experiments/original-paper-scenarios/srcnn-author-core-protocol-001.md": "f65369ab9e2f344e95975945b2847150aa95b99f5ad91a5af6c977f283f8986a",
+    "experiments/original-paper-scenarios/srcnn-compression-interface-code/check_cpu.py": "0f4b69e968da5d8f92e6766c7e1d573c5202c1b2deb7d8674f5fd9cb104b13e6",
+    "experiments/original-paper-scenarios/srcnn-compression-interface-code/interface.py": "e1d2efcdc7f30c4863c7f84921d8a8e11e6c7cecd920ae102396949d7a2262d9",
+    "experiments/original-paper-scenarios/srcnn-compression-interface-protocol-001.md": "d7cc0a16b449b6a351e9aa6458681f4faadc9d07d4dd2988cde60f09b63a7d5c",
+    "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/SRCNN.m": "314887a5b0908411aa20eadbd62f0559ad40205dba3d1ddc103f2bec8c94d266",
+    "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/model/9-5-5(ImageNet)/x3.mat": "fa2ee366d328b942b971c80c24f48dc2b015d5ed4b5790070f720ccfb6ab1578"
+  },
+  "target_hashes_by_step": [
+    "556dbfe80481fbcec92d9f725ae883b9f23d453c18d0a2328f09a6bee0146f7e",
+    "b2423d36c306539a229a7f25d9a92067b1b4792ce6801f013b59d0583976190e",
+    "53d2984ed5139124281be450c411959739aedb4b9403f9231aa10bde321c07bc",
+    "4840c644e09b05eb75ed11b8ca2e3811b204639a964fdd393f4a5c0436ab2f31",
+    "37dd84432b8dce0acd44b0285ed2ec9127ae4f23098e6e2f65fee9aceb0d7655",
+    "e9eff777a8d3aa5b73c4d80ece5b326d8b1332f751d5e67a7cef1cd72e6e1d95"
+  ],
+  "final_state": {
+    "weight1": {
+      "dtype": "<f4",
+      "shape": [
+        64,
+        1,
+        9,
+        9
+      ],
+      "sha256": "de2ce7f79735647cfea9fecedc1a0dfe28c4067f08451cf053f2a5572a54582f"
+    },
+    "bias1": {
+      "dtype": "<f4",
+      "shape": [
+        64
+      ],
+      "sha256": "939ba119c3c2d77406821aebb1e6fff4f7ed97259246e8deb774aed0f5458b11"
+    },
+    "weight2": {
+      "dtype": "<f4",
+      "shape": [
+        32,
+        64,
+        5,
+        5
+      ],
+      "sha256": "cface836d8930672d9001f1e0ec8a129b2e55844ba547c8d1ccca303b34f7d82"
+    },
+    "bias2": {
+      "dtype": "<f4",
+      "shape": [
+        32
+      ],
+      "sha256": "1421783b2fc68635f38c87760135e00f6ceaa73d08d58160d17b6791a9b2bb10"
+    },
+    "weight3": {
+      "dtype": "<f4",
+      "shape": [
+        1,
+        32,
+        5,
+        5
+      ],
+      "sha256": "d6a6e9a0e0069c8599fb49398667edd5a96914bd81f3b82999bf14c24e2328fb"
+    },
+    "bias3": {
+      "dtype": "<f4",
+      "shape": [
+        1
+      ],
+      "sha256": "24002029f1055a57d081a3157a32ebae6265f90bca5973417215cdcfd0a9b8f8"
+    }
+  },
+  "readonly_author_model_sha256": "fa2ee366d328b942b971c80c24f48dc2b015d5ed4b5790070f720ccfb6ab1578",
+  "limitation": "Fresh actual PNG/patch/optimizer/all-update checks, no model/backpropagation replay or AP"
+}

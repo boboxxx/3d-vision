@@ -1,0 +1,69 @@
+{
+  "state": "passed_all22614_transferred_pair_records_and_native_audit_metadata",
+  "checked_unix": 1791155295.09525,
+  "pairs": 22614,
+  "views": 45228,
+  "sources": {
+    "historical": {
+      "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+      "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+      "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+      "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+    },
+    "current": {
+      "experiments/original-paper-scenarios/source-cache-code/audit.py": "6406a041435bdb9cda489be5d4b109f93720740682dc26424b71a30a8d421c1f",
+      "experiments/original-paper-scenarios/source-cache-code/check_cpu.py": "03628bab20dbdd35a8c047c4c0a947dbfc07d4129c6c90ce60772f952e82ef78",
+      "experiments/original-paper-scenarios/source-cache-code/common.py": "e73c1c5022afedf75875e7249bf963664ad07d73a13a8fd3cb9fe4bfff486fd3",
+      "experiments/original-paper-scenarios/source-cache-code/encode.py": "c2516c6a174d497d0fcb84de510af269bb65d735c5b9fd783ebd2a2000cbce5c",
+      "experiments/original-paper-scenarios/source-cache-code/receive.py": "4dad57323e9a7ce797f507858070a0233b826198ca7d6cd8357997960375d662"
+    }
+  },
+  "closure_sha256": "448f47550f7372ad164ca2e7ba2e0e0a0f7a705413f5efd716a8067ef5319e29",
+  "native_files": 45235,
+  "transferred_files": 19,
+  "conditions": {
+    "jpeg-cr10": {
+      "pairs": 3769,
+      "full_pixel_values_exact": 10504722876,
+      "raw_RGB8_bytes": 10504722876,
+      "full_wire_bytes": 953342811,
+      "pooled_raw_to_wire_ratio": 11.018830534822168
+    },
+    "jpeg-cr30": {
+      "pairs": 3769,
+      "full_pixel_values_exact": 10504722876,
+      "raw_RGB8_bytes": 10504722876,
+      "full_wire_bytes": 316359895,
+      "pooled_raw_to_wire_ratio": 33.20497649046192
+    },
+    "jpeg-cr50": {
+      "pairs": 3769,
+      "full_pixel_values_exact": 10504722876,
+      "raw_RGB8_bytes": 10504722876,
+      "full_wire_bytes": 192162155,
+      "pooled_raw_to_wire_ratio": 54.66592980287924
+    },
+    "jpeg2000-cr10": {
+      "pairs": 3769,
+      "full_pixel_values_exact": 10504722876,
+      "raw_RGB8_bytes": 10504722876,
+      "full_wire_bytes": 1050027683,
+      "pooled_raw_to_wire_ratio": 10.004234217889662
+    },
+    "jpeg2000-cr30": {
+      "pairs": 3769,
+      "full_pixel_values_exact": 10504722876,
+      "raw_RGB8_bytes": 10504722876,
+      "full_wire_bytes": 349947476,
+      "pooled_raw_to_wire_ratio": 30.017998689609065
+    },
+    "jpeg2000-cr50": {
+      "pairs": 3769,
+      "full_pixel_values_exact": 10504722876,
+      "raw_RGB8_bytes": 10504722876,
+      "full_wire_bytes": 209940480,
+      "pooled_raw_to_wire_ratio": 50.036671708095554
+    }
+  },
+  "limitation": "Full wire CRC and cache pixels replayed on sheng, not locally; no detector AP or radio performance"
+}

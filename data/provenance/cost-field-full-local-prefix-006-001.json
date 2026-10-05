@@ -1,0 +1,39 @@
+{
+  "state": "passed_explicit_live_prefix_engineering_only",
+  "seed": 17,
+  "job_id": "11424939",
+  "whole_training_closed": false,
+  "requested_updates": 256,
+  "checked_updates": 256,
+  "unique_frames": 256,
+  "complete_saved_array_values": 1421582597,
+  "gradient_values": 844800,
+  "complex_uses": 7587840,
+  "range_ambiguous_decisions": 0,
+  "max_errors": {
+    "Adam_parameter": 1.1828871837593624e-07,
+    "Adam_moment": 3.2782554670873765e-08,
+    "baseband": 5.957689381830278e-07,
+    "ZF": 2.016076308564152e-05,
+    "GT": 1.6292067961387602e-07,
+    "crop": 6.103515625e-05
+  },
+  "noise_normalized_moments": [
+    -4.900340530192736,
+    15169372.837169461,
+    15175680
+  ],
+  "fading_component_moments": [
+    84.5517397115857,
+    3734439.9957916,
+    7469280
+  ],
+  "verifier_sha256": "8c4955a80d64dc803fa3e6c52e3d11912d018b378c10da36ef3af3db6fcef317",
+  "protocol_sha256": "de77b331cb9019aab2dcece46c0f138b1cc1edc20fb810e3640251834f76ce05",
+  "report_sha256": "f73a94f0f29a70526a4eb5c7220225d2799feabe96b90226628e3bc2dcd26749",
+  "updates_jsonl_sha256": "7ebd8ba880d3a821f968384faa7561f58279e043a49e68b8dcaedb1bc93123ae",
+  "actual_terminal": null,
+  "checked_unix": 1791190384.0313978,
+  "limitation": "Full saved-record transitions, not independent CUDA gradients, full decoded fields or processed RGB replay. Repeated targets checked for identity, not independent assignment. Prefix is engineering only; no validation AP evidence.",
+  "checked_record_ledger_sha256": "bf0299aaad07e58a4f1101e1b1116ed5c674fd7984b7a9ff9cdc133f4060178c"
+}

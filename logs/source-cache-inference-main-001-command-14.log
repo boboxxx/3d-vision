@@ -1,0 +1,364 @@
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+2026-10-05 05:04:21,566   INFO  boxes_gt_in_cam2_view False
+2026-10-05 05:04:21,588   INFO  Loading KITTI dataset
+2026-10-05 05:04:21,656   INFO  Total samples for KITTI dataset: 372
+2026-10-05 05:04:21,667   INFO  ==> Loading parameters from checkpoint ./ckpt/second_s4_hg.iouloss.ep78.backbone-no-final-bnrelu.input-only-xyz.default-lr-policy-with-wd-decay-78ep.pth to CPU
+/home/sheng/paper6/third_party/LIGA-Stereo/liga/models/detectors_lidar/lidar_detector3d_template.py:297: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(filename, map_location=loc_type)
+2026-10-05 05:04:21,682   INFO  ==> Checkpoint trained from version: liga+0.1.0+7aa7b92+py60b444b
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.0.weight: torch.Size([64, 64, 3, 3])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.1.weight: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.1.bias: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.1.running_mean: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.1.running_var: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.0.0.1.num_batches_tracked: torch.Size([])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.0.weight: torch.Size([64, 64, 3, 3])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.1.weight: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.1.bias: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.1.running_mean: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.1.running_var: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_cls_convs.1.0.1.num_batches_tracked: torch.Size([])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.0.weight: torch.Size([64, 64, 3, 3])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.1.weight: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.1.bias: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.1.running_mean: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.1.running_var: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.0.0.1.num_batches_tracked: torch.Size([])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.0.weight: torch.Size([64, 64, 3, 3])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.1.weight: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.1.bias: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.1.running_mean: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.1.running_var: torch.Size([64])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.rpn3d_bbox_convs.1.0.1.num_batches_tracked: torch.Size([])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.conv_cls.weight: torch.Size([18, 64, 3, 3])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.conv_cls.bias: torch.Size([18])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.conv_box.weight: torch.Size([42, 64, 3, 3])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.conv_box.bias: torch.Size([42])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.conv_dir_cls.weight: torch.Size([12, 64, 1, 1])
+2026-10-05 05:04:21,720   INFO  Not Loaded weight dense_head.conv_dir_cls.bias: torch.Size([12])
+2026-10-05 05:04:21,721   INFO  ==> Done (loaded 110/110)
+/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/torch/functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3595.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+2026-10-05 05:04:21,770 - mmdet - INFO - load checkpoint from torchvision path: torchvision://resnet34
+2026-10-05 05:04:21,809 - mmdet - WARNING - The model and loaded state dict do not match exactly
+
+size mismatch for layer3.0.conv1.weight: copying a param with shape torch.Size([256, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.0.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.0.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.0.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.1.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.1.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.1.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.2.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.2.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.2.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.3.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.3.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.3.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.4.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.4.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.4.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.conv1.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.5.bn1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.conv2.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer3.5.bn2.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn2.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer3.5.bn2.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.conv1.weight: copying a param with shape torch.Size([512, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.0.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.conv2.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.0.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.0.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.conv1.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.1.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.conv2.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.1.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.1.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.conv1.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.2.bn1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.conv2.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 128, 3, 3]).
+size mismatch for layer4.2.bn2.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn2.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn2.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+size mismatch for layer4.2.bn2.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([128]).
+unexpected key in source state_dict: fc.weight, fc.bias, layer3.0.downsample.0.weight, layer3.0.downsample.1.running_mean, layer3.0.downsample.1.running_var, layer3.0.downsample.1.weight, layer3.0.downsample.1.bias, layer4.0.downsample.0.weight, layer4.0.downsample.1.running_mean, layer4.0.downsample.1.running_var, layer4.0.downsample.1.weight, layer4.0.downsample.1.bias
+
+/home/sheng/paper6/third_party/LIGA-Stereo/liga/models/backbones_3d_stereo/liga_backbone.py:293: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  calibs_Proj = torch.as_tensor(
+stereo volume depth range: 2.0 -> 59.599998474121094, interval 0.19999999470180935
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 20}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 40}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 60}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 80}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 100}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 120}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 140}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 160}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 180}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 200}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 220}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 240}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 260}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 280}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 300}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 320}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 340}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 360}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 380}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 400}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 420}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 440}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 460}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 480}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 500}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 520}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 540}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 560}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 580}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 600}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 620}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 640}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 660}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 680}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 700}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 720}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 740}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 760}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 780}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 800}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 820}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 840}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 860}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 880}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 900}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 920}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 940}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 960}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 980}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1000}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1020}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1040}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1060}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1080}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1100}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1120}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1140}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1160}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1180}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1200}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1220}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1240}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1260}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1280}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1300}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1320}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1340}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1360}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1380}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1400}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1420}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1440}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1460}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1480}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1500}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1520}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1540}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1560}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1580}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1600}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1620}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1640}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1660}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1680}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1700}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1720}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1740}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1760}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1780}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1800}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1820}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1840}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1860}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1880}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1900}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1920}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1940}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1960}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 1980}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2000}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2020}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2040}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2060}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2080}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2100}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2120}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2140}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2160}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2180}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2200}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2220}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2240}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2260}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2280}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2300}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2320}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2340}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2360}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2380}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2400}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2420}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2440}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2460}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2480}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2500}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2520}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2540}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2560}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2580}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2600}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2620}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2640}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2660}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2680}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2700}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2720}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2740}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2760}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2780}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2800}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2820}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2840}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2860}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2880}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2900}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2920}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2940}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2960}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 2980}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3000}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3020}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3040}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3060}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3080}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3100}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3120}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3140}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3160}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3180}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3200}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3220}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3240}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3260}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3280}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3300}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3320}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3340}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3360}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3380}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3400}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3420}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3440}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3460}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3480}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3500}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3520}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3540}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3560}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3580}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3600}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3620}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3640}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3660}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3680}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3700}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3720}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3740}
+{"condition": "jpeg2000-cr10", "detector": "liga", "frames": 3760}
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 12 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 20 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 16 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 25 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 15 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 56 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/core/typed_passes.py:336: NumbaPerformanceWarning: [1m
+The keyword argument 'parallel=True' was specified but no transformation for parallel execution was possible.
+
+To find out why, try turning on parallel diagnostics, see https://numba.readthedocs.io/en/stable/user/parallel.html#diagnostics for help.
+[1m
+File "liga/datasets/kitti/kitti_object_eval_python/eval.py", line 121:[0m
+[1m@numba.jit(nopython=True, parallel=True)
+[1mdef d3_box_overlap_kernel(boxes, qboxes, rinc, criterion=-1):
+[0m[1m^[0m[0m
+[0m
+  warnings.warn(errors.NumbaPerformanceWarning(msg,
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 20 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 12 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 16 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 25 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 15 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+/home/sheng/paper6/.venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: [1mGrid size 56 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+{"state": "finished", "name": "source-cache-inference-main-001-jpeg2000-cr10-liga", "frames": 3769}

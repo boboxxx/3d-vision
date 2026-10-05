@@ -1,0 +1,44 @@
+{
+  "state": "closed_actual_native_merge_and_whole_training_RGB_ROI_audit",
+  "commands": [
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/original-full-train-ROI-code-002/merge.py",
+        "--source-dir",
+        "data/engineering",
+        "--root",
+        "/home/sheng/paper6",
+        "--output-dir",
+        "data/engineering/original-full-train-ROI-002"
+      ],
+      "returncode": 0,
+      "log": "logs/original-full-train-ROI-002-command-0.log",
+      "log_sha256": "fbde853c2b39958da8808ac212333650458b2baee90b9bbacfd5db7dae264c90"
+    },
+    {
+      "command": [
+        "/home/sheng/paper6/.venv/bin/python",
+        "experiments/original-paper-scenarios/original-full-train-ROI-code-002/audit.py",
+        "--mode",
+        "native",
+        "--source-dir",
+        "data/engineering",
+        "--root",
+        "/home/sheng/paper6",
+        "--directory",
+        "data/engineering/original-full-train-ROI-002",
+        "--data-root",
+        "/mnt/d/paper6/data/kitti",
+        "--output",
+        "data/engineering/original-full-train-ROI-002/native-audit.json"
+      ],
+      "returncode": 0,
+      "log": "logs/original-full-train-ROI-002-command-1.log",
+      "log_sha256": "98b6ce19b8347e47ea46d7d625df96c7455e2fcebcf92b2db6509ec3eb170e09"
+    }
+  ],
+  "started_unix": 1791198685.6270366,
+  "ended_unix": 1791198785.3074772,
+  "GPU_used": false
+}

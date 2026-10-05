@@ -1,0 +1,36 @@
+{
+  "state": "closed_all_audits_passed",
+  "prefix": "stereo-encoder-native-sanity-001",
+  "checked_at_unix": 1791133653.336631,
+  "engineering": true,
+  "training_updates_per_arm": 6,
+  "paired_audit_sha256": "e0d322993bb7d9acb136edf9ee81fa631943e43d31c0aa90cdc068daa053fb52",
+  "source_sha256": {
+    "project": "42b4b52a174f9c2a8c365ea45b3477e87d4c8165d3254d6b04b97bd2dad74b21",
+    "liga": "0ffb2cda5f2fa7596fd18342562f08414d2a61e28892d317aaae946b50967a01",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f",
+    "F7": "66113f599ed26d3e0ca35d64540e82c0f6d5857682565a7a5781c5db91967379",
+    "experiment": "6608e2073d41aef8910eeb7bcce996341088e4d06f0beac0fbf7a025c270d7b9"
+  },
+  "original21_unchanged": true,
+  "artifacts_sha256": {
+    "data/runs/stereo-encoder-native-sanity-001-cycle.json": "32bb82c6717d85c0ffc2fe7afcd628ea7c378c07e0d6b26ffa63aca31662391e",
+    "data/provenance/server-source-manifest-stereo-encoder-native-sanity-001.json": "b3c155dc05bd139e9c98a2be5d3cd8cb268b7c795cec472ab184eb0cc24cb482",
+    "data/runs/stereo-encoder-native-sanity-001-pair-audit.json": "e0d322993bb7d9acb136edf9ee81fa631943e43d31c0aa90cdc068daa053fb52",
+    "data/runs/stereo-encoder-native-sanity-001-codec.json": "4b4ecfcf3cb8d9bef6a1e10bcdaa45520da739bc24db786fe278fe7e921eaef5",
+    "data/runs/stereo-encoder-native-sanity-001-codec-training-audit.json": "3145bc516fffee45a88a233e7fbbec01c1012c4ac2408eb21cdc6af60745516b",
+    "data/runs/stereo-encoder-native-sanity-001-codec-training-audit.records/training.jsonl": "5087c2fe1ea793f49daa6b46ff46d84476becdcbffa71e33b558bfe3a9c246c9",
+    "data/runs/stereo-encoder-native-sanity-001-joint.json": "10615720e0261565fa1371b0424149e2ec2028d1d2ac8b8431265c5c0b321933",
+    "data/runs/stereo-encoder-native-sanity-001-joint-training-audit.json": "8d2ed503f84b2fded1f275e9aeb6d84caf5ebf6d11e4d6ef4e2587ac9cd6d404",
+    "data/runs/stereo-encoder-native-sanity-001-joint-training-audit.records/training.jsonl": "ba89d3a6852ba963105967337eaec02ee5fcfbacecc9ad71b0a744d2cbd92639",
+    "logs/stereo-encoder-native-sanity-001-codec-train.log": "1536791f5441486ad1fa569e9c88ae31f97eae382f775d3c85968a4085d252fb",
+    "logs/stereo-encoder-native-sanity-001-codec-training-audit.log": "5b11ab67a9589c8b8f50d01aa082ed2313d8d2cd5ed213bcad254ec3509b6be7",
+    "logs/stereo-encoder-native-sanity-001-joint-train.log": "54d988a807bcb89ad58fe4feea648787abbd62084afe58172df7dfeee62fa0b8",
+    "logs/stereo-encoder-native-sanity-001-joint-training-audit.log": "72bcc3714f30ab8742535a5fb28d8e5da36f0bdbccd2d32a99db71cb565ab82d",
+    "logs/stereo-encoder-native-sanity-001-pair-audit.log": "dcd57887ae244a0cd898cb78826a28a18c6ed417308768e1722a8486fab54e0e"
+  },
+  "evaluations": {},
+  "primary_AWGN10_Moderate_treatment_minus_control_pp": null,
+  "limitations": "Fixed exploratory internal paired encoder optimization scope only; author-pretraining overlap, single seed, no novelty/general superiority/mainval/fading/project-completion claim"
+}

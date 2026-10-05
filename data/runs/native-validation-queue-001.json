@@ -1,0 +1,20 @@
+{
+  "state": "failed",
+  "pid": 50852,
+  "started_at_unix": 1791104717.4153805,
+  "identity_sha256": "c0794f8dbce6bfa8347d4cabdb026f23b712186a792d718737ca4ac98be0a020",
+  "completed_commands": [
+    {
+      "label": "original-StereoRCNN-RGB-GPU-endpoint-probe-001",
+      "log_sha256": "7f670327c01d436e01101ca802d26f46e2c12f67138e31b8b19604a926ee9175"
+    }
+  ],
+  "scope": "native StereoRCNN engineering then paired F7 six-step engineering and terminal closure only",
+  "required_free_MiB": 12288,
+  "last_physical_free_MiB": 13467,
+  "last_checked_at_unix": 1791109807.892954,
+  "current_command": "stereo-channel-native-sanity-001-cycle",
+  "terminal_probe_sha256": "9d2292d422f44274540d37d64583261685afdbcbb9ec2bd0ed869817f9d63e44",
+  "exception": "CalledProcessError(1, ['/home/sheng/paper6/.venv/bin/python', '/home/sheng/paper6/experiments/geometry-link/F7/code/cycle.py', '--prefix', 'stereo-channel-native-sanity-001', '--engineering'])",
+  "ended_at_unix": 1791109870.8558445
+}

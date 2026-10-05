@@ -1,0 +1,42 @@
+{
+  "state": "closed_candidate0_complete37120_training_native_local_all10_checkpoints_actual_terminal",
+  "candidate": 0,
+  "lambda_RD": 0.001,
+  "seed": 17,
+  "training_raw_job": "11425048",
+  "native_audit_job": "11425124",
+  "export_job": "11425126",
+  "actual_job_and_srun_steps_closed": true,
+  "local_stream_exit_code": 0,
+  "checked_updates": 37120,
+  "checked_epoch_checkpoints": 10,
+  "checkpoint_saved_values": 955923300,
+  "proof_files": {
+    "native": {
+      "path": "data/provenance/ecsic-KITTI-lambda0.001-seed17-002-native-audit-003.json",
+      "sha256": "97cb61a11985ab1339aa3c58e1d1043a72468253e5225c52c36541b383fd78b5"
+    },
+    "local": {
+      "path": "data/provenance/ecsic-KITTI-lambda0.001-seed17-002-local-audit-003.json",
+      "sha256": "872763c69d44376e0e0a1ca405be4fd71ace3a77732f90a0b26e8fc5c6d99d31"
+    }
+  },
+  "updates_jsonl_sha256": "ce58f9c2b0ca95638ab3983ddba8b16177bdf51dae770194acd98241c8b9e3dc",
+  "ordered_CUDA_rng_identity_ledger_sha256": "e22a9958793c840d59209475d121282fba9368c5fa9fe5d1bfe2b80fdcea7e31",
+  "failure_retained": {
+    "job": "11425117",
+    "reason": "missing_deployed_alias_repair_protocol_in_auditor_finalization",
+    "actual_state": "FAILED1:0",
+    "logs": [
+      "data/provenance/ecsic-full-audit006-11425117.err",
+      "data/provenance/ecsic-full-audit006-11425117.out"
+    ],
+    "correction": "deploy unchanged committed protocol only; auditor/training/numeric thresholds unchanged"
+  },
+  "snapshot_sha256": "5d672d1f9a151ee2ba1850fa90d8c63cef208114d3d1ae57e10077c70487b497",
+  "all_six_candidates_complete": false,
+  "actual_bytes_calibrated": false,
+  "AP_measured": false,
+  "full_raw_gradient_or_Adam_transition_replay": false,
+  "checked_unix": 1791201527.9325209
+}

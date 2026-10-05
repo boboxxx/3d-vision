@@ -1,0 +1,109 @@
+{
+  "evidence_type": "independent_analytic_camera_3D_IoU_fixture",
+  "state": "passed",
+  "base_xyz_lhw_yaw": [
+    [
+      0.0,
+      1.5,
+      10.0,
+      4.0,
+      2.0,
+      2.0,
+      0.0
+    ]
+  ],
+  "queries": [
+    [
+      0.0,
+      1.5,
+      10.0,
+      4.0,
+      2.0,
+      2.0,
+      0.0
+    ],
+    [
+      1.0,
+      1.5,
+      10.0,
+      4.0,
+      2.0,
+      2.0,
+      0.0
+    ],
+    [
+      0.0,
+      2.5,
+      10.0,
+      4.0,
+      2.0,
+      2.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.5,
+      11.0,
+      4.0,
+      2.0,
+      2.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.5,
+      10.0,
+      4.0,
+      2.0,
+      2.0,
+      1.5707963267948966
+    ],
+    [
+      0.0,
+      1.5,
+      10.0,
+      2.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    [
+      10.0,
+      1.5,
+      10.0,
+      4.0,
+      2.0,
+      2.0,
+      0.0
+    ]
+  ],
+  "case_names": [
+    "identity",
+    "x_shift",
+    "bottom_y_shift",
+    "z_shift",
+    "90_degree_rotation",
+    "containment",
+    "disjoint"
+  ],
+  "expected": [
+    1.0,
+    0.6,
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333,
+    0.125,
+    0.0
+  ],
+  "actual": [
+    1.0,
+    0.6000000238418579,
+    0.3333333432674408,
+    0.3333333432674408,
+    0.3333333432674408,
+    0.125,
+    0.0
+  ],
+  "expected_derivation": "analytic rectangle intersection area times bottom-coordinate vertical interval intersection, divided by volume union; no evaluator code used for expected values",
+  "torch_context_initialized": true
+}

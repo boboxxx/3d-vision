@@ -1,0 +1,7 @@
+/Users/chen/miniconda3/lib/python3.12/site-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/native/TensorShape.cpp:4384.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+frozen30 full native control forward completed
+rate30 complete native RGB/packets/source-gradient engineering passed
+rate10 complete native RGB/packets/source-gradient engineering passed
+rate50 complete native RGB/packets/source-gradient engineering passed
+{"state": "passed_all3_native_synthetic_source_architectures_nominal30_exact_frozen_control", "rates": [30, 10, 50]}

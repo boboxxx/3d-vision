@@ -1,0 +1,23 @@
+{
+  "state": "passed",
+  "tests": 6,
+  "checks": [
+    "analytic_quadratic_signed_curvature_and_linear_odd_part",
+    "nonlinear_odd_residual_and_unclipped_negative_symmetric_mean",
+    "complete_1026_attempt_noise_replay_and_rng_isolation",
+    "wrong_order_frame_reuse_and_missing_negative_refused",
+    "actual_symbol_leaf_gradient_identity_opposite_noise_and_file_preservation",
+    "frozen_predictors_unchanged_and_eight_frame_bootstrap"
+  ],
+  "CUDA_visible_devices": "",
+  "torch": "2.5.0+cu118",
+  "numpy": "1.26.3",
+  "source_sha256": {
+    "experiments/geometry-risk/antithetic-code/analyze.py": "1c0bdc734ccdb107bf115cf9cdb8fbfe439429a0c6d65d8647d9039c16ff6997",
+    "experiments/geometry-risk/antithetic-code/channel.py": "e5e8f33090a0c69c0bfa18e5adf61e8caca2d6ac35c8ba3c9752d01b84875358",
+    "experiments/geometry-risk/antithetic-code/check_cpu.py": "d04f8965be48c25e51a87287e3c8a7a84697521c3bcca05280f46257a6670ace",
+    "experiments/geometry-risk/antithetic-code/measure.py": "ca3825130a472626eddd6da03579c2a116a96f46289bffb987de6dcc7b5aebd6",
+    "experiments/geometry-risk/antithetic-code/pair_noise.py": "25a6455bd2396a6bddf132885855ed8c0f9adbf5b3c5c2562636961bc67a62d4",
+    "experiments/geometry-risk/antithetic-code/run_native.py": "baf16c399fb16f44069859b1ac4f17f2b7c94bae6cde610f77e53b978ce391d1"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "state": "launched",
+  "run_id": "stereo-feature-native-seed17-001",
+  "checked_at_unix": 1791075421.5761187,
+  "implementation_commit": "34a40ab",
+  "protocol_commit": "1494f2c",
+  "engineering_result_commit": "9926412",
+  "engineering_manifest_sha256": "2df176f4df371601ab07d6134411cf8edf873fdfe9fdad05a64e0dd46b6909c8",
+  "engineering_audit_sha256": "e7a9ef9349dce18c595d1ba1ca782ef2d5c6a10fc2cb08d8ac8da7ffd5265500",
+  "engineering_probe_sha256": "f0fe81b48fa57341016c3b1603ce1c298ef7679b01a63e3d8f8f5f43962c1c55",
+  "source_manifest_sha256": "2efb2da861db7466e0ee2cd408970432bcbdc64244ecfd8700060031b47624e3",
+  "original21_source_states_unchanged": true,
+  "original_process_pid": 26642,
+  "gpu_used_before_MiB": 9326,
+  "gpu_total_MiB": 24564,
+  "measured_DDP_peak_reserved_bytes": 4129292288,
+  "script_sha256": "02a0b0bb5d7cc7d4d784d3621378921047114427b7e835cd51c284aab24a76d2",
+  "protocol_sha256": "81cd14853b9a9b93c4b183755d732e947e27e8e032f980cab6519a24eaa40bb4",
+  "initialization_sha256": "7e1ceacb4abff0bdb32ef89507b9786e1d80ae9c166ccaaeb4ffb4fcbd639bd2",
+  "new_initialization": "all519 fixedF2 states plus freshseed17 codec; engineering weights excluded",
+  "planned_updates": 3340,
+  "predetermined_final_evaluations": [
+    "identity_full372",
+    "awgn10dB_full372"
+  ],
+  "complex_uses": 62400,
+  "scope": "exploratory native-feature codec warmup, no AP/gain/completed-training claim",
+  "pid": 30987,
+  "started_at_unix": 1791075421.5766659
+}

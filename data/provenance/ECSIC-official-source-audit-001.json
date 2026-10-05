@@ -1,0 +1,25 @@
+{
+  "scope": "read_only_official_ECSIC_source_audit",
+  "commit": "696f4ae4f250bb1fc750ae9ec23e9c98c2c7e6db",
+  "repo": "https://github.com/mwoedlinger/ecsic",
+  "files": {
+    "data/load_cityscapes.py": "d79d26bbce7d1fc22743201200352f91a27cc63c6e3e25545479b619dbfc1a45",
+    "data/load_instereo2k.py": "bff267d8dbfef89327060623914037e0d6c5805f92ad179448e36b15a1caff9b",
+    "ecsic/__init__.py": "e07f1ee114e3fef05abee33081117ce8811e25b55fbfe970e93adebf18b3abe7",
+    "ecsic/dataset.py": "495c2661bb164a491af7d58f4aa4e0e0d326bdc83d0982c24c026e87c8a2f8f2",
+    "ecsic/layers.py": "7dc63a8a7908dbf835f079f537e1817f861f77cfdf9261177463fb3bcf4e708e",
+    "ecsic/logger.py": "edcc67871f5eb7adea7fffda76918c8d5920f420ab30252a4cbdb74d15d19352",
+    "ecsic/metrics.py": "df79e072681d3adeeb5a2e21dc86270bc0e81aef50ca9d3100adb49dade28f7e",
+    "ecsic/models.py": "7e77d171917af827cc6085115b951cc77e8fa57205ee98e692696e72050c3b0c",
+    "ecsic/optimizers.py": "ceae7fdb9ee0104334c90ab05a853a06a238e89b29546894c07fac924190784d",
+    "ecsic/schedulers.py": "a55ae69d3d819dce53d7dd1cf550edb0899a11aa5655bffa82254cf425318f61",
+    "ecsic/transforms.py": "515d172be5487507883425312e36cb3a933e156941c8a40e5f7ad9bf5133839c",
+    "ecsic/utils.py": "f2af3b68da2df46776c368c5ac91a235db6d8003020da6250c0456995cd033d2",
+    "generate_rd_curve.py": "c8df492254f4a25ac9d9301977b559bc67b4e9d56e3c51389c70e2e8361d346f",
+    "test.py": "365ef3bec2f2d0dc8cd3158ba9e7f2f8d96fae67643e8890b389a4fe381992c0",
+    "train.py": "1be93a0c966e66d1ad49e70304dd52cc698eacc5d788f882db4104c2e64bc7ac"
+  },
+  "actual_entropy_encoder_decoder_found": false,
+  "LDPC_input_bitstream_available": false,
+  "inspection": "all released Python files searched; model forward/entropy and calc_rate/test bpp inspected; no dependency or model execution"
+}

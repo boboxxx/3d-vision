@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/sheng/paper6/experiments/original-paper-scenarios/ecsic-entropy-code/native.py", line 149, in <module>
+    if args.receiver:receiver(args.container,args.directory)
+  File "/home/sheng/anaconda3/envs/epiu-dsgn/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/sheng/paper6/experiments/original-paper-scenarios/ecsic-entropy-code/native.py", line 83, in receiver
+    output_sha256=a.sha(directory/'reconstructed.npz'))
+  File "/home/sheng/paper6/experiments/original-paper-scenarios/ecsic-recovery-code/recover.py", line 34, in sha
+    with open(path, 'rb') as f:
+  File "/home/sheng/paper6/experiments/original-paper-scenarios/ecsic-entropy-code/native.py", line 47, in deny_inputs
+    a.check('/data/kitti/' not in name and not (reading and name.endswith('.npz')), 'receiver tried source/NPZ input')
+  File "/home/sheng/paper6/experiments/original-paper-scenarios/ecsic-recovery-code/recover.py", line 29, in check
+    raise RuntimeError(message)
+RuntimeError: receiver tried source/NPZ input

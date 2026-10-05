@@ -1,0 +1,20 @@
+{
+  "run_id": "cao2025-full-native-seed17-001",
+  "pid": 26642,
+  "started_at_unix": 1791071418.3766873,
+  "implementation_commit": "bfee9d8",
+  "engineering_result_commit": "cea8af3",
+  "source_map_sha256": "8b9dd27806e8c8c57fd79bc86fd6624f3b936aea762850603f0e964ded287175",
+  "script_sha256": "a694e32e06a058cad190c70021204cddc6b349d2d87eb504235ab49c14868e18",
+  "protocol_sha256": "682fb774e09b9be7f68d09f8251dac6d4b99af3290f02660951d398f9e00eace",
+  "initialization": "freshseed17 model plus official SpyNet only, engineering weights excluded",
+  "stages_epochs": [
+    12,
+    10,
+    6,
+    10,
+    45
+  ],
+  "planned_samples": 277220,
+  "evidence_scope": "declared full-native original-paper reproduction variant; no completed-training/AP claim"
+}

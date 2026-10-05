@@ -1,0 +1,71 @@
+{
+  "state": "passed",
+  "scope": "feature reductions/coverage/geometry audit; raw tensors not retained or independently rerun",
+  "frames": 372,
+  "summaries": {
+    "left_stereo": {
+      "elements": 4753981440,
+      "pooled_over_frames_mse": 0.5195388673248132,
+      "pooled_over_frames_nmse": 0.6171852779082468,
+      "pooled_over_frames_cosine": 0.619309478905631,
+      "median_frame_nmse": 0.6162919508883753,
+      "median_frame_cosine": 0.6203436891177916,
+      "reference_shapes": [
+        [
+          1,
+          32,
+          320,
+          1248
+        ]
+      ]
+    },
+    "right_stereo": {
+      "elements": 4753981440,
+      "pooled_over_frames_mse": 0.5097208166950811,
+      "pooled_over_frames_nmse": 0.6128138577928286,
+      "pooled_over_frames_cosine": 0.6228195678947138,
+      "median_frame_nmse": 0.6120058432344738,
+      "median_frame_cosine": 0.623861616886848,
+      "reference_shapes": [
+        [
+          1,
+          32,
+          320,
+          1248
+        ]
+      ]
+    },
+    "appearance": {
+      "elements": 297123840,
+      "pooled_over_frames_mse": 0.12637999710406053,
+      "pooled_over_frames_nmse": 0.14245111043913508,
+      "pooled_over_frames_cosine": 0.9260509194930124,
+      "median_frame_nmse": 0.14233184550734096,
+      "median_frame_cosine": 0.9262347958284687,
+      "reference_shapes": [
+        [
+          1,
+          32,
+          80,
+          312
+        ]
+      ]
+    }
+  },
+  "feature_records_sha256": "2396efd295b06ff35f41fa3e612ba6dc85971668aa9585ce78af9891043d0a6e",
+  "run_manifest_sha256": "670ce6ac9f67c14d7ab41312c7b594495fcf4fc7d4c4e4e52a7ccbc3d7ef95ba",
+  "AP_audit_sha256": "12a5c43e5514347b1fcf9e053458c57ed9c68ece84d92aa1780308b670147069",
+  "checkpoint_sha256": "9a4b291070df160e6c03e75ed31eeee1dda7f6bfbaa0528a43a9cdf526977553",
+  "boundary_report_sha256": "d20ab8aaad6cf581d294751afb67e141e6a7808a94d926a5aff7a806d3694cc1",
+  "readonly_states": 535,
+  "executed_calls": {
+    "frames": 372,
+    "student": 744,
+    "codec": 372,
+    "channel": 372,
+    "build_cost": 372,
+    "forbidden": 0
+  },
+  "source_sha256": "cccc1684a96b94271f1fd5ffb00c13edbba71cf23feeb5c11454e4d459291d9e",
+  "limitations": "passive same-input observation with saved reductions, not fresh raw-feature recomputation; original detector pretraining included heldout IDs; not a wireless gain or unique failure-cause proof"
+}

@@ -1,0 +1,34 @@
+{
+  "state": "closed_candidate3_complete37120_training_native_local_all10_checkpoints_actual_terminal",
+  "candidate": 3,
+  "lambda_RD": 0.03,
+  "seed": 17,
+  "training_raw_job": "11426641",
+  "native_audit_job": "11426848",
+  "export_job": "11428494",
+  "actual_job_and_srun_steps_closed": true,
+  "local_stream_pipefail_exit_code": 0,
+  "local_actual_completed_exec_session": 47174,
+  "checked_updates": 37120,
+  "checked_epoch_checkpoints": 10,
+  "checkpoint_saved_values": 955923300,
+  "proof_files": {
+    "native": {
+      "path": "data/provenance/ecsic-KITTI-lambda0.03-seed17-002-native-audit-003.json",
+      "sha256": "3dd74a8274e2359b98ffd86fb4c64d6c708ee9fa7fd71d671b859e90e1a90c04"
+    },
+    "local": {
+      "path": "data/provenance/ecsic-KITTI-lambda0.03-seed17-002-local-audit-003.json",
+      "sha256": "2cabffbd947947d5e93e5a16bec2fb5627081d6c0d86d8e5cd60d90940adfb06"
+    }
+  },
+  "updates_jsonl_sha256": "8885fd9262022e1731c838716673f21aec8607acdc16e155975b713567c5f0a2",
+  "ordered_CUDA_rng_identity_ledger_sha256": "e22a9958793c840d59209475d121282fba9368c5fa9fe5d1bfe2b80fdcea7e31",
+  "full_metadata_exact_native_local_agreement": true,
+  "snapshot_sha256": "d06d1e2bf38e836e7460163ec87955a560db18ac830f3be4c18515af3ad531fa",
+  "all_six_candidates_complete": false,
+  "actual_bytes_calibrated": false,
+  "AP_measured": false,
+  "full_raw_gradient_or_Adam_transition_replay": false,
+  "checked_unix": 1791212641.2347221
+}

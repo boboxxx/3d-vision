@@ -1,0 +1,19 @@
+{
+  "state": "passed",
+  "started_unix": 1791137955.046952,
+  "finished_unix": 1791137956.820671,
+  "tests_run": 11,
+  "failures": [],
+  "errors": [],
+  "source_sha256": {
+    "experiments/geometry-link/F9/code/check_cpu.py": "ac2fccd73aa14fc1c790b0ac8c62c613890a3782da154d098c1086b6330f0016",
+    "experiments/geometry-link/F9/code/coupling.py": "39672ec59ee2c7ae797c73f15d9402c94a7e878bf678bb893fe57a658cfa5157",
+    "experiments/geometry-link/F9-epipolar-conditioned-JSCC.md": "c4bb907e4b7663bb639675c3dd218b16f1f52084d7597b6da0a3719c42a6b89a"
+  },
+  "torch_version": "2.12.0",
+  "numpy_version": "2.4.4",
+  "torch_threads": 2,
+  "scope": "pure CPU coupling/core checks; no native detector, KITTI, GPU training or AP",
+  "full_native_layout_sender_test": true,
+  "native_receiver_detector_executed": false
+}

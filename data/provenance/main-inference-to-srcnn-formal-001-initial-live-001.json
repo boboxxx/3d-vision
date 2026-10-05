@@ -1,0 +1,29 @@
+{
+  "state": "running",
+  "pid": 22899,
+  "started_unix": 1791162387.926711,
+  "existing_main_native_PID": 269262,
+  "driver_sha256": "e1275a6dbb80992ffed0a8ef676747a0935add355505a1687709861d98f25f48",
+  "engineering_complete_proof_sha256": "69d4e357ba493c737debbbbf85f47d65c64b8fd2ba521e5cf955a3db7b897d56",
+  "phase": "observe_existing_main_PID",
+  "completed_stages": [],
+  "last_actual_native_snapshot": {
+    "checked_unix": 1791162540.6890795,
+    "state": "running",
+    "pid": 269262,
+    "ps_returncode": 0,
+    "actual_ps": "    PID STAT COMMAND\n 269262 Ssl  /home/sheng/paper6/.venv/bin/python /home/sheng/paper6/data/provenance/source-cache-inference-cycle-001.py --mode run --scope main\n",
+    "commands": 4,
+    "returncodes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "endpoints": 2,
+    "error": null
+  },
+  "last_poll_unix": 1791162540.720601,
+  "local_actual_ps": "  PID  PPID STAT ELAPSED ARGS\n22899     1 Ss     02:43 /Users/chen/miniconda3/bin/python /Users/chen/Documents/ChatGPT/paper6/data/provenance/advance-main-inference-to-srcnn-formal-001.py --mode run\n",
+  "snapshot_unix": 1791162550.578728
+}

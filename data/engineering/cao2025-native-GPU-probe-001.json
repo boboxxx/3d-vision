@@ -1,0 +1,71 @@
+{
+  "state": "passed",
+  "scope": "two untrained native-frame GPU sanity updates; weights discarded; no formal training or AP",
+  "frame_id": "000000",
+  "native_shape": [
+    1,
+    3,
+    370,
+    1224
+  ],
+  "image_sha256": {
+    "image_2": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+    "image_3": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3"
+  },
+  "records_sha256": "f7413abe7a587ac2c09ba5a3e5a4851f20db8bdfb8b7a3a5e1c90ac0ee87fad2",
+  "device": "NVIDIA GeForce RTX 4090",
+  "torch_version": "2.5.0+cu118",
+  "phases": [
+    {
+      "stage": 1,
+      "epoch": 1,
+      "active_parameter_tensors": 562,
+      "frozen_state_tensors": 206,
+      "frozen_states_identical": true,
+      "all_active_gradients_finite": true,
+      "loss_type": "global_charbonnier",
+      "untrained_sanity_loss": 0.07547628879547119,
+      "gradient_norm_before_clip": 0.643073320388794,
+      "elapsed_seconds": 1.213524580001831,
+      "peak_torch_allocated_bytes": 5761686528,
+      "peak_torch_reserved_bytes": 6400507904,
+      "accounting": null
+    },
+    {
+      "stage": 5,
+      "epoch": 26,
+      "active_parameter_tensors": 718,
+      "frozen_state_tensors": 2,
+      "frozen_states_identical": true,
+      "all_active_gradients_finite": true,
+      "loss_type": "global_charbonnier",
+      "untrained_sanity_loss": 0.4912707507610321,
+      "gradient_norm_before_clip": 3.9969449043273926,
+      "elapsed_seconds": 0.5496110916137695,
+      "peak_torch_allocated_bytes": 7065871872,
+      "peak_torch_reserved_bytes": 8797552640,
+      "accounting": {
+        "data_uses": 121397,
+        "control_uses": 1848,
+        "pilot_uses": 0,
+        "total_uses": 123245,
+        "total_energy": 123245.00924768734,
+        "data_real_values": 242793,
+        "padding_real_values": 1,
+        "key_cells": [
+          0,
+          1681
+        ],
+        "cbr_complex_per_rgb_real_value": 0.04535601778248837
+      }
+    }
+  ],
+  "checkpoint_sha256": "3d2a1287666aa71752ebaedc06999212886ef476f77d691a1b0006107088e714",
+  "source_hashes": {
+    "model.py": "da3ec01b947047e2640a5551b48ecc5719ffa398eae05e3dfa680940de8f0416",
+    "radio.py": "76ea572a5334de5bcb4a2fd89dc776661fd423e1ca5090fe769220245e9052f6",
+    "wireless.py": "11424b4e566065d7dbbc8c990351cf7fea451e4b67603c811a460a8ae10ffd7d",
+    "stages.py": "2f06e23be55c126c242b13d11b3da7dd15dc2790a383cd127e4255916472161f",
+    "probe_native.py": "903a50a98791045d859e6ee3718e260cb6e9607ca770e149e581b68926e7e25d"
+  }
+}

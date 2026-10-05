@@ -1,0 +1,140 @@
+{
+  "state": "finished_complete_main_proof_and_SRCNN_formal_dispatched",
+  "pid": 37309,
+  "started_unix": 1791185928.3357482,
+  "existing_main_native_PID": 269262,
+  "driver_sha256": "6c7626dbc6440f5f71d9b2ae2b04dd829a0fb6b6099705866da2be7cbc172a5e",
+  "engineering_complete_proof_sha256": "69d4e357ba493c737debbbbf85f47d65c64b8fd2ba521e5cf955a3db7b897d56",
+  "phase": "launch_formal_SRCNN_three_rates_once",
+  "completed_stages": [
+    {
+      "name": "verify_existing_native_closure_without_rerun",
+      "returncode": 0,
+      "finished_unix": 1791185929.280957,
+      "log": "/Users/chen/Documents/ChatGPT/paper6/logs/main-inference-to-srcnn-formal-002-verify_existing_native_closure_without_rerun.log",
+      "log_sha256": "f27d2ff217c6ea79063f5f1fc883411f377601a7e554856a1b2f1f56b2e0d139"
+    },
+    {
+      "name": "transfer_all_root_native_reports_and_logs",
+      "returncode": 0,
+      "finished_unix": 1791185948.09535,
+      "log": "/Users/chen/Documents/ChatGPT/paper6/logs/main-inference-to-srcnn-formal-002-transfer_all_root_native_reports_and_logs.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "transfer_all45228_predictions_and24_metric_files",
+      "returncode": 0,
+      "finished_unix": 1791186123.6108449,
+      "log": "/Users/chen/Documents/ChatGPT/paper6/logs/main-inference-to-srcnn-formal-002-transfer_all45228_predictions_and24_metric_files.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "local_all45228_prediction_verification",
+      "returncode": 0,
+      "finished_unix": 1791186141.027877,
+      "log": "/Users/chen/Documents/ChatGPT/paper6/logs/main-inference-to-srcnn-formal-002-local_all45228_prediction_verification.log",
+      "log_sha256": "9552b1dc995c33bc9fd515c70252fb6fcd574f7f66cc89367dd4fdeabf3a05af"
+    },
+    {
+      "name": "upload_complete_local_main_proof",
+      "returncode": 0,
+      "finished_unix": 1791186141.5601149,
+      "log": "/Users/chen/Documents/ChatGPT/paper6/logs/main-inference-to-srcnn-formal-002-upload_complete_local_main_proof.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "verify_no_competing_GPU_process",
+      "returncode": 0,
+      "finished_unix": 1791186141.989672,
+      "log": "/Users/chen/Documents/ChatGPT/paper6/logs/main-inference-to-srcnn-formal-002-verify_no_competing_GPU_process.log",
+      "log_sha256": "fca16e5033c35475008abb5afbb13f8dff8fc0ba76402da9f184e05da09daefe"
+    },
+    {
+      "name": "launch_formal_SRCNN_three_rates_once",
+      "returncode": 0,
+      "finished_unix": 1791186145.226578,
+      "log": "/Users/chen/Documents/ChatGPT/paper6/logs/main-inference-to-srcnn-formal-002-launch_formal_SRCNN_three_rates_once.log",
+      "log_sha256": "77332bdd323e1f3261487e754a3921039b2f65195fb3daad06074c8f5b69173c"
+    }
+  ],
+  "original_failed_driver_sha256": "8bc253b660a1f42c45663feab207bdc59e285ed429b7d8e62f7e186a678ef3ec",
+  "last_actual_native_snapshot": {
+    "checked_unix": 1791185928.7720945,
+    "state": "finished12_native_endpoints12_audits_pending_terminal_closure",
+    "pid": 269262,
+    "ps_returncode": 1,
+    "actual_ps": "    PID STAT COMMAND\n",
+    "commands": 24,
+    "returncodes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "endpoints": 12,
+    "error": null
+  },
+  "last_poll_unix": 1791185928.800931,
+  "phase_started_unix": 1791186141.993425,
+  "formal_native_PID": 282374,
+  "formal_native_launch": {
+    "state": "launched_once",
+    "prefix": "srcnn-kitti-formal-seed17-002",
+    "scope": "formal",
+    "pid": 282374,
+    "launched_unix": 1791186145.0383897,
+    "sources": {
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/audit.py": "c3bfe949c665faa398c085482e50cd49e23278856feb04f5d045c96baf2bc4c4",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/check_cpu.py": "5fad6d5d262284261cecb66ae1825ad16104dde30919a8ba2eaad0295e862e43",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/common.py": "f7cb682e5508d79680c2d6905bfec6ba9effebe4ea4b68c631ed6b26a2e7fa53",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/model.py": "d7fe16ac2ebeae0cc4787cb5b3298154c86c2c84dd49ed63c1693e05f20d677f",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code/train.py": "9ac7afb5fb056b6d04924f5e1527a2da63824f6939ba5ea71618b63dd2d341df",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/audit.py": "c3bfe949c665faa398c085482e50cd49e23278856feb04f5d045c96baf2bc4c4",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/check_cpu.py": "2ca19c199481932d00c94f515567e258ae23e74b6b129963d2f545f5ab2d671e",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/common.py": "15d1c8e0295348b3d7ad82ff6bfc9c5f527a8be17ff7b1669387bd4805b7fc43",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/model.py": "d7fe16ac2ebeae0cc4787cb5b3298154c86c2c84dd49ed63c1693e05f20d677f",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-code-002/train.py": "7340d984dc882669465e3faa8f04f317dcdfc566d79a3e966275ff3103c862d0",
+      "experiments/original-paper-scenarios/srcnn-KITTI-adaptation-protocol-001.md": "c737eb5580f20cc1636202385c018150f2224f3cdb7e9afb9c434aefc3ed7b18",
+      "experiments/original-paper-scenarios/srcnn-KITTI-checkpoint-repair-002.md": "16b47d43194f7a106147865666511aa56989212af3a5ac94e603399994ec55aa",
+      "experiments/original-paper-scenarios/srcnn-author-core-code/check_cpu.py": "e459ec63f734e1803705f020ccd5ee3cfeef2dceeff74689e85195ec70acbab8",
+      "experiments/original-paper-scenarios/srcnn-author-core-code/core.py": "40fbb09d52320f9b522d4361370400f6e604ab86f0bdba9484e022637e07cb67",
+      "experiments/original-paper-scenarios/srcnn-author-core-protocol-001.md": "f65369ab9e2f344e95975945b2847150aa95b99f5ad91a5af6c977f283f8986a",
+      "experiments/original-paper-scenarios/srcnn-compression-interface-code/check_cpu.py": "0f4b69e968da5d8f92e6766c7e1d573c5202c1b2deb7d8674f5fd9cb104b13e6",
+      "experiments/original-paper-scenarios/srcnn-compression-interface-code/interface.py": "e1d2efcdc7f30c4863c7f84921d8a8e11e6c7cecd920ae102396949d7a2262d9",
+      "experiments/original-paper-scenarios/srcnn-compression-interface-protocol-001.md": "d7cc0a16b449b6a351e9aa6458681f4faadc9d07d4dd2988cde60f09b63a7d5c",
+      "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/SRCNN.m": "314887a5b0908411aa20eadbd62f0559ad40205dba3d1ddc103f2bec8c94d266",
+      "third_party/SRCNN-official-001/SRCNN_v1/SRCNN/model/9-5-5(ImageNet)/x3.mat": "fa2ee366d328b942b971c80c24f48dc2b015d5ed4b5790070f720ccfb6ab1578"
+    },
+    "controller_sha256": "fc1e88bc77e84110095fd7267deeec0c3a183d0c0cc85c6ce36be801bbf8d0d3",
+    "command": [
+      "/home/sheng/paper6/.venv/bin/python",
+      "/home/sheng/paper6/data/provenance/srcnn-kitti-cycle-002.py",
+      "--mode",
+      "run",
+      "--scope",
+      "formal"
+    ],
+    "log": "/home/sheng/paper6/logs/srcnn-kitti-formal-seed17-002-controller.log"
+  },
+  "ended_unix": 1791186145.22785
+}

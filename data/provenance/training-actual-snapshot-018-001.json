@@ -1,0 +1,34 @@
+{
+  "checked_unix": 1791217360.9436562,
+  "reports": {
+    "ecsic-KITTI-lambda0.3-seed17-002": {
+      "state": "running_full_KITTI_source_RD_training",
+      "job_id": "11425047",
+      "update_count": 15872,
+      "traceback": null,
+      "completed_epochs": 4
+    },
+    "original-public30-formal-seed17-003-stage2": {
+      "state": "running_complete_public_semantic_stage",
+      "job_id": "11429413",
+      "update_count": 960,
+      "traceback": null,
+      "completed_epochs": 0
+    },
+    "original-public10-engineering-seed17-008-stage1": {
+      "state": "finished_complete_public_semantic_stage_pending_actual_terminal_and_audit",
+      "job_id": "11429396",
+      "update_count": 3,
+      "traceback": null,
+      "completed_epochs": 1
+    },
+    "original-public50-engineering-seed17-008-stage1": {
+      "state": "finished_complete_public_semantic_stage_pending_actual_terminal_and_audit",
+      "job_id": "11429210",
+      "update_count": 3,
+      "traceback": null,
+      "completed_epochs": 1
+    }
+  },
+  "squeue": "                 JOBID                             NAME        STATE         TIME NODELIST(REASON)\n            11425047_5           paper6-ecsic-KITTI-002      RUNNING        26:39 artemis-rtx-03\n              11429413  paper6-original-public30-stage2      RUNNING         0:45 artemis-rtx-03\n              11425814            paper6-cost-export013      RUNNING      1:04:01 artemis-rtx-01\n            11429217_5         paper6-ecsic-final-audit      PENDING         0:00 (Dependency)\n              11429222        paper6-ecsic-c5-export013      PENDING         0:00 (Dependency)\n"
+}

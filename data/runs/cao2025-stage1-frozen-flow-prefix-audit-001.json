@@ -1,0 +1,27 @@
+{
+  "state": "passed_prefix_only",
+  "scope": "independent completed stage1epochs1-2 frozen-flow checkpoint/Adam/scalar prefix audit; live whole12-epoch stage incomplete",
+  "checked_at_unix": 1791072788.7294664,
+  "epochs": [
+    {
+      "epoch": 1,
+      "samples": 3340,
+      "actual_Adam_steps_all562": 3340,
+      "frozen_states_identical": 206,
+      "changed_active_states": 562,
+      "checkpoint_sha256": "24ee14d9910d5990f2327b66bdb27aa05f1abd3e0d52ff8e3452b292a0b699fc"
+    },
+    {
+      "epoch": 2,
+      "samples": 3340,
+      "actual_Adam_steps_all562": 6680,
+      "frozen_states_identical": 206,
+      "changed_active_states": 562,
+      "checkpoint_sha256": "aee7d986937c0ca7d09fb37945220669dbb8150c2509104b76496f77aa298166"
+    }
+  ],
+  "raw_prefix_sha256": "54c5b6f9000a7188ac20fa2fd1f8111a183b73d5a6a8a343b1483df5fabd7b0d",
+  "initialization_sha256": "f4d0d5d5bcc203ee5fd0554a0e691b2a530c56cb55d48fe21b6fc0f97331d3cb",
+  "source_sha256": "a83248126c8b40a2f3ddd613142eb997edf2fe64044d272cf8856d5c112e8c97",
+  "limitations": "no completed-stage/holdout/AP claim; parent manifests remain live; saved raw prefix is sealed independently"
+}

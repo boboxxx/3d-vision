@@ -1,0 +1,240 @@
+{
+  "state": "passed_independent_fixed_ridge_and_frame_bootstrap_audit",
+  "result_sha256": "c6135bdb0dc7df75768be9d1e3a2607f9e2ed94f6112cec2a6d3c590940ac97d",
+  "native_audit_sha256": "addc35f8cb10ca93a8be868967075ff3af65d11495da6da4c2b189ce1267519d",
+  "verifier_sha256": "a563c25a645c4d933ea66fc58b0ac459b71946221d3f05decbf3398f82c074db",
+  "model_checks": {
+    "energy": {
+      "fit_rows": 1024,
+      "out_frames": 32,
+      "independent_summaries": {
+        "MSE": {
+          "mean": 0.000443839098696434,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.00028345726785351653,
+            0.0006392036970069851
+          ]
+        },
+        "signed_Spearman": {
+          "mean": 0.1045408724340176,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.03455627978372434,
+            0.17476173020527855
+          ]
+        },
+        "positive_Spearman": {
+          "mean": 0.10553276292177372,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.042087516936202524,
+            0.1685162570441481
+          ]
+        },
+        "variance_Spearman": {
+          "mean": 0.20314791055718473,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.12371414497800584,
+            0.27905173203812317
+          ]
+        }
+      }
+    },
+    "geometry": {
+      "fit_rows": 1024,
+      "out_frames": 32,
+      "independent_summaries": {
+        "MSE": {
+          "mean": 0.0004519628153110339,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.0002868324522062047,
+            0.0006473351165770811
+          ]
+        },
+        "signed_Spearman": {
+          "mean": 0.030574138563049847,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            -0.04100016037390028,
+            0.10653638196480938
+          ]
+        },
+        "positive_Spearman": {
+          "mean": 0.0445543340688022,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            -0.022727347494421967,
+            0.11324075083331071
+          ]
+        },
+        "variance_Spearman": {
+          "mean": 0.3698565799120234,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.3021366958394428,
+            0.43053204041422277
+          ]
+        }
+      }
+    },
+    "energy_geometry": {
+      "fit_rows": 1024,
+      "out_frames": 32,
+      "independent_summaries": {
+        "MSE": {
+          "mean": 0.0004406116400027786,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.00028178200788340704,
+            0.00062850316250574
+          ]
+        },
+        "signed_Spearman": {
+          "mean": 0.08234054252199412,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.010821515304252198,
+            0.15827872983870966
+          ]
+        },
+        "positive_Spearman": {
+          "mean": 0.08814479655485968,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.020913643233847715,
+            0.1525664474249203
+          ]
+        },
+        "variance_Spearman": {
+          "mean": 0.3484581195014662,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.27722833806818176,
+            0.41417934384164223
+          ]
+        }
+      }
+    },
+    "gradient": {
+      "fit_rows": 1024,
+      "out_frames": 32,
+      "independent_summaries": {
+        "MSE": {
+          "mean": 0.0004756290930245891,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.00028879062546456825,
+            0.000684716067258859
+          ]
+        },
+        "signed_Spearman": {
+          "mean": 0.15937729105571846,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.06785047424853373,
+            0.24494593108504392
+          ]
+        },
+        "positive_Spearman": {
+          "mean": 0.2954110268798427,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.20663971755509916,
+            0.37490566952009474
+          ]
+        },
+        "variance_Spearman": {
+          "mean": 0.8834081744868034,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.8615620990652492,
+            0.9016461235337242
+          ]
+        }
+      }
+    },
+    "shuffled_geometry": {
+      "fit_rows": 1024,
+      "out_frames": 32,
+      "independent_summaries": {
+        "MSE": {
+          "mean": 0.00046552861199459546,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            0.0002926756351173882,
+            0.0006719794714332597
+          ]
+        },
+        "signed_Spearman": {
+          "mean": 0.014364919354838713,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            -0.039284159640762456,
+            0.07803937179252199
+          ]
+        },
+        "positive_Spearman": {
+          "mean": 0.02831927699579149,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            -0.028467081262723612,
+            0.09208356528257823
+          ]
+        },
+        "variance_Spearman": {
+          "mean": 0.010046279325513194,
+          "defined_frames": 32,
+          "undefined_frames": 0,
+          "bootstrap_defined_resamples": 1000,
+          "percentile_95_interval": [
+            -0.0601324802969208,
+            0.07668363957111436
+          ]
+        }
+      }
+    }
+  },
+  "transferred_inputs": true,
+  "scope": "Independent raw-report features targets augmented least squares ranks and frame resampling. Not perception generalization or inference-only gradient availability."
+}

@@ -1,0 +1,42 @@
+{
+  "state": "finished_all_independent_audits_passed",
+  "prefix": "stereo-encoder-native-sanity-001",
+  "pid": 167167,
+  "engineering": true,
+  "started_at_unix": 1791133577.6149814,
+  "source_manifest_sha256": "b3c155dc05bd139e9c98a2be5d3cd8cb268b7c795cec472ab184eb0cc24cb482",
+  "sources_sha256": {
+    "project": "42b4b52a174f9c2a8c365ea45b3477e87d4c8165d3254d6b04b97bd2dad74b21",
+    "liga": "0ffb2cda5f2fa7596fd18342562f08414d2a61e28892d317aaae946b50967a01",
+    "mmdet": "027740091423a687622120f681de0f418890e0bdd0be1ec1b2ba5b26094e329a",
+    "stereo_rcnn": "45444431d6af194c5f668ef44e9b5ddffa54ae2eb6dafce5ac109aa1870e130f",
+    "F7": "66113f599ed26d3e0ca35d64540e82c0f6d5857682565a7a5781c5db91967379",
+    "experiment": "6608e2073d41aef8910eeb7bcce996341088e4d06f0beac0fbf7a025c270d7b9"
+  },
+  "completed_commands": [
+    {
+      "label": "codec-train",
+      "log_sha256": "1536791f5441486ad1fa569e9c88ae31f97eae382f775d3c85968a4085d252fb"
+    },
+    {
+      "label": "codec-training-audit",
+      "log_sha256": "5b11ab67a9589c8b8f50d01aa082ed2313d8d2cd5ed213bcad254ec3509b6be7"
+    },
+    {
+      "label": "joint-train",
+      "log_sha256": "54d988a807bcb89ad58fe4feea648787abbd62084afe58172df7dfeee62fa0b8"
+    },
+    {
+      "label": "joint-training-audit",
+      "log_sha256": "72bcc3714f30ab8742535a5fb28d8e5da36f0bdbccd2d32a99db71cb565ab82d"
+    },
+    {
+      "label": "pair-audit",
+      "log_sha256": "dcd57887ae244a0cd898cb78826a28a18c6ed417308768e1722a8486fab54e0e"
+    }
+  ],
+  "evaluations": {},
+  "paired_audit_sha256": "e0d322993bb7d9acb136edf9ee81fa631943e43d31c0aa90cdc068daa053fb52",
+  "ended_at_unix": 1791133616.851095,
+  "limitations": "Fixed exploratory internal paired encoder optimization scope only; author-pretraining overlap, single seed, no novelty/general superiority/mainval/fading/project-completion claim"
+}

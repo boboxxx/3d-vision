@@ -1,0 +1,858 @@
+{
+  "state": "finished6080_real_pair_encodes_independent_audit_pending",
+  "prefix": "original-jpeg-rate-calibration-001",
+  "pid": 262111,
+  "started_unix": 1791145321.4449446,
+  "directory": "/mnt/d/paper6/runs/original-jpeg-rate-calibration-001",
+  "protocol_sha256": "2f1f514cbcd6b2005d97b292478953875cdbd40c025dac42267b4998844db955",
+  "fold_sha256": "35f22b0022b5968c09c9a8a7e1b9ad6c8ab23c52283673495a36ddba59406f4c",
+  "CPU_gate_sha256": "64cadae456fcc2e0d94bc3c972d5e3a93275ae02acb0af20ca03969afc6ccb46",
+  "sources": {
+    "historical": {
+      "experiments/original-paper-scenarios/code/check_cpu.py": "44de98ed3b0a574178fa85d862313f1c38f460ad41aa83af08d7132d26aa4d00",
+      "experiments/original-paper-scenarios/code/contracts.py": "51585ba2b95d2d7ee593df94a0d3c1da87f2ecbdf8845a1b773518249f1990f0",
+      "experiments/original-paper-scenarios/code/image_codecs.py": "42548127eabc2377f68b89210059def2a80b8302b31797273e1b23740e613a80",
+      "experiments/original-paper-scenarios/code/test_contracts.py": "8268ee6bf3514aec5b94b0bdc448ec48c3e73eb94820ba6de06040cd5b080fd8"
+    },
+    "current": {
+      "experiments/original-paper-scenarios/jpeg-rate-calibration-code/audit.py": "ad3fa0e908a8d934361219beeb34b5c5895bb5b00829ad7cb7749a51369565b0",
+      "experiments/original-paper-scenarios/jpeg-rate-calibration-code/calibrate.py": "1f232c17bb756b588a761c95dc2027473d8c031ef63eaad9ac0e3e1221db01fc"
+    }
+  },
+  "environment": {
+    "Python": "3.10.15",
+    "NumPy": "1.26.3",
+    "Pillow": "10.2.0",
+    "libjpeg": "6.2",
+    "libjpeg_turbo": "3.0.1",
+    "OpenJPEG": "2.5.0"
+  },
+  "frame_ids": [
+    "000000",
+    "000003",
+    "000007",
+    "000009",
+    "000010",
+    "000011",
+    "000012",
+    "000013",
+    "000014",
+    "000016",
+    "000017",
+    "000018",
+    "000022",
+    "000026",
+    "000029",
+    "000030",
+    "000032",
+    "000034",
+    "000038",
+    "000041",
+    "000043",
+    "000044",
+    "000045",
+    "000046",
+    "000049",
+    "000051",
+    "000055",
+    "000056",
+    "000057",
+    "000060",
+    "000064",
+    "000067",
+    "000068",
+    "000069",
+    "000070",
+    "000072",
+    "000073",
+    "000074",
+    "000075",
+    "000079",
+    "000080",
+    "000083",
+    "000084",
+    "000085",
+    "000086",
+    "000087",
+    "000088",
+    "000091",
+    "000092",
+    "000095",
+    "000096",
+    "000097",
+    "000099",
+    "000100",
+    "000101",
+    "000103",
+    "000105",
+    "000109",
+    "000110",
+    "000111",
+    "000112",
+    "000114",
+    "000115",
+    "000119"
+  ],
+  "completed_qualities": 95,
+  "actual_records": 6080,
+  "source_images_before": {
+    "/mnt/d/paper6/data/kitti/training/image_2/000000.png": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+    "/mnt/d/paper6/data/kitti/training/image_3/000000.png": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3",
+    "/mnt/d/paper6/data/kitti/training/image_2/000003.png": "d22f4692c924e0ba7ff2ac00827547d4bd018d991fb9f1959025b183a949af19",
+    "/mnt/d/paper6/data/kitti/training/image_3/000003.png": "ca44da39dcc83befde20753ac2bdb527314a2a78067757f2298ae6df947a1f9d",
+    "/mnt/d/paper6/data/kitti/training/image_2/000007.png": "2675d702a65b2cda45e8dc19df8478ed26b24186d236246c97ebc5bac3d5df0d",
+    "/mnt/d/paper6/data/kitti/training/image_3/000007.png": "6693060bf5001cdb6936104ab1b2bf846b41d5a0c8cd71751618515dc5b64f88",
+    "/mnt/d/paper6/data/kitti/training/image_2/000009.png": "ef18e8f93de15fec1f30055046d273823b8cbfc71a538f72dabce0e5776bbe2e",
+    "/mnt/d/paper6/data/kitti/training/image_3/000009.png": "8c628599faa3fb154ab2295b5e44affcc6e9ab70ce774fb7d2063c0341aecf82",
+    "/mnt/d/paper6/data/kitti/training/image_2/000010.png": "123b58ce5608eae25b96fb159956b98a092f99f8e4da566c29cbf279e75d420b",
+    "/mnt/d/paper6/data/kitti/training/image_3/000010.png": "00e54a1ebd567b454171639a25925f5ecbda4a37b21500da0dde069238ce7b3d",
+    "/mnt/d/paper6/data/kitti/training/image_2/000011.png": "3a2cb160a89c005dcd2ade961a1f5121ca669ce899a813c843c2d52ddf07b2db",
+    "/mnt/d/paper6/data/kitti/training/image_3/000011.png": "02f1b4ac24340aa8c2a5946a81ac905408112606fcbc284a3ba1a4614761772d",
+    "/mnt/d/paper6/data/kitti/training/image_2/000012.png": "519f490c0fa58f327dcecf0e0f22decdfa064d9c1611b51e7d4fa6979161a942",
+    "/mnt/d/paper6/data/kitti/training/image_3/000012.png": "ac1d334fc584e4f57fcc75460515e7da60dffb1039dc29d21cd5148be4d217f5",
+    "/mnt/d/paper6/data/kitti/training/image_2/000013.png": "4fd9536eb75e527a6806cd0231fa7ef026e286deb0c27c594d13bf5dcc2c8bd2",
+    "/mnt/d/paper6/data/kitti/training/image_3/000013.png": "4d7cd0fa5f59909b44aa80eb43dc1a0e5e2e26b0e4b370125d1c67f1ac8c3adf",
+    "/mnt/d/paper6/data/kitti/training/image_2/000014.png": "0a486a77f7a58150552ed1dbc32fa5aeda64a9002061fefc7b73873e4ebba8a9",
+    "/mnt/d/paper6/data/kitti/training/image_3/000014.png": "2c160126518bebd90c16129e547ebf9dd42414efecb08cc9be81874ba843e02f",
+    "/mnt/d/paper6/data/kitti/training/image_2/000016.png": "a55b69f446a307007c2bb7adc7aa579146d0c5bb3a202177b20090fc770fad3a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000016.png": "b1d8134021412c9e6f705c4768c8ba18c42d4627a00ae4eb18caf91f3eee57b1",
+    "/mnt/d/paper6/data/kitti/training/image_2/000017.png": "b6f2d5c8d0ce48f52bb483236603e647aaa5b77e614cc9ac15bfbd081a77f1a6",
+    "/mnt/d/paper6/data/kitti/training/image_3/000017.png": "55b1f0d0a8374e3193debdfbf080a6898e2c6ee3b655e1758547d0b0bb5c7637",
+    "/mnt/d/paper6/data/kitti/training/image_2/000018.png": "628f14adc3cc7d201ed0959765a17b757e6365615b02ce9271035dca54eaba75",
+    "/mnt/d/paper6/data/kitti/training/image_3/000018.png": "21df20b0fc513e59a74096a0a4048c51f7534ed46c95742c8484b2b5fbe0a2ef",
+    "/mnt/d/paper6/data/kitti/training/image_2/000022.png": "b0aeb834e68edc1783f4dd1b620a0f6b7ae6b43ab33ec0b6358cdbd2fbe4c33b",
+    "/mnt/d/paper6/data/kitti/training/image_3/000022.png": "990ec319089323f76af779a51c97232676ee1e4f3371827b447e457204803286",
+    "/mnt/d/paper6/data/kitti/training/image_2/000026.png": "5b0a82271dfc78c60d9274ae6a8df70ae974b452956ed9d292c0badb44c5012a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000026.png": "3cd564371adccae795a4c19a46aed721ce58f2cdaad7356661849d22eafa4b3b",
+    "/mnt/d/paper6/data/kitti/training/image_2/000029.png": "d10adfd029dd11ffe2ab0ff0c1d0ca6a62b1e1607f02550366cc0df74a7e8e84",
+    "/mnt/d/paper6/data/kitti/training/image_3/000029.png": "8e57c5ea888f891570850b902221d2b7679274b575a378045645e762ca7dc8bb",
+    "/mnt/d/paper6/data/kitti/training/image_2/000030.png": "05f8755ee23a33c233e4410b9c6eee3c8918e659ae4debbea653d11612de43d5",
+    "/mnt/d/paper6/data/kitti/training/image_3/000030.png": "2263ca9e5b1d763b2eb7ff4370a5ffb2218ece482e8727e71126dcaa5ce3319c",
+    "/mnt/d/paper6/data/kitti/training/image_2/000032.png": "d18835c332dc87eac96b6735d2d0506ef6a99cbb1aeb79a190afe68fb20f3e38",
+    "/mnt/d/paper6/data/kitti/training/image_3/000032.png": "c9e323301b64b07722f685f8f77fac9e6a5f9d144dbf88a500174dab2fc8199a",
+    "/mnt/d/paper6/data/kitti/training/image_2/000034.png": "3841398b77133119eccba20925a0f1becb32245b73881e93bd7a2a1e85238fc5",
+    "/mnt/d/paper6/data/kitti/training/image_3/000034.png": "781c9a274c86a5fddc1cc3457163a19cc2eec39347b1d1e2ba761a3813698070",
+    "/mnt/d/paper6/data/kitti/training/image_2/000038.png": "4cfdd9a338e9024578aa9a36a3ad86bc76b664e17ae6556fad147d0dbbf1e695",
+    "/mnt/d/paper6/data/kitti/training/image_3/000038.png": "b9af634dd75f48fa04a10ead29f278cdee2af11d32d4a36c969694a9dd723b64",
+    "/mnt/d/paper6/data/kitti/training/image_2/000041.png": "b861205f7c2274a663bc54fc1d0950b6e996a88261ba9ffba54a8f70a84ed4f2",
+    "/mnt/d/paper6/data/kitti/training/image_3/000041.png": "8456492921666ae79b824b0ecfbfd2483a65623edba8a6c6570b288390d8a231",
+    "/mnt/d/paper6/data/kitti/training/image_2/000043.png": "9f1c29c2a5413db1c0f5845741cf7032c1955ee055c0b3b09cfdd1843b9ae97c",
+    "/mnt/d/paper6/data/kitti/training/image_3/000043.png": "326bfd461237be26635f09b9aa48eae0e5e4e163969bd4a318ca479a6be4e23d",
+    "/mnt/d/paper6/data/kitti/training/image_2/000044.png": "6811ecc1d19e594221e0f9ed85ec6b93cd8f83e50fca4bbb9bf8b9362f70091d",
+    "/mnt/d/paper6/data/kitti/training/image_3/000044.png": "f5d67494d3069951d0d480d53909410a48460721789d7f90218f0324c5424bdb",
+    "/mnt/d/paper6/data/kitti/training/image_2/000045.png": "4f7946448e1a128b4bc53ed811a5a4f19036f3d165516293726802d6c3da77c0",
+    "/mnt/d/paper6/data/kitti/training/image_3/000045.png": "602031168fc01b9eff7c78adeda23d1c425e841fcf3f2f98f142ac2d9e4b030f",
+    "/mnt/d/paper6/data/kitti/training/image_2/000046.png": "8852f56a99559458679b989231dd696cf86975beec8cafd82b3ecc18641a5efe",
+    "/mnt/d/paper6/data/kitti/training/image_3/000046.png": "5c1b1a02eb14bfb53c557b3b2ddfe354869f9ca5230d9c799d065ca72b1f7371",
+    "/mnt/d/paper6/data/kitti/training/image_2/000049.png": "b1a77764b89eb720a974b9c1079f68c37bcabfa7f32646709df715e5fb79a2fc",
+    "/mnt/d/paper6/data/kitti/training/image_3/000049.png": "e438d66ffa1acfc6e26ce8c998b5175e9cfdf5a68a6b95dc4d54ba1a9a9ed8d2",
+    "/mnt/d/paper6/data/kitti/training/image_2/000051.png": "1e83240824583063f5f2dc7a1379fe7feb2e7bc389a8f35586985c499b8846c3",
+    "/mnt/d/paper6/data/kitti/training/image_3/000051.png": "8c600ab79e551454b7b3a13dcde15164d20d2e946d5ae4de6b0d8edbf9a087c9",
+    "/mnt/d/paper6/data/kitti/training/image_2/000055.png": "b453153ed0da3a93db4d02900e440b7ad7d3411552ad76f254311d648ba6e1c9",
+    "/mnt/d/paper6/data/kitti/training/image_3/000055.png": "b269c399f557b9b393818ffd1b10809407bf621b66938f931f49a9644562e11c",
+    "/mnt/d/paper6/data/kitti/training/image_2/000056.png": "7e0b819321638f55ad308fd48411cb0a3e24a93cdffdca4f393e55ba8ba2f36e",
+    "/mnt/d/paper6/data/kitti/training/image_3/000056.png": "9bc651f7a87a66fc698991f4a569aa44462d15779383e8c4f06c30a42a7704d4",
+    "/mnt/d/paper6/data/kitti/training/image_2/000057.png": "9f86ec3eeaf8c7d4198fd015e75d4b28acf9a58e2bf4fc01db91be27a36df84a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000057.png": "09df255181513480deefbcce2dfd9ac365c041deee5b10c295007418762f8dbd",
+    "/mnt/d/paper6/data/kitti/training/image_2/000060.png": "92b74583e5114fb9c702a144ec0f4bd2316c92bbc15d4e3c279d66b439da16a1",
+    "/mnt/d/paper6/data/kitti/training/image_3/000060.png": "f9751ea46ab5fc39125b78c4644000d7b301d3b9fe0a8abe9b2f75d2cf83bef6",
+    "/mnt/d/paper6/data/kitti/training/image_2/000064.png": "5398559f04560a794e44781a3cb31fb604838121121e545a9abedc0bbd322cf4",
+    "/mnt/d/paper6/data/kitti/training/image_3/000064.png": "f99275dccc315af4c5900302ee8f1259cf4650f5dc9f1d785d8880bb357ddb16",
+    "/mnt/d/paper6/data/kitti/training/image_2/000067.png": "4dfa1c94f8226bc1d2b21bc8e1c4bdc2f92bae46206f15d66e1f24ed87c4645a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000067.png": "6f2deb46df166fbc47a9ff6aa9470c80672b250636e571fc98a92b857aef2fc3",
+    "/mnt/d/paper6/data/kitti/training/image_2/000068.png": "515bf417f9769ea219327984b1e2ce0ae5f8a340fa917972053198f97f2bb8f1",
+    "/mnt/d/paper6/data/kitti/training/image_3/000068.png": "78ee2f4cf63c60213cf9d797716ae49af4bc78a3bd832c4b0c756822c8186c51",
+    "/mnt/d/paper6/data/kitti/training/image_2/000069.png": "d46e731f56423f852149b6451ce5f1e9e25aee84ddb3ac731afca1aa4dfdcda6",
+    "/mnt/d/paper6/data/kitti/training/image_3/000069.png": "1a3c9b00fc9d2676a231be1b6c7edc00d636a2e29be0fb929c2aa179298e0054",
+    "/mnt/d/paper6/data/kitti/training/image_2/000070.png": "3df6ff05f7c24d44822c89538175b5130c07d1eae19bcd6560f1ba067c7897d3",
+    "/mnt/d/paper6/data/kitti/training/image_3/000070.png": "0a2f09ed0c4860794b5ddb42cd1026747e39c6090c2a52d274c9b330a0f62736",
+    "/mnt/d/paper6/data/kitti/training/image_2/000072.png": "1269662e5f09a7daf9623adf5808aada9d2e6813fe5ed3f7622713aa6dec80c3",
+    "/mnt/d/paper6/data/kitti/training/image_3/000072.png": "4f0e53540b2c1eb3885772f9d589fc38c555084fb7a2c93ed061e3e477661173",
+    "/mnt/d/paper6/data/kitti/training/image_2/000073.png": "746f02c0b42cb64d2328af5ea253a10ac23a8ef86dee56def4ab4674f5633ac0",
+    "/mnt/d/paper6/data/kitti/training/image_3/000073.png": "b9631d2a33e8467e8234302bd7d845f07c113dd361dedc0d9b9e0dde78166ad7",
+    "/mnt/d/paper6/data/kitti/training/image_2/000074.png": "75d560e16613c3822ff0bcebfef36ad11cbbfc674b869f03c6cc646eec0d4bd5",
+    "/mnt/d/paper6/data/kitti/training/image_3/000074.png": "120c1ff57825de3a538bfd8805a7a10df9ac833dbfcdbf970f95843994eb1161",
+    "/mnt/d/paper6/data/kitti/training/image_2/000075.png": "8d42705feb2978c57dbf6b53f32a31a0cdb0ca55ef48407a238bd53997908945",
+    "/mnt/d/paper6/data/kitti/training/image_3/000075.png": "0efc1a5097085333cf674bcd0151c87a142488efebbde4748c8c68bd97bf9760",
+    "/mnt/d/paper6/data/kitti/training/image_2/000079.png": "410c3e5698cdaec8041aacb7e5b105fedfede8df7117831a0b5b02d2c92ccb44",
+    "/mnt/d/paper6/data/kitti/training/image_3/000079.png": "c4136f3e744cba715c04c467950c55bd97444d0e95131282b6dd9410f5831309",
+    "/mnt/d/paper6/data/kitti/training/image_2/000080.png": "2023dde364f1469e1b6a5bdd15dc12867b6a09da8d6e6a137eff2b324d55241e",
+    "/mnt/d/paper6/data/kitti/training/image_3/000080.png": "dbe238439d2153b7ea49024ec6976311324d0c2c86672496a8fcc229aad1b8f6",
+    "/mnt/d/paper6/data/kitti/training/image_2/000083.png": "fe95d2acab62790fc4ed2a2797e8182ebc1e94072a8c954d3c700fb484e7d2be",
+    "/mnt/d/paper6/data/kitti/training/image_3/000083.png": "4c74d742344f41cd7c6ce291829250a583cafb6088f386bd5df332e1b47d61c6",
+    "/mnt/d/paper6/data/kitti/training/image_2/000084.png": "42111e5dc0009d10bdbef5494f6f879309fcc8188ea44fa4e0eb53ba647ebd4d",
+    "/mnt/d/paper6/data/kitti/training/image_3/000084.png": "e0e480520d417eea2c580ae29f8ec1b36318f2b11fdd4c7ba5c8309122151714",
+    "/mnt/d/paper6/data/kitti/training/image_2/000085.png": "68da934abfabd6b2014afc9043fba651aae81988bf2b91a58fb0f6a809c72381",
+    "/mnt/d/paper6/data/kitti/training/image_3/000085.png": "eb7d72d45ee7f9cf080c21a98ca4f171950c9c5bb213c5ce7fae5a5e92f74a2c",
+    "/mnt/d/paper6/data/kitti/training/image_2/000086.png": "14f3e51cf55d8df337ed64e928a66b0851d25b0b3408386eb429beb55cfcc776",
+    "/mnt/d/paper6/data/kitti/training/image_3/000086.png": "6591eebc3161a4feec1a2fd59769e7247fb75760488dc7fdd06b54ffa6a71c83",
+    "/mnt/d/paper6/data/kitti/training/image_2/000087.png": "e292985d306280ec441f8d55e4a363b375589bb3b2c52e6a62859c2ef006d3c7",
+    "/mnt/d/paper6/data/kitti/training/image_3/000087.png": "8a76a4aee8b667120e9ee92b9efc9fb26b4830c52f00c1516ce9f8251b36580b",
+    "/mnt/d/paper6/data/kitti/training/image_2/000088.png": "b25eaf3f4f3df83b863727d23ed35ccb508321b00435f68fd442638c28bbb567",
+    "/mnt/d/paper6/data/kitti/training/image_3/000088.png": "7387a7cc5d93075b74869496792b949005ce747e8d61d273956c3d9249debeeb",
+    "/mnt/d/paper6/data/kitti/training/image_2/000091.png": "7ec892223ee36c3d3332fe18c76df90e5849aa1624e728340011d6e089271e0c",
+    "/mnt/d/paper6/data/kitti/training/image_3/000091.png": "3bb948716b2fd6896ca706fc12ee4b7aad7f72d76505af1e4272004e6e90a653",
+    "/mnt/d/paper6/data/kitti/training/image_2/000092.png": "a15cdb04ebe6b4b218fa2a31680a1a174d9b2e6e8da3594abfd70148e8dda08e",
+    "/mnt/d/paper6/data/kitti/training/image_3/000092.png": "ab65861dc53f3fdbbe8d8c1165725b9b59c9f88a687f4e91764c1a5e33d291b8",
+    "/mnt/d/paper6/data/kitti/training/image_2/000095.png": "e1dba5aae4434d200af83e7ef52df662b0807217eb57e28caf7d133d2adbc4af",
+    "/mnt/d/paper6/data/kitti/training/image_3/000095.png": "651e6b0770c9b426b8db10715f7f0611c9fc7db24b36a35235011b13f295fd5f",
+    "/mnt/d/paper6/data/kitti/training/image_2/000096.png": "5a359f71b6ef66229020cc25274a7ca0f10098f625c903cf2a23522773a04c4d",
+    "/mnt/d/paper6/data/kitti/training/image_3/000096.png": "f6f56be61367e39c6f1408d1011d82af8a736eff2d60bd9533b42c478ef6da3e",
+    "/mnt/d/paper6/data/kitti/training/image_2/000097.png": "e789128b84f4ffbd89e418c864f47f8be0e3cb2382451563cb6e19254cd6fcc7",
+    "/mnt/d/paper6/data/kitti/training/image_3/000097.png": "c01944cb69ce25e50e32dc57f90cd0682f4588c01fe9cdb162560018e294f811",
+    "/mnt/d/paper6/data/kitti/training/image_2/000099.png": "aef6f81589db89e88ed7c7cb57b21a8280e7de80e3cce54e858e8cce245a5a3a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000099.png": "a543004697fe916973607b64b83a3b518ed8cf66b167126ce5557efb9f9a6cb5",
+    "/mnt/d/paper6/data/kitti/training/image_2/000100.png": "18824985f5ebf14ecc938d82423b94a4ad4db3445536fbc24be9b81aba9d7390",
+    "/mnt/d/paper6/data/kitti/training/image_3/000100.png": "b0acf163b862f2e6b3b70b84552863967c0d1b4ef229c10fcaaa078220304122",
+    "/mnt/d/paper6/data/kitti/training/image_2/000101.png": "d8728b2b5490e8151418f61aab8c9cb79eee812de06b969be3c89bd561e131a0",
+    "/mnt/d/paper6/data/kitti/training/image_3/000101.png": "d28517a55d7e9a1a7e3cd3736ce5ccd2d25a93464fa0daae783fc1bb807a30c3",
+    "/mnt/d/paper6/data/kitti/training/image_2/000103.png": "d98f7176d2b7655485578ddf2f7ee7cbbbe1a278edeebb9343adcc2b8bec4445",
+    "/mnt/d/paper6/data/kitti/training/image_3/000103.png": "2bb718da8909fdefef8f5f38cfca13389bce78e501ad882104fde7e51da46f99",
+    "/mnt/d/paper6/data/kitti/training/image_2/000105.png": "c73712e173c3909441071081e017463a3ea4df472be48d795cf482db7875cc00",
+    "/mnt/d/paper6/data/kitti/training/image_3/000105.png": "9db18e06ac12e2c2d0a8503b6ba0ff8942bcc87c72405eccb6c8a57042973268",
+    "/mnt/d/paper6/data/kitti/training/image_2/000109.png": "abde7a77049b61d7c399f8bca18f2934bd8cde5feef7bba1cf983addad3ec06a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000109.png": "dc167d50dee10b365aca553a4a8b44d0ca68f55a249c06f316cb90bb9d3f901d",
+    "/mnt/d/paper6/data/kitti/training/image_2/000110.png": "c61a569f0968e3785cd211a6b26f712c5221e44f1c8b3563490ad8a4e5c77a98",
+    "/mnt/d/paper6/data/kitti/training/image_3/000110.png": "0892a699cd0c9f546313729fc6e28daf47f8e376f9cc5db00c9bd2f6d7e04714",
+    "/mnt/d/paper6/data/kitti/training/image_2/000111.png": "ddb1b42b777e8b289f02bc561595e216c1aab0319bf43f843b53482ac0859843",
+    "/mnt/d/paper6/data/kitti/training/image_3/000111.png": "fa359452c93c90d366424875d4180c41fa9760947f8282b1881b07c0a2bd3d42",
+    "/mnt/d/paper6/data/kitti/training/image_2/000112.png": "e06526174e83662094e37081ccdc38909714f500a1d25a1d6a60025de0c57fe1",
+    "/mnt/d/paper6/data/kitti/training/image_3/000112.png": "b47861b3d4c9a049046e598379e11ddc0917859e83d17e306968c716317e3a13",
+    "/mnt/d/paper6/data/kitti/training/image_2/000114.png": "b5b13226d0143fe105c83af33599e303b2e80baf7404bb391f5fb1d4a3eabbc0",
+    "/mnt/d/paper6/data/kitti/training/image_3/000114.png": "44d27e58dbb57a4c500ac3a670377d68cd66bb4efbc939b280d264fc882e1b60",
+    "/mnt/d/paper6/data/kitti/training/image_2/000115.png": "69f9408886633aa87326ce197c21885842ff8b9a044e67279ca49c6800c9ef4f",
+    "/mnt/d/paper6/data/kitti/training/image_3/000115.png": "c4fe04fdb9d11b5d1d9b2bf3b85607620af45ee3565e5fe90f2dd03c2d0ec399",
+    "/mnt/d/paper6/data/kitti/training/image_2/000119.png": "0a4feda0169826883902b3d8183562e9cb4178773fd60f4923b8d5784a9268e0",
+    "/mnt/d/paper6/data/kitti/training/image_3/000119.png": "460e88411955f6214b3d16868939b5852bfb2b1e5085bffa8ded55796782e95d"
+  },
+  "no_GT_model_mainval_or_radio": true,
+  "input_barrier": true,
+  "candidate_wires_retained": false,
+  "pooled_ratios": {
+    "1": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 1378451,
+      "ratio": 129.45362004162644
+    },
+    "2": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 1379362,
+      "ratio": 129.36812236381746
+    },
+    "3": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 1464205,
+      "ratio": 121.8719182081744
+    },
+    "4": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 1631937,
+      "ratio": 109.34580930513862
+    },
+    "5": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 1805509,
+      "ratio": 98.83388673221789
+    },
+    "6": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 1977845,
+      "ratio": 90.22217211156587
+    },
+    "7": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 2143239,
+      "ratio": 83.25971671848076
+    },
+    "8": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 2301826,
+      "ratio": 77.52344095513736
+    },
+    "9": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 2459036,
+      "ratio": 72.56724667715316
+    },
+    "10": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 2615519,
+      "ratio": 68.22564546462863
+    },
+    "11": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 2765424,
+      "ratio": 64.5273462586569
+    },
+    "12": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 2906449,
+      "ratio": 61.396388513956374
+    },
+    "13": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 3056798,
+      "ratio": 58.37659930423927
+    },
+    "14": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 3185863,
+      "ratio": 56.011659007308225
+    },
+    "15": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 3321511,
+      "ratio": 53.72418516753369
+    },
+    "16": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 3455813,
+      "ratio": 51.63632175699322
+    },
+    "17": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 3587674,
+      "ratio": 49.7384857152573
+    },
+    "18": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 3715103,
+      "ratio": 48.0324427075104
+    },
+    "19": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 3828249,
+      "ratio": 46.61281750481748
+    },
+    "20": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 3942055,
+      "ratio": 45.267118799712335
+    },
+    "21": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 4072017,
+      "ratio": 43.82237893407616
+    },
+    "22": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 4186578,
+      "ratio": 42.62322880404951
+    },
+    "23": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 4305504,
+      "ratio": 41.44589622957034
+    },
+    "24": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 4419890,
+      "ratio": 40.373283498005605
+    },
+    "25": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 4523299,
+      "ratio": 39.450293248357006
+    },
+    "26": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 4633841,
+      "ratio": 38.509191834592514
+    },
+    "27": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 4742466,
+      "ratio": 37.6271484076006
+    },
+    "28": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 4860590,
+      "ratio": 36.71271841484264
+    },
+    "29": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 4949861,
+      "ratio": 36.05060263308404
+    },
+    "30": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 5052787,
+      "ratio": 35.31624665753771
+    },
+    "31": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 5151174,
+      "ratio": 34.641709249192516
+    },
+    "32": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 5251015,
+      "ratio": 33.98304365917827
+    },
+    "33": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 5367470,
+      "ratio": 33.24573253320466
+    },
+    "34": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 5435182,
+      "ratio": 32.831554122750624
+    },
+    "35": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 5561797,
+      "ratio": 32.08413971239871
+    },
+    "36": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 5667737,
+      "ratio": 31.484430558439815
+    },
+    "37": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 5726250,
+      "ratio": 31.16271067452521
+    },
+    "38": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 5852335,
+      "ratio": 30.491329016537843
+    },
+    "39": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 5935822,
+      "ratio": 30.062470202105118
+    },
+    "40": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 5980970,
+      "ratio": 29.835540388933566
+    },
+    "41": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 6118920,
+      "ratio": 29.162903257437588
+    },
+    "42": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 6192021,
+      "ratio": 28.818615440742207
+    },
+    "43": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 6263056,
+      "ratio": 28.491757378506595
+    },
+    "44": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 6386481,
+      "ratio": 27.94112626343052
+    },
+    "45": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 6455391,
+      "ratio": 27.64286036275727
+    },
+    "46": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 6570514,
+      "ratio": 27.158525497396397
+    },
+    "47": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 6620501,
+      "ratio": 26.95346953349905
+    },
+    "48": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 6704712,
+      "ratio": 26.614934690707074
+    },
+    "49": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 6847850,
+      "ratio": 26.058612849288462
+    },
+    "50": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 6871592,
+      "ratio": 25.96857787831408
+    },
+    "51": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 6896200,
+      "ratio": 25.87591311156869
+    },
+    "52": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 7052858,
+      "ratio": 25.30115762999907
+    },
+    "53": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 7149859,
+      "ratio": 24.957900848114626
+    },
+    "54": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 7212699,
+      "ratio": 24.74045735167931
+    },
+    "55": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 7298880,
+      "ratio": 24.448336183085623
+    },
+    "56": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 7414225,
+      "ratio": 24.067987146330196
+    },
+    "57": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 7528465,
+      "ratio": 23.70276968811039
+    },
+    "58": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 7661048,
+      "ratio": 23.292566761101092
+    },
+    "59": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 7737733,
+      "ratio": 23.061725184882963
+    },
+    "60": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 7834259,
+      "ratio": 22.77758138963749
+    },
+    "61": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 7986241,
+      "ratio": 22.34411308148602
+    },
+    "62": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 8073528,
+      "ratio": 22.10253955891402
+    },
+    "63": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 8238332,
+      "ratio": 21.660388534960717
+    },
+    "64": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 8334683,
+      "ratio": 21.4099890781689
+    },
+    "65": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 8501751,
+      "ratio": 20.989261153378873
+    },
+    "66": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 8625430,
+      "ratio": 20.68829867032716
+    },
+    "67": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 8760704,
+      "ratio": 20.368850722499015
+    },
+    "68": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 8969259,
+      "ratio": 19.895230141085232
+    },
+    "69": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 9115264,
+      "ratio": 19.576555544633706
+    },
+    "70": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 9335898,
+      "ratio": 19.11390548611392
+    },
+    "71": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 9522616,
+      "ratio": 18.739122946887704
+    },
+    "72": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 9675639,
+      "ratio": 18.442758354254433
+    },
+    "73": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 9904213,
+      "ratio": 18.017127862658043
+    },
+    "74": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 10229598,
+      "ratio": 17.444035630725665
+    },
+    "75": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 10294758,
+      "ratio": 17.333624743777367
+    },
+    "76": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 10540865,
+      "ratio": 16.928921108466906
+    },
+    "77": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 10930406,
+      "ratio": 16.3256032758527
+    },
+    "78": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 11242201,
+      "ratio": 15.87282348002851
+    },
+    "79": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 11482776,
+      "ratio": 15.540272839947413
+    },
+    "80": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 11825287,
+      "ratio": 15.090159925928225
+    },
+    "81": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 12261926,
+      "ratio": 14.552809403677694
+    },
+    "82": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 12615838,
+      "ratio": 14.14455956076798
+    },
+    "83": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 13149539,
+      "ratio": 13.570473611280214
+    },
+    "84": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 13590245,
+      "ratio": 13.130408760106974
+    },
+    "85": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 14037348,
+      "ratio": 12.712192644935497
+    },
+    "86": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 14733280,
+      "ratio": 12.111727463266835
+    },
+    "87": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 15248858,
+      "ratio": 11.70221874975818
+    },
+    "88": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 16124470,
+      "ratio": 11.066749604793213
+    },
+    "89": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 16798564,
+      "ratio": 10.622662270417877
+    },
+    "90": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 17938124,
+      "ratio": 9.947833563866546
+    },
+    "91": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 18928580,
+      "ratio": 9.427303685749274
+    },
+    "92": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 19967721,
+      "ratio": 8.93669698209425
+    },
+    "93": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 21744657,
+      "ratio": 8.206405463190336
+    },
+    "94": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 23921332,
+      "ratio": 7.459679586404302
+    },
+    "95": {
+      "raw_RGB8_bytes": 178445472,
+      "full_wire_bytes": 26508376,
+      "ratio": 6.7316636824526705
+    }
+  },
+  "selected_qualities": {
+    "10": {
+      "quality": 90,
+      "measured_ratio": 9.947833563866546,
+      "absolute_log_residual": 0.005230297805376264
+    },
+    "30": {
+      "quality": 39,
+      "measured_ratio": 30.062470202105118,
+      "absolute_log_residual": 0.0020801750051667846
+    },
+    "50": {
+      "quality": 17,
+      "measured_ratio": 49.7384857152573,
+      "absolute_log_residual": 0.005244011519988702
+    }
+  },
+  "records_path": "/mnt/d/paper6/runs/original-jpeg-rate-calibration-001/calibration.jsonl",
+  "records_sha256": "9136119caa58c036cb9d35a96627ba29641a8263e23d0794818a08d7d48b7631",
+  "source_images_after": {
+    "/mnt/d/paper6/data/kitti/training/image_2/000000.png": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+    "/mnt/d/paper6/data/kitti/training/image_3/000000.png": "0bb0d0ed8f4313e7ad77595c3faf81060c859a5df65c4e180aefc182116810d3",
+    "/mnt/d/paper6/data/kitti/training/image_2/000003.png": "d22f4692c924e0ba7ff2ac00827547d4bd018d991fb9f1959025b183a949af19",
+    "/mnt/d/paper6/data/kitti/training/image_3/000003.png": "ca44da39dcc83befde20753ac2bdb527314a2a78067757f2298ae6df947a1f9d",
+    "/mnt/d/paper6/data/kitti/training/image_2/000007.png": "2675d702a65b2cda45e8dc19df8478ed26b24186d236246c97ebc5bac3d5df0d",
+    "/mnt/d/paper6/data/kitti/training/image_3/000007.png": "6693060bf5001cdb6936104ab1b2bf846b41d5a0c8cd71751618515dc5b64f88",
+    "/mnt/d/paper6/data/kitti/training/image_2/000009.png": "ef18e8f93de15fec1f30055046d273823b8cbfc71a538f72dabce0e5776bbe2e",
+    "/mnt/d/paper6/data/kitti/training/image_3/000009.png": "8c628599faa3fb154ab2295b5e44affcc6e9ab70ce774fb7d2063c0341aecf82",
+    "/mnt/d/paper6/data/kitti/training/image_2/000010.png": "123b58ce5608eae25b96fb159956b98a092f99f8e4da566c29cbf279e75d420b",
+    "/mnt/d/paper6/data/kitti/training/image_3/000010.png": "00e54a1ebd567b454171639a25925f5ecbda4a37b21500da0dde069238ce7b3d",
+    "/mnt/d/paper6/data/kitti/training/image_2/000011.png": "3a2cb160a89c005dcd2ade961a1f5121ca669ce899a813c843c2d52ddf07b2db",
+    "/mnt/d/paper6/data/kitti/training/image_3/000011.png": "02f1b4ac24340aa8c2a5946a81ac905408112606fcbc284a3ba1a4614761772d",
+    "/mnt/d/paper6/data/kitti/training/image_2/000012.png": "519f490c0fa58f327dcecf0e0f22decdfa064d9c1611b51e7d4fa6979161a942",
+    "/mnt/d/paper6/data/kitti/training/image_3/000012.png": "ac1d334fc584e4f57fcc75460515e7da60dffb1039dc29d21cd5148be4d217f5",
+    "/mnt/d/paper6/data/kitti/training/image_2/000013.png": "4fd9536eb75e527a6806cd0231fa7ef026e286deb0c27c594d13bf5dcc2c8bd2",
+    "/mnt/d/paper6/data/kitti/training/image_3/000013.png": "4d7cd0fa5f59909b44aa80eb43dc1a0e5e2e26b0e4b370125d1c67f1ac8c3adf",
+    "/mnt/d/paper6/data/kitti/training/image_2/000014.png": "0a486a77f7a58150552ed1dbc32fa5aeda64a9002061fefc7b73873e4ebba8a9",
+    "/mnt/d/paper6/data/kitti/training/image_3/000014.png": "2c160126518bebd90c16129e547ebf9dd42414efecb08cc9be81874ba843e02f",
+    "/mnt/d/paper6/data/kitti/training/image_2/000016.png": "a55b69f446a307007c2bb7adc7aa579146d0c5bb3a202177b20090fc770fad3a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000016.png": "b1d8134021412c9e6f705c4768c8ba18c42d4627a00ae4eb18caf91f3eee57b1",
+    "/mnt/d/paper6/data/kitti/training/image_2/000017.png": "b6f2d5c8d0ce48f52bb483236603e647aaa5b77e614cc9ac15bfbd081a77f1a6",
+    "/mnt/d/paper6/data/kitti/training/image_3/000017.png": "55b1f0d0a8374e3193debdfbf080a6898e2c6ee3b655e1758547d0b0bb5c7637",
+    "/mnt/d/paper6/data/kitti/training/image_2/000018.png": "628f14adc3cc7d201ed0959765a17b757e6365615b02ce9271035dca54eaba75",
+    "/mnt/d/paper6/data/kitti/training/image_3/000018.png": "21df20b0fc513e59a74096a0a4048c51f7534ed46c95742c8484b2b5fbe0a2ef",
+    "/mnt/d/paper6/data/kitti/training/image_2/000022.png": "b0aeb834e68edc1783f4dd1b620a0f6b7ae6b43ab33ec0b6358cdbd2fbe4c33b",
+    "/mnt/d/paper6/data/kitti/training/image_3/000022.png": "990ec319089323f76af779a51c97232676ee1e4f3371827b447e457204803286",
+    "/mnt/d/paper6/data/kitti/training/image_2/000026.png": "5b0a82271dfc78c60d9274ae6a8df70ae974b452956ed9d292c0badb44c5012a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000026.png": "3cd564371adccae795a4c19a46aed721ce58f2cdaad7356661849d22eafa4b3b",
+    "/mnt/d/paper6/data/kitti/training/image_2/000029.png": "d10adfd029dd11ffe2ab0ff0c1d0ca6a62b1e1607f02550366cc0df74a7e8e84",
+    "/mnt/d/paper6/data/kitti/training/image_3/000029.png": "8e57c5ea888f891570850b902221d2b7679274b575a378045645e762ca7dc8bb",
+    "/mnt/d/paper6/data/kitti/training/image_2/000030.png": "05f8755ee23a33c233e4410b9c6eee3c8918e659ae4debbea653d11612de43d5",
+    "/mnt/d/paper6/data/kitti/training/image_3/000030.png": "2263ca9e5b1d763b2eb7ff4370a5ffb2218ece482e8727e71126dcaa5ce3319c",
+    "/mnt/d/paper6/data/kitti/training/image_2/000032.png": "d18835c332dc87eac96b6735d2d0506ef6a99cbb1aeb79a190afe68fb20f3e38",
+    "/mnt/d/paper6/data/kitti/training/image_3/000032.png": "c9e323301b64b07722f685f8f77fac9e6a5f9d144dbf88a500174dab2fc8199a",
+    "/mnt/d/paper6/data/kitti/training/image_2/000034.png": "3841398b77133119eccba20925a0f1becb32245b73881e93bd7a2a1e85238fc5",
+    "/mnt/d/paper6/data/kitti/training/image_3/000034.png": "781c9a274c86a5fddc1cc3457163a19cc2eec39347b1d1e2ba761a3813698070",
+    "/mnt/d/paper6/data/kitti/training/image_2/000038.png": "4cfdd9a338e9024578aa9a36a3ad86bc76b664e17ae6556fad147d0dbbf1e695",
+    "/mnt/d/paper6/data/kitti/training/image_3/000038.png": "b9af634dd75f48fa04a10ead29f278cdee2af11d32d4a36c969694a9dd723b64",
+    "/mnt/d/paper6/data/kitti/training/image_2/000041.png": "b861205f7c2274a663bc54fc1d0950b6e996a88261ba9ffba54a8f70a84ed4f2",
+    "/mnt/d/paper6/data/kitti/training/image_3/000041.png": "8456492921666ae79b824b0ecfbfd2483a65623edba8a6c6570b288390d8a231",
+    "/mnt/d/paper6/data/kitti/training/image_2/000043.png": "9f1c29c2a5413db1c0f5845741cf7032c1955ee055c0b3b09cfdd1843b9ae97c",
+    "/mnt/d/paper6/data/kitti/training/image_3/000043.png": "326bfd461237be26635f09b9aa48eae0e5e4e163969bd4a318ca479a6be4e23d",
+    "/mnt/d/paper6/data/kitti/training/image_2/000044.png": "6811ecc1d19e594221e0f9ed85ec6b93cd8f83e50fca4bbb9bf8b9362f70091d",
+    "/mnt/d/paper6/data/kitti/training/image_3/000044.png": "f5d67494d3069951d0d480d53909410a48460721789d7f90218f0324c5424bdb",
+    "/mnt/d/paper6/data/kitti/training/image_2/000045.png": "4f7946448e1a128b4bc53ed811a5a4f19036f3d165516293726802d6c3da77c0",
+    "/mnt/d/paper6/data/kitti/training/image_3/000045.png": "602031168fc01b9eff7c78adeda23d1c425e841fcf3f2f98f142ac2d9e4b030f",
+    "/mnt/d/paper6/data/kitti/training/image_2/000046.png": "8852f56a99559458679b989231dd696cf86975beec8cafd82b3ecc18641a5efe",
+    "/mnt/d/paper6/data/kitti/training/image_3/000046.png": "5c1b1a02eb14bfb53c557b3b2ddfe354869f9ca5230d9c799d065ca72b1f7371",
+    "/mnt/d/paper6/data/kitti/training/image_2/000049.png": "b1a77764b89eb720a974b9c1079f68c37bcabfa7f32646709df715e5fb79a2fc",
+    "/mnt/d/paper6/data/kitti/training/image_3/000049.png": "e438d66ffa1acfc6e26ce8c998b5175e9cfdf5a68a6b95dc4d54ba1a9a9ed8d2",
+    "/mnt/d/paper6/data/kitti/training/image_2/000051.png": "1e83240824583063f5f2dc7a1379fe7feb2e7bc389a8f35586985c499b8846c3",
+    "/mnt/d/paper6/data/kitti/training/image_3/000051.png": "8c600ab79e551454b7b3a13dcde15164d20d2e946d5ae4de6b0d8edbf9a087c9",
+    "/mnt/d/paper6/data/kitti/training/image_2/000055.png": "b453153ed0da3a93db4d02900e440b7ad7d3411552ad76f254311d648ba6e1c9",
+    "/mnt/d/paper6/data/kitti/training/image_3/000055.png": "b269c399f557b9b393818ffd1b10809407bf621b66938f931f49a9644562e11c",
+    "/mnt/d/paper6/data/kitti/training/image_2/000056.png": "7e0b819321638f55ad308fd48411cb0a3e24a93cdffdca4f393e55ba8ba2f36e",
+    "/mnt/d/paper6/data/kitti/training/image_3/000056.png": "9bc651f7a87a66fc698991f4a569aa44462d15779383e8c4f06c30a42a7704d4",
+    "/mnt/d/paper6/data/kitti/training/image_2/000057.png": "9f86ec3eeaf8c7d4198fd015e75d4b28acf9a58e2bf4fc01db91be27a36df84a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000057.png": "09df255181513480deefbcce2dfd9ac365c041deee5b10c295007418762f8dbd",
+    "/mnt/d/paper6/data/kitti/training/image_2/000060.png": "92b74583e5114fb9c702a144ec0f4bd2316c92bbc15d4e3c279d66b439da16a1",
+    "/mnt/d/paper6/data/kitti/training/image_3/000060.png": "f9751ea46ab5fc39125b78c4644000d7b301d3b9fe0a8abe9b2f75d2cf83bef6",
+    "/mnt/d/paper6/data/kitti/training/image_2/000064.png": "5398559f04560a794e44781a3cb31fb604838121121e545a9abedc0bbd322cf4",
+    "/mnt/d/paper6/data/kitti/training/image_3/000064.png": "f99275dccc315af4c5900302ee8f1259cf4650f5dc9f1d785d8880bb357ddb16",
+    "/mnt/d/paper6/data/kitti/training/image_2/000067.png": "4dfa1c94f8226bc1d2b21bc8e1c4bdc2f92bae46206f15d66e1f24ed87c4645a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000067.png": "6f2deb46df166fbc47a9ff6aa9470c80672b250636e571fc98a92b857aef2fc3",
+    "/mnt/d/paper6/data/kitti/training/image_2/000068.png": "515bf417f9769ea219327984b1e2ce0ae5f8a340fa917972053198f97f2bb8f1",
+    "/mnt/d/paper6/data/kitti/training/image_3/000068.png": "78ee2f4cf63c60213cf9d797716ae49af4bc78a3bd832c4b0c756822c8186c51",
+    "/mnt/d/paper6/data/kitti/training/image_2/000069.png": "d46e731f56423f852149b6451ce5f1e9e25aee84ddb3ac731afca1aa4dfdcda6",
+    "/mnt/d/paper6/data/kitti/training/image_3/000069.png": "1a3c9b00fc9d2676a231be1b6c7edc00d636a2e29be0fb929c2aa179298e0054",
+    "/mnt/d/paper6/data/kitti/training/image_2/000070.png": "3df6ff05f7c24d44822c89538175b5130c07d1eae19bcd6560f1ba067c7897d3",
+    "/mnt/d/paper6/data/kitti/training/image_3/000070.png": "0a2f09ed0c4860794b5ddb42cd1026747e39c6090c2a52d274c9b330a0f62736",
+    "/mnt/d/paper6/data/kitti/training/image_2/000072.png": "1269662e5f09a7daf9623adf5808aada9d2e6813fe5ed3f7622713aa6dec80c3",
+    "/mnt/d/paper6/data/kitti/training/image_3/000072.png": "4f0e53540b2c1eb3885772f9d589fc38c555084fb7a2c93ed061e3e477661173",
+    "/mnt/d/paper6/data/kitti/training/image_2/000073.png": "746f02c0b42cb64d2328af5ea253a10ac23a8ef86dee56def4ab4674f5633ac0",
+    "/mnt/d/paper6/data/kitti/training/image_3/000073.png": "b9631d2a33e8467e8234302bd7d845f07c113dd361dedc0d9b9e0dde78166ad7",
+    "/mnt/d/paper6/data/kitti/training/image_2/000074.png": "75d560e16613c3822ff0bcebfef36ad11cbbfc674b869f03c6cc646eec0d4bd5",
+    "/mnt/d/paper6/data/kitti/training/image_3/000074.png": "120c1ff57825de3a538bfd8805a7a10df9ac833dbfcdbf970f95843994eb1161",
+    "/mnt/d/paper6/data/kitti/training/image_2/000075.png": "8d42705feb2978c57dbf6b53f32a31a0cdb0ca55ef48407a238bd53997908945",
+    "/mnt/d/paper6/data/kitti/training/image_3/000075.png": "0efc1a5097085333cf674bcd0151c87a142488efebbde4748c8c68bd97bf9760",
+    "/mnt/d/paper6/data/kitti/training/image_2/000079.png": "410c3e5698cdaec8041aacb7e5b105fedfede8df7117831a0b5b02d2c92ccb44",
+    "/mnt/d/paper6/data/kitti/training/image_3/000079.png": "c4136f3e744cba715c04c467950c55bd97444d0e95131282b6dd9410f5831309",
+    "/mnt/d/paper6/data/kitti/training/image_2/000080.png": "2023dde364f1469e1b6a5bdd15dc12867b6a09da8d6e6a137eff2b324d55241e",
+    "/mnt/d/paper6/data/kitti/training/image_3/000080.png": "dbe238439d2153b7ea49024ec6976311324d0c2c86672496a8fcc229aad1b8f6",
+    "/mnt/d/paper6/data/kitti/training/image_2/000083.png": "fe95d2acab62790fc4ed2a2797e8182ebc1e94072a8c954d3c700fb484e7d2be",
+    "/mnt/d/paper6/data/kitti/training/image_3/000083.png": "4c74d742344f41cd7c6ce291829250a583cafb6088f386bd5df332e1b47d61c6",
+    "/mnt/d/paper6/data/kitti/training/image_2/000084.png": "42111e5dc0009d10bdbef5494f6f879309fcc8188ea44fa4e0eb53ba647ebd4d",
+    "/mnt/d/paper6/data/kitti/training/image_3/000084.png": "e0e480520d417eea2c580ae29f8ec1b36318f2b11fdd4c7ba5c8309122151714",
+    "/mnt/d/paper6/data/kitti/training/image_2/000085.png": "68da934abfabd6b2014afc9043fba651aae81988bf2b91a58fb0f6a809c72381",
+    "/mnt/d/paper6/data/kitti/training/image_3/000085.png": "eb7d72d45ee7f9cf080c21a98ca4f171950c9c5bb213c5ce7fae5a5e92f74a2c",
+    "/mnt/d/paper6/data/kitti/training/image_2/000086.png": "14f3e51cf55d8df337ed64e928a66b0851d25b0b3408386eb429beb55cfcc776",
+    "/mnt/d/paper6/data/kitti/training/image_3/000086.png": "6591eebc3161a4feec1a2fd59769e7247fb75760488dc7fdd06b54ffa6a71c83",
+    "/mnt/d/paper6/data/kitti/training/image_2/000087.png": "e292985d306280ec441f8d55e4a363b375589bb3b2c52e6a62859c2ef006d3c7",
+    "/mnt/d/paper6/data/kitti/training/image_3/000087.png": "8a76a4aee8b667120e9ee92b9efc9fb26b4830c52f00c1516ce9f8251b36580b",
+    "/mnt/d/paper6/data/kitti/training/image_2/000088.png": "b25eaf3f4f3df83b863727d23ed35ccb508321b00435f68fd442638c28bbb567",
+    "/mnt/d/paper6/data/kitti/training/image_3/000088.png": "7387a7cc5d93075b74869496792b949005ce747e8d61d273956c3d9249debeeb",
+    "/mnt/d/paper6/data/kitti/training/image_2/000091.png": "7ec892223ee36c3d3332fe18c76df90e5849aa1624e728340011d6e089271e0c",
+    "/mnt/d/paper6/data/kitti/training/image_3/000091.png": "3bb948716b2fd6896ca706fc12ee4b7aad7f72d76505af1e4272004e6e90a653",
+    "/mnt/d/paper6/data/kitti/training/image_2/000092.png": "a15cdb04ebe6b4b218fa2a31680a1a174d9b2e6e8da3594abfd70148e8dda08e",
+    "/mnt/d/paper6/data/kitti/training/image_3/000092.png": "ab65861dc53f3fdbbe8d8c1165725b9b59c9f88a687f4e91764c1a5e33d291b8",
+    "/mnt/d/paper6/data/kitti/training/image_2/000095.png": "e1dba5aae4434d200af83e7ef52df662b0807217eb57e28caf7d133d2adbc4af",
+    "/mnt/d/paper6/data/kitti/training/image_3/000095.png": "651e6b0770c9b426b8db10715f7f0611c9fc7db24b36a35235011b13f295fd5f",
+    "/mnt/d/paper6/data/kitti/training/image_2/000096.png": "5a359f71b6ef66229020cc25274a7ca0f10098f625c903cf2a23522773a04c4d",
+    "/mnt/d/paper6/data/kitti/training/image_3/000096.png": "f6f56be61367e39c6f1408d1011d82af8a736eff2d60bd9533b42c478ef6da3e",
+    "/mnt/d/paper6/data/kitti/training/image_2/000097.png": "e789128b84f4ffbd89e418c864f47f8be0e3cb2382451563cb6e19254cd6fcc7",
+    "/mnt/d/paper6/data/kitti/training/image_3/000097.png": "c01944cb69ce25e50e32dc57f90cd0682f4588c01fe9cdb162560018e294f811",
+    "/mnt/d/paper6/data/kitti/training/image_2/000099.png": "aef6f81589db89e88ed7c7cb57b21a8280e7de80e3cce54e858e8cce245a5a3a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000099.png": "a543004697fe916973607b64b83a3b518ed8cf66b167126ce5557efb9f9a6cb5",
+    "/mnt/d/paper6/data/kitti/training/image_2/000100.png": "18824985f5ebf14ecc938d82423b94a4ad4db3445536fbc24be9b81aba9d7390",
+    "/mnt/d/paper6/data/kitti/training/image_3/000100.png": "b0acf163b862f2e6b3b70b84552863967c0d1b4ef229c10fcaaa078220304122",
+    "/mnt/d/paper6/data/kitti/training/image_2/000101.png": "d8728b2b5490e8151418f61aab8c9cb79eee812de06b969be3c89bd561e131a0",
+    "/mnt/d/paper6/data/kitti/training/image_3/000101.png": "d28517a55d7e9a1a7e3cd3736ce5ccd2d25a93464fa0daae783fc1bb807a30c3",
+    "/mnt/d/paper6/data/kitti/training/image_2/000103.png": "d98f7176d2b7655485578ddf2f7ee7cbbbe1a278edeebb9343adcc2b8bec4445",
+    "/mnt/d/paper6/data/kitti/training/image_3/000103.png": "2bb718da8909fdefef8f5f38cfca13389bce78e501ad882104fde7e51da46f99",
+    "/mnt/d/paper6/data/kitti/training/image_2/000105.png": "c73712e173c3909441071081e017463a3ea4df472be48d795cf482db7875cc00",
+    "/mnt/d/paper6/data/kitti/training/image_3/000105.png": "9db18e06ac12e2c2d0a8503b6ba0ff8942bcc87c72405eccb6c8a57042973268",
+    "/mnt/d/paper6/data/kitti/training/image_2/000109.png": "abde7a77049b61d7c399f8bca18f2934bd8cde5feef7bba1cf983addad3ec06a",
+    "/mnt/d/paper6/data/kitti/training/image_3/000109.png": "dc167d50dee10b365aca553a4a8b44d0ca68f55a249c06f316cb90bb9d3f901d",
+    "/mnt/d/paper6/data/kitti/training/image_2/000110.png": "c61a569f0968e3785cd211a6b26f712c5221e44f1c8b3563490ad8a4e5c77a98",
+    "/mnt/d/paper6/data/kitti/training/image_3/000110.png": "0892a699cd0c9f546313729fc6e28daf47f8e376f9cc5db00c9bd2f6d7e04714",
+    "/mnt/d/paper6/data/kitti/training/image_2/000111.png": "ddb1b42b777e8b289f02bc561595e216c1aab0319bf43f843b53482ac0859843",
+    "/mnt/d/paper6/data/kitti/training/image_3/000111.png": "fa359452c93c90d366424875d4180c41fa9760947f8282b1881b07c0a2bd3d42",
+    "/mnt/d/paper6/data/kitti/training/image_2/000112.png": "e06526174e83662094e37081ccdc38909714f500a1d25a1d6a60025de0c57fe1",
+    "/mnt/d/paper6/data/kitti/training/image_3/000112.png": "b47861b3d4c9a049046e598379e11ddc0917859e83d17e306968c716317e3a13",
+    "/mnt/d/paper6/data/kitti/training/image_2/000114.png": "b5b13226d0143fe105c83af33599e303b2e80baf7404bb391f5fb1d4a3eabbc0",
+    "/mnt/d/paper6/data/kitti/training/image_3/000114.png": "44d27e58dbb57a4c500ac3a670377d68cd66bb4efbc939b280d264fc882e1b60",
+    "/mnt/d/paper6/data/kitti/training/image_2/000115.png": "69f9408886633aa87326ce197c21885842ff8b9a044e67279ca49c6800c9ef4f",
+    "/mnt/d/paper6/data/kitti/training/image_3/000115.png": "c4fe04fdb9d11b5d1d9b2bf3b85607620af45ee3565e5fe90f2dd03c2d0ec399",
+    "/mnt/d/paper6/data/kitti/training/image_2/000119.png": "0a4feda0169826883902b3d8183562e9cb4178773fd60f4923b8d5784a9268e0",
+    "/mnt/d/paper6/data/kitti/training/image_3/000119.png": "460e88411955f6214b3d16868939b5852bfb2b1e5085bffa8ded55796782e95d"
+  },
+  "ended_unix": 1791145399.2048843
+}

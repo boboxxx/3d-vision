@@ -1,0 +1,344 @@
+CLASS_NAMES:
+- Car
+- Pedestrian
+- Cyclist
+DATA_CONFIG:
+  DATA_SPLIT:
+    test: geocomm_tune_holdout
+    train: geocomm_tune_train
+  INFO_PATH:
+    test:
+    - kitti_infos_geocomm_tune_holdout.pkl
+    train:
+    - kitti_infos_geocomm_tune_train.pkl
+  _BASE_CONFIG_: ./configs/stereo/dataset_configs/kitti_dataset_fused.yaml
+MODEL:
+  BACKBONE_2D:
+    GN: true
+    NAME: HgBEVBackbone
+    num_channels: 64
+  BACKBONE_3D:
+    GN: true
+    NAME: LigaBackbone
+    SEMANTIC_LINK:
+      allocation: uniform
+      appearance_stride: 4
+      boundary: raw_cost
+      channel: identity
+      complex_width: 4
+      enabled: false
+      geometry_stride:
+      - 8
+      - 4
+      - 4
+      pilots: 8
+      posterior_hidden: 16
+      posterior_weight: 0.1
+      sensitivity_weight: 0.1
+      snr_db: 10.0
+      task_sensitivity: true
+      train_snr_max: 20.0
+      train_snr_min: -5.0
+    STUDENT_ENCODER:
+      distill_weight: 0.0
+      enabled: true
+      allow_uncompressed_diagnostic: false
+    cat_img_feature: true
+    cost_volume:
+    - downsample: 4
+      type: concat
+    cv_dim: 32
+    downsample_disp: 4
+    downsampled_depth_offset: 0.5
+    feature_backbone:
+      base_channels: 64
+      block_with_final_relu: false
+      deep_stem: false
+      depth: 34
+      dilations:
+      - 1
+      - 1
+      - 2
+      - 4
+      frozen_stages: -1
+      norm_cfg:
+        requires_grad: true
+        type: BN
+      norm_eval: false
+      num_channels_factor:
+      - 1
+      - 2
+      - 2
+      - 2
+      num_stages: 4
+      out_indices:
+      - 0
+      - 1
+      - 2
+      - 3
+      strides:
+      - 1
+      - 2
+      - 1
+      - 1
+      style: pytorch
+      type: ResNet
+      with_max_pool: false
+    feature_backbone_pretrained: torchvision://resnet34
+    feature_neck:
+      GN: true
+      cat_img_feature: true
+      in_dims:
+      - 3
+      - 64
+      - 128
+      - 128
+      - 128
+      sem_dim:
+      - 128
+      - 32
+      start_level: 2
+      stereo_dim:
+      - 32
+      - 32
+      with_upconv: true
+    img_feature_attentionbydisp: true
+    maxdisp: 288
+    num_3dconvs: 1
+    num_hg: 1
+    rpn3d_dim: 32
+    sem_neck:
+      add_extra_convs: on_output
+      in_channels:
+      - 32
+      num_outs: 5
+      out_channels: 64
+      start_level: 0
+      type: FPN
+    use_stereo_out_type: feature
+    voxel_attentionbydisp: false
+    STEREO_FEATURE_LINK:
+      enabled: true
+      channel: awgn
+      snr_db: 10.0
+      pilots: 8
+  DENSE_HEAD:
+    ANCHOR_GENERATOR_CONFIG:
+    - align_center: false
+      anchor_bottom_heights:
+      - -1.78
+      anchor_rotations:
+      - 0
+      - 1.57
+      anchor_sizes:
+      - - 3.9
+        - 1.6
+        - 1.56
+      class_name: Car
+      feature_map_stride: 1
+      matched_threshold: 0.6
+      unmatched_threshold: 0.45
+    - align_center: false
+      anchor_bottom_heights:
+      - -0.6
+      anchor_rotations:
+      - 0
+      - 1.57
+      anchor_sizes:
+      - - 0.8
+        - 0.6
+        - 1.73
+      class_name: Pedestrian
+      feature_map_stride: 1
+      matched_threshold: 0.5
+      unmatched_threshold: 0.35
+    - align_center: false
+      anchor_bottom_heights:
+      - -0.6
+      anchor_rotations:
+      - 0
+      - 1.57
+      anchor_sizes:
+      - - 1.76
+        - 0.6
+        - 1.73
+      class_name: Cyclist
+      feature_map_stride: 1
+      matched_threshold: 0.5
+      unmatched_threshold: 0.35
+    CLAMP_VALUE: 10.0
+    CLASS_AGNOSTIC: false
+    DIR_LIMIT_OFFSET: 0.0
+    DIR_OFFSET: 0.78539
+    GN: true
+    LOSS_CONFIG:
+      IMITATION_LOSS_TYPE: WeightedL2WithSigmaLoss
+      IOU_LOSS_TYPE: IOU3dLoss
+      LOSS_WEIGHTS:
+        cls_weight: 1.0
+        code_weights:
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        dir_weight: 0.2
+        imitation_weight: 1.0
+        iou_weight: 1.0
+        loc_weight: 0.5
+      REG_LOSS_TYPE: WeightedSmoothL1Loss
+    NAME: DetHead
+    NUM_CONVS: 2
+    NUM_DIR_BINS: 2
+    TARGET_ASSIGNER_CONFIG:
+      BOX_CODER: ResidualCoder
+      BOX_CODER_CONFIG:
+        div_by_diagonal: true
+        use_corners: false
+        use_tanh: false
+      MATCH_HEIGHT: false
+      NAME: AxisAlignedTargetAssigner
+      NORM_BY_NUM_EXAMPLES: false
+      POS_FRACTION: -1.0
+      SAMPLE_SIZE: 512
+    USE_DIRECTION_CLASSIFIER: true
+    do_feature_imitation: true
+    hwl_for_angles: true
+    imitation_cfg:
+    - channel: 64
+      ksize: 1
+      layer: conv2d
+      lidar_feature_layer: spatial_features_2d
+      mode: inbox
+      normalize: cw_scale
+      stereo_feature_layer: spatial_features_2d
+      use_relu: false
+    - channel: 32
+      ksize: 1
+      layer: conv3d
+      lidar_feature_layer: volume_features
+      mode: inbox
+      normalize: cw_scale
+      stereo_feature_layer: volume_features
+      use_relu: false
+    xyz_for_angles: true
+  DENSE_HEAD_2D:
+    NAME: MMDet2DHead
+    cfg:
+      anchor_generator:
+        octave_base_scale: 16
+        ratios:
+        - 1.0
+        scales_per_octave: 1
+        strides:
+        - 4
+        - 8
+        - 16
+        - 32
+        - 64
+        type: AnchorGenerator
+      bbox_coder:
+        target_means:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        target_stds:
+        - 0.1
+        - 0.1
+        - 0.2
+        - 0.2
+        type: DeltaXYWHBBoxCoder
+      feat_channels: 64
+      in_channels: 64
+      loss_bbox:
+        loss_weight: 2.0
+        type: GIoULoss
+      loss_centerness:
+        loss_weight: 1.0
+        type: CrossEntropyLoss
+        use_sigmoid: true
+      loss_cls:
+        alpha: 0.25
+        gamma: 2.0
+        loss_weight: 1.0
+        type: FocalLoss
+        use_sigmoid: true
+      num_classes: 3
+      num_extra_reg_channel: 0
+      reg_class_agnostic: false
+      seperate_extra_reg_branch: false
+      stacked_convs: 4
+      test_cfg:
+        max_per_img: 100
+        min_bbox_size: 0
+        nms:
+          iou_threshold: 0.6
+          type: nms
+        nms_pre: 1000
+        score_thr: 0.05
+      train_cfg:
+        allowed_border: -1
+        append_3d_centers: true
+        assigner:
+          topk: 9
+          type: ATSS3DCenterAssigner
+        debug: false
+        pos_weight: -1
+      type: ATSSAdvHead
+    use_3d_center: true
+  DEPTH_LOSS_HEAD:
+    LOSS_TYPE:
+      ce: 1.0
+    WEIGHTS:
+    - 1.0
+  LIDAR_MODEL:
+    BACKBONE_2D:
+      GN: false
+      NAME: HgBEVBackbone
+      num_channels: 64
+    BACKBONE_3D:
+      NAME: VoxelBackBone4xNoFinalBnReLU
+    MAP_TO_BEV:
+      NAME: HeightCompression
+      NUM_BEV_FEATURES: 160
+    NAME: SECONDNet
+    PRETRAINED_MODEL: ./ckpt/second_s4_hg.iouloss.ep78.backbone-no-final-bnrelu.input-only-xyz.default-lr-policy-with-wd-decay-78ep.pth
+    RETURN_BATCH_DICT: true
+    VFE:
+      NAME: MeanVFE
+  MAP_TO_BEV:
+    NAME: HeightCompression
+    NUM_BEV_FEATURES: 160
+    SPARSE_INPUT: false
+  NAME: stereo_LIGA
+  POST_PROCESSING:
+    EVAL_METRIC: kitti
+    NMS_CONFIG:
+      MULTI_CLASSES_NMS: true
+      NMS_POST_MAXSIZE: 500
+      NMS_PRE_MAXSIZE: 4096
+      NMS_THRESH: 0.25
+      NMS_TYPE: nms_gpu
+    OUTPUT_RAW_SCORE: false
+    RECALL_THRESH_LIST:
+    - 0.3
+    - 0.5
+    - 0.7
+    SCORE_THRESH: 0.1
+OPTIMIZATION:
+  BATCH_SIZE_PER_GPU: 1
+  DECAY_STEP_LIST: []
+  DIV_FACTOR: 10
+  GRAD_NORM_CLIP: 10
+  LR: 0.0001
+  LR_CLIP: 1.0e-07
+  LR_DECAY: 0.1
+  LR_WARMUP: false
+  MOMENTUM: 0.9
+  NUM_EPOCHS: 1
+  OPTIMIZER: adamw
+  WARMUP_EPOCH: 1
+  WEIGHT_DECAY: 0.0001
